@@ -32,9 +32,10 @@
 
 'use strict';
 
-const fs   = require('fs');
-const path = require('path');
-const https = require('https');
+const fs              = require('fs');
+const path            = require('path');
+const https           = require('https');
+const { execSync }    = require('child_process');
 
 // ============================================================================
 // 1. ENVIRONMENT CONFIGURATION
@@ -707,7 +708,65 @@ function approveDraft(draftId) {
   console.log(`  • Title       : "${liveArticle.title}"`);
   console.log(`  • Live Feed   : ${CONFIG.paths.articles}`);
   console.log(`  • Total Live  : ${liveArticles.length} articles`);
-  console.log(`  • Pending Drafts Remaining: ${drafts.length}\n`);
+  console.log(`  • Pending Drafts Remaining: ${drafts.length}`);
+
+  // ── Git Auto-Push ────────────────────────────────────────────────────────
+  // Runs in the repository root (the directory containing auto-publisher.js).
+  // Each step is wrapped independently so a failure at any stage logs a clear
+  // warning but never crashes the script or rolls back the local write.
+  const repoRoot = __dirname;
+  const gitOpts  = { cwd: repoRoot, stdio: 'pipe' };
+
+  console.log('\n[GIT] 📡 Pushing approved article to GitHub...');
+
+  // Step 1 — git add
+  try {
+    execSync('git add data/articles.json', gitOpts);
+    console.log('[GIT] ✅ git add data/articles.json');
+  } catch (err) {
+    console.warn(`[GIT] ⚠️  git add failed — is this a git repository?\n     ${err.message.trim()}`);
+    console.warn('[GIT]    Skipping commit & push. Local file is already saved safely.\n');
+    return;  // abort git steps but keep the local write intact
+  }
+
+  // Step 2 — git commit
+  const commitMsg = `chore: auto-publish "${liveArticle.title.slice(0, 72)}"`;
+  try {
+    execSync(`git commit -m ${JSON.stringify(commitMsg)}`, gitOpts);
+    console.log(`[GIT] ✅ git commit — "${commitMsg}"`);
+  } catch (err) {
+    const output = (err.stdout || err.stderr || err.message || '').toString().trim();
+    // "nothing to commit" means the file was already staged — treat as success
+    if (output.includes('nothing to commit') || output.includes('nothing added')) {
+      console.log('[GIT] ℹ️  Nothing new to commit (file unchanged since last push).');
+    } else {
+      console.warn(`[GIT] ⚠️  git commit failed:\n     ${output}`);
+      console.warn('[GIT]    Skipping push. The staged change is still pending locally.\n');
+      return;
+    }
+  }
+
+  // Step 3 — git push
+  try {
+    execSync('git push origin main', gitOpts);
+    console.log('[GIT] ✅ git push origin main — article is now live on GitHub!\n');
+  } catch (err) {
+    const output = (err.stdout || err.stderr || err.message || '').toString().trim();
+    // Distinguish common offline / auth errors for actionable messaging
+    if (output.includes('Could not resolve host') || output.includes('unable to connect')) {
+      console.warn('[GIT] ⚠️  Push failed — no internet connection. Run manually when online:');
+      console.warn('     git push origin main\n');
+    } else if (output.includes('Authentication failed') || output.includes('403')) {
+      console.warn('[GIT] ⚠️  Push failed — authentication error. Check your GitHub token / SSH key:');
+      console.warn('     git push origin main\n');
+    } else if (output.includes('rejected') || output.includes('non-fast-forward')) {
+      console.warn('[GIT] ⚠️  Push rejected (remote has diverged). Pull first, then push:');
+      console.warn('     git pull --rebase origin main && git push origin main\n');
+    } else {
+      console.warn(`[GIT] ⚠️  git push failed:\n     ${output}`);
+      console.warn('     Commit is saved locally. Run: git push origin main\n');
+    }
+  }
 }
 
 function rejectDraft(draftId) {
