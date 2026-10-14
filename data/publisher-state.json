@@ -1,0 +1,54 @@
+{
+  "lastRunDate": "2026-10-14",
+  "todayPublishedCount": 3,
+  "totalPublishedCount": 5,
+  "history": [
+    {
+      "timestamp": "2026-10-14T14:57:16.493Z",
+      "id": "sub-angstrom-macromolecular-crystallography-of-membrane-transporters-in-orbital-",
+      "title": "Sub-Angstrom Macromolecular Crystallography of Membrane Transporters in Orbital Microgravity: Orbital Evidence for Non-Classical Molecular Dynamics",
+      "action": "approved_live"
+    },
+    {
+      "timestamp": "2026-10-14T14:55:58.715Z",
+      "id": "sub-angstrom-macromolecular-crystallography-of-membrane-transporters-in-orbital-",
+      "title": "Sub-Angstrom Macromolecular Crystallography of Membrane Transporters in Orbital Microgravity: Orbital Evidence for Non-Classical Molecular Dynamics",
+      "action": "draft_created"
+    },
+    {
+      "timestamp": "2026-10-14T14:48:52.535Z",
+      "id": "non-thermal-quantum-proton-tunneling-in-crispr-cas9-catalytic-triads-orbital-evi",
+      "title": "Non-Thermal Quantum Proton Tunneling in CRISPR-Cas9 Catalytic Triads: Orbital Evidence for Non-Classical Molecular Dynamics",
+      "action": "approved_live"
+    },
+    {
+      "timestamp": "2026-10-14T14:48:25.038Z",
+      "id": "non-thermal-quantum-proton-tunneling-in-crispr-cas9-catalytic-triads-orbital-evi",
+      "title": "Non-Thermal Quantum Proton Tunneling in CRISPR-Cas9 Catalytic Triads: Orbital Evidence for Non-Classical Molecular Dynamics",
+      "action": "draft_created"
+    },
+    {
+      "timestamp": "2026-10-14T14:38:48.280Z",
+      "id": "acoustic-levitation-and-scaffold-free-3d-organoid-bioprinting-under-low-earth-or",
+      "title": "Acoustic Levitation and Scaffold-Free 3D Organoid Bioprinting Under Low Earth Orbit Microgravity Conditions",
+      "category": "Microgravity Genomics",
+      "doi": "10.1038/s41586-2026-36805"
+    },
+    {
+      "timestamp": "2026-10-14T14:38:26.934Z",
+      "id": "sub-angstrom-macromolecular-crystallography-in-orbital-microgravity-under-low-ea",
+      "title": "Sub-Angstrom Macromolecular Crystallography in Orbital Microgravity Under Low Earth Orbit Microgravity Conditions",
+      "category": "Protein Crystallography",
+      "doi": "10.1038/s41586-2026-55348"
+    },
+    {
+      "timestamp": "2026-10-14T14:24:08.803Z",
+      "id": "non-thermal-quantum-tunneling-in-crispr-catalytic-triads-under-low-earth-orbit-m",
+      "title": "Non-Thermal Quantum Tunneling in CRISPR Catalytic Triads Under Low Earth Orbit Microgravity Conditions",
+      "category": "Quantum Enzymology",
+      "doi": "10.1038/s41586-2026-72197"
+    }
+  ],
+  "todayDraftCount": 2,
+  "totalDraftCount": 2
+}

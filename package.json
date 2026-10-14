@@ -1,0 +1,32 @@
+{
+  "name": "biogravity-automation",
+  "version": "2.0.0",
+  "description": "Autonomous SEO & AI research auto-publisher for BioGravity — with mandatory human editorial review draft queue",
+  "main": "auto-publisher.js",
+  "scripts": {
+    "start"          : "node auto-publisher.js",
+    "generate-now"   : "node auto-publisher.js --run-now",
+    "generate-force" : "node auto-publisher.js --run-now --force",
+    "status"         : "node auto-publisher.js --status",
+    "review"         : "node auto-publisher.js --review",
+    "approve"        : "node auto-publisher.js --approve",
+    "reject"         : "node auto-publisher.js --reject"
+  },
+  "keywords": [
+    "biotechnology",
+    "quantum-biology",
+    "seo-automation",
+    "auto-publisher",
+    "schema-org",
+    "eeat",
+    "adsense-compliant",
+    "microgravity"
+  ],
+  "author": "BioGravity Institute",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@google/genai": "^2.29.1",
+    "dotenv"       : "^16.4.5",
+    "node-cron"    : "^3.0.3"
+  }
+}
