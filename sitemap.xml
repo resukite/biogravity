@@ -1,8 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Core Hub Pages -->
   <url>
     <loc>https://biogravity.space/</loc>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://biogravity.space/research.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://biogravity.space/about.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://biogravity.space/privacy-policy.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://biogravity.space/terms.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Deep Academic Research Dispatches -->
+  <url>
+    <loc>https://biogravity.space/article.html?id=quantum-enzymology-proton-tunneling-leo</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;q=85</image:loc>
+      <image:title>Quantum Enzymology and Proton Tunneling in Low Earth Orbit</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/article.html?id=sub-angstrom-orbital-protein-crystallography</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&amp;fit=crop&amp;w=1600&amp;q=85</image:loc>
+      <image:title>Sub-Angstrom Orbital Protein Crystallography Without Convection Plumes</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/article.html?id=scaffold-free-acoustic-levitation-cardiac-organoids</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1530497610245-94d3c16cda28?auto=format&amp;fit=crop&amp;w=1600&amp;q=85</image:loc>
+      <image:title>Scaffold-Free 3D Acoustic Levitation Bioprinting for Cardiac Organoids</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/article.html?id=cosmic-radiation-quantum-electron-sinks</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&amp;fit=crop&amp;w=1600&amp;q=85</image:loc>
+      <image:title>Cosmic Radiation Cytoprotection via Synthetic Quantum Electron Sinks</image:title>
+    </image:image>
   </url>
 </urlset>
