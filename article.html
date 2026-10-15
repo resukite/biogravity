@@ -167,15 +167,24 @@
           </div>
         </div>
 
-        <!-- Reader Utility Actions Bar -->
-        <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 flex flex-wrap items-center justify-between gap-2 text-xs font-mono">
-          <div class="flex items-center gap-2">
+        <!-- Reader Utility Actions Bar with Direct Social Amplification -->
+        <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 flex flex-wrap items-center justify-between gap-3 text-xs font-mono">
+          <div class="flex flex-wrap items-center gap-2">
             <button id="btn-copy-cite" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition flex items-center gap-1.5">
-              <span>📋</span> Copy Citation
+              <span>📋</span> Copy Cite
             </button>
             <button id="btn-share-dispatch" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition flex items-center gap-1.5">
-              <span>🔗</span> Share Link
+              <span>🔗</span> Copy Link
             </button>
+            <a id="share-x-btn" href="#" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg bg-cyan-950/60 border border-cyan-500/40 text-cyan-300 hover:bg-cyan-900/80 transition flex items-center gap-1.5 font-bold">
+              <span>𝕏</span> Share on X
+            </a>
+            <a id="share-reddit-btn" href="#" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg bg-orange-950/60 border border-orange-500/40 text-orange-300 hover:bg-orange-900/80 transition flex items-center gap-1.5 font-bold">
+              <span>👽</span> Reddit
+            </a>
+            <a id="share-linkedin-btn" href="#" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg bg-blue-950/60 border border-blue-500/40 text-blue-300 hover:bg-blue-900/80 transition flex items-center gap-1.5 font-bold">
+              <span>💼</span> LinkedIn
+            </a>
           </div>
 
           <div class="flex items-center gap-2 text-slate-400">
@@ -423,6 +432,23 @@
         document.getElementById('article-doi').textContent = currentArticle.doi;
         document.getElementById('article-cover').src = currentArticle.cover;
         document.getElementById('article-summary').textContent = currentArticle.summary;
+
+        // Dynamic 1-Click Social Sharing URLs for Instant Viral Reach
+        const currentUrl = encodeURIComponent(window.location.href);
+        const articleTitle = encodeURIComponent(`"${currentArticle.title}" - BioGravity Orbital Science Dispatch:`);
+        
+        const shareX = document.getElementById('share-x-btn');
+        if (shareX) {
+          shareX.href = `https://twitter.com/intent/tweet?text=${articleTitle}&url=${currentUrl}&hashtags=QuantumBiology,Biotechnology,Microgravity,BioGravity`;
+        }
+        const shareReddit = document.getElementById('share-reddit-btn');
+        if (shareReddit) {
+          shareReddit.href = `https://www.reddit.com/submit?url=${currentUrl}&title=${articleTitle}`;
+        }
+        const shareLinkedIn = document.getElementById('share-linkedin-btn');
+        if (shareLinkedIn) {
+          shareLinkedIn.href = `https://www.linkedin.com/sharing/share-offsite/?url=${currentUrl}`;
+        }
 
         // Dynamic SEO Meta Description & Canonical Tag
         let metaDesc = document.querySelector('meta[name="description"]');
