@@ -413,7 +413,7 @@ const BioGravityDB = (() => {
       featured: true,
       impact: 9.9,
       tags: ["World Space Week 2026", "Rocket Revolution", "Space Week 2026 Pokemon", "Astronaut Pikachu", "Microgravity", "ESA"],
-      cover: "https://images.unsplash.com/photo-1517976487515-59a68a4ee560?auto=format&fit=crop&w=1600&q=85",
+      cover: "assets/world-space-week-2026-astronaut-pikachu.jpg",
       content: `
       <div class="my-4 p-5 rounded-xl bg-gradient-to-r from-cyan-950/70 to-slate-900/90 border-l-4 border-cyan-400 shadow-md">
         <p class="text-base text-slate-100 font-semibold leading-relaxed"><strong>The World Space Week 2026 Pokémon crossover is a global science engagement initiative pairing the United Nations-declared World Space Week with Niantic and the European Space Agency (ESA). Celebrating orbital propulsion and microgravity research, the event features exclusive in-game field tasks and the coveted Astronaut Pikachu costume.</strong></p>
