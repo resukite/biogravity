@@ -465,7 +465,7 @@
                     <span>DOI:</span>
                     <span class="text-slate-400 text-[10px]">${(article.doi || '').split('/').pop() || 'verified'}</span>
                   </div>
-                  <a href="article.html?id=${encodeURIComponent(article.id)}" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 font-semibold flex items-center gap-1">
+                  <a href="articles/${encodeURIComponent(article.id)}.html" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 font-semibold flex items-center gap-1">
                     Read Dispatch →
                   </a>
                 </div>
@@ -498,7 +498,7 @@
                   <div class="text-xs font-mono text-slate-300">${article.author}</div>
                   <div class="text-[10px] font-mono text-emerald-400">Impact: ${article.impact || '9.2'}</div>
                 </div>
-                <a href="article.html?id=${encodeURIComponent(article.id)}" class="px-4 py-2 rounded-xl text-xs font-mono bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 hover:bg-cyan-500/20 whitespace-nowrap">
+                <a href="articles/${encodeURIComponent(article.id)}.html" class="px-4 py-2 rounded-xl text-xs font-mono bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 hover:bg-cyan-500/20 whitespace-nowrap">
                   Read Dispatch →
                 </a>
               </div>

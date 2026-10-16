@@ -10,7 +10,8 @@
     "status"         : "node auto-publisher.js --status",
     "review"         : "node auto-publisher.js --review",
     "approve"        : "node auto-publisher.js --approve",
-    "reject"         : "node auto-publisher.js --reject"
+    "reject"         : "node auto-publisher.js --reject",
+    "build-seo"      : "node build-seo.js"
   },
   "keywords": [
     "biotechnology",

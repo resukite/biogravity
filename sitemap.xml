@@ -7,13 +7,13 @@
   <!-- Core Hub Pages -->
   <url>
     <loc>https://biogravity.space/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://biogravity.space/world-space-week-2026.html</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -23,7 +23,7 @@
   </url>
   <url>
     <loc>https://biogravity.space/molecular-biology-research.html</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -33,68 +33,108 @@
   </url>
   <url>
     <loc>https://biogravity.space/research.html</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://biogravity.space/about.html</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://biogravity.space/privacy-policy.html</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://biogravity.space/terms.html</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
 
-  <!-- Deep Academic Research Dispatches -->
+  <!-- Pre-Rendered High-Authority Research Dispatches -->
   <url>
-    <loc>https://biogravity.space/article.html?id=quantum-enzymology-proton-tunneling-leo</loc>
-    <lastmod>2026-10-15</lastmod>
+    <loc>https://biogravity.space/articles/radical-pair-spin-coherence-and-magnetoreception-in-human-cryptochrome-4-photore.html</loc>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;q=85</image:loc>
-      <image:title>Quantum Enzymology and Proton Tunneling in Low Earth Orbit</image:title>
+      <image:loc>https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Radical Pair Spin Coherence and Magnetoreception in Human Cryptochrome 4 Photoreceptors: Orbital Evidence for Non-Classical Molecular Dynamics</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://biogravity.space/article.html?id=sub-angstrom-orbital-protein-crystallography</loc>
-    <lastmod>2026-10-15</lastmod>
+    <loc>https://biogravity.space/articles/synthetic-poly-adp-metallo-peptides-for-telomeric-radioprotection-in-deep-space-.html</loc>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&amp;fit=crop&amp;w=1600&amp;q=85</image:loc>
-      <image:title>Sub-Angstrom Orbital Protein Crystallography Without Convection Plumes</image:title>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Synthetic Poly-ADP Metallo-Peptides for Telomeric Radioprotection in Deep-Space Environments: Orbital Evidence for Non-Classical Molecular Dynamics</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://biogravity.space/article.html?id=scaffold-free-acoustic-levitation-cardiac-organoids</loc>
-    <lastmod>2026-10-15</lastmod>
+    <loc>https://biogravity.space/articles/acoustic-levitation-and-scaffold-free-vascularized-cardiac-organoid-bioprinting-.html</loc>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1530497610245-94d3c16cda28?auto=format&amp;fit=crop&amp;w=1600&amp;q=85</image:loc>
-      <image:title>Scaffold-Free 3D Acoustic Levitation Bioprinting for Cardiac Organoids</image:title>
+      <image:loc>https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Acoustic Levitation and Scaffold-Free Vascularized Cardiac Organoid Bioprinting in Zero-G: Orbital Evidence for Non-Classical Molecular Dynamics</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://biogravity.space/article.html?id=cosmic-radiation-quantum-electron-sinks</loc>
-    <lastmod>2026-10-15</lastmod>
+    <loc>https://biogravity.space/articles/sub-angstrom-macromolecular-crystallography-of-membrane-transporters-in-orbital-.html</loc>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&amp;fit=crop&amp;w=1600&amp;q=85</image:loc>
-      <image:title>Cosmic Radiation Cytoprotection via Synthetic Quantum Electron Sinks</image:title>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Sub-Angstrom Macromolecular Crystallography of Membrane Transporters in Orbital Microgravity: Orbital Evidence for Non-Classical Molecular Dynamics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/non-thermal-quantum-proton-tunneling-in-crispr-cas9-catalytic-triads-orbital-evi.html</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Non-Thermal Quantum Proton Tunneling in CRISPR-Cas9 Catalytic Triads: Orbital Evidence for Non-Classical Molecular Dynamics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/acoustic-levitation-and-scaffold-free-3d-organoid-bioprinting-under-low-earth-or.html</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Acoustic Levitation and Scaffold-Free 3D Organoid Bioprinting Under Low Earth Orbit Microgravity Conditions</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/sub-angstrom-macromolecular-crystallography-in-orbital-microgravity-under-low-ea.html</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Sub-Angstrom Macromolecular Crystallography in Orbital Microgravity Under Low Earth Orbit Microgravity Conditions</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/non-thermal-quantum-tunneling-in-crispr-catalytic-triads-under-low-earth-orbit-m.html</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Non-Thermal Quantum Tunneling in CRISPR Catalytic Triads Under Low Earth Orbit Microgravity Conditions</image:title>
     </image:image>
   </url>
 </urlset>

@@ -57,7 +57,7 @@ loadEnv();
 const CONFIG = {
   maxDraftsPerDay   : parseInt(process.env.MAX_ARTICLES_PER_DAY, 10) || 3,
   publishHours      : (process.env.PUBLISH_HOURS || '8,14,20').split(',').map(h => parseInt(h.trim(), 10)),
-  siteUrl           : process.env.SITE_URL || 'https://biogravity.org',
+  siteUrl           : process.env.SITE_URL || 'https://biogravity.space',
   geminiApiKey      : process.env.GEMINI_API_KEY || '',
   perplexityApiKey  : process.env.PERPLEXITY_API_KEY || '',
   unsplashAccessKey : process.env.UNSPLASH_ACCESS_KEY || '',
@@ -289,8 +289,8 @@ function createSlug(title) {
   return String(title)
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '')
-    .slice(0, 80);
+    .slice(0, 80)
+    .replace(/^-+|-+$/g, '');
 }
 
 function generateDOI() {
@@ -717,12 +717,21 @@ function approveDraft(draftId) {
   const repoRoot = __dirname;
   const gitOpts  = { cwd: repoRoot, stdio: 'pipe' };
 
-  console.log('\n[GIT] 📡 Pushing approved article to GitHub...');
+  // Step 0 — Re-generate Static SEO HTML and XML Sitemap
+  try {
+    console.log('\n[SEO] 🔄 Re-generating pre-rendered static article pages and sitemap.xml...');
+    execSync('node build-seo.js', gitOpts);
+    console.log('[SEO] ✅ Static pages and sitemap.xml updated.');
+  } catch (err) {
+    console.warn(`[SEO] ⚠️  build-seo failed: ${err.message}`);
+  }
+
+  console.log('\n[GIT] 📡 Pushing approved article, static pages, and sitemap to GitHub...');
 
   // Step 1 — git add
   try {
-    execSync('git add data/articles.json', gitOpts);
-    console.log('[GIT] ✅ git add data/articles.json');
+    execSync('git add data/articles.json sitemap.xml articles/', gitOpts);
+    console.log('[GIT] ✅ git add data/articles.json sitemap.xml articles/');
   } catch (err) {
     console.warn(`[GIT] ⚠️  git add failed — is this a git repository?\n     ${err.message.trim()}`);
     console.warn('[GIT]    Skipping commit & push. Local file is already saved safely.\n');
@@ -917,6 +926,12 @@ async function main() {
       console.log(`  → node auto-publisher.js --review   to inspect all drafts`);
     }
     console.log('');
+    return;
+  }
+
+  if (args.includes('--build-seo')) {
+    console.log('\n[SEO] 🔄 Re-generating pre-rendered static article pages and sitemap.xml...');
+    execSync('node build-seo.js', { cwd: __dirname, stdio: 'inherit' });
     return;
   }
 
