@@ -126,6 +126,23 @@ articles.forEach((art, idx) => {
     ]
   };
 
+  // Add FAQPage Schema for Google Search Rich Snippets if FAQs exist
+  const faqMatches = [...(art.content || '').matchAll(/<summary[^>]*>\s*<span>(.*?)<\/span>[\s\S]*?<\/summary>\s*<p[^>]*>([\s\S]*?)<\/p>/gi)];
+  if (faqMatches.length > 0) {
+    schema["@graph"].push({
+      "@type": "FAQPage",
+      "@id": `${articleUrl}#faq`,
+      "mainEntity": faqMatches.map(m => ({
+        "@type": "Question",
+        "name": m[1].replace(/<[^>]*>/g, '').trim(),
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": m[2].replace(/<[^>]*>/g, '').trim()
+        }
+      }))
+    });
+  }
+
   // Related articles
   const relatedArticles = articles.filter(a => a.id !== art.id).slice(0, 3);
   const relatedHtml = relatedArticles.map(rel => `
