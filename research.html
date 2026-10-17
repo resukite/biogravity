@@ -37,29 +37,36 @@
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Command Center & Visual FX (Aceternity / MagicUI Particles, Meteors, Spotlight) -->
+  <script defer src="js/command-center-fx.js"></script>
 </head>
-<body class="bg-slate-950 text-slate-100 quantum-grid min-h-screen flex flex-col selection:bg-cyan-500/30 selection:text-cyan-300">
+<body class="bg-slate-950 text-slate-100 quantum-grid min-h-screen flex flex-col selection:bg-cyan-500/30 selection:text-cyan-300 relative overflow-x-hidden">
+
+  <!-- Interactive Cosmic Particle Field & Meteor Canvas (MagicUI / Aceternity FX) -->
+  <canvas id="cosmic-canvas" class="fixed inset-0 pointer-events-none z-0 opacity-40"></canvas>
 
   <!-- Ambient Light Orbs -->
   <div class="fixed top-0 left-1/3 w-[500px] h-[500px] ambient-glow-cyan pointer-events-none -z-10 blur-3xl"></div>
   <div class="fixed bottom-10 right-10 w-[600px] h-[600px] ambient-glow-emerald pointer-events-none -z-10 blur-3xl"></div>
 
-  <!-- Top Telemetry Status Ticker -->
-  <div class="w-full bg-slate-950/80 border-b border-slate-800/80 backdrop-blur-md px-4 py-1.5 text-xs font-mono text-slate-400 flex flex-wrap justify-between items-center z-40">
-    <div class="flex items-center gap-4 overflow-x-auto py-0.5">
-      <span class="flex items-center gap-1.5 text-emerald-400 font-medium">
-        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-        RESEARCH REPOSITORY: ONLINE
-      </span>
+  <!-- Orbital Command Telemetry Bar -->
+  <div class="bg-slate-950/90 border-b border-cyan-500/20 text-[11px] font-mono text-slate-400 px-4 py-1.5 flex items-center justify-between overflow-x-auto whitespace-nowrap z-50 relative">
+    <div class="flex items-center gap-4">
+      <div class="flex items-center gap-1.5 text-cyan-400">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span class="font-bold">ORBITAL STATION ALPHA // RESEARCH HUB</span>
+      </div>
       <span class="text-slate-600">|</span>
       <span>SYSTEM STATUS: <strong class="text-cyan-300">CORE ENCRYPTED</strong></span>
       <span class="text-slate-600">|</span>
-      <span>INDEXED DISPATCHES: <strong id="total-count-header" class="text-emerald-300">8</strong></span>
+      <span>INDEXED DISPATCHES: <strong id="total-count-header" class="text-emerald-300">9</strong></span>
+      <span class="text-slate-600">|</span>
+      <span>MICROGRAVITY: <span class="text-emerald-400">&lt; 0.08 &mu;g</span></span>
     </div>
-    <div class="hidden sm:flex items-center gap-3">
-      <div class="flex items-center gap-1.5 text-[11px] font-mono text-slate-400">
-        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Verified Orbital Feed
-      </div>
+    <div class="flex items-center gap-4 text-[10px]">
+      <span class="text-cyan-400/80">LATENCY: 12MS</span>
+      <span class="px-2 py-0.5 rounded bg-emerald-950/60 border border-emerald-500/30 text-emerald-300">FEED NOMINAL</span>
     </div>
   </div>
 
@@ -427,14 +434,14 @@
         if (currentViewMode === 'grid') {
           articlesContainer.className = 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6';
           articlesContainer.innerHTML = results.map(article => `
-            <article class="glass-panel rounded-2xl overflow-hidden border-slate-800 flex flex-col group hover:border-cyan-500/40 transition">
+            <article class="spotlight-card rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 flex flex-col group justify-between transition">
               <div class="relative h-48 overflow-hidden bg-slate-900">
                 <img src="${article.cover}" alt="${article.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-80 group-hover:opacity-100" loading="lazy">
                 <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
                 <span class="absolute top-3 left-3 badge-quantum text-[10px]">
                   ${article.category}
                 </span>
-                <span class="absolute top-3 right-3 text-[11px] font-mono text-slate-300 bg-slate-950/80 px-2 py-0.5 rounded-full border border-slate-700">
+                <span class="absolute top-3 right-3 text-[11px] font-mono text-slate-300 bg-slate-950/80 px-2.5 py-0.5 rounded-full border border-slate-700">
                   ${article.readtime}
                 </span>
               </div>
@@ -476,7 +483,7 @@
           // List View Mode
           articlesContainer.className = 'flex flex-col gap-4';
           articlesContainer.innerHTML = results.map(article => `
-            <article class="glass-panel rounded-xl p-5 border-slate-800 hover:border-cyan-500/40 flex flex-col md:flex-row md:items-center justify-between gap-4 transition group">
+            <article class="spotlight-card rounded-xl p-5 border border-slate-800 hover:border-cyan-500/50 flex flex-col md:flex-row md:items-center justify-between gap-4 transition group">
               <div class="flex-1">
                 <div class="flex items-center gap-3 text-xs font-mono mb-1.5">
                   <span class="text-cyan-400 font-medium">${article.category}</span>

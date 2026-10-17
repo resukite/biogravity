@@ -146,7 +146,7 @@ articles.forEach((art, idx) => {
   // Related articles
   const relatedArticles = articles.filter(a => a.id !== art.id).slice(0, 3);
   const relatedHtml = relatedArticles.map(rel => `
-    <a href="${rel.id}.html" class="block p-3 rounded-xl bg-slate-950/70 border border-slate-800 hover:border-cyan-500/40 transition group">
+    <a href="${rel.id}.html" class="spotlight-card block p-3 rounded-xl border border-slate-800 hover:border-cyan-500/40 transition group">
       <div class="text-[10px] font-mono text-cyan-400">${escapeHtml(rel.category)}</div>
       <div class="text-xs font-display font-semibold text-white group-hover:text-cyan-300 transition line-clamp-2 mt-0.5">${escapeHtml(rel.title)}</div>
       <div class="text-[10px] text-slate-400 mt-1">${escapeHtml(rel.readtime || '8 min read')} • ${escapeHtml(rel.date)}</div>
@@ -215,16 +215,40 @@ articles.forEach((art, idx) => {
   <!-- Custom Styles -->
   <link rel="stylesheet" href="../css/styles.css">
 
+  <!-- Command Center & Visual FX (Aceternity / MagicUI Particles, Meteors, Spotlight) -->
+  <script defer src="../js/command-center-fx.js"></script>
+
   <!-- Structured Data JSON-LD -->
   <script type="application/ld+json">
 ${JSON.stringify(schema, null, 2)}
   </script>
 </head>
-<body class="bg-slate-950 text-slate-100 quantum-grid min-h-screen flex flex-col selection:bg-cyan-500/30 selection:text-cyan-300">
+<body class="bg-slate-950 text-slate-100 quantum-grid min-h-screen flex flex-col selection:bg-cyan-500/30 selection:text-cyan-300 relative overflow-x-hidden">
+
+  <!-- Interactive Cosmic Particle Field & Meteor Canvas (MagicUI / Aceternity FX) -->
+  <canvas id="cosmic-canvas" class="fixed inset-0 pointer-events-none z-0 opacity-40"></canvas>
 
   <!-- Ambient Light Orbs -->
   <div class="fixed top-0 left-1/4 w-[500px] h-[500px] ambient-glow-cyan pointer-events-none -z-10 blur-3xl"></div>
   <div class="fixed top-1/2 right-10 w-[600px] h-[600px] ambient-glow-emerald pointer-events-none -z-10 blur-3xl"></div>
+
+  <!-- Orbital Command Telemetry Bar -->
+  <div class="bg-slate-950/90 border-b border-cyan-500/20 text-[11px] font-mono text-slate-400 px-4 py-1.5 flex items-center justify-between overflow-x-auto whitespace-nowrap z-50 relative">
+    <div class="flex items-center gap-4">
+      <div class="flex items-center gap-1.5 text-cyan-400">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span class="font-bold">ORBITAL STATION ALPHA</span>
+      </div>
+      <span class="text-slate-600">|</span>
+      <span>ALT: <span class="text-slate-200">408.2 KM</span></span>
+      <span>VEL: <span class="text-slate-200">7.66 KM/S</span></span>
+      <span>MICROGRAVITY: <span class="text-emerald-400">&lt; 0.08 &mu;g</span></span>
+    </div>
+    <div class="flex items-center gap-4 text-[10px]">
+      <span class="text-cyan-400/80">LATENCY: 14MS</span>
+      <span class="px-2 py-0.5 rounded bg-emerald-950/60 border border-emerald-500/30 text-emerald-300">TELEMETRY NOMINAL</span>
+    </div>
+  </div>
 
   <!-- Global Header Navigation -->
   <header class="sticky top-0 z-40 w-full backdrop-blur-xl bg-slate-950/75 border-b border-slate-800/80">
@@ -395,7 +419,7 @@ ${JSON.stringify(schema, null, 2)}
           </div>
 
           <!-- Abstract / Key Summary Box -->
-          <div class="glass-panel rounded-2xl p-6 border-cyan-500/30 bg-slate-900/60">
+          <div class="glass-panel spotlight-card rounded-2xl p-6 border-cyan-500/30 bg-slate-900/60">
             <div class="text-xs font-mono uppercase tracking-widest text-cyan-400 mb-2">Scientific Abstract</div>
             <p class="text-slate-200 text-sm sm:text-base leading-relaxed italic">
               ${escapeHtml(art.summary)}
@@ -403,12 +427,12 @@ ${JSON.stringify(schema, null, 2)}
           </div>
 
           <!-- Article Main Body (Pre-rendered Static HTML) -->
-          <div id="article-body-content" class="glass-panel rounded-2xl p-6 sm:p-8 border-slate-800 text-slate-300 text-sm sm:text-base leading-relaxed space-y-6">
+          <div id="article-body-content" class="glass-panel spotlight-card rounded-2xl p-6 sm:p-8 border-slate-800 text-slate-300 text-sm sm:text-base leading-relaxed space-y-6">
             ${art.content}
           </div>
 
           <!-- Key Verified Findings -->
-          <div class="glass-panel rounded-2xl p-6 border-slate-800 space-y-4">
+          <div class="glass-panel spotlight-card rounded-2xl p-6 border-slate-800 space-y-4">
             <h3 class="font-display font-bold text-lg text-white flex items-center gap-2">
               <span class="text-emerald-400">✓</span> Key Verified Findings
             </h3>
@@ -429,7 +453,7 @@ ${JSON.stringify(schema, null, 2)}
           </div>
 
           <!-- Author Bio & E-E-A-T Card -->
-          <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-center gap-6">
+          <div class="spotlight-card rounded-2xl p-6 bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-center gap-6">
             <div class="w-16 h-16 rounded-full bg-gradient-to-tr from-cyan-500 to-emerald-500 p-[2px] flex-shrink-0">
               <div class="w-full h-full rounded-full bg-slate-950 flex items-center justify-center font-display font-extrabold text-xl text-cyan-400">
                 ${escapeHtml(authorName.split(' ').map(n=>n[0]).join('').slice(0, 2))}
@@ -447,7 +471,7 @@ ${JSON.stringify(schema, null, 2)}
         <!-- Right: Sticky Scientific Metadata & Sidebar -->
         <div class="lg:col-span-4 space-y-6">
           
-          <div class="glass-panel rounded-2xl p-6 border-slate-800 space-y-6 sticky top-28">
+          <div class="glass-panel spotlight-card rounded-2xl p-6 border-slate-800 space-y-6 sticky top-28">
             
             <div>
               <div class="text-xs font-mono uppercase tracking-widest text-slate-400 mb-1">Journal Indexing</div>
