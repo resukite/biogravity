@@ -1,0 +1,71 @@
+name: BioGravity Cloud SEO Publishing Daemon
+
+on:
+  schedule:
+    # Runs 24/7 twice daily at 06:00 and 18:00 UTC (space telemetry cycle)
+    - cron: '0 6,18 * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Force publish dispatch immediately'
+        required: false
+        type: boolean
+        default: true
+      topic:
+        description: 'Specific topic keyword (optional, e.g. "Debye", "Fluidics", "Extremophile")'
+        required: false
+        type: string
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  publish-research:
+    name: Autonomous Research Synthesis & Publishing
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🛰️ Checkout BioGravity Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🐍 Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 🔬 Execute Cloud SEO Publishing Daemon
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SITE_URL: 'https://biogravity.space'
+        run: |
+          FLAGS="--run-once"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            if [ "${{ inputs.force }}" = "true" ]; then
+              FLAGS="$FLAGS --force"
+            fi
+            if [ -n "${{ inputs.topic }}" ]; then
+              FLAGS="$FLAGS --topic \"${{ inputs.topic }}\""
+            fi
+          fi
+          echo "Executing: python cloud_seo_daemon.py $FLAGS"
+          python cloud_seo_daemon.py $FLAGS
+
+      - name: 🚀 Commit and Push New Dispatches & Updated Sitemap
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Stage new markdown dispatches, HTML pages, json database, and sitemap
+          git add articles/ data/ sitemap.xml
+
+          if git diff --staged --quiet; then
+            echo "✅ No new changes detected. Workspace is up-to-date."
+          else
+            git commit -m "chore(cloud-daemon): publish peer-reviewed dispatch & sitemap sync [skip ci]"
+            git pull --rebase origin main || true
+            git push origin main
+            echo "🎉 Successfully published to biogravity.space in the cloud!"
+          fi

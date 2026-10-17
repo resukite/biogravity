@@ -11,7 +11,10 @@
     "review"         : "node auto-publisher.js --review",
     "approve"        : "node auto-publisher.js --approve",
     "reject"         : "node auto-publisher.js --reject",
-    "build-seo"      : "node build-seo.js"
+    "build-seo"      : "node build-seo.js",
+    "cloud-daemon"   : "python cloud_seo_daemon.py --run-once",
+    "local-daemon"   : "python local_seo_daemon.py",
+    "sync-md"        : "node sync-markdown.js"
   },
   "keywords": [
     "biotechnology",

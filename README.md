@@ -91,3 +91,36 @@ The website's database configuration is completely internal and private. Public 
 - **Built-in Encrypted Bio-Core**: High-fidelity quantum research datasets with RFC 4180 parsing and case-insensitive header mapping (`Title`, `Category`, `Summary`, `Readtime`, `Author`, `Date`, `Tags`, `Content`, `DOI`).
 - **Autonomous Synchronization**: The backend engine synchronizes and caches records transparently without exposing data source controls or configuration modals in the public UI.
 - **Client-Side Search & Filter**: Real-time filtering, category segmentation, and sorting continue to operate with sub-millisecond responsiveness.
+
+---
+
+## 🤖 24/7 Autonomous Cloud SEO Publishing Daemon
+
+BioGravity includes an enterprise-grade autonomous publishing pipeline configured to run **100% in GitHub's cloud servers** without requiring a local PC:
+
+### 1. GitHub Actions Cloud Workflow (`.github/workflows/cloud_daemon.yml`)
+- **Automated Schedule**: Runs every 12 hours (`0 6,18 * * *`) via cron to align with orbital telemetry cycles.
+- **Manual Trigger**: Can be executed at any time from GitHub's **Actions** tab (`workflow_dispatch`) with optional custom keyword targeting and force-publish flags.
+- **Zero Local Maintenance**: Checks out the repository, executes `cloud_seo_daemon.py`, commits new `.md` dispatches, compiled `.html` views, updated `data/articles.json`, and regenerated `sitemap.xml`, and pushes directly back to `main`.
+
+### 2. Cloud & Local Python Daemon (`cloud_seo_daemon.py` / `local_seo_daemon.py`)
+- **Zero-Dependency Architecture**: Built entirely on standard Python 3 (`urllib`, `json`, `re`, `pathlib`), guaranteeing flawless execution on GitHub runners or local environments without `pip install` hurdles.
+- **Deep Content & Google AdSense Compliance**:
+  - Eliminates AI fluff with deep scientific analysis, real-world analogies, and original biophysical explanations.
+  - Generates KaTeX equations ($H\psi = E\psi$, WKB tunneling, Haberkorn spin dynamics, Young-Laplace pressure).
+  - Empirical telemetry comparison tables (Terrestrial 1G vs Orbital μg).
+  - Student & researcher study guides and Google rich snippet FAQ blocks.
+  - Academic citations with verifiable DOIs, author credentials, and ORCID attribution.
+- **Dual Format Output**:
+  - Generates SEO-optimized Markdown (`articles/<id>.md`) with YAML frontmatter.
+  - Generates futuristic dark-mode static HTML (`articles/<id>.html`) styled with neon cyan/emerald glowing accents, responsive navigation, and Schema.org JSON-LD (`ScholarlyArticle`, `BreadcrumbList`, `FAQPage`).
+- **Autonomous Fallback Engine**: Contains a built-in curriculum of 15+ evergreen space physics and quantum biology topics, ensuring continuous publication even without external API credentials, while seamlessly utilizing Gemini API (`GEMINI_API_KEY`) when provided in repository secrets.
+
+### 3. Local CLI Commands
+```bash
+python cloud_seo_daemon.py --run-once     # Compile next dispatch and exit
+python cloud_seo_daemon.py --force        # Force new dispatch immediately
+python cloud_seo_daemon.py --sync-all-md  # Backfill Markdown for all existing articles
+python cloud_seo_daemon.py --status       # View catalog count and queued topics
+python local_seo_daemon.py                # Local alias for local development
+```
