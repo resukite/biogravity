@@ -7,7 +7,7 @@
   <meta name="description" content="In-depth guide to modern molecular biology research, world-class research buildings, cellular & molecular biology of stress summer programs, primer design platforms, and cancer biology breakthroughs.">
   <meta name="keywords" content="molecular biology research, molecular biology research building, the cellular and molecular biology of stress summer research program, best molecular biology platform multidisciplinary research, molecular biology research areas, research on molecular biology, trusted platforms for primer design in molecular biology research, molecular biology cancer research, annual international conference on research in computational molecular biology, cell and molecular biology research papers">
   <meta name="author" content="BioGravity Research Collective">
-  <link rel="canonical" href="https://biogravity.space/molecular-biology-research.html">
+  <link rel="canonical" href="https://biogravity.space/molecular-biology-research">
 
   <!-- Open Graph / Social Media -->
   <meta property="og:type" content="article">
@@ -82,6 +82,12 @@
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="css/styles.css">
+  <script>
+    if (window.location.pathname.endsWith('.html')) {
+      var clean = window.location.pathname.replace(/\.html$/, '');
+      window.history.replaceState(null, '', clean + window.location.search + window.location.hash);
+    }
+  </script>
 </head>
 <body class="bg-slate-950 text-slate-100 quantum-grid min-h-screen flex flex-col selection:bg-cyan-500/30 selection:text-cyan-300">
 
@@ -94,7 +100,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
       <!-- Logo -->
-      <a href="index.html" class="flex items-center gap-3 group">
+      <a href="/" class="flex items-center gap-3 group">
         <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500 to-emerald-500 p-[1.5px] shadow-[0_0_20px_rgba(6,182,212,0.4)] group-hover:shadow-[0_0_25px_rgba(52,211,153,0.6)] transition duration-300">
           <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center relative overflow-hidden">
             <span class="text-lg">⚛️</span>
@@ -110,15 +116,15 @@
 
       <!-- Desktop Nav -->
       <nav class="hidden md:flex items-center gap-8 text-sm">
-        <a href="index.html" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Home</a>
-        <a href="research.html" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Research Feed</a>
-        <a href="about.html" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Lab Notes / About</a>
-        <a href="molecular-biology-research.html" class="nav-link py-2 text-cyan-400 border-b-2 border-cyan-400 font-semibold transition">Molecular Biology Guide</a>
+        <a href="/" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Home</a>
+        <a href="/research" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Research Feed</a>
+        <a href="/about" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Lab Notes / About</a>
+        <a href="/molecular-biology-research" class="nav-link py-2 text-cyan-400 border-b-2 border-cyan-400 font-semibold transition">Molecular Biology Guide</a>
       </nav>
 
       <!-- Action -->
       <div class="hidden lg:flex items-center gap-4">
-        <a href="research.html" class="px-4 py-2 rounded-xl text-xs font-mono border border-slate-700 bg-slate-900 text-slate-300 hover:text-white transition flex items-center gap-1.5">
+        <a href="/research" class="px-4 py-2 rounded-xl text-xs font-mono border border-slate-700 bg-slate-900 text-slate-300 hover:text-white transition flex items-center gap-1.5">
           <span>← Back to Research Feed</span>
         </a>
       </div>
@@ -140,10 +146,10 @@
       <button id="close-drawer-btn" class="text-slate-400 hover:text-white p-2">✕</button>
     </div>
     <div class="flex flex-col gap-6 text-lg mt-8 font-medium">
-      <a href="index.html" class="text-slate-300 hover:text-white">Home</a>
-      <a href="research.html" class="text-slate-300 hover:text-white">Research Feed</a>
-      <a href="about.html" class="text-slate-300 hover:text-white">Lab Notes / About</a>
-      <a href="molecular-biology-research.html" class="text-cyan-400">Molecular Biology Guide</a>
+      <a href="/" class="text-slate-300 hover:text-white">Home</a>
+      <a href="/research" class="text-slate-300 hover:text-white">Research Feed</a>
+      <a href="/about" class="text-slate-300 hover:text-white">Lab Notes / About</a>
+      <a href="/molecular-biology-research" class="text-cyan-400">Molecular Biology Guide</a>
     </div>
   </div>
 
@@ -153,9 +159,9 @@
       
       <!-- Breadcrumbs -->
       <div class="flex items-center gap-2 text-xs font-mono text-slate-400 pb-6 mb-8 border-b border-slate-800/80">
-        <a href="index.html" class="hover:text-cyan-400">BioGravity</a>
+        <a href="/" class="hover:text-cyan-400">BioGravity</a>
         <span>/</span>
-        <a href="research.html" class="hover:text-cyan-400">Research</a>
+        <a href="/research" class="hover:text-cyan-400">Research</a>
         <span>/</span>
         <span class="text-cyan-400">Molecular Biology Research</span>
       </div>
@@ -472,18 +478,18 @@
         <div>
           <div class="text-white uppercase tracking-wider mb-3">Navigation</div>
           <ul class="space-y-2 text-slate-400">
-            <li><a href="index.html" class="hover:text-cyan-400">Home</a></li>
-            <li><a href="research.html" class="hover:text-cyan-400">Research Feed</a></li>
-            <li><a href="about.html" class="hover:text-cyan-400">About & Lab Notes</a></li>
-            <li><a href="molecular-biology-research.html" class="text-cyan-400">Molecular Biology Guide</a></li>
+            <li><a href="/" class="hover:text-cyan-400">Home</a></li>
+            <li><a href="/research" class="hover:text-cyan-400">Research Feed</a></li>
+            <li><a href="/about" class="hover:text-cyan-400">About & Lab Notes</a></li>
+            <li><a href="/molecular-biology-research" class="text-cyan-400">Molecular Biology Guide</a></li>
           </ul>
         </div>
         <div>
           <div class="text-white uppercase tracking-wider mb-3">AdSense Compliance</div>
           <ul class="space-y-2 text-slate-400">
-            <li><a href="privacy-policy.html" class="hover:text-cyan-400">Privacy Policy (DART & Cookies)</a></li>
-            <li><a href="terms.html" class="hover:text-cyan-400">Terms of Service</a></li>
-            <li><a href="about.html" class="hover:text-cyan-400">Editorial & E-E-A-T Standards</a></li>
+            <li><a href="/privacy-policy" class="hover:text-cyan-400">Privacy Policy (DART & Cookies)</a></li>
+            <li><a href="/terms" class="hover:text-cyan-400">Terms of Service</a></li>
+            <li><a href="/about" class="hover:text-cyan-400">Editorial & E-E-A-T Standards</a></li>
             <li><a href="sitemap.xml" class="hover:text-cyan-400">XML Sitemap</a></li>
           </ul>
         </div>
@@ -498,9 +504,9 @@
       <div class="pt-6 border-t border-slate-800 text-[11px] font-mono text-slate-500 flex flex-col sm:flex-row justify-between items-center gap-4">
         <div>&copy; 2026 BioGravity Institute. All rights reserved.</div>
         <div class="flex gap-4">
-          <a href="privacy-policy.html" class="hover:text-cyan-400">Privacy Policy</a>
+          <a href="/privacy-policy" class="hover:text-cyan-400">Privacy Policy</a>
           <span>•</span>
-          <a href="terms.html" class="hover:text-cyan-400">Terms</a>
+          <a href="/terms" class="hover:text-cyan-400">Terms</a>
           <span>•</span>
           <a href="sitemap.xml" class="hover:text-cyan-400">Sitemap</a>
         </div>

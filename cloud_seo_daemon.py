@@ -1037,7 +1037,7 @@ def compile_html(article: dict, all_articles: list) -> str:
     cover_url = article.get("cover", "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80")
     cover_alt = article.get("coverAlt", f"{title} - BioGravity Orbital Science Dispatch")
     tags = article.get("tags", ["Space Physics", "BioGravity"])
-    article_url = f"{SITE_URL}/articles/{art_id}.html"
+    article_url = f"{SITE_URL}/articles/{art_id}"
 
     # Schema.org JSON-LD graph
     graph = [
@@ -1062,7 +1062,7 @@ def compile_html(article: dict, all_articles: list) -> str:
             "publisher": {
                 "@type": "Organization",
                 "name": "BioGravity",
-                "url": SITE_URL,
+                "url": f"{SITE_URL}/",
                 "logo": {"@type": "ImageObject", "url": f"{SITE_URL}/assets/biogravity-logo.png"}
             },
             "identifier": {"@type": "PropertyValue", "propertyID": "DOI", "value": doi},
@@ -1076,7 +1076,7 @@ def compile_html(article: dict, all_articles: list) -> str:
             "@id": f"{article_url}#breadcrumb",
             "itemListElement": [
                 {"@type": "ListItem", "position": 1, "name": "BioGravity", "item": f"{SITE_URL}/"},
-                {"@type": "ListItem", "position": 2, "name": "Research Feed", "item": f"{SITE_URL}/research.html"},
+                {"@type": "ListItem", "position": 2, "name": "Research Feed", "item": f"{SITE_URL}/research"},
                 {"@type": "ListItem", "position": 3, "name": title, "item": article_url}
             ]
         }
@@ -1103,7 +1103,7 @@ def compile_html(article: dict, all_articles: list) -> str:
     related = [a for a in all_articles if a.get("id") != art_id][:3]
     related_html = "\n".join([
         f"""
-        <a href="{rel.get('id')}.html" class="block p-3 rounded-xl bg-slate-950/70 border border-slate-800 hover:border-cyan-500/40 transition group">
+        <a href="/articles/{rel.get('id')}" class="block p-3 rounded-xl bg-slate-950/70 border border-slate-800 hover:border-cyan-500/40 transition group">
           <div class="text-[10px] font-mono text-cyan-400">{escape_html(rel.get('category', 'Research'))}</div>
           <div class="text-xs font-display font-semibold text-white group-hover:text-cyan-300 transition line-clamp-2 mt-0.5">{escape_html(rel.get('title', ''))}</div>
           <div class="text-[10px] text-slate-400 mt-1">{escape_html(rel.get('readtime', '10 min read'))} • {escape_html(rel.get('date', ''))}</div>
@@ -1114,7 +1114,7 @@ def compile_html(article: dict, all_articles: list) -> str:
 
     tags_html = "\n".join([
         f"""
-        <a href="../research.html?q={urllib.parse.quote_plus(t)}" class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-700 text-slate-300 hover:text-cyan-300 hover:border-cyan-400 transition">
+        <a href="/research?q={urllib.parse.quote_plus(t)}" class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-700 text-slate-300 hover:text-cyan-300 hover:border-cyan-400 transition">
           #{escape_html(t)}
         </a>
         """
@@ -1271,7 +1271,7 @@ def compile_html(article: dict, all_articles: list) -> str:
 
   <header class="sticky top-0 z-40 w-full backdrop-blur-xl bg-slate-950/75 border-b border-slate-800/80">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      <a href="../index.html" class="flex items-center gap-3 group">
+      <a href="/" class="flex items-center gap-3 group">
         <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500 to-emerald-500 p-[1.5px] shadow-[0_0_20px_rgba(6,182,212,0.4)] group-hover:shadow-[0_0_25px_rgba(52,211,153,0.6)] transition duration-300">
           <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center relative overflow-hidden">
             <span class="text-lg">⚛️</span>
@@ -1285,12 +1285,12 @@ def compile_html(article: dict, all_articles: list) -> str:
         </div>
       </a>
       <nav class="hidden md:flex items-center gap-8 text-sm">
-        <a href="../index.html" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Home</a>
-        <a href="../research.html" class="nav-link py-2 text-cyan-400 font-semibold border-b-2 border-cyan-400">Research Feed</a>
-        <a href="../about.html" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">About &amp; Mission</a>
+        <a href="/" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Home</a>
+        <a href="/research" class="nav-link py-2 text-cyan-400 font-semibold border-b-2 border-cyan-400">Research Feed</a>
+        <a href="/about" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">About &amp; Mission</a>
       </nav>
       <div class="flex items-center gap-3">
-        <a href="../research.html" class="px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500/20 to-emerald-500/20 border border-cyan-500/30 text-cyan-300 hover:text-white hover:border-cyan-400 text-xs font-mono transition">
+        <a href="/research" class="px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500/20 to-emerald-500/20 border border-cyan-500/30 text-cyan-300 hover:text-white hover:border-cyan-400 text-xs font-mono transition">
           Live Sensor Feed
         </a>
       </div>
@@ -1299,9 +1299,9 @@ def compile_html(article: dict, all_articles: list) -> str:
 
   <main class="flex-grow max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
     <nav class="flex items-center gap-2 text-xs font-mono text-slate-400 mb-6" aria-label="Breadcrumb">
-      <a href="../index.html" class="hover:text-cyan-400 transition">BioGravity</a>
+      <a href="/" class="hover:text-cyan-400 transition">BioGravity</a>
       <span>/</span>
-      <a href="../research.html" class="hover:text-cyan-400 transition">Research</a>
+      <a href="/research" class="hover:text-cyan-400 transition">Research</a>
       <span>/</span>
       <span class="text-cyan-300 truncate max-w-xs">{escape_html(article.get('category', 'Dispatch'))}</span>
     </nav>
@@ -1397,11 +1397,11 @@ def compile_html(article: dict, all_articles: list) -> str:
         </p>
       </div>
       <div class="mt-6 sm:mt-0 flex flex-wrap justify-center sm:justify-end gap-6 text-xs text-slate-400 font-mono">
-        <a href="../research.html" class="hover:text-cyan-400 transition">Research Feed</a>
-        <a href="../about.html" class="hover:text-cyan-400 transition">Mission</a>
-        <a href="../privacy-policy.html" class="hover:text-cyan-400 transition">Privacy</a>
-        <a href="../terms.html" class="hover:text-cyan-400 transition">Terms</a>
-        <a href="../sitemap.xml" class="hover:text-cyan-400 transition">Sitemap</a>
+        <a href="/research" class="hover:text-cyan-400 transition">Research Feed</a>
+        <a href="/about" class="hover:text-cyan-400 transition">Mission</a>
+        <a href="/privacy-policy" class="hover:text-cyan-400 transition">Privacy</a>
+        <a href="/terms" class="hover:text-cyan-400 transition">Terms</a>
+        <a href="/sitemap.xml" class="hover:text-cyan-400 transition">Sitemap</a>
       </div>
     </div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6 pt-6 border-t border-slate-900 text-center text-[10px] font-mono text-slate-500">
@@ -1427,19 +1427,19 @@ def update_sitemap(articles: list):
         '',
         '  <!-- Core Hub Pages -->',
         f'  <url><loc>{SITE_URL}/</loc><lastmod>{today_iso}</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>',
-        f'  <url><loc>{SITE_URL}/world-space-week-2026.html</loc><lastmod>{today_iso}</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>',
-        f'  <url><loc>{SITE_URL}/molecular-biology-research.html</loc><lastmod>{today_iso}</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>',
-        f'  <url><loc>{SITE_URL}/research.html</loc><lastmod>{today_iso}</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>',
-        f'  <url><loc>{SITE_URL}/about.html</loc><lastmod>{today_iso}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>',
-        f'  <url><loc>{SITE_URL}/privacy-policy.html</loc><lastmod>{today_iso}</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>',
-        f'  <url><loc>{SITE_URL}/terms.html</loc><lastmod>{today_iso}</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>',
+        f'  <url><loc>{SITE_URL}/research</loc><lastmod>{today_iso}</lastmod><changefreq>daily</changefreq><priority>0.95</priority></url>',
+        f'  <url><loc>{SITE_URL}/world-space-week-2026</loc><lastmod>{today_iso}</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>',
+        f'  <url><loc>{SITE_URL}/molecular-biology-research</loc><lastmod>{today_iso}</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>',
+        f'  <url><loc>{SITE_URL}/about</loc><lastmod>{today_iso}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>',
+        f'  <url><loc>{SITE_URL}/privacy-policy</loc><lastmod>{today_iso}</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>',
+        f'  <url><loc>{SITE_URL}/terms</loc><lastmod>{today_iso}</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>',
         '',
         '  <!-- Pre-Rendered High-Authority Research Dispatches -->'
     ]
 
     for art in articles:
         art_id = art.get("id")
-        art_url = f"{SITE_URL}/articles/{art_id}.html"
+        art_url = f"{SITE_URL}/articles/{art_id}"
         cover_url = art.get("cover", "")
         title = art.get("title", "")
 

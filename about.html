@@ -37,6 +37,12 @@
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="css/styles.css">
+  <script>
+    if (window.location.pathname.endsWith('.html')) {
+      var clean = window.location.pathname.replace(/\.html$/, '');
+      window.history.replaceState(null, '', clean + window.location.search + window.location.hash);
+    }
+  </script>
 </head>
 <body class="bg-slate-950 text-slate-100 quantum-grid min-h-screen flex flex-col selection:bg-cyan-500/30 selection:text-cyan-300">
 
@@ -49,7 +55,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
       <!-- Logo -->
-      <a href="index.html" class="flex items-center gap-3 group">
+      <a href="/" class="flex items-center gap-3 group">
         <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500 to-emerald-500 p-[1.5px] shadow-[0_0_20px_rgba(6,182,212,0.4)] group-hover:shadow-[0_0_25px_rgba(52,211,153,0.6)] transition duration-300">
           <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center relative overflow-hidden">
             <span class="text-lg">⚛️</span>
@@ -65,9 +71,9 @@
 
       <!-- Desktop Nav -->
       <nav class="hidden md:flex items-center gap-8 text-sm">
-        <a href="index.html" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Home</a>
-        <a href="research.html" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Research Feed</a>
-        <a href="about.html" class="nav-link py-2 text-cyan-400 border-b-2 border-cyan-400 font-semibold transition">Lab Notes / About</a>
+        <a href="/" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Home</a>
+        <a href="/research" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Research Feed</a>
+        <a href="/about" class="nav-link py-2 text-cyan-400 border-b-2 border-cyan-400 font-semibold transition">Lab Notes / About</a>
         <a href="article.html" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Reader View</a>
       </nav>
 
@@ -88,9 +94,9 @@
       <button id="close-drawer-btn" class="text-slate-400 hover:text-white p-2">✕</button>
     </div>
     <div class="flex flex-col gap-6 text-lg mt-8 font-medium">
-      <a href="index.html" class="text-slate-300 hover:text-white">Home</a>
-      <a href="research.html" class="text-slate-300 hover:text-white">Research Feed</a>
-      <a href="about.html" class="text-cyan-400">Lab Notes / About</a>
+      <a href="/" class="text-slate-300 hover:text-white">Home</a>
+      <a href="/research" class="text-slate-300 hover:text-white">Research Feed</a>
+      <a href="/about" class="text-cyan-400">Lab Notes / About</a>
       <a href="article.html" class="text-slate-300 hover:text-white">Article Reader</a>
     </div>
   </div>
@@ -436,9 +442,9 @@
         <div>
           <div class="font-mono text-white text-xs uppercase tracking-wider mb-3">Site Architecture</div>
           <ul class="space-y-2">
-            <li><a href="index.html" class="hover:text-cyan-400 transition">Home Hub</a></li>
-            <li><a href="research.html" class="hover:text-cyan-400 transition">Research Feed & Search</a></li>
-            <li><a href="about.html" class="hover:text-cyan-400 transition text-cyan-400">Lab Notes & Facilities</a></li>
+            <li><a href="/" class="hover:text-cyan-400 transition">Home Hub</a></li>
+            <li><a href="/research" class="hover:text-cyan-400 transition">Research Feed & Search</a></li>
+            <li><a href="/about" class="hover:text-cyan-400 transition text-cyan-400">Lab Notes & Facilities</a></li>
             <li><a href="article.html" class="hover:text-cyan-400 transition">Article Reader View</a></li>
           </ul>
         </div>

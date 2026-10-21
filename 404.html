@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orbital Coordinate Not Found (404) | BioGravity</title>
+  <meta name="robots" content="noindex, follow">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/css/styles.css">
+  <script>
+    // Smart redirect: if user visited with .html, redirect to clean URL
+    (function() {
+      var p = window.location.pathname;
+      if (p.endsWith('.html')) {
+        var clean = p.replace(/\.html$/, '');
+        window.location.replace(clean + window.location.search + window.location.hash);
+      }
+    })();
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col justify-between selection:bg-cyan-500/30 font-sans">
+  <div class="max-w-4xl mx-auto px-4 py-20 text-center">
+    <div class="text-7xl mb-6">🛰️</div>
+    <div class="badge-quantum text-xs mb-3 inline-block">Orbital Telemetry Notice</div>
+    <h1 class="text-4xl font-extrabold font-display text-white mb-4">404: Scientific Coordinate Desynchronized</h1>
+    <p class="text-slate-400 text-sm max-w-lg mx-auto mb-8 leading-relaxed">
+      The research dispatch or coordinate you requested does not exist at this orbital vector. It may have been relocated to a clean canonical address.
+    </p>
+    <div class="flex flex-wrap items-center justify-center gap-4">
+      <a href="/" class="px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-emerald-500 text-slate-950 font-bold text-xs font-mono shadow-[0_0_20px_rgba(6,182,212,0.4)] hover:brightness-110 transition">
+        Return to Orbital Command (Home) →
+      </a>
+      <a href="/research" class="px-6 py-3 rounded-xl bg-slate-900 border border-slate-700 text-slate-200 text-xs font-mono hover:text-white hover:border-cyan-400 transition">
+        Explore 11 Live Research Dispatches
+      </a>
+    </div>
+  </div>
+  <footer class="border-t border-slate-800 text-center py-6 text-xs text-slate-500 font-mono">
+    BioGravity Quantum Biotechnology Collective • <a href="/sitemap.xml" class="text-cyan-400 hover:underline">Sitemap</a>
+  </footer>
+</body>
+</html>

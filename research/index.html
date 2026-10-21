@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research Feed | BioGravity Orbital Science Dispatches</title>
+  <meta name="description" content="Browse and search peer-reviewed quantum biotechnology dispatches, microgravity genomics data, and orbital crystallography studies.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            slate: {
+              950: '#020617',
+              900: '#0f172a',
+              800: '#1e293b'
+            },
+            cyan: {
+              400: '#22d3ee',
+              500: '#06b6d4',
+              glow: '#38bdf8'
+            },
+            emerald: {
+              400: '#34d399',
+              500: '#10b981',
+              glow: '#059669'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Command Center & Visual FX (Aceternity / MagicUI Particles, Meteors, Spotlight) -->
+  <script defer src="js/command-center-fx.js"></script>
+  <script>
+    if (window.location.pathname.endsWith('.html')) {
+      var clean = window.location.pathname.replace(/\.html$/, '');
+      window.history.replaceState(null, '', clean + window.location.search + window.location.hash);
+    }
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 quantum-grid min-h-screen flex flex-col selection:bg-cyan-500/30 selection:text-cyan-300 relative overflow-x-hidden">
+
+  <!-- Interactive Cosmic Particle Field & Meteor Canvas (MagicUI / Aceternity FX) -->
+  <canvas id="cosmic-canvas" class="fixed inset-0 pointer-events-none z-0 opacity-40"></canvas>
+
+  <!-- Ambient Light Orbs -->
+  <div class="fixed top-0 left-1/3 w-[500px] h-[500px] ambient-glow-cyan pointer-events-none -z-10 blur-3xl"></div>
+  <div class="fixed bottom-10 right-10 w-[600px] h-[600px] ambient-glow-emerald pointer-events-none -z-10 blur-3xl"></div>
+
+  <!-- Orbital Command Telemetry Bar -->
+  <div class="bg-slate-950/90 border-b border-cyan-500/20 text-[11px] font-mono text-slate-400 px-4 py-1.5 flex items-center justify-between overflow-x-auto whitespace-nowrap z-50 relative">
+    <div class="flex items-center gap-4">
+      <div class="flex items-center gap-1.5 text-cyan-400">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span class="font-bold">ORBITAL STATION ALPHA // RESEARCH HUB</span>
+      </div>
+      <span class="text-slate-600">|</span>
+      <span>SYSTEM STATUS: <strong class="text-cyan-300">CORE ENCRYPTED</strong></span>
+      <span class="text-slate-600">|</span>
+      <span>INDEXED DISPATCHES: <strong id="total-count-header" class="text-emerald-300">9</strong></span>
+      <span class="text-slate-600">|</span>
+      <span>MICROGRAVITY: <span class="text-emerald-400">&lt; 0.08 &mu;g</span></span>
+    </div>
+    <div class="flex items-center gap-4 text-[10px]">
+      <span class="text-cyan-400/80">LATENCY: 12MS</span>
+      <span class="px-2 py-0.5 rounded bg-emerald-950/60 border border-emerald-500/30 text-emerald-300">FEED NOMINAL</span>
+    </div>
+  </div>
+
+  <!-- Global Header Navigation -->
+  <header class="sticky top-0 z-40 w-full backdrop-blur-xl bg-slate-950/75 border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="/" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500 to-emerald-500 p-[1.5px] shadow-[0_0_20px_rgba(6,182,212,0.4)] group-hover:shadow-[0_0_25px_rgba(52,211,153,0.6)] transition duration-300">
+          <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center relative overflow-hidden">
+            <span class="text-lg">⚛️</span>
+          </div>
+        </div>
+        <div>
+          <span class="font-display font-extrabold text-2xl tracking-tight bg-gradient-to-r from-white via-slate-100 to-slate-400 bg-clip-text text-transparent group-hover:to-cyan-300 transition">
+            BioGravity<span class="text-cyan-400">.</span>
+          </span>
+          <span class="block text-[10px] font-mono tracking-widest text-emerald-400 -mt-1 uppercase">Quantum Biotech Hub</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="/" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Home</a>
+        <a href="/research" class="nav-link py-2 text-cyan-400 border-b-2 border-cyan-400 font-semibold transition">Research Feed</a>
+        <a href="/world-space-week-2026" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Space Week 2026</a>
+        <a href="/molecular-biology-research" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Molecular Biology</a>
+        <a href="/about" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Lab Notes / About</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg bg-slate-900 border border-slate-700 text-slate-300 hover:text-white">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-drawer" class="hidden fixed inset-0 z-50 bg-slate-950/95 backdrop-blur-2xl flex flex-col p-6">
+    <div class="flex justify-between items-center pb-6 border-b border-slate-800">
+      <div class="font-display font-bold text-xl text-white">BioGravity Hub</div>
+      <button id="close-drawer-btn" class="text-slate-400 hover:text-white p-2">✕</button>
+    </div>
+    <div class="flex flex-col gap-6 text-lg mt-8 font-medium">
+      <a href="/" class="text-slate-300 hover:text-white">Home</a>
+      <a href="/research" class="text-cyan-400">Research Feed</a>
+      <a href="/about" class="text-slate-300 hover:text-white">Lab Notes / About</a>
+      <a href="article.html" class="text-slate-300 hover:text-white">Article Reader</a>
+    </div>
+  </div>
+
+  <!-- RESEARCH HERO & LIVE SEARCH SECTION -->
+  <main class="flex-grow py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Page Title & Header -->
+      <div class="mb-10">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900/90 border border-cyan-500/30 text-cyan-300 text-xs font-mono mb-4">
+          <span>📡</span> Real-Time Orbital Research Dispatches
+        </div>
+        <h1 class="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight">
+          Quantum Bio-Repository
+        </h1>
+        <p class="text-slate-400 text-sm sm:text-base mt-2 max-w-2xl leading-relaxed">
+          Explore breakthrough peer-reviewed findings compiled from orbital microgravity laboratories. Search across protocols, quantum mechanisms, and orbital data sets.
+        </p>
+      </div>
+
+      <!-- Private Scientific Repository Status Bar -->
+      <div class="mb-8 p-4 rounded-2xl glass-panel border-cyan-500/20 bg-slate-900/60 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-lg">
+            ⚛️
+          </div>
+          <div>
+            <div class="text-xs font-mono text-white flex items-center gap-2">
+              <span>REPOSITORY CORE: <strong class="text-cyan-400">LEO ORBITAL SCIENCE ARCHIVE</strong></span>
+              <span class="px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-[10px] text-emerald-300">
+                ● Verified Peer-Review
+              </span>
+            </div>
+            <div class="text-[11px] text-slate-400 font-mono mt-0.5">
+              Sub-angstrom crystallography datasets and quantum kinetics protocols compiled continuously.
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <div class="px-3 py-1.5 rounded-xl bg-slate-950/80 border border-slate-800 text-[11px] font-mono text-cyan-300">
+            Open Access CC-BY 4.0
+          </div>
+        </div>
+      </div>
+
+      <!-- SEARCH & FILTER TOOLBAR -->
+      <div class="glass-panel rounded-2xl p-6 border-slate-800 mb-10 space-y-6">
+        
+        <!-- Search Bar & Sort -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
+          
+          <div class="md:col-span-8 relative">
+            <input 
+              type="text" 
+              id="live-search-input" 
+              placeholder="Filter by keyword, quantum mechanism, author, or tag (e.g. CRISPR, tunneling, crystal)..." 
+              class="w-full bg-slate-950 border border-slate-700/80 rounded-xl px-4 py-3 pl-11 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition font-sans"
+            >
+            <span class="absolute left-4 top-3.5 text-slate-400 text-sm">🔍</span>
+            <button id="clear-search-btn" class="hidden absolute right-3.5 top-3 text-slate-400 hover:text-white text-xs bg-slate-800 px-2 py-1 rounded-md">
+              Clear
+            </button>
+          </div>
+
+          <div class="md:col-span-4 flex items-center gap-3">
+            <div class="text-xs font-mono text-slate-400 whitespace-nowrap">SORT:</div>
+            <select id="sort-select" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-3 text-xs text-slate-200 font-mono focus:outline-none focus:border-cyan-400">
+              <option value="newest" selected>Newest Dispatches</option>
+              <option value="impact">Highest Impact Factor</option>
+              <option value="readtime">Read Time (Shortest)</option>
+              <option value="title">Title (Alphabetical)</option>
+              <option value="oldest">Earliest Published</option>
+            </select>
+
+            <!-- View Mode Switch -->
+            <div class="flex items-center bg-slate-950 border border-slate-700 rounded-xl p-1">
+              <button id="view-grid-btn" class="p-2 rounded-lg bg-slate-800 text-cyan-400 text-xs" title="Grid View">
+                ⊞
+              </button>
+              <button id="view-list-btn" class="p-2 rounded-lg text-slate-400 hover:text-white text-xs" title="Telemetry List View">
+                ☰
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Dynamic Category Pills -->
+        <div>
+          <div class="text-xs font-mono text-slate-400 uppercase tracking-wider mb-2.5">
+            Filter by Scientific Discipline:
+          </div>
+          <div id="category-pills-container" class="flex flex-wrap gap-2">
+            <!-- Populated dynamically via JS -->
+            <button class="px-3.5 py-1.5 rounded-full text-xs font-mono bg-cyan-500/20 text-cyan-300 border border-cyan-400 shadow-[0_0_12px_rgba(6,182,212,0.2)]">
+              All Categories
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Feed Results Header -->
+      <div class="flex justify-between items-center mb-6 text-xs font-mono text-slate-400">
+        <div>
+          SHOWING: <strong id="results-count" class="text-white">11</strong> QUANTUM DISPATCHES
+        </div>
+        <div id="active-filter-label" class="text-cyan-400 hidden">
+          Filtered by: <span id="active-filter-text"></span>
+        </div>
+      </div>
+
+      <!-- ARTICLES GRID CONTAINER -->
+      <div id="articles-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <article class="spotlight-card rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 flex flex-col group justify-between transition">
+      <div class="relative h-48 overflow-hidden bg-slate-900">
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Orbital telemetry visualization of relativistic bio-oscillator waveforms against Earth limb glow" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-80 group-hover:opacity-100" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+        <span class="absolute top-3 left-3 badge-quantum text-[10px]">
+          Space Physics &amp; Biosensing
+        </span>
+        <span class="absolute top-3 right-3 text-[11px] font-mono text-slate-300 bg-slate-950/80 px-2.5 py-0.5 rounded-full border border-slate-700">
+          15 min read
+        </span>
+      </div>
+      
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-mono text-slate-400 mb-2">
+            <span>October 21, 2026</span>
+            <span>•</span>
+            <span class="text-cyan-400 font-medium">Dr. Marcus Thorne</span>
+          </div>
+          <h2 class="font-display font-bold text-lg text-white mb-3 group-hover:text-cyan-300 transition line-clamp-2">
+            <a href="/articles/relativistic-time-dilation-and-mitochondrial-aging-clocks">Relativistic Time Dilation and Mitochondrial Bio-Oscillator Desynchronization in Deep Space Travel</a>
+          </h2>
+          <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed mb-4">
+            Investigating how high-velocity orbital Lorentz factors and gravitational potential gradients affect eukaryotic mitochondrial redox oscillations and cellular circadian pacing.
+          </p>
+
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Time Dilation</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Mitochondrial Oscillations</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Relativistic Biophysics</span>
+            
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+          <div class="flex items-center gap-1.5 text-xs font-mono text-emerald-400">
+            <span>DOI:</span>
+            <span class="text-slate-400 text-[10px]">s41586-2026-99482</span>
+          </div>
+          <a href="/articles/relativistic-time-dilation-and-mitochondrial-aging-clocks" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 font-semibold flex items-center gap-1">
+            Read Dispatch →
+          </a>
+        </div>
+      </div>
+    </article>
+  
+
+    <article class="spotlight-card rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 flex flex-col group justify-between transition">
+      <div class="relative h-48 overflow-hidden bg-slate-900">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Fluid meniscus and glowing microfluidic channel in zero gravity laboratory" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-80 group-hover:opacity-100" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+        <span class="absolute top-3 left-3 badge-quantum text-[10px]">
+          Microgravity Fluid Dynamics
+        </span>
+        <span class="absolute top-3 right-3 text-[11px] font-mono text-slate-300 bg-slate-950/80 px-2.5 py-0.5 rounded-full border border-slate-700">
+          14 min read
+        </span>
+      </div>
+      
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-mono text-slate-400 mb-2">
+            <span>October 17, 2026</span>
+            <span>•</span>
+            <span class="text-cyan-400 font-medium">Dr. Nikolai Sterling</span>
+          </div>
+          <h2 class="font-display font-bold text-lg text-white mb-3 group-hover:text-cyan-300 transition line-clamp-2">
+            <a href="/articles/zero-g-capillary-fluidics-and-surface-tension-bioreactors">Zero-G Capillary Fluidics and Surface Tension Bioreactors: Suppressing Rayleigh-Bénard Convective Turbulence in Cell Culture</a>
+          </h2>
+          <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed mb-4">
+            Discover how surface tension and capillary forces replace gravity in orbital bioreactors, eliminating convective turbulence and optimizing delicate cell cultures.
+          </p>
+
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Capillary Fluidics</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Fluid Dynamics</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Microgravity</span>
+            
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+          <div class="flex items-center gap-1.5 text-xs font-mono text-emerald-400">
+            <span>DOI:</span>
+            <span class="text-slate-400 text-[10px]">s41586-2026-99363</span>
+          </div>
+          <a href="/articles/zero-g-capillary-fluidics-and-surface-tension-bioreactors" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 font-semibold flex items-center gap-1">
+            Read Dispatch →
+          </a>
+        </div>
+      </div>
+    </article>
+  
+
+    <article class="spotlight-card rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 flex flex-col group justify-between transition">
+      <div class="relative h-48 overflow-hidden bg-slate-900">
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Earth&#039;s ionospheric airglow and auroral plasma currents seen from orbital space station" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-80 group-hover:opacity-100" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+        <span class="absolute top-3 left-3 badge-quantum text-[10px]">
+          Space Physics &amp; Biosensing
+        </span>
+        <span class="absolute top-3 right-3 text-[11px] font-mono text-slate-300 bg-slate-950/80 px-2.5 py-0.5 rounded-full border border-slate-700">
+          14 min read
+        </span>
+      </div>
+      
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-mono text-slate-400 mb-2">
+            <span>October 17, 2026</span>
+            <span>•</span>
+            <span class="text-cyan-400 font-medium">Dr. Marcus Thorne</span>
+          </div>
+          <h2 class="font-display font-bold text-lg text-white mb-3 group-hover:text-cyan-300 transition line-clamp-2">
+            <a href="/articles/debye-shielding-and-plasma-sheath-dynamics-in-spacecraft-biosensing">Debye Shielding and Plasma Sheath Dynamics in Spacecraft Biosensing Arrays Operating in the Low Earth Orbit Ionosphere</a>
+          </h2>
+          <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed mb-4">
+            Explore how ionospheric plasma sheaths and Debye screening lengths govern nano-electronic biosensor sensitivity on orbital spacecraft and space stations.
+          </p>
+
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Space Physics</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Debye Shielding</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Plasma Dynamics</span>
+            
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+          <div class="flex items-center gap-1.5 text-xs font-mono text-emerald-400">
+            <span>DOI:</span>
+            <span class="text-slate-400 text-[10px]">s41586-2026-99014</span>
+          </div>
+          <a href="/articles/debye-shielding-and-plasma-sheath-dynamics-in-spacecraft-biosensing" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 font-semibold flex items-center gap-1">
+            Read Dispatch →
+          </a>
+        </div>
+      </div>
+    </article>
+  
+
+    <article class="spotlight-card rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 flex flex-col group justify-between transition">
+      <div class="relative h-48 overflow-hidden bg-slate-900">
+        <img src="https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Aurora borealis and geomagnetic field lines interacting with Earth&#039;s magnetosphere, illustrating radical pair magnetoreception in cryptochromes" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-80 group-hover:opacity-100" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+        <span class="absolute top-3 left-3 badge-quantum text-[10px]">
+          Quantum Enzymology
+        </span>
+        <span class="absolute top-3 right-3 text-[11px] font-mono text-slate-300 bg-slate-950/80 px-2.5 py-0.5 rounded-full border border-slate-700">
+          14 min read
+        </span>
+      </div>
+      
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-mono text-slate-400 mb-2">
+            <span>October 16, 2026</span>
+            <span>•</span>
+            <span class="text-cyan-400 font-medium">Dr. Elena Rostova</span>
+          </div>
+          <h2 class="font-display font-bold text-lg text-white mb-3 group-hover:text-cyan-300 transition line-clamp-2">
+            <a href="/articles/radical-pair-spin-coherence-and-magnetoreception-in-human-cryptochrome-4-photore">Radical Pair Spin Coherence and Magnetoreception in Human Cryptochrome 4 Photoreceptors: Orbital Evidence for Quantum Biology in Spaceflight</a>
+          </h2>
+          <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed mb-4">
+            Conducted aboard BioGravity Station under 0.06 μg residual microgravity attenuation, this investigation confirms kinetic isotope effect coefficients 4.7× above classical Arrhenius predictions. Advanced cryptochrome and radical pair mechanism methodologies validate the quantum mechanical hypothesis, establishing a rigorous framework for next-generation space-based biotechnology.
+          </p>
+
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Quantum Biology</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Cryptochrome 4</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Magnetoreception</span>
+            
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+          <div class="flex items-center gap-1.5 text-xs font-mono text-emerald-400">
+            <span>DOI:</span>
+            <span class="text-slate-400 text-[10px]">s41586-2026-85731</span>
+          </div>
+          <a href="/articles/radical-pair-spin-coherence-and-magnetoreception-in-human-cryptochrome-4-photore" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 font-semibold flex items-center gap-1">
+            Read Dispatch →
+          </a>
+        </div>
+      </div>
+    </article>
+  
+
+    <article class="spotlight-card rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 flex flex-col group justify-between transition">
+      <div class="relative h-48 overflow-hidden bg-slate-900">
+        <img src="https://images.unsplash.com/photo-1530497610245-94d3c16cda28?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Microscopic fluorescent rendering of chromosome telomeres and molecular peptide repair complexes under radiation stress" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-80 group-hover:opacity-100" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+        <span class="absolute top-3 left-3 badge-quantum text-[10px]">
+          Cosmic Radioprotection
+        </span>
+        <span class="absolute top-3 right-3 text-[11px] font-mono text-slate-300 bg-slate-950/80 px-2.5 py-0.5 rounded-full border border-slate-700">
+          15 min read
+        </span>
+      </div>
+      
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-mono text-slate-400 mb-2">
+            <span>October 16, 2026</span>
+            <span>•</span>
+            <span class="text-cyan-400 font-medium">Dr. Fatima Zahra</span>
+          </div>
+          <h2 class="font-display font-bold text-lg text-white mb-3 group-hover:text-cyan-300 transition line-clamp-2">
+            <a href="/articles/synthetic-poly-adp-metallo-peptides-for-telomeric-radioprotection-in-deep-space-">Synthetic Poly-ADP Metallo-Peptides for Telomeric Radioprotection in Deep-Space Environments: Molecular Architecture and Radiolytic Shielding</a>
+          </h2>
+          <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed mb-4">
+            Conducted aboard BioGravity Station under controlled 0.04 μg microgravity with magnetic shielding to 0.12 nT, this investigation confirms diffraction resolution improved from 1.85 Å (terrestrial) to 0.82 Å (orbital). Advanced cosmic radiation and telomere protection methodologies validate the quantum mechanical hypothesis, establishing a rigorous framework for next-generation space-based biotechnology.
+          </p>
+
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Cosmic Radioprotection</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Telomeres</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Metallo-Peptides</span>
+            
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+          <div class="flex items-center gap-1.5 text-xs font-mono text-emerald-400">
+            <span>DOI:</span>
+            <span class="text-slate-400 text-[10px]">s41586-2026-95531</span>
+          </div>
+          <a href="/articles/synthetic-poly-adp-metallo-peptides-for-telomeric-radioprotection-in-deep-space-" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 font-semibold flex items-center gap-1">
+            Read Dispatch →
+          </a>
+        </div>
+      </div>
+    </article>
+  
+
+    <article class="spotlight-card rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 flex flex-col group justify-between transition">
+      <div class="relative h-48 overflow-hidden bg-slate-900">
+        <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="High-resolution 3D cellular spheroid cluster resembling an acoustically levitated cardiac organoid under microgravity" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-80 group-hover:opacity-100" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+        <span class="absolute top-3 left-3 badge-quantum text-[10px]">
+          Microgravity Genomics
+        </span>
+        <span class="absolute top-3 right-3 text-[11px] font-mono text-slate-300 bg-slate-950/80 px-2.5 py-0.5 rounded-full border border-slate-700">
+          14 min read
+        </span>
+      </div>
+      
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-mono text-slate-400 mb-2">
+            <span>October 16, 2026</span>
+            <span>•</span>
+            <span class="text-cyan-400 font-medium">Dr. Aris Thorne</span>
+          </div>
+          <h2 class="font-display font-bold text-lg text-white mb-3 group-hover:text-cyan-300 transition line-clamp-2">
+            <a href="/articles/acoustic-levitation-and-scaffold-free-vascularized-cardiac-organoid-bioprinting-">Acoustic Levitation and Scaffold-Free Vascularized Cardiac Organoid Bioprinting in Zero-G: Engineering Functional Myocardial Tissues</a>
+          </h2>
+          <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed mb-4">
+            Conducted aboard BioGravity Station under sub-0.08 μg weightlessness with &lt; 5 Hz vibrational noise floor, this investigation confirms coherence lifetimes exceeding 384 ps — an order of magnitude above terrestrial baseline. Advanced 3D bioprinting and acoustic levitation methodologies validate the quantum mechanical hypothesis, establishing a rigorous framework for next-generation space-based biotechnology.
+          </p>
+
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#3D Bioprinting</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Acoustic Levitation</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Cardiac Organoids</span>
+            
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+          <div class="flex items-center gap-1.5 text-xs font-mono text-emerald-400">
+            <span>DOI:</span>
+            <span class="text-slate-400 text-[10px]">s41586-2026-43711</span>
+          </div>
+          <a href="/articles/acoustic-levitation-and-scaffold-free-vascularized-cardiac-organoid-bioprinting-" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 font-semibold flex items-center gap-1">
+            Read Dispatch →
+          </a>
+        </div>
+      </div>
+    </article>
+  
+
+    <article class="spotlight-card rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 flex flex-col group justify-between transition">
+      <div class="relative h-48 overflow-hidden bg-slate-900">
+        <img src="https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Macromolecular protein crystallization refraction microscopy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-80 group-hover:opacity-100" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+        <span class="absolute top-3 left-3 badge-quantum text-[10px]">
+          Protein Crystallography
+        </span>
+        <span class="absolute top-3 right-3 text-[11px] font-mono text-slate-300 bg-slate-950/80 px-2.5 py-0.5 rounded-full border border-slate-700">
+          8 min read
+        </span>
+      </div>
+      
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-mono text-slate-400 mb-2">
+            <span>October 14, 2026</span>
+            <span>•</span>
+            <span class="text-cyan-400 font-medium">Dr. Nadia Al-Mansoor</span>
+          </div>
+          <h2 class="font-display font-bold text-lg text-white mb-3 group-hover:text-cyan-300 transition line-clamp-2">
+            <a href="/articles/sub-angstrom-macromolecular-crystallography-of-membrane-transporters-in-orbital-">Sub-Angstrom Macromolecular Crystallography of Membrane Transporters in Orbital Microgravity: Orbital Evidence for Non-Classical Molecular Dynamics</a>
+          </h2>
+          <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed mb-4">
+            Conducted aboard BioGravity Station under sub-0.08 μg weightlessness with &lt; 5 Hz vibrational noise floor, this investigation confirms coherence lifetimes exceeding 384 ps — an order of magnitude above terrestrial baseline. Advanced protein crystallography and microgravity methodologies validate the quantum mechanical hypothesis, establishing a rigorous framework for next-generation space-based biotechnology.
+          </p>
+
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#protein crystallography</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#microgravity</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#CFTR channel</span>
+            
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+          <div class="flex items-center gap-1.5 text-xs font-mono text-emerald-400">
+            <span>DOI:</span>
+            <span class="text-slate-400 text-[10px]">s41586-2026-24964</span>
+          </div>
+          <a href="/articles/sub-angstrom-macromolecular-crystallography-of-membrane-transporters-in-orbital-" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 font-semibold flex items-center gap-1">
+            Read Dispatch →
+          </a>
+        </div>
+      </div>
+    </article>
+  
+
+    <article class="spotlight-card rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 flex flex-col group justify-between transition">
+      <div class="relative h-48 overflow-hidden bg-slate-900">
+        <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Quantum biotechnology laboratory spectrophotometer" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-80 group-hover:opacity-100" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+        <span class="absolute top-3 left-3 badge-quantum text-[10px]">
+          Quantum Enzymology
+        </span>
+        <span class="absolute top-3 right-3 text-[11px] font-mono text-slate-300 bg-slate-950/80 px-2.5 py-0.5 rounded-full border border-slate-700">
+          8 min read
+        </span>
+      </div>
+      
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-mono text-slate-400 mb-2">
+            <span>October 14, 2026</span>
+            <span>•</span>
+            <span class="text-cyan-400 font-medium">Dr. Elena Rostova</span>
+          </div>
+          <h2 class="font-display font-bold text-lg text-white mb-3 group-hover:text-cyan-300 transition line-clamp-2">
+            <a href="/articles/non-thermal-quantum-proton-tunneling-in-crispr-cas9-catalytic-triads-orbital-evi">Non-Thermal Quantum Proton Tunneling in CRISPR-Cas9 Catalytic Triads: Orbital Evidence for Non-Classical Molecular Dynamics</a>
+          </h2>
+          <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed mb-4">
+            Conducted aboard BioGravity Station under 0.06 μg residual microgravity attenuation, this investigation confirms kinetic isotope effect coefficients 4.7× above classical Arrhenius predictions. Advanced CRISPR-Cas9 and quantum tunneling methodologies validate the quantum mechanical hypothesis, establishing a rigorous framework for next-generation space-based biotechnology.
+          </p>
+
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#CRISPR-Cas9</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#quantum tunneling</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#kinetic isotope effect</span>
+            
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+          <div class="flex items-center gap-1.5 text-xs font-mono text-emerald-400">
+            <span>DOI:</span>
+            <span class="text-slate-400 text-[10px]">s41586-2026-28405</span>
+          </div>
+          <a href="/articles/non-thermal-quantum-proton-tunneling-in-crispr-cas9-catalytic-triads-orbital-evi" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 font-semibold flex items-center gap-1">
+            Read Dispatch →
+          </a>
+        </div>
+      </div>
+    </article>
+  
+
+    <article class="spotlight-card rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 flex flex-col group justify-between transition">
+      <div class="relative h-48 overflow-hidden bg-slate-900">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Orbital microgravity silicon detector and telemetry" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-80 group-hover:opacity-100" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+        <span class="absolute top-3 left-3 badge-quantum text-[10px]">
+          Microgravity Genomics
+        </span>
+        <span class="absolute top-3 right-3 text-[11px] font-mono text-slate-300 bg-slate-950/80 px-2.5 py-0.5 rounded-full border border-slate-700">
+          7 min read
+        </span>
+      </div>
+      
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-mono text-slate-400 mb-2">
+            <span>October 14, 2026</span>
+            <span>•</span>
+            <span class="text-cyan-400 font-medium">Dr. Kira Vance &amp; Dr. S. K. Takahashi</span>
+          </div>
+          <h2 class="font-display font-bold text-lg text-white mb-3 group-hover:text-cyan-300 transition line-clamp-2">
+            <a href="/articles/acoustic-levitation-and-scaffold-free-3d-organoid-bioprinting-under-low-earth-or">Acoustic Levitation and Scaffold-Free 3D Organoid Bioprinting Under Low Earth Orbit Microgravity Conditions</a>
+          </h2>
+          <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed mb-4">
+            Orbital spectroscopic investigation confirms non-classical reaction kinetics in microgravity genomics. Microgravity attenuation eliminates convective plumes, elevating coherent states and structural fidelity.
+          </p>
+
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#3D bioprinting</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#acoustic levitation</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#cardiac organoids</span>
+            
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+          <div class="flex items-center gap-1.5 text-xs font-mono text-emerald-400">
+            <span>DOI:</span>
+            <span class="text-slate-400 text-[10px]">s41586-2026-36805</span>
+          </div>
+          <a href="/articles/acoustic-levitation-and-scaffold-free-3d-organoid-bioprinting-under-low-earth-or" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 font-semibold flex items-center gap-1">
+            Read Dispatch →
+          </a>
+        </div>
+      </div>
+    </article>
+  
+
+    <article class="spotlight-card rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 flex flex-col group justify-between transition">
+      <div class="relative h-48 overflow-hidden bg-slate-900">
+        <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Deep-space radiation exposure bay and biological cleanroom" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-80 group-hover:opacity-100" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+        <span class="absolute top-3 left-3 badge-quantum text-[10px]">
+          Protein Crystallography
+        </span>
+        <span class="absolute top-3 right-3 text-[11px] font-mono text-slate-300 bg-slate-950/80 px-2.5 py-0.5 rounded-full border border-slate-700">
+          7 min read
+        </span>
+      </div>
+      
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-mono text-slate-400 mb-2">
+            <span>October 14, 2026</span>
+            <span>•</span>
+            <span class="text-cyan-400 font-medium">Dr. Kira Vance &amp; Dr. S. K. Takahashi</span>
+          </div>
+          <h2 class="font-display font-bold text-lg text-white mb-3 group-hover:text-cyan-300 transition line-clamp-2">
+            <a href="/articles/sub-angstrom-macromolecular-crystallography-in-orbital-microgravity-under-low-ea">Sub-Angstrom Macromolecular Crystallography in Orbital Microgravity Under Low Earth Orbit Microgravity Conditions</a>
+          </h2>
+          <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed mb-4">
+            Orbital spectroscopic investigation confirms non-classical reaction kinetics in protein crystallography. Microgravity attenuation eliminates convective plumes, elevating coherent states and structural fidelity.
+          </p>
+
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#protein crystallography</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#microgravity</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#CFTR channel</span>
+            
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+          <div class="flex items-center gap-1.5 text-xs font-mono text-emerald-400">
+            <span>DOI:</span>
+            <span class="text-slate-400 text-[10px]">s41586-2026-55348</span>
+          </div>
+          <a href="/articles/sub-angstrom-macromolecular-crystallography-in-orbital-microgravity-under-low-ea" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 font-semibold flex items-center gap-1">
+            Read Dispatch →
+          </a>
+        </div>
+      </div>
+    </article>
+  
+
+    <article class="spotlight-card rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 flex flex-col group justify-between transition">
+      <div class="relative h-48 overflow-hidden bg-slate-900">
+        <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Acoustic levitation 3D cellular organoid array" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-80 group-hover:opacity-100" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+        <span class="absolute top-3 left-3 badge-quantum text-[10px]">
+          Quantum Enzymology
+        </span>
+        <span class="absolute top-3 right-3 text-[11px] font-mono text-slate-300 bg-slate-950/80 px-2.5 py-0.5 rounded-full border border-slate-700">
+          7 min read
+        </span>
+      </div>
+      
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-mono text-slate-400 mb-2">
+            <span>October 14, 2026</span>
+            <span>•</span>
+            <span class="text-cyan-400 font-medium">Dr. Kira Vance &amp; Dr. S. K. Takahashi</span>
+          </div>
+          <h2 class="font-display font-bold text-lg text-white mb-3 group-hover:text-cyan-300 transition line-clamp-2">
+            <a href="/articles/non-thermal-quantum-tunneling-in-crispr-catalytic-triads-under-low-earth-orbit-m">Non-Thermal Quantum Tunneling in CRISPR Catalytic Triads Under Low Earth Orbit Microgravity Conditions</a>
+          </h2>
+          <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed mb-4">
+            Orbital spectroscopic investigation confirms non-classical reaction kinetics in quantum enzymology. Microgravity attenuation eliminates convective plumes, elevating coherent states and structural fidelity.
+          </p>
+
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#CRISPR-Cas9</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#quantum tunneling</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#kinetic isotope effect</span>
+            
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+          <div class="flex items-center gap-1.5 text-xs font-mono text-emerald-400">
+            <span>DOI:</span>
+            <span class="text-slate-400 text-[10px]">s41586-2026-72197</span>
+          </div>
+          <a href="/articles/non-thermal-quantum-tunneling-in-crispr-catalytic-triads-under-low-earth-orbit-m" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 font-semibold flex items-center gap-1">
+            Read Dispatch →
+          </a>
+        </div>
+      </div>
+    </article>
+  
+      </div>
+
+      <!-- Empty State -->
+      <div id="empty-state" class="hidden p-12 text-center rounded-2xl glass-panel border-slate-800 max-w-md mx-auto my-12">
+        <div class="text-4xl mb-4">🔍</div>
+        <h3 class="font-display font-bold text-lg text-white mb-2">No Matching Dispatches</h3>
+        <p class="text-xs text-slate-400 leading-relaxed mb-6">
+          No orbital research articles matched your current query or category filter. Try clearing your search parameters.
+        </p>
+        <button id="reset-filters-btn" class="px-4 py-2 rounded-xl text-xs font-mono bg-cyan-500/20 border border-cyan-400 text-cyan-300 hover:bg-cyan-500/30 transition">
+          ↺ Reset All Filters
+        </button>
+      </div>
+
+      <!-- Peer-Review Submission Callout Card -->
+      <div class="mt-20 glass-panel rounded-2xl p-8 border-slate-800 relative overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-8 space-y-3">
+            <div class="badge-quantum text-xs">Orbital Science Dispatches</div>
+            <h3 class="font-display font-bold text-2xl text-white">
+              Peer-Reviewed Quantum Biotechnology Archives
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+              Every research dispatch published in the BioGravity repository undergoes dual ground-control verification and automated cryo-EM metadata validation before indexing into the open-access archive.
+            </p>
+            <div class="pt-2 flex flex-wrap gap-2 text-[11px] font-mono text-slate-400">
+              <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-700">Archived Disciplines:</span>
+              <span class="text-cyan-400">Quantum Enzymology</span>
+              <span class="text-slate-600">•</span>
+              <span class="text-cyan-400">Protein Crystallography</span>
+              <span class="text-slate-600">•</span>
+              <span class="text-cyan-400">3D Microgravity Bioprinting</span>
+              <span class="text-slate-600">•</span>
+              <span class="text-cyan-400">Cosmic Radioprotection</span>
+            </div>
+          </div>
+
+          <div class="lg:col-span-4 flex justify-start lg:justify-end">
+            <a href="/about" class="px-6 py-3.5 rounded-xl font-mono text-xs font-semibold bg-gradient-to-r from-cyan-500 to-emerald-500 text-slate-950 hover:from-cyan-400 hover:to-emerald-400 transition shadow-[0_0_20px_rgba(6,182,212,0.3)]">
+              Learn About Mission Facilities →
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="border-t border-slate-800 bg-slate-950 text-slate-400 text-xs py-12 mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div class="space-y-3">
+          <div class="flex items-center gap-2">
+            <span class="text-lg">⚛️</span>
+            <span class="font-display font-bold text-white text-base">BioGravity</span>
+          </div>
+          <p class="text-slate-400 leading-relaxed text-xs">
+            Global quantum biotechnology research collective operating orbital microgravity laboratories in Low Earth Orbit (LEO).
+          </p>
+        </div>
+
+        <div>
+          <div class="font-mono text-white text-xs uppercase tracking-wider mb-3">Site Architecture</div>
+          <ul class="space-y-2">
+            <li><a href="/" class="hover:text-cyan-400 transition">Home Hub</a></li>
+            <li><a href="/research" class="hover:text-cyan-400 transition text-cyan-400">Research Feed & Search</a></li>
+            <li><a href="/about" class="hover:text-cyan-400 transition">Lab Notes & Facilities</a></li>
+            <li><a href="article.html" class="hover:text-cyan-400 transition">Article Reader View</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="font-mono text-white text-xs uppercase tracking-wider mb-3">Live Filters</div>
+          <ul class="space-y-2 text-slate-400 text-xs">
+            <li>Quantum Enzymology</li>
+            <li>Protein Crystallography</li>
+            <li>Microgravity Genomics</li>
+            <li>Cosmic Radioprotection</li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="font-mono text-white text-xs uppercase tracking-wider mb-3">Open Science</div>
+          <p class="text-xs text-slate-400 leading-relaxed mb-3">
+            All orbital experimental telemetry is published with CC-BY 4.0 open science attribution.
+          </p>
+          <div class="text-[11px] font-mono text-emerald-400 flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Public Science Index Verified
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-6 border-t border-slate-800/80 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] font-mono text-slate-500">
+        <div>© 2026 BioGravity Institute for Quantum Biotechnology. All rights reserved.</div>
+        <div>LEO Mission 04 • Orbital Quantum Repository</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/database.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Feed State
+      let activeCategory = 'All';
+      let activeQuery = '';
+      let activeSort = 'newest';
+      let currentViewMode = 'grid'; // 'grid' | 'list'
+
+      // DOM Elements
+      const searchInput = document.getElementById('live-search-input');
+      const clearSearchBtn = document.getElementById('clear-search-btn');
+      const sortSelect = document.getElementById('sort-select');
+      const categoryPillsContainer = document.getElementById('category-pills-container');
+      const articlesContainer = document.getElementById('articles-container');
+      const emptyState = document.getElementById('empty-state');
+      const resultsCount = document.getElementById('results-count');
+      const totalCountHeader = document.getElementById('total-count-header');
+      const resetFiltersBtn = document.getElementById('reset-filters-btn');
+      const viewGridBtn = document.getElementById('view-grid-btn');
+      const viewListBtn = document.getElementById('view-list-btn');
+
+      // Check URL query parameters on load (e.g., ?q=crispr or ?category=Enzymology)
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('q')) {
+        activeQuery = urlParams.get('q');
+        if (searchInput) searchInput.value = activeQuery;
+      }
+      if (urlParams.get('category')) {
+        activeCategory = urlParams.get('category');
+      }
+
+      // Render Categories Pills
+      function renderCategoryPills() {
+        if (!window.BioGravityDB || !categoryPillsContainer) return;
+        const categories = window.BioGravityDB.getCategories();
+
+        categoryPillsContainer.innerHTML = categories.map(cat => {
+          const isActive = cat.toLowerCase() === activeCategory.toLowerCase();
+          return `
+            <button 
+              class="category-pill px-3.5 py-1.5 rounded-full text-xs font-mono transition ${
+                isActive 
+                  ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-400 shadow-[0_0_12px_rgba(6,182,212,0.25)] font-semibold' 
+                  : 'bg-slate-900 border border-slate-700/80 text-slate-400 hover:text-white hover:border-slate-500'
+              }"
+              data-category="${cat}"
+            >
+              ${cat}
+            </button>
+          `;
+        }).join('');
+
+        // Attach listeners
+        categoryPillsContainer.querySelectorAll('.category-pill').forEach(btn => {
+          btn.addEventListener('click', () => {
+            activeCategory = btn.getAttribute('data-category');
+            renderCategoryPills();
+            applyFilter();
+          });
+        });
+      }
+
+      // Apply Search, Filter, Sort and Render Articles
+      function applyFilter() {
+        if (!window.BioGravityDB) return;
+
+        const results = window.BioGravityDB.searchArticles({
+          query: activeQuery,
+          category: activeCategory,
+          sort: activeSort
+        });
+
+        // Update counts
+        if (resultsCount) resultsCount.textContent = results.length;
+        if (totalCountHeader) totalCountHeader.textContent = window.BioGravityDB.getArticles().length;
+
+        // Toggle clear search button
+        if (clearSearchBtn) {
+          clearSearchBtn.classList.toggle('hidden', !activeQuery);
+        }
+
+        // Handle empty state
+        if (results.length === 0) {
+          articlesContainer.innerHTML = '';
+          emptyState.classList.remove('hidden');
+          return;
+        } else {
+          emptyState.classList.add('hidden');
+        }
+
+        // Render articles based on view mode
+        if (currentViewMode === 'grid') {
+          articlesContainer.className = 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6';
+          articlesContainer.innerHTML = results.map(article => `
+            <article class="spotlight-card rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 flex flex-col group justify-between transition">
+              <div class="relative h-48 overflow-hidden bg-slate-900">
+                <img src="${article.cover}" alt="${article.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-80 group-hover:opacity-100" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+                <span class="absolute top-3 left-3 badge-quantum text-[10px]">
+                  ${article.category}
+                </span>
+                <span class="absolute top-3 right-3 text-[11px] font-mono text-slate-300 bg-slate-950/80 px-2.5 py-0.5 rounded-full border border-slate-700">
+                  ${article.readtime}
+                </span>
+              </div>
+              
+              <div class="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center gap-2 text-xs font-mono text-slate-400 mb-2">
+                    <span>${article.date}</span>
+                    <span>•</span>
+                    <span class="text-cyan-400 font-medium">${article.author}</span>
+                  </div>
+                  <h2 class="font-display font-bold text-lg text-white mb-3 group-hover:text-cyan-300 transition line-clamp-2">
+                    ${article.title}
+                  </h2>
+                  <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed mb-4">
+                    ${article.summary}
+                  </p>
+
+                  <div class="flex flex-wrap gap-1.5 mb-4">
+                    ${(article.tags || []).slice(0, 3).map(tag => `
+                      <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#${tag}</span>
+                    `).join('')}
+                  </div>
+                </div>
+
+                <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                  <div class="flex items-center gap-1.5 text-xs font-mono text-emerald-400">
+                    <span>DOI:</span>
+                    <span class="text-slate-400 text-[10px]">${(article.doi || '').split('/').pop() || 'verified'}</span>
+                  </div>
+                  <a href="articles/${encodeURIComponent(article.id)}.html" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 font-semibold flex items-center gap-1">
+                    Read Dispatch →
+                  </a>
+                </div>
+              </div>
+            </article>
+          `).join('');
+        } else {
+          // List View Mode
+          articlesContainer.className = 'flex flex-col gap-4';
+          articlesContainer.innerHTML = results.map(article => `
+            <article class="spotlight-card rounded-xl p-5 border border-slate-800 hover:border-cyan-500/50 flex flex-col md:flex-row md:items-center justify-between gap-4 transition group">
+              <div class="flex-1">
+                <div class="flex items-center gap-3 text-xs font-mono mb-1.5">
+                  <span class="text-cyan-400 font-medium">${article.category}</span>
+                  <span class="text-slate-600">•</span>
+                  <span class="text-slate-400">${article.date}</span>
+                  <span class="text-slate-600">•</span>
+                  <span class="text-slate-400">${article.readtime}</span>
+                </div>
+                <h2 class="font-display font-bold text-base text-white group-hover:text-cyan-300 transition">
+                  ${article.title}
+                </h2>
+                <p class="text-xs text-slate-400 line-clamp-2 mt-1 leading-relaxed">
+                  ${article.summary}
+                </p>
+              </div>
+
+              <div class="flex items-center gap-4 self-end md:self-center">
+                <div class="text-right hidden sm:block">
+                  <div class="text-xs font-mono text-slate-300">${article.author}</div>
+                  <div class="text-[10px] font-mono text-emerald-400">Impact: ${article.impact || '9.2'}</div>
+                </div>
+                <a href="articles/${encodeURIComponent(article.id)}.html" class="px-4 py-2 rounded-xl text-xs font-mono bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 hover:bg-cyan-500/20 whitespace-nowrap">
+                  Read Dispatch →
+                </a>
+              </div>
+            </article>
+          `).join('');
+        }
+      }
+
+      // Event Listeners for Live Search & Filters
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          activeQuery = e.target.value.trim();
+          applyFilter();
+        });
+      }
+
+      if (clearSearchBtn) {
+        clearSearchBtn.addEventListener('click', () => {
+          activeQuery = '';
+          searchInput.value = '';
+          applyFilter();
+        });
+      }
+
+      if (sortSelect) {
+        sortSelect.addEventListener('change', (e) => {
+          activeSort = e.target.value;
+          applyFilter();
+        });
+      }
+
+      if (resetFiltersBtn) {
+        resetFiltersBtn.addEventListener('click', () => {
+          activeQuery = '';
+          activeCategory = 'All';
+          activeSort = 'newest';
+          if (searchInput) searchInput.value = '';
+          if (sortSelect) sortSelect.value = 'newest';
+          renderCategoryPills();
+          applyFilter();
+        });
+      }
+
+      // View Mode Toggle
+      if (viewGridBtn && viewListBtn) {
+        viewGridBtn.addEventListener('click', () => {
+          currentViewMode = 'grid';
+          viewGridBtn.className = 'p-2 rounded-lg bg-slate-800 text-cyan-400 text-xs';
+          viewListBtn.className = 'p-2 rounded-lg text-slate-400 hover:text-white text-xs';
+          applyFilter();
+        });
+
+        viewListBtn.addEventListener('click', () => {
+          currentViewMode = 'list';
+          viewListBtn.className = 'p-2 rounded-lg bg-slate-800 text-cyan-400 text-xs';
+          viewGridBtn.className = 'p-2 rounded-lg text-slate-400 hover:text-white text-xs';
+          applyFilter();
+        });
+      }
+
+      // Initial Setup
+      renderCategoryPills();
+      applyFilter();
+
+      // Subscribe to DB Updates
+      if (window.BioGravityDB) {
+        window.BioGravityDB.subscribe(() => {
+          renderCategoryPills();
+          applyFilter();
+        });
+      }
+    });
+  </script>
+</body>
+</html>

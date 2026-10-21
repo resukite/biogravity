@@ -1,8 +1,18 @@
 User-agent: *
 Allow: /
 
-# Crawl-delay for optimal indexing
-Crawl-delay: 1
+# Dedicated Search Engine Crawlers
+User-agent: Googlebot
+Allow: /
 
-# Sitemap Location for Googlebot and Bingbot
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Sitemap Location
 Sitemap: https://biogravity.space/sitemap.xml

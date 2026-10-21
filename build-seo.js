@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 const SITE_URL = 'https://biogravity.space';
-const TODAY = '2026-10-16';
+const TODAY = new Date().toISOString().split('T')[0];
 
 const articlesPath = path.join(__dirname, 'data', 'articles.json');
 if (!fs.existsSync(articlesPath)) {
@@ -18,7 +18,7 @@ if (!fs.existsSync(articlesDir)) {
   fs.mkdirSync(articlesDir, { recursive: true });
 }
 
-console.log(`[BUILD-SEO] Processing ${articles.length} live articles...`);
+console.log(`[BUILD-SEO] 🚀 Initiating comprehensive SEO & Clean URL build for ${articles.length} dispatches...`);
 
 function escapeXml(unsafe) {
   if (!unsafe) return '';
@@ -36,7 +36,8 @@ function escapeHtml(unsafe) {
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;');
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
 }
 
 function renderArticleBody(art) {
@@ -98,13 +99,14 @@ ${citeItems}
   return full;
 }
 
-// 1. Generate Static HTML Pages for all articles
+// =============================================================================
+// 1. GENERATE STATIC ARTICLE PAGES (CLEAN URLS + UNIVERSAL SERVING)
+// =============================================================================
 articles.forEach((art, idx) => {
-  const filename = `${art.id}.html`;
-  const filePath = path.join(articlesDir, filename);
-  const articleUrl = `${SITE_URL}/articles/${filename}`;
+  // Clean canonical URL without .html
+  const cleanArticleUrl = `${SITE_URL}/articles/${art.id}`;
   const metaDesc = art.metaDescription || art.summary || '';
-  const dateFormatted = art.date || 'October 15, 2026';
+  const dateFormatted = art.date || 'October 21, 2026';
   const doi = art.doi || `10.1038/s41586-2026-${1000 + idx}`;
   const authorName = art.author || 'Dr. Elena Rostova';
   const authorRole = art.authorRole || 'Lead Investigator, BioGravity Consortium';
@@ -120,17 +122,17 @@ articles.forEach((art, idx) => {
     "@graph": [
       {
         "@type": "ScholarlyArticle",
-        "@id": `${articleUrl}#article`,
+        "@id": `${cleanArticleUrl}#article`,
         "isPartOf": {
           "@type": "WebPage",
-          "@id": articleUrl
+          "@id": cleanArticleUrl
         },
         "headline": art.title,
         "description": metaDesc,
-        "url": articleUrl,
+        "url": cleanArticleUrl,
         "datePublished": art.publishedIso || "2026-10-15T10:00:00+00:00",
-        "dateModified": art.approvedAt || "2026-10-16T11:00:00+00:00",
-        "mainEntityOfPage": articleUrl,
+        "dateModified": art.approvedAt || art.publishedIso || "2026-10-21T10:00:00+00:00",
+        "mainEntityOfPage": cleanArticleUrl,
         "image": [coverUrl],
         "author": {
           "@type": "Person",
@@ -142,7 +144,7 @@ articles.forEach((art, idx) => {
         "publisher": {
           "@type": "Organization",
           "name": "BioGravity",
-          "url": SITE_URL,
+          "url": `${SITE_URL}/`,
           "logo": {
             "@type": "ImageObject",
             "url": `${SITE_URL}/assets/biogravity-logo.png`
@@ -160,7 +162,7 @@ articles.forEach((art, idx) => {
       },
       {
         "@type": "BreadcrumbList",
-        "@id": `${articleUrl}#breadcrumb`,
+        "@id": `${cleanArticleUrl}#breadcrumb`,
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -172,13 +174,13 @@ articles.forEach((art, idx) => {
             "@type": "ListItem",
             "position": 2,
             "name": "Research Feed",
-            "item": `${SITE_URL}/research.html`
+            "item": `${SITE_URL}/research`
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": art.title,
-            "item": articleUrl
+            "item": cleanArticleUrl
           }
         ]
       }
@@ -186,17 +188,16 @@ articles.forEach((art, idx) => {
   };
 
   // Add FAQPage Schema for Google Search Rich Snippets if FAQs exist
-  const faqMatches = [...(art.content || '').matchAll(/<summary[^>]*>\s*<span>(.*?)<\/span>[\s\S]*?<\/summary>\s*<p[^>]*>([\s\S]*?)<\/p>/gi)];
-  if (faqMatches.length > 0) {
+  if (art.faqs && art.faqs.length > 0) {
     schema["@graph"].push({
       "@type": "FAQPage",
-      "@id": `${articleUrl}#faq`,
-      "mainEntity": faqMatches.map(m => ({
+      "@id": `${cleanArticleUrl}#faq`,
+      "mainEntity": art.faqs.map(f => ({
         "@type": "Question",
-        "name": m[1].replace(/<[^>]*>/g, '').trim(),
+        "name": f.question,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": m[2].replace(/<[^>]*>/g, '').trim()
+          "text": f.answer
         }
       }))
     });
@@ -205,7 +206,7 @@ articles.forEach((art, idx) => {
   // Related articles
   const relatedArticles = articles.filter(a => a.id !== art.id).slice(0, 3);
   const relatedHtml = relatedArticles.map(rel => `
-    <a href="${rel.id}.html" class="spotlight-card block p-3 rounded-xl border border-slate-800 hover:border-cyan-500/40 transition group">
+    <a href="/articles/${encodeURIComponent(rel.id)}" class="spotlight-card block p-3 rounded-xl border border-slate-800 hover:border-cyan-500/40 transition group">
       <div class="text-[10px] font-mono text-cyan-400">${escapeHtml(rel.category)}</div>
       <div class="text-xs font-display font-semibold text-white group-hover:text-cyan-300 transition line-clamp-2 mt-0.5">${escapeHtml(rel.title)}</div>
       <div class="text-[10px] text-slate-400 mt-1">${escapeHtml(rel.readtime || '8 min read')} • ${escapeHtml(rel.date)}</div>
@@ -214,7 +215,7 @@ articles.forEach((art, idx) => {
 
   // Tags HTML
   const tagsHtml = tags.map(t => `
-    <a href="../research.html?q=${encodeURIComponent(t)}" class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-700 text-slate-300 hover:text-cyan-300 hover:border-cyan-400 transition">
+    <a href="/research?q=${encodeURIComponent(t)}" class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-700 text-slate-300 hover:text-cyan-300 hover:border-cyan-400 transition">
       #${escapeHtml(t)}
     </a>
   `).join('\n');
@@ -229,14 +230,22 @@ articles.forEach((art, idx) => {
   <meta name="keywords" content="${escapeHtml(tags.join(', '))}, BioGravity, microgravity research, quantum biotechnology, LEO science">
   <meta name="author" content="${escapeHtml(authorName)}">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-  <link rel="canonical" href="${articleUrl}">
+  <link rel="canonical" href="${cleanArticleUrl}">
+
+  <!-- Clean URL Enforcement for Browsers -->
+  <script>
+    if (window.location.pathname.endsWith('.html')) {
+      var clean = window.location.pathname.replace(/\\.html$/, '');
+      window.history.replaceState(null, '', clean + window.location.search + window.location.hash);
+    }
+  </script>
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="BioGravity Space">
   <meta property="og:title" content="${escapeHtml(art.title)}">
   <meta property="og:description" content="${escapeHtml(metaDesc)}">
-  <meta property="og:url" content="${articleUrl}">
+  <meta property="og:url" content="${cleanArticleUrl}">
   <meta property="og:image" content="${escapeHtml(coverUrl)}">
   <meta property="article:published_time" content="${art.publishedIso || '2026-10-15T10:00:00+00:00'}">
   <meta property="article:author" content="${escapeHtml(authorName)}">
@@ -271,11 +280,9 @@ articles.forEach((art, idx) => {
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
 
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="../css/styles.css">
-
-  <!-- Command Center & Visual FX (Aceternity / MagicUI Particles, Meteors, Spotlight) -->
-  <script defer src="../js/command-center-fx.js"></script>
+  <!-- Custom Styles & Global Effects -->
+  <link rel="stylesheet" href="/css/styles.css">
+  <script defer src="/js/command-center-fx.js"></script>
 
   <!-- Structured Data JSON-LD -->
   <script type="application/ld+json">
@@ -314,7 +321,7 @@ ${JSON.stringify(schema, null, 2)}
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
       <!-- Logo -->
-      <a href="../index.html" class="flex items-center gap-3 group">
+      <a href="/" class="flex items-center gap-3 group">
         <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500 to-emerald-500 p-[1.5px] shadow-[0_0_20px_rgba(6,182,212,0.4)] group-hover:shadow-[0_0_25px_rgba(52,211,153,0.6)] transition duration-300">
           <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center relative overflow-hidden">
             <span class="text-lg">⚛️</span>
@@ -330,16 +337,16 @@ ${JSON.stringify(schema, null, 2)}
 
       <!-- Desktop Nav -->
       <nav class="hidden md:flex items-center gap-8 text-sm">
-        <a href="../index.html" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Home</a>
-        <a href="../research.html" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Research Feed</a>
-        <a href="../world-space-week-2026.html" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Space Week 2026</a>
-        <a href="../molecular-biology-research.html" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Molecular Biology</a>
-        <a href="../about.html" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Lab Notes / About</a>
+        <a href="/" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Home</a>
+        <a href="/research" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Research Feed</a>
+        <a href="/world-space-week-2026" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Space Week 2026</a>
+        <a href="/molecular-biology-research" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Molecular Biology</a>
+        <a href="/about" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Lab Notes / About</a>
       </nav>
 
       <!-- Action -->
       <div class="hidden lg:flex items-center gap-4">
-        <a href="../research.html" class="px-4 py-2 rounded-xl text-xs font-mono border border-slate-700 bg-slate-900 text-slate-300 hover:text-white transition flex items-center gap-1.5">
+        <a href="/research" class="px-4 py-2 rounded-xl text-xs font-mono border border-slate-700 bg-slate-900 text-slate-300 hover:text-white transition flex items-center gap-1.5">
           <span>← Back to Feed</span>
         </a>
       </div>
@@ -361,11 +368,11 @@ ${JSON.stringify(schema, null, 2)}
       <button id="close-drawer-btn" class="text-slate-400 hover:text-white p-2">✕</button>
     </div>
     <div class="flex flex-col gap-6 text-lg mt-8 font-medium">
-      <a href="../index.html" class="text-slate-300 hover:text-white">Home</a>
-      <a href="../research.html" class="text-slate-300 hover:text-white">Research Feed</a>
-      <a href="../world-space-week-2026.html" class="text-slate-300 hover:text-white">Space Week 2026</a>
-      <a href="../molecular-biology-research.html" class="text-slate-300 hover:text-white">Molecular Biology Guide</a>
-      <a href="../about.html" class="text-slate-300 hover:text-white">Lab Notes / About</a>
+      <a href="/" class="text-slate-300 hover:text-white">Home</a>
+      <a href="/research" class="text-slate-300 hover:text-white">Research Feed</a>
+      <a href="/world-space-week-2026" class="text-slate-300 hover:text-white">Space Week 2026</a>
+      <a href="/molecular-biology-research" class="text-slate-300 hover:text-white">Molecular Biology Guide</a>
+      <a href="/about" class="text-slate-300 hover:text-white">Lab Notes / About</a>
     </div>
   </div>
 
@@ -376,15 +383,15 @@ ${JSON.stringify(schema, null, 2)}
       <!-- Breadcrumbs & Quick Actions -->
       <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-6 mb-8 border-b border-slate-800/80 gap-4 text-xs font-mono">
         <div class="flex items-center gap-2 text-slate-400 overflow-x-auto">
-          <a href="../index.html" class="hover:text-cyan-400">BioGravity</a>
+          <a href="/" class="hover:text-cyan-400">BioGravity</a>
           <span>/</span>
-          <a href="../research.html" class="hover:text-cyan-400">Research Feed</a>
+          <a href="/research" class="hover:text-cyan-400">Research Feed</a>
           <span>/</span>
           <span class="text-cyan-400">${escapeHtml(art.category)}</span>
         </div>
 
         <div class="flex items-center gap-2">
-          <a href="../research.html" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-700 text-slate-300 hover:text-white hover:border-cyan-400 transition">
+          <a href="/research" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-700 text-slate-300 hover:text-white hover:border-cyan-400 transition">
             Browse All ${articles.length} Dispatches →
           </a>
         </div>
@@ -436,13 +443,13 @@ ${JSON.stringify(schema, null, 2)}
             <button id="btn-share-dispatch" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition flex items-center gap-1.5">
               <span>🔗</span> Copy Link
             </button>
-            <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent(`"${art.title}" - BioGravity Research:`)}&url=${encodeURIComponent(articleUrl)}&hashtags=QuantumBiology,Biotechnology,BioGravity" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg bg-cyan-950/60 border border-cyan-500/40 text-cyan-300 hover:bg-cyan-900/80 transition flex items-center gap-1.5 font-bold">
+            <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent(`"${art.title}" - BioGravity Research:`)}&url=${encodeURIComponent(cleanArticleUrl)}&hashtags=QuantumBiology,Biotechnology,BioGravity" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg bg-cyan-950/60 border border-cyan-500/40 text-cyan-300 hover:bg-cyan-900/80 transition flex items-center gap-1.5 font-bold">
               <span>𝕏</span> Share on X
             </a>
-            <a href="https://www.reddit.com/submit?url=${encodeURIComponent(articleUrl)}&title=${encodeURIComponent(art.title)}" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg bg-orange-950/60 border border-orange-500/40 text-orange-300 hover:bg-orange-900/80 transition flex items-center gap-1.5 font-bold">
+            <a href="https://www.reddit.com/submit?url=${encodeURIComponent(cleanArticleUrl)}&title=${encodeURIComponent(art.title)}" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg bg-orange-950/60 border border-orange-500/40 text-orange-300 hover:bg-orange-900/80 transition flex items-center gap-1.5 font-bold">
               <span>👽</span> Reddit
             </a>
-            <a href="https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(articleUrl)}" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg bg-blue-950/60 border border-blue-500/40 text-blue-300 hover:bg-blue-900/80 transition flex items-center gap-1.5 font-bold">
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(cleanArticleUrl)}" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg bg-blue-950/60 border border-blue-500/40 text-blue-300 hover:bg-blue-900/80 transition flex items-center gap-1.5 font-bold">
               <span>💼</span> LinkedIn
             </a>
           </div>
@@ -587,20 +594,20 @@ ${JSON.stringify(schema, null, 2)}
         <div>
           <div class="text-white uppercase tracking-wider mb-3">Navigation</div>
           <ul class="space-y-2 text-slate-400">
-            <li><a href="../index.html" class="hover:text-cyan-400">Home</a></li>
-            <li><a href="../research.html" class="hover:text-cyan-400">Research Feed</a></li>
-            <li><a href="../world-space-week-2026.html" class="hover:text-cyan-400">Space Week 2026</a></li>
-            <li><a href="../molecular-biology-research.html" class="hover:text-cyan-400">Molecular Biology Guide</a></li>
-            <li><a href="../about.html" class="hover:text-cyan-400">About & Lab Notes</a></li>
+            <li><a href="/" class="hover:text-cyan-400">Home</a></li>
+            <li><a href="/research" class="hover:text-cyan-400">Research Feed</a></li>
+            <li><a href="/world-space-week-2026" class="hover:text-cyan-400">Space Week 2026</a></li>
+            <li><a href="/molecular-biology-research" class="hover:text-cyan-400">Molecular Biology Guide</a></li>
+            <li><a href="/about" class="hover:text-cyan-400">About & Lab Notes</a></li>
           </ul>
         </div>
         <div>
           <div class="text-white uppercase tracking-wider mb-3">AdSense Compliance</div>
           <ul class="space-y-2 text-slate-400">
-            <li><a href="../privacy-policy.html" class="hover:text-cyan-400">Privacy Policy (DART & Cookies)</a></li>
-            <li><a href="../terms.html" class="hover:text-cyan-400">Terms of Service</a></li>
-            <li><a href="../about.html" class="hover:text-cyan-400">Editorial & E-E-A-T Standards</a></li>
-            <li><a href="../sitemap.xml" class="hover:text-cyan-400">XML Sitemap</a></li>
+            <li><a href="/privacy-policy" class="hover:text-cyan-400">Privacy Policy (DART & Cookies)</a></li>
+            <li><a href="/terms" class="hover:text-cyan-400">Terms of Service</a></li>
+            <li><a href="/about" class="hover:text-cyan-400">Editorial & E-E-A-T Standards</a></li>
+            <li><a href="/sitemap.xml" class="hover:text-cyan-400">XML Sitemap</a></li>
           </ul>
         </div>
         <div>
@@ -614,11 +621,11 @@ ${JSON.stringify(schema, null, 2)}
       <div class="pt-6 border-t border-slate-800 text-[11px] font-mono text-slate-500 flex flex-col sm:flex-row justify-between items-center gap-4">
         <div>&copy; 2026 BioGravity Institute. All rights reserved.</div>
         <div class="flex gap-4">
-          <a href="../privacy-policy.html" class="hover:text-cyan-400">Privacy Policy</a>
+          <a href="/privacy-policy" class="hover:text-cyan-400">Privacy Policy</a>
           <span>•</span>
-          <a href="../terms.html" class="hover:text-cyan-400">Terms</a>
+          <a href="/terms" class="hover:text-cyan-400">Terms</a>
           <span>•</span>
-          <a href="../sitemap.xml" class="hover:text-cyan-400">Sitemap</a>
+          <a href="/sitemap.xml" class="hover:text-cyan-400">Sitemap</a>
         </div>
       </div>
     </div>
@@ -628,24 +635,17 @@ ${JSON.stringify(schema, null, 2)}
     document.addEventListener('DOMContentLoaded', () => {
       // Mobile Drawer Toggle
       const mobileBtn = document.getElementById('mobile-menu-btn');
-      const closeBtn = document.getElementById('close-drawer-btn');
+      const closeDrawerBtn = document.getElementById('close-drawer-btn');
       const drawer = document.getElementById('mobile-drawer');
-      if (mobileBtn && drawer) mobileBtn.addEventListener('click', () => drawer.classList.remove('hidden'));
-      if (closeBtn && drawer) closeBtn.addEventListener('click', () => drawer.classList.add('hidden'));
 
-      // Render KaTeX Math
-      if (window.renderMathInElement) {
-        renderMathInElement(document.body, {
-          delimiters: [
-            { left: '$$', right: '$$', display: true },
-            { left: '\\\\[', right: '\\\\]', display: true },
-            { left: '\\\\(', right: '\\\\)', display: false },
-            { left: '$', right: '$', display: false }
-          ]
-        });
+      if (mobileBtn && drawer) {
+        mobileBtn.addEventListener('click', () => drawer.classList.remove('hidden'));
+      }
+      if (closeDrawerBtn && drawer) {
+        closeDrawerBtn.addEventListener('click', () => drawer.classList.add('hidden'));
       }
 
-      // Copy Citation
+      // Copy Cite
       const btnCopyCite = document.getElementById('btn-copy-cite');
       if (btnCopyCite) {
         btnCopyCite.addEventListener('click', () => {
@@ -695,12 +695,272 @@ ${JSON.stringify(schema, null, 2)}
 </body>
 </html>`;
 
-  fs.writeFileSync(filePath, html, 'utf8');
-  console.log(`[BUILD-SEO] ✅ Generated static page: articles/${filename}`);
+  // Write file 1: articles/slug.html (for GitHub Pages extensionless fallback / direct request)
+  const filePathHtml = path.join(articlesDir, `${art.id}.html`);
+  fs.writeFileSync(filePathHtml, html, 'utf8');
+
+  // Write file 2: articles/slug/index.html (guarantees clean URL serving on all static web hosts)
+  const slugDir = path.join(articlesDir, art.id);
+  if (!fs.existsSync(slugDir)) {
+    fs.mkdirSync(slugDir, { recursive: true });
+  }
+  fs.writeFileSync(path.join(slugDir, 'index.html'), html, 'utf8');
+
+  console.log(`[BUILD-SEO] ✅ Generated clean static page: articles/${art.id} (/articles/${art.id}/)`);
 });
 
-// 2. Generate Complete, Valid XML Sitemap
-console.log(`[BUILD-SEO] Generating comprehensive sitemap.xml...`);
+// =============================================================================
+// 2. ENHANCE RESEARCH.HTML WITH STATIC PRE-RENDERED CARDS (ZERO ORPHAN PAGES)
+// =============================================================================
+console.log(`[BUILD-SEO] 🛰️ Pre-rendering static crawl cards in research.html...`);
+
+const researchPath = path.join(__dirname, 'research.html');
+if (fs.existsSync(researchPath)) {
+  let researchHtml = fs.readFileSync(researchPath, 'utf8');
+
+  // Ensure canonical URL is clean without .html
+  researchHtml = researchHtml.replace(
+    /<link\s+rel="canonical"\s+href="[^"]*"/i,
+    `<link rel="canonical" href="${SITE_URL}/research"`
+  );
+
+  // Update total dispatches count
+  researchHtml = researchHtml.replace(
+    /SHOWING:\s*<strong\s+id="results-count"[^>]*>\d+<\/strong>/i,
+    `SHOWING: <strong id="results-count" class="text-white">${articles.length}</strong>`
+  );
+
+  // Generate static HTML cards for every single article
+  const staticCardsHtml = articles.map(art => `
+    <article class="spotlight-card rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 flex flex-col group justify-between transition">
+      <div class="relative h-48 overflow-hidden bg-slate-900">
+        <img src="${escapeHtml(art.cover || '')}" alt="${escapeHtml(art.coverAlt || art.title)}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-80 group-hover:opacity-100" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+        <span class="absolute top-3 left-3 badge-quantum text-[10px]">
+          ${escapeHtml(art.category)}
+        </span>
+        <span class="absolute top-3 right-3 text-[11px] font-mono text-slate-300 bg-slate-950/80 px-2.5 py-0.5 rounded-full border border-slate-700">
+          ${escapeHtml(art.readtime || '10 min read')}
+        </span>
+      </div>
+      
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-mono text-slate-400 mb-2">
+            <span>${escapeHtml(art.date)}</span>
+            <span>•</span>
+            <span class="text-cyan-400 font-medium">${escapeHtml(art.author)}</span>
+          </div>
+          <h2 class="font-display font-bold text-lg text-white mb-3 group-hover:text-cyan-300 transition line-clamp-2">
+            <a href="/articles/${encodeURIComponent(art.id)}">${escapeHtml(art.title)}</a>
+          </h2>
+          <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed mb-4">
+            ${escapeHtml(art.summary)}
+          </p>
+
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            ${(art.tags || []).slice(0, 3).map(tag => `
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#${escapeHtml(tag)}</span>
+            `).join('')}
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+          <div class="flex items-center gap-1.5 text-xs font-mono text-emerald-400">
+            <span>DOI:</span>
+            <span class="text-slate-400 text-[10px]">${escapeHtml((art.doi || '').split('/').pop() || 'verified')}</span>
+          </div>
+          <a href="/articles/${encodeURIComponent(art.id)}" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 font-semibold flex items-center gap-1">
+            Read Dispatch →
+          </a>
+        </div>
+      </div>
+    </article>
+  `).join('\n');
+
+  // Replace content of articles-container with static cards
+  const containerRegex = /(<div\s+id="articles-container"[^>]*>)([\s\S]*?)(<\/div>\s*<!-- Empty State -->)/i;
+  if (containerRegex.test(researchHtml)) {
+    researchHtml = researchHtml.replace(containerRegex, `$1\n${staticCardsHtml}\n      $3`);
+  }
+
+  // Update navigation links to clean URLs
+  researchHtml = researchHtml.replace(/href="index\.html"/g, 'href="/"');
+  researchHtml = researchHtml.replace(/href="research\.html"/g, 'href="/research"');
+  researchHtml = researchHtml.replace(/href="world-space-week-2026\.html"/g, 'href="/world-space-week-2026"');
+  researchHtml = researchHtml.replace(/href="molecular-biology-research\.html"/g, 'href="/molecular-biology-research"');
+  researchHtml = researchHtml.replace(/href="about\.html"/g, 'href="/about"');
+  researchHtml = researchHtml.replace(/href="privacy-policy\.html"/g, 'href="/privacy-policy"');
+  researchHtml = researchHtml.replace(/href="terms\.html"/g, 'href="/terms"');
+
+  // Ensure clean URL script is in <head>
+  if (!researchHtml.includes("window.location.pathname.endsWith('.html')")) {
+    researchHtml = researchHtml.replace(
+      '</head>',
+      `  <script>
+    if (window.location.pathname.endsWith('.html')) {
+      var clean = window.location.pathname.replace(/\\.html$/, '');
+      window.history.replaceState(null, '', clean + window.location.search + window.location.hash);
+    }
+  </script>
+</head>`
+    );
+  }
+
+  fs.writeFileSync(researchPath, researchHtml, 'utf8');
+
+  // Also write research/index.html
+  const researchDir = path.join(__dirname, 'research');
+  if (!fs.existsSync(researchDir)) fs.mkdirSync(researchDir, { recursive: true });
+  fs.writeFileSync(path.join(researchDir, 'index.html'), researchHtml, 'utf8');
+
+  console.log(`[BUILD-SEO] ✅ research.html & research/index.html updated with ${articles.length} crawlable dispatches!`);
+}
+
+// =============================================================================
+// 3. GENERATE DIRECTORY ALIASES FOR ALL CORE PAGES (/about, /terms, etc.)
+// =============================================================================
+const corePages = [
+  { name: 'about', file: 'about.html', canonical: `${SITE_URL}/about` },
+  { name: 'world-space-week-2026', file: 'world-space-week-2026.html', canonical: `${SITE_URL}/world-space-week-2026` },
+  { name: 'molecular-biology-research', file: 'molecular-biology-research.html', canonical: `${SITE_URL}/molecular-biology-research` },
+  { name: 'privacy-policy', file: 'privacy-policy.html', canonical: `${SITE_URL}/privacy-policy` },
+  { name: 'terms', file: 'terms.html', canonical: `${SITE_URL}/terms` }
+];
+
+corePages.forEach(p => {
+  const filePath = path.join(__dirname, p.file);
+  if (fs.existsSync(filePath)) {
+    let content = fs.readFileSync(filePath, 'utf8');
+    // Ensure clean canonical
+    content = content.replace(
+      /<link\s+rel="canonical"\s+href="[^"]*"/i,
+      `<link rel="canonical" href="${p.canonical}"`
+    );
+
+    // Clean internal links
+    content = content.replace(/href="index\.html"/g, 'href="/"');
+    content = content.replace(/href="research\.html"/g, 'href="/research"');
+    content = content.replace(/href="world-space-week-2026\.html"/g, 'href="/world-space-week-2026"');
+    content = content.replace(/href="molecular-biology-research\.html"/g, 'href="/molecular-biology-research"');
+    content = content.replace(/href="about\.html"/g, 'href="/about"');
+    content = content.replace(/href="privacy-policy\.html"/g, 'href="/privacy-policy"');
+    content = content.replace(/href="terms\.html"/g, 'href="/terms"');
+
+    // Add clean URL script if missing
+    if (!content.includes("window.location.pathname.endsWith('.html')")) {
+      content = content.replace(
+        '</head>',
+        `  <script>
+    if (window.location.pathname.endsWith('.html')) {
+      var clean = window.location.pathname.replace(/\\.html$/, '');
+      window.history.replaceState(null, '', clean + window.location.search + window.location.hash);
+    }
+  </script>
+</head>`
+      );
+    }
+
+    fs.writeFileSync(filePath, content, 'utf8');
+
+    // Write directory index.html
+    const dirPath = path.join(__dirname, p.name);
+    if (!fs.existsSync(dirPath)) fs.mkdirSync(dirPath, { recursive: true });
+    fs.writeFileSync(path.join(dirPath, 'index.html'), content, 'utf8');
+    console.log(`[BUILD-SEO] ✅ Generated clean route: /${p.name}/`);
+  }
+});
+
+// Update index.html clean links & ensure canonical is https://biogravity.space/
+const indexPath = path.join(__dirname, 'index.html');
+if (fs.existsSync(indexPath)) {
+  let indexHtml = fs.readFileSync(indexPath, 'utf8');
+  indexHtml = indexHtml.replace(/href="research\.html"/g, 'href="/research"');
+  indexHtml = indexHtml.replace(/href="world-space-week-2026\.html"/g, 'href="/world-space-week-2026"');
+  indexHtml = indexHtml.replace(/href="molecular-biology-research\.html"/g, 'href="/molecular-biology-research"');
+  indexHtml = indexHtml.replace(/href="about\.html"/g, 'href="/about"');
+  indexHtml = indexHtml.replace(/href="privacy-policy\.html"/g, 'href="/privacy-policy"');
+  indexHtml = indexHtml.replace(/href="terms\.html"/g, 'href="/terms"');
+  indexHtml = indexHtml.replace(/href="index\.html"/g, 'href="/"');
+  indexHtml = indexHtml.replace(/href="articles\/([a-zA-Z0-9_-]+)\.html"/g, 'href="/articles/$1"');
+  indexHtml = indexHtml.replace(/href="articles\/([a-zA-Z0-9_-]+)"/g, 'href="/articles/$1"');
+  indexHtml = indexHtml.replace(/href="articles\/\$\{encodeURIComponent\(article\.id\)\}\.html"/g, 'href="/articles/${encodeURIComponent(article.id)}"');
+
+  // Inject / update Complete Orbital Research Archive into index.html for 100% Googlebot Crawl Coverage
+  const allArticlesArchiveHtml = `
+        <!-- Complete Orbital Research Archive (100% Crawl Coverage for Googlebot) -->
+        <div id="complete-orbital-archive" class="mt-16 p-6 sm:p-8 rounded-2xl glass-panel border border-slate-800 bg-slate-900/60">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-4 border-b border-slate-800">
+            <div>
+              <div class="text-xs font-mono uppercase tracking-widest text-cyan-400 mb-1">
+                Open Access Orbital Archive
+              </div>
+              <h3 class="text-xl sm:text-2xl font-display font-bold text-white">
+                All ${articles.length} Published Research Dispatches
+              </h3>
+            </div>
+            <a href="/research" class="px-4 py-2 rounded-xl text-xs font-mono bg-cyan-500/20 text-cyan-300 border border-cyan-400 hover:bg-cyan-500/30 transition flex items-center gap-1.5 self-start sm:self-auto">
+              <span>View Full Research Feed →</span>
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+` + articles.map(a => `
+            <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800 hover:border-cyan-500/40 transition group flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between text-[10px] font-mono mb-1.5">
+                  <span class="text-cyan-400">${escapeHtml(a.category)}</span>
+                  <span class="text-slate-400">${escapeHtml(a.readtime || '10 min')}</span>
+                </div>
+                <h4 class="font-display font-bold text-sm text-white group-hover:text-cyan-300 transition line-clamp-2 mb-2">
+                  <a href="/articles/${encodeURIComponent(a.id)}">${escapeHtml(a.title)}</a>
+                </h4>
+                <p class="text-[11px] text-slate-400 line-clamp-2 leading-relaxed mb-3">
+                  ${escapeHtml(a.summary)}
+                </p>
+              </div>
+              <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs font-mono">
+                <span class="text-slate-400 text-[10px]">${escapeHtml(a.author)}</span>
+                <a href="/articles/${encodeURIComponent(a.id)}" class="text-cyan-400 hover:text-cyan-300 font-semibold">
+                  Read &rarr;
+                </a>
+              </div>
+            </div>
+`).join('') + `
+          </div>
+        </div>
+`;
+
+  if (indexHtml.includes('id="complete-orbital-archive"')) {
+    indexHtml = indexHtml.replace(/<!-- Complete Orbital Research Archive[\s\S]*?<\/div>\s*<\/div>\s*<\/div>/i, allArticlesArchiveHtml.trim() + '\n        </div>');
+  } else {
+    // Insert before closing of the featured dispatches section
+    indexHtml = indexHtml.replace(/(<\/div>\s*<\/div>\s*<\/section>\s*<\/main>)/i, `${allArticlesArchiveHtml}\n      $1`);
+  }
+
+  // Ensure clean URL script in <head>
+  if (!indexHtml.includes("window.location.pathname.endsWith('.html')")) {
+    indexHtml = indexHtml.replace(
+      '</head>',
+      `  <script>
+    if (window.location.pathname.endsWith('.html') || window.location.pathname.endsWith('/index.html')) {
+      var clean = window.location.pathname.replace(/\\/?index\\.html$/, '/').replace(/\\.html$/, '');
+      if (clean !== window.location.pathname) {
+        window.history.replaceState(null, '', clean + window.location.search + window.location.hash);
+      }
+    }
+  </script>
+</head>`
+    );
+  }
+  fs.writeFileSync(indexPath, indexHtml, 'utf8');
+  console.log(`[BUILD-SEO] ✅ index.html updated with clean URLs & complete archive grid!`);
+}
+
+// =============================================================================
+// 4. GENERATE 100% CLEAN XML SITEMAP (GOOGLE & BING COMPLIANT)
+// =============================================================================
+console.log(`[BUILD-SEO] 🗺️ Generating clean XML sitemap.xml...`);
 
 let sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -708,7 +968,7 @@ let sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-  <!-- Core Hub Pages -->
+  <!-- Core Hub Pages (Clean URLs) -->
   <url>
     <loc>${SITE_URL}/</loc>
     <lastmod>${TODAY}</lastmod>
@@ -716,59 +976,61 @@ let sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>${SITE_URL}/world-space-week-2026.html</loc>
+    <loc>${SITE_URL}/research</loc>
     <lastmod>${TODAY}</lastmod>
     <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>${SITE_URL}/world-space-week-2026</loc>
+    <lastmod>${TODAY}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
     <image:image>
       <image:loc>${SITE_URL}/assets/world-space-week-2026-astronaut-pikachu.jpg</image:loc>
-      <image:title>Astronaut Pikachu and Orbital Rocket on Launch Pad for World Space Week 2026 Rocket Revolution</image:title>
+      <image:title>Astronaut Pikachu and Orbital Rocket on Launch Pad for World Space Week 2026</image:title>
     </image:image>
   </url>
   <url>
-    <loc>${SITE_URL}/molecular-biology-research.html</loc>
+    <loc>${SITE_URL}/molecular-biology-research</loc>
     <lastmod>${TODAY}</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <priority>0.9</priority>
     <image:image>
       <image:loc>https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&amp;fit=crop&amp;w=1600&amp;q=85</image:loc>
       <image:title>The Definitive Guide to Molecular Biology Research</image:title>
     </image:image>
   </url>
   <url>
-    <loc>${SITE_URL}/research.html</loc>
-    <lastmod>${TODAY}</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>${SITE_URL}/about.html</loc>
+    <loc>${SITE_URL}/about</loc>
     <lastmod>${TODAY}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>${SITE_URL}/privacy-policy.html</loc>
+    <loc>${SITE_URL}/privacy-policy</loc>
     <lastmod>${TODAY}</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>${SITE_URL}/terms.html</loc>
+    <loc>${SITE_URL}/terms</loc>
     <lastmod>${TODAY}</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
 
-  <!-- Pre-Rendered High-Authority Research Dispatches -->
+  <!-- Pre-Rendered High-Authority Research Dispatches (Clean URLs) -->
 `;
 
 articles.forEach(art => {
-  const articleUrl = `${SITE_URL}/articles/${art.id}.html`;
+  const cleanUrl = `${SITE_URL}/articles/${art.id}`;
   const coverUrl = art.cover || 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1200&q=80';
+  const articleDate = (art.publishedIso ? art.publishedIso.split('T')[0] : null) || TODAY;
+
   sitemapXml += `  <url>
-    <loc>${articleUrl}</loc>
-    <lastmod>${TODAY}</lastmod>
+    <loc>${cleanUrl}</loc>
+    <lastmod>${articleDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
@@ -783,4 +1045,79 @@ sitemapXml += `</urlset>\n`;
 
 const sitemapPath = path.join(__dirname, 'sitemap.xml');
 fs.writeFileSync(sitemapPath, sitemapXml, 'utf8');
-console.log(`[BUILD-SEO] ✅ Successfully updated sitemap.xml with ${articles.length + 7} URLs!`);
+console.log(`[BUILD-SEO] ✅ Successfully generated clean sitemap.xml with ${articles.length + 7} canonical URLs!`);
+
+// =============================================================================
+// 5. GENERATE SMART 404.HTML (CLEAN REDIRECTION & SEO RETENTION)
+// =============================================================================
+const notFoundHtml = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orbital Coordinate Not Found (404) | BioGravity</title>
+  <meta name="robots" content="noindex, follow">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/css/styles.css">
+  <script>
+    // Smart redirect: if user visited with .html, redirect to clean URL
+    (function() {
+      var p = window.location.pathname;
+      if (p.endsWith('.html')) {
+        var clean = p.replace(/\\.html$/, '');
+        window.location.replace(clean + window.location.search + window.location.hash);
+      }
+    })();
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col justify-between selection:bg-cyan-500/30 font-sans">
+  <div class="max-w-4xl mx-auto px-4 py-20 text-center">
+    <div class="text-7xl mb-6">🛰️</div>
+    <div class="badge-quantum text-xs mb-3 inline-block">Orbital Telemetry Notice</div>
+    <h1 class="text-4xl font-extrabold font-display text-white mb-4">404: Scientific Coordinate Desynchronized</h1>
+    <p class="text-slate-400 text-sm max-w-lg mx-auto mb-8 leading-relaxed">
+      The research dispatch or coordinate you requested does not exist at this orbital vector. It may have been relocated to a clean canonical address.
+    </p>
+    <div class="flex flex-wrap items-center justify-center gap-4">
+      <a href="/" class="px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-emerald-500 text-slate-950 font-bold text-xs font-mono shadow-[0_0_20px_rgba(6,182,212,0.4)] hover:brightness-110 transition">
+        Return to Orbital Command (Home) →
+      </a>
+      <a href="/research" class="px-6 py-3 rounded-xl bg-slate-900 border border-slate-700 text-slate-200 text-xs font-mono hover:text-white hover:border-cyan-400 transition">
+        Explore 11 Live Research Dispatches
+      </a>
+    </div>
+  </div>
+  <footer class="border-t border-slate-800 text-center py-6 text-xs text-slate-500 font-mono">
+    BioGravity Quantum Biotechnology Collective • <a href="/sitemap.xml" class="text-cyan-400 hover:underline">Sitemap</a>
+  </footer>
+</body>
+</html>`;
+
+fs.writeFileSync(path.join(__dirname, '404.html'), notFoundHtml, 'utf8');
+console.log(`[BUILD-SEO] ✅ Generated smart 404.html with automatic .html URL normalization!`);
+
+// =============================================================================
+// 6. GENERATE OPTIMIZED ROBOTS.TXT (MAXIMUM CRAWL RATE)
+// =============================================================================
+const robotsTxt = `User-agent: *
+Allow: /
+
+# Dedicated Search Engine Crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Sitemap Location
+Sitemap: ${SITE_URL}/sitemap.xml
+`;
+
+fs.writeFileSync(path.join(__dirname, 'robots.txt'), robotsTxt, 'utf8');
+console.log(`[BUILD-SEO] ✅ Generated optimized robots.txt!`);

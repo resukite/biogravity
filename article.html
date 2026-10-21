@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Article Reader | BioGravity Scientific Dispatches</title>
   <meta name="description" content="Read full peer-reviewed quantum biotechnology dispatches, microgravity experimental protocols, and orbital telemetry datasets.">
-  <link id="canonical-tag" rel="canonical" href="https://biogravity.space/research.html">
+  <link id="canonical-tag" rel="canonical" href="https://biogravity.space/research">
   <script>
     (function() {
       var urlParams = new URLSearchParams(window.location.search);
@@ -13,8 +13,8 @@
       if (articleId) {
         var cleanId = encodeURIComponent(articleId.trim());
         var canEl = document.getElementById('canonical-tag');
-        if (canEl) canEl.href = 'https://biogravity.space/articles/' + cleanId + '.html';
-        window.location.replace('articles/' + cleanId + '.html');
+        if (canEl) canEl.href = 'https://biogravity.space/articles/' + cleanId;
+        window.location.replace('/articles/' + cleanId);
       }
     })();
   </script>
