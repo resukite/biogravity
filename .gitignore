@@ -2,6 +2,9 @@
 .env
 .env.local
 *.env
+*service-account*.json
+*gsc*.json
+gsc-key.json
 
 # Dependencies
 node_modules/
