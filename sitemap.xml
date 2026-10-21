@@ -58,6 +58,16 @@
 
   <!-- Pre-Rendered High-Authority Research Dispatches (Clean URLs) -->
   <url>
+    <loc>https://biogravity.space/articles/characterizing-supersolid-phase-transitions-in-trapped-quantum-gases-w</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Characterizing supersolid phase transitions in trapped quantum gases with tilted dipoles at finite temperature</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://biogravity.space/articles/relativistic-time-dilation-and-mitochondrial-aging-clocks</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>weekly</changefreq>
