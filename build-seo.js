@@ -39,6 +39,65 @@ function escapeHtml(unsafe) {
     .replace(/"/g, '&quot;');
 }
 
+function renderArticleBody(art) {
+  if (art.content && typeof art.content === 'string' && art.content.trim() && art.content.trim() !== 'undefined') {
+    return art.content;
+  }
+  let full = '';
+  if (Array.isArray(art.keyTakeaways) && art.keyTakeaways.length > 0) {
+    const liItems = art.keyTakeaways.map(kt => `    <li>${escapeHtml(kt)}</li>`).join('\n');
+    full += `<div class="mb-8 p-5 rounded-2xl border border-cyan-500/30 bg-slate-900/90 backdrop-blur-md shadow-xl shadow-cyan-950/20">
+  <div class="flex items-center gap-2 text-xs font-mono text-cyan-400 uppercase tracking-widest mb-2">
+    <span class="inline-block w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+    Student &amp; Researcher Key Takeaways
+  </div>
+  <ul class="text-sm text-slate-300 space-y-1.5 list-disc list-inside">
+${liItems}
+  </ul>
+</div>\n\n`;
+  }
+
+  if (Array.isArray(art.sections) && art.sections.length > 0) {
+    for (const sec of art.sections) {
+      full += `<section class="mb-10">
+  <h2 class="text-2xl font-display font-bold text-cyan-400 mb-4 pb-2 border-b border-cyan-500/20">${escapeHtml(sec.title || '')}</h2>
+  ${(sec.html || '').trim()}
+</section>\n\n`;
+    }
+  }
+
+  if (Array.isArray(art.faqs) && art.faqs.length > 0) {
+    const faqItems = art.faqs.map(f => `    <details class="group border border-slate-800 bg-slate-900/60 rounded-xl p-4 transition open:border-cyan-500/40">
+      <summary class="font-semibold text-slate-200 cursor-pointer list-none flex justify-between items-center group-hover:text-cyan-300">
+        <span>${escapeHtml(f.question)}</span>
+        <span class="text-cyan-400 text-lg transition-transform group-open:rotate-180">&#9662;</span>
+      </summary>
+      <p class="mt-3 text-slate-400 text-sm leading-relaxed border-t border-slate-800 pt-3">
+        ${escapeHtml(f.answer)}
+      </p>
+    </details>`).join('\n');
+
+    full += `<section id="frequently-asked-questions" class="mb-10">
+  <h2 class="text-2xl font-display font-bold text-cyan-400 mb-4 pb-2 border-b border-cyan-500/20">Google Search &amp; Featured Snippets FAQ</h2>
+  <div class="space-y-4">
+${faqItems}
+  </div>
+</section>\n\n`;
+  }
+
+  if (Array.isArray(art.citations) && art.citations.length > 0) {
+    const citeItems = art.citations.map(c => `    <li>${c}</li>`).join('\n');
+    full += `<section id="scholarly-references" class="mb-8 pt-4 border-t border-slate-800">
+  <h2 class="text-xl font-display font-bold text-slate-300 mb-3">Peer-Reviewed Citations &amp; Academic Bibliography</h2>
+  <ol class="text-xs text-slate-400 space-y-2 list-decimal list-inside font-mono">
+${citeItems}
+  </ol>
+</section>\n`;
+  }
+
+  return full;
+}
+
 // 1. Generate Static HTML Pages for all articles
 articles.forEach((art, idx) => {
   const filename = `${art.id}.html`;
@@ -428,7 +487,7 @@ ${JSON.stringify(schema, null, 2)}
 
           <!-- Article Main Body (Pre-rendered Static HTML) -->
           <div id="article-body-content" class="glass-panel spotlight-card rounded-2xl p-6 sm:p-8 border-slate-800 text-slate-300 text-sm sm:text-base leading-relaxed space-y-6">
-            ${art.content}
+            ${renderArticleBody(art)}
           </div>
 
           <!-- Key Verified Findings -->
