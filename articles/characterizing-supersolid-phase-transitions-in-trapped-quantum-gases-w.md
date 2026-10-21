@@ -2,13 +2,13 @@
 id: "characterizing-supersolid-phase-transitions-in-trapped-quantum-gases-w"
 title: "Characterizing supersolid phase transitions in trapped quantum gases with tilted dipoles at finite temperature"
 category: "Microgravity Fluid Dynamics"
-summary: "Motivated by a recent experimental work $[\href{https://arxiv.org/abs/2608.20327}{\text{arXiv:}2608.20327}]$, we theoretically investigate the nature of phase transitions in a trapped dipolar quantum gas upon tuning the contact interaction strength and dipole orientation. Using e..."
+summary: "Motivated by a recent experimental work arXiv:2608.20327, we theoretically investigate the nature of phase transitions in a trapped dipolar quantum gas upon tuning the contact interaction strength and dipole orientation. Using extended Gross-Pitaevskii simulations including therm..."
 author: "Julian Kusch"
 authorRole: "Visiting Investigator, BioGravity Orbital Consortium"
 authorOrcid: "https://orcid.org/0000-0002-1825-0097"
 date: "October 21, 2026"
-publishedIso: "2026-10-21T11:19:16.884850+00:00"
-doi: "10.1038/s41586-2026-26307"
+publishedIso: "2026-10-21T21:21:15.169196+00:00"
+doi: "10.1038/s41586-2026-11764"
 readtime: "12 min read"
 impact: 9.6
 primaryKeyword: "characterizing supersolid phase transitions in trapped quantum gases w microgravity space research"
@@ -25,7 +25,7 @@ tags:
 # Characterizing supersolid phase transitions in trapped quantum gases with tilted dipoles at finite temperature
 
 **Author:** Julian Kusch | **Affiliation:** Visiting Investigator, BioGravity Orbital Consortium  
-**Date:** October 21, 2026 | **DOI:** [10.1038/s41586-2026-26307](https://doi.org/10.1038/s41586-2026-26307) | **Read Time:** 12 min read
+**Date:** October 21, 2026 | **DOI:** [10.1038/s41586-2026-11764](https://doi.org/10.1038/s41586-2026-11764) | **Read Time:** 12 min read
 
 ---
 
@@ -41,7 +41,7 @@ tags:
 
 ## Executive Abstract & Empirical Context
 
-Motivated by a recent experimental work $[\href{https://arxiv.org/abs/2608.20327}{\text{arXiv:}2608.20327}]$, we theoretically investigate the nature of phase transitions in a trapped dipolar quantum gas upon tuning the contact interaction strength and dipole orientation. Using extended Gross-Pitaevskii simulations including thermal and quantum effects, we map the phase diagram comprising unmodulated superfluids, triangular droplet arrays, and stripe states. We further characterize the order of the transitions separating them through imaginary-time hysteresis analysis. The unmodulated-to-modulated transition evolves from discontinuous to continuous with increasing dipole tilt before becoming discontinuous again at large tilts. The degree of continuity is further affected by particle number, temperature, and confinement. While continuous behavior generally correlates with the emergence of stripe states, this correspondence is not systematic, and finite-size effects also influence the continuity of the transition. The triangular-to-stripe transition is found to be discontinuous at small contact interaction strengths and becomes increasingly continuous upon approaching the unmodulated-to-modulated phase boundary. Our results reveal a tunable transition order in finite dipolar quantum gases and provide guidance for its experimental investigation.
+Motivated by a recent experimental work arXiv:2608.20327, we theoretically investigate the nature of phase transitions in a trapped dipolar quantum gas upon tuning the contact interaction strength and dipole orientation. Using extended Gross-Pitaevskii simulations including thermal and quantum effects, we map the phase diagram comprising unmodulated superfluids, triangular droplet arrays, and stripe states. We further characterize the order of the transitions separating them through imaginary-time hysteresis analysis. The unmodulated-to-modulated transition evolves from discontinuous to continuous with increasing dipole tilt before becoming discontinuous again at large tilts. The degree of continuity is further affected by particle number, temperature, and confinement. While continuous behavior generally correlates with the emergence of stripe states, this correspondence is not systematic, and finite-size effects also influence the continuity of the transition. The triangular-to-stripe transition is found to be discontinuous at small contact interaction strengths and becomes increasingly continuous upon approaching the unmodulated-to-modulated phase boundary. Our results reveal a tunable transition order in finite dipolar quantum gases and provide guidance for its experimental investigation.
 
 
 
