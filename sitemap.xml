@@ -5,18 +5,71 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <!-- Core Hub Pages -->
-  <url><loc>https://biogravity.space/</loc><lastmod>2026-10-17</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
-  <url><loc>https://biogravity.space/world-space-week-2026.html</loc><lastmod>2026-10-17</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
-  <url><loc>https://biogravity.space/molecular-biology-research.html</loc><lastmod>2026-10-17</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://biogravity.space/research.html</loc><lastmod>2026-10-17</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://biogravity.space/about.html</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://biogravity.space/privacy-policy.html</loc><lastmod>2026-10-17</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://biogravity.space/terms.html</loc><lastmod>2026-10-17</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url>
+    <loc>https://biogravity.space/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://biogravity.space/world-space-week-2026.html</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://biogravity.space/assets/world-space-week-2026-astronaut-pikachu.jpg</image:loc>
+      <image:title>Astronaut Pikachu and Orbital Rocket on Launch Pad for World Space Week 2026 Rocket Revolution</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/molecular-biology-research.html</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&amp;fit=crop&amp;w=1600&amp;q=85</image:loc>
+      <image:title>The Definitive Guide to Molecular Biology Research</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/research.html</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://biogravity.space/about.html</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://biogravity.space/privacy-policy.html</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://biogravity.space/terms.html</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
 
   <!-- Pre-Rendered High-Authority Research Dispatches -->
   <url>
+    <loc>https://biogravity.space/articles/relativistic-time-dilation-and-mitochondrial-aging-clocks.html</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Relativistic Time Dilation and Mitochondrial Bio-Oscillator Desynchronization in Deep Space Travel</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://biogravity.space/articles/zero-g-capillary-fluidics-and-surface-tension-bioreactors.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
@@ -26,7 +79,7 @@
   </url>
   <url>
     <loc>https://biogravity.space/articles/debye-shielding-and-plasma-sheath-dynamics-in-spacecraft-biosensing.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
@@ -36,7 +89,7 @@
   </url>
   <url>
     <loc>https://biogravity.space/articles/radical-pair-spin-coherence-and-magnetoreception-in-human-cryptochrome-4-photore.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
@@ -46,7 +99,7 @@
   </url>
   <url>
     <loc>https://biogravity.space/articles/synthetic-poly-adp-metallo-peptides-for-telomeric-radioprotection-in-deep-space-.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
@@ -56,7 +109,7 @@
   </url>
   <url>
     <loc>https://biogravity.space/articles/acoustic-levitation-and-scaffold-free-vascularized-cardiac-organoid-bioprinting-.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
@@ -66,7 +119,7 @@
   </url>
   <url>
     <loc>https://biogravity.space/articles/sub-angstrom-macromolecular-crystallography-of-membrane-transporters-in-orbital-.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
@@ -76,7 +129,7 @@
   </url>
   <url>
     <loc>https://biogravity.space/articles/non-thermal-quantum-proton-tunneling-in-crispr-cas9-catalytic-triads-orbital-evi.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
@@ -86,7 +139,7 @@
   </url>
   <url>
     <loc>https://biogravity.space/articles/acoustic-levitation-and-scaffold-free-3d-organoid-bioprinting-under-low-earth-or.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
@@ -96,7 +149,7 @@
   </url>
   <url>
     <loc>https://biogravity.space/articles/sub-angstrom-macromolecular-crystallography-in-orbital-microgravity-under-low-ea.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
@@ -106,7 +159,7 @@
   </url>
   <url>
     <loc>https://biogravity.space/articles/non-thermal-quantum-tunneling-in-crispr-catalytic-triads-under-low-earth-orbit-m.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
