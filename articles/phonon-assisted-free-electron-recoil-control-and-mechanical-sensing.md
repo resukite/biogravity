@@ -7,8 +7,8 @@ author: "Sunjun Hwang"
 authorRole: "Visiting Investigator, BioGravity Orbital Consortium"
 authorOrcid: "https://orcid.org/0000-0002-1825-0097"
 date: "October 22, 2026"
-publishedIso: "2026-10-22T11:18:40.251437+00:00"
-doi: "10.1038/s41586-2026-34481"
+publishedIso: "2026-10-22T21:16:32.330235+00:00"
+doi: "10.1038/s41586-2026-76780"
 readtime: "12 min read"
 impact: 9.6
 primaryKeyword: "phonon assisted free electron recoil control and mechanical sensing microgravity space research"
@@ -25,7 +25,7 @@ tags:
 # Phonon-assisted free-electron recoil control and mechanical sensing
 
 **Author:** Sunjun Hwang | **Affiliation:** Visiting Investigator, BioGravity Orbital Consortium  
-**Date:** October 22, 2026 | **DOI:** [10.1038/s41586-2026-34481](https://doi.org/10.1038/s41586-2026-34481) | **Read Time:** 12 min read
+**Date:** October 22, 2026 | **DOI:** [10.1038/s41586-2026-76780](https://doi.org/10.1038/s41586-2026-76780) | **Read Time:** 12 min read
 
 ---
 
