@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>BioGravity - Quantum Biotechnology &amp; Orbital Life Sciences</title>
+    <link>https://biogravity.space/</link>
+    <description>Open-access research dispatches on quantum enzymology, microgravity cell biology, and 3D organoid bioprinting in Low Earth Orbit.</description>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Oct 2026 07:10:47 GMT</lastBuildDate>
+    <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Characterizing supersolid phase transitions in trapped quantum gases with tilted dipoles at finite temperature</title>
+      <link>https://biogravity.space/articles/characterizing-supersolid-phase-transitions-in-trapped-quantum-gases-w</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/characterizing-supersolid-phase-transitions-in-trapped-quantum-gases-w</guid>
+      <pubDate>Wed, 21 Oct 2026 21:21:15 GMT</pubDate>
+      <dc:creator>Julian Kusch</dc:creator>
+      <description>Motivated by a recent experimental work arXiv:2608.20327, we theoretically investigate the nature of phase transitions in a trapped dipolar quantum gas upon tuning the contact interaction strength and dipole orientation. Using extended Gross-Pitaevskii simulations including therm...</description>
+      <category>Microgravity Fluid Dynamics</category>
+    </item>
+    <item>
+      <title>Relativistic Time Dilation and Mitochondrial Bio-Oscillator Desynchronization in Deep Space Travel</title>
+      <link>https://biogravity.space/articles/relativistic-time-dilation-and-mitochondrial-aging-clocks</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/relativistic-time-dilation-and-mitochondrial-aging-clocks</guid>
+      <pubDate>Wed, 21 Oct 2026 09:00:00 GMT</pubDate>
+      <dc:creator>Dr. Marcus Thorne</dc:creator>
+      <description>Investigating how high-velocity orbital Lorentz factors and gravitational potential gradients affect eukaryotic mitochondrial redox oscillations and cellular circadian pacing.</description>
+      <category>Space Physics &amp; Biosensing</category>
+    </item>
+    <item>
+      <title>Zero-G Capillary Fluidics and Surface Tension Bioreactors: Suppressing Rayleigh-Bénard Convective Turbulence in Cell Culture</title>
+      <link>https://biogravity.space/articles/zero-g-capillary-fluidics-and-surface-tension-bioreactors</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/zero-g-capillary-fluidics-and-surface-tension-bioreactors</guid>
+      <pubDate>Sat, 17 Oct 2026 20:15:03 GMT</pubDate>
+      <dc:creator>Dr. Nikolai Sterling</dc:creator>
+      <description>Discover how surface tension and capillary forces replace gravity in orbital bioreactors, eliminating convective turbulence and optimizing delicate cell cultures.</description>
+      <category>Microgravity Fluid Dynamics</category>
+    </item>
+    <item>
+      <title>Debye Shielding and Plasma Sheath Dynamics in Spacecraft Biosensing Arrays Operating in the Low Earth Orbit Ionosphere</title>
+      <link>https://biogravity.space/articles/debye-shielding-and-plasma-sheath-dynamics-in-spacecraft-biosensing</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/debye-shielding-and-plasma-sheath-dynamics-in-spacecraft-biosensing</guid>
+      <pubDate>Sat, 17 Oct 2026 10:00:00 GMT</pubDate>
+      <dc:creator>Dr. Marcus Thorne</dc:creator>
+      <description>Explore how ionospheric plasma sheaths and Debye screening lengths govern nano-electronic biosensor sensitivity on orbital spacecraft and space stations.</description>
+      <category>Space Physics &amp; Biosensing</category>
+    </item>
+    <item>
+      <title>Radical Pair Spin Coherence and Magnetoreception in Human Cryptochrome 4 Photoreceptors: Orbital Evidence for Quantum Biology in Spaceflight</title>
+      <link>https://biogravity.space/articles/radical-pair-spin-coherence-and-magnetoreception-in-human-cryptochrome-4-photore</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/radical-pair-spin-coherence-and-magnetoreception-in-human-cryptochrome-4-photore</guid>
+      <pubDate>Fri, 16 Oct 2026 13:30:00 GMT</pubDate>
+      <dc:creator>Dr. Elena Rostova</dc:creator>
+      <description>Conducted aboard BioGravity Station under 0.06 μg residual microgravity attenuation, this investigation confirms kinetic isotope effect coefficients 4.7× above classical Arrhenius predictions. Advanced cryptochrome and radical pair mechanism methodologies validate the quantum mechanical hypothesis, establishing a rigorous framework for next-generation space-based biotechnology.</description>
+      <category>Quantum Enzymology</category>
+    </item>
+    <item>
+      <title>Synthetic Poly-ADP Metallo-Peptides for Telomeric Radioprotection in Deep-Space Environments: Molecular Architecture and Radiolytic Shielding</title>
+      <link>https://biogravity.space/articles/synthetic-poly-adp-metallo-peptides-for-telomeric-radioprotection-in-deep-space-</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/synthetic-poly-adp-metallo-peptides-for-telomeric-radioprotection-in-deep-space-</guid>
+      <pubDate>Fri, 16 Oct 2026 13:30:00 GMT</pubDate>
+      <dc:creator>Dr. Fatima Zahra</dc:creator>
+      <description>Conducted aboard BioGravity Station under controlled 0.04 μg microgravity with magnetic shielding to 0.12 nT, this investigation confirms diffraction resolution improved from 1.85 Å (terrestrial) to 0.82 Å (orbital). Advanced cosmic radiation and telomere protection methodologies validate the quantum mechanical hypothesis, establishing a rigorous framework for next-generation space-based biotechnology.</description>
+      <category>Cosmic Radioprotection</category>
+    </item>
+    <item>
+      <title>Acoustic Levitation and Scaffold-Free Vascularized Cardiac Organoid Bioprinting in Zero-G: Engineering Functional Myocardial Tissues</title>
+      <link>https://biogravity.space/articles/acoustic-levitation-and-scaffold-free-vascularized-cardiac-organoid-bioprinting-</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/acoustic-levitation-and-scaffold-free-vascularized-cardiac-organoid-bioprinting-</guid>
+      <pubDate>Fri, 16 Oct 2026 13:30:00 GMT</pubDate>
+      <dc:creator>Dr. Aris Thorne</dc:creator>
+      <description>Conducted aboard BioGravity Station under sub-0.08 μg weightlessness with &lt; 5 Hz vibrational noise floor, this investigation confirms coherence lifetimes exceeding 384 ps — an order of magnitude above terrestrial baseline. Advanced 3D bioprinting and acoustic levitation methodologies validate the quantum mechanical hypothesis, establishing a rigorous framework for next-generation space-based biotechnology.</description>
+      <category>Microgravity Genomics</category>
+    </item>
+    <item>
+      <title>Sub-Angstrom Macromolecular Crystallography of Membrane Transporters in Orbital Microgravity: Orbital Evidence for Non-Classical Molecular Dynamics</title>
+      <link>https://biogravity.space/articles/sub-angstrom-macromolecular-crystallography-of-membrane-transporters-in-orbital-</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/sub-angstrom-macromolecular-crystallography-of-membrane-transporters-in-orbital-</guid>
+      <pubDate>Wed, 14 Oct 2026 14:55:58 GMT</pubDate>
+      <dc:creator>Dr. Nadia Al-Mansoor</dc:creator>
+      <description>Conducted aboard BioGravity Station under sub-0.08 μg weightlessness with &lt; 5 Hz vibrational noise floor, this investigation confirms coherence lifetimes exceeding 384 ps — an order of magnitude above terrestrial baseline. Advanced protein crystallography and microgravity methodologies validate the quantum mechanical hypothesis, establishing a rigorous framework for next-generation space-based biotechnology.</description>
+      <category>Protein Crystallography</category>
+    </item>
+    <item>
+      <title>Non-Thermal Quantum Proton Tunneling in CRISPR-Cas9 Catalytic Triads: Orbital Evidence for Non-Classical Molecular Dynamics</title>
+      <link>https://biogravity.space/articles/non-thermal-quantum-proton-tunneling-in-crispr-cas9-catalytic-triads-orbital-evi</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/non-thermal-quantum-proton-tunneling-in-crispr-cas9-catalytic-triads-orbital-evi</guid>
+      <pubDate>Wed, 14 Oct 2026 14:48:24 GMT</pubDate>
+      <dc:creator>Dr. Elena Rostova</dc:creator>
+      <description>Conducted aboard BioGravity Station under 0.06 μg residual microgravity attenuation, this investigation confirms kinetic isotope effect coefficients 4.7× above classical Arrhenius predictions. Advanced CRISPR-Cas9 and quantum tunneling methodologies validate the quantum mechanical hypothesis, establishing a rigorous framework for next-generation space-based biotechnology.</description>
+      <category>Quantum Enzymology</category>
+    </item>
+    <item>
+      <title>Acoustic Levitation and Scaffold-Free 3D Organoid Bioprinting Under Low Earth Orbit Microgravity Conditions</title>
+      <link>https://biogravity.space/articles/acoustic-levitation-and-scaffold-free-3d-organoid-bioprinting-under-low-earth-or</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/acoustic-levitation-and-scaffold-free-3d-organoid-bioprinting-under-low-earth-or</guid>
+      <pubDate>Wed, 14 Oct 2026 14:38:48 GMT</pubDate>
+      <dc:creator>Dr. Kira Vance &amp; Dr. S. K. Takahashi</dc:creator>
+      <description>Orbital spectroscopic investigation confirms non-classical reaction kinetics in microgravity genomics. Microgravity attenuation eliminates convective plumes, elevating coherent states and structural fidelity.</description>
+      <category>Microgravity Genomics</category>
+    </item>
+    <item>
+      <title>Sub-Angstrom Macromolecular Crystallography in Orbital Microgravity Under Low Earth Orbit Microgravity Conditions</title>
+      <link>https://biogravity.space/articles/sub-angstrom-macromolecular-crystallography-in-orbital-microgravity-under-low-ea</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/sub-angstrom-macromolecular-crystallography-in-orbital-microgravity-under-low-ea</guid>
+      <pubDate>Wed, 14 Oct 2026 14:38:26 GMT</pubDate>
+      <dc:creator>Dr. Kira Vance &amp; Dr. S. K. Takahashi</dc:creator>
+      <description>Orbital spectroscopic investigation confirms non-classical reaction kinetics in protein crystallography. Microgravity attenuation eliminates convective plumes, elevating coherent states and structural fidelity.</description>
+      <category>Protein Crystallography</category>
+    </item>
+    <item>
+      <title>Non-Thermal Quantum Tunneling in CRISPR Catalytic Triads Under Low Earth Orbit Microgravity Conditions</title>
+      <link>https://biogravity.space/articles/non-thermal-quantum-tunneling-in-crispr-catalytic-triads-under-low-earth-orbit-m</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/non-thermal-quantum-tunneling-in-crispr-catalytic-triads-under-low-earth-orbit-m</guid>
+      <pubDate>Wed, 14 Oct 2026 14:24:08 GMT</pubDate>
+      <dc:creator>Dr. Kira Vance &amp; Dr. S. K. Takahashi</dc:creator>
+      <description>Orbital spectroscopic investigation confirms non-classical reaction kinetics in quantum enzymology. Microgravity attenuation eliminates convective plumes, elevating coherent states and structural fidelity.</description>
+      <category>Quantum Enzymology</category>
+    </item>
+  </channel>
+</rss>

@@ -42,7 +42,26 @@ function escapeHtml(unsafe) {
 
 function renderArticleBody(art) {
   if (art.content && typeof art.content === 'string' && art.content.trim() && art.content.trim() !== 'undefined') {
-    return art.content;
+    let body = art.content;
+    if (Array.isArray(art.faqs) && art.faqs.length > 0 && !body.includes('frequently-asked-questions')) {
+      const faqItems = art.faqs.map(f => `    <details class="group border border-slate-800 bg-slate-900/60 rounded-xl p-4 transition open:border-cyan-500/40">
+      <summary class="font-semibold text-slate-200 cursor-pointer list-none flex justify-between items-center group-hover:text-cyan-300">
+        <span>${escapeHtml(f.question)}</span>
+        <span class="text-cyan-400 text-lg transition-transform group-open:rotate-180">&#9662;</span>
+      </summary>
+      <p class="mt-3 text-slate-400 text-sm leading-relaxed border-t border-slate-800 pt-3">
+        ${escapeHtml(f.answer)}
+      </p>
+    </details>`).join('\n');
+
+      body += `\n\n<section id="frequently-asked-questions" class="mt-10 mb-6">
+  <h2 class="text-2xl font-display font-bold text-cyan-400 mb-4 pb-2 border-b border-cyan-500/20">Frequently Asked Questions &amp; Research Insights</h2>
+  <div class="space-y-4">
+${faqItems}
+  </div>
+</section>`;
+    }
+    return body;
   }
   let full = '';
   if (Array.isArray(art.keyTakeaways) && art.keyTakeaways.length > 0) {
@@ -220,12 +239,15 @@ articles.forEach((art, idx) => {
     </a>
   `).join('\n');
 
+  const displayTitle = art.seoTitle ? `${escapeHtml(art.seoTitle)} | BioGravity` : `${escapeHtml(art.title)} | BioGravity`;
+  const socialTitle = escapeHtml(art.seoTitle || art.title);
+
   const html = `<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${escapeHtml(art.title)} | BioGravity</title>
+  <title>${displayTitle}</title>
   <meta name="description" content="${escapeHtml(metaDesc)}">
   <meta name="keywords" content="${escapeHtml(tags.join(', '))}, BioGravity, microgravity research, quantum biotechnology, LEO science">
   <meta name="author" content="${escapeHtml(authorName)}">
@@ -243,7 +265,7 @@ articles.forEach((art, idx) => {
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="BioGravity Space">
-  <meta property="og:title" content="${escapeHtml(art.title)}">
+  <meta property="og:title" content="${socialTitle}">
   <meta property="og:description" content="${escapeHtml(metaDesc)}">
   <meta property="og:url" content="${cleanArticleUrl}">
   <meta property="og:image" content="${escapeHtml(coverUrl)}">
@@ -254,7 +276,7 @@ articles.forEach((art, idx) => {
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@BioGravitySpace">
-  <meta name="twitter:title" content="${escapeHtml(art.title)}">
+  <meta name="twitter:title" content="${socialTitle}">
   <meta name="twitter:description" content="${escapeHtml(metaDesc)}">
   <meta name="twitter:image" content="${escapeHtml(coverUrl)}">
 
@@ -824,6 +846,7 @@ const corePages = [
   { name: 'about', file: 'about.html', canonical: `${SITE_URL}/about` },
   { name: 'world-space-week-2026', file: 'world-space-week-2026.html', canonical: `${SITE_URL}/world-space-week-2026` },
   { name: 'molecular-biology-research', file: 'molecular-biology-research.html', canonical: `${SITE_URL}/molecular-biology-research` },
+  { name: 'microgravity-effects-on-human-body', file: 'microgravity-effects-on-human-body.html', canonical: `${SITE_URL}/microgravity-effects-on-human-body` },
   { name: 'privacy-policy', file: 'privacy-policy.html', canonical: `${SITE_URL}/privacy-policy` },
   { name: 'terms', file: 'terms.html', canonical: `${SITE_URL}/terms` }
 ];
@@ -1046,6 +1069,44 @@ sitemapXml += `</urlset>\n`;
 const sitemapPath = path.join(__dirname, 'sitemap.xml');
 fs.writeFileSync(sitemapPath, sitemapXml, 'utf8');
 console.log(`[BUILD-SEO] ✅ Successfully generated clean sitemap.xml with ${articles.length + 7} canonical URLs!`);
+
+// =============================================================================
+// 4B. GENERATE RSS 2.0 / ATOM SCIENTIFIC FEED (SYNDICATION & DISCOVERY)
+// =============================================================================
+console.log(`[BUILD-SEO] 📡 Generating RSS 2.0 scientific feed...`);
+
+let rssXml = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>BioGravity - Quantum Biotechnology &amp; Orbital Life Sciences</title>
+    <link>${SITE_URL}/</link>
+    <description>Open-access research dispatches on quantum enzymology, microgravity cell biology, and 3D organoid bioprinting in Low Earth Orbit.</description>
+    <language>en-us</language>
+    <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
+    <atom:link href="${SITE_URL}/rss.xml" rel="self" type="application/rss+xml"/>
+`;
+
+articles.forEach(art => {
+  const cleanUrl = `${SITE_URL}/articles/${art.id}`;
+  const pubDate = new Date(art.publishedIso || TODAY).toUTCString();
+  rssXml += `    <item>
+      <title>${escapeXml(art.title)}</title>
+      <link>${cleanUrl}</link>
+      <guid isPermaLink="true">${cleanUrl}</guid>
+      <pubDate>${pubDate}</pubDate>
+      <dc:creator>${escapeXml(art.author || 'BioGravity Collective')}</dc:creator>
+      <description>${escapeXml(art.summary || art.metaDescription || '')}</description>
+      <category>${escapeXml(art.category || 'Science')}</category>
+    </item>
+`;
+});
+
+rssXml += `  </channel>
+</rss>\n`;
+
+fs.writeFileSync(path.join(__dirname, 'rss.xml'), rssXml, 'utf8');
+fs.writeFileSync(path.join(__dirname, 'feed.xml'), rssXml, 'utf8');
+console.log(`[BUILD-SEO] ✅ Successfully generated rss.xml and feed.xml!`);
 
 // =============================================================================
 // 5. GENERATE SMART 404.HTML (CLEAN REDIRECTION & SEO RETENTION)

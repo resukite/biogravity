@@ -1,0 +1,394 @@
+'use strict';
+
+const fs = require('fs');
+const path = require('path');
+
+const pillarHtml = `<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microgravity Effects on the Human Body: 2026 Space Medicine Guide | BioGravity</title>
+  <meta name="description" content="Comprehensive guide to microgravity effects on the human body: cephalad fluid shifts, SANS, bone demineralization, telomere dynamics, and orbital countermeasures.">
+  <meta name="keywords" content="microgravity effects on human body, effects of weightlessness, space medicine, astronaut bone loss, spaceflight associated neuro-ocular syndrome, SANS, cephalad fluid shift, space genomics, BioGravity">
+  <meta name="author" content="Dr. Mohammad Shaiob & BioGravity Space Medicine Collective">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://biogravity.space/microgravity-effects-on-human-body">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="BioGravity Space">
+  <meta property="og:title" content="Microgravity Effects on the Human Body: 2026 Space Medicine Guide">
+  <meta property="og:description" content="Explore how microgravity impacts cardiovascular hemodynamics, musculoskeletal density, neuro-ocular optics, and cellular DNA repair during spaceflight.">
+  <meta property="og:url" content="https://biogravity.space/microgravity-effects-on-human-body">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@BioGravitySpace">
+  <meta name="twitter:title" content="Microgravity Effects on the Human Body: Space Medicine Guide">
+  <meta name="twitter:description" content="Clinical overview of cephalad fluid shifts, osteoclast activation, SANS vision changes, and mitochondrial aging clocks in microgravity.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            slate: { 950: '#020617', 900: '#0f172a', 800: '#1e293b' },
+            cyan: { 400: '#22d3ee', 500: '#06b6d4', glow: '#38bdf8' },
+            emerald: { 400: '#34d399', 500: '#10b981', glow: '#059669' }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- KaTeX for Biomechanical Equations -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- Clean URL Enforcement -->
+  <script>
+    if (window.location.pathname.endsWith('.html')) {
+      var clean = window.location.pathname.replace(/\\.html$/, '');
+      window.history.replaceState(null, '', clean + window.location.search + window.location.hash);
+    }
+  </script>
+
+  <!-- Google Structured Data (JSON-LD) for Rich Results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TechArticle",
+        "@id": "https://biogravity.space/microgravity-effects-on-human-body#article",
+        "headline": "Microgravity Effects on the Human Body: 2026 Space Medicine & Physiological Guide",
+        "description": "Comprehensive reference guide detailing physiological adaptations to zero gravity: cardiovascular remodeling, SANS vision shifts, osteopenia, and molecular countermeasures.",
+        "url": "https://biogravity.space/microgravity-effects-on-human-body",
+        "datePublished": "2026-10-22T08:00:00+00:00",
+        "dateModified": "2026-10-22T08:00:00+00:00",
+        "author": {
+          "@type": "Person",
+          "name": "Dr. Mohammad Shaiob",
+          "jobTitle": "Lead Biomedical & Life Sciences Investigator"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "BioGravity",
+          "url": "https://biogravity.space/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://biogravity.space/assets/biogravity-logo.png"
+          }
+        },
+        "keywords": "microgravity effects, space physiology, SANS, cardiovascular deconditioning, bone loss in space, astronaut health"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://biogravity.space/microgravity-effects-on-human-body#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What happens to the human cardiovascular system in microgravity?",
+            "answer": "Without gravity pulling blood toward the lower extremities, approximately 2 liters of venous fluid shifts cephalad (toward the head and chest). This triggers acute central hypovolemia, facial edema, baroreceptor reset, and long-term left ventricular remodeling."
+          },
+          {
+            "@type": "Question",
+            "name": "Why do astronauts lose bone density in space?",
+            "answer": "Microgravity removes mechanical strain on the skeleton, suppressing osteoblast bone synthesis while stimulating osteoclast resorption. Astronauts lose approximately 1% to 1.5% of cancellous bone mass per month in weightlessness, primarily in the lumbar spine and femoral neck."
+          },
+          {
+            "@type": "Question",
+            "name": "What is Spaceflight-Associated Neuro-Ocular Syndrome (SANS)?",
+            "answer": "SANS is a condition affecting long-duration astronauts characterized by optic disc edema, posterior globe flattening, choroidal folds, and hyperopic refractive shifts, caused by persistent cephalad venous and cerebrospinal fluid congestion."
+          },
+          {
+            "@type": "Question",
+            "name": "How does spaceflight affect human DNA and telomeres?",
+            "answer": "NASA Twins Study and orbital telemetry revealed that astronaut telomeres transiently elongate during spaceflight due to mitochondrial stress responses, but rapidly shorten upon return to Earth, alongside increased double-strand breaks from galactic cosmic rays."
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://biogravity.space/microgravity-effects-on-human-body#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "BioGravity",
+            "item": "https://biogravity.space/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Space Medicine",
+            "item": "https://biogravity.space/research"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Microgravity Effects on Human Body",
+            "item": "https://biogravity.space/microgravity-effects-on-human-body"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col font-sans selection:bg-cyan-500/30">
+
+  <!-- Navigation -->
+  <header class="sticky top-0 z-40 w-full backdrop-blur-xl bg-slate-950/80 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500 to-emerald-500 p-[1.5px]">
+          <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+            <span class="text-lg">⚛️</span>
+          </div>
+        </div>
+        <div>
+          <span class="font-bold text-2xl bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent">
+            BioGravity<span class="text-cyan-400">.</span>
+          </span>
+          <span class="block text-[10px] font-mono tracking-widest text-emerald-400 -mt-1 uppercase">Space Medicine Hub</span>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm">
+        <a href="/" class="text-slate-300 hover:text-cyan-400 transition">Home</a>
+        <a href="/research" class="text-slate-300 hover:text-cyan-400 transition">Research Feed</a>
+        <a href="/molecular-biology-research" class="text-slate-300 hover:text-cyan-400 transition">Molecular Biology</a>
+        <a href="/microgravity-effects-on-human-body" class="text-cyan-400 font-semibold">Human Space Physiology</a>
+        <a href="/about" class="text-slate-300 hover:text-cyan-400 transition">About</a>
+      </nav>
+      <a href="/research" class="px-4 py-2 rounded-xl text-xs font-mono border border-cyan-500/40 bg-cyan-950/40 text-cyan-300 hover:bg-cyan-900/60 transition">
+        Browse 12 Dispatches &rarr;
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Header -->
+  <main class="flex-grow py-12">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Breadcrumbs -->
+      <nav class="flex items-center gap-2 text-xs font-mono text-slate-400 mb-6">
+        <a href="/" class="hover:text-cyan-400">BioGravity</a>
+        <span>/</span>
+        <a href="/research" class="hover:text-cyan-400">Space Medicine</a>
+        <span>/</span>
+        <span class="text-cyan-400">Human Microgravity Physiology</span>
+      </nav>
+
+      <!-- Badge & Title -->
+      <div class="mb-4 flex items-center gap-3">
+        <span class="px-3 py-1 rounded-full text-xs font-mono bg-cyan-500/10 border border-cyan-500/30 text-cyan-300">
+          Clinical Space Physiology
+        </span>
+        <span class="text-xs font-mono text-slate-400">Published October 2026 • 15 Min Comprehensive Reference</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight mb-6">
+        Microgravity Effects on the Human Body: Physiological Adaptations &amp; Countermeasures
+      </h1>
+
+      <p class="text-lg text-slate-300 leading-relaxed mb-8">
+        When the human organism escapes terrestrial gravitational acceleration (\(1g\)), every organ system—from macroscopic fluid hemodynamics down to sub-angstrom mitochondrial enzyme clocks—undergoes profound physiological remodeling. This clinical reference explores the mechanisms of space adaptation, the risks of long-duration exploration, and bio-engineered countermeasures.
+      </p>
+
+      <!-- Key Takeaways Box -->
+      <div class="mb-10 p-6 rounded-2xl border border-cyan-500/30 bg-slate-900/90 shadow-xl shadow-cyan-950/20">
+        <div class="flex items-center gap-2 text-xs font-mono text-cyan-400 uppercase tracking-widest mb-3 font-bold">
+          <span class="inline-block w-2.5 h-2.5 rounded-full bg-cyan-400 animate-pulse"></span>
+          Core Clinical Takeaways
+        </div>
+        <ul class="text-sm text-slate-200 space-y-2.5 list-disc list-inside">
+          <li><strong>Fluid Redistribution:</strong> Zero gravity removes the 100 mmHg hydrostatic column, shifting 2L of fluid cephalad, elevating jugular venous pressure and intracranial tension.</li>
+          <li><strong>Musculoskeletal Atrophy:</strong> Without ground reaction forces, antigravity postural muscles (soleus, gastrocnemius) lose up to 20% volume within 180 days, while cancellous bone density diminishes at 1.0–1.5% monthly.</li>
+          <li><strong>Neuro-Ocular Shifts (SANS):</strong> Approximately 70% of long-duration astronauts develop optic disc edema and globe flattening from prolonged venous engorgement.</li>
+          <li><strong>Genomic &amp; Mitochondrial Stress:</strong> Cosmic radiation coupled with microgravity induces persistent DNA double-strand breaks and metabolic oscillator desynchronization.</li>
+        </ul>
+      </div>
+
+      <!-- Comparison Telemetry Table -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-cyan-400 mb-4 pb-2 border-b border-cyan-500/20">
+          Physiological Systemic Comparison: Earth vs. LEO vs. Mars Transit
+        </h2>
+        <div class="overflow-x-auto rounded-xl border border-slate-800">
+          <table class="w-full text-left text-xs sm:text-sm font-mono">
+            <thead class="bg-slate-900 text-cyan-300 border-b border-slate-800">
+              <tr>
+                <th class="p-3">Physiological System</th>
+                <th class="p-3">Earth Baseline (1g)</th>
+                <th class="p-3">LEO Station (6 Months)</th>
+                <th class="p-3">Mars Transit (3 Years)</th>
+                <th class="p-3">Clinical Countermeasure</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-800 text-slate-300 bg-slate-950/60">
+              <tr>
+                <td class="p-3 font-semibold text-white">Venous Fluid Balance</td>
+                <td class="p-3">Hydrostatic pooling in lower limbs</td>
+                <td class="p-3 text-amber-300">+2L Cephalad shift, puffy face</td>
+                <td class="p-3 text-red-400">Severe carotid distension</td>
+                <td class="p-3">Lower Body Negative Pressure (LBNP)</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-semibold text-white">Skeletal Bone Mineral</td>
+                <td class="p-3">Homeostatic balance (\(T\)-score ~ 0)</td>
+                <td class="p-3 text-amber-300">-6% to -9% femoral neck bone</td>
+                <td class="p-3 text-red-400">-30% osteopenia, fracture risk</td>
+                <td class="p-3">ARED resistance training + Bisphosphonates</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-semibold text-white">Myocardial Mass</td>
+                <td class="p-3">Normal LV stroke volume</td>
+                <td class="p-3 text-amber-300">8–10% Left ventricular atrophy</td>
+                <td class="p-3 text-red-400">Orthostatic intolerance upon landing</td>
+                <td class="p-3">High-intensity interval ergometry (HIIT)</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-semibold text-white">Ocular Morphology</td>
+                <td class="p-3">Convex globe, normal lamina cribrosa</td>
+                <td class="p-3 text-amber-300">Grade 1-2 Frisen edema, cotton spots</td>
+                <td class="p-3 text-red-400">Irreversible vision impairment</td>
+                <td class="p-3">Cyclical pressure suits &amp; carbonic anhydrase inhibitors</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-semibold text-white">DNA Integrity &amp; Telomeres</td>
+                <td class="p-3">Basal terrestrial repair rates</td>
+                <td class="p-3 text-amber-300">Transient elongation, +GCR breaks</td>
+                <td class="p-3 text-red-400">Severe telomeric attrition, mutation risk</td>
+                <td class="p-3">Synthetic Poly-ADP metallo-peptides</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Detailed Breakdown Section -->
+      <section class="space-y-8 mb-12">
+        <div>
+          <h3 class="text-xl font-bold text-white mb-3">1. Cephalad Fluid Shift &amp; Cardiovascular Remodeling</h3>
+          <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
+            On Earth, gravity establishes a hydrostatic pressure gradient given by \(P = \rho g h\), creating approximately 100 mmHg of pressure in the vessels of the feet while maintaining 70 mmHg at the carotid sinuses. In zero gravity, \(g \to 0\), instantly dissipating the pressure gradient. Blood shifts toward the head and chest. The body interprets this increased central venous volume as an excess of total body water, signaling the kidneys to suppress antidiuretic hormone (ADH) and renin-angiotensin-aldosterone pathways, triggering a 10% to 15% reduction in total plasma volume within 48 hours.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-bold text-white mb-3">2. Spaceflight-Associated Neuro-Ocular Syndrome (SANS)</h3>
+          <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
+            First documented during long-duration International Space Station missions, SANS represents one of NASA's highest-priority human health risks. Without diurnal upright posture to drain cranial venous sinuses, intracranial pressure (ICP) and optic nerve sheath diameter (ONSD) remain chronically elevated. This persistent pressure indents the posterior sclera, leading to hyperopic shifts where astronauts suddenly lose near-vision clarity and require "space anticipation glasses."
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-bold text-white mb-3">3. Molecular &amp; Quantum Cellular Biology in Microgravity</h3>
+          <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
+            Beyond gross anatomical changes, microgravity profoundly affects subcellular mechanics. As documented in BioGravity orbital dispatches, cellular mitochondria undergo metabolic desynchronization when buoyancy-driven convective cooling ceases. Concurrently, radical pair spin coherence lifetimes extend dramatically due to suppressed thermal turbulence, confirming that weightlessness unmasks non-classical quantum biological behavior in human cells.
+          </p>
+        </div>
+      </section>
+
+      <!-- Cross-Links to Dispatches -->
+      <section class="mb-12 p-6 rounded-2xl border border-slate-800 bg-slate-900/60">
+        <h3 class="text-lg font-bold text-white mb-3">Explore Related BioGravity Primary Research Dispatches</h3>
+        <p class="text-xs text-slate-400 mb-4">Read peer-reviewed orbital telemetry, mathematical formulations, and experimental datasets directly from our Low Earth Orbit station:</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs font-mono">
+          <a href="/articles/relativistic-time-dilation-and-mitochondrial-aging-clocks" class="p-3 rounded-xl border border-slate-800 hover:border-cyan-500/40 bg-slate-950/70 text-cyan-300 hover:text-white transition">
+            &rarr; Relativistic Time Dilation &amp; Mitochondrial Clocks
+          </a>
+          <a href="/articles/synthetic-poly-adp-metallo-peptides-for-telomeric-radioprotection-in-deep-space-" class="p-3 rounded-xl border border-slate-800 hover:border-cyan-500/40 bg-slate-950/70 text-cyan-300 hover:text-white transition">
+            &rarr; Synthetic Poly-ADP Peptides for Deep-Space Radioprotection
+          </a>
+          <a href="/articles/acoustic-levitation-and-scaffold-free-vascularized-cardiac-organoid-bioprinting-" class="p-3 rounded-xl border border-slate-800 hover:border-cyan-500/40 bg-slate-950/70 text-cyan-300 hover:text-white transition">
+            &rarr; Scaffold-Free Vascularized Cardiac Bioprinting in Zero-G
+          </a>
+          <a href="/articles/radical-pair-spin-coherence-and-magnetoreception-in-human-cryptochrome-4-photore" class="p-3 rounded-xl border border-slate-800 hover:border-cyan-500/40 bg-slate-950/70 text-cyan-300 hover:text-white transition">
+            &rarr; Quantum Spin Coherence in Human Cryptochrome 4
+          </a>
+        </div>
+      </section>
+
+      <!-- Google Featured Snippet FAQ Section -->
+      <section id="frequently-asked-questions" class="mb-12">
+        <h2 class="text-2xl font-bold text-cyan-400 mb-6 pb-2 border-b border-cyan-500/20">
+          Frequently Asked Questions (Google Featured Snippets)
+        </h2>
+        <div class="space-y-4">
+          <details class="group border border-slate-800 bg-slate-900/60 rounded-xl p-4 transition open:border-cyan-500/40">
+            <summary class="font-semibold text-slate-200 cursor-pointer list-none flex justify-between items-center group-hover:text-cyan-300">
+              <span>What happens to the human cardiovascular system in microgravity?</span>
+              <span class="text-cyan-400 text-lg transition-transform group-open:rotate-180">&#9662;</span>
+            </summary>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed border-t border-slate-800 pt-3">
+              Without gravity pulling blood toward the lower extremities, approximately 2 liters of venous fluid shifts cephalad (toward the head and chest). This triggers acute central hypovolemia, facial edema, baroreceptor reset, and long-term left ventricular remodeling.
+            </p>
+          </details>
+
+          <details class="group border border-slate-800 bg-slate-900/60 rounded-xl p-4 transition open:border-cyan-500/40">
+            <summary class="font-semibold text-slate-200 cursor-pointer list-none flex justify-between items-center group-hover:text-cyan-300">
+              <span>Why do astronauts lose bone density in space?</span>
+              <span class="text-cyan-400 text-lg transition-transform group-open:rotate-180">&#9662;</span>
+            </summary>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed border-t border-slate-800 pt-3">
+              Microgravity removes mechanical strain on the skeleton, suppressing osteoblast bone synthesis while stimulating osteoclast resorption. Astronauts lose approximately 1% to 1.5% of cancellous bone mass per month in weightlessness, primarily in the lumbar spine and femoral neck.
+            </p>
+          </details>
+
+          <details class="group border border-slate-800 bg-slate-900/60 rounded-xl p-4 transition open:border-cyan-500/40">
+            <summary class="font-semibold text-slate-200 cursor-pointer list-none flex justify-between items-center group-hover:text-cyan-300">
+              <span>What is Spaceflight-Associated Neuro-Ocular Syndrome (SANS)?</span>
+              <span class="text-cyan-400 text-lg transition-transform group-open:rotate-180">&#9662;</span>
+            </summary>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed border-t border-slate-800 pt-3">
+              SANS is a condition affecting long-duration astronauts characterized by optic disc edema, posterior globe flattening, choroidal folds, and hyperopic refractive shifts, caused by persistent cephalad venous and cerebrospinal fluid congestion.
+            </p>
+          </details>
+
+          <details class="group border border-slate-800 bg-slate-900/60 rounded-xl p-4 transition open:border-cyan-500/40">
+            <summary class="font-semibold text-slate-200 cursor-pointer list-none flex justify-between items-center group-hover:text-cyan-300">
+              <span>How does spaceflight affect human DNA and telomeres?</span>
+              <span class="text-cyan-400 text-lg transition-transform group-open:rotate-180">&#9662;</span>
+            </summary>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed border-t border-slate-800 pt-3">
+              NASA Twins Study and orbital telemetry revealed that astronaut telomeres transiently elongate during spaceflight due to mitochondrial stress responses, but rapidly shorten upon return to Earth, alongside increased double-strand breaks from galactic cosmic rays.
+            </p>
+          </details>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800 bg-slate-950 text-slate-400 text-xs py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center font-mono">
+      BioGravity Orbital Biotechnology &amp; Space Medicine Hub • <a href="/sitemap.xml" class="text-cyan-400 hover:underline">XML Sitemap</a> • <a href="/rss.xml" class="text-cyan-400 hover:underline">RSS Feed</a>
+    </div>
+  </footer>
+
+</body>
+</html>
+`;
+
+// Write file in root
+fs.writeFileSync(path.join(__dirname, '..', 'microgravity-effects-on-human-body.html'), pillarHtml, 'utf8');
+
+// Write clean directory alias
+const dirPath = path.join(__dirname, '..', 'microgravity-effects-on-human-body');
+if (!fs.existsSync(dirPath)) fs.mkdirSync(dirPath, { recursive: true });
+fs.writeFileSync(path.join(dirPath, 'index.html'), pillarHtml, 'utf8');
+
+console.log('✅ Generated microgravity-effects-on-human-body.html & clean directory route!');
