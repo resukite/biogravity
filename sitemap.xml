@@ -58,6 +58,16 @@
 
   <!-- Pre-Rendered High-Authority Research Dispatches (Clean URLs) -->
   <url>
+    <loc>https://biogravity.space/articles/what-does-quantum-parameter-estimation-estimate-a-no-go-result-for-tru</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>What does quantum parameter estimation estimate? A no-go result for true quantity values</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://biogravity.space/articles/phonon-assisted-free-electron-recoil-control-and-mechanical-sensing</loc>
     <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
