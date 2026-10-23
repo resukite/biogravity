@@ -63,6 +63,14 @@
                 </div>
                 <span class="text-slate-400 group-hover:text-slate-800 font-medium">↗</span>
               </a>
+              <a href="https://buymeacoffee.com/biogravity" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-2.5 rounded-xl bg-amber-50/70 hover:bg-amber-100/70 border border-amber-200/80 text-amber-950 transition group shadow-xs">
+                <span class="text-base">☕</span>
+                <div class="flex-1 min-w-0">
+                  <div class="text-[10px] text-amber-700 font-medium">Support Open Science</div>
+                  <div class="text-xs text-amber-950 group-hover:text-amber-900 truncate font-semibold font-mono">buymeacoffee.com/biogravity</div>
+                </div>
+                <span class="text-amber-700 group-hover:text-amber-900 font-medium">↗</span>
+              </a>
             </div>
           </div>
 
@@ -151,9 +159,15 @@
         </div>
 
         <!-- Drawer Footer -->
-        <div class="p-5 border-t border-slate-100 bg-[#f8fafc] text-xs text-slate-500 flex items-center justify-between">
-          <span>&copy; 2026 BioGravity Institute</span>
-          <span class="text-teal-600 font-medium">Open-Access Science</span>
+        <div class="p-5 border-t border-slate-100 bg-[#f8fafc] space-y-3">
+          <a href="https://buymeacoffee.com/biogravity" target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-medium text-xs transition shadow-sm">
+            <span>☕</span>
+            <span>Support BioGravity on Buy Me a Coffee</span>
+          </a>
+          <div class="flex items-center justify-between text-xs text-slate-500 pt-1">
+            <span>&copy; 2026 BioGravity Institute</span>
+            <span class="text-teal-600 font-medium">Open-Access Science</span>
+          </div>
         </div>
 
       </aside>

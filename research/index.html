@@ -88,6 +88,18 @@
           <a href="/contact" class="hover:text-slate-900 transition">Contact</a>
         </nav>
 
+        <!-- Buy Me a Coffee Supporter Pill -->
+        <a 
+          href="https://buymeacoffee.com/biogravity" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="hidden sm:inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-200/80 transition text-xs font-medium shadow-xs"
+          title="Support BioGravity on Buy Me a Coffee"
+        >
+          <span class="text-xs">☕</span>
+          <span>Support</span>
+        </a>
+
         <!-- Bespoke 3-Dot Navigation Menu Button -->
         <button 
           id="nav-sidebar-toggle" 
@@ -106,47 +118,39 @@
     </div>
   </header>
 
-  <!-- ========================================================================= -->
-  <!-- 2. CLEAN HERO SECTION -->
-  <!-- ========================================================================= -->
-  <section class="relative pt-12 pb-14 border-b border-slate-200/80 bg-gradient-to-b from-white via-[#fafbfc] to-[#f8fafc]">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200/80 text-slate-700 text-xs font-medium mb-3">
-          Open Science Repository
-        </span>
-        <h1 class="text-3xl sm:text-5xl font-display font-bold text-slate-900 tracking-tight mb-3">
-          Scientific Research Archive
-        </h1>
-        <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-          Browse 22 peer-reviewed dispatches spanning space medicine, macromolecular crystallography, acoustic organoid bioprinting, and orbital molecular biology.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================= -->
-  <!-- 3. RESEARCH ARCHIVE & LIVE SEARCH SECTION -->
-  <!-- ========================================================================= -->
-  <main class="flex-grow py-10">
+  <!-- RESEARCH HERO & LIVE SEARCH SECTION -->
+  <main class="flex-grow py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <!-- Live Search & Filtering Controls Card -->
-      <div class="mb-8 p-5 sm:p-6 rounded-2xl bg-white border border-slate-200/80 shadow-sm space-y-4">
+      <!-- Page Title & Header -->
+      <div class="mb-10 text-center sm:text-left">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-medium mb-3">
+          <span>📡</span> Peer-Reviewed Open Science Archive
+        </div>
+        <h1 class="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-slate-900 tracking-tight">
+          Scientific Research Archive
+        </h1>
+        <p class="text-slate-600 text-sm sm:text-base mt-2 max-w-2xl leading-relaxed">
+          Explore breakthrough peer-reviewed findings compiled from orbital microgravity laboratories. Search across experimental protocols, molecular crystallography, and space therapeutics.
+        </p>
+      </div>
+
+      <!-- Live Search & Filtering Controls -->
+      <div class="mb-8 p-6 rounded-2xl bg-white border border-slate-200/80 shadow-sm space-y-4">
         
         <div class="flex flex-col md:flex-row gap-4 items-center justify-between">
           <div class="relative w-full md:max-w-md">
             <input 
               type="search" 
               id="live-search-input" 
-              placeholder="Filter by keyword, topic, or author..." 
-              class="w-full py-2.5 pl-4 pr-10 text-xs rounded-full bg-slate-100 hover:bg-slate-100/80 border border-slate-200/80 text-slate-800 placeholder-slate-400 focus:bg-white focus:outline-none focus:border-slate-400 transition"
+              placeholder="Filter by keyword, title, topic, or DOI..." 
+              class="w-full py-2.5 pl-4 pr-10 text-xs rounded-xl bg-slate-50 border border-slate-200 text-slate-800 placeholder-slate-400 focus:bg-white focus:outline-none focus:border-slate-400 transition"
             >
-            <span class="absolute right-3.5 top-3 text-slate-400 text-xs">🔍</span>
+            <span class="absolute right-3 top-3 text-slate-400 text-xs">🔍</span>
           </div>
 
           <div class="flex items-center gap-3 w-full md:w-auto justify-between sm:justify-end">
-            <span class="text-xs text-slate-500 font-medium" id="results-count">Showing 22 dispatches</span>
+            <span class="text-xs text-slate-500 font-medium" id="results-count">Showing all dispatches</span>
             <div class="flex items-center gap-1 border border-slate-200 rounded-lg p-0.5 bg-slate-50">
               <button id="view-grid-btn" class="p-1.5 rounded text-slate-900 bg-white shadow-xs cursor-pointer" title="Grid View">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
@@ -159,27 +163,27 @@
         </div>
 
         <!-- Filter category pills -->
-        <div class="flex flex-wrap items-center gap-2 pt-3 border-t border-slate-100" id="category-pills">
-          <button data-cat="all" class="cat-pill ux-btn-primary px-3.5 py-1.5 text-xs font-medium cursor-pointer">
+        <div class="flex flex-wrap items-center gap-2 pt-2 border-t border-slate-100" id="category-pills">
+          <button data-cat="all" class="cat-pill px-3 py-1.5 rounded-full text-xs font-medium bg-slate-900 text-white transition cursor-pointer">
             All Disciplines
           </button>
-          <button data-cat="Space Medicine" class="cat-pill ux-btn-secondary px-3.5 py-1.5 text-xs font-medium cursor-pointer">
+          <button data-cat="Space Medicine" class="cat-pill px-3 py-1.5 rounded-full text-xs font-medium bg-slate-100 text-slate-600 hover:bg-slate-200 transition cursor-pointer">
             Space Medicine
           </button>
-          <button data-cat="Molecular Biology" class="cat-pill ux-btn-secondary px-3.5 py-1.5 text-xs font-medium cursor-pointer">
+          <button data-cat="Molecular Biology" class="cat-pill px-3 py-1.5 rounded-full text-xs font-medium bg-slate-100 text-slate-600 hover:bg-slate-200 transition cursor-pointer">
             Molecular Biology
           </button>
-          <button data-cat="Microgravity Crystallography" class="cat-pill ux-btn-secondary px-3.5 py-1.5 text-xs font-medium cursor-pointer">
+          <button data-cat="Microgravity Crystallography" class="cat-pill px-3 py-1.5 rounded-full text-xs font-medium bg-slate-100 text-slate-600 hover:bg-slate-200 transition cursor-pointer">
             Crystallography
           </button>
-          <button data-cat="Acoustic Bioprinting" class="cat-pill ux-btn-secondary px-3.5 py-1.5 text-xs font-medium cursor-pointer">
+          <button data-cat="Acoustic Bioprinting" class="cat-pill px-3 py-1.5 rounded-full text-xs font-medium bg-slate-100 text-slate-600 hover:bg-slate-200 transition cursor-pointer">
             Bioprinting
           </button>
         </div>
 
       </div>
 
-      <!-- Articles Container (Rendered statically & updated via JS) -->
+      <!-- Articles Container (Rendered by JS) -->
       <div id="articles-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
     <article class="ux-card p-6 flex flex-col justify-between group transition">
@@ -672,7 +676,7 @@
         <div class="text-4xl mb-3">🔍</div>
         <h3 class="font-display font-bold text-lg text-slate-900 mb-1">No Matching Dispatches Found</h3>
         <p class="text-slate-500 text-xs max-w-sm mx-auto mb-4">Try clearing your search term or selecting another category.</p>
-        <button id="reset-filters-btn" class="ux-btn-primary px-4 py-2 text-xs font-medium cursor-pointer">
+        <button id="reset-filters-btn" class="px-4 py-2 rounded-xl bg-slate-900 text-white text-xs font-medium hover:bg-slate-800 transition cursor-pointer">
           Reset All Filters
         </button>
       </div>
@@ -701,7 +705,7 @@
           <div class="font-semibold text-slate-900 text-xs uppercase tracking-wider mb-3">Site Architecture</div>
           <ul class="space-y-2">
             <li><a href="/" class="hover:text-slate-900 transition">Home Hub</a></li>
-            <li><a href="/research" class="text-teal-600 font-medium">Research Feed &amp; Search</a></li>
+            <li><a href="/research" class="hover:text-slate-900 transition">Research Feed &amp; Search</a></li>
             <li><a href="/tools" class="hover:text-slate-900 transition">Tools &amp; Simulators</a></li>
             <li><a href="/world-space-week-2026" class="hover:text-slate-900 transition">Space Week 2026 Guide</a></li>
             <li><a href="/molecular-biology-research" class="hover:text-slate-900 transition">Molecular Biology Guide</a></li>
@@ -725,6 +729,13 @@
               <div>
                 <div class="text-[10px] text-slate-400 uppercase">Official X (Twitter)</div>
                 <a href="https://x.com/Biogravityspace" target="_blank" rel="noopener noreferrer" class="text-slate-900 hover:text-teal-600 font-mono text-xs">@Biogravityspace</a>
+              </div>
+            </li>
+            <li class="flex items-center gap-2">
+              <span>☕</span>
+              <div>
+                <div class="text-[10px] text-slate-400 uppercase">Support BioGravity</div>
+                <a href="https://buymeacoffee.com/biogravity" target="_blank" rel="noopener noreferrer" class="text-slate-900 hover:text-amber-700 font-mono text-xs">buymeacoffee.com/biogravity</a>
               </div>
             </li>
           </ul>
@@ -759,6 +770,8 @@
           <a href="/disclaimer" class="hover:text-slate-700 transition">Disclaimer</a>
           <span>•</span>
           <a href="/sitemap" class="hover:text-slate-700 transition">Sitemap</a>
+          <span>•</span>
+          <a href="https://buymeacoffee.com/biogravity" target="_blank" rel="noopener noreferrer" class="hover:text-amber-700 transition font-medium">☕ Buy Me a Coffee</a>
         </div>
       </div>
     </div>
@@ -817,14 +830,13 @@
           const matchQuery = !searchQuery || 
             (a.title && a.title.toLowerCase().includes(searchQuery.toLowerCase())) ||
             (a.excerpt && a.excerpt.toLowerCase().includes(searchQuery.toLowerCase())) ||
-            (a.summary && a.summary.toLowerCase().includes(searchQuery.toLowerCase())) ||
             (a.category && a.category.toLowerCase().includes(searchQuery.toLowerCase())) ||
-            (a.author && a.author.toLowerCase().includes(searchQuery.toLowerCase()));
+            (a.doi && a.doi.toLowerCase().includes(searchQuery.toLowerCase()));
           return matchCat && matchQuery;
         });
 
         if (resultsCount) {
-          resultsCount.textContent = \`Showing \${filtered.length} of \${articlesData.length} dispatches\`;
+          resultsCount.textContent = `Showing ${filtered.length} of ${articlesData.length} dispatches`;
         }
 
         if (filtered.length === 0) {
@@ -837,54 +849,67 @@
 
         if (isGridView) {
           articlesContainer.className = 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6';
-          articlesContainer.innerHTML = filtered.map(a => \`
-            <article class="ux-card p-6 flex flex-col justify-between group transition">
-              <div>
-                <div class="flex items-center justify-between text-xs mb-3">
-                  <span class="px-2.5 py-1 rounded-full bg-teal-50 text-teal-700 font-medium text-[11px] border border-teal-200/60">\${a.category || 'Research'}</span>
-                  <span class="text-slate-400 text-[11px]">\${a.readtime || '8 min read'}</span>
-                </div>
-                <h3 class="font-display font-bold text-base text-slate-900 group-hover:text-teal-600 transition mb-2.5 leading-snug">
-                  <a href="/articles/\${encodeURIComponent(a.id)}">\${a.title}</a>
-                </h3>
-                <p class="text-xs text-slate-600 line-clamp-3 leading-relaxed mb-4">
-                  \${a.summary || a.excerpt || ''}
-                </p>
+          articlesContainer.innerHTML = filtered.map(a => `
+            <article class="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-md hover:border-slate-300 transition duration-300 flex flex-col justify-between group">
+              <div class="relative h-48 overflow-hidden bg-slate-100">
+                <img 
+                  src="${a.cover || 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80'}" 
+                  alt="${a.title}" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition duration-500" 
+                  loading="lazy"
+                >
+                <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-semibold bg-white/90 backdrop-blur-md text-slate-800 shadow-xs border border-slate-200/60">
+                  ${a.category || 'Research'}
+                </span>
               </div>
-              <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
-                <span class="text-slate-500 font-medium">\${a.author || 'BioGravity Research'}</span>
-                <a href="/articles/\${encodeURIComponent(a.id)}" class="text-slate-900 font-medium group-hover:text-teal-600 transition flex items-center gap-1">
-                  Read Dispatch &rarr;
-                </a>
+              <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                <div class="space-y-2">
+                  <div class="flex items-center justify-between text-[11px] text-slate-400">
+                    <span>${a.date || 'October 2026'}</span>
+                    <span>${a.readTime || '6 min read'}</span>
+                  </div>
+                  <h3 class="font-display font-bold text-base text-slate-900 group-hover:text-teal-600 transition line-clamp-2">
+                    <a href="/articles/${a.id}">${a.title}</a>
+                  </h3>
+                  <p class="text-xs text-slate-600 line-clamp-3 leading-relaxed">
+                    ${a.excerpt || ''}
+                  </p>
+                </div>
+                <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
+                  <a href="/articles/${a.id}" class="text-teal-600 font-semibold group-hover:text-teal-700 transition flex items-center gap-1">
+                    Read Dispatch <span>&rarr;</span>
+                  </a>
+                  ${a.doi ? `<span class="text-[10px] text-slate-400 font-mono truncate max-w-[120px]">${a.doi}</span>` : ''}
+                </div>
               </div>
             </article>
-          \`).join('');
+          `).join('');
         } else {
           articlesContainer.className = 'flex flex-col gap-4';
-          articlesContainer.innerHTML = filtered.map(a => \`
-            <article class="ux-card p-5 flex flex-col md:flex-row md:items-center justify-between gap-4 transition group">
+          articlesContainer.innerHTML = filtered.map(a => `
+            <article class="bg-white rounded-xl p-5 border border-slate-200/80 shadow-sm hover:border-slate-300 transition duration-300 flex flex-col md:flex-row md:items-center justify-between gap-4 group">
               <div class="flex-1 space-y-1.5">
-                <div class="flex items-center gap-2.5 text-xs">
-                  <span class="px-2 py-0.5 rounded-full bg-teal-50 text-teal-700 font-medium text-[10px] border border-teal-200/60">\${a.category || 'Research'}</span>
-                  <span class="text-slate-400">•</span>
-                  <span class="text-slate-500 text-[11px]">\${a.date || 'October 2026'}</span>
-                  <span class="text-slate-400">•</span>
-                  <span class="text-slate-500 text-[11px]">\${a.readtime || '8 min read'}</span>
+                <div class="flex items-center gap-3 text-xs">
+                  <span class="font-semibold text-teal-600">${a.category || 'Research'}</span>
+                  <span class="text-slate-300">•</span>
+                  <span class="text-slate-500">${a.date || 'October 2026'}</span>
+                  <span class="text-slate-300">•</span>
+                  <span class="text-slate-500">${a.readTime || '6 min read'}</span>
                 </div>
                 <h3 class="font-display font-bold text-base text-slate-900 group-hover:text-teal-600 transition">
-                  <a href="/articles/\${encodeURIComponent(a.id)}">\${a.title}</a>
+                  <a href="/articles/${a.id}">${a.title}</a>
                 </h3>
                 <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
-                  \${a.summary || a.excerpt || ''}
+                  ${a.excerpt || ''}
                 </p>
               </div>
               <div class="shrink-0 flex items-center gap-3">
-                <a href="/articles/\${encodeURIComponent(a.id)}" class="ux-btn-secondary px-4 py-2 text-xs font-medium group-hover:bg-slate-900 group-hover:text-white transition">
+                <a href="/articles/${a.id}" class="px-4 py-2 rounded-xl bg-slate-900 text-white text-xs font-medium hover:bg-slate-800 transition">
                   Read Dispatch &rarr;
                 </a>
               </div>
             </article>
-          \`).join('');
+          `).join('');
         }
       }
 
@@ -900,9 +925,9 @@
       catPills.forEach(pill => {
         pill.addEventListener('click', () => {
           catPills.forEach(p => {
-            p.className = 'cat-pill ux-btn-secondary px-3.5 py-1.5 text-xs font-medium cursor-pointer';
+            p.className = 'cat-pill px-3 py-1.5 rounded-full text-xs font-medium bg-slate-100 text-slate-600 hover:bg-slate-200 transition cursor-pointer';
           });
-          pill.className = 'cat-pill ux-btn-primary px-3.5 py-1.5 text-xs font-medium cursor-pointer';
+          pill.className = 'cat-pill px-3 py-1.5 rounded-full text-xs font-medium bg-slate-900 text-white transition cursor-pointer';
           activeCategory = pill.getAttribute('data-cat');
           render();
         });
@@ -932,8 +957,8 @@
           if (searchInput) searchInput.value = '';
           catPills.forEach((p, idx) => {
             p.className = idx === 0 
-              ? 'cat-pill ux-btn-primary px-3.5 py-1.5 text-xs font-medium cursor-pointer'
-              : 'cat-pill ux-btn-secondary px-3.5 py-1.5 text-xs font-medium cursor-pointer';
+              ? 'cat-pill px-3 py-1.5 rounded-full text-xs font-medium bg-slate-900 text-white transition cursor-pointer'
+              : 'cat-pill px-3 py-1.5 rounded-full text-xs font-medium bg-slate-100 text-slate-600 hover:bg-slate-200 transition cursor-pointer';
           });
           render();
         });
