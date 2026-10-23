@@ -117,87 +117,98 @@
     </div>
   </header>
 
-  <!-- Page Main Header -->
-  <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
-    
-    <div class="mb-12 text-center max-w-3xl mx-auto">
-      <span class="inline-block px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-medium mb-3">
-        Dedicated Interactive Lab Suite
+  <!-- ========================================================================= -->
+  <!-- 2. CLEAN HERO SECTION -->
+  <!-- ========================================================================= -->
+  <section class="relative pt-12 pb-14 border-b border-slate-200/80 bg-gradient-to-b from-white via-[#fafbfc] to-[#f8fafc]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl">
+      <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200/80 text-slate-700 text-xs font-medium mb-3">
+        Interactive Scientific Suite
       </span>
-      <h1 class="text-3xl sm:text-4xl font-display font-extrabold text-slate-900 mb-3 tracking-tight">
+      <h1 class="text-3xl sm:text-5xl font-display font-bold text-slate-900 tracking-tight mb-3">
         Scientific Calculators &amp; Orbital Simulators
       </h1>
-      <p class="text-slate-600 text-sm leading-relaxed">
+      <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
         Test theoretical models, adjust microgravity parameters, and explore molecular physics dynamics with our suite of open-access scientific tools.
       </p>
     </div>
+  </section>
 
+  <!-- ========================================================================= -->
+  <!-- 3. INTERACTIVE SIMULATORS SUITE -->
+  <!-- ========================================================================= -->
+  <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
+    
     <!-- Tool 1: Quantum Yield & Coherence Predictor -->
-    <section class="mb-14 rounded-2xl p-6 sm:p-8 bg-white border border-slate-200/80 shadow-sm">
+    <section class="ux-card p-6 sm:p-10 mb-12">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         
         <div class="lg:col-span-5 space-y-4">
-          <div class="text-xs font-semibold text-teal-600 uppercase tracking-wider">Tool 01 // Biophysical Model</div>
-          <h2 class="font-display font-bold text-2xl text-slate-900">
+          <div class="flex items-center gap-2">
+            <span class="px-2.5 py-1 rounded-full bg-teal-50 text-teal-700 font-medium text-[11px] border border-teal-200/60">Biophysical Model</span>
+            <span class="text-xs text-slate-400 font-medium">Interactive Tool 01</span>
+          </div>
+          
+          <h2 class="font-display font-bold text-2xl text-slate-900 leading-snug">
             Quantum Yield &amp; Spin Coherence Predictor
           </h2>
-          <p class="text-slate-600 text-xs leading-relaxed">
-            Adjust orbital microgravity attenuation, laser cooling stages, and transverse magnetic shielding to predict macromolecular crystal lattice perfection and enzymatic tunneling efficiency.
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+            Adjust orbital microgravity attenuation, cryogenic cooling stages, and transverse magnetic shielding to predict macromolecular crystal lattice perfection and enzymatic tunneling efficiency.
           </p>
 
           <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-2 text-xs">
             <div class="text-slate-500 text-[10px] uppercase tracking-wider font-semibold">Governing Equation:</div>
             <div class="text-slate-900 text-xs overflow-x-auto py-1 font-mono">\(\Gamma_{\text{coherence}} \propto \exp\left( - \frac{\delta g \cdot m}{\hbar \cdot \tau_{\text{thermal}}} \right)\)</div>
-            <div class="text-slate-500 text-[11px]">As gravitational perturbation \(\delta g \to 0\), thermal decoherence times approach the fundamental quantum limit.</div>
+            <div class="text-slate-500 text-[11px] leading-relaxed">As gravitational perturbation \(\delta g \to 0\), thermal decoherence times approach the fundamental quantum limit.</div>
           </div>
         </div>
 
-        <div class="lg:col-span-7 rounded-xl p-6 bg-slate-50 border border-slate-200/80 space-y-5">
+        <div class="lg:col-span-7 rounded-2xl p-6 sm:p-7 bg-[#f8fafc] border border-slate-200/80 space-y-6">
           <!-- Slider 1 -->
           <div>
-            <div class="flex justify-between items-center text-xs font-medium mb-1.5">
-              <span class="text-slate-700">GRAVITATIONAL ACCELERATION (&mu;g)</span>
-              <span id="slider-val-g" class="text-teal-600 font-bold font-mono">0.05 &mu;g</span>
+            <div class="flex justify-between items-center text-xs font-medium mb-2">
+              <span class="text-slate-700">Gravitational Acceleration (&mu;g)</span>
+              <span id="slider-val-g" class="text-teal-700 font-bold font-mono px-2 py-0.5 rounded bg-white border border-slate-200 text-xs">0.05 &mu;g</span>
             </div>
-            <input type="range" id="sim-g" min="0.01" max="10" step="0.01" value="0.05" class="w-full accent-teal-600 cursor-pointer">
+            <input type="range" id="sim-g" min="0.01" max="10" step="0.01" value="0.05" class="w-full accent-teal-600 cursor-pointer h-2 bg-slate-200 rounded-lg">
           </div>
 
           <!-- Slider 2 -->
           <div>
-            <div class="flex justify-between items-center text-xs font-medium mb-1.5">
-              <span class="text-slate-700">CRYO TEMPERATURE (Kelvin)</span>
-              <span id="slider-val-temp" class="text-teal-600 font-bold font-mono">4.2 K</span>
+            <div class="flex justify-between items-center text-xs font-medium mb-2">
+              <span class="text-slate-700">Cryogenic Temperature (Kelvin)</span>
+              <span id="slider-val-temp" class="text-teal-700 font-bold font-mono px-2 py-0.5 rounded bg-white border border-slate-200 text-xs">4.2 K</span>
             </div>
-            <input type="range" id="sim-temp" min="1" max="300" step="1" value="4.2" class="w-full accent-teal-600 cursor-pointer">
+            <input type="range" id="sim-temp" min="1" max="300" step="1" value="4.2" class="w-full accent-teal-600 cursor-pointer h-2 bg-slate-200 rounded-lg">
           </div>
 
           <!-- Slider 3 -->
           <div>
-            <div class="flex justify-between items-center text-xs font-medium mb-1.5">
-              <span class="text-slate-700">MAGNETIC NOISE CANCELLATION (%)</span>
-              <span id="slider-val-shield" class="text-teal-600 font-bold font-mono">98 %</span>
+            <div class="flex justify-between items-center text-xs font-medium mb-2">
+              <span class="text-slate-700">Magnetic Noise Cancellation (%)</span>
+              <span id="slider-val-shield" class="text-teal-700 font-bold font-mono px-2 py-0.5 rounded bg-white border border-slate-200 text-xs">98 %</span>
             </div>
-            <input type="range" id="sim-shield" min="50" max="99.9" step="0.1" value="98" class="w-full accent-teal-600 cursor-pointer">
+            <input type="range" id="sim-shield" min="50" max="99.9" step="0.1" value="98" class="w-full accent-teal-600 cursor-pointer h-2 bg-slate-200 rounded-lg">
           </div>
 
           <!-- Live Outputs -->
-          <div class="grid grid-cols-3 gap-3 pt-4 border-t border-slate-200">
-            <div class="p-3.5 rounded-xl bg-white border border-slate-200/80 text-center shadow-xs">
-              <div class="text-[10px] font-medium text-slate-500 uppercase tracking-wider">Crystal Resolution</div>
-              <div id="sim-out-res" class="text-lg font-bold font-display text-slate-900 mt-0.5">0.82 Å</div>
-              <div class="text-[10px] font-medium text-teal-600">Sub-angstrom</div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-5 border-t border-slate-200">
+            <div class="p-4 rounded-xl bg-white border border-slate-200/80 text-center shadow-xs">
+              <div class="text-[10px] font-semibold text-slate-500 uppercase tracking-wider">Crystal Resolution</div>
+              <div id="sim-out-res" class="text-xl font-bold font-display text-slate-900 mt-1">0.82 Å</div>
+              <div class="text-[10px] font-medium text-teal-600 mt-0.5">Sub-angstrom</div>
             </div>
 
-            <div class="p-3.5 rounded-xl bg-white border border-slate-200/80 text-center shadow-xs">
-              <div class="text-[10px] font-medium text-slate-500 uppercase tracking-wider">Spin Coherence</div>
-              <div id="sim-out-coh" class="text-lg font-bold font-display text-slate-900 mt-0.5">384 ps</div>
-              <div class="text-[10px] font-medium text-teal-600">Stable State</div>
+            <div class="p-4 rounded-xl bg-white border border-slate-200/80 text-center shadow-xs">
+              <div class="text-[10px] font-semibold text-slate-500 uppercase tracking-wider">Spin Coherence</div>
+              <div id="sim-out-coh" class="text-xl font-bold font-display text-slate-900 mt-1">384 ps</div>
+              <div class="text-[10px] font-medium text-teal-600 mt-0.5">Stable State</div>
             </div>
 
-            <div class="p-3.5 rounded-xl bg-white border border-slate-200/80 text-center shadow-xs">
-              <div class="text-[10px] font-medium text-slate-500 uppercase tracking-wider">Cas9 Specificity</div>
-              <div id="sim-out-spec" class="text-lg font-bold font-display text-slate-900 mt-0.5">99.94%</div>
-              <div class="text-[10px] font-medium text-teal-600">Zero Off-Target</div>
+            <div class="p-4 rounded-xl bg-white border border-slate-200/80 text-center shadow-xs">
+              <div class="text-[10px] font-semibold text-slate-500 uppercase tracking-wider">Cas9 Specificity</div>
+              <div id="sim-out-spec" class="text-xl font-bold font-display text-slate-900 mt-1">99.94%</div>
+              <div class="text-[10px] font-medium text-teal-600 mt-0.5">Zero Off-Target</div>
             </div>
           </div>
         </div>
@@ -206,25 +217,35 @@
     </section>
 
     <!-- Tool 2: Matter.js Zero-G Hydrodynamic Molecular Sandbox -->
-    <section class="mb-14 rounded-2xl p-6 sm:p-8 bg-white border border-slate-200/80 shadow-sm">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-6 gap-3">
+    <section class="ux-card p-6 sm:p-10 mb-12">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-6 gap-4">
         <div>
-          <div class="text-xs font-semibold text-teal-600 uppercase tracking-wider">Tool 02 // Physics Simulation</div>
+          <div class="flex items-center gap-2 mb-1.5">
+            <span class="px-2.5 py-1 rounded-full bg-blue-50 text-blue-700 font-medium text-[11px] border border-blue-200/60">Physics Simulation</span>
+            <span class="text-xs text-slate-400 font-medium">Interactive Tool 02</span>
+          </div>
           <h2 class="font-display font-bold text-2xl text-slate-900">Zero-Gravity Particle &amp; Solute Sandbox</h2>
-          <p class="text-slate-600 text-xs mt-1">Simulate Brownian motion and zero-convection molecular diffusion without gravitational sedimentation.</p>
+          <p class="text-slate-600 text-xs sm:text-sm mt-1">Simulate Brownian motion and zero-convection molecular diffusion without gravitational sedimentation.</p>
         </div>
-        <div class="flex items-center gap-2 text-xs font-medium">
-          <button id="btn-reset-physics" class="px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 transition cursor-pointer">Reset Particles</button>
-          <button id="btn-toggle-gravity" class="px-3.5 py-2 rounded-xl bg-slate-900 text-white hover:bg-slate-800 transition cursor-pointer">Toggle Zero-G</button>
+        
+        <div class="flex items-center gap-2.5 shrink-0">
+          <button id="btn-reset-physics" class="ux-btn-secondary px-4 py-2 text-xs cursor-pointer shadow-xs">Reset Particles</button>
+          <button id="btn-toggle-gravity" class="ux-btn-primary px-4 py-2 text-xs cursor-pointer">Toggle Zero-G</button>
         </div>
       </div>
 
-      <div class="relative w-full h-80 rounded-xl bg-slate-900 border border-slate-200 overflow-hidden" id="matter-canvas-container">
+      <!-- Bright, clean laboratory simulation canvas -->
+      <div class="relative w-full h-80 rounded-2xl bg-[#f8fafc] border border-slate-200/80 overflow-hidden shadow-inner" id="matter-canvas-container">
         <!-- Matter.js renders canvas here -->
       </div>
-      <div class="flex justify-between items-center text-[11px] text-slate-500 mt-3 px-1">
-        <span>Click or drag inside the sandbox to inject microfluidic pressure waves</span>
-        <span class="text-teal-700 font-medium">Gravity: <strong id="gravity-status-label" class="font-mono">0.00 g</strong></span>
+      
+      <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center text-xs text-slate-500 mt-3 px-1 gap-2">
+        <span class="flex items-center gap-1.5">
+          <span>💡</span> Click or drag inside the sandbox to inject microfluidic pressure waves
+        </span>
+        <span class="px-2.5 py-1 rounded-full bg-teal-50 text-teal-700 border border-teal-200/60 text-xs font-medium">
+          Simulated Field: <strong id="gravity-status-label" class="font-mono">0.00 g</strong>
+        </span>
       </div>
     </section>
 
@@ -252,7 +273,7 @@
           <ul class="space-y-2">
             <li><a href="/" class="hover:text-slate-900 transition">Home Hub</a></li>
             <li><a href="/research" class="hover:text-slate-900 transition">Research Feed &amp; Search</a></li>
-            <li><a href="/tools" class="hover:text-slate-900 transition">Tools &amp; Simulators</a></li>
+            <li><a href="/tools" class="text-teal-600 font-medium">Tools &amp; Simulators</a></li>
             <li><a href="/world-space-week-2026" class="hover:text-slate-900 transition">Space Week 2026 Guide</a></li>
             <li><a href="/molecular-biology-research" class="hover:text-slate-900 transition">Molecular Biology Guide</a></li>
             <li><a href="/about" class="hover:text-slate-900 transition">About BioGravity</a></li>
@@ -345,7 +366,7 @@
         const temp = parseFloat(simTemp.value);
         const shield = parseFloat(simShield.value);
 
-        valG.textContent = g.toFixed(2) + ' μg';
+        valG.textContent = g.toFixed(2) + ' \u03bcg';
         valTemp.textContent = temp.toFixed(1) + ' K';
         valShield.textContent = shield.toFixed(1) + ' %';
 
@@ -365,7 +386,7 @@
         updatePredictor();
       }
 
-      // 2. Matter.js Zero-G Physics Simulation
+      // 2. Matter.js Zero-G Physics Simulation (Clean Light Lab Theme)
       const container = document.getElementById('matter-canvas-container');
       if (container && typeof Matter !== 'undefined') {
         const { Engine, Render, Runner, Bodies, Composite, Mouse, MouseConstraint } = Matter;
@@ -382,7 +403,7 @@
             width: width,
             height: height,
             wireframes: false,
-            background: '#0f172a'
+            background: '#f8fafc'
           }
         });
 
@@ -390,9 +411,9 @@
         const runner = Runner.create();
         Runner.run(runner, engine);
 
-        // Walls
+        // Subtle Borders/Walls
         const wallThickness = 50;
-        const wallOpts = { isStatic: true, render: { fillStyle: '#1e293b' } };
+        const wallOpts = { isStatic: true, render: { fillStyle: '#e2e8f0' } };
         Composite.add(world, [
           Bodies.rectangle(width / 2, -wallThickness / 2, width + 100, wallThickness, wallOpts),
           Bodies.rectangle(width / 2, height + wallThickness / 2, width + 100, wallThickness, wallOpts),
@@ -402,8 +423,8 @@
 
         function spawnParticles() {
           const particles = [];
-          const colors = ['#2dd4bf', '#38bdf8', '#818cf8', '#f43f5e', '#fbbf24'];
-          for (let i = 0; i < 40; i++) {
+          const colors = ['#0d9488', '#0284c7', '#6366f1', '#f59e0b', '#f43f5e'];
+          for (let i = 0; i < 35; i++) {
             const radius = Math.random() * 8 + 6;
             const x = Math.random() * (width - 100) + 50;
             const y = Math.random() * (height - 100) + 50;

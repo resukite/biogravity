@@ -790,48 +790,24 @@ if (fs.existsSync(researchPath)) {
 
   // Generate static HTML cards for every single article
   const staticCardsHtml = articles.map(art => `
-    <article class="spotlight-card rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 flex flex-col group justify-between transition">
-      <div class="relative h-48 overflow-hidden bg-slate-900">
-        <img src="${escapeHtml(art.cover || '')}" alt="${escapeHtml(art.coverAlt || art.title)}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-80 group-hover:opacity-100" loading="lazy">
-        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
-        <span class="absolute top-3 left-3 badge-quantum text-[10px]">
-          ${escapeHtml(art.category)}
-        </span>
-        <span class="absolute top-3 right-3 text-[11px] font-mono text-slate-300 bg-slate-950/80 px-2.5 py-0.5 rounded-full border border-slate-700">
-          ${escapeHtml(art.readtime || '10 min read')}
-        </span>
+    <article class="ux-card p-6 flex flex-col justify-between group transition">
+      <div>
+        <div class="flex items-center justify-between text-xs mb-3">
+          <span class="px-2.5 py-1 rounded-full bg-teal-50 text-teal-700 font-medium text-[11px] border border-teal-200/60">${escapeHtml(art.category || 'Research')}</span>
+          <span class="text-slate-400 text-[11px]">${escapeHtml(art.readtime || '8 min read')}</span>
+        </div>
+        <h3 class="font-display font-bold text-base text-slate-900 group-hover:text-teal-600 transition mb-2.5 leading-snug">
+          <a href="/articles/${encodeURIComponent(art.id)}">${escapeHtml(art.title)}</a>
+        </h3>
+        <p class="text-xs text-slate-600 line-clamp-3 leading-relaxed mb-4">
+          ${escapeHtml(art.summary || art.excerpt || '')}
+        </p>
       </div>
-      
-      <div class="p-6 flex-1 flex flex-col justify-between">
-        <div>
-          <div class="flex items-center gap-2 text-xs font-mono text-slate-400 mb-2">
-            <span>${escapeHtml(art.date)}</span>
-            <span>•</span>
-            <span class="text-cyan-400 font-medium">${escapeHtml(art.author)}</span>
-          </div>
-          <h2 class="font-display font-bold text-lg text-white mb-3 group-hover:text-cyan-300 transition line-clamp-2">
-            <a href="/articles/${encodeURIComponent(art.id)}">${escapeHtml(art.title)}</a>
-          </h2>
-          <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed mb-4">
-            ${escapeHtml(art.summary)}
-          </p>
-
-          <div class="flex flex-wrap gap-1.5 mb-4">
-            ${(art.tags || []).slice(0, 3).map(tag => `
-              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#${escapeHtml(tag)}</span>
-            `).join('')}
-          </div>
-        </div>
-
-        <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
-          <div class="flex items-center gap-1.5 text-xs font-mono text-emerald-400">
-            <span>DOI:</span>
-            <span class="text-slate-400 text-[10px]">${escapeHtml((art.doi || '').split('/').pop() || 'verified')}</span>
-          </div>
-          <a href="/articles/${encodeURIComponent(art.id)}" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 font-semibold flex items-center gap-1">
-            Read Dispatch →
-          </a>
-        </div>
+      <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
+        <span class="text-slate-500 font-medium">${escapeHtml(art.author || 'BioGravity Research')}</span>
+        <a href="/articles/${encodeURIComponent(art.id)}" class="text-slate-900 font-medium group-hover:text-teal-600 transition flex items-center gap-1">
+          Read Dispatch →
+        </a>
       </div>
     </article>
   `).join('\n');
