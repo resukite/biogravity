@@ -36,6 +36,11 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: 🟢 Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
       - name: 🔬 Execute Cloud SEO Publishing Daemon
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -58,8 +63,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Stage new markdown dispatches, HTML pages, json database, and sitemap
-          git add articles/ data/ sitemap.xml index.html
+          # Stage new markdown dispatches, HTML pages, json database, research feed, and sitemap
+          git add articles/ data/ sitemap.xml index.html research/ research.html feed.xml rss.xml
 
           if git diff --staged --quiet; then
             echo "✅ No new changes detected. Workspace is up-to-date."
