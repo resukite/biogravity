@@ -5,8 +5,17 @@
     <link>https://biogravity.space/</link>
     <description>Open-access research dispatches on quantum enzymology, microgravity cell biology, and 3D organoid bioprinting in Low Earth Orbit.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Oct 2026 07:10:47 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 05:04:45 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Phonon-assisted free-electron recoil control and mechanical sensing</title>
+      <link>https://biogravity.space/articles/phonon-assisted-free-electron-recoil-control-and-mechanical-sensing</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/phonon-assisted-free-electron-recoil-control-and-mechanical-sensing</guid>
+      <pubDate>Thu, 22 Oct 2026 21:16:32 GMT</pubDate>
+      <dc:creator>Sunjun Hwang</dc:creator>
+      <description>Mechanical vibrations are fundamental to a wide range of physical phenomena and technologies, yet their ability to actively shape free-electron dynamics remains largely unexplored. Here we theoretically show how an optomechanical membrane provides a phonon-assisted optical interf...</description>
+      <category>Space Physics &amp; Biosensing</category>
+    </item>
     <item>
       <title>Characterizing supersolid phase transitions in trapped quantum gases with tilted dipoles at finite temperature</title>
       <link>https://biogravity.space/articles/characterizing-supersolid-phase-transitions-in-trapped-quantum-gases-w</link>
