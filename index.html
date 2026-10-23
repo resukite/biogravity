@@ -155,8 +155,27 @@
   <!-- ========================================================================= -->
   <main class="flex-grow">
     
-    <section class="py-16 sm:py-24 border-b border-slate-800/80 bg-gradient-to-b from-slate-950 via-slate-900/40 to-slate-950">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+    <section class="relative py-20 sm:py-28 border-b border-slate-800/80 bg-gradient-to-b from-slate-950 via-slate-900/40 to-slate-950 overflow-hidden">
+      
+      <!-- Authentic 3D Moon Astrophotography (Real Crater Resolution & Spherical Depth) -->
+      <div class="absolute top-1/2 -translate-y-1/2 right-1/2 translate-x-1/2 md:translate-x-0 md:right-10 lg:right-20 w-72 h-72 sm:w-96 sm:h-96 lg:w-[460px] lg:h-[460px] pointer-events-none select-none -z-10 opacity-40 sm:opacity-60 lg:opacity-75">
+        <div class="relative w-full h-full rounded-full overflow-hidden shadow-[0_0_80px_rgba(255,255,255,0.08),0_0_120px_rgba(34,211,238,0.06)]">
+          <img 
+            src="https://images.unsplash.com/photo-1532693322450-2cb5c511067d?auto=format&fit=crop&w=1200&q=85" 
+            alt="Authentic 3D telescopic photograph of the Moon showing sharp crater topography" 
+            class="w-full h-full object-cover rounded-full mix-blend-screen scale-105 filter brightness-100 contrast-110"
+            loading="eager"
+          >
+          <!-- Subtle Natural Spherical Lighting & Terminator Shadow for Real 3D Curvature -->
+          <div class="absolute inset-0 rounded-full shadow-[inset_-35px_-35px_80px_rgba(2,6,23,0.92),inset_12px_12px_35px_rgba(255,255,255,0.12)] pointer-events-none"></div>
+          <div class="absolute inset-0 rounded-full bg-gradient-to-t from-slate-950/70 via-transparent to-transparent pointer-events-none"></div>
+        </div>
+      </div>
+
+      <!-- Subtle background cosmic atmosphere -->
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.15),rgba(255,255,255,0))] pointer-events-none -z-20"></div>
+
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 relative z-10">
         
         <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-950/60 border border-cyan-500/30 text-cyan-300 text-xs font-mono">
           <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
