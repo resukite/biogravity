@@ -9,12 +9,12 @@ console.log('[PERFECTION-SUITE] 🚀 Starting 54-Point Full AdSense Compliance P
 
 // 1. Tags to inject into all HTML <head>
 const GA4_SNIPPET = `  <!-- Google Analytics 4 (GA4) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BGSPACE2026"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D7XWPNNWRF"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-BGSPACE2026');
+    gtag('config', 'G-D7XWPNNWRF');
   </script>`;
 
 const CSP_SECURITY_SNIPPET = `  <!-- Security Headers & Content Security Policy (CSP) -->
@@ -46,7 +46,7 @@ htmlFiles.forEach(file => {
   let html = fs.readFileSync(filePath, 'utf8');
 
   // Inject GA4 if missing
-  if (!html.includes('G-BGSPACE2026')) {
+  if (!html.includes('G-D7XWPNNWRF')) {
     html = html.replace('<head>', `<head>\n${GA4_SNIPPET}`);
   }
 

@@ -21,12 +21,12 @@ const html = `<!DOCTYPE html>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8576621614388905" crossorigin="anonymous"></script>
 
   <!-- Google Analytics 4 (GA4) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BGSPACE2026"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D7XWPNNWRF"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-BGSPACE2026');
+    gtag('config', 'G-D7XWPNNWRF');
   </script>
 
   <meta charset="UTF-8">
