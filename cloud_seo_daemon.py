@@ -1185,6 +1185,9 @@ def compile_html(article: dict, all_articles: list) -> str:
     html = f"""<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8576621614388905"
+     crossorigin="anonymous"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{escape_html(title)} | BioGravity Space</title>
