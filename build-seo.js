@@ -393,6 +393,7 @@ ${JSON.stringify(schema, null, 2)}
         <a href="/world-space-week-2026" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Space Week 2026</a>
         <a href="/molecular-biology-research" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Molecular Biology</a>
         <a href="/about" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Lab Notes / About</a>
+        <a href="/contact" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Contact</a>
       </nav>
 
       <!-- Action -->
@@ -681,6 +682,9 @@ ${JSON.stringify(schema, null, 2)}
             <li><a href="/privacy-policy" class="hover:text-cyan-400">Privacy Policy (DART & Cookies)</a></li>
             <li><a href="/terms" class="hover:text-cyan-400">Terms of Service</a></li>
             <li><a href="/about" class="hover:text-cyan-400">Editorial & E-E-A-T Standards</a></li>
+            <li><a href="/contact" class="hover:text-cyan-400">Contact & Support</a></li>
+            <li><a href="/disclaimer" class="hover:text-cyan-400">Research & YMYL Disclaimer</a></li>
+            <li><a href="/sitemap" class="hover:text-cyan-400">HTML Sitemap</a></li>
             <li><a href="/sitemap.xml" class="hover:text-cyan-400">XML Sitemap</a></li>
           </ul>
         </div>
@@ -694,12 +698,16 @@ ${JSON.stringify(schema, null, 2)}
       </div>
       <div class="pt-6 border-t border-slate-800 text-[11px] font-mono text-slate-500 flex flex-col sm:flex-row justify-between items-center gap-4">
         <div>&copy; 2026 BioGravity Institute. All rights reserved.</div>
-        <div class="flex gap-4">
+        <div class="flex flex-wrap gap-4">
           <a href="/privacy-policy" class="hover:text-cyan-400">Privacy Policy</a>
           <span>•</span>
           <a href="/terms" class="hover:text-cyan-400">Terms</a>
           <span>•</span>
-          <a href="/sitemap.xml" class="hover:text-cyan-400">Sitemap</a>
+          <a href="/contact" class="hover:text-cyan-400">Contact</a>
+          <span>•</span>
+          <a href="/disclaimer" class="hover:text-cyan-400">Disclaimer</a>
+          <span>•</span>
+          <a href="/sitemap" class="hover:text-cyan-400">Sitemap</a>
         </div>
       </div>
     </div>
@@ -886,6 +894,11 @@ if (fs.existsSync(researchPath)) {
     );
   }
 
+    if (!researchHtml.includes('/contact')) {
+    researchHtml = researchHtml.replace('About & Lab Notes</a>', 'About & Lab Notes</a>\n          <a href="/contact" class="hover:text-cyan-400">Contact</a>');
+    researchHtml = researchHtml.replace('href="/terms" class="hover:text-cyan-400">Terms</a>', 'href="/terms" class="hover:text-cyan-400">Terms</a>\n          <span>•</span>\n          <a href="/contact" class="hover:text-cyan-400">Contact</a>\n          <span>•</span>\n          <a href="/disclaimer" class="hover:text-cyan-400">Disclaimer</a>');
+  }
+
   fs.writeFileSync(researchPath, researchHtml, 'utf8');
 
   // Also write research/index.html
@@ -947,6 +960,11 @@ corePages.forEach(p => {
   </script>
 </head>`
       );
+    }
+
+        if (p.name !== 'contact' && !content.includes('/contact')) {
+      content = content.replace('About & Lab Notes</a>', 'About & Lab Notes</a>\n          <a href="/contact" class="hover:text-cyan-400">Contact</a>');
+      content = content.replace('href="/terms" class="hover:text-cyan-400">Terms</a>', 'href="/terms" class="hover:text-cyan-400">Terms</a>\n          <span>•</span>\n          <a href="/contact" class="hover:text-cyan-400">Contact</a>\n          <span>•</span>\n          <a href="/disclaimer" class="hover:text-cyan-400">Disclaimer</a>');
     }
 
     fs.writeFileSync(filePath, content, 'utf8');
