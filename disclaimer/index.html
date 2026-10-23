@@ -52,6 +52,7 @@
       window.history.replaceState(null, '', clean + window.location.search + window.location.hash);
     }
   </script>
+  <script defer src="/js/sidebar-menu.js"></script>
 </head>
 <body class="bg-slate-950 text-slate-100 quantum-grid min-h-screen flex flex-col selection:bg-cyan-500/30 selection:text-cyan-300">
 
@@ -86,6 +87,14 @@
         <a href="/contact" class="text-slate-300 hover:text-cyan-400 transition">Contact</a>
       </nav>
     </div>
+  
+      <!-- 3-Lined Sidebar Menu Button -->
+      <button id="nav-sidebar-toggle" class="flex items-center gap-2 p-2 px-3 rounded-xl bg-slate-900 border border-slate-700/80 text-slate-200 hover:text-cyan-400 hover:border-cyan-400/50 transition cursor-pointer shadow-sm group" aria-label="Open Navigation Sidebar">
+        <svg class="w-5 h-5 text-slate-300 group-hover:text-cyan-400 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+        <span class="text-xs font-mono font-medium">Menu</span>
+      </button>
   </header>
 
   <!-- Main Content -->
@@ -142,36 +151,94 @@
   </main>
 
   <!-- Footer -->
-  <footer class="mt-auto border-t border-slate-800/80 bg-slate-950/80 backdrop-blur-md py-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-xs font-mono">
-      <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
-        <div>&copy; 2026 BioGravity Institute. All rights reserved.</div>
-
-          <div class="mt-4 pt-3 border-t border-slate-800 flex gap-3 text-xs font-mono text-slate-400">
-            <a href="https://x.com/BioGravitySpace" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400">𝕏 Twitter</a>
-            <span>•</span>
-            <a href="https://github.com/resukite/biogravity" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400">🐙 GitHub</a>
-            <span>•</span>
-            <a href="https://reddit.com/r/BioGravity" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400">👽 Reddit</a>
-            <span>•</span>
-            <a href="/rss.xml" class="hover:text-cyan-400">📡 RSS</a>
+  <!-- GLOBAL FOOTER -->
+  <footer class="border-t border-slate-800 bg-slate-950 text-slate-400 text-xs py-12 mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        
+        <div class="space-y-3">
+          <div class="flex items-center gap-2">
+            <span class="text-lg">⚛️</span>
+            <span class="font-display font-bold text-white text-base">BioGravity</span>
           </div>
-        <div class="flex gap-4 text-slate-400">
-          <a href="/about" class="hover:text-cyan-400">About</a>
+          <p class="text-slate-400 leading-relaxed text-xs">
+            Global quantum biotechnology research collective operating orbital microgravity laboratories in Low Earth Orbit (LEO).
+          </p>
+          <div class="text-[11px] font-mono text-emerald-400">
+            STATION TELEMETRY: NOMINAL 24/7
+          </div>
+        </div>
+
+        <div>
+          <div class="font-mono text-white text-xs uppercase tracking-wider mb-3">Site Architecture</div>
+          <ul class="space-y-2">
+            <li><a href="/" class="hover:text-cyan-400 transition">Home Hub</a></li>
+            <li><a href="/research" class="hover:text-cyan-400 transition">Research Feed & Search</a></li>
+            <li><a href="/world-space-week-2026" class="hover:text-cyan-400 transition">Space Week 2026 Guide</a></li>
+            <li><a href="/molecular-biology-research" class="hover:text-cyan-400 transition">Molecular Biology Guide</a></li>
+            <li><a href="/about" class="hover:text-cyan-400 transition">About BioGravity</a></li>
+            <li><a href="/contact" class="hover:text-cyan-400 transition text-cyan-400">Contact & Inquiries</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="font-mono text-white text-xs uppercase tracking-wider mb-3">Direct Connect & Social</div>
+          <ul class="space-y-2.5 text-slate-300">
+            <li class="flex items-center gap-2">
+              <span class="text-cyan-400">📧</span>
+              <div>
+                <div class="text-[10px] text-slate-500 uppercase">Official Gmail</div>
+                <a href="mailto:biogravity.space@gmail.com" class="text-cyan-400 hover:underline font-mono">biogravity.space@gmail.com</a>
+              </div>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-cyan-400 font-bold text-sm">𝕏</span>
+              <div>
+                <div class="text-[10px] text-slate-500 uppercase">Official X (Twitter)</div>
+                <a href="https://x.com/Biogravityspace" target="_blank" rel="noopener noreferrer" class="text-white hover:text-cyan-300 font-mono">@Biogravityspace</a>
+              </div>
+            </li>
+            <li class="pt-1">
+              <span class="text-[11px] font-mono text-emerald-400 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Direct Communications Active
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="font-mono text-white text-xs uppercase tracking-wider mb-3">Orbital Modules</div>
+          <ul class="space-y-2 text-slate-400">
+            <li>Module Alpha: Cryo-EM Spin Resonance</li>
+            <li>Module Beta: Sub-Angstrom Crystallography</li>
+            <li>Module Gamma: Acoustic 3D Bioprinting</li>
+            <li>Module Delta: External Radiation Exposure</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-6 border-t border-slate-800/80 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] font-mono text-slate-500">
+        <div>© 2026 BioGravity Institute for Quantum Biotechnology. All rights reserved.</div>
+        <div class="flex flex-wrap gap-4">
+          <a href="mailto:biogravity.space@gmail.com" class="hover:text-cyan-400 transition">Email</a>
           <span>•</span>
-          <a href="/contact" class="hover:text-cyan-400">Contact</a>
+          <a href="https://x.com/Biogravityspace" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400 transition">X: @Biogravityspace</a>
           <span>•</span>
-          <a href="/disclaimer" class="hover:text-cyan-400">Disclaimer</a>
+          <a href="/contact" class="hover:text-cyan-400 transition">Contact</a>
           <span>•</span>
-          <a href="/privacy-policy" class="hover:text-cyan-400">Privacy Policy</a>
+          <a href="/privacy-policy" class="hover:text-cyan-400 transition">Privacy Policy</a>
           <span>•</span>
-          <a href="/terms" class="hover:text-cyan-400">Terms</a>
+          <a href="/terms" class="hover:text-cyan-400 transition">Terms</a>
           <span>•</span>
-          <a href="/sitemap" class="hover:text-cyan-400">HTML Sitemap</a>
+          <a href="/disclaimer" class="hover:text-cyan-400 transition">Disclaimer</a>
+          <span>•</span>
+          <a href="/sitemap" class="hover:text-cyan-400 transition">Sitemap</a>
         </div>
       </div>
     </div>
   </footer>
+
 
 </body>
 </html>

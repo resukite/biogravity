@@ -111,6 +111,7 @@
       }
     }
   </script>
+  <script defer src="/js/sidebar-menu.js"></script>
 </head>
 <body class="bg-slate-950 text-slate-100 quantum-grid min-h-screen flex flex-col selection:bg-cyan-500/30 selection:text-cyan-300 relative overflow-x-hidden">
 
@@ -202,7 +203,7 @@
       </div>
 
       <!-- Mobile Menu Button -->
-      <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg bg-slate-900 border border-slate-700 text-slate-300 hover:text-white">
+      <button id="nav-sidebar-toggle" class="md:hidden p-2 rounded-lg bg-slate-900 border border-slate-700 text-slate-300 hover:text-white">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
@@ -1276,6 +1277,8 @@
         </div>
         </div>
         </div>
+        </div>
+        </div>
 
       </div>
 
@@ -1285,7 +1288,8 @@
   </main>
 
   <!-- GLOBAL FOOTER -->
-  <footer class="border-t border-slate-800 bg-slate-950 text-slate-400 text-xs py-12">
+  <!-- GLOBAL FOOTER -->
+  <footer class="border-t border-slate-800 bg-slate-950 text-slate-400 text-xs py-12 mt-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
         
@@ -1306,12 +1310,36 @@
           <div class="font-mono text-white text-xs uppercase tracking-wider mb-3">Site Architecture</div>
           <ul class="space-y-2">
             <li><a href="/" class="hover:text-cyan-400 transition">Home Hub</a></li>
-            <li><a href="/world-space-week-2026" class="text-cyan-400 font-semibold hover:text-cyan-300 transition">Space Week 2026 Guide</a></li>
-            <li><a href="/molecular-biology-research" class="hover:text-cyan-400 transition">Molecular Biology Guide</a></li>
             <li><a href="/research" class="hover:text-cyan-400 transition">Research Feed & Search</a></li>
-            <li><a href="/about" class="hover:text-cyan-400 transition">Lab Notes & Facilities</a></li>
-            <li><a href="/contact" class="hover:text-cyan-400">Contact</a><span>•</span><a href="/disclaimer" class="hover:text-cyan-400">Disclaimer</a><span>•</span><a href="/sitemap" class="hover:text-cyan-400">Sitemap</a><span>•</span><a href="/privacy-policy" class="hover:text-cyan-400 transition">Privacy Policy</a></li>
-            <li><a href="/terms" class="hover:text-cyan-400 transition">Terms of Service</a></li>
+            <li><a href="/world-space-week-2026" class="hover:text-cyan-400 transition">Space Week 2026 Guide</a></li>
+            <li><a href="/molecular-biology-research" class="hover:text-cyan-400 transition">Molecular Biology Guide</a></li>
+            <li><a href="/about" class="hover:text-cyan-400 transition">About BioGravity</a></li>
+            <li><a href="/contact" class="hover:text-cyan-400 transition text-cyan-400">Contact & Inquiries</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="font-mono text-white text-xs uppercase tracking-wider mb-3">Direct Connect & Social</div>
+          <ul class="space-y-2.5 text-slate-300">
+            <li class="flex items-center gap-2">
+              <span class="text-cyan-400">📧</span>
+              <div>
+                <div class="text-[10px] text-slate-500 uppercase">Official Gmail</div>
+                <a href="mailto:biogravity.space@gmail.com" class="text-cyan-400 hover:underline font-mono">biogravity.space@gmail.com</a>
+              </div>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-cyan-400 font-bold text-sm">𝕏</span>
+              <div>
+                <div class="text-[10px] text-slate-500 uppercase">Official X (Twitter)</div>
+                <a href="https://x.com/Biogravityspace" target="_blank" rel="noopener noreferrer" class="text-white hover:text-cyan-300 font-mono">@Biogravityspace</a>
+              </div>
+            </li>
+            <li class="pt-1">
+              <span class="text-[11px] font-mono text-emerald-400 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Direct Communications Active
+              </span>
+            </li>
           </ul>
         </div>
 
@@ -1321,36 +1349,33 @@
             <li>Module Alpha: Cryo-EM Spin Resonance</li>
             <li>Module Beta: Sub-Angstrom Crystallography</li>
             <li>Module Gamma: Acoustic 3D Bioprinting</li>
-            <li>Module Delta: External Deep-Space Radiation Bay</li>
+            <li>Module Delta: External Radiation Exposure</li>
           </ul>
-        </div>
-
-        <div>
-          <div class="font-mono text-white text-xs uppercase tracking-wider mb-3">Data Infrastructure</div>
-          <p class="text-xs text-slate-400 leading-relaxed mb-3">
-            High-integrity quantum biological datasets and mission telemetry compiled directly from LEO Station Alpha.
-          </p>
-          <div class="text-[11px] font-mono text-emerald-400 flex items-center gap-1.5">
-            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Encrypted Core Synchronized
-          </div>
         </div>
 
       </div>
 
       <div class="pt-6 border-t border-slate-800/80 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] font-mono text-slate-500">
         <div>© 2026 BioGravity Institute for Quantum Biotechnology. All rights reserved.</div>
-        <div class="flex gap-4">
+        <div class="flex flex-wrap gap-4">
+          <a href="mailto:biogravity.space@gmail.com" class="hover:text-cyan-400 transition">Email</a>
+          <span>•</span>
+          <a href="https://x.com/Biogravityspace" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400 transition">X: @Biogravityspace</a>
+          <span>•</span>
+          <a href="/contact" class="hover:text-cyan-400 transition">Contact</a>
+          <span>•</span>
           <a href="/privacy-policy" class="hover:text-cyan-400 transition">Privacy Policy</a>
           <span>•</span>
-          <a href="/terms" class="hover:text-cyan-400 transition">Terms of Service</a>
+          <a href="/terms" class="hover:text-cyan-400 transition">Terms</a>
           <span>•</span>
-          <span>Zero-Gravity Open Access</span>
+          <a href="/disclaimer" class="hover:text-cyan-400 transition">Disclaimer</a>
           <span>•</span>
-          <span>LEO Mission 04</span>
+          <a href="/sitemap" class="hover:text-cyan-400 transition">Sitemap</a>
         </div>
       </div>
     </div>
   </footer>
+
 
   <!-- Scripts -->
   <script src="js/database.js"></script>
