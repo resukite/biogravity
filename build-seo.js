@@ -1206,3 +1206,13 @@ Sitemap: ${SITE_URL}/sitemap.xml
 
 fs.writeFileSync(path.join(__dirname, 'robots.txt'), robotsTxt, 'utf8');
 console.log(`[BUILD-SEO] ✅ Generated optimized robots.txt!`);
+
+
+// =============================================================================
+// 7. GENERATE SOCIAL MEDIA & COMMUNITY OUTREACH KIT
+// =============================================================================
+try {
+  require('./scripts/social_syndication_engine.js');
+} catch (e) {
+  console.log(`[BUILD-SEO] ℹ️ Social syndication notice: ${e.message}`);
+}
