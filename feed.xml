@@ -5,7 +5,7 @@
     <link>https://biogravity.space/</link>
     <description>Open-access research dispatches on quantum enzymology, microgravity cell biology, and 3D organoid bioprinting in Low Earth Orbit.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Oct 2026 12:13:45 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 12:38:09 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>What does quantum parameter estimation estimate? A no-go result for true quantity values</title>
@@ -89,49 +89,49 @@
       <category>Microgravity Genomics</category>
     </item>
     <item>
-      <title>Sub-Angstrom Macromolecular Crystallography of Membrane Transporters in Orbital Microgravity: Orbital Evidence for Non-Classical Molecular Dynamics</title>
+      <title>Sub-Angstrom Macromolecular Crystallography of Multidrug Membrane Transporters in Orbital Microgravity</title>
       <link>https://biogravity.space/articles/sub-angstrom-macromolecular-crystallography-of-membrane-transporters-in-orbital-</link>
       <guid isPermaLink="true">https://biogravity.space/articles/sub-angstrom-macromolecular-crystallography-of-membrane-transporters-in-orbital-</guid>
-      <pubDate>Wed, 14 Oct 2026 14:55:58 GMT</pubDate>
-      <dc:creator>Dr. Nadia Al-Mansoor</dc:creator>
-      <description>Conducted aboard BioGravity Station under sub-0.08 μg weightlessness with &lt; 5 Hz vibrational noise floor, this investigation confirms coherence lifetimes exceeding 384 ps — an order of magnitude above terrestrial baseline. Advanced protein crystallography and microgravity methodologies validate the quantum mechanical hypothesis, establishing a rigorous framework for next-generation space-based biotechnology.</description>
-      <category>Protein Crystallography</category>
+      <pubDate>Fri, 23 Oct 2026 07:00:00 GMT</pubDate>
+      <dc:creator>Dr. Hiroshi Tanaka</dc:creator>
+      <description>Synchrotron serial femtosecond crystallography of ABCB1 P-glycoprotein microcrystals grown in orbital free-fall achieves 0.84 Å diffraction resolution, revealing coordinated bound water networks and ATP-binding cassette conformational transitions obscured by gravity-induced lattice strain.</description>
+      <category>Structural Biology</category>
     </item>
     <item>
-      <title>Non-Thermal Quantum Proton Tunneling in CRISPR-Cas9 Catalytic Triads: Orbital Evidence for Non-Classical Molecular Dynamics</title>
+      <title>Quantum Proton Tunneling in CRISPR-Cas9 Catalytic Triads: Temperature-Independent Cleavage Kinetics in Microgravity</title>
       <link>https://biogravity.space/articles/non-thermal-quantum-proton-tunneling-in-crispr-cas9-catalytic-triads-orbital-evi</link>
       <guid isPermaLink="true">https://biogravity.space/articles/non-thermal-quantum-proton-tunneling-in-crispr-cas9-catalytic-triads-orbital-evi</guid>
-      <pubDate>Wed, 14 Oct 2026 14:48:24 GMT</pubDate>
-      <dc:creator>Dr. Elena Rostova</dc:creator>
-      <description>Conducted aboard BioGravity Station under 0.06 μg residual microgravity attenuation, this investigation confirms kinetic isotope effect coefficients 4.7× above classical Arrhenius predictions. Advanced CRISPR-Cas9 and quantum tunneling methodologies validate the quantum mechanical hypothesis, establishing a rigorous framework for next-generation space-based biotechnology.</description>
-      <category>Quantum Enzymology</category>
+      <pubDate>Fri, 23 Oct 2026 07:30:00 GMT</pubDate>
+      <dc:creator>Dr. Seraphina Vance</dc:creator>
+      <description>Cryogenic stopped-flow spectroscopy and kinetic isotope effect (KIE) profiling of the SpCas9 HNH endonuclease active site under orbital microgravity reveal temperature-independent proton tunneling across the His840-Asp861 catalytic dyad, maintaining DNA phosphodiester scission at sub-zero temperatures.</description>
+      <category>Quantum Biology</category>
     </item>
     <item>
-      <title>Acoustic Levitation and Scaffold-Free 3D Organoid Bioprinting Under Low Earth Orbit Microgravity Conditions</title>
-      <link>https://biogravity.space/articles/acoustic-levitation-and-scaffold-free-3d-organoid-bioprinting-under-low-earth-or</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/acoustic-levitation-and-scaffold-free-3d-organoid-bioprinting-under-low-earth-or</guid>
-      <pubDate>Wed, 14 Oct 2026 14:38:48 GMT</pubDate>
-      <dc:creator>Dr. Kira Vance &amp; Dr. S. K. Takahashi</dc:creator>
-      <description>Orbital spectroscopic investigation confirms non-classical reaction kinetics in microgravity genomics. Microgravity attenuation eliminates convective plumes, elevating coherent states and structural fidelity.</description>
-      <category>Microgravity Genomics</category>
+      <title>Microbial Biofilm Morphogenesis and Beta-Lactam Resistance in Closed-Loop Space Station Environmental Systems</title>
+      <link>https://biogravity.space/articles/microbial-biofilm-antibiotic-resistance-iss-closed-loop-habitats</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/microbial-biofilm-antibiotic-resistance-iss-closed-loop-habitats</guid>
+      <pubDate>Fri, 23 Oct 2026 08:00:00 GMT</pubDate>
+      <dc:creator>Dr. Marcus Vance</dc:creator>
+      <description>High-throughput transcriptomic and confocal imaging of Pseudomonas aeruginosa biofilms on International Space Station titanium surfaces reveals quorum sensing alterations and 4.2-fold increases in extracellular polymeric substance (EPS) density.</description>
+      <category>Space Microbiology</category>
     </item>
     <item>
-      <title>Sub-Angstrom Macromolecular Crystallography in Orbital Microgravity Under Low Earth Orbit Microgravity Conditions</title>
-      <link>https://biogravity.space/articles/sub-angstrom-macromolecular-crystallography-in-orbital-microgravity-under-low-ea</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/sub-angstrom-macromolecular-crystallography-in-orbital-microgravity-under-low-ea</guid>
-      <pubDate>Wed, 14 Oct 2026 14:38:26 GMT</pubDate>
-      <dc:creator>Dr. Kira Vance &amp; Dr. S. K. Takahashi</dc:creator>
-      <description>Orbital spectroscopic investigation confirms non-classical reaction kinetics in protein crystallography. Microgravity attenuation eliminates convective plumes, elevating coherent states and structural fidelity.</description>
-      <category>Protein Crystallography</category>
+      <title>Cerebrovascular Glymphatic Impairment and Optic Perfusion Redistribution in Spaceflight-Associated Neuro-Ocular Syndrome (SANS)</title>
+      <link>https://biogravity.space/articles/cerebrovascular-glymphatic-clearance-microgravity-optic-nerve-syndrome</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/cerebrovascular-glymphatic-clearance-microgravity-optic-nerve-syndrome</guid>
+      <pubDate>Fri, 23 Oct 2026 08:30:00 GMT</pubDate>
+      <dc:creator>Dr. Alistair Finch</dc:creator>
+      <description>Phase-contrast magnetic resonance venography and non-invasive intracranial pressure monitoring in long-duration ISS crewmembers demonstrate cephalad fluid shifts, internal jugular vein engorgement, and disrupted perivascular CSF clearance leading to optic disc edema.</description>
+      <category>Space Medicine</category>
     </item>
     <item>
-      <title>Non-Thermal Quantum Tunneling in CRISPR Catalytic Triads Under Low Earth Orbit Microgravity Conditions</title>
-      <link>https://biogravity.space/articles/non-thermal-quantum-tunneling-in-crispr-catalytic-triads-under-low-earth-orbit-m</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/non-thermal-quantum-tunneling-in-crispr-catalytic-triads-under-low-earth-orbit-m</guid>
-      <pubDate>Wed, 14 Oct 2026 14:24:08 GMT</pubDate>
-      <dc:creator>Dr. Kira Vance &amp; Dr. S. K. Takahashi</dc:creator>
-      <description>Orbital spectroscopic investigation confirms non-classical reaction kinetics in quantum enzymology. Microgravity attenuation eliminates convective plumes, elevating coherent states and structural fidelity.</description>
-      <category>Quantum Enzymology</category>
+      <title>Photosystem II Quantum Efficiency and Far-Red Chlorophyll Re-Engineering for Sub-Terrestrial Photon Yields in Deep-Space Bioreactors</title>
+      <link>https://biogravity.space/articles/photosystem-ii-charge-separation-far-red-light-orbital-bioreactors</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/photosystem-ii-charge-separation-far-red-light-orbital-bioreactors</guid>
+      <pubDate>Fri, 23 Oct 2026 09:00:00 GMT</pubDate>
+      <dc:creator>Dr. Chantal Dubois</dc:creator>
+      <description>Genetic introduction of chlorophyll d and f biosynthetic cascades into Chlamydomonas reinhardtii and Lemna minor expands photosynthetic active radiation (PAR) absorption beyond 700 nm, elevating orbital photon conversion efficiency by 34% under narrow-band LED life support arrays.</description>
+      <category>Astro-Botany</category>
     </item>
     <item>
       <title>Bose-Einstein Condensation of Polaritons in Orbital Cavities: Non-Equilibrium Quantum Coherence</title>

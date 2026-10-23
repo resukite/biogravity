@@ -1094,29 +1094,28 @@ let sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
     </image:image>
   </url>
   <url>
-    <loc>${SITE_URL}/about</loc>
-  </url>
-  <url>
-    <loc>${SITE_URL}/contact</loc>
-    <lastmod>${TODAY}</lastmod>
+    <loc>/about</loc>
+    <lastmod></lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>${SITE_URL}/disclaimer</loc>
-    <lastmod>${TODAY}</lastmod>
+    <loc>/contact</loc>
+    <lastmod></lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>/disclaimer</loc>
+    <lastmod></lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>${SITE_URL}/sitemap</loc>
-    <lastmod>${TODAY}</lastmod>
+    <loc>/sitemap</loc>
+    <lastmod></lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-  </url>
-    <lastmod>${TODAY}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>${SITE_URL}/privacy-policy</loc>

@@ -38,29 +38,28 @@
     </image:image>
   </url>
   <url>
-    <loc>https://biogravity.space/about</loc>
-  </url>
-  <url>
-    <loc>https://biogravity.space/contact</loc>
-    <lastmod>2026-10-23</lastmod>
+    <loc>/about</loc>
+    <lastmod></lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://biogravity.space/disclaimer</loc>
-    <lastmod>2026-10-23</lastmod>
+    <loc>/contact</loc>
+    <lastmod></lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>/disclaimer</loc>
+    <lastmod></lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://biogravity.space/sitemap</loc>
-    <lastmod>2026-10-23</lastmod>
+    <loc>/sitemap</loc>
+    <lastmod></lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-  </url>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://biogravity.space/privacy-policy</loc>
@@ -168,52 +167,52 @@
   </url>
   <url>
     <loc>https://biogravity.space/articles/sub-angstrom-macromolecular-crystallography-of-membrane-transporters-in-orbital-</loc>
-    <lastmod>2026-10-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Sub-Angstrom Macromolecular Crystallography of Membrane Transporters in Orbital Microgravity: Orbital Evidence for Non-Classical Molecular Dynamics</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://biogravity.space/articles/non-thermal-quantum-proton-tunneling-in-crispr-cas9-catalytic-triads-orbital-evi</loc>
-    <lastmod>2026-10-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Non-Thermal Quantum Proton Tunneling in CRISPR-Cas9 Catalytic Triads: Orbital Evidence for Non-Classical Molecular Dynamics</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://biogravity.space/articles/acoustic-levitation-and-scaffold-free-3d-organoid-bioprinting-under-low-earth-or</loc>
-    <lastmod>2026-10-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Acoustic Levitation and Scaffold-Free 3D Organoid Bioprinting Under Low Earth Orbit Microgravity Conditions</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://biogravity.space/articles/sub-angstrom-macromolecular-crystallography-in-orbital-microgravity-under-low-ea</loc>
-    <lastmod>2026-10-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Sub-Angstrom Macromolecular Crystallography in Orbital Microgravity Under Low Earth Orbit Microgravity Conditions</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://biogravity.space/articles/non-thermal-quantum-tunneling-in-crispr-catalytic-triads-under-low-earth-orbit-m</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
       <image:loc>https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Non-Thermal Quantum Tunneling in CRISPR Catalytic Triads Under Low Earth Orbit Microgravity Conditions</image:title>
+      <image:title>Sub-Angstrom Macromolecular Crystallography of Multidrug Membrane Transporters in Orbital Microgravity</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/non-thermal-quantum-proton-tunneling-in-crispr-cas9-catalytic-triads-orbital-evi</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Quantum Proton Tunneling in CRISPR-Cas9 Catalytic Triads: Temperature-Independent Cleavage Kinetics in Microgravity</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/microbial-biofilm-antibiotic-resistance-iss-closed-loop-habitats</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Microbial Biofilm Morphogenesis and Beta-Lactam Resistance in Closed-Loop Space Station Environmental Systems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/cerebrovascular-glymphatic-clearance-microgravity-optic-nerve-syndrome</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Cerebrovascular Glymphatic Impairment and Optic Perfusion Redistribution in Spaceflight-Associated Neuro-Ocular Syndrome (SANS)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/photosystem-ii-charge-separation-far-red-light-orbital-bioreactors</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Photosystem II Quantum Efficiency and Far-Red Chlorophyll Re-Engineering for Sub-Terrestrial Photon Yields in Deep-Space Bioreactors</image:title>
     </image:image>
   </url>
   <url>
