@@ -39,7 +39,7 @@
   </script>
 
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="/css/styles.css">
 
   <!-- Command Center & Visual FX (Aceternity / MagicUI Particles, Meteors, Spotlight) -->
   <script defer src="js/command-center-fx.js"></script>
@@ -127,7 +127,7 @@
       <a href="/" class="text-slate-300 hover:text-white">Home</a>
       <a href="/research" class="text-cyan-400">Research Feed</a>
       <a href="/about" class="text-slate-300 hover:text-white">Lab Notes / About</a>
-      <a href="article.html" class="text-slate-300 hover:text-white">Article Reader</a>
+      <a href="/research" class="text-slate-300 hover:text-white">Article Reader</a>
     </div>
   </div>
 
@@ -962,7 +962,7 @@
             <li><a href="/" class="hover:text-cyan-400 transition">Home Hub</a></li>
             <li><a href="/research" class="hover:text-cyan-400 transition text-cyan-400">Research Feed & Search</a></li>
             <li><a href="/about" class="hover:text-cyan-400 transition">Lab Notes & Facilities</a></li>
-            <li><a href="article.html" class="hover:text-cyan-400 transition">Article Reader View</a></li>
+            <li><a href="/research" class="hover:text-cyan-400 transition">Article Reader View</a></li>
           </ul>
         </div>
 
@@ -1130,7 +1130,7 @@
                     <span>DOI:</span>
                     <span class="text-slate-400 text-[10px]">${(article.doi || '').split('/').pop() || 'verified'}</span>
                   </div>
-                  <a href="articles/${encodeURIComponent(article.id)}.html" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 font-semibold flex items-center gap-1">
+                  <a href="/articles/${encodeURIComponent(article.id)}" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 font-semibold flex items-center gap-1">
                     Read Dispatch →
                   </a>
                 </div>
@@ -1163,7 +1163,7 @@
                   <div class="text-xs font-mono text-slate-300">${article.author}</div>
                   <div class="text-[10px] font-mono text-emerald-400">Impact: ${article.impact || '9.2'}</div>
                 </div>
-                <a href="articles/${encodeURIComponent(article.id)}.html" class="px-4 py-2 rounded-xl text-xs font-mono bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 hover:bg-cyan-500/20 whitespace-nowrap">
+                <a href="/articles/${encodeURIComponent(article.id)}" class="px-4 py-2 rounded-xl text-xs font-mono bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 hover:bg-cyan-500/20 whitespace-nowrap">
                   Read Dispatch →
                 </a>
               </div>

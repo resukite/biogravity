@@ -2,6 +2,10 @@ User-agent: *
 Allow: /
 
 # Dedicated Search Engine Crawlers
+# Google AdSense Crawler
+User-agent: Mediapartners-Google
+Allow: /
+
 User-agent: Googlebot
 Allow: /
 
