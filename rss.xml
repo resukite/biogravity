@@ -5,7 +5,7 @@
     <link>https://biogravity.space/</link>
     <description>Open-access research dispatches on quantum enzymology, microgravity cell biology, and 3D organoid bioprinting in Low Earth Orbit.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Oct 2026 07:36:01 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 12:06:45 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Phonon-assisted free-electron recoil control and mechanical sensing</title>
@@ -123,6 +123,78 @@
       <dc:creator>Dr. Kira Vance &amp; Dr. S. K. Takahashi</dc:creator>
       <description>Orbital spectroscopic investigation confirms non-classical reaction kinetics in quantum enzymology. Microgravity attenuation eliminates convective plumes, elevating coherent states and structural fidelity.</description>
       <category>Quantum Enzymology</category>
+    </item>
+    <item>
+      <title>Bose-Einstein Condensation of Polaritons in Orbital Cavities: Non-Equilibrium Quantum Coherence</title>
+      <link>https://biogravity.space/articles/bose-einstein-polariton-condensation-orbital-microgravity</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/bose-einstein-polariton-condensation-orbital-microgravity</guid>
+      <pubDate>Fri, 23 Oct 2026 10:00:00 GMT</pubDate>
+      <dc:creator>Dr. Nikolai Sterling</dc:creator>
+      <description>Investigating polariton condensates under continuous low Earth orbit microgravity reveals phase transitions shielded from terrestrial micro-vibrations, extending macroscopic quantum coherence lifetimes beyond 1.2 nanoseconds.</description>
+      <category>Quantum Physics &amp; Optics</category>
+    </item>
+    <item>
+      <title>Epigenetic Remodeling of T-Lymphocyte Activation Cascades During Extended Low Earth Orbit Missions</title>
+      <link>https://biogravity.space/articles/epigenetic-t-cell-activation-remodeling-extended-spaceflight</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/epigenetic-t-cell-activation-remodeling-extended-spaceflight</guid>
+      <pubDate>Fri, 23 Oct 2026 11:00:00 GMT</pubDate>
+      <dc:creator>Dr. Elena Rostova</dc:creator>
+      <description>Single-cell chromatin accessibility profiling reveals reversible DNA methylation patterns governing interleukin-2 suppression and helper T-cell quiescence in astronaut peripheral blood mononuclear cells.</description>
+      <category>Space Immunology</category>
+    </item>
+    <item>
+      <title>Self-Assembling Chiral Nanotubes Under Zero-Convection Solute Gradients in Orbital Wet Laboratories</title>
+      <link>https://biogravity.space/articles/self-assembling-chiral-nanotubes-zero-convection-solute-gradients</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/self-assembling-chiral-nanotubes-zero-convection-solute-gradients</guid>
+      <pubDate>Fri, 23 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Dr. Marcus Vance</dc:creator>
+      <description>Macro-molecular supramolecular helices synthesized in continuous microgravity exhibit macroscopic chiral purity exceeding 99.4%, resolving enantiomeric selectivity barriers previously constrained by gravity-driven sedimentation.</description>
+      <category>Nanomaterials &amp; Biophysics</category>
+    </item>
+    <item>
+      <title>Mitochondrial Electron Transport Chain Efficiency and Reactive Oxygen Scavenging in Space Radiation</title>
+      <link>https://biogravity.space/articles/mitochondrial-electron-transport-efficiency-spaceflight-radiation</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/mitochondrial-electron-transport-efficiency-spaceflight-radiation</guid>
+      <pubDate>Fri, 23 Oct 2026 13:00:00 GMT</pubDate>
+      <dc:creator>Dr. Kenji Sato</dc:creator>
+      <description>High-LET cosmic ion exposure combined with microgravity alters mitochondrial complex I and IV subunit stoichiometric assembly, inducing metabolic reprogramming toward glutaminolysis in orbital cardiac progenitor cells.</description>
+      <category>Cellular Bioenergetics</category>
+    </item>
+    <item>
+      <title>Biomineralization Kinetics of Hydroxyapatite Scaffolds in Simulated Lunar vs. Orbital Free-Fall</title>
+      <link>https://biogravity.space/articles/biomineralization-hydroxyapatite-scaffolds-simulated-lunar-freefall</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/biomineralization-hydroxyapatite-scaffolds-simulated-lunar-freefall</guid>
+      <pubDate>Fri, 23 Oct 2026 14:00:00 GMT</pubDate>
+      <dc:creator>Dr. Amara Okafor</dc:creator>
+      <description>Comparative crystallography demonstrates that continuous orbital free-fall preserves isotropic c-axis orientation in synthetic hydroxyapatite matrices, whereas 1/6th lunar gravity introduces asymmetrical crystal lattice strain.</description>
+      <category>Bone Physiology &amp; Biomaterials</category>
+    </item>
+    <item>
+      <title>Single-Cell RNA-Seq of Vascular Endothelial Cells in Hyperstatic Shock and Sustained Weightlessness</title>
+      <link>https://biogravity.space/articles/single-cell-rna-seq-endothelial-cells-hyperstatic-weightlessness</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/single-cell-rna-seq-endothelial-cells-hyperstatic-weightlessness</guid>
+      <pubDate>Fri, 23 Oct 2026 15:00:00 GMT</pubDate>
+      <dc:creator>Dr. Elena Rostova</dc:creator>
+      <description>Single-cell transcriptomics tracks the dual-phase genetic response of human microvascular endothelial cells to 3G launch acceleration followed by prolonged microgravity, identifying critical shear stress adaptations.</description>
+      <category>Vascular Biology &amp; Genomics</category>
+    </item>
+    <item>
+      <title>SQUID Biosensing of Neuronal Action Potentials Under Low Earth Orbit Ionospheric Shielding</title>
+      <link>https://biogravity.space/articles/squid-biosensing-neuronal-action-potentials-low-earth-orbit</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/squid-biosensing-neuronal-action-potentials-low-earth-orbit</guid>
+      <pubDate>Fri, 23 Oct 2026 16:00:00 GMT</pubDate>
+      <dc:creator>Dr. Nikolai Sterling</dc:creator>
+      <description>Utilizing high-Tc superconducting quantum interference devices (SQUIDs) inside orbital Mumetal chambers reveals unprecedented femtotesla-scale electromagnetic recordings of cortical neural organoid firing patterns.</description>
+      <category>Neuroscience &amp; Quantum Sensors</category>
+    </item>
+    <item>
+      <title>Extremophilic Tardigrade Damage Suppressor (Dsup) Protein Dynamics and Chromatin Radioprotective Compaction</title>
+      <link>https://biogravity.space/articles/tardigrade-dsup-protein-chromatin-radioprotective-compaction</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/tardigrade-dsup-protein-chromatin-radioprotective-compaction</guid>
+      <pubDate>Fri, 23 Oct 2026 17:00:00 GMT</pubDate>
+      <dc:creator>Dr. Elena Rostova</dc:creator>
+      <description>High-resolution cryo-electron tomography reveals how Ramazzottius varieornatus Dsup protein forms a protective molecular shield over human nucleosomes, reducing gamma-radiolytic strand breakage by 72% in orbital assays.</description>
+      <category>Extremophile Biology &amp; Biophysics</category>
     </item>
   </channel>
 </rss>

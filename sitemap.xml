@@ -39,6 +39,25 @@
   </url>
   <url>
     <loc>https://biogravity.space/about</loc>
+  </url>
+  <url>
+    <loc>https://biogravity.space/contact</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://biogravity.space/disclaimer</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://biogravity.space/sitemap</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -185,6 +204,86 @@
     <image:image>
       <image:loc>https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
       <image:title>Non-Thermal Quantum Tunneling in CRISPR Catalytic Triads Under Low Earth Orbit Microgravity Conditions</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/bose-einstein-polariton-condensation-orbital-microgravity</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507499739999-097706ad8914?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Bose-Einstein Condensation of Polaritons in Orbital Cavities: Non-Equilibrium Quantum Coherence</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/epigenetic-t-cell-activation-remodeling-extended-spaceflight</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Epigenetic Remodeling of T-Lymphocyte Activation Cascades During Extended Low Earth Orbit Missions</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/self-assembling-chiral-nanotubes-zero-convection-solute-gradients</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Self-Assembling Chiral Nanotubes Under Zero-Convection Solute Gradients in Orbital Wet Laboratories</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/mitochondrial-electron-transport-efficiency-spaceflight-radiation</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Mitochondrial Electron Transport Chain Efficiency and Reactive Oxygen Scavenging in Space Radiation</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/biomineralization-hydroxyapatite-scaffolds-simulated-lunar-freefall</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Biomineralization Kinetics of Hydroxyapatite Scaffolds in Simulated Lunar vs. Orbital Free-Fall</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/single-cell-rna-seq-endothelial-cells-hyperstatic-weightlessness</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1530497610245-94d3c16cda28?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Single-Cell RNA-Seq of Vascular Endothelial Cells in Hyperstatic Shock and Sustained Weightlessness</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/squid-biosensing-neuronal-action-potentials-low-earth-orbit</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>SQUID Biosensing of Neuronal Action Potentials Under Low Earth Orbit Ionospheric Shielding</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/tardigrade-dsup-protein-chromatin-radioprotective-compaction</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Extremophilic Tardigrade Damage Suppressor (Dsup) Protein Dynamics and Chromatin Radioprotective Compaction</image:title>
     </image:image>
   </url>
 </urlset>

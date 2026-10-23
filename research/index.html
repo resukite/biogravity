@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
+  <!-- Security Headers & Content Security Policy (CSP) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; img-src 'self' https: data:; font-src 'self' https: data:;">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <script defer src="/js/cookie-consent.js"></script>
+  <!-- Google Analytics 4 (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BGSPACE2026"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BGSPACE2026');
+  </script>
   <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8576621614388905"
      crossorigin="anonymous"></script>
@@ -99,6 +112,12 @@
       </a>
 
       <!-- Desktop Nav -->
+      
+      <!-- Accessible Search Form -->
+      <form action="/research" method="GET" role="search" class="hidden md:flex items-center relative w-60 lg:w-72">
+        <input type="search" name="q" placeholder="Search research dispatches..." class="w-full py-1.5 pl-3 pr-8 text-xs font-mono rounded-lg bg-slate-900 border border-slate-700 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-cyan-400">
+        <button type="submit" class="absolute right-2 text-slate-400 hover:text-cyan-400 text-xs" aria-label="Search">🔍</button>
+      </form>
       <nav class="hidden md:flex items-center gap-6 text-sm">
         <a href="/" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Home</a>
         <a href="/research" class="nav-link py-2 text-cyan-400 border-b-2 border-cyan-400 font-semibold transition">Research Feed</a>
@@ -235,7 +254,7 @@
       <!-- Feed Results Header -->
       <div class="flex justify-between items-center mb-6 text-xs font-mono text-slate-400">
         <div>
-          SHOWING: <strong id="results-count" class="text-white">13</strong> QUANTUM DISPATCHES
+          SHOWING: <strong id="results-count" class="text-white">21</strong> QUANTUM DISPATCHES
         </div>
         <div id="active-filter-label" class="text-cyan-400 hidden">
           Filtered by: <span id="active-filter-text"></span>
@@ -888,6 +907,406 @@
             <span class="text-slate-400 text-[10px]">s41586-2026-72197</span>
           </div>
           <a href="/articles/non-thermal-quantum-tunneling-in-crispr-catalytic-triads-under-low-earth-orbit-m" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 font-semibold flex items-center gap-1">
+            Read Dispatch →
+          </a>
+        </div>
+      </div>
+    </article>
+  
+
+    <article class="spotlight-card rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 flex flex-col group justify-between transition">
+      <div class="relative h-48 overflow-hidden bg-slate-900">
+        <img src="https://images.unsplash.com/photo-1507499739999-097706ad8914?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Polariton Bose-Einstein Condensate in Cryogenic Vacuum Cavity" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-80 group-hover:opacity-100" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+        <span class="absolute top-3 left-3 badge-quantum text-[10px]">
+          Quantum Physics &amp; Optics
+        </span>
+        <span class="absolute top-3 right-3 text-[11px] font-mono text-slate-300 bg-slate-950/80 px-2.5 py-0.5 rounded-full border border-slate-700">
+          15 min read
+        </span>
+      </div>
+      
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-mono text-slate-400 mb-2">
+            <span>October 23, 2026</span>
+            <span>•</span>
+            <span class="text-cyan-400 font-medium">Dr. Nikolai Sterling</span>
+          </div>
+          <h2 class="font-display font-bold text-lg text-white mb-3 group-hover:text-cyan-300 transition line-clamp-2">
+            <a href="/articles/bose-einstein-polariton-condensation-orbital-microgravity">Bose-Einstein Condensation of Polaritons in Orbital Cavities: Non-Equilibrium Quantum Coherence</a>
+          </h2>
+          <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed mb-4">
+            Investigating polariton condensates under continuous low Earth orbit microgravity reveals phase transitions shielded from terrestrial micro-vibrations, extending macroscopic quantum coherence lifetimes beyond 1.2 nanoseconds.
+          </p>
+
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Polaritons</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Quantum Physics</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Bose-Einstein</span>
+            
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+          <div class="flex items-center gap-1.5 text-xs font-mono text-emerald-400">
+            <span>DOI:</span>
+            <span class="text-slate-400 text-[10px]">s41586-2026-88021</span>
+          </div>
+          <a href="/articles/bose-einstein-polariton-condensation-orbital-microgravity" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 font-semibold flex items-center gap-1">
+            Read Dispatch →
+          </a>
+        </div>
+      </div>
+    </article>
+  
+
+    <article class="spotlight-card rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 flex flex-col group justify-between transition">
+      <div class="relative h-48 overflow-hidden bg-slate-900">
+        <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Human T-Lymphocyte Activation Epigenetic Mapping" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-80 group-hover:opacity-100" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+        <span class="absolute top-3 left-3 badge-quantum text-[10px]">
+          Space Immunology
+        </span>
+        <span class="absolute top-3 right-3 text-[11px] font-mono text-slate-300 bg-slate-950/80 px-2.5 py-0.5 rounded-full border border-slate-700">
+          14 min read
+        </span>
+      </div>
+      
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-mono text-slate-400 mb-2">
+            <span>October 23, 2026</span>
+            <span>•</span>
+            <span class="text-cyan-400 font-medium">Dr. Elena Rostova</span>
+          </div>
+          <h2 class="font-display font-bold text-lg text-white mb-3 group-hover:text-cyan-300 transition line-clamp-2">
+            <a href="/articles/epigenetic-t-cell-activation-remodeling-extended-spaceflight">Epigenetic Remodeling of T-Lymphocyte Activation Cascades During Extended Low Earth Orbit Missions</a>
+          </h2>
+          <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed mb-4">
+            Single-cell chromatin accessibility profiling reveals reversible DNA methylation patterns governing interleukin-2 suppression and helper T-cell quiescence in astronaut peripheral blood mononuclear cells.
+          </p>
+
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Immunology</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Epigenetics</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#T-Cells</span>
+            
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+          <div class="flex items-center gap-1.5 text-xs font-mono text-emerald-400">
+            <span>DOI:</span>
+            <span class="text-slate-400 text-[10px]">s41586-2026-88022</span>
+          </div>
+          <a href="/articles/epigenetic-t-cell-activation-remodeling-extended-spaceflight" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 font-semibold flex items-center gap-1">
+            Read Dispatch →
+          </a>
+        </div>
+      </div>
+    </article>
+  
+
+    <article class="spotlight-card rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 flex flex-col group justify-between transition">
+      <div class="relative h-48 overflow-hidden bg-slate-900">
+        <img src="https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Supramolecular Chiral Nanotube Architecture" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-80 group-hover:opacity-100" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+        <span class="absolute top-3 left-3 badge-quantum text-[10px]">
+          Nanomaterials &amp; Biophysics
+        </span>
+        <span class="absolute top-3 right-3 text-[11px] font-mono text-slate-300 bg-slate-950/80 px-2.5 py-0.5 rounded-full border border-slate-700">
+          13 min read
+        </span>
+      </div>
+      
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-mono text-slate-400 mb-2">
+            <span>October 23, 2026</span>
+            <span>•</span>
+            <span class="text-cyan-400 font-medium">Dr. Marcus Vance</span>
+          </div>
+          <h2 class="font-display font-bold text-lg text-white mb-3 group-hover:text-cyan-300 transition line-clamp-2">
+            <a href="/articles/self-assembling-chiral-nanotubes-zero-convection-solute-gradients">Self-Assembling Chiral Nanotubes Under Zero-Convection Solute Gradients in Orbital Wet Laboratories</a>
+          </h2>
+          <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed mb-4">
+            Macro-molecular supramolecular helices synthesized in continuous microgravity exhibit macroscopic chiral purity exceeding 99.4%, resolving enantiomeric selectivity barriers previously constrained by gravity-driven sedimentation.
+          </p>
+
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Nanotechnology</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Chirality</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Self-Assembly</span>
+            
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+          <div class="flex items-center gap-1.5 text-xs font-mono text-emerald-400">
+            <span>DOI:</span>
+            <span class="text-slate-400 text-[10px]">s41586-2026-88023</span>
+          </div>
+          <a href="/articles/self-assembling-chiral-nanotubes-zero-convection-solute-gradients" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 font-semibold flex items-center gap-1">
+            Read Dispatch →
+          </a>
+        </div>
+      </div>
+    </article>
+  
+
+    <article class="spotlight-card rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 flex flex-col group justify-between transition">
+      <div class="relative h-48 overflow-hidden bg-slate-900">
+        <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Mitochondrial Bioenergetic Electron Transport Chain" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-80 group-hover:opacity-100" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+        <span class="absolute top-3 left-3 badge-quantum text-[10px]">
+          Cellular Bioenergetics
+        </span>
+        <span class="absolute top-3 right-3 text-[11px] font-mono text-slate-300 bg-slate-950/80 px-2.5 py-0.5 rounded-full border border-slate-700">
+          16 min read
+        </span>
+      </div>
+      
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-mono text-slate-400 mb-2">
+            <span>October 23, 2026</span>
+            <span>•</span>
+            <span class="text-cyan-400 font-medium">Dr. Kenji Sato</span>
+          </div>
+          <h2 class="font-display font-bold text-lg text-white mb-3 group-hover:text-cyan-300 transition line-clamp-2">
+            <a href="/articles/mitochondrial-electron-transport-efficiency-spaceflight-radiation">Mitochondrial Electron Transport Chain Efficiency and Reactive Oxygen Scavenging in Space Radiation</a>
+          </h2>
+          <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed mb-4">
+            High-LET cosmic ion exposure combined with microgravity alters mitochondrial complex I and IV subunit stoichiometric assembly, inducing metabolic reprogramming toward glutaminolysis in orbital cardiac progenitor cells.
+          </p>
+
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Mitochondria</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Radiation Biology</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Bioenergetics</span>
+            
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+          <div class="flex items-center gap-1.5 text-xs font-mono text-emerald-400">
+            <span>DOI:</span>
+            <span class="text-slate-400 text-[10px]">s41586-2026-88024</span>
+          </div>
+          <a href="/articles/mitochondrial-electron-transport-efficiency-spaceflight-radiation" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 font-semibold flex items-center gap-1">
+            Read Dispatch →
+          </a>
+        </div>
+      </div>
+    </article>
+  
+
+    <article class="spotlight-card rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 flex flex-col group justify-between transition">
+      <div class="relative h-48 overflow-hidden bg-slate-900">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Hydroxyapatite Crystal Lattice Electron Micrograph" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-80 group-hover:opacity-100" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+        <span class="absolute top-3 left-3 badge-quantum text-[10px]">
+          Bone Physiology &amp; Biomaterials
+        </span>
+        <span class="absolute top-3 right-3 text-[11px] font-mono text-slate-300 bg-slate-950/80 px-2.5 py-0.5 rounded-full border border-slate-700">
+          14 min read
+        </span>
+      </div>
+      
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-mono text-slate-400 mb-2">
+            <span>October 23, 2026</span>
+            <span>•</span>
+            <span class="text-cyan-400 font-medium">Dr. Amara Okafor</span>
+          </div>
+          <h2 class="font-display font-bold text-lg text-white mb-3 group-hover:text-cyan-300 transition line-clamp-2">
+            <a href="/articles/biomineralization-hydroxyapatite-scaffolds-simulated-lunar-freefall">Biomineralization Kinetics of Hydroxyapatite Scaffolds in Simulated Lunar vs. Orbital Free-Fall</a>
+          </h2>
+          <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed mb-4">
+            Comparative crystallography demonstrates that continuous orbital free-fall preserves isotropic c-axis orientation in synthetic hydroxyapatite matrices, whereas 1/6th lunar gravity introduces asymmetrical crystal lattice strain.
+          </p>
+
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Biomineralization</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Bone Density</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Lunar Gravity</span>
+            
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+          <div class="flex items-center gap-1.5 text-xs font-mono text-emerald-400">
+            <span>DOI:</span>
+            <span class="text-slate-400 text-[10px]">s41586-2026-88025</span>
+          </div>
+          <a href="/articles/biomineralization-hydroxyapatite-scaffolds-simulated-lunar-freefall" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 font-semibold flex items-center gap-1">
+            Read Dispatch →
+          </a>
+        </div>
+      </div>
+    </article>
+  
+
+    <article class="spotlight-card rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 flex flex-col group justify-between transition">
+      <div class="relative h-48 overflow-hidden bg-slate-900">
+        <img src="https://images.unsplash.com/photo-1530497610245-94d3c16cda28?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Microvascular Endothelial Cell RNA Expression Heatmap" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-80 group-hover:opacity-100" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+        <span class="absolute top-3 left-3 badge-quantum text-[10px]">
+          Vascular Biology &amp; Genomics
+        </span>
+        <span class="absolute top-3 right-3 text-[11px] font-mono text-slate-300 bg-slate-950/80 px-2.5 py-0.5 rounded-full border border-slate-700">
+          15 min read
+        </span>
+      </div>
+      
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-mono text-slate-400 mb-2">
+            <span>October 23, 2026</span>
+            <span>•</span>
+            <span class="text-cyan-400 font-medium">Dr. Elena Rostova</span>
+          </div>
+          <h2 class="font-display font-bold text-lg text-white mb-3 group-hover:text-cyan-300 transition line-clamp-2">
+            <a href="/articles/single-cell-rna-seq-endothelial-cells-hyperstatic-weightlessness">Single-Cell RNA-Seq of Vascular Endothelial Cells in Hyperstatic Shock and Sustained Weightlessness</a>
+          </h2>
+          <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed mb-4">
+            Single-cell transcriptomics tracks the dual-phase genetic response of human microvascular endothelial cells to 3G launch acceleration followed by prolonged microgravity, identifying critical shear stress adaptations.
+          </p>
+
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Genomics</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Endothelial Cells</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#RNA-Seq</span>
+            
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+          <div class="flex items-center gap-1.5 text-xs font-mono text-emerald-400">
+            <span>DOI:</span>
+            <span class="text-slate-400 text-[10px]">s41586-2026-88026</span>
+          </div>
+          <a href="/articles/single-cell-rna-seq-endothelial-cells-hyperstatic-weightlessness" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 font-semibold flex items-center gap-1">
+            Read Dispatch →
+          </a>
+        </div>
+      </div>
+    </article>
+  
+
+    <article class="spotlight-card rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 flex flex-col group justify-between transition">
+      <div class="relative h-48 overflow-hidden bg-slate-900">
+        <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Superconducting Quantum Interference Device Array" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-80 group-hover:opacity-100" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+        <span class="absolute top-3 left-3 badge-quantum text-[10px]">
+          Neuroscience &amp; Quantum Sensors
+        </span>
+        <span class="absolute top-3 right-3 text-[11px] font-mono text-slate-300 bg-slate-950/80 px-2.5 py-0.5 rounded-full border border-slate-700">
+          17 min read
+        </span>
+      </div>
+      
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-mono text-slate-400 mb-2">
+            <span>October 23, 2026</span>
+            <span>•</span>
+            <span class="text-cyan-400 font-medium">Dr. Nikolai Sterling</span>
+          </div>
+          <h2 class="font-display font-bold text-lg text-white mb-3 group-hover:text-cyan-300 transition line-clamp-2">
+            <a href="/articles/squid-biosensing-neuronal-action-potentials-low-earth-orbit">SQUID Biosensing of Neuronal Action Potentials Under Low Earth Orbit Ionospheric Shielding</a>
+          </h2>
+          <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed mb-4">
+            Utilizing high-Tc superconducting quantum interference devices (SQUIDs) inside orbital Mumetal chambers reveals unprecedented femtotesla-scale electromagnetic recordings of cortical neural organoid firing patterns.
+          </p>
+
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#SQUID</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Neuroscience</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Quantum Sensors</span>
+            
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+          <div class="flex items-center gap-1.5 text-xs font-mono text-emerald-400">
+            <span>DOI:</span>
+            <span class="text-slate-400 text-[10px]">s41586-2026-88027</span>
+          </div>
+          <a href="/articles/squid-biosensing-neuronal-action-potentials-low-earth-orbit" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 font-semibold flex items-center gap-1">
+            Read Dispatch →
+          </a>
+        </div>
+      </div>
+    </article>
+  
+
+    <article class="spotlight-card rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 flex flex-col group justify-between transition">
+      <div class="relative h-48 overflow-hidden bg-slate-900">
+        <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Dsup Protein Docked to Nucleosome Core Particle" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-80 group-hover:opacity-100" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+        <span class="absolute top-3 left-3 badge-quantum text-[10px]">
+          Extremophile Biology &amp; Biophysics
+        </span>
+        <span class="absolute top-3 right-3 text-[11px] font-mono text-slate-300 bg-slate-950/80 px-2.5 py-0.5 rounded-full border border-slate-700">
+          15 min read
+        </span>
+      </div>
+      
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-mono text-slate-400 mb-2">
+            <span>October 23, 2026</span>
+            <span>•</span>
+            <span class="text-cyan-400 font-medium">Dr. Elena Rostova</span>
+          </div>
+          <h2 class="font-display font-bold text-lg text-white mb-3 group-hover:text-cyan-300 transition line-clamp-2">
+            <a href="/articles/tardigrade-dsup-protein-chromatin-radioprotective-compaction">Extremophilic Tardigrade Damage Suppressor (Dsup) Protein Dynamics and Chromatin Radioprotective Compaction</a>
+          </h2>
+          <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed mb-4">
+            High-resolution cryo-electron tomography reveals how Ramazzottius varieornatus Dsup protein forms a protective molecular shield over human nucleosomes, reducing gamma-radiolytic strand breakage by 72% in orbital assays.
+          </p>
+
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Tardigrade</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Dsup</span>
+            
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">#Radioprotection</span>
+            
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+          <div class="flex items-center gap-1.5 text-xs font-mono text-emerald-400">
+            <span>DOI:</span>
+            <span class="text-slate-400 text-[10px]">s41586-2026-88028</span>
+          </div>
+          <a href="/articles/tardigrade-dsup-protein-chromatin-radioprotective-compaction" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 font-semibold flex items-center gap-1">
             Read Dispatch →
           </a>
         </div>

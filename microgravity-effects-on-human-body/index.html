@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
+  <!-- Security Headers & Content Security Policy (CSP) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; img-src 'self' https: data:; font-src 'self' https: data:;">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <script defer src="/js/cookie-consent.js"></script>
+  <!-- Google Analytics 4 (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BGSPACE2026"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BGSPACE2026');
+  </script>
   <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8576621614388905"
      crossorigin="anonymous"></script>
@@ -162,6 +175,12 @@
           <span class="block text-[10px] font-mono tracking-widest text-emerald-400 -mt-1 uppercase">Space Medicine Hub</span>
         </div>
       </a>
+      
+      <!-- Accessible Search Form -->
+      <form action="/research" method="GET" role="search" class="hidden md:flex items-center relative w-60 lg:w-72">
+        <input type="search" name="q" placeholder="Search research dispatches..." class="w-full py-1.5 pl-3 pr-8 text-xs font-mono rounded-lg bg-slate-900 border border-slate-700 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-cyan-400">
+        <button type="submit" class="absolute right-2 text-slate-400 hover:text-cyan-400 text-xs" aria-label="Search">🔍</button>
+      </form>
       <nav class="hidden md:flex items-center gap-8 text-sm">
         <a href="/" class="text-slate-300 hover:text-cyan-400 transition">Home</a>
         <a href="/research" class="text-slate-300 hover:text-cyan-400 transition">Research Feed</a>

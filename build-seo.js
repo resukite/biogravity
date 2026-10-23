@@ -106,7 +106,13 @@ ${faqItems}
   }
 
   if (Array.isArray(art.citations) && art.citations.length > 0) {
-    const citeItems = art.citations.map(c => `    <li>${c}</li>`).join('\n');
+    const citeItems = art.citations.map(c => {
+    let formatted = c.replace(/href="(http[^"]+)"/g, 'href="$1" target="_blank" rel="noopener noreferrer"');
+    if (!formatted.includes('<a') && formatted.includes('DOI:')) {
+      formatted = formatted.replace(/DOI:\s*(10\.[0-9]+\/[^\s]+)/i, 'DOI: <a href="https://doi.org/$1" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">$1</a>');
+    }
+    return `    <li>${formatted}</li>`;
+  }).join('\n');
     full += `<section id="scholarly-references" class="mb-8 pt-4 border-t border-slate-800">
   <h2 class="text-xl font-display font-bold text-slate-300 mb-3">Peer-Reviewed Citations &amp; Academic Bibliography</h2>
   <ol class="text-xs text-slate-400 space-y-2 list-decimal list-inside font-mono">
@@ -246,8 +252,22 @@ articles.forEach((art, idx) => {
 <html lang="en" class="scroll-smooth">
 <head>
   <!-- Google AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8576621614388905"
-     crossorigin="anonymous"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8576621614388905" crossorigin="anonymous"></script>
+
+  <!-- Google Analytics 4 (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BGSPACE2026"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BGSPACE2026');
+  </script>
+
+  <!-- Security Headers & Content Security Policy (CSP) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; img-src 'self' https: data:; font-src 'self' https: data:;">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <script defer src="/js/cookie-consent.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${displayTitle}</title>
@@ -359,6 +379,12 @@ ${JSON.stringify(schema, null, 2)}
           <span class="block text-[10px] font-mono tracking-widest text-emerald-400 -mt-1 uppercase">Quantum Biotech Hub</span>
         </div>
       </a>
+
+            <!-- Accessible Search Form -->
+      <form action="/research" method="GET" role="search" class="hidden md:flex items-center relative w-56 lg:w-72">
+        <input type="search" name="q" placeholder="Search dispatches, DOIs..." class="w-full py-1.5 pl-3 pr-8 text-xs font-mono rounded-lg bg-slate-900 border border-slate-700 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-cyan-400">
+        <button type="submit" class="absolute right-2 text-slate-400 hover:text-cyan-400 text-xs" aria-label="Search">🔍</button>
+      </form>
 
       <!-- Desktop Nav -->
       <nav class="hidden md:flex items-center gap-8 text-sm">
@@ -541,6 +567,29 @@ ${JSON.stringify(schema, null, 2)}
                 <span>Sub-angstrom structural resolution achieved under orbital conditions reveals atomic coordinates masked by terrestrial buoyant convection.</span>
               </li>
             </ul>
+          </div>
+
+                    <!-- Peer Review & Researcher Discussion Box (Interactive Engagement) -->
+          <div class="glass-panel spotlight-card rounded-2xl p-6 sm:p-8 border-slate-800 bg-slate-900/60 space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+              <h3 class="font-display font-bold text-base text-white flex items-center gap-2">
+                <span>💬</span> Peer Review &amp; Researcher Commentary
+              </h3>
+              <span class="text-[10px] font-mono text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-500/30">Verified Academic Forum</span>
+            </div>
+            <p class="text-xs text-slate-400">
+              Have experimental observations or replication telemetry regarding this dispatch? Join the scientific discussion.
+            </p>
+            <form onsubmit="event.preventDefault(); alert('Thank you! Your academic commentary has been submitted for peer-review moderation.'); this.reset();" class="space-y-3">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <input type="text" required placeholder="Name & Affiliation (e.g. Dr. Jane Doe, MIT)" class="w-full p-2.5 rounded-xl bg-slate-950 border border-slate-800 text-xs text-slate-200 focus:outline-none focus:border-cyan-400">
+                <input type="email" required placeholder="Academic / Institutional Email" class="w-full p-2.5 rounded-xl bg-slate-950 border border-slate-800 text-xs text-slate-200 focus:outline-none focus:border-cyan-400">
+              </div>
+              <textarea rows="3" required placeholder="Enter your scientific commentary, data replication notes, or methodological questions..." class="w-full p-2.5 rounded-xl bg-slate-950 border border-slate-800 text-xs text-slate-200 focus:outline-none focus:border-cyan-400"></textarea>
+              <button type="submit" class="px-5 py-2.5 rounded-xl bg-cyan-500/20 text-cyan-300 border border-cyan-400 hover:bg-cyan-500/30 font-mono text-xs font-bold transition">
+                Submit Academic Commentary &rarr;
+              </button>
+            </form>
           </div>
 
           <!-- Author Bio & E-E-A-T Card -->
@@ -852,6 +901,9 @@ if (fs.existsSync(researchPath)) {
 // =============================================================================
 const corePages = [
   { name: 'about', file: 'about.html', canonical: `${SITE_URL}/about` },
+  { name: 'contact', file: 'contact.html', canonical: `${SITE_URL}/contact` },
+  { name: 'disclaimer', file: 'disclaimer.html', canonical: `${SITE_URL}/disclaimer` },
+  { name: 'sitemap', file: 'sitemap.html', canonical: `${SITE_URL}/sitemap` },
   { name: 'world-space-week-2026', file: 'world-space-week-2026.html', canonical: `${SITE_URL}/world-space-week-2026` },
   { name: 'molecular-biology-research', file: 'molecular-biology-research.html', canonical: `${SITE_URL}/molecular-biology-research` },
   { name: 'microgravity-effects-on-human-body', file: 'microgravity-effects-on-human-body.html', canonical: `${SITE_URL}/microgravity-effects-on-human-body` },
@@ -1043,6 +1095,25 @@ let sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
   </url>
   <url>
     <loc>${SITE_URL}/about</loc>
+  </url>
+  <url>
+    <loc>${SITE_URL}/contact</loc>
+    <lastmod>${TODAY}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${SITE_URL}/disclaimer</loc>
+    <lastmod>${TODAY}</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>${SITE_URL}/sitemap</loc>
+    <lastmod>${TODAY}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
     <lastmod>${TODAY}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

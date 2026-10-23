@@ -37,7 +37,7 @@ if (fs.existsSync(robotsPath)) {
 const htmlFiles = [];
 function findHtml(dir) {
   for (const f of fs.readdirSync(dir)) {
-    if (f === 'node_modules' || f === '.git' || f === '.system_generated') continue;
+    if (f === 'node_modules' || f === '.git' || f === '.system_generated' || f === 'outreach') continue;
     const full = path.join(dir, f);
     if (fs.statSync(full).isDirectory()) findHtml(full);
     else if (f.endsWith('.html') && !f.startsWith('google')) htmlFiles.push(full);

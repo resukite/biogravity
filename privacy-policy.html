@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
+  <!-- Security Headers & Content Security Policy (CSP) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; img-src 'self' https: data:; font-src 'self' https: data:;">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <script defer src="/js/cookie-consent.js"></script>
+  <!-- Google Analytics 4 (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BGSPACE2026"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BGSPACE2026');
+  </script>
   <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8576621614388905"
      crossorigin="anonymous"></script>
@@ -119,7 +132,7 @@
       <div class="flex gap-4">
         <a href="/" class="hover:text-cyan-400">Home</a>
         <a href="/research" class="hover:text-cyan-400">Research</a>
-        <a href="/privacy-policy" class="text-cyan-400">Privacy Policy</a>
+        <a href="/contact" class="hover:text-cyan-400">Contact</a><span>•</span><a href="/disclaimer" class="hover:text-cyan-400">Disclaimer</a><span>•</span><a href="/sitemap" class="hover:text-cyan-400">Sitemap</a><span>•</span><a href="/privacy-policy" class="text-cyan-400">Privacy Policy</a>
         <a href="/terms" class="hover:text-cyan-400">Terms of Service</a>
       </div>
     </div>
