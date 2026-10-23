@@ -16,7 +16,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us &amp; Editorial Inquiries | BioGravity</title>
-  <meta name="description" content="Contact the BioGravity editorial board, submit peer-reviewed microgravity manuscripts, or inquire about quantum biotechnology laboratory telemetry.">
+  <meta name="description" content="Contact the BioGravity editorial board, submit peer-reviewed microgravity manuscripts, or connect via our official Gmail and X channels.">
   <link rel="canonical" href="https://biogravity.space/contact">
   <meta name="robots" content="index, follow">
 
@@ -27,25 +27,12 @@
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            slate: { 950: '#020617', 900: '#0f172a', 800: '#1e293b' },
-            cyan: { 400: '#22d3ee', 500: '#06b6d4', glow: '#38bdf8' },
-            emerald: { 400: '#34d399', 500: '#10b981', glow: '#059669' }
-          }
-        }
-      }
-    }
-  </script>
 
-  <!-- Favicon -->
+  <!-- Favicon & Styles -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="stylesheet" href="/css/styles.css">
   <script defer src="/js/cookie-consent.js"></script>
+  <script defer src="/js/sidebar-menu.js"></script>
 
   <!-- Schema.org ContactPage -->
   <script type="application/ld+json">
@@ -59,11 +46,9 @@
       "@type": "Organization",
       "name": "BioGravity",
       "url": "https://biogravity.space/",
-      "email": "contact@biogravity.space",
+      "email": "biogravity.space@gmail.com",
       "sameAs": [
-        "https://x.com/BioGravitySpace",
-        "https://github.com/resukite/biogravity",
-        "https://reddit.com/r/BioGravity"
+        "https://x.com/Biogravityspace"
       ]
     }
   }
@@ -74,96 +59,122 @@
       window.history.replaceState(null, '', clean + window.location.search + window.location.hash);
     }
   </script>
-  <script defer src="/js/sidebar-menu.js"></script>
 </head>
-<body class="bg-slate-950 text-slate-100 quantum-grid min-h-screen flex flex-col selection:bg-cyan-500/30 selection:text-cyan-300">
+<body class="bg-[#fafbfc] text-slate-800 min-h-screen flex flex-col font-sans antialiased selection:bg-slate-900 selection:text-white">
 
-  <!-- Ambient Light Orbs -->
-  <div class="fixed top-0 left-1/4 w-[500px] h-[500px] ambient-glow-cyan pointer-events-none -z-10 blur-3xl"></div>
-  <div class="fixed top-1/2 right-10 w-[600px] h-[600px] ambient-glow-emerald pointer-events-none -z-10 blur-3xl"></div>
-
-  <!-- Header -->
-  <header class="sticky top-0 z-40 w-full backdrop-blur-xl bg-slate-950/75 border-b border-slate-800/80">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      <a href="/" class="flex items-center gap-3 group">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500 to-emerald-500 p-[1.5px] shadow-[0_0_20px_rgba(6,182,212,0.4)]">
-          <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
-            <span class="text-lg">⚛️</span>
+  <!-- ========================================================================= -->
+  <!-- 1. CLEAN, LEGIT & MINIMAL TOP BAR (DATE • LOGO • SEARCH • NAV • 3-DOT MENU) -->
+  <!-- ========================================================================= -->
+  <header class="sticky top-0 z-40 w-full bg-white/90 backdrop-blur-md border-b border-slate-200/80 transition">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      
+      <!-- Left: Logo, Name & Current Date -->
+      <div class="flex items-center gap-5">
+        <a href="/" class="flex items-center gap-2.5 group">
+          <div class="w-8 h-8 rounded-lg bg-slate-900 flex items-center justify-center text-white text-sm shadow-sm group-hover:bg-slate-800 transition">
+            ⚛️
           </div>
-        </div>
-        <div>
-          <span class="font-display font-extrabold text-2xl tracking-tight text-white group-hover:text-cyan-300 transition">
-            BioGravity<span class="text-cyan-400">.</span>
-          </span>
-          <span class="block text-[10px] font-mono tracking-widest text-emerald-400 -mt-1 uppercase">Quantum Biotech Hub</span>
-        </div>
-      </a>
+          <div>
+            <span class="font-display font-bold text-lg text-slate-900 tracking-tight group-hover:text-teal-600 transition">
+              BioGravity<span class="text-teal-600">.</span>
+            </span>
+            <span class="hidden sm:block text-[10px] text-slate-500 font-medium tracking-wide uppercase -mt-1">
+              Open Science Publication
+            </span>
+          </div>
+        </a>
 
-      <!-- Search Bar -->
-      <form action="/research" method="GET" role="search" class="hidden md:flex items-center relative w-64 lg:w-80">
-        <input type="search" name="q" placeholder="Search dispatches, DOIs..." class="w-full py-1.5 pl-3 pr-8 text-xs font-mono rounded-lg bg-slate-900 border border-slate-700 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-cyan-400">
-        <button type="submit" class="absolute right-2 text-slate-400 hover:text-cyan-400 text-xs" aria-label="Submit Search">🔍</button>
+        <div class="hidden lg:block h-4 w-px bg-slate-200"></div>
+        <div class="hidden lg:block text-xs text-slate-500 font-medium header-date">
+          Friday, Oct 23, 2026
+        </div>
+      </div>
+
+      <!-- Center: Clean Search Bar -->
+      <form action="/research" method="GET" role="search" class="hidden md:flex items-center relative flex-1 max-w-sm">
+        <input 
+          type="search" 
+          name="q" 
+          placeholder="Search research papers, topics, DOIs..." 
+          class="w-full py-2 pl-4 pr-9 text-xs rounded-full bg-slate-100 hover:bg-slate-100/80 border border-slate-200/80 text-slate-800 placeholder-slate-400 focus:bg-white focus:outline-none focus:border-slate-400 transition"
+        >
+        <button type="submit" class="absolute right-3 text-slate-400 hover:text-slate-700 text-xs" aria-label="Search">🔍</button>
       </form>
 
-      <!-- Nav -->
-      <nav class="hidden md:flex items-center gap-6 text-sm">
-        <a href="/" class="text-slate-300 hover:text-cyan-400 transition">Home</a>
-        <a href="/research" class="text-slate-300 hover:text-cyan-400 transition">Research Feed</a>
-        <a href="/about" class="text-slate-300 hover:text-cyan-400 transition">About</a>
-        <a href="/contact" class="text-cyan-400 border-b-2 border-cyan-400 font-semibold transition">Contact</a>
-      </nav>
+      <!-- Right: Clean Navigation Links + Bespoke 3-Dot Menu Button -->
+      <div class="flex items-center gap-3">
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
+          <a href="/" class="hover:text-slate-900 transition">Home</a>
+          <a href="/research" class="hover:text-slate-900 transition">Research</a>
+          <a href="/tools" class="hover:text-slate-900 transition">Tools</a>
+          <a href="/about" class="hover:text-slate-900 transition">About</a>
+          <a href="/contact" class="text-slate-900 font-semibold">Contact</a>
+        </nav>
+
+        <!-- Bespoke 3-Dot Navigation Menu Button -->
+        <button 
+          id="nav-sidebar-toggle" 
+          class="flex items-center gap-2 py-2 px-3.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-200/80 transition cursor-pointer text-xs font-medium shadow-sm group" 
+          aria-label="Open Navigation Menu"
+        >
+          <span class="flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-slate-700 group-hover:bg-slate-900 transition"></span>
+            <span class="w-1.5 h-1.5 rounded-full bg-slate-700 group-hover:bg-slate-900 transition"></span>
+            <span class="w-1.5 h-1.5 rounded-full bg-slate-700 group-hover:bg-slate-900 transition"></span>
+          </span>
+          <span class="font-medium ml-0.5">Menu</span>
+        </button>
+      </div>
+
     </div>
-  
-      <!-- 3-Lined Sidebar Menu Button -->
-      <button id="nav-sidebar-toggle" class="flex items-center gap-2 p-2 px-3 rounded-xl bg-slate-900 border border-slate-700/80 text-slate-200 hover:text-cyan-400 hover:border-cyan-400/50 transition cursor-pointer shadow-sm group" aria-label="Open Navigation Sidebar">
-        <svg class="w-5 h-5 text-slate-300 group-hover:text-cyan-400 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-        <span class="text-xs font-mono font-medium">Menu</span>
-      </button>
   </header>
 
   <!-- Main Content -->
-  <main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 py-14">
-    <div class="mb-10 text-center">
-      <span class="badge-quantum text-xs mb-3 inline-block">Editorial &amp; Research Desk</span>
-      <h1 class="font-display font-extrabold text-3xl sm:text-4xl text-white tracking-tight mb-4">
+  <main class="flex-grow max-w-5xl mx-auto px-4 sm:px-6 py-14 w-full">
+    
+    <div class="mb-12 text-center max-w-2xl mx-auto">
+      <span class="inline-block px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-medium mb-3">
+        Editorial &amp; Research Desk
+      </span>
+      <h1 class="font-display font-extrabold text-3xl sm:text-4xl text-slate-900 tracking-tight mb-4">
         Contact BioGravity
       </h1>
-      <p class="text-slate-400 text-sm max-w-xl mx-auto leading-relaxed">
-        Have questions about our orbital biotechnology dispatches, wish to submit a peer-reviewed preprint for review, or need technical telemetry verification? Reach our scientific editorial board directly.
+      <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+        Have questions about our orbital biotechnology dispatches, wish to submit a peer-reviewed preprint for review, or explore scientific collaborations? Connect with our team directly.
       </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
       
-      <!-- Contact Form -->
-      <div class="glass-panel spotlight-card rounded-2xl p-6 sm:p-8 border-slate-800 bg-slate-900/60">
-        <h2 class="font-display font-bold text-lg text-white mb-4">Send a Scientific Inquiry</h2>
-        <form id="contact-form" onsubmit="event.preventDefault(); alert('Thank you! Your message has been received by the editorial board. We respond within 24-48 business hours.'); this.reset();" class="space-y-4 text-xs font-mono">
+      <!-- Contact Form Card -->
+      <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-sm">
+        <h2 class="font-display font-bold text-lg text-slate-900 mb-2">Send an Inquiry</h2>
+        <p class="text-xs text-slate-500 mb-6">Fill out the fields below and our scientific editorial desk will respond promptly.</p>
+        
+        <form id="contact-form" onsubmit="event.preventDefault(); alert('Thank you! Your message has been received by the BioGravity editorial board. We respond within 24-48 business hours.'); this.reset();" class="space-y-4 text-xs font-sans">
           <div>
-            <label class="block text-slate-400 mb-1">Your Full Name / Academic Title *</label>
-            <input type="text" required placeholder="e.g. Dr. Alex Mercer" class="w-full p-2.5 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-cyan-400">
+            <label class="block text-slate-700 font-medium mb-1.5">Your Full Name / Academic Title *</label>
+            <input type="text" required placeholder="e.g. Dr. Alex Mercer" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-800 placeholder-slate-400 focus:bg-white focus:outline-none focus:border-slate-400 transition">
           </div>
           <div>
-            <label class="block text-slate-400 mb-1">Institutional / Professional Email *</label>
-            <input type="email" required placeholder="name@university.edu" class="w-full p-2.5 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-cyan-400">
+            <label class="block text-slate-700 font-medium mb-1.5">Your Email Address *</label>
+            <input type="email" required placeholder="name@university.edu" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-800 placeholder-slate-400 focus:bg-white focus:outline-none focus:border-slate-400 transition">
           </div>
           <div>
-            <label class="block text-slate-400 mb-1">Inquiry Subject *</label>
-            <select class="w-full p-2.5 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-cyan-400">
+            <label class="block text-slate-700 font-medium mb-1.5">Inquiry Subject *</label>
+            <select class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-800 focus:bg-white focus:outline-none focus:border-slate-400 transition">
               <option>Manuscript / Research Submission</option>
-              <option>Telemetry Data Verification</option>
+              <option>Data Verification &amp; Protocols</option>
               <option>Editorial Correction or Citation Question</option>
               <option>Press / Media Inquiry</option>
               <option>General Question</option>
             </select>
           </div>
           <div>
-            <label class="block text-slate-400 mb-1">Detailed Message *</label>
-            <textarea rows="4" required placeholder="State your inquiry, proposed DOI citation, or question in detail..." class="w-full p-2.5 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-cyan-400"></textarea>
+            <label class="block text-slate-700 font-medium mb-1.5">Detailed Message *</label>
+            <textarea rows="4" required placeholder="State your inquiry, proposed DOI citation, or question in detail..." class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-800 placeholder-slate-400 focus:bg-white focus:outline-none focus:border-slate-400 transition"></textarea>
           </div>
-          <button type="submit" class="w-full py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-emerald-500 text-slate-950 font-bold hover:brightness-110 transition shadow-lg shadow-cyan-950/40">
+          <button type="submit" class="w-full py-3 rounded-xl bg-slate-900 text-white font-medium hover:bg-slate-800 transition shadow-sm cursor-pointer">
             Submit Message to Editorial Board &rarr;
           </button>
         </form>
@@ -171,51 +182,50 @@
 
       <!-- Direct Contact Channels & E-E-A-T Info -->
       <div class="space-y-6">
-        <div class="glass-panel spotlight-card rounded-2xl p-6 border-slate-800 bg-slate-900/60 space-y-4">
-          <h3 class="font-display font-bold text-base text-white">Direct Communication Details</h3>
-          <ul class="space-y-3 text-xs text-slate-300 font-mono">
-            <li class="flex items-start gap-2.5">
-              <span class="text-cyan-400 text-sm">📧</span>
-              <div>
-                <strong class="text-white block">Official Contact Email:</strong>
-                <a href="mailto:contact@biogravity.space" class="text-cyan-400 hover:underline">contact@biogravity.space</a>
+        
+        <!-- Primary Direct Connect Channels Card -->
+        <div class="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200/80 shadow-sm space-y-4">
+          <h3 class="font-display font-bold text-base text-slate-900">Direct Connect Channels</h3>
+          <p class="text-xs text-slate-500 leading-relaxed">
+            Reach our lead editorial and technical coordinators directly through our verified institutional channels:
+          </p>
+
+          <div class="space-y-3 pt-2">
+            
+            <a href="mailto:biogravity.space@gmail.com" class="flex items-start gap-3.5 p-3.5 rounded-xl bg-slate-50 hover:bg-slate-100 border border-slate-200/60 transition group">
+              <div class="w-9 h-9 rounded-lg bg-white border border-slate-200 flex items-center justify-center text-base shadow-xs shrink-0">
+                📧
               </div>
-            </li>
-            <li class="flex items-start gap-2.5">
-              <span class="text-cyan-400 text-sm">⏱️</span>
-              <div>
-                <strong class="text-white block">Response Commitment:</strong>
-                <span>Peer-review &amp; editorial desk replies within 24 to 48 hours.</span>
+              <div class="min-w-0">
+                <span class="text-[10px] uppercase font-semibold text-slate-400 tracking-wider block">Official Email Address</span>
+                <span class="text-sm font-semibold text-slate-900 group-hover:text-teal-600 transition font-mono block truncate">biogravity.space@gmail.com</span>
+                <span class="text-[11px] text-slate-500 block mt-0.5">Editorial, research submissions, and general inquiries.</span>
               </div>
-            </li>
-            <li class="flex items-start gap-2.5">
-              <span class="text-cyan-400 text-sm">📍</span>
-              <div>
-                <strong class="text-white block">Consortium Headquarters:</strong>
-                <span>BioGravity Open Science Network, Low Earth Orbit Telemetry Division.</span>
+            </a>
+
+            <a href="https://x.com/Biogravityspace" target="_blank" rel="noopener noreferrer" class="flex items-start gap-3.5 p-3.5 rounded-xl bg-slate-50 hover:bg-slate-100 border border-slate-200/60 transition group">
+              <div class="w-9 h-9 rounded-lg bg-white border border-slate-200 flex items-center justify-center text-sm font-bold shadow-xs shrink-0 text-slate-900">
+                𝕏
               </div>
-            </li>
-          </ul>
+              <div class="min-w-0">
+                <span class="text-[10px] uppercase font-semibold text-slate-400 tracking-wider block">Official X (Twitter) Handle</span>
+                <span class="text-sm font-semibold text-slate-900 group-hover:text-teal-600 transition font-mono block">@Biogravityspace</span>
+                <span class="text-[11px] text-slate-500 block mt-0.5">Follow research dispatches, live updates, and announcements.</span>
+              </div>
+            </a>
+
+          </div>
         </div>
 
-        <div class="glass-panel spotlight-card rounded-2xl p-6 border-slate-800 bg-slate-900/60 space-y-3">
-          <h3 class="font-display font-bold text-base text-white">Official Social Channels</h3>
-          <p class="text-xs text-slate-400 leading-relaxed">
-            Connect directly with our editors and scientific community across social media platforms:
+        <!-- Academic Standards & Response Commitment -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm space-y-3">
+          <h3 class="font-display font-bold text-sm text-slate-900">Response Commitment</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Our editorial desk reviews every peer-reviewed submission and inquiry systematically. Average response turnaround is <strong>24 to 48 business hours</strong>.
           </p>
-          <div class="flex flex-wrap gap-2 text-xs font-mono pt-1">
-            <a href="https://x.com/BioGravitySpace" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 transition">
-              𝕏 Twitter / @BioGravitySpace
-            </a>
-            <a href="https://github.com/resukite/biogravity" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 transition">
-              🐙 GitHub / biogravity
-            </a>
-            <a href="https://reddit.com/r/BioGravity" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 transition">
-              👽 Reddit / r/BioGravity
-            </a>
-            <a href="/rss.xml" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 transition">
-              📡 RSS Feed
-            </a>
+          <div class="pt-2 border-t border-slate-100 flex items-center gap-2 text-xs text-slate-500">
+            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            <span>Desk Status: Active &amp; Receiving Inquiries</span>
           </div>
         </div>
 
@@ -224,95 +234,99 @@
     </div>
   </main>
 
-  <!-- Footer -->
-  <!-- GLOBAL FOOTER -->
-  <footer class="border-t border-slate-800 bg-slate-950 text-slate-400 text-xs py-12 mt-20">
+  <!-- ========================================================================= -->
+  <!-- CLEAN, STANDARDIZED GLOBAL FOOTER -->
+  <!-- ========================================================================= -->
+  <footer class="border-t border-slate-200/80 bg-white text-slate-600 text-xs py-12 mt-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
         
         <div class="space-y-3">
           <div class="flex items-center gap-2">
             <span class="text-lg">⚛️</span>
-            <span class="font-display font-bold text-white text-base">BioGravity</span>
+            <span class="font-display font-bold text-slate-900 text-base">BioGravity</span>
           </div>
-          <p class="text-slate-400 leading-relaxed text-xs">
-            Global quantum biotechnology research collective operating orbital microgravity laboratories in Low Earth Orbit (LEO).
+          <p class="text-slate-500 leading-relaxed text-xs">
+            Open-access scientific platform researching space biotechnology, microgravity therapeutics, and orbital biology.
           </p>
-          <div class="text-[11px] font-mono text-emerald-400">
-            STATION TELEMETRY: NOMINAL 24/7
-          </div>
         </div>
 
         <div>
-          <div class="font-mono text-white text-xs uppercase tracking-wider mb-3">Site Architecture</div>
+          <div class="font-semibold text-slate-900 text-xs uppercase tracking-wider mb-3">Site Architecture</div>
           <ul class="space-y-2">
-            <li><a href="/" class="hover:text-cyan-400 transition">Home Hub</a></li>
-            <li><a href="/research" class="hover:text-cyan-400 transition">Research Feed & Search</a></li>
-            <li><a href="/world-space-week-2026" class="hover:text-cyan-400 transition">Space Week 2026 Guide</a></li>
-            <li><a href="/molecular-biology-research" class="hover:text-cyan-400 transition">Molecular Biology Guide</a></li>
-            <li><a href="/about" class="hover:text-cyan-400 transition">About BioGravity</a></li>
-            <li><a href="/contact" class="hover:text-cyan-400 transition text-cyan-400">Contact & Inquiries</a></li>
+            <li><a href="/" class="hover:text-slate-900 transition">Home Hub</a></li>
+            <li><a href="/research" class="hover:text-slate-900 transition">Research Feed &amp; Search</a></li>
+            <li><a href="/tools" class="hover:text-slate-900 transition">Tools &amp; Simulators</a></li>
+            <li><a href="/world-space-week-2026" class="hover:text-slate-900 transition">Space Week 2026 Guide</a></li>
+            <li><a href="/molecular-biology-research" class="hover:text-slate-900 transition">Molecular Biology Guide</a></li>
+            <li><a href="/about" class="hover:text-slate-900 transition">About BioGravity</a></li>
+            <li><a href="/contact" class="hover:text-slate-900 transition text-teal-600 font-medium">Contact &amp; Inquiries</a></li>
           </ul>
         </div>
 
         <div>
-          <div class="font-mono text-white text-xs uppercase tracking-wider mb-3">Direct Connect & Social</div>
-          <ul class="space-y-2.5 text-slate-300">
+          <div class="font-semibold text-slate-900 text-xs uppercase tracking-wider mb-3">Direct Connect</div>
+          <ul class="space-y-2.5 text-slate-700">
             <li class="flex items-center gap-2">
-              <span class="text-cyan-400">📧</span>
+              <span>📧</span>
               <div>
-                <div class="text-[10px] text-slate-500 uppercase">Official Gmail</div>
-                <a href="mailto:biogravity.space@gmail.com" class="text-cyan-400 hover:underline font-mono">biogravity.space@gmail.com</a>
+                <div class="text-[10px] text-slate-400 uppercase">Official Gmail</div>
+                <a href="mailto:biogravity.space@gmail.com" class="text-slate-900 hover:underline font-mono text-xs">biogravity.space@gmail.com</a>
               </div>
             </li>
             <li class="flex items-center gap-2">
-              <span class="text-cyan-400 font-bold text-sm">𝕏</span>
+              <span class="font-bold text-sm">𝕏</span>
               <div>
-                <div class="text-[10px] text-slate-500 uppercase">Official X (Twitter)</div>
-                <a href="https://x.com/Biogravityspace" target="_blank" rel="noopener noreferrer" class="text-white hover:text-cyan-300 font-mono">@Biogravityspace</a>
+                <div class="text-[10px] text-slate-400 uppercase">Official X (Twitter)</div>
+                <a href="https://x.com/Biogravityspace" target="_blank" rel="noopener noreferrer" class="text-slate-900 hover:text-teal-600 font-mono text-xs">@Biogravityspace</a>
               </div>
-            </li>
-            <li class="pt-1">
-              <span class="text-[11px] font-mono text-emerald-400 flex items-center gap-1.5">
-                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Direct Communications Active
-              </span>
             </li>
           </ul>
         </div>
 
         <div>
-          <div class="font-mono text-white text-xs uppercase tracking-wider mb-3">Orbital Modules</div>
-          <ul class="space-y-2 text-slate-400">
-            <li>Module Alpha: Cryo-EM Spin Resonance</li>
-            <li>Module Beta: Sub-Angstrom Crystallography</li>
-            <li>Module Gamma: Acoustic 3D Bioprinting</li>
-            <li>Module Delta: External Radiation Exposure</li>
+          <div class="font-semibold text-slate-900 text-xs uppercase tracking-wider mb-3">Compliance &amp; Policy</div>
+          <ul class="space-y-2 text-slate-500">
+            <li><a href="/disclaimer" class="hover:text-slate-900 transition">Editorial Disclaimer</a></li>
+            <li><a href="/sitemap" class="hover:text-slate-900 transition">HTML Sitemap</a></li>
+            <li><a href="/privacy-policy" class="hover:text-slate-900 transition">Privacy Policy</a></li>
+            <li><a href="/terms" class="hover:text-slate-900 transition">Terms of Service</a></li>
+            <li><a href="/sitemap.xml" class="hover:text-slate-900 transition font-mono">XML Sitemap</a></li>
           </ul>
         </div>
 
       </div>
 
-      <div class="pt-6 border-t border-slate-800/80 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] font-mono text-slate-500">
-        <div>© 2026 BioGravity Institute for Quantum Biotechnology. All rights reserved.</div>
+      <div class="pt-6 border-t border-slate-200/80 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] text-slate-400">
+        <div>&copy; 2026 BioGravity Institute for Quantum Biotechnology. All rights reserved.</div>
         <div class="flex flex-wrap gap-4">
-          <a href="mailto:biogravity.space@gmail.com" class="hover:text-cyan-400 transition">Email</a>
+          <a href="mailto:biogravity.space@gmail.com" class="hover:text-slate-700 transition">Email Desk</a>
           <span>•</span>
-          <a href="https://x.com/Biogravityspace" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400 transition">X: @Biogravityspace</a>
+          <a href="https://x.com/Biogravityspace" target="_blank" rel="noopener noreferrer" class="hover:text-slate-700 transition">X: @Biogravityspace</a>
           <span>•</span>
-          <a href="/contact" class="hover:text-cyan-400 transition">Contact</a>
+          <a href="/contact" class="hover:text-slate-700 transition">Contact</a>
           <span>•</span>
-          <a href="/privacy-policy" class="hover:text-cyan-400 transition">Privacy Policy</a>
+          <a href="/privacy-policy" class="hover:text-slate-700 transition">Privacy Policy</a>
           <span>•</span>
-          <a href="/terms" class="hover:text-cyan-400 transition">Terms</a>
+          <a href="/terms" class="hover:text-slate-700 transition">Terms</a>
           <span>•</span>
-          <a href="/disclaimer" class="hover:text-cyan-400 transition">Disclaimer</a>
+          <a href="/disclaimer" class="hover:text-slate-700 transition">Disclaimer</a>
           <span>•</span>
-          <a href="/sitemap" class="hover:text-cyan-400 transition">Sitemap</a>
+          <a href="/sitemap" class="hover:text-slate-700 transition">Sitemap</a>
         </div>
       </div>
     </div>
   </footer>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const d = new Date();
+      const options = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' };
+      document.querySelectorAll('.header-date').forEach(el => {
+        el.textContent = d.toLocaleDateString('en-US', options);
+      });
+    });
+  </script>
 
 </body>
 </html>

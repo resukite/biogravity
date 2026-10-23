@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-  <!-- Security Headers & Content Security Policy (CSP) -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; img-src 'self' https: data:; font-src 'self' https: data:;">
-  <meta http-equiv="X-Content-Type-Options" content="nosniff">
-  <meta name="referrer" content="strict-origin-when-cross-origin">
-  <script defer src="/js/cookie-consent.js"></script>
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8576621614388905" crossorigin="anonymous"></script>
+
   <!-- Google Analytics 4 (GA4) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-D7XWPNNWRF"></script>
   <script>
@@ -14,214 +12,247 @@
     gtag('js', new Date());
     gtag('config', 'G-D7XWPNNWRF');
   </script>
-  <!-- Google AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8576621614388905"
-     crossorigin="anonymous"></script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy | BioGravity Institute for Quantum Biotechnology</title>
-  <meta name="description" content="Privacy Policy for BioGravity. Learn how we handle research analytics, cookies, and protect data on biogravity.space.">
+  <title>Privacy Policy & Cookie Disclosure | BioGravity</title>
+  <meta name="description" content="Comprehensive privacy policy detailing Google AdSense, Analytics, GDPR compliance, and cookie management.">
   <link rel="canonical" href="https://biogravity.space/privacy-policy">
   <meta name="robots" content="index, follow">
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="BioGravity">
-  <meta property="og:url" content="https://biogravity.space/privacy-policy.html">
-  <meta property="og:title" content="Privacy Policy | BioGravity">
-  <meta property="og:description" content="Privacy and data protection disclosures for BioGravity Institute.">
+  <!-- Security & CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; img-src 'self' https: data:; font-src 'self' https: data:;">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            slate: { 950: '#020617', 900: '#0f172a', 800: '#1e293b' },
-            cyan: { 400: '#22d3ee', 500: '#06b6d4' },
-            emerald: { 400: '#34d399', 500: '#10b981' }
-          }
-        }
-      }
-    }
-  </script>
+
+  <!-- Favicon & Styles -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="stylesheet" href="/css/styles.css">
+  <script defer src="/js/cookie-consent.js"></script>
+  <script defer src="/js/sidebar-menu.js"></script>
   <script>
     if (window.location.pathname.endsWith('.html')) {
       var clean = window.location.pathname.replace(/\.html$/, '');
       window.history.replaceState(null, '', clean + window.location.search + window.location.hash);
     }
   </script>
-  <script defer src="/js/sidebar-menu.js"></script>
 </head>
-<body class="bg-slate-950 text-slate-100 quantum-grid min-h-screen flex flex-col selection:bg-cyan-500/30 selection:text-cyan-300">
+<body class="bg-[#fafbfc] text-slate-800 min-h-screen flex flex-col font-sans antialiased selection:bg-slate-900 selection:text-white">
 
-  <!-- Header -->
-  <header class="sticky top-0 z-40 w-full backdrop-blur-xl bg-slate-950/75 border-b border-slate-800/80">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      <a href="/" class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500 to-emerald-500 p-[1.5px] shadow-[0_0_20px_rgba(6,182,212,0.4)]">
-          <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
-            <span class="text-lg">⚛️</span>
+  <!-- ========================================================================= -->
+  <!-- 1. CLEAN, LEGIT & MINIMAL TOP BAR (DATE • LOGO • SEARCH • NAV • 3-DOT MENU) -->
+  <!-- ========================================================================= -->
+  <header class="sticky top-0 z-40 w-full bg-white/90 backdrop-blur-md border-b border-slate-200/80 transition">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      
+      <!-- Left: Logo, Name & Current Date -->
+      <div class="flex items-center gap-5">
+        <a href="/" class="flex items-center gap-2.5 group">
+          <div class="w-8 h-8 rounded-lg bg-slate-900 flex items-center justify-center text-white text-sm shadow-sm group-hover:bg-slate-800 transition">
+            ⚛️
           </div>
+          <div>
+            <span class="font-display font-bold text-lg text-slate-900 tracking-tight group-hover:text-teal-600 transition">
+              BioGravity<span class="text-teal-600">.</span>
+            </span>
+            <span class="hidden sm:block text-[10px] text-slate-500 font-medium tracking-wide uppercase -mt-1">
+              Open Science Publication
+            </span>
+          </div>
+        </a>
+
+        <div class="hidden lg:block h-4 w-px bg-slate-200"></div>
+        <div class="hidden lg:block text-xs text-slate-500 font-medium header-date">
+          Friday, Oct 23, 2026
         </div>
-        <div>
-          <span class="font-display font-extrabold text-2xl tracking-tight bg-gradient-to-r from-white via-slate-100 to-slate-400 bg-clip-text text-transparent">
-            BioGravity<span class="text-cyan-400">.</span>
+      </div>
+
+      <!-- Center: Clean Search Bar -->
+      <form action="/research" method="GET" role="search" class="hidden md:flex items-center relative flex-1 max-w-sm">
+        <input 
+          type="search" 
+          name="q" 
+          placeholder="Search research papers, topics, DOIs..." 
+          class="w-full py-2 pl-4 pr-9 text-xs rounded-full bg-slate-100 hover:bg-slate-100/80 border border-slate-200/80 text-slate-800 placeholder-slate-400 focus:bg-white focus:outline-none focus:border-slate-400 transition"
+        >
+        <button type="submit" class="absolute right-3 text-slate-400 hover:text-slate-700 text-xs" aria-label="Search">🔍</button>
+      </form>
+
+      <!-- Right: Clean Navigation Links + Bespoke 3-Dot Menu Button -->
+      <div class="flex items-center gap-3">
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
+          <a href="/" class="hover:text-slate-900 transition">Home</a>
+          <a href="/research" class="hover:text-slate-900 transition">Research</a>
+          <a href="/tools" class="hover:text-slate-900 transition">Tools</a>
+          <a href="/about" class="hover:text-slate-900 transition">About</a>
+          <a href="/contact" class="hover:text-slate-900 transition">Contact</a>
+        </nav>
+
+        <!-- Bespoke 3-Dot Navigation Menu Button -->
+        <button 
+          id="nav-sidebar-toggle" 
+          class="flex items-center gap-2 py-2 px-3.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-200/80 transition cursor-pointer text-xs font-medium shadow-sm group" 
+          aria-label="Open Navigation Menu"
+        >
+          <span class="flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-slate-700 group-hover:bg-slate-900 transition"></span>
+            <span class="w-1.5 h-1.5 rounded-full bg-slate-700 group-hover:bg-slate-900 transition"></span>
+            <span class="w-1.5 h-1.5 rounded-full bg-slate-700 group-hover:bg-slate-900 transition"></span>
           </span>
-          <span class="block text-[10px] font-mono tracking-widest text-emerald-400 -mt-1 uppercase">Quantum Biotech Hub</span>
-        </div>
-      </a>
-      <nav class="flex items-center gap-6 text-sm">
-        <a href="/" class="text-slate-300 hover:text-cyan-400 transition">Home</a>
-        <a href="/research" class="text-slate-300 hover:text-cyan-400 transition">Research Feed</a>
-        <a href="/about" class="text-slate-300 hover:text-cyan-400 transition">About</a>
-      </nav>
+          <span class="font-medium ml-0.5">Menu</span>
+        </button>
+      </div>
+
     </div>
-  
-      <!-- 3-Lined Sidebar Menu Button -->
-      <button id="nav-sidebar-toggle" class="flex items-center gap-2 p-2 px-3 rounded-xl bg-slate-900 border border-slate-700/80 text-slate-200 hover:text-cyan-400 hover:border-cyan-400/50 transition cursor-pointer shadow-sm group" aria-label="Open Navigation Sidebar">
-        <svg class="w-5 h-5 text-slate-300 group-hover:text-cyan-400 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-        <span class="text-xs font-mono font-medium">Menu</span>
-      </button>
   </header>
 
   <!-- Main Content -->
-  <main class="flex-grow py-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-    <div class="space-y-4 mb-10">
-      <div class="text-xs font-mono text-cyan-400 uppercase tracking-widest">Compliance & Ethics</div>
-      <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Privacy Policy</h1>
-      <p class="text-slate-400 text-sm">Effective Date: October 15, 2026 | Last Updated: October 15, 2026</p>
+  <main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 py-14 w-full">
+    <div class="mb-10 text-center sm:text-left">
+      <span class="inline-block px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-medium mb-3">
+        Compliance &amp; Governance
+      </span>
+      <h1 class="font-display font-extrabold text-3xl sm:text-4xl text-slate-900 tracking-tight mb-3">
+        Privacy Policy & Cookie Disclosure
+      </h1>
+      <p class="text-slate-500 text-xs">Last Updated: October 2026 • BioGravity Governance Office</p>
     </div>
 
-    <div class="prose prose-invert max-w-none text-slate-300 space-y-8 leading-relaxed text-sm sm:text-base">
+    <div class="bg-white rounded-2xl p-6 sm:p-10 border border-slate-200/80 shadow-sm text-slate-600 text-sm leading-relaxed space-y-8">
+      
       <section class="space-y-3">
-        <h2 class="text-xl font-bold text-white">1. Introduction</h2>
-        <p>At <strong>BioGravity</strong> (accessible from <a href="https://biogravity.space" class="text-cyan-400 hover:underline">https://biogravity.space</a>), the privacy of our researchers, students, and website visitors is of paramount importance. This Privacy Policy document outlines the types of information that is collected and recorded by BioGravity and how we utilize it.</p>
+        <h2 class="text-xl font-display font-bold text-slate-900">1. Overview &amp; Scope</h2>
+        <p>
+          At <strong>BioGravity (biogravity.space)</strong>, accessible from https://biogravity.space, one of our main priorities is the privacy of our visitors. This Privacy Policy document outlines the types of information that is collected and recorded by BioGravity and how we use it.
+        </p>
       </section>
 
-      <section class="space-y-3">
-        <h2 class="text-xl font-bold text-white">2. Log Files and Analytical Data</h2>
-        <p>BioGravity follows standard procedures for utilizing log files. These files log visitors when they visit open-access science repositories. The information collected by log files includes internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any personally identifiable information. The purpose of this information is for analyzing trends, administering the site, tracking users' movement around the research library, and gathering broad demographic information.</p>
+      <section class="space-y-3 border-t border-slate-100 pt-6">
+        <h2 class="text-xl font-display font-bold text-slate-900">2. Google AdSense &amp; DoubleClick DART Cookies</h2>
+        <p>
+          Google is one of a third-party vendor on our site. It also uses cookies, known as DART cookies, to serve ads to our site visitors based upon their visit to biogravity.space and other sites on the internet. Visitors may choose to decline the use of DART cookies by visiting the Google ad and content network Privacy Policy at the following URL: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer" class="text-teal-600 hover:underline">https://policies.google.com/technologies/ads</a>.
+        </p>
       </section>
 
-      <section class="space-y-3 p-5 rounded-2xl bg-slate-900/80 border border-cyan-500/30">
-        <h2 class="text-xl font-bold text-cyan-300">3. Cookies and Advertising Partners (Google AdSense)</h2>
-        <p>Like any modern educational hub, BioGravity uses 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited.</p>
-        <p><strong>Google DoubleClick DART Cookie:</strong> Google is one of our third-party vendors. It also uses cookies, known as DART cookies, to serve ads to our site visitors based upon their visit to <code class="text-cyan-300">biogravity.space</code> and other sites on the internet. However, visitors may choose to decline the use of DART cookies by visiting the Google ad and content network Privacy Policy at the following URL: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer" class="text-cyan-400 underline">https://policies.google.com/technologies/ads</a>.</p>
-        <p>Third-party ad servers or ad networks use technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on BioGravity, which are sent directly to users' browsers. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.</p>
+      <section class="space-y-3 border-t border-slate-100 pt-6">
+        <h2 class="text-xl font-display font-bold text-slate-900">3. Google Analytics (GA4)</h2>
+        <p>
+          We use Google Analytics 4 to collect aggregated, anonymized information about user behavior, page views, and visitor technology. IP addresses are masked, and individual user tracking across unrelated websites is strictly disabled.
+        </p>
       </section>
 
-      <section class="space-y-3">
-        <h2 class="text-xl font-bold text-white">4. GDPR and CCPA Data Protection Rights</h2>
-        <p>We want to make sure you are fully aware of all of your data protection rights under the General Data Protection Regulation (GDPR) and California Consumer Privacy Act (CCPA):</p>
-        <ul class="list-disc pl-5 space-y-1 text-slate-400">
-          <li><strong>The right to access:</strong> You have the right to request copies of your personal data.</li>
-          <li><strong>The right to rectification:</strong> You have the right to request correction of any information you believe is inaccurate.</li>
-          <li><strong>The right to erasure:</strong> You have the right to request that we erase your personal data under certain conditions.</li>
-          <li><strong>The right to restrict processing:</strong> You have the right to request that we restrict the processing of your personal data.</li>
-        </ul>
+      <section class="space-y-3 border-t border-slate-100 pt-6">
+        <h2 class="text-xl font-display font-bold text-slate-900">4. GDPR and CCPA Data Protection Rights</h2>
+        <p>
+          We respect your privacy rights under the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA). You have the right to request access to your personal data, request correction of inaccurate data, or request erasure. Contact our compliance desk at <a href="mailto:biogravity.space@gmail.com" class="text-teal-600 font-mono hover:underline">biogravity.space@gmail.com</a> to exercise these rights.
+        </p>
       </section>
 
-      <section class="space-y-3">
-        <h2 class="text-xl font-bold text-white">5. Contact Information</h2>
-        <p>If you have additional questions or require more information about our Privacy Policy or data governance practices, do not hesitate to reach out to our compliance desk at <a href="mailto:contact@biogravity.space" class="text-cyan-400 hover:underline">contact@biogravity.space</a>.</p>
+      <section class="space-y-3 border-t border-slate-100 pt-6">
+        <h2 class="text-xl font-display font-bold text-slate-900">5. Contact Information</h2>
+        <p>
+          If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us at <a href="mailto:biogravity.space@gmail.com" class="text-teal-600 font-mono hover:underline">biogravity.space@gmail.com</a> or via X at <a href="https://x.com/Biogravityspace" target="_blank" rel="noopener noreferrer" class="text-teal-600 font-mono hover:underline">@Biogravityspace</a>.
+        </p>
       </section>
     </div>
   </main>
 
-  <!-- Footer -->
-  <!-- GLOBAL FOOTER -->
-  <footer class="border-t border-slate-800 bg-slate-950 text-slate-400 text-xs py-12 mt-20">
+  <!-- ========================================================================= -->
+  <!-- CLEAN, STANDARDIZED GLOBAL FOOTER -->
+  <!-- ========================================================================= -->
+  <footer class="border-t border-slate-200/80 bg-white text-slate-600 text-xs py-12 mt-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
         
         <div class="space-y-3">
           <div class="flex items-center gap-2">
             <span class="text-lg">⚛️</span>
-            <span class="font-display font-bold text-white text-base">BioGravity</span>
+            <span class="font-display font-bold text-slate-900 text-base">BioGravity</span>
           </div>
-          <p class="text-slate-400 leading-relaxed text-xs">
-            Global quantum biotechnology research collective operating orbital microgravity laboratories in Low Earth Orbit (LEO).
+          <p class="text-slate-500 leading-relaxed text-xs">
+            Open-access scientific platform researching space biotechnology, microgravity therapeutics, and orbital biology.
           </p>
-          <div class="text-[11px] font-mono text-emerald-400">
-            STATION TELEMETRY: NOMINAL 24/7
-          </div>
         </div>
 
         <div>
-          <div class="font-mono text-white text-xs uppercase tracking-wider mb-3">Site Architecture</div>
+          <div class="font-semibold text-slate-900 text-xs uppercase tracking-wider mb-3">Site Architecture</div>
           <ul class="space-y-2">
-            <li><a href="/" class="hover:text-cyan-400 transition">Home Hub</a></li>
-            <li><a href="/research" class="hover:text-cyan-400 transition">Research Feed & Search</a></li>
-            <li><a href="/world-space-week-2026" class="hover:text-cyan-400 transition">Space Week 2026 Guide</a></li>
-            <li><a href="/molecular-biology-research" class="hover:text-cyan-400 transition">Molecular Biology Guide</a></li>
-            <li><a href="/about" class="hover:text-cyan-400 transition">About BioGravity</a></li>
-            <li><a href="/contact" class="hover:text-cyan-400 transition text-cyan-400">Contact & Inquiries</a></li>
+            <li><a href="/" class="hover:text-slate-900 transition">Home Hub</a></li>
+            <li><a href="/research" class="hover:text-slate-900 transition">Research Feed &amp; Search</a></li>
+            <li><a href="/tools" class="hover:text-slate-900 transition">Tools &amp; Simulators</a></li>
+            <li><a href="/world-space-week-2026" class="hover:text-slate-900 transition">Space Week 2026 Guide</a></li>
+            <li><a href="/molecular-biology-research" class="hover:text-slate-900 transition">Molecular Biology Guide</a></li>
+            <li><a href="/about" class="hover:text-slate-900 transition">About BioGravity</a></li>
+            <li><a href="/contact" class="hover:text-slate-900 transition text-teal-600 font-medium">Contact &amp; Inquiries</a></li>
           </ul>
         </div>
 
         <div>
-          <div class="font-mono text-white text-xs uppercase tracking-wider mb-3">Direct Connect & Social</div>
-          <ul class="space-y-2.5 text-slate-300">
+          <div class="font-semibold text-slate-900 text-xs uppercase tracking-wider mb-3">Direct Connect</div>
+          <ul class="space-y-2.5 text-slate-700">
             <li class="flex items-center gap-2">
-              <span class="text-cyan-400">📧</span>
+              <span>📧</span>
               <div>
-                <div class="text-[10px] text-slate-500 uppercase">Official Gmail</div>
-                <a href="mailto:biogravity.space@gmail.com" class="text-cyan-400 hover:underline font-mono">biogravity.space@gmail.com</a>
+                <div class="text-[10px] text-slate-400 uppercase">Official Gmail</div>
+                <a href="mailto:biogravity.space@gmail.com" class="text-slate-900 hover:underline font-mono text-xs">biogravity.space@gmail.com</a>
               </div>
             </li>
             <li class="flex items-center gap-2">
-              <span class="text-cyan-400 font-bold text-sm">𝕏</span>
+              <span class="font-bold text-sm">𝕏</span>
               <div>
-                <div class="text-[10px] text-slate-500 uppercase">Official X (Twitter)</div>
-                <a href="https://x.com/Biogravityspace" target="_blank" rel="noopener noreferrer" class="text-white hover:text-cyan-300 font-mono">@Biogravityspace</a>
+                <div class="text-[10px] text-slate-400 uppercase">Official X (Twitter)</div>
+                <a href="https://x.com/Biogravityspace" target="_blank" rel="noopener noreferrer" class="text-slate-900 hover:text-teal-600 font-mono text-xs">@Biogravityspace</a>
               </div>
-            </li>
-            <li class="pt-1">
-              <span class="text-[11px] font-mono text-emerald-400 flex items-center gap-1.5">
-                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Direct Communications Active
-              </span>
             </li>
           </ul>
         </div>
 
         <div>
-          <div class="font-mono text-white text-xs uppercase tracking-wider mb-3">Orbital Modules</div>
-          <ul class="space-y-2 text-slate-400">
-            <li>Module Alpha: Cryo-EM Spin Resonance</li>
-            <li>Module Beta: Sub-Angstrom Crystallography</li>
-            <li>Module Gamma: Acoustic 3D Bioprinting</li>
-            <li>Module Delta: External Radiation Exposure</li>
+          <div class="font-semibold text-slate-900 text-xs uppercase tracking-wider mb-3">Compliance &amp; Policy</div>
+          <ul class="space-y-2 text-slate-500">
+            <li><a href="/disclaimer" class="hover:text-slate-900 transition">Editorial Disclaimer</a></li>
+            <li><a href="/sitemap" class="hover:text-slate-900 transition">HTML Sitemap</a></li>
+            <li><a href="/privacy-policy" class="hover:text-slate-900 transition">Privacy Policy</a></li>
+            <li><a href="/terms" class="hover:text-slate-900 transition">Terms of Service</a></li>
+            <li><a href="/sitemap.xml" class="hover:text-slate-900 transition font-mono">XML Sitemap</a></li>
           </ul>
         </div>
 
       </div>
 
-      <div class="pt-6 border-t border-slate-800/80 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] font-mono text-slate-500">
-        <div>© 2026 BioGravity Institute for Quantum Biotechnology. All rights reserved.</div>
+      <div class="pt-6 border-t border-slate-200/80 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] text-slate-400">
+        <div>&copy; 2026 BioGravity Institute for Quantum Biotechnology. All rights reserved.</div>
         <div class="flex flex-wrap gap-4">
-          <a href="mailto:biogravity.space@gmail.com" class="hover:text-cyan-400 transition">Email</a>
+          <a href="mailto:biogravity.space@gmail.com" class="hover:text-slate-700 transition">Email Desk</a>
           <span>•</span>
-          <a href="https://x.com/Biogravityspace" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400 transition">X: @Biogravityspace</a>
+          <a href="https://x.com/Biogravityspace" target="_blank" rel="noopener noreferrer" class="hover:text-slate-700 transition">X: @Biogravityspace</a>
           <span>•</span>
-          <a href="/contact" class="hover:text-cyan-400 transition">Contact</a>
+          <a href="/contact" class="hover:text-slate-700 transition">Contact</a>
           <span>•</span>
-          <a href="/privacy-policy" class="hover:text-cyan-400 transition">Privacy Policy</a>
+          <a href="/privacy-policy" class="hover:text-slate-700 transition">Privacy Policy</a>
           <span>•</span>
-          <a href="/terms" class="hover:text-cyan-400 transition">Terms</a>
+          <a href="/terms" class="hover:text-slate-700 transition">Terms</a>
           <span>•</span>
-          <a href="/disclaimer" class="hover:text-cyan-400 transition">Disclaimer</a>
+          <a href="/disclaimer" class="hover:text-slate-700 transition">Disclaimer</a>
           <span>•</span>
-          <a href="/sitemap" class="hover:text-cyan-400 transition">Sitemap</a>
+          <a href="/sitemap" class="hover:text-slate-700 transition">Sitemap</a>
         </div>
       </div>
     </div>
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const d = new Date();
+      const options = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' };
+      document.querySelectorAll('.header-date').forEach(el => {
+        el.textContent = d.toLocaleDateString('en-US', options);
+      });
+    });
+  </script>
 
 </body>
 </html>

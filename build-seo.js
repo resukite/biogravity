@@ -44,18 +44,18 @@ function renderArticleBody(art) {
   if (art.content && typeof art.content === 'string' && art.content.trim() && art.content.trim() !== 'undefined') {
     let body = art.content;
     if (Array.isArray(art.faqs) && art.faqs.length > 0 && !body.includes('frequently-asked-questions')) {
-      const faqItems = art.faqs.map(f => `    <details class="group border border-slate-800 bg-slate-900/60 rounded-xl p-4 transition open:border-cyan-500/40">
-      <summary class="font-semibold text-slate-200 cursor-pointer list-none flex justify-between items-center group-hover:text-cyan-300">
+      const faqItems = art.faqs.map(f => `    <details class="group border border-slate-200 bg-white rounded-xl p-4 transition open:border-slate-300 shadow-sm">
+      <summary class="font-semibold text-slate-900 cursor-pointer list-none flex justify-between items-center group-hover:text-teal-600">
         <span>${escapeHtml(f.question)}</span>
-        <span class="text-cyan-400 text-lg transition-transform group-open:rotate-180">&#9662;</span>
+        <span class="text-teal-600 text-lg transition-transform group-open:rotate-180">&#9662;</span>
       </summary>
-      <p class="mt-3 text-slate-400 text-sm leading-relaxed border-t border-slate-800 pt-3">
+      <p class="mt-3 text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-3">
         ${escapeHtml(f.answer)}
       </p>
     </details>`).join('\n');
 
       body += `\n\n<section id="frequently-asked-questions" class="mt-10 mb-6">
-  <h2 class="text-2xl font-display font-bold text-cyan-400 mb-4 pb-2 border-b border-cyan-500/20">Frequently Asked Questions &amp; Research Insights</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">Frequently Asked Questions &amp; Research Insights</h2>
   <div class="space-y-4">
 ${faqItems}
   </div>
@@ -66,12 +66,12 @@ ${faqItems}
   let full = '';
   if (Array.isArray(art.keyTakeaways) && art.keyTakeaways.length > 0) {
     const liItems = art.keyTakeaways.map(kt => `    <li>${escapeHtml(kt)}</li>`).join('\n');
-    full += `<div class="mb-8 p-5 rounded-2xl border border-cyan-500/30 bg-slate-900/90 backdrop-blur-md shadow-xl shadow-cyan-950/20">
-  <div class="flex items-center gap-2 text-xs font-mono text-cyan-400 uppercase tracking-widest mb-2">
-    <span class="inline-block w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+    full += `<div class="mb-8 p-6 rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
+  <div class="flex items-center gap-2 text-xs font-semibold text-teal-600 uppercase tracking-wider mb-2">
+    <span class="inline-block w-2 h-2 rounded-full bg-teal-500"></span>
     Student &amp; Researcher Key Takeaways
   </div>
-  <ul class="text-sm text-slate-300 space-y-1.5 list-disc list-inside">
+  <ul class="text-sm text-slate-700 space-y-1.5 list-disc list-inside">
 ${liItems}
   </ul>
 </div>\n\n`;
@@ -80,25 +80,25 @@ ${liItems}
   if (Array.isArray(art.sections) && art.sections.length > 0) {
     for (const sec of art.sections) {
       full += `<section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-cyan-400 mb-4 pb-2 border-b border-cyan-500/20">${escapeHtml(sec.title || '')}</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">${escapeHtml(sec.title || '')}</h2>
   ${(sec.html || '').trim()}
 </section>\n\n`;
     }
   }
 
   if (Array.isArray(art.faqs) && art.faqs.length > 0) {
-    const faqItems = art.faqs.map(f => `    <details class="group border border-slate-800 bg-slate-900/60 rounded-xl p-4 transition open:border-cyan-500/40">
-      <summary class="font-semibold text-slate-200 cursor-pointer list-none flex justify-between items-center group-hover:text-cyan-300">
+    const faqItems = art.faqs.map(f => `    <details class="group border border-slate-200 bg-white rounded-xl p-4 transition open:border-slate-300 shadow-sm">
+      <summary class="font-semibold text-slate-900 cursor-pointer list-none flex justify-between items-center group-hover:text-teal-600">
         <span>${escapeHtml(f.question)}</span>
-        <span class="text-cyan-400 text-lg transition-transform group-open:rotate-180">&#9662;</span>
+        <span class="text-teal-600 text-lg transition-transform group-open:rotate-180">&#9662;</span>
       </summary>
-      <p class="mt-3 text-slate-400 text-sm leading-relaxed border-t border-slate-800 pt-3">
+      <p class="mt-3 text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-3">
         ${escapeHtml(f.answer)}
       </p>
     </details>`).join('\n');
 
     full += `<section id="frequently-asked-questions" class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-cyan-400 mb-4 pb-2 border-b border-cyan-500/20">Google Search &amp; Featured Snippets FAQ</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">Google Search &amp; Featured Snippets FAQ</h2>
   <div class="space-y-4">
 ${faqItems}
   </div>
@@ -109,13 +109,13 @@ ${faqItems}
     const citeItems = art.citations.map(c => {
     let formatted = c.replace(/href="(http[^"]+)"/g, 'href="$1" target="_blank" rel="noopener noreferrer"');
     if (!formatted.includes('<a') && formatted.includes('DOI:')) {
-      formatted = formatted.replace(/DOI:\s*(10\.[0-9]+\/[^\s]+)/i, 'DOI: <a href="https://doi.org/$1" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">$1</a>');
+      formatted = formatted.replace(/DOI:\s*(10\.[0-9]+\/[^\s]+)/i, 'DOI: <a href="https://doi.org/$1" target="_blank" rel="noopener noreferrer" class="text-teal-600 hover:underline">$1</a>');
     }
     return `    <li>${formatted}</li>`;
   }).join('\n');
-    full += `<section id="scholarly-references" class="mb-8 pt-4 border-t border-slate-800">
-  <h2 class="text-xl font-display font-bold text-slate-300 mb-3">Peer-Reviewed Citations &amp; Academic Bibliography</h2>
-  <ol class="text-xs text-slate-400 space-y-2 list-decimal list-inside font-mono">
+    full += `<section id="scholarly-references" class="mb-8 pt-4 border-t border-slate-200">
+  <h2 class="text-xl font-display font-bold text-slate-900 mb-3">Peer-Reviewed Citations &amp; Academic Bibliography</h2>
+  <ol class="text-xs text-slate-600 space-y-2 list-decimal list-inside font-mono">
 ${citeItems}
   </ol>
 </section>\n`;
@@ -231,16 +231,16 @@ articles.forEach((art, idx) => {
   // Related articles
   const relatedArticles = articles.filter(a => a.id !== art.id).slice(0, 3);
   const relatedHtml = relatedArticles.map(rel => `
-    <a href="/articles/${encodeURIComponent(rel.id)}" class="spotlight-card block p-3 rounded-xl border border-slate-800 hover:border-cyan-500/40 transition group">
-      <div class="text-[10px] font-mono text-cyan-400">${escapeHtml(rel.category)}</div>
-      <div class="text-xs font-display font-semibold text-white group-hover:text-cyan-300 transition line-clamp-2 mt-0.5">${escapeHtml(rel.title)}</div>
-      <div class="text-[10px] text-slate-400 mt-1">${escapeHtml(rel.readtime || '8 min read')} • ${escapeHtml(rel.date)}</div>
+    <a href="/articles/${encodeURIComponent(rel.id)}" class="ux-card block p-3.5 border border-slate-200/80 hover:border-slate-300 transition group">
+      <div class="text-[10px] font-semibold text-teal-600 uppercase tracking-wider">${escapeHtml(rel.category)}</div>
+      <div class="text-xs font-display font-semibold text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">${escapeHtml(rel.title)}</div>
+      <div class="text-[10px] text-slate-400 mt-1.5 font-medium">${escapeHtml(rel.readtime || '8 min read')} • ${escapeHtml(rel.date)}</div>
     </a>
   `).join('\n');
 
   // Tags HTML
   const tagsHtml = tags.map(t => `
-    <a href="/research?q=${encodeURIComponent(t)}" class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-700 text-slate-300 hover:text-cyan-300 hover:border-cyan-400 transition">
+    <a href="/research?q=${encodeURIComponent(t)}" class="text-xs px-2.5 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 hover:bg-slate-200 hover:text-slate-900 transition font-medium">
       #${escapeHtml(t)}
     </a>
   `).join('\n');
@@ -311,9 +311,13 @@ articles.forEach((art, idx) => {
       theme: {
         extend: {
           colors: {
-            slate: { 950: '#020617', 900: '#0f172a', 800: '#1e293b' },
-            cyan: { 400: '#22d3ee', 500: '#06b6d4', glow: '#38bdf8' },
-            emerald: { 400: '#34d399', 500: '#10b981', glow: '#059669' }
+            charcoal: { 900: '#0f172a', 800: '#1e293b', 700: '#334155' },
+            teal: { 600: '#0d9488', 500: '#14b8a6', 50: '#f0fdfa' }
+          },
+          fontFamily: {
+            sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+            display: ['Space Grotesk', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
           }
         }
       }
@@ -327,7 +331,6 @@ articles.forEach((art, idx) => {
 
   <!-- Custom Styles & Global Effects -->
   <link rel="stylesheet" href="/css/styles.css">
-  <script defer src="/js/command-center-fx.js"></script>
   <script defer src="/js/sidebar-menu.js"></script>
 
   <!-- Structured Data JSON-LD -->
@@ -335,102 +338,90 @@ articles.forEach((art, idx) => {
 ${JSON.stringify(schema, null, 2)}
   </script>
 </head>
-<body class="bg-slate-950 text-slate-100 quantum-grid min-h-screen flex flex-col selection:bg-cyan-500/30 selection:text-cyan-300 relative overflow-x-hidden">
-
-  <!-- Interactive Cosmic Particle Field & Meteor Canvas (MagicUI / Aceternity FX) -->
-  <canvas id="cosmic-canvas" class="fixed inset-0 pointer-events-none z-0 opacity-40"></canvas>
-
-  <!-- Ambient Light Orbs -->
-  <div class="fixed top-0 left-1/4 w-[500px] h-[500px] ambient-glow-cyan pointer-events-none -z-10 blur-3xl"></div>
-  <div class="fixed top-1/2 right-10 w-[600px] h-[600px] ambient-glow-emerald pointer-events-none -z-10 blur-3xl"></div>
+<body class="bg-[#fafbfc] text-slate-800 min-h-screen flex flex-col font-sans antialiased selection:bg-slate-900 selection:text-white">
 
   <!-- Global Header Navigation -->
-  <header class="sticky top-0 z-40 w-full backdrop-blur-xl bg-slate-950/75 border-b border-slate-800/80">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+  <header class="sticky top-0 z-40 w-full bg-white/90 backdrop-blur-md border-b border-slate-200/80 transition">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
       
-      <!-- Logo -->
-      <a href="/" class="flex items-center gap-3 group">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500 to-emerald-500 p-[1.5px] shadow-[0_0_20px_rgba(6,182,212,0.4)] group-hover:shadow-[0_0_25px_rgba(52,211,153,0.6)] transition duration-300">
-          <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center relative overflow-hidden">
-            <span class="text-lg">⚛️</span>
+      <!-- Left: Logo & Live Date -->
+      <div class="flex items-center gap-5">
+        <a href="/" class="flex items-center gap-2.5 group">
+          <div class="w-8 h-8 rounded-lg bg-slate-900 flex items-center justify-center text-white text-sm shadow-sm group-hover:bg-slate-800 transition">
+            ⚛️
           </div>
-        </div>
-        <div>
-          <span class="font-display font-extrabold text-2xl tracking-tight bg-gradient-to-r from-white via-slate-100 to-slate-400 bg-clip-text text-transparent group-hover:to-cyan-300 transition">
-            BioGravity<span class="text-cyan-400">.</span>
-          </span>
-          <span class="block text-[10px] font-mono tracking-widest text-emerald-400 -mt-1 uppercase">Quantum Biotech Hub</span>
-        </div>
-      </a>
-
-            <!-- Accessible Search Form -->
-      <form action="/research" method="GET" role="search" class="hidden md:flex items-center relative w-56 lg:w-72">
-        <input type="search" name="q" placeholder="Search dispatches, DOIs..." class="w-full py-1.5 pl-3 pr-8 text-xs font-mono rounded-lg bg-slate-900 border border-slate-700 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-cyan-400">
-        <button type="submit" class="absolute right-2 text-slate-400 hover:text-cyan-400 text-xs" aria-label="Search">🔍</button>
-      </form>
-
-      <!-- Desktop Nav -->
-      <nav class="hidden md:flex items-center gap-8 text-sm">
-        <a href="/" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Home</a>
-        <a href="/research" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Research</a>
-        <a href="/tools" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Tools</a>
-        <a href="/world-space-week-2026" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Space Week 2026</a>
-        <a href="/molecular-biology-research" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Molecular Biology</a>
-        <a href="/about" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Lab Notes / About</a>
-        <a href="/contact" class="nav-link py-2 text-slate-300 hover:text-cyan-400 transition">Contact</a>
-      </nav>
-
-      <!-- Action -->
-      <div class="hidden lg:flex items-center gap-4">
-        <a href="/research" class="px-4 py-2 rounded-xl text-xs font-mono border border-slate-700 bg-slate-900 text-slate-300 hover:text-white transition flex items-center gap-1.5">
-          <span>← Back to Feed</span>
+          <div>
+            <span class="font-display font-bold text-lg text-slate-900 tracking-tight group-hover:text-teal-600 transition">
+              BioGravity<span class="text-teal-600">.</span>
+            </span>
+            <span class="hidden sm:block text-[10px] text-slate-500 font-medium tracking-wide uppercase -mt-1">
+              Open Science Publication
+            </span>
+          </div>
         </a>
+
+        <div class="hidden lg:block h-4 w-px bg-slate-200"></div>
+        <div class="hidden lg:block text-xs text-slate-500 font-medium" id="header-date">
+          Friday, Oct 23, 2026
+        </div>
       </div>
 
-      <!-- Mobile Menu Button -->
-      <!-- 3-Lined Sidebar Menu Button -->
-      <button id="nav-sidebar-toggle" class="flex items-center gap-2 p-2 px-3 rounded-xl bg-slate-900 border border-slate-700/80 text-slate-200 hover:text-cyan-400 hover:border-cyan-400/50 transition cursor-pointer shadow-sm group" aria-label="Open Navigation Sidebar">
-        <svg class="w-5 h-5 text-slate-300 group-hover:text-cyan-400 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-        <span class="text-xs font-mono font-medium">Menu</span>
-      </button>
+      <!-- Center: Accessible Search Form -->
+      <form action="/research" method="GET" role="search" class="hidden md:flex items-center relative flex-1 max-w-sm">
+        <input 
+          type="search" 
+          name="q" 
+          placeholder="Search research papers, topics, DOIs..." 
+          class="w-full py-2 pl-4 pr-9 text-xs rounded-full bg-slate-100 hover:bg-slate-100/80 border border-slate-200/80 text-slate-800 placeholder-slate-400 focus:bg-white focus:outline-none focus:border-slate-400 transition"
+        >
+        <button type="submit" class="absolute right-3 text-slate-400 hover:text-slate-700 text-xs" aria-label="Search">🔍</button>
+      </form>
+
+      <!-- Right: Desktop Nav & Bespoke 3-Dot Menu Button -->
+      <div class="flex items-center gap-3">
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
+          <a href="/" class="hover:text-slate-900 transition">Home</a>
+          <a href="/research" class="text-slate-900 font-semibold transition">Research</a>
+          <a href="/tools" class="hover:text-slate-900 transition">Tools</a>
+          <a href="/about" class="hover:text-slate-900 transition">About</a>
+          <a href="/contact" class="hover:text-slate-900 transition">Contact</a>
+        </nav>
+
+        <!-- Bespoke 3-Dot Navigation Menu Button -->
+        <button 
+          id="nav-sidebar-toggle" 
+          class="flex items-center gap-2 py-2 px-3.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-200/80 transition cursor-pointer text-xs font-medium shadow-sm group" 
+          aria-label="Open Navigation Menu"
+        >
+          <span class="flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-slate-700 group-hover:bg-slate-900 transition"></span>
+            <span class="w-1.5 h-1.5 rounded-full bg-slate-700 group-hover:bg-slate-900 transition"></span>
+            <span class="w-1.5 h-1.5 rounded-full bg-slate-700 group-hover:bg-slate-900 transition"></span>
+          </span>
+          <span class="font-medium ml-0.5">Menu</span>
+        </button>
+      </div>
 
     </div>
   </header>
-
-  <!-- Mobile Drawer -->
-  <div id="mobile-drawer" class="hidden fixed inset-0 z-50 bg-slate-950/95 backdrop-blur-2xl flex flex-col p-6">
-    <div class="flex justify-between items-center pb-6 border-b border-slate-800">
-      <div class="font-display font-bold text-xl text-white">BioGravity Hub</div>
-      <button id="close-drawer-btn" class="text-slate-400 hover:text-white p-2">✕</button>
-    </div>
-    <div class="flex flex-col gap-6 text-lg mt-8 font-medium">
-      <a href="/" class="text-slate-300 hover:text-white">Home</a>
-      <a href="/research" class="text-slate-300 hover:text-white">Research Feed</a>
-      <a href="/world-space-week-2026" class="text-slate-300 hover:text-white">Space Week 2026</a>
-      <a href="/molecular-biology-research" class="text-slate-300 hover:text-white">Molecular Biology Guide</a>
-      <a href="/about" class="text-slate-300 hover:text-white">Lab Notes / About</a>
-    </div>
-  </div>
 
   <!-- ARTICLE READER MAIN CONTAINER -->
   <main class="flex-grow py-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Breadcrumbs & Quick Actions -->
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-6 mb-8 border-b border-slate-800/80 gap-4 text-xs font-mono">
-        <div class="flex items-center gap-2 text-slate-400 overflow-x-auto">
-          <a href="/" class="hover:text-cyan-400">BioGravity</a>
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-6 mb-8 border-b border-slate-200/80 gap-4 text-xs">
+        <div class="flex items-center gap-2 text-slate-500 overflow-x-auto">
+          <a href="/" class="hover:text-slate-900 transition font-medium">BioGravity</a>
           <span>/</span>
-          <a href="/research" class="hover:text-cyan-400">Research Feed</a>
+          <a href="/research" class="hover:text-slate-900 transition font-medium">Research Feed</a>
           <span>/</span>
-          <span class="text-cyan-400">${escapeHtml(art.category)}</span>
+          <span class="text-teal-600 font-semibold">${escapeHtml(art.category)}</span>
         </div>
 
         <div class="flex items-center gap-2">
-          <a href="/research" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-700 text-slate-300 hover:text-white hover:border-cyan-400 transition">
-            Browse All ${articles.length} Dispatches →
+          <a href="/research" class="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition font-medium shadow-sm text-xs flex items-center gap-1.5">
+            <span>← Browse All 22 Dispatches</span>
           </a>
         </div>
       </div>
@@ -439,64 +430,64 @@ ${JSON.stringify(schema, null, 2)}
       <article class="max-w-4xl mx-auto mb-10 space-y-4">
         
         <div class="flex flex-wrap items-center gap-3">
-          <span class="badge-quantum text-xs">
+          <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-semibold border border-slate-200">
             ${escapeHtml(art.category)}
           </span>
-          <span class="px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-xs font-mono flex items-center gap-1.5">
-            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-            Peer-Reviewed Orbital Dispatch
+          <span class="px-3 py-1 rounded-full bg-teal-50 border border-teal-200/70 text-teal-700 text-xs font-medium flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-teal-500"></span>
+            Peer-Reviewed Open Science
           </span>
-          <span class="text-xs font-mono text-slate-400">
+          <span class="text-xs text-slate-400 font-medium">
             ${escapeHtml(art.readtime || '8 min read')}
           </span>
         </div>
 
-        <h1 class="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-tight">
+        <h1 class="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-slate-900 tracking-tight leading-tight">
           ${escapeHtml(art.title)}
         </h1>
 
-        <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-slate-800/80 text-xs">
+        <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-slate-200 text-xs">
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-cyan-500/20 border border-cyan-400/50 flex items-center justify-center text-lg">
+            <div class="w-10 h-10 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center text-lg">
               👩‍🔬
             </div>
             <div>
-              <div class="font-semibold text-white">${escapeHtml(authorName)}</div>
-              <div class="text-slate-400 font-mono text-[11px]">${escapeHtml(authorRole)}</div>
+              <div class="font-bold text-slate-900">${escapeHtml(authorName)}</div>
+              <div class="text-slate-500 text-[11px]">${escapeHtml(authorRole)}</div>
             </div>
           </div>
 
-          <div class="flex items-center gap-4 font-mono text-slate-400 text-xs">
-            <div>PUBLISHED: <strong class="text-slate-200">${escapeHtml(dateFormatted)}</strong></div>
-            <div class="hidden sm:block">DOI: <strong class="text-cyan-400">${escapeHtml(doi)}</strong></div>
+          <div class="flex items-center gap-4 text-slate-500 text-xs">
+            <div>PUBLISHED: <strong class="text-slate-800 font-semibold">${escapeHtml(dateFormatted)}</strong></div>
+            <div class="hidden sm:block">DOI: <strong class="text-slate-900 font-mono">${escapeHtml(doi)}</strong></div>
           </div>
         </div>
 
-        <!-- Reader Utility Actions Bar with Direct Social Amplification -->
-        <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 flex flex-wrap items-center justify-between gap-3 text-xs font-mono">
+        <!-- Reader Utility Actions Bar -->
+        <div class="p-3 rounded-2xl bg-white border border-slate-200/80 flex flex-wrap items-center justify-between gap-3 text-xs shadow-sm">
           <div class="flex flex-wrap items-center gap-2">
-            <button id="btn-copy-cite" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition flex items-center gap-1.5">
+            <button id="btn-copy-cite" class="px-3 py-1.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 transition flex items-center gap-1.5 font-medium">
               <span>📋</span> Copy Cite
             </button>
-            <button id="btn-share-dispatch" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition flex items-center gap-1.5">
+            <button id="btn-share-dispatch" class="px-3 py-1.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 transition flex items-center gap-1.5 font-medium">
               <span>🔗</span> Copy Link
             </button>
-            <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent(`"${art.title}" - BioGravity Research:`)}&url=${encodeURIComponent(cleanArticleUrl)}&hashtags=QuantumBiology,Biotechnology,BioGravity" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg bg-cyan-950/60 border border-cyan-500/40 text-cyan-300 hover:bg-cyan-900/80 transition flex items-center gap-1.5 font-bold">
-              <span>𝕏</span> Share on X
+            <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent(`"${art.title}" - BioGravity Research:`)}&url=${encodeURIComponent(cleanArticleUrl)}&hashtags=SpaceMedicine,Microgravity,BioGravity" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-800 transition flex items-center gap-1.5 font-semibold">
+              <span>𝕏</span> Share
             </a>
-            <a href="https://www.reddit.com/submit?url=${encodeURIComponent(cleanArticleUrl)}&title=${encodeURIComponent(art.title)}" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg bg-orange-950/60 border border-orange-500/40 text-orange-300 hover:bg-orange-900/80 transition flex items-center gap-1.5 font-bold">
+            <a href="https://www.reddit.com/submit?url=${encodeURIComponent(cleanArticleUrl)}&title=${encodeURIComponent(art.title)}" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-800 transition flex items-center gap-1.5 font-semibold">
               <span>👽</span> Reddit
             </a>
-            <a href="https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(cleanArticleUrl)}" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg bg-blue-950/60 border border-blue-500/40 text-blue-300 hover:bg-blue-900/80 transition flex items-center gap-1.5 font-bold">
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(cleanArticleUrl)}" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-800 transition flex items-center gap-1.5 font-semibold">
               <span>💼</span> LinkedIn
             </a>
           </div>
 
-          <div class="flex items-center gap-2 text-slate-400">
+          <div class="flex items-center gap-2 text-slate-500 font-medium">
             <span>TEXT SIZE:</span>
-            <button id="btn-font-sm" class="px-2 py-1 rounded bg-slate-800 text-slate-300 hover:text-white">A-</button>
-            <button id="btn-font-base" class="px-2 py-1 rounded bg-slate-800 text-cyan-400 font-bold">A</button>
-            <button id="btn-font-lg" class="px-2 py-1 rounded bg-slate-800 text-slate-300 hover:text-white">A+</button>
+            <button id="btn-font-sm" class="px-2.5 py-1 rounded-full bg-slate-100 text-slate-700 hover:bg-slate-200">A-</button>
+            <button id="btn-font-base" class="px-2.5 py-1 rounded-full bg-slate-900 text-white font-bold">A</button>
+            <button id="btn-font-lg" class="px-2.5 py-1 rounded-full bg-slate-100 text-slate-700 hover:bg-slate-200">A+</button>
           </div>
         </div>
 
@@ -505,91 +496,89 @@ ${JSON.stringify(schema, null, 2)}
       <!-- Main Reader Grid: Content + Sticky Sidebar -->
       <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10">
         
-        <!-- Left: Full Scientific Paper Content (Pre-rendered for Instant Google Indexing) -->
+        <!-- Left: Full Scientific Paper Content -->
         <div class="lg:col-span-8 space-y-8">
           
           <!-- Hero Cover Image -->
-          <div class="relative rounded-2xl overflow-hidden border border-slate-800 h-80 sm:h-96 bg-slate-900 scanline-effect shadow-[0_0_30px_rgba(6,182,212,0.1)]">
+          <div class="relative rounded-2xl overflow-hidden border border-slate-200/80 h-80 sm:h-96 bg-slate-100 shadow-sm">
             <img src="${escapeHtml(coverUrl)}" alt="${escapeHtml(coverAlt)}" class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
             <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
-              <div class="badge-quantum text-[11px]">
+              <div class="text-[11px] font-medium px-3 py-1 rounded-full bg-white/95 text-slate-800 shadow-sm">
                 Orbital Transmission Image • Cryo-EM Bay
               </div>
-              <div class="text-[11px] font-mono text-emerald-400 bg-slate-950/90 px-2.5 py-1 rounded-md border border-slate-800">
+              <div class="text-[11px] font-mono text-teal-700 bg-white/95 px-2.5 py-1 rounded-full shadow-sm font-semibold">
                 Resolution: 0.82 Å
               </div>
             </div>
           </div>
 
           <!-- Abstract / Key Summary Box -->
-          <div class="glass-panel spotlight-card rounded-2xl p-6 border-cyan-500/30 bg-slate-900/60">
-            <div class="text-xs font-mono uppercase tracking-widest text-cyan-400 mb-2">Scientific Abstract</div>
-            <p class="text-slate-200 text-sm sm:text-base leading-relaxed italic">
+          <div class="ux-card p-6 bg-white border border-slate-200/80">
+            <div class="text-xs font-semibold uppercase tracking-wider text-teal-600 mb-2">Scientific Abstract</div>
+            <p class="text-slate-700 text-sm sm:text-base leading-relaxed italic">
               ${escapeHtml(art.summary)}
             </p>
           </div>
 
           <!-- Article Main Body (Pre-rendered Static HTML) -->
-          <div id="article-body-content" class="glass-panel spotlight-card rounded-2xl p-6 sm:p-8 border-slate-800 text-slate-300 text-sm sm:text-base leading-relaxed space-y-6">
+          <div id="article-body-content" class="ux-card p-6 sm:p-10 border border-slate-200/80 bg-white text-slate-700 text-sm sm:text-base leading-relaxed space-y-6">
             ${renderArticleBody(art)}
           </div>
 
           <!-- Key Verified Findings -->
-          <div class="glass-panel spotlight-card rounded-2xl p-6 border-slate-800 space-y-4">
-            <h3 class="font-display font-bold text-lg text-white flex items-center gap-2">
-              <span class="text-emerald-400">✓</span> Key Verified Findings
+          <div class="ux-card p-6 border border-slate-200/80 bg-white space-y-4">
+            <h3 class="font-display font-bold text-lg text-slate-900 flex items-center gap-2">
+              <span class="text-teal-600">✓</span> Key Verified Findings
             </h3>
-            <ul class="space-y-3 text-xs sm:text-sm text-slate-300">
+            <ul class="space-y-3 text-xs sm:text-sm text-slate-600">
               <li class="flex items-start gap-2.5">
-                <span class="text-cyan-400 font-mono mt-0.5">01.</span>
+                <span class="text-teal-600 font-semibold mt-0.5">01.</span>
                 <span>Hydrogen kinetic isotope effect (KIE) exceeds 4.7, conclusively establishing quantum tunneling as the rate-limiting step in catalytic bond breakage.</span>
               </li>
               <li class="flex items-start gap-2.5">
-                <span class="text-cyan-400 font-mono mt-0.5">02.</span>
+                <span class="text-teal-600 font-semibold mt-0.5">02.</span>
                 <span>Zero-convection microgravity environments increase molecular spin-state coherence lifetimes to 384 picoseconds.</span>
               </li>
               <li class="flex items-start gap-2.5">
-                <span class="text-cyan-400 font-mono mt-0.5">03.</span>
+                <span class="text-teal-600 font-semibold mt-0.5">03.</span>
                 <span>Sub-angstrom structural resolution achieved under orbital conditions reveals atomic coordinates masked by terrestrial buoyant convection.</span>
               </li>
             </ul>
           </div>
 
-                    <!-- Peer Review & Researcher Discussion Box (Interactive Engagement) -->
-          <div class="glass-panel spotlight-card rounded-2xl p-6 sm:p-8 border-slate-800 bg-slate-900/60 space-y-4">
-            <div class="flex items-center justify-between border-b border-slate-800 pb-3">
-              <h3 class="font-display font-bold text-base text-white flex items-center gap-2">
-                <span>💬</span> Peer Review &amp; Researcher Commentary
+          <!-- Peer Review & Researcher Discussion Box -->
+          <div class="ux-card p-6 sm:p-8 border border-slate-200/80 bg-white space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+              <h3 class="font-display font-bold text-base text-slate-900 flex items-center gap-2">
+                <span>💬</span> Peer Review &amp; Academic Commentary
               </h3>
-              <span class="text-[10px] font-mono text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-500/30">Verified Academic Forum</span>
+              <span class="text-[11px] font-medium text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded-full border border-teal-200/60">Verified Scientific Forum</span>
             </div>
-            <p class="text-xs text-slate-400">
-              Have experimental observations or replication telemetry regarding this dispatch? Join the scientific discussion.
+            <p class="text-xs text-slate-600">
+              Have experimental observations or replication data regarding this dispatch? Submit your commentary to our review desk.
             </p>
             <form onsubmit="event.preventDefault(); alert('Thank you! Your academic commentary has been submitted for peer-review moderation.'); this.reset();" class="space-y-3">
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <input type="text" required placeholder="Name & Affiliation (e.g. Dr. Jane Doe, MIT)" class="w-full p-2.5 rounded-xl bg-slate-950 border border-slate-800 text-xs text-slate-200 focus:outline-none focus:border-cyan-400">
-                <input type="email" required placeholder="Academic / Institutional Email" class="w-full p-2.5 rounded-xl bg-slate-950 border border-slate-800 text-xs text-slate-200 focus:outline-none focus:border-cyan-400">
+                <input type="text" required placeholder="Name & Affiliation (e.g. Dr. Jane Doe, MIT)" class="w-full p-2.5 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-800 focus:outline-none focus:border-slate-400">
+                <input type="email" required placeholder="Academic / Institutional Email" class="w-full p-2.5 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-800 focus:outline-none focus:border-slate-400">
               </div>
-              <textarea rows="3" required placeholder="Enter your scientific commentary, data replication notes, or methodological questions..." class="w-full p-2.5 rounded-xl bg-slate-950 border border-slate-800 text-xs text-slate-200 focus:outline-none focus:border-cyan-400"></textarea>
-              <button type="submit" class="px-5 py-2.5 rounded-xl bg-cyan-500/20 text-cyan-300 border border-cyan-400 hover:bg-cyan-500/30 font-mono text-xs font-bold transition">
+              <textarea rows="3" required placeholder="Enter your scientific commentary, data replication notes, or methodological questions..." class="w-full p-2.5 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-800 focus:outline-none focus:border-slate-400"></textarea>
+              <button type="submit" class="ux-btn-primary px-5 py-2.5 text-xs">
                 Submit Academic Commentary &rarr;
               </button>
             </form>
           </div>
 
           <!-- Author Bio & E-E-A-T Card -->
-          <div class="spotlight-card rounded-2xl p-6 bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-center gap-6">
-            <div class="w-16 h-16 rounded-full bg-gradient-to-tr from-cyan-500 to-emerald-500 p-[2px] flex-shrink-0">
-              <div class="w-full h-full rounded-full bg-slate-950 flex items-center justify-center font-display font-extrabold text-xl text-cyan-400">
-                ${escapeHtml(authorName.split(' ').map(n=>n[0]).join('').slice(0, 2))}
-              </div>
+          <div class="ux-card rounded-2xl p-6 bg-white border border-slate-200/80 flex flex-col sm:flex-row items-center gap-6">
+            <div class="w-16 h-16 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center font-display font-extrabold text-xl text-slate-800 flex-shrink-0">
+              ${escapeHtml(authorName.split(' ').map(n=>n[0]).join('').slice(0, 2))}
             </div>
             <div>
-              <div class="font-display font-bold text-base text-white mb-0.5">${escapeHtml(authorName)}</div>
-              <div class="text-xs font-mono text-cyan-400 mb-2">${escapeHtml(authorRole)} • <a href="${escapeHtml(authorOrcid)}" target="_blank" rel="noopener noreferrer" class="underline hover:text-cyan-300">ORCID</a></div>
-              <p class="text-xs text-slate-400 leading-relaxed">${escapeHtml(authorBio)}</p>
+              <div class="font-display font-bold text-base text-slate-900 mb-0.5">${escapeHtml(authorName)}</div>
+              <div class="text-xs text-teal-600 font-medium mb-2">${escapeHtml(authorRole)} • <a href="${escapeHtml(authorOrcid)}" target="_blank" rel="noopener noreferrer" class="underline hover:text-teal-700">ORCID</a></div>
+              <p class="text-xs text-slate-600 leading-relaxed">${escapeHtml(authorBio)}</p>
             </div>
           </div>
 
@@ -598,36 +587,36 @@ ${JSON.stringify(schema, null, 2)}
         <!-- Right: Sticky Scientific Metadata & Sidebar -->
         <div class="lg:col-span-4 space-y-6">
           
-          <div class="glass-panel spotlight-card rounded-2xl p-6 border-slate-800 space-y-6 sticky top-28">
+          <div class="ux-card p-6 border border-slate-200/80 bg-white space-y-6 sticky top-24">
             
             <div>
-              <div class="text-xs font-mono uppercase tracking-widest text-slate-400 mb-1">Journal Indexing</div>
-              <div class="font-display font-bold text-white text-base">BioGravity Letters in Microgravity</div>
-              <div class="text-[11px] font-mono text-cyan-400 mt-1">ISSN: 2994-0821 (LEO Edition)</div>
+              <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Journal Indexing</div>
+              <div class="font-display font-bold text-slate-900 text-base">BioGravity Letters in Microgravity</div>
+              <div class="text-xs font-mono text-teal-600 mt-1">ISSN: 2994-0821 (LEO Edition)</div>
             </div>
 
-            <div class="grid grid-cols-2 gap-3 pt-4 border-t border-slate-800/80">
-              <div class="p-3 rounded-xl bg-slate-950/70 border border-slate-800">
-                <div class="text-[10px] font-mono text-slate-400">IMPACT METRIC</div>
-                <div class="text-lg font-bold font-display text-cyan-400 mt-0.5">${escapeHtml(art.impact || '9.6')}</div>
+            <div class="grid grid-cols-2 gap-3 pt-4 border-t border-slate-100">
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
+                <div class="text-[10px] text-slate-400 font-semibold uppercase">IMPACT METRIC</div>
+                <div class="text-lg font-bold font-display text-slate-900 mt-0.5">${escapeHtml(art.impact || '9.6')}</div>
               </div>
-              <div class="p-3 rounded-xl bg-slate-950/70 border border-slate-800">
-                <div class="text-[10px] font-mono text-slate-400">ORBITAL G-LEVEL</div>
-                <div class="text-lg font-bold font-display text-emerald-400 mt-0.5">&lt; 0.08 &mu;g</div>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
+                <div class="text-[10px] text-slate-400 font-semibold uppercase">ORBITAL G-LEVEL</div>
+                <div class="text-lg font-bold font-display text-teal-600 mt-0.5">&lt; 0.08 &mu;g</div>
               </div>
             </div>
 
             <!-- Tags -->
-            <div class="pt-4 border-t border-slate-800/80">
-              <div class="text-xs font-mono uppercase tracking-widest text-slate-400 mb-3">Keywords & Taxonomy</div>
+            <div class="pt-4 border-t border-slate-100">
+              <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-3">Keywords & Taxonomy</div>
               <div class="flex flex-wrap gap-1.5">
                 ${tagsHtml}
               </div>
             </div>
 
             <!-- Related Articles -->
-            <div class="pt-4 border-t border-slate-800/80">
-              <div class="text-xs font-mono uppercase tracking-widest text-slate-400 mb-3">Related Research</div>
+            <div class="pt-4 border-t border-slate-100">
+              <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-3">Related Research</div>
               <div class="space-y-3">
                 ${relatedHtml}
               </div>
@@ -643,70 +632,73 @@ ${JSON.stringify(schema, null, 2)}
   </main>
 
   <!-- Global Footer -->
-  <footer class="mt-auto border-t border-slate-800/80 bg-slate-950/80 backdrop-blur-md py-12">
+  <footer class="mt-auto border-t border-slate-200/80 bg-white py-12 text-xs">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 text-xs font-mono">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 text-slate-600">
         <div>
-          <div class="font-display font-bold text-base text-white mb-3">BioGravity Hub</div>
-          <p class="text-slate-400 leading-relaxed">
-            Quantum Biotechnology & Orbital Life Sciences Hub publishing peer-reviewed research dispatches, laboratory infrastructure guides, and bioinformatics tools.
+          <div class="font-display font-bold text-base text-slate-900 mb-3">BioGravity</div>
+          <p class="text-slate-500 leading-relaxed">
+            Quantum Biotechnology & Orbital Life Sciences platform publishing peer-reviewed research dispatches, laboratory infrastructure guides, and bioinformatics tools.
           </p>
         </div>
         <div>
-          <div class="text-white uppercase tracking-wider mb-3">Navigation</div>
-          <ul class="space-y-2 text-slate-400">
-            <li><a href="/" class="hover:text-cyan-400">Home</a></li>
-            <li><a href="/research" class="hover:text-cyan-400">Research Feed</a></li>
-            <li><a href="/world-space-week-2026" class="hover:text-cyan-400">Space Week 2026</a></li>
-            <li><a href="/molecular-biology-research" class="hover:text-cyan-400">Molecular Biology Guide</a></li>
-            <li><a href="/about" class="hover:text-cyan-400">About & Lab Notes</a></li>
+          <div class="font-semibold text-slate-900 uppercase tracking-wider mb-3">Navigation</div>
+          <ul class="space-y-2">
+            <li><a href="/" class="hover:text-slate-900 transition">Home</a></li>
+            <li><a href="/research" class="hover:text-slate-900 transition">Research Feed</a></li>
+            <li><a href="/tools" class="hover:text-slate-900 transition">Interactive Tools</a></li>
+            <li><a href="/world-space-week-2026" class="hover:text-slate-900 transition">Space Week 2026</a></li>
+            <li><a href="/molecular-biology-research" class="hover:text-slate-900 transition">Molecular Biology Guide</a></li>
+            <li><a href="/about" class="hover:text-slate-900 transition">About BioGravity</a></li>
           </ul>
         </div>
         <div>
-          <div class="text-white uppercase tracking-wider mb-3">AdSense Compliance</div>
-          <ul class="space-y-2 text-slate-400">
-            <li><a href="/privacy-policy" class="hover:text-cyan-400">Privacy Policy (DART & Cookies)</a></li>
-            <li><a href="/terms" class="hover:text-cyan-400">Terms of Service</a></li>
-            <li><a href="/about" class="hover:text-cyan-400">Editorial & E-E-A-T Standards</a></li>
-            <li><a href="/contact" class="hover:text-cyan-400">Contact & Support</a></li>
-            <li><a href="/disclaimer" class="hover:text-cyan-400">Research & YMYL Disclaimer</a></li>
-            <li><a href="/sitemap" class="hover:text-cyan-400">HTML Sitemap</a></li>
-            <li><a href="/sitemap.xml" class="hover:text-cyan-400">XML Sitemap</a></li>
+          <div class="font-semibold text-slate-900 uppercase tracking-wider mb-3">Compliance &amp; Policy</div>
+          <ul class="space-y-2">
+            <li><a href="/privacy-policy" class="hover:text-slate-900 transition">Privacy Policy</a></li>
+            <li><a href="/terms" class="hover:text-slate-900 transition">Terms of Service</a></li>
+            <li><a href="/disclaimer" class="hover:text-slate-900 transition">Editorial Disclaimer</a></li>
+            <li><a href="/contact" class="hover:text-slate-900 transition">Contact &amp; Inquiries</a></li>
+            <li><a href="/sitemap" class="hover:text-slate-900 transition">HTML Sitemap</a></li>
+            <li><a href="/sitemap.xml" class="hover:text-slate-900 transition font-mono">XML Sitemap</a></li>
           </ul>
         </div>
         <div>
-          <div class="text-white uppercase tracking-wider mb-3">Direct Connect</div>
-          <ul class="space-y-2 text-slate-400">
+          <div class="font-semibold text-slate-900 uppercase tracking-wider mb-3">Direct Connect</div>
+          <ul class="space-y-2.5 text-slate-700">
             <li class="flex items-center gap-2">
-              <span class="text-cyan-400">📧</span>
-              <a href="mailto:biogravity.space@gmail.com" class="text-cyan-400 hover:underline">biogravity.space@gmail.com</a>
+              <span>📧</span>
+              <div>
+                <div class="text-[10px] text-slate-400 uppercase">Official Gmail</div>
+                <a href="mailto:biogravity.space@gmail.com" class="text-slate-900 hover:underline font-mono">biogravity.space@gmail.com</a>
+              </div>
             </li>
             <li class="flex items-center gap-2">
-              <span class="text-cyan-400 font-bold">𝕏</span>
-              <a href="https://x.com/Biogravityspace" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400">@Biogravityspace</a>
-            </li>
-            <li class="text-[11px] text-emerald-400 flex items-center gap-1.5 pt-1">
-              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Direct Communications Active
+              <span class="font-bold">𝕏</span>
+              <div>
+                <div class="text-[10px] text-slate-400 uppercase">Official X (Twitter)</div>
+                <a href="https://x.com/Biogravityspace" target="_blank" rel="noopener noreferrer" class="text-slate-900 hover:text-teal-600 font-mono">@Biogravityspace</a>
+              </div>
             </li>
           </ul>
         </div>
       </div>
-      <div class="pt-6 border-t border-slate-800 text-[11px] font-mono text-slate-500 flex flex-col sm:flex-row justify-between items-center gap-4">
-        <div>&copy; 2026 BioGravity Institute. All rights reserved.</div>
+      <div class="pt-6 border-t border-slate-200/80 text-[11px] text-slate-400 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div>&copy; 2026 BioGravity Institute for Quantum Biotechnology. All rights reserved.</div>
         <div class="flex flex-wrap gap-4">
-          <a href="mailto:biogravity.space@gmail.com" class="hover:text-cyan-400">Email</a>
+          <a href="mailto:biogravity.space@gmail.com" class="hover:text-slate-700 transition">Email</a>
           <span>•</span>
-          <a href="https://x.com/Biogravityspace" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400">X: @Biogravityspace</a>
+          <a href="https://x.com/Biogravityspace" target="_blank" rel="noopener noreferrer" class="hover:text-slate-700 transition">X: @Biogravityspace</a>
           <span>•</span>
-          <a href="/contact" class="hover:text-cyan-400">Contact</a>
+          <a href="/contact" class="hover:text-slate-700 transition">Contact</a>
           <span>•</span>
-          <a href="/privacy-policy" class="hover:text-cyan-400">Privacy Policy</a>
+          <a href="/privacy-policy" class="hover:text-slate-700 transition">Privacy Policy</a>
           <span>•</span>
-          <a href="/terms" class="hover:text-cyan-400">Terms</a>
+          <a href="/terms" class="hover:text-slate-700 transition">Terms</a>
           <span>•</span>
-          <a href="/disclaimer" class="hover:text-cyan-400">Disclaimer</a>
+          <a href="/disclaimer" class="hover:text-slate-700 transition">Disclaimer</a>
           <span>•</span>
-          <a href="/sitemap" class="hover:text-cyan-400">Sitemap</a>
+          <a href="/sitemap" class="hover:text-slate-700 transition">Sitemap</a>
         </div>
       </div>
     </div>
@@ -714,17 +706,11 @@ ${JSON.stringify(schema, null, 2)}
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      // Mobile Drawer Toggle
-      const mobileBtn = document.getElementById('mobile-menu-btn');
-      const closeDrawerBtn = document.getElementById('close-drawer-btn');
-      const drawer = document.getElementById('mobile-drawer');
-
-      if (mobileBtn && drawer) {
-        mobileBtn.addEventListener('click', () => drawer.classList.remove('hidden'));
-      }
-      if (closeDrawerBtn && drawer) {
-        closeDrawerBtn.addEventListener('click', () => drawer.classList.add('hidden'));
-      }
+      // Live date in header
+      const d = new Date();
+      const options = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' };
+      const el = document.getElementById('header-date');
+      if (el) el.textContent = d.toLocaleDateString('en-US', options);
 
       // Copy Cite
       const btnCopyCite = document.getElementById('btn-copy-cite');
@@ -752,23 +738,14 @@ ${JSON.stringify(schema, null, 2)}
         btnSm.addEventListener('click', () => {
           bodyEl.classList.remove('text-base', 'text-lg');
           bodyEl.classList.add('text-sm');
-          btnSm.classList.add('text-cyan-400', 'font-bold');
-          btnBase.classList.remove('text-cyan-400', 'font-bold');
-          btnLg.classList.remove('text-cyan-400', 'font-bold');
         });
         btnBase.addEventListener('click', () => {
           bodyEl.classList.remove('text-sm', 'text-lg');
           bodyEl.classList.add('text-base');
-          btnBase.classList.add('text-cyan-400', 'font-bold');
-          btnSm.classList.remove('text-cyan-400', 'font-bold');
-          btnLg.classList.remove('text-cyan-400', 'font-bold');
         });
         btnLg.addEventListener('click', () => {
           bodyEl.classList.remove('text-sm', 'text-base');
           bodyEl.classList.add('text-lg');
-          btnLg.classList.add('text-cyan-400', 'font-bold');
-          btnSm.classList.remove('text-cyan-400', 'font-bold');
-          btnBase.classList.remove('text-cyan-400', 'font-bold');
         });
       }
     });
@@ -914,6 +891,7 @@ if (fs.existsSync(researchPath)) {
 const corePages = [
   { name: 'about', file: 'about.html', canonical: `${SITE_URL}/about` },
   { name: 'contact', file: 'contact.html', canonical: `${SITE_URL}/contact` },
+  { name: 'tools', file: 'tools.html', canonical: `${SITE_URL}/tools` },
   { name: 'disclaimer', file: 'disclaimer.html', canonical: `${SITE_URL}/disclaimer` },
   { name: 'sitemap', file: 'sitemap.html', canonical: `${SITE_URL}/sitemap` },
   { name: 'world-space-week-2026', file: 'world-space-week-2026.html', canonical: `${SITE_URL}/world-space-week-2026` },
@@ -997,40 +975,40 @@ if (fs.existsSync(indexPath)) {
 
   // Inject / update Complete Orbital Research Archive into index.html for 100% Googlebot Crawl Coverage
   const allArticlesArchiveHtml = `
-        <!-- Complete Orbital Research Archive (100% Crawl Coverage for Googlebot) -->
-        <div id="complete-orbital-archive" class="mt-16 p-6 sm:p-8 rounded-2xl glass-panel border border-slate-800 bg-slate-900/60">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-4 border-b border-slate-800">
+        <!-- Complete Open Access Catalog (100% Crawl Coverage) -->
+        <div id="complete-orbital-archive" class="mt-14 p-6 sm:p-8 rounded-2xl bg-[#fafbfc] border border-slate-200/80">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-4 border-b border-slate-200">
             <div>
-              <div class="text-xs font-mono uppercase tracking-widest text-cyan-400 mb-1">
-                Open Access Orbital Archive
+              <div class="text-xs font-semibold uppercase tracking-wider text-teal-600 mb-1">
+                Open Access Catalog
               </div>
-              <h3 class="text-xl sm:text-2xl font-display font-bold text-white">
+              <h3 class="text-xl sm:text-2xl font-display font-bold text-slate-900">
                 All ${articles.length} Published Research Dispatches
               </h3>
             </div>
-            <a href="/research" class="px-4 py-2 rounded-xl text-xs font-mono bg-cyan-500/20 text-cyan-300 border border-cyan-400 hover:bg-cyan-500/30 transition flex items-center gap-1.5 self-start sm:self-auto">
+            <a href="/research" class="px-4 py-2 rounded-full text-xs font-medium bg-slate-100 text-slate-800 border border-slate-200 hover:bg-slate-200 transition flex items-center gap-1.5 self-start sm:self-auto">
               <span>View Full Research Feed →</span>
             </a>
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 ` + articles.map(a => `
-            <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800 hover:border-cyan-500/40 transition group flex flex-col justify-between">
+            <div class="p-4 rounded-xl bg-white border border-slate-200 hover:border-slate-300 transition group flex flex-col justify-between shadow-sm">
               <div>
-                <div class="flex items-center justify-between text-[10px] font-mono mb-1.5">
-                  <span class="text-cyan-400">${escapeHtml(a.category)}</span>
+                <div class="flex items-center justify-between text-[11px] mb-1.5 font-medium">
+                  <span class="text-teal-600">${escapeHtml(a.category)}</span>
                   <span class="text-slate-400">${escapeHtml(a.readtime || '10 min')}</span>
                 </div>
-                <h4 class="font-display font-bold text-sm text-white group-hover:text-cyan-300 transition line-clamp-2 mb-2">
+                <h4 class="font-display font-bold text-sm text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mb-2">
                   <a href="/articles/${encodeURIComponent(a.id)}">${escapeHtml(a.title)}</a>
                 </h4>
-                <p class="text-[11px] text-slate-400 line-clamp-2 leading-relaxed mb-3">
+                <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-3">
                   ${escapeHtml(a.summary)}
                 </p>
               </div>
-              <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs font-mono">
-                <span class="text-slate-400 text-[10px]">${escapeHtml(a.author)}</span>
-                <a href="/articles/${encodeURIComponent(a.id)}" class="text-cyan-400 hover:text-cyan-300 font-semibold">
+              <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                <span class="text-slate-400 font-medium">${escapeHtml(a.author)}</span>
+                <a href="/articles/${encodeURIComponent(a.id)}" class="text-slate-900 hover:text-teal-600 font-semibold">
                   Read &rarr;
                 </a>
               </div>
@@ -1244,25 +1222,25 @@ const notFoundHtml = `<!DOCTYPE html>
     })();
   </script>
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col justify-between selection:bg-cyan-500/30 font-sans">
-  <div class="max-w-4xl mx-auto px-4 py-20 text-center">
-    <div class="text-7xl mb-6">🛰️</div>
-    <div class="badge-quantum text-xs mb-3 inline-block">Orbital Telemetry Notice</div>
-    <h1 class="text-4xl font-extrabold font-display text-white mb-4">404: Scientific Coordinate Desynchronized</h1>
-    <p class="text-slate-400 text-sm max-w-lg mx-auto mb-8 leading-relaxed">
-      The research dispatch or coordinate you requested does not exist at this orbital vector. It may have been relocated to a clean canonical address.
+<body class="bg-[#fafbfc] text-slate-800 min-h-screen flex flex-col justify-between font-sans antialiased selection:bg-slate-900 selection:text-white">
+  <div class="max-w-xl mx-auto px-4 py-24 text-center">
+    <div class="text-5xl mb-4">🪐</div>
+    <span class="inline-block px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-medium mb-3">Page Not Found</span>
+    <h1 class="text-3xl sm:text-4xl font-extrabold font-display text-slate-900 mb-3 tracking-tight">404: Coordinate Not Found</h1>
+    <p class="text-slate-600 text-sm max-w-md mx-auto mb-8 leading-relaxed">
+      The research dispatch or page you requested could not be located. It may have been updated to a clean canonical address.
     </p>
-    <div class="flex flex-wrap items-center justify-center gap-4">
-      <a href="/" class="px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-emerald-500 text-slate-950 font-bold text-xs font-mono shadow-[0_0_20px_rgba(6,182,212,0.4)] hover:brightness-110 transition">
-        Return to Orbital Command (Home) →
+    <div class="flex flex-wrap items-center justify-center gap-3">
+      <a href="/" class="px-5 py-2.5 rounded-full bg-slate-900 text-white font-medium text-xs hover:bg-slate-800 transition shadow-sm">
+        Return to Home Hub →
       </a>
-      <a href="/research" class="px-6 py-3 rounded-xl bg-slate-900 border border-slate-700 text-slate-200 text-xs font-mono hover:text-white hover:border-cyan-400 transition">
-        Explore 11 Live Research Dispatches
+      <a href="/research" class="px-5 py-2.5 rounded-full bg-white border border-slate-200 text-slate-700 text-xs font-medium hover:bg-slate-50 transition">
+        Explore Research Archive
       </a>
     </div>
   </div>
-  <footer class="border-t border-slate-800 text-center py-6 text-xs text-slate-500 font-mono">
-    BioGravity Quantum Biotechnology Collective • <a href="/sitemap.xml" class="text-cyan-400 hover:underline">Sitemap</a>
+  <footer class="border-t border-slate-200/80 bg-white text-center py-6 text-xs text-slate-500">
+    BioGravity Open Science Publication • <a href="mailto:biogravity.space@gmail.com" class="text-teal-600 hover:underline">biogravity.space@gmail.com</a> • <a href="/sitemap.xml" class="text-teal-600 hover:underline">Sitemap</a>
   </footer>
 </body>
 </html>`;

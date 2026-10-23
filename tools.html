@@ -15,92 +15,102 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scientific Simulators &amp; Research Tools | BioGravity</title>
-  <meta name="description" content="Explore interactive scientific simulators: Quantum Yield &amp; Coherence Predictor, Matter.js Microgravity Physics Sandbox, and Orbital Telemetry Terminal.">
+  <title>Interactive Scientific Simulators &amp; Tools | BioGravity</title>
+  <meta name="description" content="Explore interactive scientific calculators, quantum spin yield predictors, and zero-gravity hydrodynamic particle simulations.">
   <link rel="canonical" href="https://biogravity.space/tools">
   <meta name="robots" content="index, follow">
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            slate: { 950: '#020617', 900: '#0f172a', 800: '#1e293b' },
-            cyan: { 400: '#22d3ee', 500: '#06b6d4', glow: '#38bdf8' },
-            emerald: { 400: '#34d399', 500: '#10b981', glow: '#059669' }
-          }
-        }
-      }
-    }
-  </script>
+  <!-- Security & CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; img-src 'self' https: data:; font-src 'self' https: data:;">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
 
-  <!-- KaTeX for Quantum Equations -->
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- KaTeX for Scientific Math -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
 
   <!-- Matter.js Physics Engine -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
 
-  <!-- Custom Styles & Scripts -->
+  <!-- Favicon & Styles -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="stylesheet" href="/css/styles.css">
   <script defer src="/js/cookie-consent.js"></script>
   <script defer src="/js/sidebar-menu.js"></script>
-
-  <!-- Schema.org WebPage -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "BioGravity Scientific Tools & Simulators",
-    "description": "Interactive calculators and orbital physics simulators for microgravity research.",
-    "url": "https://biogravity.space/tools"
-  }
+  <script>
+    if (window.location.pathname.endsWith('.html')) {
+      var clean = window.location.pathname.replace(/\.html$/, '');
+      window.history.replaceState(null, '', clean + window.location.search + window.location.hash);
+    }
   </script>
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col selection:bg-cyan-500/30 selection:text-cyan-300">
+<body class="bg-[#fafbfc] text-slate-800 min-h-screen flex flex-col font-sans antialiased selection:bg-slate-900 selection:text-white">
 
-  <!-- Minimal Legit Header -->
-  <header class="sticky top-0 z-40 w-full backdrop-blur-md bg-slate-950/90 border-b border-slate-800">
+  <!-- ========================================================================= -->
+  <!-- 1. CLEAN, LEGIT & MINIMAL TOP BAR (DATE • LOGO • SEARCH • NAV • 3-DOT MENU) -->
+  <!-- ========================================================================= -->
+  <header class="sticky top-0 z-40 w-full bg-white/90 backdrop-blur-md border-b border-slate-200/80 transition">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
       
-      <!-- Logo & Date -->
-      <div class="flex items-center gap-6">
+      <!-- Left: Logo, Name & Current Date -->
+      <div class="flex items-center gap-5">
         <a href="/" class="flex items-center gap-2.5 group">
-          <span class="text-xl">⚛️</span>
+          <div class="w-8 h-8 rounded-lg bg-slate-900 flex items-center justify-center text-white text-sm shadow-sm group-hover:bg-slate-800 transition">
+            ⚛️
+          </div>
           <div>
-            <span class="font-display font-bold text-lg text-white group-hover:text-cyan-300 transition">BioGravity<span class="text-cyan-400">.</span></span>
-            <span class="hidden sm:block text-[9px] font-mono tracking-wider text-slate-400 uppercase -mt-1">Microgravity Science</span>
+            <span class="font-display font-bold text-lg text-slate-900 tracking-tight group-hover:text-teal-600 transition">
+              BioGravity<span class="text-teal-600">.</span>
+            </span>
+            <span class="hidden sm:block text-[10px] text-slate-500 font-medium tracking-wide uppercase -mt-1">
+              Open Science Publication
+            </span>
           </div>
         </a>
-        <div class="hidden lg:block h-4 w-px bg-slate-800"></div>
-        <div class="hidden lg:block text-xs font-mono text-slate-400" id="header-date">October 2026</div>
+
+        <div class="hidden lg:block h-4 w-px bg-slate-200"></div>
+        <div class="hidden lg:block text-xs text-slate-500 font-medium header-date">
+          Friday, Oct 23, 2026
+        </div>
       </div>
 
-      <!-- Search -->
+      <!-- Center: Clean Search Bar -->
       <form action="/research" method="GET" role="search" class="hidden md:flex items-center relative flex-1 max-w-sm">
-        <input type="search" name="q" placeholder="Search research dispatches..." class="w-full py-1.5 pl-3 pr-8 text-xs font-mono rounded-lg bg-slate-900 border border-slate-800 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-cyan-400">
-        <button type="submit" class="absolute right-2 text-slate-400 hover:text-cyan-400 text-xs" aria-label="Search">🔍</button>
+        <input 
+          type="search" 
+          name="q" 
+          placeholder="Search research papers, topics, DOIs..." 
+          class="w-full py-2 pl-4 pr-9 text-xs rounded-full bg-slate-100 hover:bg-slate-100/80 border border-slate-200/80 text-slate-800 placeholder-slate-400 focus:bg-white focus:outline-none focus:border-slate-400 transition"
+        >
+        <button type="submit" class="absolute right-3 text-slate-400 hover:text-slate-700 text-xs" aria-label="Search">🔍</button>
       </form>
 
-      <!-- Nav Links & 3-Lined Menu Button -->
-      <div class="flex items-center gap-4">
-        <nav class="hidden md:flex items-center gap-5 text-xs font-mono text-slate-300">
-          <a href="/" class="hover:text-cyan-400 transition">Home</a>
-          <a href="/research" class="hover:text-cyan-400 transition">Research</a>
-          <a href="/tools" class="text-cyan-400 font-semibold transition">Tools</a>
-          <a href="/about" class="hover:text-cyan-400 transition">About</a>
-          <a href="/contact" class="hover:text-cyan-400 transition">Contact</a>
+      <!-- Right: Clean Navigation Links + Bespoke 3-Dot Menu Button -->
+      <div class="flex items-center gap-3">
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
+          <a href="/" class="hover:text-slate-900 transition">Home</a>
+          <a href="/research" class="hover:text-slate-900 transition">Research</a>
+          <a href="/tools" class="text-slate-900 font-semibold">Tools</a>
+          <a href="/about" class="hover:text-slate-900 transition">About</a>
+          <a href="/contact" class="hover:text-slate-900 transition">Contact</a>
         </nav>
 
-        <button id="nav-sidebar-toggle" class="flex items-center gap-2 p-1.5 px-3 rounded-lg bg-slate-900 border border-slate-800 text-slate-200 hover:text-cyan-400 hover:border-cyan-400/50 transition cursor-pointer text-xs font-mono" aria-label="Open Navigation Menu">
-          <svg class="w-4 h-4 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-          <span>Menu</span>
+        <!-- Bespoke 3-Dot Navigation Menu Button -->
+        <button 
+          id="nav-sidebar-toggle" 
+          class="flex items-center gap-2 py-2 px-3.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-200/80 transition cursor-pointer text-xs font-medium shadow-sm group" 
+          aria-label="Open Navigation Menu"
+        >
+          <span class="flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-slate-700 group-hover:bg-slate-900 transition"></span>
+            <span class="w-1.5 h-1.5 rounded-full bg-slate-700 group-hover:bg-slate-900 transition"></span>
+            <span class="w-1.5 h-1.5 rounded-full bg-slate-700 group-hover:bg-slate-900 transition"></span>
+          </span>
+          <span class="font-medium ml-0.5">Menu</span>
         </button>
       </div>
 
@@ -108,86 +118,86 @@
   </header>
 
   <!-- Page Main Header -->
-  <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
+  <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
     
-    <div class="mb-10 text-center max-w-3xl mx-auto">
-      <span class="text-xs font-mono px-3 py-1 rounded-full bg-cyan-950/80 border border-cyan-500/30 text-cyan-300 uppercase tracking-widest inline-block mb-3">
+    <div class="mb-12 text-center max-w-3xl mx-auto">
+      <span class="inline-block px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-medium mb-3">
         Dedicated Interactive Lab Suite
       </span>
-      <h1 class="text-3xl sm:text-4xl font-display font-extrabold text-white mb-3 tracking-tight">
+      <h1 class="text-3xl sm:text-4xl font-display font-extrabold text-slate-900 mb-3 tracking-tight">
         Scientific Calculators &amp; Orbital Simulators
       </h1>
-      <p class="text-slate-400 text-sm leading-relaxed">
+      <p class="text-slate-600 text-sm leading-relaxed">
         Test theoretical models, adjust microgravity parameters, and explore molecular physics dynamics with our suite of open-access scientific tools.
       </p>
     </div>
 
     <!-- Tool 1: Quantum Yield & Coherence Predictor -->
-    <section class="mb-14 rounded-2xl p-6 sm:p-8 bg-slate-900/60 border border-slate-800">
+    <section class="mb-14 rounded-2xl p-6 sm:p-8 bg-white border border-slate-200/80 shadow-sm">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         
         <div class="lg:col-span-5 space-y-4">
-          <div class="text-xs font-mono text-cyan-400 uppercase tracking-widest">Tool 01 // Biophysical Model</div>
-          <h2 class="font-display font-bold text-2xl text-white">
+          <div class="text-xs font-semibold text-teal-600 uppercase tracking-wider">Tool 01 // Biophysical Model</div>
+          <h2 class="font-display font-bold text-2xl text-slate-900">
             Quantum Yield &amp; Spin Coherence Predictor
           </h2>
-          <p class="text-slate-400 text-xs leading-relaxed">
+          <p class="text-slate-600 text-xs leading-relaxed">
             Adjust orbital microgravity attenuation, laser cooling stages, and transverse magnetic shielding to predict macromolecular crystal lattice perfection and enzymatic tunneling efficiency.
           </p>
 
-          <div class="p-3.5 rounded-xl bg-slate-950/80 border border-slate-800/80 space-y-1.5 text-xs font-mono">
-            <div class="text-slate-400 text-[10px] uppercase tracking-wider font-semibold">Governing Equation:</div>
-            <div class="text-cyan-300 text-xs overflow-x-auto py-1">\(\Gamma_{\text{coherence}} \propto \exp\left( - \frac{\delta g \cdot m}{\hbar \cdot \tau_{\text{thermal}}} \right)\)</div>
-            <div class="text-slate-500 text-[10px]">As gravitational perturbation \(\delta g \to 0\), thermal decoherence times approach the fundamental quantum limit.</div>
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-2 text-xs">
+            <div class="text-slate-500 text-[10px] uppercase tracking-wider font-semibold">Governing Equation:</div>
+            <div class="text-slate-900 text-xs overflow-x-auto py-1 font-mono">\(\Gamma_{\text{coherence}} \propto \exp\left( - \frac{\delta g \cdot m}{\hbar \cdot \tau_{\text{thermal}}} \right)\)</div>
+            <div class="text-slate-500 text-[11px]">As gravitational perturbation \(\delta g \to 0\), thermal decoherence times approach the fundamental quantum limit.</div>
           </div>
         </div>
 
-        <div class="lg:col-span-7 rounded-xl p-5 bg-slate-950 border border-slate-800 space-y-5">
+        <div class="lg:col-span-7 rounded-xl p-6 bg-slate-50 border border-slate-200/80 space-y-5">
           <!-- Slider 1 -->
           <div>
-            <div class="flex justify-between items-center text-xs font-mono mb-1.5">
-              <span class="text-slate-300">GRAVITATIONAL ACCELERATION (&mu;g)</span>
-              <span id="slider-val-g" class="text-cyan-400 font-bold">0.05 &mu;g</span>
+            <div class="flex justify-between items-center text-xs font-medium mb-1.5">
+              <span class="text-slate-700">GRAVITATIONAL ACCELERATION (&mu;g)</span>
+              <span id="slider-val-g" class="text-teal-600 font-bold font-mono">0.05 &mu;g</span>
             </div>
-            <input type="range" id="sim-g" min="0.01" max="10" step="0.01" value="0.05" class="w-full">
+            <input type="range" id="sim-g" min="0.01" max="10" step="0.01" value="0.05" class="w-full accent-teal-600 cursor-pointer">
           </div>
 
           <!-- Slider 2 -->
           <div>
-            <div class="flex justify-between items-center text-xs font-mono mb-1.5">
-              <span class="text-slate-300">CRYO TEMPERATURE (Kelvin)</span>
-              <span id="slider-val-temp" class="text-emerald-400 font-bold">4.2 K</span>
+            <div class="flex justify-between items-center text-xs font-medium mb-1.5">
+              <span class="text-slate-700">CRYO TEMPERATURE (Kelvin)</span>
+              <span id="slider-val-temp" class="text-teal-600 font-bold font-mono">4.2 K</span>
             </div>
-            <input type="range" id="sim-temp" min="1" max="300" step="1" value="4.2" class="w-full">
+            <input type="range" id="sim-temp" min="1" max="300" step="1" value="4.2" class="w-full accent-teal-600 cursor-pointer">
           </div>
 
           <!-- Slider 3 -->
           <div>
-            <div class="flex justify-between items-center text-xs font-mono mb-1.5">
-              <span class="text-slate-300">MAGNETIC NOISE CANCELLATION (%)</span>
-              <span id="slider-val-shield" class="text-cyan-400 font-bold">98 %</span>
+            <div class="flex justify-between items-center text-xs font-medium mb-1.5">
+              <span class="text-slate-700">MAGNETIC NOISE CANCELLATION (%)</span>
+              <span id="slider-val-shield" class="text-teal-600 font-bold font-mono">98 %</span>
             </div>
-            <input type="range" id="sim-shield" min="50" max="99.9" step="0.1" value="98" class="w-full">
+            <input type="range" id="sim-shield" min="50" max="99.9" step="0.1" value="98" class="w-full accent-teal-600 cursor-pointer">
           </div>
 
           <!-- Live Outputs -->
-          <div class="grid grid-cols-3 gap-3 pt-4 border-t border-slate-800/80">
-            <div class="p-3 rounded-lg bg-slate-900 border border-slate-800 text-center">
-              <div class="text-[9px] font-mono text-slate-400">CRYSTAL RESOLUTION</div>
-              <div id="sim-out-res" class="text-lg font-bold font-display text-cyan-300 mt-0.5">0.82 Å</div>
-              <div class="text-[9px] font-mono text-emerald-400">Sub-angstrom</div>
+          <div class="grid grid-cols-3 gap-3 pt-4 border-t border-slate-200">
+            <div class="p-3.5 rounded-xl bg-white border border-slate-200/80 text-center shadow-xs">
+              <div class="text-[10px] font-medium text-slate-500 uppercase tracking-wider">Crystal Resolution</div>
+              <div id="sim-out-res" class="text-lg font-bold font-display text-slate-900 mt-0.5">0.82 Å</div>
+              <div class="text-[10px] font-medium text-teal-600">Sub-angstrom</div>
             </div>
 
-            <div class="p-3 rounded-lg bg-slate-900 border border-slate-800 text-center">
-              <div class="text-[9px] font-mono text-slate-400">SPIN COHERENCE</div>
-              <div id="sim-out-coh" class="text-lg font-bold font-display text-emerald-300 mt-0.5">384 ps</div>
-              <div class="text-[9px] font-mono text-cyan-400">Stable State</div>
+            <div class="p-3.5 rounded-xl bg-white border border-slate-200/80 text-center shadow-xs">
+              <div class="text-[10px] font-medium text-slate-500 uppercase tracking-wider">Spin Coherence</div>
+              <div id="sim-out-coh" class="text-lg font-bold font-display text-slate-900 mt-0.5">384 ps</div>
+              <div class="text-[10px] font-medium text-teal-600">Stable State</div>
             </div>
 
-            <div class="p-3 rounded-lg bg-slate-900 border border-slate-800 text-center">
-              <div class="text-[9px] font-mono text-slate-400">CAS9 SPECIFICITY</div>
-              <div id="sim-out-spec" class="text-lg font-bold font-display text-emerald-300 mt-0.5">99.94%</div>
-              <div class="text-[9px] font-mono text-emerald-400">Zero Off-Target</div>
+            <div class="p-3.5 rounded-xl bg-white border border-slate-200/80 text-center shadow-xs">
+              <div class="text-[10px] font-medium text-slate-500 uppercase tracking-wider">Cas9 Specificity</div>
+              <div id="sim-out-spec" class="text-lg font-bold font-display text-slate-900 mt-0.5">99.94%</div>
+              <div class="text-[10px] font-medium text-teal-600">Zero Off-Target</div>
             </div>
           </div>
         </div>
@@ -196,233 +206,253 @@
     </section>
 
     <!-- Tool 2: Matter.js Zero-G Hydrodynamic Molecular Sandbox -->
-    <section class="mb-14 rounded-2xl p-6 sm:p-8 bg-slate-900/60 border border-slate-800">
+    <section class="mb-14 rounded-2xl p-6 sm:p-8 bg-white border border-slate-200/80 shadow-sm">
       <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-6 gap-3">
         <div>
-          <div class="text-xs font-mono text-emerald-400 uppercase tracking-widest">Tool 02 // Physics Simulation</div>
-          <h2 class="font-display font-bold text-2xl text-white">Zero-Gravity Particle &amp; Solute Sandbox</h2>
-          <p class="text-slate-400 text-xs mt-1">Simulate Brownian motion and zero-convection molecular diffusion without gravitational sedimentation.</p>
+          <div class="text-xs font-semibold text-teal-600 uppercase tracking-wider">Tool 02 // Physics Simulation</div>
+          <h2 class="font-display font-bold text-2xl text-slate-900">Zero-Gravity Particle &amp; Solute Sandbox</h2>
+          <p class="text-slate-600 text-xs mt-1">Simulate Brownian motion and zero-convection molecular diffusion without gravitational sedimentation.</p>
         </div>
-        <div class="flex items-center gap-2 text-xs font-mono">
-          <button id="btn-reset-physics" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 transition">Reset Particles</button>
-          <button id="btn-toggle-gravity" class="px-3 py-1.5 rounded-lg bg-cyan-950/80 border border-cyan-500/40 text-cyan-300 hover:bg-cyan-900 transition">Toggle Zero-G</button>
+        <div class="flex items-center gap-2 text-xs font-medium">
+          <button id="btn-reset-physics" class="px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 transition cursor-pointer">Reset Particles</button>
+          <button id="btn-toggle-gravity" class="px-3.5 py-2 rounded-xl bg-slate-900 text-white hover:bg-slate-800 transition cursor-pointer">Toggle Zero-G</button>
         </div>
       </div>
 
-      <div class="relative w-full h-80 rounded-xl bg-slate-950 border border-slate-800 overflow-hidden" id="matter-canvas-container">
+      <div class="relative w-full h-80 rounded-xl bg-slate-900 border border-slate-200 overflow-hidden" id="matter-canvas-container">
         <!-- Matter.js renders canvas here -->
       </div>
-      <div class="flex justify-between items-center text-[11px] font-mono text-slate-500 mt-2 px-1">
+      <div class="flex justify-between items-center text-[11px] text-slate-500 mt-3 px-1">
         <span>Click or drag inside the sandbox to inject microfluidic pressure waves</span>
-        <span class="text-emerald-400">Gravity: <strong id="gravity-status-label">0.00 g</strong></span>
+        <span class="text-teal-700 font-medium">Gravity: <strong id="gravity-status-label" class="font-mono">0.00 g</strong></span>
       </div>
     </section>
 
   </main>
 
-  <!-- Global Footer -->
-  <footer class="border-t border-slate-800 bg-slate-950 text-slate-400 text-xs py-12 mt-20">
+  <!-- ========================================================================= -->
+  <!-- CLEAN, STANDARDIZED GLOBAL FOOTER -->
+  <!-- ========================================================================= -->
+  <footer class="border-t border-slate-200/80 bg-white text-slate-600 text-xs py-12 mt-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        
         <div class="space-y-3">
           <div class="flex items-center gap-2">
             <span class="text-lg">⚛️</span>
-            <span class="font-display font-bold text-white text-base">BioGravity</span>
+            <span class="font-display font-bold text-slate-900 text-base">BioGravity</span>
           </div>
-          <p class="text-slate-400 leading-relaxed text-xs">
+          <p class="text-slate-500 leading-relaxed text-xs">
             Open-access scientific platform researching space biotechnology, microgravity therapeutics, and orbital biology.
           </p>
         </div>
+
         <div>
-          <div class="font-mono text-white text-xs uppercase tracking-wider mb-3">Site Architecture</div>
+          <div class="font-semibold text-slate-900 text-xs uppercase tracking-wider mb-3">Site Architecture</div>
           <ul class="space-y-2">
-            <li><a href="/" class="hover:text-cyan-400 transition">Home Hub</a></li>
-            <li><a href="/research" class="hover:text-cyan-400 transition">Research Feed &amp; Search</a></li>
-            <li><a href="/tools" class="text-cyan-400 font-semibold transition">Tools &amp; Simulators</a></li>
-            <li><a href="/about" class="hover:text-cyan-400 transition">About BioGravity</a></li>
-            <li><a href="/contact" class="hover:text-cyan-400 transition">Contact &amp; Inquiries</a></li>
+            <li><a href="/" class="hover:text-slate-900 transition">Home Hub</a></li>
+            <li><a href="/research" class="hover:text-slate-900 transition">Research Feed &amp; Search</a></li>
+            <li><a href="/tools" class="hover:text-slate-900 transition">Tools &amp; Simulators</a></li>
+            <li><a href="/world-space-week-2026" class="hover:text-slate-900 transition">Space Week 2026 Guide</a></li>
+            <li><a href="/molecular-biology-research" class="hover:text-slate-900 transition">Molecular Biology Guide</a></li>
+            <li><a href="/about" class="hover:text-slate-900 transition">About BioGravity</a></li>
+            <li><a href="/contact" class="hover:text-slate-900 transition text-teal-600 font-medium">Contact &amp; Inquiries</a></li>
           </ul>
         </div>
+
         <div>
-          <div class="font-mono text-white text-xs uppercase tracking-wider mb-3">Direct Connect</div>
-          <ul class="space-y-2.5 text-slate-300">
+          <div class="font-semibold text-slate-900 text-xs uppercase tracking-wider mb-3">Direct Connect</div>
+          <ul class="space-y-2.5 text-slate-700">
             <li class="flex items-center gap-2">
-              <span class="text-cyan-400">📧</span>
+              <span>📧</span>
               <div>
-                <div class="text-[10px] text-slate-500 uppercase">Official Gmail</div>
-                <a href="mailto:biogravity.space@gmail.com" class="text-cyan-400 hover:underline font-mono">biogravity.space@gmail.com</a>
+                <div class="text-[10px] text-slate-400 uppercase">Official Gmail</div>
+                <a href="mailto:biogravity.space@gmail.com" class="text-slate-900 hover:underline font-mono text-xs">biogravity.space@gmail.com</a>
               </div>
             </li>
             <li class="flex items-center gap-2">
-              <span class="text-cyan-400 font-bold text-sm">𝕏</span>
+              <span class="font-bold text-sm">𝕏</span>
               <div>
-                <div class="text-[10px] text-slate-500 uppercase">Official X (Twitter)</div>
-                <a href="https://x.com/Biogravityspace" target="_blank" rel="noopener noreferrer" class="text-white hover:text-cyan-300 font-mono">@Biogravityspace</a>
+                <div class="text-[10px] text-slate-400 uppercase">Official X (Twitter)</div>
+                <a href="https://x.com/Biogravityspace" target="_blank" rel="noopener noreferrer" class="text-slate-900 hover:text-teal-600 font-mono text-xs">@Biogravityspace</a>
               </div>
             </li>
           </ul>
         </div>
+
         <div>
-          <div class="font-mono text-white text-xs uppercase tracking-wider mb-3">Compliance &amp; Policy</div>
-          <ul class="space-y-2 text-slate-400">
-            <li><a href="/disclaimer" class="hover:text-cyan-400 transition">Editorial Disclaimer</a></li>
-            <li><a href="/sitemap" class="hover:text-cyan-400 transition">HTML Sitemap</a></li>
-            <li><a href="/privacy-policy" class="hover:text-cyan-400 transition">Privacy Policy</a></li>
-            <li><a href="/terms" class="hover:text-cyan-400 transition">Terms of Service</a></li>
+          <div class="font-semibold text-slate-900 text-xs uppercase tracking-wider mb-3">Compliance &amp; Policy</div>
+          <ul class="space-y-2 text-slate-500">
+            <li><a href="/disclaimer" class="hover:text-slate-900 transition">Editorial Disclaimer</a></li>
+            <li><a href="/sitemap" class="hover:text-slate-900 transition">HTML Sitemap</a></li>
+            <li><a href="/privacy-policy" class="hover:text-slate-900 transition">Privacy Policy</a></li>
+            <li><a href="/terms" class="hover:text-slate-900 transition">Terms of Service</a></li>
+            <li><a href="/sitemap.xml" class="hover:text-slate-900 transition font-mono">XML Sitemap</a></li>
           </ul>
         </div>
+
       </div>
-      <div class="pt-6 border-t border-slate-800/80 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] font-mono text-slate-500">
+
+      <div class="pt-6 border-t border-slate-200/80 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] text-slate-400">
         <div>&copy; 2026 BioGravity Institute for Quantum Biotechnology. All rights reserved.</div>
-        <div class="flex gap-4">
-          <a href="/contact" class="hover:text-cyan-400 transition">Contact</a>
+        <div class="flex flex-wrap gap-4">
+          <a href="mailto:biogravity.space@gmail.com" class="hover:text-slate-700 transition">Email Desk</a>
           <span>•</span>
-          <a href="/privacy-policy" class="hover:text-cyan-400 transition">Privacy Policy</a>
+          <a href="https://x.com/Biogravityspace" target="_blank" rel="noopener noreferrer" class="hover:text-slate-700 transition">X: @Biogravityspace</a>
           <span>•</span>
-          <a href="/terms" class="hover:text-cyan-400 transition">Terms</a>
+          <a href="/contact" class="hover:text-slate-700 transition">Contact</a>
           <span>•</span>
-          <a href="/disclaimer" class="hover:text-cyan-400 transition">Disclaimer</a>
+          <a href="/privacy-policy" class="hover:text-slate-700 transition">Privacy Policy</a>
           <span>•</span>
-          <a href="/sitemap" class="hover:text-cyan-400 transition">Sitemap</a>
+          <a href="/terms" class="hover:text-slate-700 transition">Terms</a>
+          <span>•</span>
+          <a href="/disclaimer" class="hover:text-slate-700 transition">Disclaimer</a>
+          <span>•</span>
+          <a href="/sitemap" class="hover:text-slate-700 transition">Sitemap</a>
         </div>
       </div>
     </div>
   </footer>
 
   <script>
-    // Live date in header
     document.addEventListener('DOMContentLoaded', () => {
       const d = new Date();
       const options = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' };
-      const el = document.getElementById('header-date');
-      if (el) el.textContent = d.toLocaleDateString('en-US', options);
-
-      // Render KaTeX equations if available
-      if (window.renderMathInElement) {
-        renderMathInElement(document.body, {
-          delimiters: [
-            {left: '$$', right: '$$', display: true},
-            {left: '\\[', right: '\\]', display: true},
-            {left: '\\(', right: '\\)', display: false}
-          ]
-        });
-      }
-
-      // Slider calculations
-      const gInput = document.getElementById('sim-g');
-      const tempInput = document.getElementById('sim-temp');
-      const shieldInput = document.getElementById('sim-shield');
-
-      function updateSim() {
-        const g = parseFloat(gInput ? gInput.value : 0.05);
-        const temp = parseFloat(tempInput ? tempInput.value : 4.2);
-        const shield = parseFloat(shieldInput ? shieldInput.value : 98);
-
-        if (document.getElementById('slider-val-g')) document.getElementById('slider-val-g').textContent = g.toFixed(2) + ' \u03BCg';
-        if (document.getElementById('slider-val-temp')) document.getElementById('slider-val-temp').textContent = temp.toFixed(1) + ' K';
-        if (document.getElementById('slider-val-shield')) document.getElementById('slider-val-shield').textContent = shield.toFixed(1) + ' %';
-
-        // Calculation models
-        const res = (0.75 + (g * 0.04) + (temp * 0.001)).toFixed(2);
-        const coh = Math.round(420 / (1 + (g * 0.2) + (temp * 0.05)));
-        const spec = Math.min(99.99, (99.5 + (shield * 0.004) - (g * 0.05))).toFixed(2);
-
-        if (document.getElementById('sim-out-res')) document.getElementById('sim-out-res').textContent = res + ' \u00C5';
-        if (document.getElementById('sim-out-coh')) document.getElementById('sim-out-coh').textContent = coh + ' ps';
-        if (document.getElementById('sim-out-spec')) document.getElementById('sim-out-spec').textContent = spec + '%';
-      }
-
-      [gInput, tempInput, shieldInput].forEach(inp => {
-        if (inp) inp.addEventListener('input', updateSim);
+      document.querySelectorAll('.header-date').forEach(el => {
+        el.textContent = d.toLocaleDateString('en-US', options);
       });
-      updateSim();
+    });
+  </script>
 
-      // Matter.js Zero-G Physics
-      if (window.Matter) {
-        const Engine = Matter.Engine,
-              Render = Matter.Render,
-              Runner = Matter.Runner,
-              Bodies = Matter.Bodies,
-              Composite = Matter.Composite,
-              Mouse = Matter.Mouse,
-              MouseConstraint = Matter.MouseConstraint;
+  <!-- Interactive Scripts -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Quantum Simulator Logic
+      const simG = document.getElementById('sim-g');
+      const simTemp = document.getElementById('sim-temp');
+      const simShield = document.getElementById('sim-shield');
+      
+      const valG = document.getElementById('slider-val-g');
+      const valTemp = document.getElementById('slider-val-temp');
+      const valShield = document.getElementById('slider-val-shield');
 
-        const container = document.getElementById('matter-canvas-container');
-        if (container) {
-          const engine = Engine.create({ gravity: { x: 0, y: 0 } });
-          const render = Render.create({
-            element: container,
-            engine: engine,
-            options: {
-              width: container.clientWidth || 800,
-              height: 320,
-              wireframes: false,
-              background: '#020617'
-            }
-          });
+      const outRes = document.getElementById('sim-out-res');
+      const outCoh = document.getElementById('sim-out-coh');
+      const outSpec = document.getElementById('sim-out-spec');
 
-          Render.run(render);
-          const runner = Runner.create();
-          Runner.run(runner, engine);
+      function updatePredictor() {
+        const g = parseFloat(simG.value);
+        const temp = parseFloat(simTemp.value);
+        const shield = parseFloat(simShield.value);
 
-          const w = container.clientWidth || 800;
-          const h = 320;
-          const walls = [
-            Bodies.rectangle(w / 2, -10, w, 20, { isStatic: true }),
-            Bodies.rectangle(w / 2, h + 10, w, 20, { isStatic: true }),
-            Bodies.rectangle(-10, h / 2, 20, h, { isStatic: true }),
-            Bodies.rectangle(w + 10, h / 2, 20, h, { isStatic: true })
-          ];
-          Composite.add(engine.world, walls);
+        valG.textContent = g.toFixed(2) + ' μg';
+        valTemp.textContent = temp.toFixed(1) + ' K';
+        valShield.textContent = shield.toFixed(1) + ' %';
 
-          function populateParticles() {
-            for (let i = 0; i < 35; i++) {
-              const radius = 6 + Math.random() * 10;
-              const x = 50 + Math.random() * (w - 100);
-              const y = 30 + Math.random() * (h - 60);
-              const colors = ['#22d3ee', '#34d399', '#38bdf8', '#a78bfa'];
-              const particle = Bodies.circle(x, y, radius, {
-                restitution: 0.95,
-                frictionAir: 0.005,
-                render: { fillStyle: colors[Math.floor(Math.random() * colors.length)] }
-              });
-              Matter.Body.setVelocity(particle, {
-                x: (Math.random() - 0.5) * 3,
-                y: (Math.random() - 0.5) * 3
-              });
-              Composite.add(engine.world, particle);
-            }
+        const resolution = (0.75 + (g * 0.15) + (temp * 0.003) - ((shield - 50) * 0.002)).toFixed(2);
+        const coherence = Math.max(10, Math.round(500 - (g * 40) - (temp * 1.1) + (shield * 1.5)));
+        const spec = Math.min(99.99, (98.5 + (shield * 0.012) - (g * 0.1) - (temp * 0.004))).toFixed(2);
+
+        outRes.textContent = resolution + ' Å';
+        outCoh.textContent = coherence + ' ps';
+        outSpec.textContent = spec + '%';
+      }
+
+      if (simG && simTemp && simShield) {
+        simG.addEventListener('input', updatePredictor);
+        simTemp.addEventListener('input', updatePredictor);
+        simShield.addEventListener('input', updatePredictor);
+        updatePredictor();
+      }
+
+      // 2. Matter.js Zero-G Physics Simulation
+      const container = document.getElementById('matter-canvas-container');
+      if (container && typeof Matter !== 'undefined') {
+        const { Engine, Render, Runner, Bodies, Composite, Mouse, MouseConstraint } = Matter;
+        const engine = Engine.create({ gravity: { x: 0, y: 0, scale: 0 } });
+        const world = engine.world;
+
+        const width = container.clientWidth || 800;
+        const height = container.clientHeight || 320;
+
+        const render = Render.create({
+          element: container,
+          engine: engine,
+          options: {
+            width: width,
+            height: height,
+            wireframes: false,
+            background: '#0f172a'
           }
-          populateParticles();
+        });
 
-          const mouse = Mouse.create(render.canvas);
-          const mouseConstraint = MouseConstraint.create(engine, {
-            mouse: mouse,
-            constraint: { stiffness: 0.2, render: { visible: false } }
-          });
-          Composite.add(engine.world, mouseConstraint);
-          render.mouse = mouse;
+        Render.run(render);
+        const runner = Runner.create();
+        Runner.run(runner, engine);
 
-          let zeroG = true;
-          const btnToggle = document.getElementById('btn-toggle-gravity');
-          const statusLabel = document.getElementById('gravity-status-label');
-          if (btnToggle) {
-            btnToggle.addEventListener('click', () => {
-              zeroG = !zeroG;
-              engine.gravity.y = zeroG ? 0 : 0.8;
-              if (statusLabel) statusLabel.textContent = zeroG ? '0.00 g' : '1.00 g (Earth)';
-              btnToggle.textContent = zeroG ? 'Simulate Earth 1G' : 'Simulate Microgravity 0G';
+        // Walls
+        const wallThickness = 50;
+        const wallOpts = { isStatic: true, render: { fillStyle: '#1e293b' } };
+        Composite.add(world, [
+          Bodies.rectangle(width / 2, -wallThickness / 2, width + 100, wallThickness, wallOpts),
+          Bodies.rectangle(width / 2, height + wallThickness / 2, width + 100, wallThickness, wallOpts),
+          Bodies.rectangle(-wallThickness / 2, height / 2, wallThickness, height + 100, wallOpts),
+          Bodies.rectangle(width + wallThickness / 2, height / 2, wallThickness, height + 100, wallOpts)
+        ]);
+
+        function spawnParticles() {
+          const particles = [];
+          const colors = ['#2dd4bf', '#38bdf8', '#818cf8', '#f43f5e', '#fbbf24'];
+          for (let i = 0; i < 40; i++) {
+            const radius = Math.random() * 8 + 6;
+            const x = Math.random() * (width - 100) + 50;
+            const y = Math.random() * (height - 100) + 50;
+            const color = colors[Math.floor(Math.random() * colors.length)];
+            const body = Bodies.circle(x, y, radius, {
+              restitution: 0.95,
+              frictionAir: 0.005,
+              render: { fillStyle: color }
             });
-          }
-
-          const btnReset = document.getElementById('btn-reset-physics');
-          if (btnReset) {
-            btnReset.addEventListener('click', () => {
-              const allBodies = Composite.allBodies(engine.world).filter(b => !b.isStatic);
-              allBodies.forEach(b => Composite.remove(engine.world, b));
-              populateParticles();
+            Matter.Body.setVelocity(body, {
+              x: (Math.random() - 0.5) * 3,
+              y: (Math.random() - 0.5) * 3
             });
+            particles.push(body);
           }
+          Composite.add(world, particles);
+        }
+
+        spawnParticles();
+
+        // Mouse interaction
+        const mouse = Mouse.create(render.canvas);
+        const mouseConstraint = MouseConstraint.create(engine, {
+          mouse: mouse,
+          constraint: { stiffness: 0.2, render: { visible: false } }
+        });
+        Composite.add(world, mouseConstraint);
+        render.mouse = mouse;
+
+        // Reset & Toggle Gravity
+        let isZeroG = true;
+        const btnToggleG = document.getElementById('btn-toggle-gravity');
+        const gravityLabel = document.getElementById('gravity-status-label');
+        if (btnToggleG) {
+          btnToggleG.addEventListener('click', () => {
+            isZeroG = !isZeroG;
+            engine.gravity.y = isZeroG ? 0 : 1;
+            btnToggleG.textContent = isZeroG ? 'Apply 1-G Earth' : 'Toggle Zero-G';
+            if (gravityLabel) gravityLabel.textContent = isZeroG ? '0.00 g' : '1.00 g (Earth)';
+          });
+        }
+
+        const btnReset = document.getElementById('btn-reset-physics');
+        if (btnReset) {
+          btnReset.addEventListener('click', () => {
+            const bodies = Composite.allBodies(world).filter(b => !b.isStatic);
+            bodies.forEach(b => Composite.remove(world, b));
+            spawnParticles();
+          });
         }
       }
     });
