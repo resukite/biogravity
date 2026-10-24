@@ -6,9 +6,9 @@ summary: "We examine the conditions under which quantum parameter estimation is 
 author: "Jacques L. Pienaar"
 authorRole: "Visiting Investigator, BioGravity Orbital Consortium"
 authorOrcid: "https://orcid.org/0000-0002-1825-0097"
-date: "October 23, 2026"
-publishedIso: "2026-10-23T21:05:57.191813+00:00"
-doi: "10.1038/s41586-2026-66631"
+date: "October 24, 2026"
+publishedIso: "2026-10-24T10:26:47.547979+00:00"
+doi: "10.1038/s41586-2026-68579"
 readtime: "12 min read"
 impact: 9.6
 primaryKeyword: "what does quantum parameter estimation estimate a no go result for tru microgravity space research"
@@ -25,7 +25,7 @@ tags:
 # What does quantum parameter estimation estimate? A no-go result for true quantity values
 
 **Author:** Jacques L. Pienaar | **Affiliation:** Visiting Investigator, BioGravity Orbital Consortium  
-**Date:** October 23, 2026 | **DOI:** [10.1038/s41586-2026-66631](https://doi.org/10.1038/s41586-2026-66631) | **Read Time:** 12 min read
+**Date:** October 24, 2026 | **DOI:** [10.1038/s41586-2026-68579](https://doi.org/10.1038/s41586-2026-68579) | **Read Time:** 12 min read
 
 ---
 
