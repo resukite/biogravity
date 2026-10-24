@@ -203,12 +203,12 @@ function transformContact() {
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8576621614388905" crossorigin="anonymous"></script>
   
   <!-- Google Analytics 4 (GA4) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D7XWPNNWRF"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BSRJK4DMH7"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-D7XWPNNWRF');
+    gtag('config', 'G-BSRJK4DMH7');
   </script>
 
   <meta charset="UTF-8">
@@ -388,12 +388,12 @@ function transformStandardPolicy(fileName, title, description, activeKey, bodyCo
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8576621614388905" crossorigin="anonymous"></script>
 
   <!-- Google Analytics 4 (GA4) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D7XWPNNWRF"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BSRJK4DMH7"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-D7XWPNNWRF');
+    gtag('config', 'G-BSRJK4DMH7');
   </script>
 
   <meta charset="UTF-8">
@@ -654,12 +654,12 @@ function transformAbout() {
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <script defer src="/js/cookie-consent.js"></script>
   <!-- Google Analytics 4 (GA4) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D7XWPNNWRF"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BSRJK4DMH7"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-D7XWPNNWRF');
+    gtag('config', 'G-BSRJK4DMH7');
   </script>
   <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8576621614388905" crossorigin="anonymous"></script>
@@ -795,12 +795,12 @@ function transformTools() {
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8576621614388905" crossorigin="anonymous"></script>
 
   <!-- Google Analytics 4 (GA4) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D7XWPNNWRF"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BSRJK4DMH7"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-D7XWPNNWRF');
+    gtag('config', 'G-BSRJK4DMH7');
   </script>
 
   <meta charset="UTF-8">
@@ -1111,12 +1111,12 @@ function transformResearch() {
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <script defer src="/js/cookie-consent.js"></script>
   <!-- Google Analytics 4 (GA4) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D7XWPNNWRF"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BSRJK4DMH7"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-D7XWPNNWRF');
+    gtag('config', 'G-BSRJK4DMH7');
   </script>
   <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8576621614388905" crossorigin="anonymous"></script>

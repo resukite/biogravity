@@ -3,8 +3,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const OLD_TAG = 'G-D7XWPNNWRF';
-const NEW_TAG = 'G-D7XWPNNWRF';
+const OLD_TAG = 'G-BSRJK4DMH7';
+const NEW_TAG = 'G-BSRJK4DMH7';
 
 console.log(`[GOOGLE-TAG] Replacing ${OLD_TAG} with official account tag ${NEW_TAG}...`);
 

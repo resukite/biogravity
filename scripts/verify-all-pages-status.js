@@ -44,7 +44,7 @@ urls.forEach(u => {
 
   if (fs.existsSync(filePath)) {
     const html = fs.readFileSync(filePath, 'utf8');
-    if (!html.includes('G-D7XWPNNWRF')) missingGA++;
+    if (!html.includes('G-BSRJK4DMH7')) missingGA++;
     if (!html.includes('cookie-consent.js')) missingCookie++;
     if (!html.includes('/contact')) missingContact++;
   } else {
@@ -52,7 +52,7 @@ urls.forEach(u => {
   }
 });
 
-console.log(`Google Tag (G-D7XWPNNWRF) Missing: ${missingGA}`);
+console.log(`Google Tag (G-BSRJK4DMH7) Missing: ${missingGA}`);
 console.log(`Cookie Consent Banner Missing:     ${missingCookie}`);
 console.log(`Contact Page Link Missing:         ${missingContact}`);
 console.log('====================================================');
