@@ -5,7 +5,7 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Oct 2026 20:04:58 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2026 20:29:27 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Alien Life at 14,000 Feet Below the Ocean: Deep-Sea Expedition Finds Unseen Ecosystem</title>
@@ -96,6 +96,15 @@
       <dc:creator>BioGravity Science Bureau</dc:creator>
       <description>Metal Rain and Vaporized Iron: Webb Telescope Reveals Extreme Weather on Giant Alien World: Spectroscopic observations by JWST confirm gaseous nickel, iron, and vanadium in the exoplanet upper atmosphere, proving vaporized metal weather systems. Published via NASA Space Science Dispatch.</description>
       <category>Space &amp; Astronomy</category>
+    </item>
+    <item>
+      <title>CRISPR in Zero Gravity: Does Quantum Tunneling Accelerate Gene Editing?</title>
+      <link>https://biogravity.space/articles/size-independent-logarithmic-sobolev-inequalities-for-quantum</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/size-independent-logarithmic-sobolev-inequalities-for-quantum</guid>
+      <pubDate>Sun, 25 Oct 2026 20:29:27 GMT</pubDate>
+      <dc:creator>Hongrui Chen</dc:creator>
+      <description>We propose a new method for proving $L^2$ and modified logarithmic Sobolev inequalities with constants independent of system size for quantum Gibbs samplers whose Lindblad generators satisfy Kubo-Martin-Schwinger (KMS) detailed balance. We first establish the $L^2$ logarithmic So...</description>
+      <category>Quantum Enzymology</category>
     </item>
     <item>
       <title>CRISPR in Zero Gravity: Does Quantum Tunneling Accelerate Gene Editing?</title>
