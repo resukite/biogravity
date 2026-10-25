@@ -198,6 +198,12 @@ class VisualsManager {
         alt: "Glacial ice sheet core sampling and polar climate research expedition"
       };
     }
+    if (t.includes('chloroplast') || t.includes('photosynthetic') || t.includes('living solar') || t.includes('thylakoid')) {
+      return {
+        url: "https://biogravity.space/assets/living-solar-panels-chloroplasts.jpg",
+        alt: "Living solar panels: plant chloroplasts and thylakoid membranes integrated with conductive nanoscale bio-circuits to generate renewable electricity"
+      };
+    }
     if (t.includes('solar') || t.includes('energy') || t.includes('photosynthesis')) {
       return {
         url: "https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=1600&h=900&q=85",
