@@ -12,11 +12,15 @@ Allow: /
 User-agent: Googlebot-Image
 Allow: /
 
+User-agent: Googlebot-News
+Allow: /
+
 User-agent: Bingbot
 Allow: /
 
 User-agent: DuckDuckBot
 Allow: /
 
-# Sitemap Location
+# Sitemap Locations
 Sitemap: https://biogravity.space/sitemap.xml
+Sitemap: https://biogravity.space/sitemap-news.xml

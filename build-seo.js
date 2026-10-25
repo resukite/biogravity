@@ -13,6 +13,15 @@ if (!fs.existsSync(articlesPath)) {
 }
 
 const articles = JSON.parse(fs.readFileSync(articlesPath, 'utf8'));
+const newsPath = path.join(__dirname, 'data', 'news.json');
+let newsArticles = [];
+if (fs.existsSync(newsPath)) {
+  try {
+    newsArticles = JSON.parse(fs.readFileSync(newsPath, 'utf8'));
+  } catch (e) {
+    newsArticles = [];
+  }
+}
 const articlesDir = path.join(__dirname, 'articles');
 if (!fs.existsSync(articlesDir)) {
   fs.mkdirSync(articlesDir, { recursive: true });
@@ -894,6 +903,7 @@ const corePages = [
   { name: 'about', file: 'about.html', canonical: `${SITE_URL}/about` },
   { name: 'contact', file: 'contact.html', canonical: `${SITE_URL}/contact` },
   { name: 'tools', file: 'tools.html', canonical: `${SITE_URL}/tools` },
+  { name: 'news', file: 'news.html', canonical: `${SITE_URL}/news` },
   { name: 'disclaimer', file: 'disclaimer.html', canonical: `${SITE_URL}/disclaimer` },
   { name: 'sitemap', file: 'sitemap.html', canonical: `${SITE_URL}/sitemap` },
   { name: 'world-space-week-2026', file: 'world-space-week-2026.html', canonical: `${SITE_URL}/world-space-week-2026` },
@@ -916,6 +926,7 @@ corePages.forEach(p => {
     // Clean internal links
     content = content.replace(/href="index\.html"/g, 'href="/"');
     content = content.replace(/href="research\.html"/g, 'href="/research"');
+    content = content.replace(/href="news\.html"/g, 'href="/news"');
     content = content.replace(/href="world-space-week-2026\.html"/g, 'href="/world-space-week-2026"');
     content = content.replace(/href="molecular-biology-research\.html"/g, 'href="/molecular-biology-research"');
     content = content.replace(/href="about\.html"/g, 'href="/about"');
@@ -926,6 +937,14 @@ corePages.forEach(p => {
     content = content.replace(/href="css\/styles\.css"/g, 'href="/css/styles.css"');
     content = content.replace(/href="logo\.png"/g, 'href="/logo.png"');
     content = content.replace(/href="articles\/\$\{encodeURIComponent\(article\.id\)\}\.html"/g, 'href="/articles/${encodeURIComponent(article.id)}"');
+
+    // Add Live News pill to navigation if missing
+    if (!content.includes('href="/news"') && content.includes('href="/research"')) {
+      content = content.replace(
+        '<a href="/research"',
+        `<a href="/news" class="flex items-center gap-1.5 text-rose-600 font-semibold hover:text-rose-700 transition"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-rose-500"></span></span>Live News</a>\n          <a href="/research"`
+      );
+    }
 
     // Add clean URL script if missing
     if (!content.includes("window.location.pathname.endsWith('.html')")) {
@@ -1027,6 +1046,114 @@ if (fs.existsSync(indexPath)) {
     indexHtml = indexHtml.replace(/(<\/div>\s*<\/div>\s*<\/section>\s*<\/main>)/i, `${allArticlesArchiveHtml}\n      $1`);
   }
 
+  // Add Live News pill to index.html navigation if missing
+  if (!indexHtml.includes('href="/news"') && indexHtml.includes('href="/research"')) {
+    indexHtml = indexHtml.replace(
+      '<a href="/research"',
+      `<a href="/news" class="flex items-center gap-1.5 text-rose-600 font-semibold hover:text-rose-700 transition">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-rose-500"></span>
+            </span>
+            Live News
+          </a>
+          <a href="/research"`
+    );
+  }
+
+  // Add Live News to index.html footer if missing
+  if (!indexHtml.includes('Live Science Wire') && indexHtml.includes('<li><a href="/research"')) {
+    indexHtml = indexHtml.replace(
+      '<li><a href="/research"',
+      `<li><a href="/news" class="text-rose-600 font-semibold hover:text-rose-700 transition flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-rose-500"></span>Live Science Wire</a></li>
+            <li><a href="/research"`
+    );
+  }
+
+  // Inject / update Breaking Science Wire section into index.html
+  if (newsArticles.length > 0) {
+    const topNews = newsArticles.slice(0, 4);
+    const liveNewsCardsHtml = topNews.map(item => `
+          <a href="/news/${encodeURIComponent(item.id)}" class="ux-card group overflow-hidden flex flex-col justify-between bg-white border border-slate-200 rounded-2xl hover:border-slate-300 transition shadow-xs hover:shadow-md">
+            <div>
+              <div class="relative aspect-video overflow-hidden bg-slate-100">
+                <img src="${escapeHtml(item.cover)}" alt="${escapeHtml(item.coverAlt || item.title)}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/80 backdrop-blur-md text-[10px] font-semibold text-white tracking-wide uppercase">
+                  ${escapeHtml((item.category || 'Science').split('&')[0].trim())}
+                </div>
+              </div>
+              <div class="p-4 sm:p-5">
+                <div class="flex items-center justify-between text-[11px] mb-2 font-medium">
+                  <span class="text-rose-600 font-semibold flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-rose-500 animate-pulse"></span>
+                    ${escapeHtml(item.date)}
+                  </span>
+                  <span class="text-slate-400">${escapeHtml(item.readtime || '4 min read')}</span>
+                </div>
+                <h3 class="font-display font-bold text-sm sm:text-base text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mb-2 leading-snug">
+                  ${escapeHtml(item.title)}
+                </h3>
+                <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
+                  ${escapeHtml(item.summary)}
+                </p>
+              </div>
+            </div>
+            <div class="px-4 pb-4 sm:px-5 sm:pb-5 pt-0 flex items-center justify-between text-xs border-t border-slate-100 pt-3">
+              <span class="text-slate-400 font-medium text-[11px]">${escapeHtml(item.source)}</span>
+              <span class="text-slate-900 font-semibold group-hover:text-teal-600 group-hover:translate-x-0.5 transition flex items-center gap-1">
+                Read Story &rarr;
+              </span>
+            </div>
+          </a>
+`).join('');
+
+    const liveNewsSectionHtml = `
+    <!-- ========================================================================= -->
+    <!-- 2B. 24/7 LIVE SCIENCE WIRE (DISCOVER & BREAKING UPDATES) -->
+    <!-- ========================================================================= -->
+    <section class="py-12 sm:py-16 border-b border-slate-200/80 bg-[#f8fafc]" id="live-science-wire">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-50 border border-rose-200 text-rose-700 text-xs font-bold uppercase tracking-wider mb-2">
+              <span class="relative flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-rose-500"></span>
+              </span>
+              24/7 Live Science Wire
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-display font-extrabold text-slate-900 tracking-tight">
+              Breaking Science &amp; Global Discoveries
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-2xl">
+              Autonomous real-time reporting across Deep Space, Planetary Geology, Environmental Science, Economic Science, Paleontology, and Quantum Physics.
+            </p>
+          </div>
+          <a href="/news" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-medium text-xs transition shadow-sm self-start sm:self-auto">
+            <span>View All Live Dispatches</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+          ${liveNewsCardsHtml}
+        </div>
+
+      </div>
+    </section>
+`;
+
+    if (indexHtml.includes('id="live-science-wire"')) {
+      indexHtml = indexHtml.replace(/<!-- =+ -->\s*<!-- 2B\. 24\/7 LIVE SCIENCE WIRE[\s\S]*?<\/section>/i, liveNewsSectionHtml.trim());
+    } else {
+      indexHtml = indexHtml.replace(
+        /(<!-- =+ -->\s*<!-- 3\. UXFOLIO-STYLE SHOWCASE CARDS)/i,
+        `${liveNewsSectionHtml.trim()}\n\n    $1`
+      );
+    }
+  }
+
   // Ensure clean URL script in <head>
   if (!indexHtml.includes("window.location.pathname.endsWith('.html')")) {
     indexHtml = indexHtml.replace(
@@ -1062,6 +1189,12 @@ let sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
     <loc>${SITE_URL}/</loc>
     <lastmod>${TODAY}</lastmod>
     <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>${SITE_URL}/news</loc>
+    <lastmod>${TODAY}</lastmod>
+    <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
@@ -1133,6 +1266,28 @@ let sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
     <priority>0.5</priority>
   </url>
 
+  <!-- Live Science Dispatches (Google Discover & News Priority) -->
+`;
+
+newsArticles.forEach(item => {
+  const cleanUrl = `${SITE_URL}/news/${item.id}`;
+  const coverUrl = item.cover || 'https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&fit=crop&w=1600&h=900&q=85';
+  const pubDate = (item.publishedIso ? item.publishedIso.split('T')[0] : null) || TODAY;
+
+  sitemapXml += `  <url>
+    <loc>${cleanUrl}</loc>
+    <lastmod>${pubDate}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>${escapeXml(coverUrl)}</image:loc>
+      <image:title>${escapeXml(item.title)}</image:title>
+    </image:image>
+  </url>
+`;
+});
+
+sitemapXml += `
   <!-- Pre-Rendered High-Authority Research Dispatches (Clean URLs) -->
 `;
 
@@ -1158,10 +1313,42 @@ sitemapXml += `</urlset>\n`;
 
 const sitemapPath = path.join(__dirname, 'sitemap.xml');
 fs.writeFileSync(sitemapPath, sitemapXml, 'utf8');
-console.log(`[BUILD-SEO] ✅ Successfully generated clean sitemap.xml with ${articles.length + 7} canonical URLs!`);
+console.log(`[BUILD-SEO] ✅ Successfully generated clean sitemap.xml with ${articles.length + newsArticles.length + 8} canonical URLs!`);
 
 // =============================================================================
-// 4B. GENERATE RSS 2.0 / ATOM SCIENTIFIC FEED (SYNDICATION & DISCOVERY)
+// 4B. GENERATE GOOGLE NEWS XML SITEMAP (sitemap-news.xml)
+// =============================================================================
+console.log(`[BUILD-SEO] 🗺️ Generating Google News sitemap-news.xml...`);
+
+let newsSitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+`;
+
+newsArticles.forEach(item => {
+  const cleanUrl = `${SITE_URL}/news/${item.id}`;
+  const pubDateIso = item.publishedIso || new Date().toISOString();
+  newsSitemapXml += `  <url>
+    <loc>${cleanUrl}</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>${pubDateIso}</news:publication_date>
+      <news:title>${escapeXml(item.title)}</news:title>
+    </news:news>
+  </url>
+`;
+});
+
+newsSitemapXml += `</urlset>\n`;
+
+fs.writeFileSync(path.join(__dirname, 'sitemap-news.xml'), newsSitemapXml, 'utf8');
+console.log(`[BUILD-SEO] ✅ Generated sitemap-news.xml for Google News!`);
+
+// =============================================================================
+// 4C. GENERATE RSS 2.0 / ATOM SCIENTIFIC FEED (SYNDICATION & DISCOVERY)
 // =============================================================================
 console.log(`[BUILD-SEO] 📡 Generating RSS 2.0 scientific feed...`);
 
@@ -1170,11 +1357,27 @@ let rssXml = `<?xml version="1.0" encoding="UTF-8"?>
   <channel>
     <title>BioGravity - Quantum Biotechnology &amp; Orbital Life Sciences</title>
     <link>${SITE_URL}/</link>
-    <description>Open-access research dispatches on quantum enzymology, microgravity cell biology, and 3D organoid bioprinting in Low Earth Orbit.</description>
+    <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     <atom:link href="${SITE_URL}/rss.xml" rel="self" type="application/rss+xml"/>
 `;
+
+// News items first for timely Google Discover & RSS syndication
+newsArticles.forEach(item => {
+  const cleanUrl = `${SITE_URL}/news/${item.id}`;
+  const pubDate = new Date(item.publishedIso || TODAY).toUTCString();
+  rssXml += `    <item>
+      <title>${escapeXml(item.title)}</title>
+      <link>${cleanUrl}</link>
+      <guid isPermaLink="true">${cleanUrl}</guid>
+      <pubDate>${pubDate}</pubDate>
+      <dc:creator>${escapeXml(item.author || 'BioGravity Science Bureau')}</dc:creator>
+      <description>${escapeXml(item.summary || '')}</description>
+      <category>${escapeXml(item.category || 'Science')}</category>
+    </item>
+`;
+});
 
 articles.forEach(art => {
   const cleanUrl = `${SITE_URL}/articles/${art.id}`;
@@ -1236,6 +1439,9 @@ const notFoundHtml = `<!DOCTYPE html>
       <a href="/" class="px-5 py-2.5 rounded-full bg-slate-900 text-white font-medium text-xs hover:bg-slate-800 transition shadow-sm">
         Return to Home Hub →
       </a>
+      <a href="/news" class="px-5 py-2.5 rounded-full bg-rose-50 border border-rose-200 text-rose-700 text-xs font-medium hover:bg-rose-100 transition">
+        Live Science Wire
+      </a>
       <a href="/research" class="px-5 py-2.5 rounded-full bg-white border border-slate-200 text-slate-700 text-xs font-medium hover:bg-slate-50 transition">
         Explore Research Archive
       </a>
@@ -1267,14 +1473,18 @@ Allow: /
 User-agent: Googlebot-Image
 Allow: /
 
+User-agent: Googlebot-News
+Allow: /
+
 User-agent: Bingbot
 Allow: /
 
 User-agent: DuckDuckBot
 Allow: /
 
-# Sitemap Location
+# Sitemap Locations
 Sitemap: ${SITE_URL}/sitemap.xml
+Sitemap: ${SITE_URL}/sitemap-news.xml
 `;
 
 fs.writeFileSync(path.join(__dirname, 'robots.txt'), robotsTxt, 'utf8');

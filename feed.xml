@@ -3,10 +3,46 @@
   <channel>
     <title>BioGravity - Quantum Biotechnology &amp; Orbital Life Sciences</title>
     <link>https://biogravity.space/</link>
-    <description>Open-access research dispatches on quantum enzymology, microgravity cell biology, and 3D organoid bioprinting in Low Earth Orbit.</description>
+    <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Oct 2026 06:43:01 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2026 07:09:46 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Living Solar Panels: Scientists Turn Plant Chloroplasts into Renewable Electricity</title>
+      <link>https://biogravity.space/news/living-solar-panels-scientists-turn-plant-chloroplasts-into</link>
+      <guid isPermaLink="true">https://biogravity.space/news/living-solar-panels-scientists-turn-plant-chloroplasts-into</guid>
+      <pubDate>Sun, 25 Oct 2026 07:00:26 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Living Solar Panels: Scientists Turn Plant Chloroplasts into Renewable Electricity: By coating carbon nanotube substrates with stabilized plant chloroplast proteins, researchers created solar cells that sequester carbon while producing current. Published via Applied Clean Energy Journal.</description>
+      <category>Environmental Science &amp; Energy</category>
+    </item>
+    <item>
+      <title>Ancient Greenland Ice Discloses Shocking Climate Flip That Happened in Just 20 Years</title>
+      <link>https://biogravity.space/news/ancient-greenland-ice-discloses-shocking-climate-flip-that</link>
+      <guid isPermaLink="true">https://biogravity.space/news/ancient-greenland-ice-discloses-shocking-climate-flip-that</guid>
+      <pubDate>Sun, 25 Oct 2026 07:00:26 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Ancient Greenland Ice Discloses Shocking Climate Flip That Happened in Just 20 Years: Isotope ratios in 120,000-year-old ice show sudden 5-degree temperature spikes can occur much faster than classical geological models predicted. Published via International Glaciological Consortium.</description>
+      <category>Science History &amp; Paleoclimatology</category>
+    </item>
+    <item>
+      <title>Alien Life at 14,000 Feet Below the Ocean: Deep-Sea Expedition Finds Unseen Ecosystem</title>
+      <link>https://biogravity.space/news/alien-life-at-14-000-feet-below-the-ocean-deep-sea-expedition</link>
+      <guid isPermaLink="true">https://biogravity.space/news/alien-life-at-14-000-feet-below-the-ocean-deep-sea-expedition</guid>
+      <pubDate>Sun, 25 Oct 2026 07:00:26 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Alien Life at 14,000 Feet Below the Ocean: Deep-Sea Expedition Finds Unseen Ecosystem: Mineral deposits enriched in rare-earth elements were discovered at 4,200 meters depth, hosting previously unclassified archaea that metabolize serpentinized iron. Published via US Geological &amp; Oceanic Survey.</description>
+      <category>Earth &amp; Geology</category>
+    </item>
+    <item>
+      <title>Metal Rain and Vaporized Iron: Webb Telescope Reveals Extreme Weather on Giant Alien World</title>
+      <link>https://biogravity.space/news/metal-rain-and-vaporized-iron-webb-telescope-reveals-extreme</link>
+      <guid isPermaLink="true">https://biogravity.space/news/metal-rain-and-vaporized-iron-webb-telescope-reveals-extreme</guid>
+      <pubDate>Sun, 25 Oct 2026 07:00:26 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Metal Rain and Vaporized Iron: Webb Telescope Reveals Extreme Weather on Giant Alien World: Spectroscopic observations by JWST confirm gaseous nickel, iron, and vanadium in the exoplanet upper atmosphere, proving vaporized metal weather systems. Published via NASA Space Science Dispatch.</description>
+      <category>Space &amp; Astronomy</category>
+    </item>
     <item>
       <title>Quantum Super-Sensors: How Orbital Cold Protects Fragile Entanglement</title>
       <link>https://biogravity.space/articles/screening-strongly-correlated-materials-in-solid-oxide-cells</link>

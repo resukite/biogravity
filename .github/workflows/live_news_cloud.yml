@@ -1,0 +1,61 @@
+name: BioGravity Autonomous 24/7 Live Science Wire
+
+on:
+  schedule:
+    # Runs every 3 hours around the clock (24/7 autonomous breaking science reporting)
+    - cron: '0 */3 * * *'
+  workflow_dispatch:
+    inputs:
+      count:
+        description: 'Number of live dispatches to synthesize'
+        required: false
+        type: string
+        default: '2'
+
+permissions:
+  contents: write
+
+jobs:
+  live-science-wire:
+    name: 24/7 Live Science News Bot Engine
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🛰️ Checkout BioGravity Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🟢 Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: ⚡ Execute Multi-Agent Live Science News Engine
+        env:
+          SITE_URL: 'https://biogravity.space'
+        run: |
+          COUNT="${{ inputs.count || '2' }}"
+          echo "🚀 Initiating autonomous live news cycle (count: $COUNT)..."
+          node scripts/live_news_engine.js $COUNT
+
+      - name: 🗺️ Build Global SEO, Sitemaps & Google Discover Encodings
+        run: |
+          node build-seo.js
+
+      - name: 🚀 Commit and Push Breaking Science Wire & Sitemaps
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Stage all live news articles, databases, sitemaps, RSS, and navigation
+          git add news/ data/ news.html sitemap.xml sitemap-news.xml rss.xml feed.xml index.html robots.txt outreach/
+
+          if git diff --staged --quiet; then
+            echo "✅ No new changes detected. Wire is fully synchronized."
+          else
+            git commit -m "feat(live-wire): autonomous breaking science dispatches & Google Discover sync [skip ci]"
+            git pull --rebase origin main || true
+            git push origin main
+            echo "🎉 Successfully published breaking science news to biogravity.space!"
+          fi
