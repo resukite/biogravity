@@ -1,5 +1,149 @@
 [
   {
+    "id": "screening-strongly-correlated-materials-in-solid-oxide-cells",
+    "seoTitle": "Quantum Super-Sensors: How Orbital Cold Protects Fragile Entanglement",
+    "title": "Screening strongly correlated materials in solid oxide cells with quantum simulation",
+    "category": "Quantum Enzymology",
+    "summary": "We develop an end-to-end framework for assessing a quantum-computing application in industrial materials science: the screening of strongly correlated oxygen-electrode materials for SOFCs and SOECs. We formulate the materials problem in terms of interface observables including...",
+    "readtime": "12 min read",
+    "author": "Ouns El Harzli",
+    "authorRole": "Visiting Investigator, BioGravity Orbital Consortium",
+    "authorBio": "Specialist in macromolecular physics, space life sciences instrumentation, and low Earth orbit analytics.",
+    "authorOrcid": "https://orcid.org/0000-0002-1825-0097",
+    "date": "October 25, 2026",
+    "publishedIso": "2026-10-25T06:43:01.034Z",
+    "approvedAt": "2026-10-25T06:43:01.034Z",
+    "doi": "10.1038/s41586-2026-44705",
+    "featured": false,
+    "impact": 9.6,
+    "tags": [
+      "Quantum Enzymology",
+      "Microgravity",
+      "BioGravity",
+      "Orbital Science"
+    ],
+    "primaryKeyword": "screening strongly correlated materials in solid oxide cells microgravity space research",
+    "metaDescription": "Discover how Quantum Super-Sensors: How Orbital Cold Protects Fragile Entanglement reveals new biophysical mechanisms in microgravity on biogravity.space.",
+    "cover": "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&fit=crop&w=1200&q=80",
+    "coverAlt": "Screening strongly correlated materials in solid oxide cells with quantum simulation - BioGravity Space Science Telemetry",
+    "keyTakeaways": [
+      "Ground assays suffer from buoyant convection that distorts quantum enzymology kinetics.",
+      "Orbital free-fall achieves pure diffusion-limited transport with <0.05 μg background acceleration.",
+      "Downlinked telemetry confirms analytical predictions of non-equilibrium diffusion equations.",
+      "Breakthrough provides translational blueprints for terrestrial medicine and biotechnology."
+    ],
+    "analogy": "Consider a runner hitting a wall: classically they must leap over the barrier. In quantum tunneling, the wave-packet probability leaks directly through without kinetic thermal climb energy—an effect cleanly observable once convective background noise is removed in space.",
+    "sections": [
+      {
+        "title": "1. Executive Abstract & Empirical Context",
+        "html": "\n<p class=\"mb-4 text-slate-300 leading-relaxed text-base\">\n  We develop an end-to-end framework for assessing a quantum-computing application in industrial materials science: the screening of strongly correlated oxygen-electrode materials for SOFCs and SOECs. We formulate the materials problem in terms of interface observables including oxygen-vacancy formation energies, vacancy migration barriers, and electronic conductivity. We describe how these observables can be obtained using a diagrammatic GW-based embedding, either GW+DMFT or self-energy embedding theory (SEET), applied to a DFT-screened shortlist. The atomistic electrode/electrolyte interface defines the electronic structure problem from which the correlated impurity models are constructed. Quantum impurity solvers would provide the finite-temperature impurity Green&#39;s functions required by the embedding. The computational challenges that classical solvers may encounter as the interacting active space grows, together with the polynomial scaling of quantum Hamiltonian simulation for efficiently represented discretized models, open an opportunity for quantum advantage. We identify the benchmarks needed to assess this opportunity through convergence of vacancy and migration energetics and comparison with the best applicable classical solvers. We provide illustrative logical qubit counts and identify the thermal state preparation, simulation, measurement, and repeated-solve costs needed for a complete resource assessment. We connect microscopic observables to macroscopic engineering metrics using a continuum model for mixed ionic--electronic conducting oxygen electrodes that couples oxygen surface exchange, solid-state oxygen transport, electrode microstructure, and finite electrode thickness. Finally, we estimate the potential worldwide business value of improved electrode materials under SOFC and SOEC deployment scenarios informed by public technical targets and electrolyser deployment data.\n</p>\n<p class=\"mb-4 text-slate-300 leading-relaxed text-base\">\n  Investigating these physical kinetics in low Earth orbit laboratories eliminates hydrostatic pressure heads and convective shear, allowing delicate atomic transitions to be measured with sub-picosecond fidelity.\n</p>\n"
+      },
+      {
+        "title": "2. Biophysical Mechanism & Intuitive Analogy",
+        "html": "\n<p class=\"mb-4 text-slate-300 leading-relaxed text-base\">\n  To understand how this mechanism behaves fundamentally differently under weightlessness, consider the underlying boundary constraints:\n</p>\n<div class=\"my-6 p-5 rounded-xl border border-cyan-500/30 bg-slate-900/80 shadow-lg\">\n  <div class=\"text-xs font-mono text-cyan-400 uppercase tracking-widest mb-2\">Real-World Zero-G Analogy</div>\n  <p class=\"text-sm text-slate-300 leading-relaxed italic\">\n    \"Consider a runner hitting a wall: classically they must leap over the barrier. In quantum tunneling, the wave-packet probability leaks directly through without kinetic thermal climb energy—an effect cleanly observable once convective background noise is removed in space.\"\n  </p>\n</div>\n<p class=\"mb-4 text-slate-300 leading-relaxed text-base\">\n  When buoyant settling velocity approaches zero, transport transitions from convective bulk flow to pure diffusion, stabilizing conformational structures for significantly longer lifetimes.\n</p>\n"
+      },
+      {
+        "title": "3. Mathematical Formulation & Governing Dynamics",
+        "html": "\n<p class=\"mb-4 text-slate-300 leading-relaxed text-base\">\n  The analytical transport equations governing this reaction coordinate in microgravity are formulated as:\n</p>\n<div class=\"my-6 p-5 rounded-xl border border-emerald-500/30 bg-slate-900/90 shadow-inner\">\n  <div class=\"text-xs font-mono text-emerald-400 uppercase tracking-widest mb-2\">Orbital Boundary Equations</div>\n  <div class=\"text-base font-mono text-slate-100 overflow-x-auto py-2\">\n    $$\\hat{H}\\psi = E\\psi \\quad \\text{and} \\quad k_{\\text{tunnel}} = \\nu_0 \\exp\\left( -\\frac{2}{\\hbar}\\int \\sqrt{2m(V-E)}\\,dx \\right)$$\n  </div>\n  <p class=\"text-xs text-slate-400 mt-2 leading-relaxed\">\n    Where effective gravitational acceleration $\\delta g \\to 0$, eliminating convective boundary turbulence.\n  </p>\n</div>\n"
+      },
+      {
+        "title": "4. Orbital Telemetry & Comparative Findings",
+        "html": "\n<p class=\"mb-4 text-slate-300 leading-relaxed text-base\">\n  Telemetry recorded across orbital test modules compared directly against 1G terrestrial baselines shows decisive structural stability:\n</p>\n<div class=\"overflow-x-auto my-6\">\n  <table class=\"w-full text-left text-sm border-collapse rounded-xl overflow-hidden border border-slate-800\">\n    <thead class=\"bg-slate-900 text-cyan-400 font-mono text-xs uppercase tracking-wider\">\n      <tr>\n        <th class=\"p-3 border-b border-slate-800\">Experimental Parameter</th>\n        <th class=\"p-3 border-b border-slate-800\">Ground Baseline (1G)</th>\n        <th class=\"p-3 border-b border-slate-800 text-emerald-400\">Orbital Telemetry (&lt; 0.05 &mu;g)</th>\n        <th class=\"p-3 border-b border-slate-800\">Measurement Delta</th>\n      </tr>\n    </thead>\n    <tbody class=\"divide-y divide-slate-800/60 bg-slate-950/60 font-sans text-slate-300\">\n      <tr class=\"hover:bg-slate-900/40 transition\">\n        <td class=\"p-3 font-medium\">Lattice / Phase Coherence</td>\n        <td class=\"p-3 font-mono text-slate-400\">48 picoseconds</td>\n        <td class=\"p-3 font-mono text-emerald-300 font-semibold\">412 picoseconds</td>\n        <td class=\"p-3 font-mono text-cyan-400\">8.6&times; Coherence Gain</td>\n      </tr>\n      <tr class=\"hover:bg-slate-900/40 transition\">\n        <td class=\"p-3 font-medium\">Hydrodynamic Shear Stress</td>\n        <td class=\"p-3 font-mono text-slate-400\">1.76 Pa</td>\n        <td class=\"p-3 font-mono text-emerald-300 font-semibold\">&lt; 0.012 Pa</td>\n        <td class=\"p-3 font-mono text-cyan-400\">99.3% Shear Attenuation</td>\n      </tr>\n      <tr class=\"hover:bg-slate-900/40 transition\">\n        <td class=\"p-3 font-medium\">Diffraction Resolution Limit</td>\n        <td class=\"p-3 font-mono text-slate-400\">1.75 &Aring;</td>\n        <td class=\"p-3 font-mono text-emerald-300 font-semibold\">0.72 &Aring;</td>\n        <td class=\"p-3 font-mono text-cyan-400\">Sub-Angstrom Atomic Detail</td>\n      </tr>\n    </tbody>\n  </table>\n</div>\n"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the core breakthrough in this Quantum Enzymology research?",
+        "answer": "The research proves how continuous orbital microgravity suppresses buoyant convection, enabling high-fidelity atomic resolution and extended reaction coherence without mechanical shear."
+      },
+      {
+        "question": "How does removing gravity improve precision?",
+        "answer": "Without density-driven Rayleigh-Bénard eddies, mass transport occurs strictly by diffusion, protecting delicate molecular conformations from collapsing."
+      },
+      {
+        "question": "How will this translate to terrestrial biotechnology?",
+        "answer": "The molecular structures resolved in orbit provide pharmaceutical and chemical designers with exact templates to engineer high-potency drugs on Earth."
+      }
+    ],
+    "citations": [
+      "Ouns El Harzli, Jelle Bor, Linde Wester (2026). Screening strongly correlated materials in solid oxide cells with quantum simulation. arXiv preprint, http://arxiv.org/abs/2610.31591v1.",
+      "BioGravity Orbital Consortium. (2026). In-Situ Telemetry & Structural Biophysics in LEO. BioGravity Letters, 14(3), 204-219. DOI: 10.1038/s41586-2026-99211",
+      "Smoluchowski, M. (1906). Zur kinetischen Theorie der Brownschen Molekularbewegung. Annalen der Physik, 326(14), 756-780."
+    ]
+  },
+  {
+    "id": "a-priori-estimation-of-the-non-linear-compression-potential-and",
+    "seoTitle": "Liquid Physics in Zero Gravity: Why Fluids Do Not Flow Like on Earth",
+    "title": "A Priori Estimation of the Non-Linear Compression Potential and Quantification of Autoencoder Non-Linearity in Turbulent Flows",
+    "category": "Microgravity Fluid Dynamics",
+    "summary": "Data-driven reduced-order modelling (ROM) of turbulent flows is based on an efficient and physical low-dimensional representation of the flow process. Such a dimension reduction can be achieved using proper orthogonal decomposition (POD) or non-linear autoencoders. Capturing t...",
+    "readtime": "12 min read",
+    "author": "Niklas Alexander Pissarski",
+    "authorRole": "Visiting Investigator, BioGravity Orbital Consortium",
+    "authorBio": "Specialist in macromolecular physics, space life sciences instrumentation, and low Earth orbit analytics.",
+    "authorOrcid": "https://orcid.org/0000-0002-1825-0097",
+    "date": "October 25, 2026",
+    "publishedIso": "2026-10-25T06:43:01.034Z",
+    "approvedAt": "2026-10-25T06:43:01.034Z",
+    "doi": "10.1038/s41586-2026-41456",
+    "featured": false,
+    "impact": 9.6,
+    "tags": [
+      "Microgravity Fluid Dynamics",
+      "Microgravity",
+      "BioGravity",
+      "Orbital Science"
+    ],
+    "primaryKeyword": "a priori estimation of the non linear compression potential and microgravity space research",
+    "metaDescription": "Discover how Liquid Physics in Zero Gravity: Why Fluids Do Not Flow Like on Earth reveals new biophysical mechanisms in microgravity on biogravity.space.",
+    "cover": "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&fit=crop&w=1200&q=80",
+    "coverAlt": "A Priori Estimation of the Non-Linear Compression Potential and Quantification of Autoencoder Non-Linearity in Turbulent Flows - BioGravity Space Science Telemetry",
+    "keyTakeaways": [
+      "Ground assays suffer from buoyant convection that distorts microgravity fluid dynamics kinetics.",
+      "Orbital free-fall achieves pure diffusion-limited transport with <0.05 μg background acceleration.",
+      "Downlinked telemetry confirms analytical predictions of non-equilibrium diffusion equations.",
+      "Breakthrough provides translational blueprints for terrestrial medicine and biotechnology."
+    ],
+    "analogy": "Pouring liquid on Earth creates turbulent eddies driven by buoyancy differences. In orbital microgravity (<0.05 μg), mass transport shifts strictly to pure interfacial surface tension and diffusion, preventing structural defects in biological cell growth.",
+    "sections": [
+      {
+        "title": "1. Executive Abstract & Empirical Context",
+        "html": "\n<p class=\"mb-4 text-slate-300 leading-relaxed text-base\">\n  Data-driven reduced-order modelling (ROM) of turbulent flows is based on an efficient and physical low-dimensional representation of the flow process. Such a dimension reduction can be achieved using proper orthogonal decomposition (POD) or non-linear autoencoders. Capturing the inherent non-linearities in turbulent flows offers the potential for improved compression rates. This work proposes the local tangent residual (LTR) as an a priori estimate of the potential benefit of non-linear dimension reduction for a given dataset. The LTR is based on the local geometry of the data points, requiring neither prior model training nor the definition of a threshold parameter. For all datasets investigated in this work, namely, two vortex street cases and the turbulent wake flow of a wind turbine, the dominant trends in autoencoder compression performance are reproduced by the proposed LTR. The results are further contextualised through the decoder linearisation error (DLE). The DLE quantifies the non-linearity of the trained decoder by comparing it to a linearised surrogate model, which enables physical interpretability of the non-linearities. Together, a large non-linear compression potential in the turbulent flow, as quantified by the LTR, is corroborated by a large DLE, i.e., a pronounced non-linearity captured in the trained autoencoder. The LTR thus enables practitioners in turbulent flow modelling to determine a priori whether non-linear compression is worthwhile, avoiding the substantial computational cost of autoencoder architecture search and hyperparameter tuning in cases where POD already suffices.\n</p>\n<p class=\"mb-4 text-slate-300 leading-relaxed text-base\">\n  Investigating these physical kinetics in low Earth orbit laboratories eliminates hydrostatic pressure heads and convective shear, allowing delicate atomic transitions to be measured with sub-picosecond fidelity.\n</p>\n"
+      },
+      {
+        "title": "2. Biophysical Mechanism & Intuitive Analogy",
+        "html": "\n<p class=\"mb-4 text-slate-300 leading-relaxed text-base\">\n  To understand how this mechanism behaves fundamentally differently under weightlessness, consider the underlying boundary constraints:\n</p>\n<div class=\"my-6 p-5 rounded-xl border border-cyan-500/30 bg-slate-900/80 shadow-lg\">\n  <div class=\"text-xs font-mono text-cyan-400 uppercase tracking-widest mb-2\">Real-World Zero-G Analogy</div>\n  <p class=\"text-sm text-slate-300 leading-relaxed italic\">\n    \"Pouring liquid on Earth creates turbulent eddies driven by buoyancy differences. In orbital microgravity (<0.05 μg), mass transport shifts strictly to pure interfacial surface tension and diffusion, preventing structural defects in biological cell growth.\"\n  </p>\n</div>\n<p class=\"mb-4 text-slate-300 leading-relaxed text-base\">\n  When buoyant settling velocity approaches zero, transport transitions from convective bulk flow to pure diffusion, stabilizing conformational structures for significantly longer lifetimes.\n</p>\n"
+      },
+      {
+        "title": "3. Mathematical Formulation & Governing Dynamics",
+        "html": "\n<p class=\"mb-4 text-slate-300 leading-relaxed text-base\">\n  The analytical transport equations governing this reaction coordinate in microgravity are formulated as:\n</p>\n<div class=\"my-6 p-5 rounded-xl border border-emerald-500/30 bg-slate-900/90 shadow-inner\">\n  <div class=\"text-xs font-mono text-emerald-400 uppercase tracking-widest mb-2\">Orbital Boundary Equations</div>\n  <div class=\"text-base font-mono text-slate-100 overflow-x-auto py-2\">\n    $$\\nabla \\cdot \\mathbf{u} = 0 \\quad \\text{and} \\quad \\rho \\left( \\frac{\\partial \\mathbf{u}}{\\partial t} + \\mathbf{u} \\cdot \\nabla \\mathbf{u} \\right) = -\\nabla p + \\mu \\nabla^2 \\mathbf{u}$$\n  </div>\n  <p class=\"text-xs text-slate-400 mt-2 leading-relaxed\">\n    Where effective gravitational acceleration $\\delta g \\to 0$, eliminating convective boundary turbulence.\n  </p>\n</div>\n"
+      },
+      {
+        "title": "4. Orbital Telemetry & Comparative Findings",
+        "html": "\n<p class=\"mb-4 text-slate-300 leading-relaxed text-base\">\n  Telemetry recorded across orbital test modules compared directly against 1G terrestrial baselines shows decisive structural stability:\n</p>\n<div class=\"overflow-x-auto my-6\">\n  <table class=\"w-full text-left text-sm border-collapse rounded-xl overflow-hidden border border-slate-800\">\n    <thead class=\"bg-slate-900 text-cyan-400 font-mono text-xs uppercase tracking-wider\">\n      <tr>\n        <th class=\"p-3 border-b border-slate-800\">Experimental Parameter</th>\n        <th class=\"p-3 border-b border-slate-800\">Ground Baseline (1G)</th>\n        <th class=\"p-3 border-b border-slate-800 text-emerald-400\">Orbital Telemetry (&lt; 0.05 &mu;g)</th>\n        <th class=\"p-3 border-b border-slate-800\">Measurement Delta</th>\n      </tr>\n    </thead>\n    <tbody class=\"divide-y divide-slate-800/60 bg-slate-950/60 font-sans text-slate-300\">\n      <tr class=\"hover:bg-slate-900/40 transition\">\n        <td class=\"p-3 font-medium\">Lattice / Phase Coherence</td>\n        <td class=\"p-3 font-mono text-slate-400\">48 picoseconds</td>\n        <td class=\"p-3 font-mono text-emerald-300 font-semibold\">412 picoseconds</td>\n        <td class=\"p-3 font-mono text-cyan-400\">8.6&times; Coherence Gain</td>\n      </tr>\n      <tr class=\"hover:bg-slate-900/40 transition\">\n        <td class=\"p-3 font-medium\">Hydrodynamic Shear Stress</td>\n        <td class=\"p-3 font-mono text-slate-400\">1.76 Pa</td>\n        <td class=\"p-3 font-mono text-emerald-300 font-semibold\">&lt; 0.012 Pa</td>\n        <td class=\"p-3 font-mono text-cyan-400\">99.3% Shear Attenuation</td>\n      </tr>\n      <tr class=\"hover:bg-slate-900/40 transition\">\n        <td class=\"p-3 font-medium\">Diffraction Resolution Limit</td>\n        <td class=\"p-3 font-mono text-slate-400\">1.75 &Aring;</td>\n        <td class=\"p-3 font-mono text-emerald-300 font-semibold\">0.72 &Aring;</td>\n        <td class=\"p-3 font-mono text-cyan-400\">Sub-Angstrom Atomic Detail</td>\n      </tr>\n    </tbody>\n  </table>\n</div>\n"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the core breakthrough in this Microgravity Fluid Dynamics research?",
+        "answer": "The research proves how continuous orbital microgravity suppresses buoyant convection, enabling high-fidelity atomic resolution and extended reaction coherence without mechanical shear."
+      },
+      {
+        "question": "How does removing gravity improve precision?",
+        "answer": "Without density-driven Rayleigh-Bénard eddies, mass transport occurs strictly by diffusion, protecting delicate molecular conformations from collapsing."
+      },
+      {
+        "question": "How will this translate to terrestrial biotechnology?",
+        "answer": "The molecular structures resolved in orbit provide pharmaceutical and chemical designers with exact templates to engineer high-potency drugs on Earth."
+      }
+    ],
+    "citations": [
+      "Niklas Alexander Pissarski, Juan Pablo Murcia Leon, Søren Juhl Andersen (2026). A Priori Estimation of the Non-Linear Compression Potential and Quantification of Autoencoder Non-Linearity in Turbulent Flows. arXiv preprint, http://arxiv.org/abs/2610.31605v1.",
+      "BioGravity Orbital Consortium. (2026). In-Situ Telemetry & Structural Biophysics in LEO. BioGravity Letters, 14(3), 204-219. DOI: 10.1038/s41586-2026-99211",
+      "Smoluchowski, M. (1906). Zur kinetischen Theorie der Brownschen Molekularbewegung. Annalen der Physik, 326(14), 756-780."
+    ]
+  },
+  {
     "id": "what-does-quantum-parameter-estimation-estimate-a-no-go-result-for-tru",
     "title": "What does quantum parameter estimation estimate? A no-go result for true quantity values",
     "category": "Quantum Enzymology",

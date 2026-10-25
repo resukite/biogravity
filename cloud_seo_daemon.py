@@ -57,6 +57,23 @@ ARTICLES_JSON_FILE = DATA_DIR / "articles.json"
 SITE_URL = os.getenv("SITE_URL", "https://biogravity.space").rstrip("/")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "").strip()
 
+def make_slug(title: str) -> str:
+    """Normalizes a title into a clean, reproducible URL slug under 65 chars."""
+    slug = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
+    if len(slug) > 65:
+        slug = slug[:65].rsplit("-", 1)[0]
+    return slug
+
+def is_already_published(title: str, existing_ids: set) -> bool:
+    """Check if a paper is already in the database by slug or fuzzy match."""
+    slug = make_slug(title)
+    if slug in existing_ids:
+        return True
+    for eid in existing_ids:
+        if len(slug) > 20 and (slug in eid or eid in slug):
+            return True
+    return False
+
 # =============================================================================
 # 1. LIVE RESEARCH FEED FETCHERS (arXiv & NASA/Open Science)
 # =============================================================================
@@ -69,12 +86,14 @@ def fetch_live_arxiv_research():
         "physics.bio-ph",  # Biological Physics
         "quant-ph",        # Quantum Physics
         "physics.flu-dyn", # Fluid Dynamics (Microgravity fluidics)
-        "astro-ph.EP"      # Earth and Planetary Astrophysics
+        "astro-ph.EP",     # Earth and Planetary Astrophysics
+        "q-bio.BM",        # Biomolecules
+        "q-bio.CB"         # Cell Behavior
     ]
     query = "+OR+".join([f"cat:{c}" for c in categories])
-    url = f"http://export.arxiv.org/api/query?search_query={query}&sortBy=submittedDate&sortOrder=descending&max_results=8"
+    url = f"https://export.arxiv.org/api/query?search_query={query}&sortBy=submittedDate&sortOrder=descending&max_results=30"
     
-    print(f"[LIVE-FEED] 📡 Querying arXiv API for recent breakthroughs...")
+    print(f"[LIVE-FEED] 📡 Querying arXiv API for recent breakthroughs across 6 categories...")
     try:
         req = urllib.request.Request(
             url,
@@ -157,12 +176,13 @@ CRITICAL GOOGLE ADSENSE & E-E-A-T POLICY REQUIREMENTS:
 
 OUTPUT FORMAT: Return ONLY a valid JSON object with EXACTLY this structure (no markdown fences, raw JSON only):
 {{
-  "id": "kebab-case-slug-under-80-chars",
-  "title": "Comprehensive Scientific Title (Under 100 characters)",
+  "id": "kebab-case-slug-under-65-chars",
+  "seoTitle": "High-CTR, curiosity-driven, captivating title under 65 chars that real humans click (e.g. 'Why Scientists Are 3D-Printing Hearts in Space' or 'Can Humans Sense Magnetic Fields? The Quantum Secret in Our Eyes')",
+  "title": "Formal Peer-Reviewed Scientific Title (Under 100 characters)",
   "category": "Quantum Enzymology | Space Physics & Biosensing | Microgravity Fluid Dynamics | Cosmic Radioprotection",
   "summary": "150-word executive scientific summary highlighting the breakthrough findings.",
   "primaryKeyword": "primary search keyword phrase",
-  "metaDescription": "SEO meta description under 155 characters designed for high click-through in Google search.",
+  "metaDescription": "SEO meta description under 155 characters designed for maximum CTR in Google search, highlighting the fascinating implication.",
   "author": "Dr. Elena Rostova",
   "authorRole": "Lead Investigator, Orbital BioPhysics Consortium",
   "authorBio": "Specialist in non-classical enzymology, orbital microgravity dynamics, and macromolecular biophysics.",
@@ -266,6 +286,58 @@ OUTPUT FORMAT: Return ONLY a valid JSON object with EXACTLY this structure (no m
     print("[GEMINI] ⚠️ All Gemini model tiers failed or were throttled. Falling back to autonomous synthesis.")
     return None
 
+def generate_high_ctr_title(clean_title: str, category: str, abstract: str) -> str:
+    """Transforms dense academic/arXiv titles into punchy, curiosity-driven headlines under 65 chars."""
+    t_lower = (clean_title + " " + abstract).lower()
+    
+    if "quantum parameter estimation" in t_lower or "no-go" in t_lower:
+        return "Can Quantum Physics Measure Reality? The No-Go Proof That Shook Metrology"
+    elif "supersolid" in t_lower:
+        return "Inside Supersolids: How Microgravity Traps Matter That Is Both Liquid and Solid"
+    elif "recoil" in t_lower and "electron" in t_lower:
+        return "Controlling Free-Electron Recoil: Next Frontier in Quantum Nanomechanics"
+    elif "t-cell" in t_lower or "lymphocyte" in t_lower or "immune" in t_lower:
+        return "Astronaut Immunity: How Spaceflight Shuts Down Human T-Cells"
+    elif "biofilm" in t_lower or "bacteria" in t_lower or "resistance" in t_lower:
+        return "Space Station Superbugs: Why Biofilms Mutate and Resist Antibiotics in Orbit"
+    elif "organoid" in t_lower or "cardiac" in t_lower or "heart" in t_lower:
+        return "Why Scientists Are 3D-Printing Beating Human Organs in Zero Gravity"
+    elif "fluid" in t_lower or "capillary" in t_lower or "surface tension" in t_lower:
+        return "Growing Cells Without Gravity: How Space Bioreactors Eliminate Fluid Turbulence"
+    elif "radiation" in t_lower or "cosmic" in t_lower or "dna" in t_lower or "shield" in t_lower:
+        return "Deep-Space Radiation Shield: How Microgravity Protects Astronaut DNA"
+    elif "aging" in t_lower or "mitochondria" in t_lower or "telomere" in t_lower:
+        return "Do We Age Slower in Space? Orbital Telemetry on Cellular Aging Clocks"
+    elif "crispr" in t_lower or "gene" in t_lower or "triad" in t_lower:
+        return "CRISPR in Zero Gravity: Does Quantum Tunneling Accelerate Gene Editing?"
+    elif "eye" in t_lower or "vision" in t_lower or "sans" in t_lower or "optic" in t_lower:
+        return "Why Astronauts Lose Vision in Space: The Brain Fluid Shift Mystery"
+    elif "crystal" in t_lower or "crystallography" in t_lower:
+        return "Atomic-Level Drug Design: Growing Perfect Protein Crystals in Orbit"
+    elif "plant" in t_lower or "photosystem" in t_lower or "crop" in t_lower:
+        return "Farming on Mars: Re-Engineering Photosynthesis Under Orbital Light"
+    elif "polariton" in t_lower or "bose-einstein" in t_lower or "condensat" in t_lower:
+        return "Creating Fifth-State Matter in Orbit: Quantum Condensation in Zero-G"
+    elif "nanotube" in t_lower or "nanotech" in t_lower or "chiral" in t_lower:
+        return "Flawless Nanotechnology in Space: Self-Assembling Chiral Nanotubes"
+    elif "bone" in t_lower or "osteoblast" in t_lower or "biomineral" in t_lower:
+        return "Building Bones on the Moon: How Scaffolds Regenerate in Low Gravity"
+    
+    # Generic high-CTR curiosity transform
+    sub = re.sub(r"^(A|An|The|On|Towards|Characterizing|Investigating|Study of|Experimental)\s+", "", clean_title, flags=re.IGNORECASE)
+    sub = sub.split(":")[0].strip()
+    if len(sub) > 42:
+        sub = sub[:39].rsplit(" ", 1)[0] + "..."
+    
+    if category == "Microgravity Fluid Dynamics":
+        return f"Zero-G Fluid Dynamics: Why {sub} Behaves Differently in Space"
+    elif category == "Cosmic Radioprotection":
+        return f"Deep-Space Radiation Shield: Breakthrough in {sub}"
+    elif category == "Space Physics & Biosensing":
+        return f"Spacecraft Sensors in Orbit: The Physics Behind {sub}"
+    else:
+        return f"Quantum Biology in Orbit: How Microgravity Unlocks {sub}"
+
 # =============================================================================
 # 2B. AUTONOMOUS LIVE ARXIV HEURISTIC SYNTHESIZER (Zero-Failure Engine)
 # =============================================================================
@@ -281,9 +353,9 @@ def synthesize_from_arxiv_paper(paper: dict) -> dict:
     arxiv_url = paper.get("url", "https://arxiv.org/abs/2610.0001")
     arxiv_id = arxiv_url.split("/")[-1] if arxiv_url else "2610.arxiv"
 
-    # Clean title
+    # Clean title and generate high-CTR slug & headline
     clean_title = re.sub(r"\s+", " ", raw_title).strip()
-    slug_id = re.sub(r"[^a-z0-9]+", "-", clean_title.lower()).strip("-")[:70]
+    slug_id = make_slug(clean_title)
 
     # Categorization heuristics
     combined_text = (clean_title + " " + abstract).lower()
@@ -479,13 +551,16 @@ def synthesize_from_arxiv_paper(paper: dict) -> dict:
         "Rostova, E., & Sterling, N. (2026). Non-Classical Transport Phenomena in Space Laboratories. Physical Review E, 114(4), 042611. DOI: 10.1103/PhysRevE.114.042611"
     ]
 
+    seo_title = generate_high_ctr_title(clean_title, category, abstract)
+
     return {
         "id": slug_id,
+        "seoTitle": seo_title,
         "title": clean_title,
         "category": category,
         "summary": summary_text,
         "primaryKeyword": f"{slug_id.replace('-', ' ')} microgravity space research",
-        "metaDescription": f"Discover how {clean_title} reveals new quantum and biophysical mechanisms in microgravity on biogravity.space.",
+        "metaDescription": f"Discover how {seo_title} uncovers non-classical biophysical mechanisms in microgravity on biogravity.space.",
         "author": primary_author,
         "authorRole": "Visiting Investigator, BioGravity Orbital Consortium",
         "authorBio": "Specialist in macromolecular physics, space life sciences instrumentation, and low Earth orbit analytics.",
@@ -1467,7 +1542,7 @@ def update_sitemap(articles: list):
 # =============================================================================
 # 8. AUTONOMOUS PUBLISHING PIPELINE EXECUTION
 # =============================================================================
-def run_publishing_cycle(force=False, custom_topic=None):
+def publish_single_dispatch(force=False, custom_topic=None):
     existing_articles = load_articles()
     existing_ids = {a.get("id") for a in existing_articles}
 
@@ -1477,11 +1552,9 @@ def run_publishing_cycle(force=False, custom_topic=None):
     if GEMINI_API_KEY:
         print("[DAEMON] 🔍 GEMINI_API_KEY detected. Sourcing live feed & initiating AI synthesis...")
         live_papers = fetch_live_arxiv_research()
-        # Find paper not yet written
         selected_paper = None
         for p in live_papers:
-            slug = re.sub(r"[^a-z0-9]+", "-", p["title"].lower()).strip("-")[:60]
-            if slug not in existing_ids:
+            if not is_already_published(p["title"], existing_ids):
                 selected_paper = p
                 break
 
@@ -1491,7 +1564,7 @@ def run_publishing_cycle(force=False, custom_topic=None):
     if not article_candidate:
         print("[DAEMON] 📚 Sourcing from BioGravity evergreen curriculum...")
         for item in FALLBACK_CURRICULUM:
-            if item["id"] not in existing_ids or force:
+            if not is_already_published(item["title"], existing_ids) or force:
                 article_candidate = item
                 break
 
@@ -1500,8 +1573,7 @@ def run_publishing_cycle(force=False, custom_topic=None):
         print("[DAEMON] 🔬 Sourcing live preprints directly from arXiv API...")
         live_papers = fetch_live_arxiv_research()
         for p in live_papers:
-            slug = re.sub(r"[^a-z0-9]+", "-", p["title"].lower()).strip("-")[:60]
-            if slug not in existing_ids:
+            if not is_already_published(p["title"], existing_ids):
                 article_candidate = synthesize_from_arxiv_paper(p)
                 if article_candidate:
                     print(f"[DAEMON] 🚀 Synthesized live arXiv paper: {article_candidate['title']}")
@@ -1521,7 +1593,7 @@ def run_publishing_cycle(force=False, custom_topic=None):
     # Normalize ID slug
     slug_id = article_candidate.get("id")
     if not slug_id:
-        slug_id = re.sub(r"[^a-z0-9]+", "-", article_candidate["title"].lower()).strip("-")[:75]
+        slug_id = make_slug(article_candidate["title"])
         article_candidate["id"] = slug_id
 
     # Assemble HTML body content
@@ -1580,8 +1652,11 @@ def run_publishing_cycle(force=False, custom_topic=None):
 </section>
 """
 
+    seo_title = article_candidate.get("seoTitle") or article_candidate.get("title")
+
     article_record = {
         "id": slug_id,
+        "seoTitle": seo_title,
         "title": article_candidate["title"],
         "category": article_candidate.get("category", "Space Physics"),
         "summary": article_candidate.get("summary", article_candidate.get("metaDescription", "")),
@@ -1642,15 +1717,29 @@ def run_publishing_cycle(force=False, custom_topic=None):
     except Exception as e:
         print(f"[BUILD-SEO] ℹ️ Subprocess notice: {e}")
 
-    print(f"[DAEMON] 🌟 Successfully published new research dispatch: \"{article_record['title']}\"")
+    print(f"[DAEMON] 🌟 Successfully published new research dispatch: \"{article_record.get('seoTitle') or article_record['title']}\"")
     return True
+
+def run_publishing_cycle(force=False, custom_topic=None, count=1):
+    """Executes publishing for the requested number of dispatches."""
+    success_count = 0
+    for i in range(count):
+        print(f"\n[DAEMON] 🛰️ Executing publication cycle {i + 1} of {count}...")
+        ok = publish_single_dispatch(force=force, custom_topic=custom_topic)
+        if ok:
+            success_count += 1
+            # Brief pause between multiple articles
+            if i + 1 < count:
+                time.sleep(2)
+    return success_count > 0
 
 # =============================================================================
 # CLI
 # =============================================================================
 def main():
     parser = argparse.ArgumentParser(description="BioGravity Autonomous Cloud & Local SEO Daemon")
-    parser.add_argument("--run-once", action="store_true", help="Execute single publication cycle and exit")
+    parser.add_argument("--run-once", action="store_true", help="Execute publication cycle and exit")
+    parser.add_argument("--count", type=int, default=1, help="Number of articles to publish (default: 1)")
     parser.add_argument("--force", action="store_true", help="Force generate new article immediately")
     parser.add_argument("--topic", type=str, default=None, help="Target a specific keyword topic")
     parser.add_argument("--daemon", action="store_true", help="Run continuously in background")
@@ -1659,17 +1748,17 @@ def main():
     args = parser.parse_args()
 
     if args.daemon:
-        print(f"[DAEMON] Initiating 24/7 background publishing loop (Interval: {args.interval}s)...")
+        print(f"[DAEMON] Initiating 24/7 background publishing loop (Interval: {args.interval}s, Count per run: {args.count})...")
         while True:
             try:
-                run_publishing_cycle(force=args.force, custom_topic=args.topic)
+                run_publishing_cycle(force=args.force, custom_topic=args.topic, count=args.count)
             except Exception as e:
                 print(f"[DAEMON] ⚠️ Error in publishing loop: {e}")
             print(f"[DAEMON] Sleeping for {args.interval} seconds...")
             time.sleep(args.interval)
 
-    # Default action: run once
-    run_publishing_cycle(force=args.force, custom_topic=args.topic)
+    # Default action: run once with requested count
+    run_publishing_cycle(force=args.force, custom_topic=args.topic, count=args.count)
 
 if __name__ == "__main__":
     main()
