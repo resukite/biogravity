@@ -2,6 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://biogravity.space/news/alien-life-at-14-000-feet-below-the-ocean-deep-sea-expedition</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-25T13:24:54.053Z</news:publication_date>
+      <news:title>Alien Life at 14,000 Feet Below the Ocean: Deep-Sea Expedition Finds Unseen Ecosystem</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/metal-rain-and-vaporized-iron-webb-telescope-reveals-extreme</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-25T13:24:54.053Z</news:publication_date>
+      <news:title>Metal Rain and Vaporized Iron: Webb Telescope Reveals Extreme Weather on Giant Alien World</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/living-solar-panels-scientists-turn-plant-chloroplasts-into</loc>
     <news:news>
       <news:publication>
