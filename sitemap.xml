@@ -130,6 +130,16 @@
 
   <!-- Pre-Rendered High-Authority Research Dispatches (Clean URLs) -->
   <url>
+    <loc>https://biogravity.space/articles/mixed-state-deep-thermalization-under-generic-quantum-errors</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Mixed State Deep Thermalization under Generic Quantum Errors</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://biogravity.space/articles/screening-strongly-correlated-materials-in-solid-oxide-cells</loc>
     <lastmod>2026-10-25</lastmod>
     <changefreq>weekly</changefreq>

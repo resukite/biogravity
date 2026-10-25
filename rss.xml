@@ -5,7 +5,7 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Oct 2026 07:32:39 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2026 10:53:58 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Living Solar Panels: Scientists Turn Plant Chloroplasts into Renewable Electricity</title>
@@ -42,6 +42,15 @@
       <dc:creator>BioGravity Science Bureau</dc:creator>
       <description>Metal Rain and Vaporized Iron: Webb Telescope Reveals Extreme Weather on Giant Alien World: Spectroscopic observations by JWST confirm gaseous nickel, iron, and vanadium in the exoplanet upper atmosphere, proving vaporized metal weather systems. Published via NASA Space Science Dispatch.</description>
       <category>Space &amp; Astronomy</category>
+    </item>
+    <item>
+      <title>CRISPR in Zero Gravity: Does Quantum Tunneling Accelerate Gene Editing?</title>
+      <link>https://biogravity.space/articles/mixed-state-deep-thermalization-under-generic-quantum-errors</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/mixed-state-deep-thermalization-under-generic-quantum-errors</guid>
+      <pubDate>Sun, 25 Oct 2026 10:53:58 GMT</pubDate>
+      <dc:creator>Xie-Hang Yu</dc:creator>
+      <description>Pure-state deep thermalization predicts that, after sufficient scrambling, projected ensembles approach universal distributions that contain information beyond the reduced density matrix. In realistic quantum systems, however, noise is unavoidable and the projected states are gen...</description>
+      <category>Quantum Enzymology</category>
     </item>
     <item>
       <title>Quantum Super-Sensors: How Orbital Cold Protects Fragile Entanglement</title>
