@@ -233,7 +233,7 @@ articles.forEach((art, idx) => {
   const relatedHtml = relatedArticles.map(rel => `
     <a href="/articles/${encodeURIComponent(rel.id)}" class="ux-card block p-3.5 border border-slate-200/80 hover:border-slate-300 transition group">
       <div class="text-[10px] font-semibold text-teal-600 uppercase tracking-wider">${escapeHtml(rel.category)}</div>
-      <div class="text-xs font-display font-semibold text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">${escapeHtml(rel.title)}</div>
+      <div class="text-xs font-display font-semibold text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">${escapeHtml(rel.seoTitle || rel.title)}</div>
       <div class="text-[10px] text-slate-400 mt-1.5 font-medium">${escapeHtml(rel.readtime || '8 min read')} • ${escapeHtml(rel.date)}</div>
     </a>
   `).join('\n');
@@ -455,8 +455,13 @@ ${JSON.stringify(schema, null, 2)}
         </div>
 
         <h1 class="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-slate-900 tracking-tight leading-tight">
-          ${escapeHtml(art.title)}
+          ${escapeHtml(art.seoTitle || art.title)}
         </h1>
+        ${art.seoTitle && art.seoTitle !== art.title ? `
+        <div class="pt-2">
+          <span class="text-xs font-semibold uppercase tracking-wider text-teal-600 block mb-1">Academic Research Monograph:</span>
+          <h2 class="text-sm sm:text-base text-slate-500 font-medium leading-relaxed">${escapeHtml(art.title)}</h2>
+        </div>` : ''}
 
         <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-slate-200 text-xs">
           <div class="flex items-center gap-3">
@@ -818,7 +823,7 @@ if (fs.existsSync(researchPath)) {
           <span class="text-slate-400 text-[11px]">${escapeHtml(art.readtime || '8 min read')}</span>
         </div>
         <h3 class="font-display font-bold text-base text-slate-900 group-hover:text-teal-600 transition mb-2.5 leading-snug">
-          <a href="/articles/${encodeURIComponent(art.id)}">${escapeHtml(art.title)}</a>
+          <a href="/articles/${encodeURIComponent(art.id)}">${escapeHtml(art.seoTitle || art.title)}</a>
         </h3>
         <p class="text-xs text-slate-600 line-clamp-3 leading-relaxed mb-4">
           ${escapeHtml(art.summary || art.excerpt || '')}
@@ -997,7 +1002,7 @@ if (fs.existsSync(indexPath)) {
                   <span class="text-slate-400">${escapeHtml(a.readtime || '10 min')}</span>
                 </div>
                 <h4 class="font-display font-bold text-sm text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mb-2">
-                  <a href="/articles/${encodeURIComponent(a.id)}">${escapeHtml(a.title)}</a>
+                  <a href="/articles/${encodeURIComponent(a.id)}">${escapeHtml(a.seoTitle || a.title)}</a>
                 </h4>
                 <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-3">
                   ${escapeHtml(a.summary)}
@@ -1175,7 +1180,7 @@ articles.forEach(art => {
   const cleanUrl = `${SITE_URL}/articles/${art.id}`;
   const pubDate = new Date(art.publishedIso || TODAY).toUTCString();
   rssXml += `    <item>
-      <title>${escapeXml(art.title)}</title>
+      <title>${escapeXml(art.seoTitle || art.title)}</title>
       <link>${cleanUrl}</link>
       <guid isPermaLink="true">${cleanUrl}</guid>
       <pubDate>${pubDate}</pubDate>
