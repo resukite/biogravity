@@ -130,6 +130,16 @@
 
   <!-- Pre-Rendered High-Authority Research Dispatches (Clean URLs) -->
   <url>
+    <loc>https://biogravity.space/articles/maximal-orbital-entanglement-from-non-interacting-fermions</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Maximal Orbital Entanglement from Non-Interacting Fermions</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://biogravity.space/articles/how-does-zero-gravity-kill-cancer-cells</loc>
     <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
