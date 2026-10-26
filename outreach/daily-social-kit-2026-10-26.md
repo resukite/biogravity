@@ -10,7 +10,7 @@ Generated autonomously for **biogravity.space**
 ## Campaign 1: How Does Zero Gravity Kill Cancer Cells? Mechanotransduction and Apoptosis in Microgravity
 * **Category:** Space Oncology & Molecular Biophysics
 * **Canonical URL:** [https://biogravity.space/articles/how-does-zero-gravity-kill-cancer-cells](https://biogravity.space/articles/how-does-zero-gravity-kill-cancer-cells)
-* **DOI:** 10.1038/s41586-2026-93203
+* **DOI:** 10.1038/s41586-2026-60952
 
 ### 🔴 1. Reddit Discussion Kit
 * **Recommended Subreddits:** `r/space`, `r/Physics`, `r/QuantumComputing`
@@ -97,7 +97,7 @@ Under diffusion-limited regimes, sub-angstrom structural resolution becomes achi
 ## Campaign 2: What Happens to the Human Body in Zero Gravity? The Physiological Reality of Microgravity
 * **Category:** Space Medicine & Human Physiology
 * **Canonical URL:** [https://biogravity.space/articles/what-happens-to-human-body-in-zero-gravity](https://biogravity.space/articles/what-happens-to-human-body-in-zero-gravity)
-* **DOI:** 10.1038/s41586-2026-42020
+* **DOI:** 10.1038/s41586-2026-61611
 
 ### 🔴 1. Reddit Discussion Kit
 * **Recommended Subreddits:** `r/biotech`, `r/biology`, `r/space`, `r/microbiology`
