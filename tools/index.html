@@ -241,6 +241,44 @@
       </div>
     </section>
 
+    <!-- ========================================================================= -->
+    <!-- 4. EMBEDDABLE LIVE SCIENCE WIRE WIDGET FOR WEBMASTERS (BACKLINK ENGINE) -->
+    <!-- ========================================================================= -->
+    <section class="bg-white border border-slate-200/80 rounded-2xl p-6 sm:p-8 shadow-xs">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+        <div>
+          <div class="flex items-center gap-2 mb-1">
+            <span class="px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider rounded-md bg-teal-50 text-teal-700 border border-teal-200/60">Free For Webmasters &amp; Educators</span>
+            <span class="text-xs text-slate-400">Embeddable Live Feed</span>
+          </div>
+          <h2 class="font-display font-bold text-xl sm:text-2xl text-slate-900">Embed BioGravity Live Science Wire on Your Website</h2>
+          <p class="text-slate-500 text-sm mt-1">Display our real-time breaking science discoveries and orbital telemetry on your website, blog, or research portal with this responsive widget.</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <!-- Live Preview -->
+        <div>
+          <div class="text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2">Live Widget Preview</div>
+          <iframe src="/embed/news-ticker.html" style="width: 100%; height: 260px; border: none; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);" title="BioGravity Live Science Wire Widget Preview"></iframe>
+        </div>
+
+        <!-- Copy Embed Code -->
+        <div class="space-y-4">
+          <div class="text-xs font-semibold text-slate-700 uppercase tracking-wider">Copy Embed Code (HTML)</div>
+          <p class="text-xs text-slate-500 leading-relaxed">Paste this snippet anywhere in your HTML (sidebars, footers, or article widgets). It automatically updates with the latest peer-reviewed science wire dispatches:</p>
+          <div class="relative">
+            <textarea readonly id="embed-code-snippet" class="w-full h-32 p-3 font-mono text-xs bg-slate-900 text-teal-300 rounded-xl border border-slate-800 resize-none selection:bg-teal-600 selection:text-white">&lt;iframe src="https://biogravity.space/embed/news-ticker.html" width="100%" height="260" frameborder="0" scrolling="no" style="border-radius:12px;border:1px solid #1e293b;max-width:480px;" title="BioGravity Live Science News"&gt;&lt;/iframe&gt;
+&lt;div style="font-size:10px;text-align:right;margin-top:4px;"&gt;Powered by &lt;a href="https://biogravity.space" target="_blank" rel="noopener" style="color:#0d9488;text-decoration:none;"&gt;BioGravity.space&lt;/a&gt;&lt;/div&gt;</textarea>
+            <button onclick="navigator.clipboard.writeText(document.getElementById('embed-code-snippet').value); this.innerText='Copied to Clipboard! 🎉'; setTimeout(() => this.innerText='Copy Code', 2000);" class="absolute top-2 right-2 px-3 py-1.5 bg-teal-500 hover:bg-teal-600 text-white rounded-lg text-xs font-medium transition cursor-pointer shadow-sm">Copy Code</button>
+          </div>
+          <div class="flex items-center gap-2 text-[11px] text-slate-500">
+            <span>✨ Zero maintenance • High-speed CDN delivery • 100% Free &amp; Open-Access</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- ========================================================================= -->
