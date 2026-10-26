@@ -17,7 +17,18 @@ const newsPath = path.join(__dirname, 'data', 'news.json');
 let newsArticles = [];
 if (fs.existsSync(newsPath)) {
   try {
-    newsArticles = JSON.parse(fs.readFileSync(newsPath, 'utf8'));
+    const rawNews = JSON.parse(fs.readFileSync(newsPath, 'utf8'));
+    const uniqueNewsMap = new Map();
+    rawNews.forEach(item => {
+      if (item && item.id && !uniqueNewsMap.has(item.id)) {
+        uniqueNewsMap.set(item.id, item);
+      }
+    });
+    newsArticles = Array.from(uniqueNewsMap.values());
+    if (newsArticles.length !== rawNews.length) {
+      fs.writeFileSync(newsPath, JSON.stringify(newsArticles, null, 2), 'utf8');
+      console.log(`[BUILD-SEO] 🧹 Deduplicated news.json: ${rawNews.length} -> ${newsArticles.length} unique stories.`);
+    }
   } catch (e) {
     newsArticles = [];
   }

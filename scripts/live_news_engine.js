@@ -862,12 +862,28 @@ async function runLiveNewsCycle(batchSize = 4) {
     const passed = AdSenseAuditor.audit(dispatch);
     if (!passed) continue;
 
-    // Step 6: Save to Database
-    newsDatabase.unshift(dispatch);
+    // Step 6: Save to Database (Strict Deduplication by ID)
+    const existingIndex = newsDatabase.findIndex(item => item.id === dispatch.id);
+    if (existingIndex >= 0) {
+      newsDatabase[existingIndex] = dispatch; // Update existing without duplicating
+      console.log(`[Database] 🔄 Updated existing story without duplicate: ${dispatch.id}`);
+    } else {
+      newsDatabase.unshift(dispatch);
+      console.log(`[Database] ➕ Inserted new unique story: ${dispatch.id}`);
+    }
   }
 
+  // Deduplicate entire array as a safety guarantee
+  const uniqueNewsMap = new Map();
+  for (const item of newsDatabase) {
+    if (!uniqueNewsMap.has(item.id)) {
+      uniqueNewsMap.set(item.id, item);
+    }
+  }
+  newsDatabase = Array.from(uniqueNewsMap.values());
+
   fs.writeFileSync(newsJsonPath, JSON.stringify(newsDatabase, null, 2), 'utf8');
-  console.log(`[Orchestrator] 💾 Saved ${newsDatabase.length} total news stories to data/news.json.`);
+  console.log(`[Orchestrator] 💾 Saved ${newsDatabase.length} unique news stories to data/news.json.`);
 
   // Step 7: Render Individual HTML Pages (with directory index & .html)
   for (const item of newsDatabase) {
