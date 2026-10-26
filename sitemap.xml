@@ -130,6 +130,26 @@
 
   <!-- Pre-Rendered High-Authority Research Dispatches (Clean URLs) -->
   <url>
+    <loc>https://biogravity.space/articles/how-does-zero-gravity-kill-cancer-cells</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>How Does Zero Gravity Kill Cancer Cells? Mechanotransduction and Apoptosis in Microgravity</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/what-happens-to-human-body-in-zero-gravity</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1517976487507-5b3b11329582?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>What Happens to the Human Body in Zero Gravity? The Physiological Reality of Microgravity</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://biogravity.space/articles/size-independent-logarithmic-sobolev-inequalities-for-quantum</loc>
     <lastmod>2026-10-25</lastmod>
     <changefreq>weekly</changefreq>

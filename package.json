@@ -12,6 +12,8 @@
     "approve": "node auto-publisher.js --approve",
     "reject": "node auto-publisher.js --reject",
     "build-seo": "node build-seo.js",
+    "write-viral": "node scripts/auto-viral-writer.js",
+    "sentinel": "node scripts/traffic-sentinel.js",
     "cloud-daemon": "python cloud_seo_daemon.py --run-once",
     "local-daemon": "python local_seo_daemon.py",
     "sync-md": "node sync-markdown.js",

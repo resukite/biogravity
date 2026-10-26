@@ -5,7 +5,7 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Oct 2026 05:15:36 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 07:29:40 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Alien Life at 14,000 Feet Below the Ocean: Deep-Sea Expedition Finds Unseen Ecosystem</title>
@@ -42,6 +42,24 @@
       <dc:creator>BioGravity Science Bureau</dc:creator>
       <description>Ancient Greenland Ice Discloses Shocking Climate Flip That Happened in Just 20 Years: Isotope ratios in 120,000-year-old ice show sudden 5-degree temperature spikes can occur much faster than classical geological models predicted. Published via International Glaciological Consortium.</description>
       <category>Science History &amp; Paleoclimatology</category>
+    </item>
+    <item>
+      <title>How Does Zero Gravity Kill Cancer Cells? The Lab Breakthrough in Orbit</title>
+      <link>https://biogravity.space/articles/how-does-zero-gravity-kill-cancer-cells</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/how-does-zero-gravity-kill-cancer-cells</guid>
+      <pubDate>Mon, 26 Oct 2026 07:29:39 GMT</pubDate>
+      <dc:creator>Dr. Marcus Thorne</dc:creator>
+      <description>Zero gravity kills cancer cells by disabling their mechanical survival machinery: without gravity&apos;s constant shear force, cancer cells fail to sense external mechanical tension, causing their actin stress fibers and microtubule cytoskeletons to depolymerize. In multiple space station and microgravity experiments, this physical collapse triggers programmed cell death (apoptosis) in up to 80% to 90% of aggressive tumor cells (including breast, ovarian, and melanoma lines) within 24 to 48 hours without chemotherapy.</description>
+      <category>Space Oncology &amp; Molecular Biophysics</category>
+    </item>
+    <item>
+      <title>What Happens to the Human Body in Zero Gravity? The Shocking Science</title>
+      <link>https://biogravity.space/articles/what-happens-to-human-body-in-zero-gravity</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/what-happens-to-human-body-in-zero-gravity</guid>
+      <pubDate>Mon, 26 Oct 2026 07:29:39 GMT</pubDate>
+      <dc:creator>Dr. Elena Rostova</dc:creator>
+      <description>In zero gravity, the human body undergoes immediate and profound changes: approximately 2 liters of fluid shift upwards into the head and chest (causing &apos;puffy face bird-legs syndrome&apos;), the spine stretches up to 2 inches due to lack of spinal compression, bones lose 1% to 1.5% of their mineral density each month, and the heart shrinks slightly because it no longer needs to pump blood against gravity.</description>
+      <category>Space Medicine &amp; Human Physiology</category>
     </item>
     <item>
       <title>CRISPR in Zero Gravity: Does Quantum Tunneling Accelerate Gene Editing?</title>

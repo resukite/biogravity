@@ -165,23 +165,25 @@ You are the Lead Scientific Investigator and Senior Science Writer for BioGravit
 Write a masterpiece, publication-grade scientific research dispatch based on this source:
 {source_context}
 
-CRITICAL GOOGLE ADSENSE & E-E-A-T POLICY REQUIREMENTS:
-1. Deep Analytical Value: Strictly NO generic AI fluff, platitudes ("In this fast-paced world...", "Delve into..."), or superficial summaries. Write with the depth and tone of Nature, Science, or Physical Review Letters.
-2. Real-World Physical Analogy: Provide a vivid, highly intuitive, real-world physical analogy that makes the complex biophysical concept crystal clear to researchers, undergraduate students, and educated readers.
-3. Mathematical & Physical Rigor: Include exact KaTeX mathematical equations (using $$...$$ for block math, and $...$ for inline math). Include formulas such as Hamiltonian operators, Arrhenius vs quantum tunneling rates, Young-Laplace pressure, WKB approximation, Debye lengths, or Navier-Stokes microgravity terms.
-4. Empirical Telemetry Comparison Table: Provide an HTML comparison table comparing Terrestrial Laboratory (1G) baseline metrics against Orbital Microgravity (0.04 μg) results with specific realistic units, percentages, and variance factors.
-5. Student & Researcher Study Guide: Break down 4 core conceptual review takeaways.
-6. Google Search & Featured Snippets FAQ: Provide 3 high-value Q&As structured for Google Rich Snippets.
-7. Academic Bibliography: Include 4 realistic peer-reviewed citations with DOIs.
+CRITICAL GOOGLE ADSENSE & VIRAL SEARCH (E-E-A-T) POLICY REQUIREMENTS:
+1. High-Demand Question Format: The seoTitle MUST be a compelling, curiosity-driven QUESTION that real humans type into Google and Reddit (e.g., 'What Happens to the Human Body in Zero Gravity?', 'Can Tardigrade DNA Protect Astronauts From Cosmic Radiation?', 'Why Do Cancer Cells Die in Microgravity?').
+2. Google Featured Snippet Quick Answer: Provide a concise, definitive 2-3 sentence 'quickAnswer' directly answering the core question. This will be featured at the very top of the page to win Google's Position 0 Featured Snippet.
+3. Real-World Physical Analogy: Provide a vivid, highly intuitive, real-world physical analogy that makes the complex biophysical concept crystal clear to researchers, undergraduate students, and curious readers.
+4. Mathematical & Physical Rigor: Include exact KaTeX mathematical equations (using $$...$$ for block math, and $...$ for inline math). Include formulas such as Hamiltonian operators, Arrhenius vs quantum tunneling rates, Young-Laplace pressure, WKB approximation, Debye lengths, or Navier-Stokes microgravity terms.
+5. Empirical Telemetry Comparison Table: Provide an HTML comparison table comparing Terrestrial Laboratory (1G) baseline metrics against Orbital Microgravity (0.04 μg) results with specific realistic units, percentages, and variance factors.
+6. Student & Researcher Study Guide: Break down 4 core conceptual review takeaways.
+7. Google Search & Featured Snippets FAQ: Provide 3 high-value Q&As structured for Google Rich Snippets and People Also Ask (PAA).
+8. Academic Bibliography: Include 3-4 realistic peer-reviewed citations with DOIs.
 
 OUTPUT FORMAT: Return ONLY a valid JSON object with EXACTLY this structure (no markdown fences, raw JSON only):
 {{
-  "id": "kebab-case-slug-under-65-chars",
-  "seoTitle": "High-CTR, curiosity-driven, captivating title under 65 chars that real humans click (e.g. 'Why Scientists Are 3D-Printing Hearts in Space' or 'Can Humans Sense Magnetic Fields? The Quantum Secret in Our Eyes')",
-  "title": "Formal Peer-Reviewed Scientific Title (Under 100 characters)",
-  "category": "Quantum Enzymology | Space Physics & Biosensing | Microgravity Fluid Dynamics | Cosmic Radioprotection",
+  "id": "kebab-case-question-slug-under-65-chars",
+  "seoTitle": "Curiosity-driven question title under 65 chars (e.g. 'What Happens to the Human Body in Zero Gravity?')",
+  "title": "Comprehensive Scientific Title (Under 100 characters)",
+  "category": "Space Medicine & Physiology | Quantum Enzymology | Space Physics & Biosensing | Microgravity Fluid Dynamics | Cosmic Radioprotection",
+  "quickAnswer": "Direct, 2-3 sentence definitive answer to the question for Google featured snippet position 0.",
   "summary": "150-word executive scientific summary highlighting the breakthrough findings.",
-  "primaryKeyword": "primary search keyword phrase",
+  "primaryKeyword": "primary search question keyword phrase",
   "metaDescription": "SEO meta description under 155 characters designed for maximum CTR in Google search, highlighting the fascinating implication.",
   "author": "Dr. Elena Rostova",
   "authorRole": "Lead Investigator, Orbital BioPhysics Consortium",
@@ -1598,6 +1600,18 @@ def publish_single_dispatch(force=False, custom_topic=None):
 
     # Assemble HTML body content
     full_content = ""
+    if article_candidate.get("quickAnswer"):
+        full_content += f"""
+<div class="mb-8 p-6 rounded-2xl border-2 border-emerald-500/40 bg-slate-900/90 backdrop-blur-md shadow-xl shadow-emerald-950/30">
+  <div class="flex items-center gap-2 text-xs font-mono text-emerald-400 uppercase tracking-widest mb-2 font-bold">
+    <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+    ⚡ The Direct Answer (Google Quick Summary)
+  </div>
+  <p class="text-base text-slate-100 leading-relaxed font-medium">
+    {escape_html(article_candidate['quickAnswer'])}
+  </p>
+</div>
+"""
     if article_candidate.get("keyTakeaways"):
         li_items = "".join([f"<li>{kt}</li>" for kt in article_candidate["keyTakeaways"]])
         full_content += f"""
