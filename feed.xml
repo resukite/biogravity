@@ -5,7 +5,7 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 27 Oct 2026 10:12:47 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 11:44:06 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>The &apos;Forever Chemical&apos; Breakthrough: Mutant Soil Fungi Wipe Out Toxic PFAS in 96 Hours</title>
@@ -80,12 +80,21 @@
       <category>Science History &amp; Paleoclimatology</category>
     </item>
     <item>
+      <title>Quantum Biology in Orbit: How Microgravity Unlocks Complete entropy contraction from.</title>
+      <link>https://biogravity.space/articles/complete-entropy-contraction-from-conditional-hyperboundedness</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/complete-entropy-contraction-from-conditional-hyperboundedness</guid>
+      <pubDate>Tue, 27 Oct 2026 11:44:06 GMT</pubDate>
+      <dc:creator>Li Gao</dc:creator>
+      <description>For finite-dimensional quantum channels compatible with a faithful conditional expectation, we show that conditional hyperboundedness and strict GNS contraction together yield a relative entropy contraction. For KMS-symmetric quantum Markov semigroups, a conditional $2\to q$ hype.</description>
+      <category>Quantum Enzymology</category>
+    </item>
+    <item>
       <title>What Statement About Risks in Social and Behavioral Sciences Research Is Most Accurate? Complete Guide</title>
       <link>https://biogravity.space/articles/what-statement-about-risks-in-social-and-behavioral-sciences-research-is-most-accurate</link>
       <guid isPermaLink="true">https://biogravity.space/articles/what-statement-about-risks-in-social-and-behavioral-sciences-research-is-most-accurate</guid>
       <pubDate>Tue, 27 Oct 2026 10:00:00 GMT</pubDate>
       <dc:creator>Dr. Elena Rostova &amp; BioGravity Ethics Board</dc:creator>
-      <description>The most accurate statement about risks in social and behavioral sciences research is that risks are primarily non-physical—centered on psychological distress, breaches of confidentiality, social stigma, and economic or legal liability—and the vast majority of studies fall under the regulatory threshold of &quot;minimal risk.&quot; Discover the comprehensive Common Rule (45 CFR 46) breakdown, IRB review levels, and risk mitigation frameworks.</description>
+      <description>The most accurate statement about risks in social and behavioral sciences research is that risks are primarily non-physical - centered on psychological distress, breaches of confidentiality, social stigma, and economic or legal liability - and the vast majority of studies fall under the regulatory threshold of &quot;minimal risk.&quot; Discover the comprehensive Common Rule (45 CFR 46) breakdown, IRB review levels, and risk mitigation frameworks.</description>
       <category>Research Ethics &amp; Methodology</category>
     </item>
     <item>
@@ -94,7 +103,7 @@
       <guid isPermaLink="true">https://biogravity.space/articles/ideal-interaction-dynamics-of-defects-and-background-fields-in</guid>
       <pubDate>Mon, 26 Oct 2026 22:23:11 GMT</pubDate>
       <dc:creator>François Gay-Balmaz</dc:creator>
-      <description>While defect dynamics in condensed matter systems is widely studied and several methods are available to track the defect position over time, the formulation of dynamical models for the coupled evolution of both defect and background field quantities seems to be more challenging....</description>
+      <description>While defect dynamics in condensed matter systems is widely studied and several methods are available to track the defect position over time, the formulation of dynamical models for the coupled evolution of both defect and background field quantities seems to be more challenging.</description>
       <category>Microgravity Fluid Dynamics</category>
     </item>
     <item>
