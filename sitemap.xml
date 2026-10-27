@@ -109,7 +109,7 @@
   </url>
   <url>
     <loc>https://biogravity.space/news/alien-life-at-14-000-feet-below-the-ocean-deep-sea-expedition</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.98</priority>
     <image:image>
@@ -149,6 +149,16 @@
   </url>
 
   <!-- Pre-Rendered High-Authority Research Dispatches (Clean URLs) -->
+  <url>
+    <loc>https://biogravity.space/articles/ideal-interaction-dynamics-of-defects-and-background-fields-in</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Ideal interaction dynamics of defects and background fields in condensed matter</image:title>
+    </image:image>
+  </url>
   <url>
     <loc>https://biogravity.space/articles/maximal-orbital-entanglement-from-non-interacting-fermions</loc>
     <lastmod>2026-10-26</lastmod>
