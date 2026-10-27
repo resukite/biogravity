@@ -5,7 +5,7 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 27 Oct 2026 19:48:31 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 21:53:39 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Beyond Lithium: Non-Flammable Sodium Solid-State Battery Achieves 2,000 Cycles with Zero Dendrites</title>
@@ -114,6 +114,15 @@
       <dc:creator>BioGravity Science Bureau</dc:creator>
       <description>Ancient Greenland Ice Discloses Shocking Climate Flip That Happened in Just 20 Years: Isotope ratios in 120,000-year-old ice show sudden 5-degree temperature spikes can occur much faster than classical geological models predicted. Published via International Glaciological Consortium.</description>
       <category>Science History &amp; Paleoclimatology</category>
+    </item>
+    <item>
+      <title>Spacecraft Sensors in Orbit: The Physics Behind Interaction of Strong X-mode Waves.</title>
+      <link>https://biogravity.space/articles/interaction-of-strong-x-mode-waves-with-magnetized-pair-plasmas</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/interaction-of-strong-x-mode-waves-with-magnetized-pair-plasmas</guid>
+      <pubDate>Tue, 27 Oct 2026 21:53:38 GMT</pubDate>
+      <dc:creator>Navin Sridhar</dc:creator>
+      <description>The interaction of strong ($a_0&gt;1$), superluminal X-mode electromagnetic waves with magnetized pair plasma falls into two regimes set by $\varepsilon_{\rm B}\equiv a_0ω_{\rm B}/ω_0$, the ratio of the wave strength parameter to its frequency, in units of cyclotron frequency. For $.</description>
+      <category>Space Physics &amp; Biosensing</category>
     </item>
     <item>
       <title>Quantum Biology in Orbit: How Microgravity Unlocks Complete entropy contraction from.</title>

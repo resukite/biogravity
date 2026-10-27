@@ -210,6 +210,16 @@
 
   <!-- Pre-Rendered High-Authority Research Dispatches (Clean URLs) -->
   <url>
+    <loc>https://biogravity.space/articles/interaction-of-strong-x-mode-waves-with-magnetized-pair-plasmas</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Interaction of Strong X-mode Waves with Magnetized Pair Plasmas</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://biogravity.space/articles/complete-entropy-contraction-from-conditional-hyperboundedness</loc>
     <lastmod>2026-10-27</lastmod>
     <changefreq>weekly</changefreq>
