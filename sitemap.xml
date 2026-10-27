@@ -88,6 +88,26 @@
 
   <!-- Live Science Dispatches (Google Discover & News Priority) -->
   <url>
+    <loc>https://biogravity.space/news/the-forever-chemical-breakthrough-mutant-soil-fungi-wipe-out</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85</image:loc>
+      <image:title>The &apos;Forever Chemical&apos; Breakthrough: Mutant Soil Fungi Wipe Out Toxic PFAS in 96 Hours</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/50-000-year-old-dental-tartar-proves-neanderthals-used-natural</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1533158307587-828f0a76ef46?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85</image:loc>
+      <image:title>50,000-Year-Old Dental Tartar Proves Neanderthals Used Natural Aspirin and Penicillin</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/fault-tolerant-quantum-leap-physicists-successfully-shield</loc>
     <lastmod>2026-10-27</lastmod>
     <changefreq>daily</changefreq>
