@@ -170,6 +170,16 @@
 
   <!-- Pre-Rendered High-Authority Research Dispatches (Clean URLs) -->
   <url>
+    <loc>https://biogravity.space/articles/what-statement-about-risks-in-social-and-behavioral-sciences-research-is-most-accurate</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>What Statement About Risks in Social and Behavioral Sciences Research Is Most Accurate? Common Rule, IRB Review &amp; Ethics Guide</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://biogravity.space/articles/ideal-interaction-dynamics-of-defects-and-background-fields-in</loc>
     <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
