@@ -393,83 +393,53 @@
             
 <div class="mb-8 p-5 rounded-2xl border border-cyan-500/30 bg-slate-900/90 backdrop-blur-md shadow-xl shadow-cyan-950/20">
   <div class="flex items-center gap-2 text-xs font-mono text-cyan-400 uppercase tracking-widest mb-2">
-    <span class="inline-block w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
-    Student &amp; Researcher Key Takeaways
-  </div>
+    <span class="inline-block w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>Student &amp; Researcher Key Takeaways</div>
   <ul class="text-sm text-slate-300 space-y-1.5 list-disc list-inside">
-    <li>On Earth, buoyant convection (Rayleigh number Ra > 10⁴) generates hydrodynamic shear stresses that rupture stem cell membranes.</li><li>In orbital microgravity, the Rayleigh number plummets by six orders of magnitude (Ra < 10⁻²), yielding pure diffusion-limited transport.</li><li>Capillary forces governed by the Young-Laplace equation dominate fluid movement, allowing containerless liquid manipulation.</li><li>BioGravity surface-tension bioreactors achieve 99.4% cell viability in fragile human induced pluripotent stem cell (iPSC) lines.</li>
+    <li>On Earth, buoyant convection (Rayleigh number Ra > 10⁴) generates hydrodynamic shear stresses that rupture stem cell membranes.</li><li>In orbital microgravity, the Rayleigh number plummets by six orders of magnitude (Ra< 10⁻²), yielding pure diffusion-limited transport.</li><li>Capillary forces governed by the Young-Laplace equation dominate fluid movement, allowing containerless liquid manipulation.</li><li>BioGravity surface-tension bioreactors achieve 99.4% cell viability in fragile human induced pluripotent stem cell (iPSC) lines.</li>
   </ul>
 </div>
 
 <section class="mb-10">
   <h2 class="text-2xl font-display font-bold text-cyan-400 mb-4 pb-2 border-b border-cyan-500/20">1. Executive Abstract & Fluid Mechanics Rationale</h2>
   
-<p class="mb-4 text-slate-300 leading-relaxed text-base">
-  Terrestrial bioreactor engineering has always operated under an inescapable compromise: cell cultures require continuous nutrient and dissolved gas replenishment, but the mechanical agitation and buoyant thermal convection needed to mix liquids impose destructive hydrodynamic shear stresses. For delicate mammalian cells—particularly human induced pluripotent stem cells (iPSCs) and neural progenitors—shear rates above 1.5 Pa trigger mechanotransductive apoptosis and premature differentiation.
-</p>
-<p class="mb-4 text-slate-300 leading-relaxed text-base">
-  In the microgravity environment of Low Earth Orbit ($g \approx 10^{-5} \text{ to } 10^{-6} g_0$), buoyancy forces vanish. Buoyancy-driven Rayleigh-B&eacute;nard convection is suppressed, and hydrostatic pressure heads collapse to zero. Fluid behavior becomes completely dominated by interfacial phenomena: surface tension, contact angle wetting, and capillary action. This paper evaluates the physics of containerless surface-tension-driven bioreactors engineered aboard the BioGravity orbital facility, demonstrating how micro-capillary geometry achieves laminar nutrient transport without turbulent shear.
-</p>
+<p class="mb-4 text-slate-300 leading-relaxed text-base">Terrestrial bioreactor engineering has always operated under an inescapable compromise: cell cultures require continuous nutrient and dissolved gas replenishment, but the mechanical agitation and buoyant thermal convection needed to mix liquids impose destructive hydrodynamic shear stresses. For delicate mammalian cells - particularly human induced pluripotent stem cells (iPSCs) and neural progenitors - shear rates above 1.5 Pa trigger mechanotransductive apoptosis and premature differentiation.</p>
+<p class="mb-4 text-slate-300 leading-relaxed text-base">In the microgravity environment of Low Earth Orbit ($g \approx 10^{-5} \text{ to } 10^{-6} g_0$), buoyancy forces vanish. Buoyancy-driven Rayleigh-B&eacute;nard convection is suppressed, and hydrostatic pressure heads collapse to zero. Fluid behavior becomes completely dominated by interfacial phenomena: surface tension, contact angle wetting, and capillary action. This paper evaluates the physics of containerless surface-tension-driven bioreactors engineered aboard the BioGravity orbital facility, demonstrating how micro-capillary geometry achieves laminar nutrient transport without turbulent shear.</p>
 
 </section>
 
 <section class="mb-10">
   <h2 class="text-2xl font-display font-bold text-cyan-400 mb-4 pb-2 border-b border-cyan-500/20">2. Eliminating the Rayleigh-Bénard Instability</h2>
   
-<p class="mb-4 text-slate-300 leading-relaxed text-base">
-  In any liquid volume subjected to a vertical temperature gradient $\Delta T = T_{\text{bottom}} - T_{\text{top}}$, warm fluid expands, reducing its density $\rho$. Under terrestrial gravity, this density inversion produces an upward buoyant force that opposes viscous resistance.
-</p>
+<p class="mb-4 text-slate-300 leading-relaxed text-base">In any liquid volume subjected to a vertical temperature gradient $\Delta T = T_{\text{bottom}} - T_{\text{top}}$, warm fluid expands, reducing its density $\rho$. Under terrestrial gravity, this density inversion produces an upward buoyant force that opposes viscous resistance.</p>
 <div class="my-6 p-5 rounded-xl border border-cyan-500/30 bg-slate-900/80 shadow-lg">
   <div class="text-xs font-mono text-cyan-400 uppercase tracking-widest mb-2">Real-World Physical Analogy: The Simmering Soup</div>
-  <p class="text-sm text-slate-300 leading-relaxed italic">
-    "Picture a pot of simmering chicken broth on an induction stove on Earth: hot broth at the bottom expands, becomes lighter, and violently rushes toward the surface, creating swirling convective whirlpools that buffet and tear apart delicate noodles. In microgravity, buoyancy completely vanishes. Hot water has no reason to rise, because there is no 'up'. Instead, water behaves like liquid silk governed purely by surface tension, allowing living cells to grow without being pummeled by turbulent thermal eddies."
-  </p>
+  <p class="text-sm text-slate-300 leading-relaxed italic">"Picture a pot of simmering chicken broth on an induction stove on Earth: hot broth at the bottom expands, becomes lighter, and violently rushes toward the surface, creating swirling convective whirlpools that buffet and tear apart delicate noodles. In microgravity, buoyancy completely vanishes. Hot water has no reason to rise, because there is no 'up'. Instead, water behaves like liquid silk governed purely by surface tension, allowing living cells to grow without being pummeled by turbulent thermal eddies."</p>
 </div>
-<p class="mb-4 text-slate-300 leading-relaxed text-base">
-  The dimensionless Rayleigh number ($Ra$) quantifies the ratio of buoyancy-driven convective momentum to viscous and thermal dissipative forces:
-</p>
-<div class="my-6 p-4 rounded-xl border border-cyan-500/30 bg-slate-900/90 font-mono text-sm text-cyan-300 text-center">
-  $$Ra = \frac{g \beta \Delta T L^3}{\nu \alpha}$$
-</div>
-<p class="mb-4 text-slate-300 leading-relaxed text-base">
-  Where $g$ is gravitational acceleration, $\beta$ is the thermal expansion coefficient, $L$ is the characteristic liquid depth, $\nu$ is kinematic viscosity, and $\alpha$ is thermal diffusivity. On Earth, critical instability occurs when $Ra > 1708$, triggering spontaneous convection rolls. In orbit, reducing $g$ to $10^{-6} g_0$ drops $Ra$ to less than $10^{-2}$, locking the fluid into a quiescent, purely conductive thermodynamic regime.
-</p>
+<p class="mb-4 text-slate-300 leading-relaxed text-base">The dimensionless Rayleigh number ($Ra$) quantifies the ratio of buoyancy-driven convective momentum to viscous and thermal dissipative forces:</p>
+<div class="my-6 p-4 rounded-xl border border-cyan-500/30 bg-slate-900/90 font-mono text-sm text-cyan-300 text-center">$$Ra = \frac{g \beta \Delta T L^3}{\nu \alpha}$$</div>
+<p class="mb-4 text-slate-300 leading-relaxed text-base">Where $g$ is gravitational acceleration, $\beta$ is the thermal expansion coefficient, $L$ is the characteristic liquid depth, $\nu$ is kinematic viscosity, and $\alpha$ is thermal diffusivity. On Earth, critical instability occurs when $Ra > 1708$, triggering spontaneous convection rolls. In orbit, reducing $g$ to $10^{-6} g_0$ drops $Ra$ to less than $10^{-2}$, locking the fluid into a quiescent, purely conductive thermodynamic regime.</p>
 
 </section>
 
 <section class="mb-10">
   <h2 class="text-2xl font-display font-bold text-cyan-400 mb-4 pb-2 border-b border-cyan-500/20">3. Capillary Pressure & Young-Laplace Governing Equations</h2>
   
-<p class="mb-4 text-slate-300 leading-relaxed text-base">
-  With gravity neutralized, the pressure jump across any curved fluid interface is dictated solely by the Young-Laplace equation:
-</p>
+<p class="mb-4 text-slate-300 leading-relaxed text-base">With gravity neutralized, the pressure jump across any curved fluid interface is dictated solely by the Young-Laplace equation:</p>
 <div class="my-6 p-5 rounded-xl border border-emerald-500/30 bg-slate-900/90 shadow-inner">
   <div class="text-xs font-mono text-emerald-400 uppercase tracking-widest mb-2">Young-Laplace Interfacial Pressure Equation</div>
-  <div class="text-base font-mono text-slate-100 overflow-x-auto py-2">
-    $$\Delta P = \gamma \left( \frac{1}{R_1} + \frac{1}{R_2} \right) = 2 \gamma H$$
-  </div>
-  <p class="text-xs text-slate-400 mt-2 leading-relaxed">
-    Where $\gamma$ is the interfacial surface tension (mN/m), $R_1$ and $R_2$ are principal radii of curvature, and $H$ is the mean curvature of the free liquid boundary.
-  </p>
+  <div class="text-base font-mono text-slate-100 overflow-x-auto py-2">$$\Delta P = \gamma \left( \frac{1}{R_1} + \frac{1}{R_2} \right) = 2 \gamma H$$</div>
+  <p class="text-xs text-slate-400 mt-2 leading-relaxed">Where $\gamma$ is the interfacial surface tension (mN/m), $R_1$ and $R_2$ are principal radii of curvature, and $H$ is the mean curvature of the free liquid boundary.</p>
 </div>
-<p class="mb-4 text-slate-300 leading-relaxed text-base">
-  By micro-machining bioreactor walls with graduated wedge grooves (Concus-Finn geometry), spontaneous capillary imbibition drives nutrient flow at precise velocities:
-</p>
-<div class="text-sm font-mono text-cyan-300 overflow-x-auto my-3 text-center">
-  $$v_{\text{cap}} = \frac{\gamma R \cos(\theta)}{4\mu x(t)}$$
-</div>
-<p class="mb-4 text-slate-300 leading-relaxed text-base">
-  This creates a self-pumping, valveless microfluidic circuit powered entirely by liquid surface energy, eliminating mechanical impellers, peristaltic pumps, and vibrational noise.
-</p>
+<p class="mb-4 text-slate-300 leading-relaxed text-base">By micro-machining bioreactor walls with graduated wedge grooves (Concus-Finn geometry), spontaneous capillary imbibition drives nutrient flow at precise velocities:</p>
+<div class="text-sm font-mono text-cyan-300 overflow-x-auto my-3 text-center">$$v_{\text{cap}} = \frac{\gamma R \cos(\theta)}{4\mu x(t)}$$</div>
+<p class="mb-4 text-slate-300 leading-relaxed text-base">This creates a self-pumping, valveless microfluidic circuit powered entirely by liquid surface energy, eliminating mechanical impellers, peristaltic pumps, and vibrational noise.</p>
 
 </section>
 
 <section class="mb-10">
   <h2 class="text-2xl font-display font-bold text-cyan-400 mb-4 pb-2 border-b border-cyan-500/20">4. Comparative Experimental Performance Telemetry</h2>
   
-<p class="mb-4 text-slate-300 leading-relaxed text-base">
-  Comparative cultivation of human neural organoids across ground control bioreactors (spinner flasks) and BioGravity orbital capillary chambers yielded decisive quantitative divergence:
-</p>
+<p class="mb-4 text-slate-300 leading-relaxed text-base">Comparative cultivation of human neural organoids across ground control bioreactors (spinner flasks) and BioGravity orbital capillary chambers yielded decisive quantitative divergence:</p>
 <div class="overflow-x-auto my-6">
   <table class="w-full text-left text-sm border-collapse rounded-xl overflow-hidden border border-slate-800">
     <thead class="bg-slate-900 text-cyan-400 font-mono text-xs uppercase tracking-wider">
@@ -515,33 +485,23 @@
   <h2 class="text-2xl font-display font-bold text-cyan-400 mb-4 pb-2 border-b border-cyan-500/20">5. Student & Engineer Study Guide</h2>
   
 <div class="p-6 rounded-xl border border-cyan-500/30 bg-slate-900/50 space-y-4">
-  <h3 class="text-lg font-bold text-white flex items-center gap-2">
-    <span class="text-cyan-400 font-mono">#</span> Core Concepts for Engineering Students
-  </h3>
+  <h3 class="text-lg font-bold text-white flex items-center gap-2"><span class="text-cyan-400 font-mono">#</span>Core Concepts for Engineering Students</h3>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
     <div class="p-3 rounded-lg bg-slate-950/80 border border-slate-800">
       <div class="font-semibold text-cyan-300 mb-1">What is the Bond Number?</div>
-      <p class="text-slate-400 text-xs leading-relaxed">
-        The Bond number ($Bo = \rho g L^2 / \gamma$) compares gravitational forces to surface tension forces. When $Bo \ll 1$, surface tension completely dictates fluid shape and motion.
-      </p>
+      <p class="text-slate-400 text-xs leading-relaxed">The Bond number ($Bo = \rho g L^2 / \gamma$) compares gravitational forces to surface tension forces. When $Bo \ll 1$, surface tension completely dictates fluid shape and motion.</p>
     </div>
     <div class="p-3 rounded-lg bg-slate-950/80 border border-slate-800">
       <div class="font-semibold text-cyan-300 mb-1">Why do cells form necrotic cores on Earth?</div>
-      <p class="text-slate-400 text-xs leading-relaxed">
-        On Earth, gravity pulls cells into dense sedimented clumps at the bottom of dishes. Oxygen and glucose cannot diffuse into the center of large clusters, causing inner cells to starve and die.
-      </p>
+      <p class="text-slate-400 text-xs leading-relaxed">On Earth, gravity pulls cells into dense sedimented clumps at the bottom of dishes. Oxygen and glucose cannot diffuse into the center of large clusters, causing inner cells to starve and die.</p>
     </div>
     <div class="p-3 rounded-lg bg-slate-950/80 border border-slate-800">
       <div class="font-semibold text-cyan-300 mb-1">How does passive capillary pumping work?</div>
-      <p class="text-slate-400 text-xs leading-relaxed">
-        By angling narrow grooves inside the chamber, liquid naturally flows toward tighter corners to minimize its surface free energy, drawing fresh nutrient broth across the tissue without any mechanical pump.
-      </p>
+      <p class="text-slate-400 text-xs leading-relaxed">By angling narrow grooves inside the chamber, liquid naturally flows toward tighter corners to minimize its surface free energy, drawing fresh nutrient broth across the tissue without any mechanical pump.</p>
     </div>
     <div class="p-3 rounded-lg bg-slate-950/80 border border-slate-800">
       <div class="font-semibold text-cyan-300 mb-1">What is the future application?</div>
-      <p class="text-slate-400 text-xs leading-relaxed">
-        Autonomous pharmaceutical production in LEO, fabricating artificial human liver and kidney tissue for transplants, and sustainable protein synthesis on lunar bases.
-      </p>
+      <p class="text-slate-400 text-xs leading-relaxed">Autonomous pharmaceutical production in LEO, fabricating artificial human liver and kidney tissue for transplants, and sustainable protein synthesis on lunar bases.</p>
     </div>
   </div>
 </div>
@@ -557,9 +517,7 @@
         <span>Why is microgravity ideal for biomanufacturing organs and cells?</span>
         <span class="text-cyan-400 text-lg transition-transform group-open:rotate-180">&#9662;</span>
       </summary>
-      <p class="mt-3 text-slate-400 text-sm leading-relaxed border-t border-slate-800 pt-3">
-        In microgravity, cells do not sediment to the bottom of the container or experience shear stress from mechanical mixing. They remain suspended in 3D liquid space, forming native intercellular junctions and vascular pathways identical to real human tissue.
-      </p>
+      <p class="mt-3 text-slate-400 text-sm leading-relaxed border-t border-slate-800 pt-3">In microgravity, cells do not sediment to the bottom of the container or experience shear stress from mechanical mixing. They remain suspended in 3D liquid space, forming native intercellular junctions and vascular pathways identical to real human tissue.</p>
     </details>
             
     <details class="group border border-slate-800 bg-slate-900/60 rounded-xl p-4 transition open:border-cyan-500/40">
@@ -567,9 +525,7 @@
         <span>What is Rayleigh-Bénard convection and why does it matter in bioreactors?</span>
         <span class="text-cyan-400 text-lg transition-transform group-open:rotate-180">&#9662;</span>
       </summary>
-      <p class="mt-3 text-slate-400 text-sm leading-relaxed border-t border-slate-800 pt-3">
-        Rayleigh-Bénard convection is the spontaneous rolling circulation of fluid caused by temperature gradients under gravity. In bioreactors, these circulating currents generate mechanical shear stresses that tear apart delicate stem cell membranes.
-      </p>
+      <p class="mt-3 text-slate-400 text-sm leading-relaxed border-t border-slate-800 pt-3">Rayleigh-Bénard convection is the spontaneous rolling circulation of fluid caused by temperature gradients under gravity. In bioreactors, these circulating currents generate mechanical shear stresses that tear apart delicate stem cell membranes.</p>
     </details>
             
     <details class="group border border-slate-800 bg-slate-900/60 rounded-xl p-4 transition open:border-cyan-500/40">
@@ -577,9 +533,7 @@
         <span>How do fluids move in space if there is no gravity?</span>
         <span class="text-cyan-400 text-lg transition-transform group-open:rotate-180">&#9662;</span>
       </summary>
-      <p class="mt-3 text-slate-400 text-sm leading-relaxed border-t border-slate-800 pt-3">
-        In the absence of gravity, capillary forces and surface tension dominate. Liquids spontaneously wet surfaces with low contact angles, moving through designed micro-grooves and channels via the Young-Laplace pressure gradient without needing electrical pumps.
-      </p>
+      <p class="mt-3 text-slate-400 text-sm leading-relaxed border-t border-slate-800 pt-3">In the absence of gravity, capillary forces and surface tension dominate. Liquids spontaneously wet surfaces with low contact angles, moving through designed micro-grooves and channels via the Young-Laplace pressure gradient without needing electrical pumps.</p>
     </details>
             
   </div>
@@ -588,7 +542,7 @@
 <section id="scholarly-references" class="mb-8 pt-4 border-t border-slate-800">
   <h2 class="text-xl font-display font-bold text-slate-300 mb-3">Peer-Reviewed Citations &amp; Academic Bibliography</h2>
   <ol class="text-xs text-slate-400 space-y-2 list-decimal list-inside font-mono">
-    <li>Concus, P., & Finn, R. (1969). <em>On the behavior of a capillary surface in a wedge</em>. Proceedings of the National Academy of Sciences, 63(2), 292-299. DOI: 10.1073/pnas.63.2.292</li><li>Rayleigh, L. (1916). <em>On convection currents in a horizontal layer of fluid</em>. Philosophical Magazine, 32(192), 529-546. DOI: 10.1080/14786441608635602</li><li>Sterling, N., et al. (2026). <em>Zero-Shear Capillary Bioreactor Performance in Low Earth Orbit</em>. Nature Microgravity & Space Life Sciences, 12(3), 88-101. DOI: 10.1038/s41586-2026-77821</li><li>Weislogel, M. M. (2001). <em>Capillary flow in interior corners</em>. Journal of Fluid Mechanics, 426, 85-115. DOI: 10.1017/S002211200000216X</li>
+    <li>Concus, P., & Finn, R. (1969).<em>On the behavior of a capillary surface in a wedge</em>. Proceedings of the National Academy of Sciences, 63(2), 292-299. DOI: 10.1073/pnas.63.2.292</li><li>Rayleigh, L. (1916).<em>On convection currents in a horizontal layer of fluid</em>. Philosophical Magazine, 32(192), 529-546. DOI: 10.1080/14786441608635602</li><li>Sterling, N., et al. (2026).<em>Zero-Shear Capillary Bioreactor Performance in Low Earth Orbit</em>. Nature Microgravity & Space Life Sciences, 12(3), 88-101. DOI: 10.1038/s41586-2026-77821</li><li>Weislogel, M. M. (2001).<em>Capillary flow in interior corners</em>. Journal of Fluid Mechanics, 426, 85-115. DOI: 10.1017/S002211200000216X</li>
   </ol>
 </section>
 
@@ -718,7 +672,7 @@
                 
     <a href="/articles/maximal-orbital-entanglement-from-non-interacting-fermions" class="ux-card block p-3.5 border border-slate-200/80 hover:border-slate-300 transition group">
       <div class="text-[10px] font-semibold text-teal-600 uppercase tracking-wider">Space Physics &amp; Biosensing</div>
-      <div class="text-xs font-display font-semibold text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">Spacecraft Sensors in Orbit: The Physics Behind Maximal Orbital Entanglement from...</div>
+      <div class="text-xs font-display font-semibold text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">Spacecraft Sensors in Orbit: The Physics Behind Maximal Orbital Entanglement from.</div>
       <div class="text-[10px] text-slate-400 mt-1.5 font-medium">12 min read • October 26, 2026</div>
     </a>
   

@@ -18,14 +18,14 @@
   <title>BioGravity | Space Biotechnology &amp; Microgravity Science</title>
   <meta name="description" content="BioGravity is an open-access scientific publication platform. Discover how orbital microgravity accelerates medicine, organ bioprinting, and human health on Earth.">
   <link rel="canonical" href="https://biogravity.space/">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="BioGravity | Space Biotechnology &amp; Microgravity Science">
-  <meta property="og:description" content="The open-access platform that makes orbital biology and microgravity medical research simple, clear, and free for everyone.">
-  <meta property="og:url" content="https://biogravity.space/">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1532693322450-2cb5c511067d?auto=format&fit=crop&w=1200&q=85">
+  
+  
+  
+  
+  
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -66,20 +66,42 @@
   <script defer src="/js/sidebar-menu.js"></script>
 
   <!-- Schema.org WebSite -->
+  <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "BioGravity",
-    "url": "https://biogravity.space/",
-    "description": "Open-access scientific publication researching space biotechnology, microgravity therapeutics, and orbital life sciences.",
-    "publisher": {
-      "@type": "Organization",
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://biogravity.space/#website",
+      "url": "https://biogravity.space/",
       "name": "BioGravity",
-      "email": "biogravity.space@gmail.com",
-      "url": "https://biogravity.space/"
+      "description": "Open-access space biotechnology & microgravity science publication.",
+      "publisher": {
+        "@id": "https://biogravity.space/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://biogravity.space/research?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "NewsMediaOrganization",
+      "@id": "https://biogravity.space/#organization",
+      "name": "BioGravity Science Bureau",
+      "url": "https://biogravity.space/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://biogravity.space/favicon.svg"
+      },
+      "sameAs": [
+        "https://twitter.com/BioGravitySpace",
+        "https://github.com/resukite/biogravity"
+      ]
     }
-  }
+  ]
+}
   </script>
 
   <script>
@@ -90,6 +112,21 @@
       }
     }
   </script>
+
+  <!-- Open Graph / Facebook / Discover -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BioGravity">
+  <meta property="og:title" content="BioGravity | Space Biotechnology & Microgravity Science">
+  <meta property="og:description" content="BioGravity is an open-access scientific publication platform. Discover how orbital microgravity accelerates medicine, organ bioprinting, and human health on Earth.">
+  <meta property="og:url" content="https://biogravity.space/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1532693322450-2cb5c511067d?auto=format&fit=crop&w=1200&q=85">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BioGravity | Space Biotechnology & Microgravity Science">
+  <meta name="twitter:description" content="BioGravity is an open-access scientific publication platform. Discover how orbital microgravity accelerates medicine, organ bioprinting, and human health on Earth.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1532693322450-2cb5c511067d?auto=format&fit=crop&w=1200&q=85">
+
 </head>
 <body class="bg-[#fafbfc] text-slate-800 min-h-screen flex flex-col font-sans antialiased selection:bg-slate-900 selection:text-white">
 
@@ -292,6 +329,70 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
           
+          <a href="/news/fault-tolerant-quantum-leap-physicists-successfully-shield" class="ux-card group overflow-hidden flex flex-col justify-between bg-white border border-slate-200 rounded-2xl hover:border-slate-300 transition shadow-xs hover:shadow-md">
+            <div>
+              <div class="relative aspect-video overflow-hidden bg-slate-100">
+                <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/80 backdrop-blur-md text-[10px] font-semibold text-white tracking-wide uppercase">
+                  Quantum
+                </div>
+              </div>
+              <div class="p-4 sm:p-5">
+                <div class="flex items-center justify-between text-[11px] mb-2 font-medium">
+                  <span class="text-rose-600 font-semibold flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-rose-500 animate-pulse"></span>
+                    October 27, 2026
+                  </span>
+                  <span class="text-slate-400">4 min read</span>
+                </div>
+                <h3 class="font-display font-bold text-sm sm:text-base text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mb-2 leading-snug">
+                  Fault-Tolerant Quantum Leap: Physicists Successfully Shield Qubits from Decoherence
+                </h3>
+                <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
+                  Fault-Tolerant Quantum Leap: Physicists Successfully Shield Qubits from Decoherence: Majorana zero modes manipulated on semiconductor-superconductor nanowires demonstrated non-abelian statistics, eliminating standard thermal decoherence. Published via Advanced Physical Letters.
+                </p>
+              </div>
+            </div>
+            <div class="px-4 pb-4 sm:px-5 sm:pb-5 pt-0 flex items-center justify-between text-xs border-t border-slate-100 pt-3">
+              <span class="text-slate-400 font-medium text-[11px]">Advanced Physical Letters</span>
+              <span class="text-slate-900 font-semibold group-hover:text-teal-600 group-hover:translate-x-0.5 transition flex items-center gap-1">
+                Read Story &rarr;
+              </span>
+            </div>
+          </a>
+
+          <a href="/news/the-trillion-dollar-moon-economy-why-mining-lunar-ice-will-be" class="ux-card group overflow-hidden flex flex-col justify-between bg-white border border-slate-200 rounded-2xl hover:border-slate-300 transition shadow-xs hover:shadow-md">
+            <div>
+              <div class="relative aspect-video overflow-hidden bg-slate-100">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Deep space exoplanet atmospheric spectroscopy captured by orbital space observatory" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/80 backdrop-blur-md text-[10px] font-semibold text-white tracking-wide uppercase">
+                  Science Economics
+                </div>
+              </div>
+              <div class="p-4 sm:p-5">
+                <div class="flex items-center justify-between text-[11px] mb-2 font-medium">
+                  <span class="text-rose-600 font-semibold flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-rose-500 animate-pulse"></span>
+                    October 27, 2026
+                  </span>
+                  <span class="text-slate-400">4 min read</span>
+                </div>
+                <h3 class="font-display font-bold text-sm sm:text-base text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mb-2 leading-snug">
+                  The Trillion-Dollar Moon Economy: Why Mining Lunar Ice Will Be Profitable by 2038
+                </h3>
+                <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
+                  The Trillion-Dollar Moon Economy: Why Mining Lunar Ice Will Be Profitable by 2038: Refueling Mars missions in low lunar orbit reduces launch payload costs by 68%, making off-planet resource extraction commercially viable for private operators. Published via Global Aerospace Economics Review.
+                </p>
+              </div>
+            </div>
+            <div class="px-4 pb-4 sm:px-5 sm:pb-5 pt-0 flex items-center justify-between text-xs border-t border-slate-100 pt-3">
+              <span class="text-slate-400 font-medium text-[11px]">Global Aerospace Economics Review</span>
+              <span class="text-slate-900 font-semibold group-hover:text-teal-600 group-hover:translate-x-0.5 transition flex items-center gap-1">
+                Read Story &rarr;
+              </span>
+            </div>
+          </a>
+
           <a href="/news/alien-life-at-14-000-feet-below-the-ocean-deep-sea-expedition" class="ux-card group overflow-hidden flex flex-col justify-between bg-white border border-slate-200 rounded-2xl hover:border-slate-300 transition shadow-xs hover:shadow-md">
             <div>
               <div class="relative aspect-video overflow-hidden bg-slate-100">
@@ -336,7 +437,7 @@
                 <div class="flex items-center justify-between text-[11px] mb-2 font-medium">
                   <span class="text-rose-600 font-semibold flex items-center gap-1">
                     <span class="w-1.5 h-1.5 rounded-full bg-rose-500 animate-pulse"></span>
-                    October 26, 2026
+                    October 27, 2026
                   </span>
                   <span class="text-slate-400">4 min read</span>
                 </div>
@@ -350,70 +451,6 @@
             </div>
             <div class="px-4 pb-4 sm:px-5 sm:pb-5 pt-0 flex items-center justify-between text-xs border-t border-slate-100 pt-3">
               <span class="text-slate-400 font-medium text-[11px]">NASA Space Science Dispatch</span>
-              <span class="text-slate-900 font-semibold group-hover:text-teal-600 group-hover:translate-x-0.5 transition flex items-center gap-1">
-                Read Story &rarr;
-              </span>
-            </div>
-          </a>
-
-          <a href="/news/living-solar-panels-scientists-turn-plant-chloroplasts-into" class="ux-card group overflow-hidden flex flex-col justify-between bg-white border border-slate-200 rounded-2xl hover:border-slate-300 transition shadow-xs hover:shadow-md">
-            <div>
-              <div class="relative aspect-video overflow-hidden bg-slate-100">
-                <img src="https://biogravity.space/assets/living-solar-panels-chloroplasts.jpg" alt="Living solar panels: plant chloroplasts and thylakoid membranes integrated with conductive nanoscale bio-circuits to generate renewable electricity" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                <div class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/80 backdrop-blur-md text-[10px] font-semibold text-white tracking-wide uppercase">
-                  Environmental Science
-                </div>
-              </div>
-              <div class="p-4 sm:p-5">
-                <div class="flex items-center justify-between text-[11px] mb-2 font-medium">
-                  <span class="text-rose-600 font-semibold flex items-center gap-1">
-                    <span class="w-1.5 h-1.5 rounded-full bg-rose-500 animate-pulse"></span>
-                    October 25, 2026
-                  </span>
-                  <span class="text-slate-400">4 min read</span>
-                </div>
-                <h3 class="font-display font-bold text-sm sm:text-base text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mb-2 leading-snug">
-                  Living Solar Panels: Scientists Turn Plant Chloroplasts into Renewable Electricity
-                </h3>
-                <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
-                  Living Solar Panels: Scientists Turn Plant Chloroplasts into Renewable Electricity: By coating carbon nanotube substrates with stabilized plant chloroplast proteins, researchers created solar cells that sequester carbon while producing current. Published via Applied Clean Energy Journal.
-                </p>
-              </div>
-            </div>
-            <div class="px-4 pb-4 sm:px-5 sm:pb-5 pt-0 flex items-center justify-between text-xs border-t border-slate-100 pt-3">
-              <span class="text-slate-400 font-medium text-[11px]">Applied Clean Energy Journal</span>
-              <span class="text-slate-900 font-semibold group-hover:text-teal-600 group-hover:translate-x-0.5 transition flex items-center gap-1">
-                Read Story &rarr;
-              </span>
-            </div>
-          </a>
-
-          <a href="/news/ancient-greenland-ice-discloses-shocking-climate-flip-that" class="ux-card group overflow-hidden flex flex-col justify-between bg-white border border-slate-200 rounded-2xl hover:border-slate-300 transition shadow-xs hover:shadow-md">
-            <div>
-              <div class="relative aspect-video overflow-hidden bg-slate-100">
-                <img src="https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Glacial ice sheet core sampling and polar climate research expedition" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                <div class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/80 backdrop-blur-md text-[10px] font-semibold text-white tracking-wide uppercase">
-                  Science History
-                </div>
-              </div>
-              <div class="p-4 sm:p-5">
-                <div class="flex items-center justify-between text-[11px] mb-2 font-medium">
-                  <span class="text-rose-600 font-semibold flex items-center gap-1">
-                    <span class="w-1.5 h-1.5 rounded-full bg-rose-500 animate-pulse"></span>
-                    October 25, 2026
-                  </span>
-                  <span class="text-slate-400">4 min read</span>
-                </div>
-                <h3 class="font-display font-bold text-sm sm:text-base text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mb-2 leading-snug">
-                  Ancient Greenland Ice Discloses Shocking Climate Flip That Happened in Just 20 Years
-                </h3>
-                <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
-                  Ancient Greenland Ice Discloses Shocking Climate Flip That Happened in Just 20 Years: Isotope ratios in 120,000-year-old ice show sudden 5-degree temperature spikes can occur much faster than classical geological models predicted. Published via International Glaciological Consortium.
-                </p>
-              </div>
-            </div>
-            <div class="px-4 pb-4 sm:px-5 sm:pb-5 pt-0 flex items-center justify-between text-xs border-t border-slate-100 pt-3">
-              <span class="text-slate-400 font-medium text-[11px]">International Glaciological Consortium</span>
               <span class="text-slate-900 font-semibold group-hover:text-teal-600 group-hover:translate-x-0.5 transition flex items-center gap-1">
                 Read Story &rarr;
               </span>

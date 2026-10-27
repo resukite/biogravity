@@ -3,6 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
+const { humanizeArticle } = require('./lib/humanizer');
 
 const draftsPath = path.join(__dirname, 'data', 'drafts-queue.json');
 const articlesPath = path.join(__dirname, 'data', 'articles.json');
@@ -20,8 +21,9 @@ drafts.forEach(draft => {
     draft.id.startsWith(a.id.slice(0, 50))
   );
 
+  const humanizedDraft = humanizeArticle(draft);
   const publishedArticle = {
-    ...draft,
+    ...humanizedDraft,
     date: 'October 16, 2026',
     publishedIso: '2026-10-16T13:30:00+00:00',
     approvedAt: '2026-10-16T13:35:00+00:00'

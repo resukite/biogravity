@@ -1,0 +1,198 @@
+{
+  "totalUrls": 44,
+  "indexedCount": 29,
+  "notIndexedCount": 14,
+  "breakdown": {
+    "indexed": 29,
+    "discoveredNotIndexed": 0,
+    "crawledNotIndexed": 0,
+    "unknownToGoogle": 14,
+    "errors": 1
+  },
+  "details": {
+    "indexed": [
+      {
+        "url": "https://biogravity.space/",
+        "coverage": "Submitted and indexed"
+      },
+      {
+        "url": "https://biogravity.space/news",
+        "coverage": "Submitted and indexed"
+      },
+      {
+        "url": "https://biogravity.space/research",
+        "coverage": "Submitted and indexed"
+      },
+      {
+        "url": "https://biogravity.space/tools",
+        "coverage": "Submitted and indexed"
+      },
+      {
+        "url": "https://biogravity.space/world-space-week-2026",
+        "coverage": "Crawled - currently not indexed"
+      },
+      {
+        "url": "https://biogravity.space/molecular-biology-research",
+        "coverage": "Submitted and indexed"
+      },
+      {
+        "url": "https://biogravity.space/about",
+        "coverage": "Submitted and indexed"
+      },
+      {
+        "url": "https://biogravity.space/contact",
+        "coverage": "Discovered - currently not indexed"
+      },
+      {
+        "url": "https://biogravity.space/sitemap",
+        "coverage": "Submitted and indexed"
+      },
+      {
+        "url": "https://biogravity.space/privacy-policy",
+        "coverage": "Submitted and indexed"
+      },
+      {
+        "url": "https://biogravity.space/terms",
+        "coverage": "Submitted and indexed"
+      },
+      {
+        "url": "https://biogravity.space/news/alien-life-at-14-000-feet-below-the-ocean-deep-sea-expedition",
+        "coverage": "Submitted and indexed"
+      },
+      {
+        "url": "https://biogravity.space/news/metal-rain-and-vaporized-iron-webb-telescope-reveals-extreme",
+        "coverage": "Submitted and indexed"
+      },
+      {
+        "url": "https://biogravity.space/news/living-solar-panels-scientists-turn-plant-chloroplasts-into",
+        "coverage": "Submitted and indexed"
+      },
+      {
+        "url": "https://biogravity.space/news/ancient-greenland-ice-discloses-shocking-climate-flip-that",
+        "coverage": "Submitted and indexed"
+      },
+      {
+        "url": "https://biogravity.space/articles/size-independent-logarithmic-sobolev-inequalities-for-quantum",
+        "coverage": "Discovered - currently not indexed"
+      },
+      {
+        "url": "https://biogravity.space/articles/mixed-state-deep-thermalization-under-generic-quantum-errors",
+        "coverage": "Submitted and indexed"
+      },
+      {
+        "url": "https://biogravity.space/articles/screening-strongly-correlated-materials-in-solid-oxide-cells",
+        "coverage": "Submitted and indexed"
+      },
+      {
+        "url": "https://biogravity.space/articles/a-priori-estimation-of-the-non-linear-compression-potential-and",
+        "coverage": "Submitted and indexed"
+      },
+      {
+        "url": "https://biogravity.space/articles/phonon-assisted-free-electron-recoil-control-and-mechanical-sensing",
+        "coverage": "Submitted and indexed"
+      },
+      {
+        "url": "https://biogravity.space/articles/characterizing-supersolid-phase-transitions-in-trapped-quantum-gases-w",
+        "coverage": "Submitted and indexed"
+      },
+      {
+        "url": "https://biogravity.space/articles/relativistic-time-dilation-and-mitochondrial-aging-clocks",
+        "coverage": "Submitted and indexed"
+      },
+      {
+        "url": "https://biogravity.space/articles/zero-g-capillary-fluidics-and-surface-tension-bioreactors",
+        "coverage": "Submitted and indexed"
+      },
+      {
+        "url": "https://biogravity.space/articles/debye-shielding-and-plasma-sheath-dynamics-in-spacecraft-biosensing",
+        "coverage": "Submitted and indexed"
+      },
+      {
+        "url": "https://biogravity.space/articles/radical-pair-spin-coherence-and-magnetoreception-in-human-cryptochrome-4-photore",
+        "coverage": "Submitted and indexed"
+      },
+      {
+        "url": "https://biogravity.space/articles/synthetic-poly-adp-metallo-peptides-for-telomeric-radioprotection-in-deep-space-",
+        "coverage": "Submitted and indexed"
+      },
+      {
+        "url": "https://biogravity.space/articles/acoustic-levitation-and-scaffold-free-vascularized-cardiac-organoid-bioprinting-",
+        "coverage": "Submitted and indexed"
+      },
+      {
+        "url": "https://biogravity.space/articles/sub-angstrom-macromolecular-crystallography-of-membrane-transporters-in-orbital-",
+        "coverage": "Submitted and indexed"
+      },
+      {
+        "url": "https://biogravity.space/articles/non-thermal-quantum-proton-tunneling-in-crispr-cas9-catalytic-triads-orbital-evi",
+        "coverage": "Submitted and indexed"
+      }
+    ],
+    "discoveredNotIndexed": [],
+    "crawledNotIndexed": [],
+    "unknownToGoogle": [
+      {
+        "url": "https://biogravity.space/articles/how-does-zero-gravity-kill-cancer-cells",
+        "coverage": "URL is unknown to Google"
+      },
+      {
+        "url": "https://biogravity.space/articles/what-happens-to-human-body-in-zero-gravity",
+        "coverage": "URL is unknown to Google"
+      },
+      {
+        "url": "https://biogravity.space/articles/what-does-quantum-parameter-estimation-estimate-a-no-go-result-for-tru",
+        "coverage": "URL is unknown to Google"
+      },
+      {
+        "url": "https://biogravity.space/articles/microbial-biofilm-antibiotic-resistance-iss-closed-loop-habitats",
+        "coverage": "URL is unknown to Google"
+      },
+      {
+        "url": "https://biogravity.space/articles/cerebrovascular-glymphatic-clearance-microgravity-optic-nerve-syndrome",
+        "coverage": "URL is unknown to Google"
+      },
+      {
+        "url": "https://biogravity.space/articles/photosystem-ii-charge-separation-far-red-light-orbital-bioreactors",
+        "coverage": "URL is unknown to Google"
+      },
+      {
+        "url": "https://biogravity.space/articles/bose-einstein-polariton-condensation-orbital-microgravity",
+        "coverage": "URL is unknown to Google"
+      },
+      {
+        "url": "https://biogravity.space/articles/epigenetic-t-cell-activation-remodeling-extended-spaceflight",
+        "coverage": "URL is unknown to Google"
+      },
+      {
+        "url": "https://biogravity.space/articles/self-assembling-chiral-nanotubes-zero-convection-solute-gradients",
+        "coverage": "URL is unknown to Google"
+      },
+      {
+        "url": "https://biogravity.space/articles/mitochondrial-electron-transport-efficiency-spaceflight-radiation",
+        "coverage": "URL is unknown to Google"
+      },
+      {
+        "url": "https://biogravity.space/articles/biomineralization-hydroxyapatite-scaffolds-simulated-lunar-freefall",
+        "coverage": "URL is unknown to Google"
+      },
+      {
+        "url": "https://biogravity.space/articles/single-cell-rna-seq-endothelial-cells-hyperstatic-weightlessness",
+        "coverage": "URL is unknown to Google"
+      },
+      {
+        "url": "https://biogravity.space/articles/squid-biosensing-neuronal-action-potentials-low-earth-orbit",
+        "coverage": "URL is unknown to Google"
+      },
+      {
+        "url": "https://biogravity.space/articles/tardigrade-dsup-protein-chromatin-radioprotective-compaction",
+        "coverage": "URL is unknown to Google"
+      }
+    ],
+    "errors": [
+      {
+        "url": "https://biogravity.space/disclaimer",
+        "error": "Internal error encountered."
+      }
+    ]
+  }
+}

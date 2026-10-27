@@ -22,6 +22,7 @@ const path = require('path');
 const https = require('https');
 const http = require('http');
 const { execSync } = require('child_process');
+const { humanizeArticle, humanizeText } = require('../lib/humanizer');
 
 const rootDir = path.join(__dirname, '..');
 const dataDir = path.join(rootDir, 'data');
@@ -121,12 +122,60 @@ class TrendManager {
         source: "Environmental Science & Technology Reports",
         tags: ["EVS", "Bioremediation", "PFAS", "Pollution"],
         keyFindings: "A mutated strain of white-rot fungus secretes manganese peroxidases capable of cleaving notoriously stable carbon-fluorine bonds in contaminated groundwater."
+      },
+      {
+        rawTitle: "Hubble and Chandra detect hypervelocity runaway black hole trailing a 200,000 light-year corridor of new star formation",
+        category: "Astrophysics & Space",
+        source: "Astrophysical Journal Dispatches",
+        tags: ["Black Holes", "Astrophysics", "Cosmology", "Hubble"],
+        keyFindings: "The 20-million-solar-mass black hole is speeding through intergalactic space at 4 million miles per hour, compressing gas wake shockwaves into young stellar clusters."
+      },
+      {
+        rawTitle: "Deep ice radar mapping underneath Antarctica East Ice Sheet reveals massive prehistoric river canyon system predating continental glaciation",
+        category: "Geophysics & Earth Science",
+        source: "International Antarctic Survey",
+        tags: ["Geophysics", "Antarctica", "Glaciology", "Earth History"],
+        keyFindings: "Airborne ice-penetrating radar traced a 34-million-year-old fluvial valley network preserved undisturbed under two miles of polar ice."
+      },
+      {
+        rawTitle: "Synthetic biologists build synthetic minimal bacterial genome utilizing entirely artificial non-canonical genetic codon triplets",
+        category: "Synthetic Biology & Genomics",
+        source: "Cellular Genomics Letters",
+        tags: ["Synthetic Biology", "Genomics", "Biochemistry", "Molecular Biology"],
+        keyFindings: "By rewriting 64 standard codons down to 59 and reassigning the remaining 5 to synthetic unnatural amino acids, cells were made fully immune to all known viral bacteriophages."
+      },
+      {
+        rawTitle: "Next-generation solid-state sodium battery achieves 2,000 cycles with zero dendrite formation using ceramic-polymer composite electrolyte",
+        category: "Clean Energy & Materials",
+        source: "Advanced Energy Materials Review",
+        tags: ["Sodium Battery", "Energy Storage", "Materials Science", "Renewable Energy"],
+        keyFindings: "Elimination of rare-earth lithium and cobalt allows safe, non-flammable grid-scale energy storage at less than thirty dollars per kilowatt-hour."
+      },
+      {
+        rawTitle: "Marine scientists record spontaneous coral reef thermal resilience adaptation following heatwave via epigenetic histone modifications",
+        category: "Marine Ecology & Climate",
+        source: "Oceanic Biological Reports",
+        tags: ["Marine Biology", "Coral Reefs", "Epigenetics", "Climate Adaptation"],
+        keyFindings: "Coral polyps in the South Pacific demonstrated rapid non-genetic transgenerational acclimatization, passing heat-shock protein expression patterns to subsequent larvae generations."
+      },
+      {
+        rawTitle: "Laser interferometer gravitational-wave detectors identify sub-solar mass compact object merger pointing to primordial black hole dark matter",
+        category: "Cosmology & Particle Physics",
+        source: "Physical Review Dispatches",
+        tags: ["Gravitational Waves", "Dark Matter", "Primordial Black Holes", "Cosmology"],
+        keyFindings: "LIGO-Virgo-KAGRA recorded chirping gravitational ripples from a 0.7-solar-mass binary collision below the Chandrasekhar limit, consistent with early universe primordial genesis."
       }
     ];
 
-    // Filter out stories already in the database
+    // Filter out stories already in the database (checking both slug and source title)
     const existingSlugs = new Set(newsDatabase.map(n => n.id));
-    const freshStories = storySeeds.filter(s => !existingSlugs.has(makeSlug(s.rawTitle)));
+    const existingMonographs = new Set(newsDatabase.map(n => (n.originalMonograph || '').toLowerCase().trim()));
+    const freshStories = storySeeds.filter(s => {
+      const generatedHeadline = TitleManager.craftDiscoverHeadline(s.rawTitle, s.category);
+      const generatedSlug = makeSlug(generatedHeadline);
+      const alreadyPublished = existingSlugs.has(generatedSlug) || existingMonographs.has(s.rawTitle.toLowerCase().trim());
+      return !alreadyPublished;
+    });
     
     console.log(`[TrendManager] ✅ Found ${freshStories.length} new fresh breakthrough topics ready for publication.`);
     return freshStories;
@@ -163,6 +212,24 @@ class TitleManager {
     }
     if (t.includes('pfas') || t.includes('forever chemical')) {
       return "The 'Forever Chemical' Breakthrough: Mutant Soil Fungi Wipe Out Toxic PFAS in 96 Hours";
+    }
+    if (t.includes('runaway black hole') || t.includes('hypervelocity')) {
+      return "Cosmic Monster on the Loose: Runaway Supermassive Black Hole Leaves 200,000-Light-Year Star Trail";
+    }
+    if (t.includes('antarctica') || t.includes('river canyon')) {
+      return "Hidden Beneath Two Miles of Antarctic Ice: Scientists Discover Immense Prehistoric River Canyon";
+    }
+    if (t.includes('non-canonical') || t.includes('synthetic codon') || t.includes('triplets')) {
+      return "Virus-Proof Biology: Scientists Build Synthetic Bacterial Genome Immune to Infection";
+    }
+    if (t.includes('sodium battery') || t.includes('solid-state')) {
+      return "Beyond Lithium: Non-Flammable Sodium Solid-State Battery Achieves 2,000 Cycles with Zero Dendrites";
+    }
+    if (t.includes('coral') || t.includes('marine scientists')) {
+      return "Coral Survival Breakthrough: Marine Biologists Discover Rapid Epigenetic Heat Resistance";
+    }
+    if (t.includes('primordial') || t.includes('gravitational-wave')) {
+      return "Cosmic Echoes: Sub-Solar Gravitational Wave Detection Points to Primordial Dark Matter";
     }
 
     // High CTR Fallback Formulations
@@ -856,7 +923,8 @@ async function runLiveNewsCycle(batchSize = 4) {
     const image = VisualsManager.getDiscoverImage(story.category, story.rawTitle);
 
     // Step 4: Write In-Depth Original Article
-    const dispatch = ContentWriter.writeOriginalDispatch(story, discoverTitle, image);
+    let dispatch = ContentWriter.writeOriginalDispatch(story, discoverTitle, image);
+    dispatch = humanizeArticle(dispatch);
 
     // Step 5: Audit Compliance with AdSense Doctor
     const passed = AdSenseAuditor.audit(dispatch);

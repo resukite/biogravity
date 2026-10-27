@@ -5,8 +5,26 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Oct 2026 15:33:04 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 08:21:00 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Fault-Tolerant Quantum Leap: Physicists Successfully Shield Qubits from Decoherence</title>
+      <link>https://biogravity.space/news/fault-tolerant-quantum-leap-physicists-successfully-shield</link>
+      <guid isPermaLink="true">https://biogravity.space/news/fault-tolerant-quantum-leap-physicists-successfully-shield</guid>
+      <pubDate>Tue, 27 Oct 2026 08:06:08 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Fault-Tolerant Quantum Leap: Physicists Successfully Shield Qubits from Decoherence: Majorana zero modes manipulated on semiconductor-superconductor nanowires demonstrated non-abelian statistics, eliminating standard thermal decoherence. Published via Advanced Physical Letters.</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
+    <item>
+      <title>The Trillion-Dollar Moon Economy: Why Mining Lunar Ice Will Be Profitable by 2038</title>
+      <link>https://biogravity.space/news/the-trillion-dollar-moon-economy-why-mining-lunar-ice-will-be</link>
+      <guid isPermaLink="true">https://biogravity.space/news/the-trillion-dollar-moon-economy-why-mining-lunar-ice-will-be</guid>
+      <pubDate>Tue, 27 Oct 2026 08:02:06 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>The Trillion-Dollar Moon Economy: Why Mining Lunar Ice Will Be Profitable by 2038: Refueling Mars missions in low lunar orbit reduces launch payload costs by 68%, making off-planet resource extraction commercially viable for private operators. Published via Global Aerospace Economics Review.</description>
+      <category>Science Economics &amp; Space Industry</category>
+    </item>
     <item>
       <title>Alien Life at 14,000 Feet Below the Ocean: Deep-Sea Expedition Finds Unseen Ecosystem</title>
       <link>https://biogravity.space/news/alien-life-at-14-000-feet-below-the-ocean-deep-sea-expedition</link>
@@ -20,7 +38,7 @@
       <title>Metal Rain and Vaporized Iron: Webb Telescope Reveals Extreme Weather on Giant Alien World</title>
       <link>https://biogravity.space/news/metal-rain-and-vaporized-iron-webb-telescope-reveals-extreme</link>
       <guid isPermaLink="true">https://biogravity.space/news/metal-rain-and-vaporized-iron-webb-telescope-reveals-extreme</guid>
-      <pubDate>Mon, 26 Oct 2026 15:33:04 GMT</pubDate>
+      <pubDate>Tue, 27 Oct 2026 07:35:51 GMT</pubDate>
       <dc:creator>BioGravity Science Bureau</dc:creator>
       <description>Metal Rain and Vaporized Iron: Webb Telescope Reveals Extreme Weather on Giant Alien World: Spectroscopic observations by JWST confirm gaseous nickel, iron, and vanadium in the exoplanet upper atmosphere, proving vaporized metal weather systems. Published via NASA Space Science Dispatch.</description>
       <category>Space &amp; Astronomy</category>
@@ -44,12 +62,12 @@
       <category>Science History &amp; Paleoclimatology</category>
     </item>
     <item>
-      <title>Spacecraft Sensors in Orbit: The Physics Behind Maximal Orbital Entanglement from...</title>
+      <title>Spacecraft Sensors in Orbit: The Physics Behind Maximal Orbital Entanglement from.</title>
       <link>https://biogravity.space/articles/maximal-orbital-entanglement-from-non-interacting-fermions</link>
       <guid isPermaLink="true">https://biogravity.space/articles/maximal-orbital-entanglement-from-non-interacting-fermions</guid>
       <pubDate>Mon, 26 Oct 2026 12:25:01 GMT</pubDate>
       <dc:creator>Damiano Aliverti-Piuri</dc:creator>
-      <description>Orbital rotations are used in quantum many-body physics and chemistry to reduce the complexity of quantum states by compressing their correlation into a small set of relevant orbitals. In striking contrast, quantum information processing strives for the opposite: orbitals that ma...</description>
+      <description>Orbital rotations are used in quantum many-body physics and chemistry to reduce the complexity of quantum states by compressing their correlation into a small set of relevant orbitals. In striking contrast, quantum information processing strives for the opposite: orbitals that ma.</description>
       <category>Space Physics &amp; Biosensing</category>
     </item>
     <item>
@@ -67,7 +85,7 @@
       <guid isPermaLink="true">https://biogravity.space/articles/what-happens-to-human-body-in-zero-gravity</guid>
       <pubDate>Mon, 26 Oct 2026 08:20:33 GMT</pubDate>
       <dc:creator>Dr. Elena Rostova</dc:creator>
-      <description>In zero gravity, the human body undergoes immediate and profound changes: approximately 2 liters of fluid shift upwards into the head and chest (causing &apos;puffy face bird-legs syndrome&apos;), the spine stretches up to 2 inches due to lack of spinal compression, bones lose 1% to 1.5% of their mineral density each month, and the heart shrinks slightly because it no longer needs to pump blood against gravity.</description>
+      <description>In zero gravity, the human body undergoes immediate and deep changes: approximately 2 liters of fluid shift upwards into the head and chest (causing &apos;puffy face bird-legs syndrome&apos;), the spine stretches up to 2 inches due to lack of spinal compression, bones lose 1% to 1.5% of their mineral density each month, and the heart shrinks slightly because it no longer needs to pump blood against gravity.</description>
       <category>Space Medicine &amp; Human Physiology</category>
     </item>
     <item>
@@ -76,7 +94,7 @@
       <guid isPermaLink="true">https://biogravity.space/articles/size-independent-logarithmic-sobolev-inequalities-for-quantum</guid>
       <pubDate>Sun, 25 Oct 2026 20:29:27 GMT</pubDate>
       <dc:creator>Hongrui Chen</dc:creator>
-      <description>We propose a new method for proving $L^2$ and modified logarithmic Sobolev inequalities with constants independent of system size for quantum Gibbs samplers whose Lindblad generators satisfy Kubo-Martin-Schwinger (KMS) detailed balance. We first establish the $L^2$ logarithmic So...</description>
+      <description>We propose a new method for proving $L^2$ and modified logarithmic Sobolev inequalities with constants independent of system size for quantum Gibbs samplers whose Lindblad generators satisfy Kubo-Martin-Schwinger (KMS) detailed balance. We first establish the $L^2$ logarithmic So.</description>
       <category>Quantum Enzymology</category>
     </item>
     <item>
@@ -85,7 +103,7 @@
       <guid isPermaLink="true">https://biogravity.space/articles/mixed-state-deep-thermalization-under-generic-quantum-errors</guid>
       <pubDate>Sun, 25 Oct 2026 10:53:58 GMT</pubDate>
       <dc:creator>Xie-Hang Yu</dc:creator>
-      <description>Pure-state deep thermalization predicts that, after sufficient scrambling, projected ensembles approach universal distributions that contain information beyond the reduced density matrix. In realistic quantum systems, however, noise is unavoidable and the projected states are gen...</description>
+      <description>Pure-state deep thermalization predicts that, after sufficient scrambling, projected ensembles approach universal distributions that contain information beyond the reduced density matrix. In realistic quantum systems, however, noise is unavoidable and the projected states are gen.</description>
       <category>Quantum Enzymology</category>
     </item>
     <item>
@@ -94,7 +112,7 @@
       <guid isPermaLink="true">https://biogravity.space/articles/screening-strongly-correlated-materials-in-solid-oxide-cells</guid>
       <pubDate>Sun, 25 Oct 2026 06:43:01 GMT</pubDate>
       <dc:creator>Ouns El Harzli</dc:creator>
-      <description>We develop an end-to-end framework for assessing a quantum-computing application in industrial materials science: the screening of strongly correlated oxygen-electrode materials for SOFCs and SOECs. We formulate the materials problem in terms of interface observables including...</description>
+      <description>We develop an end-to-end framework for assessing a quantum-computing application in industrial materials science: the screening of strongly correlated oxygen-electrode materials for SOFCs and SOECs. We formulate the materials problem in terms of interface observables including.</description>
       <category>Quantum Enzymology</category>
     </item>
     <item>
@@ -103,7 +121,7 @@
       <guid isPermaLink="true">https://biogravity.space/articles/a-priori-estimation-of-the-non-linear-compression-potential-and</guid>
       <pubDate>Sun, 25 Oct 2026 06:43:01 GMT</pubDate>
       <dc:creator>Niklas Alexander Pissarski</dc:creator>
-      <description>Data-driven reduced-order modelling (ROM) of turbulent flows is based on an efficient and physical low-dimensional representation of the flow process. Such a dimension reduction can be achieved using proper orthogonal decomposition (POD) or non-linear autoencoders. Capturing t...</description>
+      <description>Data-driven reduced-order modelling (ROM) of turbulent flows is based on an efficient and physical low-dimensional representation of the flow process. Such a dimension reduction can be achieved using proper orthogonal decomposition (POD) or non-linear autoencoders. Capturing t.</description>
       <category>Microgravity Fluid Dynamics</category>
     </item>
     <item>
@@ -112,7 +130,7 @@
       <guid isPermaLink="true">https://biogravity.space/articles/what-does-quantum-parameter-estimation-estimate-a-no-go-result-for-tru</guid>
       <pubDate>Sat, 24 Oct 2026 20:22:31 GMT</pubDate>
       <dc:creator>Jacques L. Pienaar</dc:creator>
-      <description>We examine the conditions under which quantum parameter estimation is compatible with the concept of a ``true&apos;&apos; quantity value: a unique value of the estimated quantity that exists prior to and independently of measurement. While quantum parameter estimation typically assumes tha...</description>
+      <description>We examine the conditions under which quantum parameter estimation is compatible with the concept of a ``true&apos;&apos; quantity value: a unique value of the estimated quantity that exists prior to and independently of measurement. While quantum parameter estimation typically assumes tha.</description>
       <category>Quantum Enzymology</category>
     </item>
     <item>
@@ -121,7 +139,7 @@
       <guid isPermaLink="true">https://biogravity.space/articles/phonon-assisted-free-electron-recoil-control-and-mechanical-sensing</guid>
       <pubDate>Thu, 22 Oct 2026 21:16:32 GMT</pubDate>
       <dc:creator>Sunjun Hwang</dc:creator>
-      <description>Mechanical vibrations are fundamental to a wide range of physical phenomena and technologies, yet their ability to actively shape free-electron dynamics remains largely unexplored. Here we theoretically show how an optomechanical membrane provides a phonon-assisted optical interf...</description>
+      <description>Mechanical vibrations are fundamental to a wide range of physical phenomena and technologies, yet their ability to actively shape free-electron dynamics remains largely unexplored. Here we theoretically show how an optomechanical membrane provides a phonon-assisted optical interf.</description>
       <category>Space Physics &amp; Biosensing</category>
     </item>
     <item>
@@ -130,7 +148,7 @@
       <guid isPermaLink="true">https://biogravity.space/articles/characterizing-supersolid-phase-transitions-in-trapped-quantum-gases-w</guid>
       <pubDate>Wed, 21 Oct 2026 21:21:15 GMT</pubDate>
       <dc:creator>Julian Kusch</dc:creator>
-      <description>Motivated by a recent experimental work arXiv:2608.20327, we theoretically investigate the nature of phase transitions in a trapped dipolar quantum gas upon tuning the contact interaction strength and dipole orientation. Using extended Gross-Pitaevskii simulations including therm...</description>
+      <description>Motivated by a recent experimental work arXiv:2608.20327, we theoretically investigate the nature of phase transitions in a trapped dipolar quantum gas upon tuning the contact interaction strength and dipole orientation. Using extended Gross-Pitaevskii simulations including therm.</description>
       <category>Microgravity Fluid Dynamics</category>
     </item>
     <item>
@@ -184,7 +202,7 @@
       <guid isPermaLink="true">https://biogravity.space/articles/acoustic-levitation-and-scaffold-free-vascularized-cardiac-organoid-bioprinting-</guid>
       <pubDate>Fri, 16 Oct 2026 13:30:00 GMT</pubDate>
       <dc:creator>Dr. Aris Thorne</dc:creator>
-      <description>Conducted aboard BioGravity Station under sub-0.08 μg weightlessness with &lt; 5 Hz vibrational noise floor, this investigation confirms coherence lifetimes exceeding 384 ps — an order of magnitude above terrestrial baseline. Advanced 3D bioprinting and acoustic levitation methodologies validate the quantum mechanical hypothesis, establishing a rigorous framework for next-generation space-based biotechnology.</description>
+      <description>Conducted aboard BioGravity Station under sub-0.08 μg weightlessness with &lt; 5 Hz vibrational noise floor, this investigation confirms coherence lifetimes exceeding 384 ps, an order of magnitude above terrestrial baseline. Advanced 3D bioprinting and acoustic levitation methodologies validate the quantum mechanical hypothesis, establishing a rigorous framework for next-generation space-based biotechnology.</description>
       <category>Microgravity Genomics</category>
     </item>
     <item>

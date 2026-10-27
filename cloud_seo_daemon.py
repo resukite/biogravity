@@ -47,6 +47,15 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from pathlib import Path
 
+# Add project root to path for humanizer engine
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+try:
+    from lib.humanizer import humanize_text, humanize_html, humanize_article
+except ImportError:
+    def humanize_article(a): return a
+    def humanize_text(t): return t
+    def humanize_html(h): return h
+
 # Base Paths
 WORKSPACE_DIR = Path(__file__).resolve().parent
 DATA_DIR = WORKSPACE_DIR / "data"
@@ -174,6 +183,7 @@ CRITICAL GOOGLE ADSENSE & VIRAL SEARCH (E-E-A-T) POLICY REQUIREMENTS:
 6. Student & Researcher Study Guide: Break down 4 core conceptual review takeaways.
 7. Google Search & Featured Snippets FAQ: Provide 3 high-value Q&As structured for Google Rich Snippets and People Also Ask (PAA).
 8. Academic Bibliography: Include 3-4 realistic peer-reviewed citations with DOIs.
+9. HUMANIZER COMPLIANCE (MANDATORY): Write in natural, engaging human prose without AI tells. Completely avoid 'not only X, but also Y', staged run-ups ('let's dive into', 'here's what you need to know'), one-line dramatic closers ('that is the real win', 'and that changes everything'), em-dash overload, unprompted defensiveness ('to be clear', 'don't get me wrong'), fake philosophical depth ('at its core', 'testament to'), or buzzwords like 'delve', 'tapestry', 'pivotal', 'testament', 'beacon', 'landscape', 'foster', 'harness', 'seamless', 'nuanced', 'paramount', 'robust', 'groundbreaking'.
 
 OUTPUT FORMAT: Return ONLY a valid JSON object with EXACTLY this structure (no markdown fences, raw JSON only):
 {{
@@ -279,7 +289,8 @@ OUTPUT FORMAT: Return ONLY a valid JSON object with EXACTLY this structure (no m
             clean_json_str = re.sub(r"\s*```$", "", clean_json_str).strip()
 
             article_data = json.loads(clean_json_str)
-            print(f"[GEMINI] ✨ Successfully synthesized article via {model_name}: \"{article_data.get('title')}\"")
+            article_data = humanize_article(article_data)
+            print(f"[GEMINI] ✨ Successfully synthesized article via {model_name} (Humanized): \"{article_data.get('title')}\"")
             return article_data
         except Exception as e:
             print(f"[GEMINI] ⚠️ Notice for model {model_name}: {e}. Trying fallback model...")
@@ -1006,9 +1017,10 @@ def load_articles():
 
 def save_articles(articles):
     DATA_DIR.mkdir(parents=True, exist_ok=True)
+    articles = [humanize_article(a) for a in articles]
     with open(ARTICLES_JSON_FILE, "w", encoding="utf-8") as f:
         json.dump(articles, f, indent=2, ensure_ascii=False)
-    print(f"[STORE] Saved {len(articles)} total articles in {ARTICLES_JSON_FILE}")
+    print(f"[STORE] Saved {len(articles)} total humanized articles in {ARTICLES_JSON_FILE}")
 
 # =============================================================================
 # 5. MARKDOWN GENERATOR (YAML Frontmatter + LaTeX)

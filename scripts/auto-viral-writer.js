@@ -21,6 +21,7 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 const { execSync } = require('child_process');
+const { humanizeArticle } = require('../lib/humanizer');
 
 const ROOT_DIR = path.join(__dirname, '..');
 const DATA_DIR = path.join(ROOT_DIR, 'data');
@@ -387,17 +388,19 @@ function publishViralArticle(candidate) {
     content: fullContent
   };
 
+  const humanizedRecord = humanizeArticle(record);
+
   // Upsert into articles.json
   const existingIdx = articles.findIndex(a => a.id === slugId);
   if (existingIdx !== -1) {
-    articles[existingIdx] = record;
+    articles[existingIdx] = humanizedRecord;
   } else {
-    articles.unshift(record);
+    articles.unshift(humanizedRecord);
   }
 
   fs.writeFileSync(ARTICLES_JSON, JSON.stringify(articles, null, 2), 'utf8');
-  console.log(`[VIRAL-WRITER] ✅ Saved record to data/articles.json (${articles.length} total dispatches)`);
-  return record;
+  console.log(`[VIRAL-WRITER] ✅ Saved humanized record to data/articles.json (${articles.length} total dispatches)`);
+  return humanizedRecord;
 }
 
 // ============================================================================

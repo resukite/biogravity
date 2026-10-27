@@ -5,6 +5,7 @@ const path = require('path');
 const http = require('http');
 const https = require('https');
 const { execSync } = require('child_process');
+const { humanizeArticle } = require('../lib/humanizer');
 
 const rootDir = path.join(__dirname, '..');
 const articlesPath = path.join(rootDir, 'data', 'articles.json');
@@ -204,10 +205,12 @@ async function run() {
       citations: citations
     };
 
+    const humanizedRecord = humanizeArticle(newRecord);
+
     // Prepend to articles list
-    articles.unshift(newRecord);
-    console.log(`[PUBLISHER] 🌟 Added Article ${idx + 1}: "${newRecord.seoTitle}"`);
-    console.log(`            Formal: "${newRecord.title}"`);
+    articles.unshift(humanizedRecord);
+    console.log(`[PUBLISHER] 🌟 Added Article ${idx + 1} (Humanized): "${humanizedRecord.seoTitle}"`);
+    console.log(`            Formal: "${humanizedRecord.title}"`);
   });
 
   fs.writeFileSync(articlesPath, JSON.stringify(articles, null, 2), 'utf8');

@@ -2,6 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://biogravity.space/news/fault-tolerant-quantum-leap-physicists-successfully-shield</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-27T08:06:08.401Z</news:publication_date>
+      <news:title>Fault-Tolerant Quantum Leap: Physicists Successfully Shield Qubits from Decoherence</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/the-trillion-dollar-moon-economy-why-mining-lunar-ice-will-be</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-27T08:02:06.755Z</news:publication_date>
+      <news:title>The Trillion-Dollar Moon Economy: Why Mining Lunar Ice Will Be Profitable by 2038</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/alien-life-at-14-000-feet-below-the-ocean-deep-sea-expedition</loc>
     <news:news>
       <news:publication>
@@ -19,7 +41,7 @@
         <news:name>BioGravity Live Science Wire</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-10-26T15:33:04.105Z</news:publication_date>
+      <news:publication_date>2026-10-27T07:35:51.659Z</news:publication_date>
       <news:title>Metal Rain and Vaporized Iron: Webb Telescope Reveals Extreme Weather on Giant Alien World</news:title>
     </news:news>
   </url>

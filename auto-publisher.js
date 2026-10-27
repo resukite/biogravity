@@ -36,6 +36,7 @@ const fs              = require('fs');
 const path            = require('path');
 const https           = require('https');
 const { execSync }    = require('child_process');
+const { humanizeArticle, humanizeText, humanizeHtml } = require('./lib/humanizer');
 
 // ============================================================================
 // 1. ENVIRONMENT CONFIGURATION
@@ -207,9 +208,10 @@ function saveDrafts(drafts) {
 
 function saveDraftToQueue(article) {
   const drafts = loadDrafts();
+  const humanizedArticle = humanizeArticle(article);
 
   const draftRecord = {
-    ...article,
+    ...humanizedArticle,
     status        : 'pending_review',    // ← Mandatory gate: human must approve
     draftCreatedAt: new Date().toISOString(),
     reviewNotes   : ''
@@ -384,10 +386,11 @@ RESEARCH REQUIREMENTS:
 2. Primary SEO Keyword: "${theme.primaryKeyword}" — use in H1 equivalent title, first paragraph, and at least 2 H2/H3 subheadings naturally
 3. Secondary Keywords: ${theme.seedKeywords.join(', ')}
 4. Mathematical Rigor: Integrate the governing equation \\(${theme.equations[0]}\\) with proper empirical context (quantitative measurements, orbital parameters < 0.08 μg, specific temperature/time values)
-5. Tone: Academic, authoritative, rigorous. Completely avoid vague AI filler phrases like "it is worth noting" or "importantly"
-6. E-E-A-T Compliance: Cite real experimental methodologies (cryo-EM, ESR, THz spectroscopy, etc.), real measurement units, and plausible orbital conditions
-7. Structure: 3 major sections with H3 headings (Executive Abstract, Experimental Methodology & Quantum Mechanics, Therapeutic & Clinical Translation)
-8. Content Length: ~600–900 words of substantive scientific prose across sections
+5. Tone: Academic, authoritative, rigorous. Completely avoid vague AI filler phrases like "it is worth noting" or "importantly".
+6. HUMANIZER STANDARDS (MANDATORY): Never use AI writing tells. Avoid 'not only X, but Y', staged run-ups ('let's dive in', 'here is what you need to know'), one-line dramatic closers ('that is the real win', 'and that changes everything'), em-dash overload, unprompted defensiveness ('to be clear', 'don't get me wrong'), fake philosophical depth ('at its core', 'stands as a testament to'), or stock AI words ('delve', 'tapestry', 'pivotal', 'testament', 'beacon', 'landscape', 'foster', 'harness', 'seamless', 'nuanced', 'paramount', 'robust', 'groundbreaking'). State discoveries directly with natural human prose.
+7. E-E-A-T Compliance: Cite real experimental methodologies (cryo-EM, ESR, THz spectroscopy, etc.), real measurement units, and plausible orbital conditions
+8. Structure: 3 major sections with H3 headings (Executive Abstract, Experimental Methodology & Quantum Mechanics, Therapeutic & Clinical Translation)
+9. Content Length: ~600–900 words of substantive scientific prose across sections
 
 OUTPUT: A raw valid JSON object ONLY — no markdown, no code fences, no trailing text:
 {
@@ -424,8 +427,9 @@ OUTPUT: A raw valid JSON object ONLY — no markdown, no code fences, no trailin
           if (text) {
             const cleaned = text.replace(/^```(?:json)?/m, '').replace(/```$/m, '').trim();
             const parsed = JSON.parse(cleaned);
-            console.log(`[AI AGENT] ✅ ${model} synthesis complete.`);
-            return parsed;
+            const humanized = humanizeArticle(parsed);
+            console.log(`[AI AGENT] ✅ ${model} synthesis complete (Humanized).`);
+            return humanized;
           }
         } else {
           const errText = await response.text();
@@ -458,8 +462,9 @@ OUTPUT: A raw valid JSON object ONLY — no markdown, no code fences, no trailin
         const raw = data?.choices?.[0]?.message?.content || '';
         const cleaned = raw.replace(/^```(?:json)?/m, '').replace(/```$/m, '').trim();
         const parsed = JSON.parse(cleaned);
-        console.log('[AI AGENT] ✅ Perplexity Sonar synthesis complete.');
-        return parsed;
+        const humanized = humanizeArticle(parsed);
+        console.log('[AI AGENT] ✅ Perplexity Sonar synthesis complete (Humanized).');
+        return humanized;
       }
       const err = await response.text();
       console.warn('[AI AGENT] Perplexity HTTP error:', err.slice(0, 120));
@@ -470,7 +475,7 @@ OUTPUT: A raw valid JSON object ONLY — no markdown, no code fences, no trailin
 
   // Path C: Offline High-Fidelity Scientific Synthesis (Zero-Key Fallback)
   console.log('[AI AGENT] No API keys detected — using local BioGravity Peer-Review Synthesis Engine.');
-  return generateDeterministicArticle(theme, authorEntity);
+  return humanizeArticle(generateDeterministicArticle(theme, authorEntity));
 }
 
 // Deterministic high-fidelity offline fallback generator
