@@ -88,6 +88,26 @@
 
   <!-- Live Science Dispatches (Google Discover & News Priority) -->
   <url>
+    <loc>https://biogravity.space/news/beyond-lithium-non-flammable-sodium-solid-state-battery-achieves</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85</image:loc>
+      <image:title>Beyond Lithium: Non-Flammable Sodium Solid-State Battery Achieves 2,000 Cycles with Zero Dendrites</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/virus-proof-biology-scientists-build-synthetic-bacterial-genome</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85</image:loc>
+      <image:title>Virus-Proof Biology: Scientists Build Synthetic Bacterial Genome Immune to Infection</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/hidden-beneath-two-miles-of-antarctic-ice-scientists-discover</loc>
     <lastmod>2026-10-27</lastmod>
     <changefreq>daily</changefreq>
