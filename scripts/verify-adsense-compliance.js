@@ -20,6 +20,7 @@ articleFolders.forEach(folder => {
     return;
   }
   const html = fs.readFileSync(indexPath, 'utf8');
+  if (html.includes('http-equiv="refresh"') || html.includes('Redirecting to')) return;
   
   // Calculate readable article content words (inside <main>...</main>)
   const mainMatch = html.match(/<main[\s\S]*?<\/main>/i);

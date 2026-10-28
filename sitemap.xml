@@ -88,28 +88,8 @@
 
   <!-- Live Science Dispatches (Google Discover & News Priority) -->
   <url>
-    <loc>https://biogravity.space/news/cosmic-echoes-sub-solar-gravitational-wave-detection-points-to</loc>
-    <lastmod>2026-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.98</priority>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85</image:loc>
-      <image:title>Cosmic Echoes: Sub-Solar Gravitational Wave Detection Points to Primordial Dark Matter</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://biogravity.space/news/coral-survival-breakthrough-marine-biologists-discover-rapid</loc>
-    <lastmod>2026-10-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.98</priority>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85</image:loc>
-      <image:title>Coral Survival Breakthrough: Marine Biologists Discover Rapid Epigenetic Heat Resistance</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://biogravity.space/news/beyond-lithium-non-flammable-sodium-solid-state-battery-achieves</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.98</priority>
     <image:image>
@@ -119,7 +99,7 @@
   </url>
   <url>
     <loc>https://biogravity.space/news/virus-proof-biology-scientists-build-synthetic-bacterial-genome</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.98</priority>
     <image:image>
@@ -129,7 +109,7 @@
   </url>
   <url>
     <loc>https://biogravity.space/news/hidden-beneath-two-miles-of-antarctic-ice-scientists-discover</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.98</priority>
     <image:image>
@@ -139,7 +119,7 @@
   </url>
   <url>
     <loc>https://biogravity.space/news/cosmic-monster-on-the-loose-runaway-supermassive-black-hole</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.98</priority>
     <image:image>
@@ -229,26 +209,6 @@
   </url>
 
   <!-- Pre-Rendered High-Authority Research Dispatches (Clean URLs) -->
-  <url>
-    <loc>https://biogravity.space/articles/interaction-of-strong-x-mode-waves-with-magnetized-pair-plasmas</loc>
-    <lastmod>2026-10-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Interaction of Strong X-mode Waves with Magnetized Pair Plasmas</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://biogravity.space/articles/complete-entropy-contraction-from-conditional-hyperboundedness</loc>
-    <lastmod>2026-10-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Complete entropy contraction from conditional hyperboundedness</image:title>
-    </image:image>
-  </url>
   <url>
     <loc>https://biogravity.space/articles/what-statement-about-risks-in-social-and-behavioral-sciences-research-is-most-accurate</loc>
     <lastmod>2026-10-27</lastmod>

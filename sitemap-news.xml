@@ -2,35 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
-    <loc>https://biogravity.space/news/cosmic-echoes-sub-solar-gravitational-wave-detection-points-to</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BioGravity Live Science Wire</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-28T00:07:11.041Z</news:publication_date>
-      <news:title>Cosmic Echoes: Sub-Solar Gravitational Wave Detection Points to Primordial Dark Matter</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://biogravity.space/news/coral-survival-breakthrough-marine-biologists-discover-rapid</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BioGravity Live Science Wire</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-28T00:07:11.031Z</news:publication_date>
-      <news:title>Coral Survival Breakthrough: Marine Biologists Discover Rapid Epigenetic Heat Resistance</news:title>
-    </news:news>
-  </url>
-  <url>
     <loc>https://biogravity.space/news/beyond-lithium-non-flammable-sodium-solid-state-battery-achieves</loc>
     <news:news>
       <news:publication>
         <news:name>BioGravity Live Science Wire</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-10-27T19:48:31.051Z</news:publication_date>
+      <news:publication_date>2026-10-28T14:13:49.841Z</news:publication_date>
       <news:title>Beyond Lithium: Non-Flammable Sodium Solid-State Battery Achieves 2,000 Cycles with Zero Dendrites</news:title>
     </news:news>
   </url>
@@ -41,7 +19,7 @@
         <news:name>BioGravity Live Science Wire</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-10-27T19:48:31.041Z</news:publication_date>
+      <news:publication_date>2026-10-28T14:13:49.838Z</news:publication_date>
       <news:title>Virus-Proof Biology: Scientists Build Synthetic Bacterial Genome Immune to Infection</news:title>
     </news:news>
   </url>
@@ -52,7 +30,7 @@
         <news:name>BioGravity Live Science Wire</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-10-27T14:58:44.620Z</news:publication_date>
+      <news:publication_date>2026-10-28T14:13:49.834Z</news:publication_date>
       <news:title>Hidden Beneath Two Miles of Antarctic Ice: Scientists Discover Immense Prehistoric River Canyon</news:title>
     </news:news>
   </url>
@@ -63,7 +41,7 @@
         <news:name>BioGravity Live Science Wire</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-10-27T14:58:44.610Z</news:publication_date>
+      <news:publication_date>2026-10-28T14:13:49.818Z</news:publication_date>
       <news:title>Cosmic Monster on the Loose: Runaway Supermassive Black Hole Leaves 200,000-Light-Year Star Trail</news:title>
     </news:news>
   </url>
