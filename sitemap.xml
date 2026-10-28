@@ -88,6 +88,26 @@
 
   <!-- Live Science Dispatches (Google Discover & News Priority) -->
   <url>
+    <loc>https://biogravity.space/news/cosmic-echoes-sub-solar-gravitational-wave-detection-points-to</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85</image:loc>
+      <image:title>Cosmic Echoes: Sub-Solar Gravitational Wave Detection Points to Primordial Dark Matter</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/coral-survival-breakthrough-marine-biologists-discover-rapid</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85</image:loc>
+      <image:title>Coral Survival Breakthrough: Marine Biologists Discover Rapid Epigenetic Heat Resistance</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/beyond-lithium-non-flammable-sodium-solid-state-battery-achieves</loc>
     <lastmod>2026-10-28</lastmod>
     <changefreq>daily</changefreq>
