@@ -230,6 +230,16 @@
 
   <!-- Pre-Rendered High-Authority Research Dispatches (Clean URLs) -->
   <url>
+    <loc>https://biogravity.space/articles/mediated-interactions-between-fermi-polarons-in-the-strongly</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Mediated Interactions between Fermi Polarons in the Strongly Interacting Regime</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://biogravity.space/articles/optimal-quantum-discrimination-at-liouvillian-exceptional-points</loc>
     <lastmod>2026-10-29</lastmod>
     <changefreq>weekly</changefreq>
