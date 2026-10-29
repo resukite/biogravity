@@ -5,7 +5,7 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Oct 2026 11:52:16 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 12:26:54 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Cosmic Echoes: Sub-Solar Gravitational Wave Detection Points to Primordial Dark Matter</title>
@@ -132,6 +132,15 @@
       <dc:creator>BioGravity Science Bureau</dc:creator>
       <description>Ancient Greenland Ice Discloses Shocking Climate Flip That Happened in Just 20 Years: Isotope ratios in 120,000-year-old ice show sudden 5-degree temperature spikes can occur much faster than classical geological models predicted. Published via International Glaciological Consortium.</description>
       <category>Science History &amp; Paleoclimatology</category>
+    </item>
+    <item>
+      <title>Spacecraft Sensors in Orbit: The Physics Behind Optimal quantum discrimination at.</title>
+      <link>https://biogravity.space/articles/optimal-quantum-discrimination-at-liouvillian-exceptional-points</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/optimal-quantum-discrimination-at-liouvillian-exceptional-points</guid>
+      <pubDate>Thu, 29 Oct 2026 12:26:53 GMT</pubDate>
+      <dc:creator>Aritra Ghosh</dc:creator>
+      <description>Central to non-Hermitian sensing is the question of whether exceptional points (EPs) can make weak perturbations easier to detect. We show that despite enhanced spectral response, in finite-dimensional Lindblad systems with a unique stationary state and a nonzero relaxation gap,.</description>
+      <category>Space Physics &amp; Biosensing</category>
     </item>
     <item>
       <title>CRISPR in Zero Gravity: Does Quantum Tunneling Accelerate Gene Editing?</title>

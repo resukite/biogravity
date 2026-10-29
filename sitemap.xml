@@ -230,6 +230,16 @@
 
   <!-- Pre-Rendered High-Authority Research Dispatches (Clean URLs) -->
   <url>
+    <loc>https://biogravity.space/articles/optimal-quantum-discrimination-at-liouvillian-exceptional-points</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Optimal quantum discrimination at Liouvillian exceptional points</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://biogravity.space/articles/exact-analytical-treatment-of-collectively-pumped-dicke</loc>
     <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
