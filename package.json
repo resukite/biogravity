@@ -12,6 +12,7 @@
     "approve": "node auto-publisher.js --approve",
     "reject": "node auto-publisher.js --reject",
     "build-css": "tailwindcss -i ./css/input.css -o ./css/styles.css --minify",
+    "publish-trending": "node scripts/publish-trending-science.js",
     "build-seo": "node build-seo.js",
     "live-news": "node scripts/live_news_engine.js",
     "write-viral": "node scripts/auto-viral-writer.js",

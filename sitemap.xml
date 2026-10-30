@@ -250,6 +250,66 @@
 
   <!-- Pre-Rendered High-Authority Research Dispatches (Clean URLs) -->
   <url>
+    <loc>https://biogravity.space/articles/michelson-morley-experiment-disproved-the-aether</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;q=80</image:loc>
+      <image:title>Optical Interferometry and the Luminiferous Aether: The Michelson-Morley Null Result</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/fermi-paradox-where-are-all-the-aliens</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1600&amp;q=80</image:loc>
+      <image:title>Astrobiology and the Fermi Paradox: The Great Filter and Astrodynamical Horizons</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/kola-superdeep-borehole-deepest-hole-on-earth</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&amp;fit=crop&amp;w=1600&amp;q=80</image:loc>
+      <image:title>Geophysical Drilling into the Fennoscandian Shield: Discoveries of the Kola Superdeep Borehole</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/the-demon-core-manhattan-project-criticality-accidents</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;q=80</image:loc>
+      <image:title>Radiation Physics and Prompt Supercriticality in the Demon Core Accidents (1945–1946)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/mpemba-effect-why-hot-water-freezes-faster-than-cold</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&amp;fit=crop&amp;w=1600&amp;q=80</image:loc>
+      <image:title>Non-Equilibrium Thermodynamics of the Mpemba Effect: Hydrogen Bond Relaxation in Water</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/why-do-flamingos-stand-on-one-leg</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&amp;fit=crop&amp;w=1600&amp;q=80</image:loc>
+      <image:title>Biomechanics of Uni-Pedal Resting in Phoenicopteridae: Passive Gravitational Stay Apparatus</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://biogravity.space/articles/macroscopic-quantum-coherence-in-nuclear-lncrna-liquid-liquid-phase-transition-c</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>

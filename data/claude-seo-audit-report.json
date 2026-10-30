@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-10-30T06:03:15.791Z",
-  "totalPages": 83,
+  "timestamp": "2026-10-30T06:14:19.570Z",
+  "totalPages": 87,
   "averageScore": 100,
   "results": [
     {
@@ -17,7 +17,7 @@
     },
     {
       "file": "news.html",
-      "score": 100,
+      "score": 95,
       "title": "Live Science News &amp; Global Discoveries | BioGravity",
       "canonical": "https://biogravity.space/news",
       "schemaTypes": [
@@ -25,7 +25,9 @@
         "NewsMediaOrganization"
       ],
       "issues": [],
-      "warnings": []
+      "warnings": [
+        "2 image(s) missing explicit width/height (causes CLS)"
+      ]
     },
     {
       "file": "research.html",
@@ -533,6 +535,22 @@
       "warnings": []
     },
     {
+      "file": "articles/exact-analytical-treatment-of-collectively-pumped-dicke.html",
+      "score": 90,
+      "title": "CRISPR in Zero Gravity: Does Quantum Tunneling Accelerate Gene Editing? | BioGravity",
+      "canonical": "https://biogravity.space/articles/exact-analytical-treatment-of-collectively-pumped-dicke",
+      "schemaTypes": [
+        "ScholarlyArticle",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "issues": [],
+      "warnings": [
+        "Long title (84 chars): \"CRISPR in Zero Gravity: Does Quantum Tunneling Accelerate Gene Editing? | BioGravity\"",
+        "1 image(s) missing explicit width/height (causes CLS)"
+      ]
+    },
+    {
       "file": "articles/how-do-astronauts-sleep-in-space.html",
       "score": 100,
       "title": "How Do Astronauts Sleep in Space Without | BioGravity",
@@ -609,6 +627,18 @@
       "warnings": []
     },
     {
+      "file": "articles/macroscopic-quantum-coherence-in-nuclear-lncrna-liquid-liquid-phase-transition-c.html",
+      "score": 100,
+      "title": "Macroscopic Quantum Coherence in Nuclear | BioGravity",
+      "canonical": "https://biogravity.space/articles/macroscopic-quantum-coherence-in-nuclear-lncrna-liquid-liquid-phase-transition-c",
+      "schemaTypes": [
+        "ScholarlyArticle",
+        "BreadcrumbList"
+      ],
+      "issues": [],
+      "warnings": []
+    },
+    {
       "file": "articles/mariana-trench-challenger-deep-creatures-pressure.html",
       "score": 100,
       "title": "What Lives in the Mariana Trench? 36,000 Feet | BioGravity",
@@ -633,6 +663,22 @@
       ],
       "issues": [],
       "warnings": []
+    },
+    {
+      "file": "articles/mediated-interactions-between-fermi-polarons-in-the-strongly.html",
+      "score": 90,
+      "title": "Why Scientists Are 3D-Printing Beating Human Organs in Zero Gravity | BioGravity",
+      "canonical": "https://biogravity.space/articles/mediated-interactions-between-fermi-polarons-in-the-strongly",
+      "schemaTypes": [
+        "ScholarlyArticle",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "issues": [],
+      "warnings": [
+        "Long title (80 chars): \"Why Scientists Are 3D-Printing Beating Human Organs in Zero Gravity | BioGravity\"",
+        "1 image(s) missing explicit width/height (causes CLS)"
+      ]
     },
     {
       "file": "articles/microbial-biofilm-antibiotic-resistance-iss-closed-loop-habitats.html",
@@ -683,6 +729,23 @@
       ],
       "issues": [],
       "warnings": []
+    },
+    {
+      "file": "articles/optimal-quantum-discrimination-at-liouvillian-exceptional-points.html",
+      "score": 85,
+      "title": "Spacecraft Sensors in Orbit: The Physics Behind Optimal quantum discrimination at. | BioGravity",
+      "canonical": "https://biogravity.space/articles/optimal-quantum-discrimination-at-liouvillian-exceptional-points",
+      "schemaTypes": [
+        "ScholarlyArticle",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "issues": [],
+      "warnings": [
+        "Long title (95 chars): \"Spacecraft Sensors in Orbit: The Physics Behind Optimal quantum discrimination at. | BioGravity\"",
+        "Long meta description (178 chars)",
+        "1 image(s) missing explicit width/height (causes CLS)"
+      ]
     },
     {
       "file": "articles/phonon-assisted-free-electron-recoil-control-and-mechanical-sensing.html",

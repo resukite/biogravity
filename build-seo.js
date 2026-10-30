@@ -882,6 +882,7 @@ ${JSON.stringify(schema, null, 2)}
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="robots" content="noindex, follow">
   <meta http-equiv="refresh" content="0; url=${cleanArticleUrl}">
   <link rel="canonical" href="${cleanArticleUrl}">
   <title>Redirecting to ${escapeHtml(art.seoTitle || art.title)}</title>

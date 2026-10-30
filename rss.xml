@@ -5,7 +5,7 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Oct 2026 06:09:49 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 06:16:44 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Renormalization for Robust Memory without Synchronization: New Evidence in Space &amp; Astronomy</title>
@@ -150,6 +150,60 @@
       <dc:creator>BioGravity Science Bureau</dc:creator>
       <description>Ancient Greenland Ice Discloses Shocking Climate Flip That Happened in Just 20 Years: Isotope ratios in 120,000-year-old ice show sudden 5-degree temperature spikes can occur much faster than classical geological models predicted. Published via International Glaciological Consortium.</description>
       <category>Science History &amp; Paleoclimatology</category>
+    </item>
+    <item>
+      <title>The Michelson-Morley Experiment: The Greatest Failed Experiment in History</title>
+      <link>https://biogravity.space/articles/michelson-morley-experiment-disproved-the-aether</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/michelson-morley-experiment-disproved-the-aether</guid>
+      <pubDate>Fri, 30 Oct 2026 06:16:43 GMT</pubDate>
+      <dc:creator>Dr. Marcus Thorne</dc:creator>
+      <description>In 1887, Albert A. Michelson and Edward W. Morley built an ultra-sensitive optical interferometer floating on a pool of mercury to detect the &apos;aether wind&apos; caused by Earth moving through space. The experiment returned a stunning null result: the speed of light was identical in all directions, shattering nineteenth-century physics and paving the way for Einstein&apos;s theory of Special Relativity.</description>
+      <category>Physics &amp; Science History</category>
+    </item>
+    <item>
+      <title>The Fermi Paradox: If Alien Life Is Everywhere, Where Is Everybody?</title>
+      <link>https://biogravity.space/articles/fermi-paradox-where-are-all-the-aliens</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/fermi-paradox-where-are-all-the-aliens</guid>
+      <pubDate>Fri, 30 Oct 2026 06:16:43 GMT</pubDate>
+      <dc:creator>Dr. Alistair Vance</dc:creator>
+      <description>During a lunchtime conversation at Los Alamos in 1950, Nobel laureate Enrico Fermi asked a simple question: &apos;Where is everybody?&apos; With over 100 billion stars in our galaxy and billions of Earth-like planets in habitable zones, an intelligent civilization with modest spaceflight capability should colonize the Milky Way within 50 million years. This dispatch explores the Great Filter, percolation theory, and the zoo hypothesis.</description>
+      <category>Astrophysics &amp; Astrobiology</category>
+    </item>
+    <item>
+      <title>The Kola Superdeep Borehole: What Did Scientists Find at 40,000 Feet?</title>
+      <link>https://biogravity.space/articles/kola-superdeep-borehole-deepest-hole-on-earth</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/kola-superdeep-borehole-deepest-hole-on-earth</guid>
+      <pubDate>Fri, 30 Oct 2026 06:16:43 GMT</pubDate>
+      <dc:creator>Dr. Evelyn Ward</dc:creator>
+      <description>Drilled over two decades in the Soviet Arctic, the Kola Superdeep Borehole (SG-3) penetrated 12,262 meters (40,230 feet) into continental crust. Instead of the anticipated granite-basalt seismic boundary, geologists discovered fractured rock saturated with hydrothermal water, high concentrations of hydrogen gas, and microscopic plankton fossils preserved under crushing pressures.</description>
+      <category>Geophysics &amp; Earth Science</category>
+    </item>
+    <item>
+      <title>The Demon Core: The Deadly Physics of Manhattan Project Accidents</title>
+      <link>https://biogravity.space/articles/the-demon-core-manhattan-project-criticality-accidents</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/the-demon-core-manhattan-project-criticality-accidents</guid>
+      <pubDate>Fri, 30 Oct 2026 06:16:43 GMT</pubDate>
+      <dc:creator>Dr. Jonathan Sterling</dc:creator>
+      <description>Manufactured at Los Alamos for a planned third atomic strike in World War II, the Demon Core was a 6.2-kilogram sphere of subcritical delta-phase plutonium-gallium alloy. In 1945 and 1946, two catastrophic human errors during experimental neutron reflection assemblies triggered prompt criticality accidents, bathing physicists Harry Daghlian and Louis Slotin in lethal neutron and gamma radiation bursts.</description>
+      <category>Nuclear Physics &amp; History</category>
+    </item>
+    <item>
+      <title>The Mpemba Effect: Why Hot Water Can Freeze Faster Than Cold Water</title>
+      <link>https://biogravity.space/articles/mpemba-effect-why-hot-water-freezes-faster-than-cold</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/mpemba-effect-why-hot-water-freezes-faster-than-cold</guid>
+      <pubDate>Fri, 30 Oct 2026 06:16:43 GMT</pubDate>
+      <dc:creator>Dr. Marcus Thorne</dc:creator>
+      <description>Discovered empirically in 1963 by Tanzanian high schooler Erasto Mpemba, the phenomenon where initially hot water freezes into ice faster than cold water baffled physicists from Aristotle to modern laboratories. Contemporary molecular dynamics experiments reveal that anomalous hydrogen bonding relaxation, evaporative convection loops, and dissolved gas expulsion drive this non-equilibrium thermodynamic anomaly.</description>
+      <category>Thermodynamics &amp; Chemistry</category>
+    </item>
+    <item>
+      <title>Why Do Flamingos Stand on One Leg? The Passive Biomechanics Explained</title>
+      <link>https://biogravity.space/articles/why-do-flamingos-stand-on-one-leg</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/why-do-flamingos-stand-on-one-leg</guid>
+      <pubDate>Fri, 30 Oct 2026 06:16:43 GMT</pubDate>
+      <dc:creator>Dr. Alistair Vance</dc:creator>
+      <description>For decades, biologists assumed flamingos stood on one leg strictly for thermoregulation. Groundbreaking robotic and anatomical investigations revealed that flamingos possess a passive gravitational stay apparatus: when balancing on a single limb, body weight drives a mechanical lock in the knee and ankle joints, allowing them to remain asleep with virtually zero active muscle contraction.</description>
+      <category>Zoology &amp; Biomechanics</category>
     </item>
     <item>
       <title>Macroscopic Quantum Coherence in Nuclear lncRNA Liquid-Liquid Phase Transition Condensates: Orbital Evidence for Non-Classical Molecular Dynamics</title>
