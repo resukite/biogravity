@@ -5,8 +5,26 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Oct 2026 06:59:34 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 11:45:08 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Exceptional Points as Witnesses of Non-Gaussian Noise: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/exceptional-points-as-witnesses-of-non-gaussian-noise-new</link>
+      <guid isPermaLink="true">https://biogravity.space/news/exceptional-points-as-witnesses-of-non-gaussian-noise-new</guid>
+      <pubDate>Fri, 30 Oct 2026 11:45:08 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Exceptional Points as Witnesses of Non-Gaussian Noise: New Evidence in Quantum &amp; Physics: Efficient control of quantum devices requires the knowledge of their environmental noise, yet the commonly measured power spectrum does not fully characterize non-Gaussian fluctuations of realistic environments. Here we show that exceptional points (EPs) in the noise-averaged dephasing response can expose observable signatures of non-Gaussian statistics, distinguishing environments with identical lower-order statistics. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40612v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
+    <item>
+      <title>Optimal Diamond Distance Estimation for Unitary Channels: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/optimal-diamond-distance-estimation-for-unitary-channels-new</link>
+      <guid isPermaLink="true">https://biogravity.space/news/optimal-diamond-distance-estimation-for-unitary-channels-new</guid>
+      <pubDate>Fri, 30 Oct 2026 11:45:08 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Optimal Diamond Distance Estimation for Unitary Channels: New Evidence in Quantum &amp; Physics: The diamond distance between two quantum channels determines the optimal probability of distinguishing them from a single use. We give a quantum algorithm that estimates the diamond distance between two unknown $d$-dimensional unitary channels to within additive error $\varepsilon$, using $O(\sqrt{d}/\varepsilon)$ queries to the unitary channels and their inverses. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40623v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
     <item>
       <title>Left-Handed Transmission Lines for the Dynamical: New Evidence in Quantum &amp; Physics</title>
       <link>https://biogravity.space/news/left-handed-transmission-lines-for-the-dynamical-new-evidence-in</link>
