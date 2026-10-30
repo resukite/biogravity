@@ -88,6 +88,26 @@
 
   <!-- Live Science Dispatches (Google Discover & News Priority) -->
   <url>
+    <loc>https://biogravity.space/news/what-can-be-computed-with-indefinite-causal-structure-new</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85</image:loc>
+      <image:title>What Can Be Computed with Indefinite Causal Structure?: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/classical-communication-over-quantum-channels-does-new-evidence</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85</image:loc>
+      <image:title>Classical communication over quantum channels: does: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/probing-fluctuations-in-photon-emission-statistics-of-new</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>daily</changefreq>
