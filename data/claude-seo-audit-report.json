@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-10-30T06:14:19.570Z",
-  "totalPages": 87,
+  "timestamp": "2026-10-30T06:17:16.810Z",
+  "totalPages": 93,
   "averageScore": 100,
   "results": [
     {
@@ -17,7 +17,7 @@
     },
     {
       "file": "news.html",
-      "score": 95,
+      "score": 100,
       "title": "Live Science News &amp; Global Discoveries | BioGravity",
       "canonical": "https://biogravity.space/news",
       "schemaTypes": [
@@ -25,9 +25,7 @@
         "NewsMediaOrganization"
       ],
       "issues": [],
-      "warnings": [
-        "2 image(s) missing explicit width/height (causes CLS)"
-      ]
+      "warnings": []
     },
     {
       "file": "research.html",
@@ -536,19 +534,27 @@
     },
     {
       "file": "articles/exact-analytical-treatment-of-collectively-pumped-dicke.html",
-      "score": 90,
-      "title": "CRISPR in Zero Gravity: Does Quantum Tunneling Accelerate Gene Editing? | BioGravity",
-      "canonical": "https://biogravity.space/articles/exact-analytical-treatment-of-collectively-pumped-dicke",
+      "score": 100,
+      "title": "Redirect Alias",
+      "canonical": "Redirecting",
+      "schemaTypes": [
+        "Redirect"
+      ],
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "file": "articles/fermi-paradox-where-are-all-the-aliens.html",
+      "score": 100,
+      "title": "The Fermi Paradox: If Alien Life Is | BioGravity",
+      "canonical": "https://biogravity.space/articles/fermi-paradox-where-are-all-the-aliens",
       "schemaTypes": [
         "ScholarlyArticle",
         "BreadcrumbList",
         "FAQPage"
       ],
       "issues": [],
-      "warnings": [
-        "Long title (84 chars): \"CRISPR in Zero Gravity: Does Quantum Tunneling Accelerate Gene Editing? | BioGravity\"",
-        "1 image(s) missing explicit width/height (causes CLS)"
-      ]
+      "warnings": []
     },
     {
       "file": "articles/how-do-astronauts-sleep-in-space.html",
@@ -614,6 +620,19 @@
       "warnings": []
     },
     {
+      "file": "articles/kola-superdeep-borehole-deepest-hole-on-earth.html",
+      "score": 100,
+      "title": "The Kola Superdeep Borehole: What Did | BioGravity",
+      "canonical": "https://biogravity.space/articles/kola-superdeep-borehole-deepest-hole-on-earth",
+      "schemaTypes": [
+        "ScholarlyArticle",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "issues": [],
+      "warnings": []
+    },
+    {
       "file": "articles/macromolecular-crystallography-membrane-transporters-orbit.html",
       "score": 100,
       "title": "Atomic-Level Drug Design: Growing Perfect | BioGravity",
@@ -666,19 +685,27 @@
     },
     {
       "file": "articles/mediated-interactions-between-fermi-polarons-in-the-strongly.html",
-      "score": 90,
-      "title": "Why Scientists Are 3D-Printing Beating Human Organs in Zero Gravity | BioGravity",
-      "canonical": "https://biogravity.space/articles/mediated-interactions-between-fermi-polarons-in-the-strongly",
+      "score": 100,
+      "title": "Redirect Alias",
+      "canonical": "Redirecting",
+      "schemaTypes": [
+        "Redirect"
+      ],
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "file": "articles/michelson-morley-experiment-disproved-the-aether.html",
+      "score": 100,
+      "title": "The Michelson-Morley Experiment: The Greatest | BioGravity",
+      "canonical": "https://biogravity.space/articles/michelson-morley-experiment-disproved-the-aether",
       "schemaTypes": [
         "ScholarlyArticle",
         "BreadcrumbList",
         "FAQPage"
       ],
       "issues": [],
-      "warnings": [
-        "Long title (80 chars): \"Why Scientists Are 3D-Printing Beating Human Organs in Zero Gravity | BioGravity\"",
-        "1 image(s) missing explicit width/height (causes CLS)"
-      ]
+      "warnings": []
     },
     {
       "file": "articles/microbial-biofilm-antibiotic-resistance-iss-closed-loop-habitats.html",
@@ -720,6 +747,19 @@
       "warnings": []
     },
     {
+      "file": "articles/mpemba-effect-why-hot-water-freezes-faster-than-cold.html",
+      "score": 100,
+      "title": "The Mpemba Effect: Why Hot Water Can Freeze | BioGravity",
+      "canonical": "https://biogravity.space/articles/mpemba-effect-why-hot-water-freezes-faster-than-cold",
+      "schemaTypes": [
+        "ScholarlyArticle",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "issues": [],
+      "warnings": []
+    },
+    {
       "file": "articles/non-thermal-quantum-proton-tunneling-in-crispr-cas9-catalytic-triads-orbital-evi.html",
       "score": 100,
       "title": "Redirect Alias",
@@ -732,20 +772,14 @@
     },
     {
       "file": "articles/optimal-quantum-discrimination-at-liouvillian-exceptional-points.html",
-      "score": 85,
-      "title": "Spacecraft Sensors in Orbit: The Physics Behind Optimal quantum discrimination at. | BioGravity",
-      "canonical": "https://biogravity.space/articles/optimal-quantum-discrimination-at-liouvillian-exceptional-points",
+      "score": 100,
+      "title": "Redirect Alias",
+      "canonical": "Redirecting",
       "schemaTypes": [
-        "ScholarlyArticle",
-        "BreadcrumbList",
-        "FAQPage"
+        "Redirect"
       ],
       "issues": [],
-      "warnings": [
-        "Long title (95 chars): \"Spacecraft Sensors in Orbit: The Physics Behind Optimal quantum discrimination at. | BioGravity\"",
-        "Long meta description (178 chars)",
-        "1 image(s) missing explicit width/height (causes CLS)"
-      ]
+      "warnings": []
     },
     {
       "file": "articles/phonon-assisted-free-electron-recoil-control-and-mechanical-sensing.html",
@@ -989,6 +1023,19 @@
       "warnings": []
     },
     {
+      "file": "articles/the-demon-core-manhattan-project-criticality-accidents.html",
+      "score": 100,
+      "title": "The Demon Core: The Deadly Physics of | BioGravity",
+      "canonical": "https://biogravity.space/articles/the-demon-core-manhattan-project-criticality-accidents",
+      "schemaTypes": [
+        "ScholarlyArticle",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "issues": [],
+      "warnings": []
+    },
+    {
       "file": "articles/what-does-quantum-parameter-estimation-estimate-a-no-go-result-for-tru.html",
       "score": 100,
       "title": "Redirect Alias",
@@ -1056,6 +1103,19 @@
       "score": 100,
       "title": "Why Do Astronauts Lose Bone Density in Space? | BioGravity",
       "canonical": "https://biogravity.space/articles/why-do-astronauts-lose-bone-density-in-space",
+      "schemaTypes": [
+        "ScholarlyArticle",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "file": "articles/why-do-flamingos-stand-on-one-leg.html",
+      "score": 100,
+      "title": "Why Do Flamingos Stand on One Leg? The | BioGravity",
+      "canonical": "https://biogravity.space/articles/why-do-flamingos-stand-on-one-leg",
       "schemaTypes": [
         "ScholarlyArticle",
         "BreadcrumbList",
