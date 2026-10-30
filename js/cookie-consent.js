@@ -2,10 +2,49 @@
   'use strict';
   const STORAGE_KEY = 'biogravity_cookie_consent_v1';
 
+  // Ensure gtag and dataLayer are ready
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = window.gtag || function() {
+    window.dataLayer.push(arguments);
+  };
+
+  function updateGoogleConsent(choice) {
+    if (typeof window.gtag === 'function') {
+      if (choice === 'all') {
+        window.gtag('consent', 'update', {
+          'ad_storage': 'granted',
+          'ad_user_data': 'granted',
+          'ad_personalization': 'granted',
+          'analytics_storage': 'granted'
+        });
+      } else {
+        window.gtag('consent', 'update', {
+          'ad_storage': 'denied',
+          'ad_user_data': 'denied',
+          'ad_personalization': 'denied',
+          'analytics_storage': 'granted'
+        });
+      }
+    }
+  }
+
   function initCookieConsent() {
-    if (localStorage.getItem(STORAGE_KEY)) {
+    // If a certified TCF CMP (e.g. Google Funding Choices from AdSense) is active, don't double-prompt
+    if (window.__tcfapi || window.googlefc) {
       return;
     }
+
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        updateGoogleConsent(parsed.choice);
+      } catch (e) {}
+      return;
+    }
+
+    // Default to privacy-preserving state pending user selection
+    updateGoogleConsent('essential');
 
     const banner = document.createElement('div');
     banner.id = 'biogravity-cookie-banner';
@@ -40,6 +79,7 @@
 
     function dismiss(choice) {
       localStorage.setItem(STORAGE_KEY, JSON.stringify({ choice: choice, timestamp: new Date().toISOString() }));
+      updateGoogleConsent(choice);
       banner.style.opacity = '0';
       banner.style.transform = 'translateY(20px)';
       setTimeout(() => banner.remove(), 300);

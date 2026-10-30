@@ -4,11 +4,22 @@
   <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8576621614388905" crossorigin="anonymous"></script>
   
-  <!-- Google Analytics 4 (GA4) -->
+  <!-- Google Analytics 4 (GA4) with Google Consent Mode v2 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-BSRJK4DMH7"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    var hasConsent = false;
+    try {
+      var c = localStorage.getItem('biogravity_cookie_consent_v1');
+      if (c && JSON.parse(c).choice === 'all') hasConsent = true;
+    } catch(e) {}
+    gtag('consent', 'default', {
+      'ad_storage': hasConsent ? 'granted' : 'denied',
+      'ad_user_data': hasConsent ? 'granted' : 'denied',
+      'ad_personalization': hasConsent ? 'granted' : 'denied',
+      'analytics_storage': 'granted'
+    });
     gtag('js', new Date());
     gtag('config', 'G-BSRJK4DMH7');
   </script>
