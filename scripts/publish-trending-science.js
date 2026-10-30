@@ -1075,8 +1075,8 @@ function pingIndexNow(urls) {
   console.log(`\n[INDEXNOW] 📡 Submitting ${urls.length} fresh URLs to Bing/IndexNow API...`);
   const payload = JSON.stringify({
     host: 'biogravity.space',
-    key: 'f5b3ec09c6f94ff88941bb33423b04c8',
-    keyLocation: 'https://biogravity.space/f5b3ec09c6f94ff88941bb33423b04c8.txt',
+    key: '7a9b3c4d5e6f708192a3b4c5d6e7f809',
+    keyLocation: 'https://biogravity.space/7a9b3c4d5e6f708192a3b4c5d6e7f809.txt',
     urlList: urls
   });
 

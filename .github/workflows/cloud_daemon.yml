@@ -41,22 +41,19 @@ jobs:
         with:
           node-version: '20'
 
-      - name: 🔬 Execute Cloud SEO Publishing Daemon
+      - name: 🔬 Execute Autonomous High-Volume Science Publishing Engine
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           SITE_URL: 'https://biogravity.space'
         run: |
-          FLAGS="--run-once"
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            if [ "${{ inputs.force }}" = "true" ]; then
-              FLAGS="$FLAGS --force"
-            fi
-            if [ -n "${{ inputs.topic }}" ]; then
-              FLAGS="$FLAGS --topic \"${{ inputs.topic }}\""
-            fi
+          npm ci || npm install
+          TOPIC_FLAG=""
+          if [ -n "${{ inputs.topic }}" ]; then
+            TOPIC_FLAG="--topic \"${{ inputs.topic }}\""
           fi
-          echo "Executing: python cloud_seo_daemon.py $FLAGS"
-          python cloud_seo_daemon.py $FLAGS
+          echo "Executing: node scripts/publish-trending-science.js --count 1 $TOPIC_FLAG"
+          node scripts/publish-trending-science.js --count 1 $TOPIC_FLAG
+          npm run submit-index || true
 
       - name: 🚀 Commit and Push New Dispatches & Updated Sitemap
         run: |
