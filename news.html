@@ -22,26 +22,71 @@
   <link rel="canonical" href="https://biogravity.space/news">
 
   <!-- Open Graph -->
-  
-  
-  
-  
-  
-  
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BioGravity Live Science Wire">
+  <meta property="og:title" content="Live Science News &amp; Global Discoveries | BioGravity">
+  <meta property="og:description" content="24/7 Live Science Wire covering space exploration, geology, environmental science, quantum physics, and history.">
+  <meta property="og:url" content="https://biogravity.space/news">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85">
 
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            teal: { 50: '#f0fdfa', 100: '#ccfbf1', 500: '#14b8a6', 600: '#0d9488', 700: '#0f766e' }
-          }
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@BioGravitySpace">
+  <meta name="twitter:title" content="Live Science News &amp; Global Discoveries | BioGravity">
+  <meta name="twitter:description" content="24/7 Live Science Wire covering today's breakthroughs in space exploration, geology, environmental science, quantum physics, and deep science history.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85">
+
+  <!-- Schema.org JSON-LD CollectionPage + NewsMediaOrganization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": "https://biogravity.space/news#webpage",
+        "url": "https://biogravity.space/news",
+        "name": "Live Science News & Global Discoveries | BioGravity",
+        "description": "24/7 Live Science Wire covering today's breakthroughs in space exploration, geology, environmental science, quantum physics, and deep science history.",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://biogravity.space/#website",
+          "name": "BioGravity",
+          "url": "https://biogravity.space/"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://biogravity.space/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Live News",
+              "item": "https://biogravity.space/news"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "NewsMediaOrganization",
+        "@id": "https://biogravity.space/#organization",
+        "name": "BioGravity Live Science Bureau",
+        "url": "https://biogravity.space/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://biogravity.space/logo.png",
+          "width": 512,
+          "height": 512
         }
       }
-    };
+    ]
+  }
   </script>
+
   <link rel="stylesheet" href="/css/styles.css">
   <script>
     if (window.location.pathname.endsWith('.html')) {
@@ -49,38 +94,6 @@
       window.history.replaceState(null, '', clean + window.location.search + window.location.hash);
     }
   </script>
-
-  <!-- Open Graph / Facebook / Discover -->
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="BioGravity">
-  <meta property="og:title" content="Live Science News & Global Discoveries | BioGravity">
-  <meta property="og:description" content="24/7 Live Science Wire covering today's breakthroughs in space exploration, geology, environmental science, quantum physics, and deep science history.">
-  <meta property="og:url" content="https://biogravity.space/news">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1600&h=900&q=85">
-
-  <!-- Twitter Cards -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Live Science News & Global Discoveries | BioGravity">
-  <meta name="twitter:description" content="24/7 Live Science Wire covering today's breakthroughs in space exploration, geology, environmental science, quantum physics, and deep science history.">
-  <meta name="twitter:image" content="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1600&h=900&q=85">
-
-
-  <!-- JSON-LD Structured Data -->
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": "BioGravity Live Science Wire",
-  "url": "https://biogravity.space/news",
-  "description": "24/7 autonomous breaking science reporting across space exploration, geophysics, climate history, and quantum mechanics.",
-  "publisher": {
-    "@type": "NewsMediaOrganization",
-    "name": "BioGravity Live Science Bureau",
-    "url": "https://biogravity.space/"
-  }
-}
-  </script>
-
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col font-sans">
 
@@ -90,9 +103,9 @@
       <div class="flex items-center gap-2">
         <span class="inline-block w-2.5 h-2.5 rounded-full bg-red-500 animate-ping"></span>
         <span class="font-bold tracking-wider uppercase text-red-400 text-xs">LIVE SCIENCE WIRE</span>
-        <span class="text-slate-400 hidden md:inline">| Continuous 24/7 Autonomous Coverage • Updated October 28, 2026</span>
+        <span class="text-slate-400 hidden md:inline">| Continuous 24/7 Autonomous Coverage • Updated October 30, 2026</span>
       </div>
-      <span class="text-teal-400 text-xs font-mono font-medium">12 Live Dispatches</span>
+      <span class="text-teal-400 text-xs font-mono font-medium">16 Live Dispatches</span>
     </div>
   </div>
 
@@ -140,12 +153,124 @@
   <!-- NEWS FEED GRID -->
   <main class="flex-grow py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between mb-8 pb-4 border-b border-slate-200">
+        <div>
+          <h2 class="text-2xl font-display font-bold text-slate-900 tracking-tight flex items-center gap-2">
+            <span class="inline-block w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse"></span>
+            Real-Time Science Dispatches
+          </h2>
+          <p class="text-xs text-slate-500 mt-1">Autonomous, fact-checked, peer-reviewed global reporting updated continuously.</p>
+        </div>
+        <span class="text-xs font-mono px-3 py-1 bg-slate-100 rounded-full text-slate-700 font-semibold border border-slate-200">
+          16 Active Dispatches
+        </span>
+      </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Renewable biological solar cells and clean environmental nanotechnology" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="eager">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Deep space exoplanet atmospheric spectroscopy captured by orbital space observatory" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="eager">
+          </div>
+          <div class="flex items-center justify-between text-xs mb-2">
+            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Space &amp; Astronomy</span>
+            <span class="text-slate-400 text-[11px]">October 30, 2026</span>
+          </div>
+          <h3 class="font-display font-bold text-base text-slate-900 group-hover:text-teal-600 transition mb-2 leading-snug">
+            <a href="/news/renormalization-for-robust-memory-without-synchronization-new">Renormalization for Robust Memory without Synchronization: New Evidence in Space &amp; Astronomy</a>
+          </h3>
+          <p class="text-xs text-slate-600 line-clamp-3 leading-relaxed mb-4">
+            Renormalization for Robust Memory without Synchronization: New Evidence in Space &amp; Astronomy: Local error correction can preserve classical information against noise, but protection under synchronized updates need not survive when sites evolve at independent random times. Establishing stability is particularly challenging when protection relies on the collective action of competing local rules. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40651v1).
+          </p>
+        </div>
+        <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
+          <span class="text-slate-400 text-[11px]">Via arXiv Open Science Wire (https://arxiv.org/abs/2610.40651v1)</span>
+          <a href="/news/renormalization-for-robust-memory-without-synchronization-new" class="text-teal-700 font-bold hover:text-teal-900 flex items-center gap-1">
+            Read Full Story &rarr;
+          </a>
+        </div>
+      </article>
+    
+
+      <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
+        <div>
+          <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
+            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="eager">
+          </div>
+          <div class="flex items-center justify-between text-xs mb-2">
+            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Quantum &amp; Physics</span>
+            <span class="text-slate-400 text-[11px]">October 30, 2026</span>
+          </div>
+          <h3 class="font-display font-bold text-base text-slate-900 group-hover:text-teal-600 transition mb-2 leading-snug">
+            <a href="/news/reconstructing-hidden-observables-via-quantum-snapshot-new">Reconstructing hidden observables via quantum snapshot: New Evidence in Quantum &amp; Physics</a>
+          </h3>
+          <p class="text-xs text-slate-600 line-clamp-3 leading-relaxed mb-4">
+            Reconstructing hidden observables via quantum snapshot: New Evidence in Quantum &amp; Physics: Projective snapshots are a standard readout tool for quantum simulators, but they directly probe only observables that are diagonal in the measurement basis. We show how local equilibration and an independently calibrated equilibrium equation of state can reveal otherwise hidden conserved-density profiles. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40652v1).
+          </p>
+        </div>
+        <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
+          <span class="text-slate-400 text-[11px]">Via arXiv Open Science Wire (https://arxiv.org/abs/2610.40652v1)</span>
+          <a href="/news/reconstructing-hidden-observables-via-quantum-snapshot-new" class="text-teal-700 font-bold hover:text-teal-900 flex items-center gap-1">
+            Read Full Story &rarr;
+          </a>
+        </div>
+      </article>
+    
+
+      <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
+        <div>
+          <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
+            <img src="https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Renewable biological solar cells and clean environmental nanotechnology" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="eager">
+          </div>
+          <div class="flex items-center justify-between text-xs mb-2">
+            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Cosmology &amp; Particle Physics</span>
+            <span class="text-slate-400 text-[11px]">October 30, 2026</span>
+          </div>
+          <h3 class="font-display font-bold text-base text-slate-900 group-hover:text-teal-600 transition mb-2 leading-snug">
+            <a href="/news/cosmic-echoes-sub-solar-gravitational-wave-detection-points-to">Cosmic Echoes: Sub-Solar Gravitational Wave Detection Points to Primordial Dark Matter</a>
+          </h3>
+          <p class="text-xs text-slate-600 line-clamp-3 leading-relaxed mb-4">
+            Cosmic Echoes: Sub-Solar Gravitational Wave Detection Points to Primordial Dark Matter: LIGO-Virgo-KAGRA recorded chirping gravitational ripples from a 0.7-solar-mass binary collision below the Chandrasekhar limit, consistent with early universe primordial genesis. Published via Physical Review Dispatches.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
+          <span class="text-slate-400 text-[11px]">Via Physical Review Dispatches</span>
+          <a href="/news/cosmic-echoes-sub-solar-gravitational-wave-detection-points-to" class="text-teal-700 font-bold hover:text-teal-900 flex items-center gap-1">
+            Read Full Story &rarr;
+          </a>
+        </div>
+      </article>
+    
+
+      <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
+        <div>
+          <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
+            <img src="https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Glacial ice sheet core sampling and polar climate research expedition" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="eager">
+          </div>
+          <div class="flex items-center justify-between text-xs mb-2">
+            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Marine Ecology &amp; Climate</span>
+            <span class="text-slate-400 text-[11px]">October 30, 2026</span>
+          </div>
+          <h3 class="font-display font-bold text-base text-slate-900 group-hover:text-teal-600 transition mb-2 leading-snug">
+            <a href="/news/coral-survival-breakthrough-marine-biologists-discover-rapid">Coral Survival Breakthrough: Marine Biologists Discover Rapid Epigenetic Heat Resistance</a>
+          </h3>
+          <p class="text-xs text-slate-600 line-clamp-3 leading-relaxed mb-4">
+            Coral Survival Breakthrough: Marine Biologists Discover Rapid Epigenetic Heat Resistance: Coral polyps in the South Pacific demonstrated rapid non-genetic transgenerational acclimatization, passing heat-shock protein expression patterns to subsequent larvae generations. Published via Oceanic Biological Reports.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
+          <span class="text-slate-400 text-[11px]">Via Oceanic Biological Reports</span>
+          <a href="/news/coral-survival-breakthrough-marine-biologists-discover-rapid" class="text-teal-700 font-bold hover:text-teal-900 flex items-center gap-1">
+            Read Full Story &rarr;
+          </a>
+        </div>
+      </article>
+    
+
+      <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
+        <div>
+          <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
+            <img src="https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Renewable biological solar cells and clean environmental nanotechnology" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Clean Energy &amp; Materials</span>
@@ -170,7 +295,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Cutting-edge laboratory biophysics and scientific research instrumentation" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="eager">
+            <img src="https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Cutting-edge laboratory biophysics and scientific research instrumentation" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Synthetic Biology &amp; Genomics</span>
@@ -195,7 +320,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Glacial ice sheet core sampling and polar climate research expedition" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="eager">
+            <img src="https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Glacial ice sheet core sampling and polar climate research expedition" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Geophysics &amp; Earth Science</span>
@@ -220,7 +345,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Deep space exoplanet atmospheric spectroscopy captured by orbital space observatory" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="eager">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Deep space exoplanet atmospheric spectroscopy captured by orbital space observatory" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Astrophysics &amp; Space</span>
@@ -245,7 +370,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Cutting-edge laboratory biophysics and scientific research instrumentation" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Cutting-edge laboratory biophysics and scientific research instrumentation" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Environmental Science &amp; EVS</span>
@@ -270,7 +395,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1533158307587-828f0a76ef46?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Ancient anthropological excavation and prehistoric fossil examination" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1533158307587-828f0a76ef46?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Ancient anthropological excavation and prehistoric fossil examination" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Deep Science History</span>
@@ -295,7 +420,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Quantum &amp; Physics</span>
@@ -320,7 +445,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Deep space exoplanet atmospheric spectroscopy captured by orbital space observatory" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Deep space exoplanet atmospheric spectroscopy captured by orbital space observatory" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Science Economics &amp; Space Industry</span>
@@ -345,7 +470,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Deep ocean geothermal vent minerals and marine geology" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Deep ocean geothermal vent minerals and marine geology" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Earth &amp; Geology</span>
@@ -370,7 +495,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Deep space exoplanet atmospheric spectroscopy captured by orbital space observatory" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Deep space exoplanet atmospheric spectroscopy captured by orbital space observatory" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Space &amp; Astronomy</span>
@@ -395,7 +520,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://biogravity.space/assets/living-solar-panels-chloroplasts.jpg" alt="Living solar panels: plant chloroplasts and thylakoid membranes integrated with conductive nanoscale bio-circuits to generate renewable electricity" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://biogravity.space/assets/living-solar-panels-chloroplasts.jpg" alt="Living solar panels: plant chloroplasts and thylakoid membranes integrated with conductive nanoscale bio-circuits to generate renewable electricity" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Environmental Science &amp; Energy</span>
@@ -420,7 +545,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Glacial ice sheet core sampling and polar climate research expedition" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Glacial ice sheet core sampling and polar climate research expedition" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Science History &amp; Paleoclimatology</span>
@@ -456,15 +581,10 @@
         <a href="/" class="hover:text-white transition">Home</a>
         <a href="/news" class="hover:text-white transition">Live News</a>
         <a href="/research" class="hover:text-white transition">Research</a>
-        <a href="/disclaimer" class="hover:text-white transition">Disclaimer</a>
         <a href="/privacy-policy" class="hover:text-white transition">Privacy</a>
         <a href="/terms" class="hover:text-white transition">Terms</a>
         <a href="/contact" class="hover:text-white transition">Contact</a>
       </div>
-    </div>
-  
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-800 pt-4 mt-4 text-[11px] text-slate-500">
-      BioGravity is an independent educational science platform and interactive simulation hub exploring theoretical space biology, microgravity fluidics, and quantum biotechnology concepts.
     </div>
   </footer>
 

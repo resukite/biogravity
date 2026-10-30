@@ -2,6 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://biogravity.space/news/renormalization-for-robust-memory-without-synchronization-new</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-30T05:43:59.764Z</news:publication_date>
+      <news:title>Renormalization for Robust Memory without Synchronization: New Evidence in Space &amp; Astronomy</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/reconstructing-hidden-observables-via-quantum-snapshot-new</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-30T05:43:59.758Z</news:publication_date>
+      <news:title>Reconstructing hidden observables via quantum snapshot: New Evidence in Quantum &amp; Physics</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/cosmic-echoes-sub-solar-gravitational-wave-detection-points-to</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-30T05:22:37.728Z</news:publication_date>
+      <news:title>Cosmic Echoes: Sub-Solar Gravitational Wave Detection Points to Primordial Dark Matter</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/coral-survival-breakthrough-marine-biologists-discover-rapid</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-30T05:22:37.716Z</news:publication_date>
+      <news:title>Coral Survival Breakthrough: Marine Biologists Discover Rapid Epigenetic Heat Resistance</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/beyond-lithium-non-flammable-sodium-solid-state-battery-achieves</loc>
     <news:news>
       <news:publication>

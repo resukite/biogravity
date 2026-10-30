@@ -62,63 +62,32 @@ function escapeHtml(unsafe) {
 
 
 function generateEducationalEnrichment(art) {
-  const glossaryMap = {
-    'Buoyancy-Driven Convection': 'On Earth, temperature or concentration differences cause fluid layers of different densities to rise or sink. In orbital microgravity (&lt;10⁻⁴ g), density differences no longer produce convective circulation, resulting in purely diffusion-dominated mass transfer.',
-    'Hydrostatic Pressure Gradient': 'The weight of a fluid column creating pressure proportional to depth (P = &rho;gh). In orbit, this gradient vanishes, equalizing mechanical stresses across suspended cells, liposomes, and cellular organoids.',
-    'Mechanotransduction & Tensegrity': 'The cellular signaling pathway through which cells convert physical force (shear stress, gravity, tension) into biochemical responses via integrins, focal adhesions, and the nuclear cytoskeleton.',
-    'Clinorotation & Simulated Microgravity': 'A ground-based research method where biological samples are rotated along one or multiple axes to continually randomize the gravity vector before a sedimentation threshold is reached.',
-    'Radiation Countermeasures': 'Biochemical agents, antioxidants, or DNA repair peptides (such as tardigrade Dsup proteins) engineered to neutralize reactive oxygen species (ROS) and double-strand DNA breaks induced by galactic cosmic rays.'
-  };
+  // If the article already has its own comprehensive sections, do not append generic duplicated boilerplate
+  if (Array.isArray(art.sections) && art.sections.length >= 3) {
+    return '';
+  }
 
-  const termKeys = Object.keys(glossaryMap);
+  const category = art.category || 'Space Biology & Biophysics';
+  const topicTitle = escapeHtml(art.title);
+  const summary = escapeHtml(art.summary || '');
 
   return `
 <section class="mt-12 pt-8 border-t border-slate-200">
   <div class="mb-4">
     <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200">
-      🎓 Educational Synthesis &amp; Student Study Guide
+      🎓 Educational Synthesis: ${escapeHtml(category)}
     </span>
   </div>
   <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">
-    Plain-English Concept Explainer: Fundamentals &amp; Terrestrial Translation
+    Plain-English Concept Explainer &amp; Fundamental Mechanism
   </h2>
   <div class="space-y-4 text-slate-700 text-sm leading-relaxed mb-8">
     <p>
-      At its core, this research investigates how living systems, physical materials, and molecular reactions function when freed from the constant mechanical constraint of Earth's gravitational field. In terrestrial laboratories, biological processes are heavily influenced by downward gravitational pull, buoyancy-driven fluid circulation, and hydrostatic pressure gradients. When biological experiments are elevated into Low Earth Orbit (LEO) aboard platforms like the International Space Station or orbital free-flyer capsules, these gravity-dependent forces drop by five to six orders of magnitude.
+      This research focuses on <strong>${topicTitle}</strong>. ${summary}
     </p>
     <p>
-      Under such microgravity conditions, fluids shift from convection-dominated regimes to purely diffusion-governed kinetics. For pharmaceutical researchers and molecular biologists, this transformation eliminates turbulent eddies around growing protein crystals or cellular spheroids, allowing macromolecules to assemble with extraordinary symmetry and internal order. Similarly, cells suspended in orbital bioreactors experience uniform three-dimensional nutrient diffusion without settling to the bottom of the container, simulating the native architecture of living human tissue far more accurately than flat Petri dishes.
+      In microgravity environments, gravitational vectors drop below 10⁻⁴ g. Physical dynamics shift from buoyancy-dominated convection to pure diffusion regimes, altering mechanical loading across cellular membranes and molecular complexes.
     </p>
-    <p>
-      Critically, space biology is not merely about space travel—it provides direct translational breakthroughs for healthcare on Earth. The rapid physiological changes observed during orbital spaceflight (such as accelerated bone demineralization, muscle atrophy, endothelial remodeling, and immune cell senescence) closely mimic decades of human aging compressed into mere weeks or months. By uncovering the biochemical pathways that govern these adaptations in orbit, researchers can identify novel therapeutic targets, formulate more effective osteoporosis treatments, engineer resilient biomaterials, and design preventative interventions for terrestrial cardiovascular and degenerative disorders.
-    </p>
-  </div>
-
-  <h3 class="text-xl font-display font-bold text-slate-900 mb-3">
-    Curated Learning Glossary &amp; Technical Vocabulary
-  </h3>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-    ${termKeys.map(term => `
-    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/90 text-xs">
-      <div class="font-bold text-slate-900 mb-1 flex items-center gap-1.5 text-emerald-800">
-        <span>📖</span> ${term}
-      </div>
-      <p class="text-slate-600 leading-relaxed">${glossaryMap[term]}</p>
-    </div>`).join('')}
-  </div>
-
-  <h3 class="text-xl font-display font-bold text-slate-900 mb-3">
-    Classroom Discussion &amp; Academic Inquiries
-  </h3>
-  <div class="p-6 rounded-2xl bg-white border border-slate-200 text-xs space-y-3 shadow-sm mb-6">
-    <div class="font-bold text-slate-900 text-sm flex items-center gap-2">
-      <span>💡</span> Critical Inquiry Prompts for Students and Researchers
-    </div>
-    <ol class="space-y-2.5 text-slate-600 list-decimal list-inside leading-relaxed">
-      <li><strong>Physical Transport Mechanisms:</strong> How does the absence of density-driven natural convection alter the rate at which signaling molecules, cytokines, and nutrients diffuse toward cellular membranes in microgravity?</li>
-      <li><strong>Mechanosensory Translation:</strong> What specific membrane receptors (such as PIEZO channels or integrin complexes) transduce the lack of mechanical loading into altered gene expression, and how can this pathway be pharmacologically manipulated?</li>
-      <li><strong>Terrestrial Medical Parallels:</strong> In what ways does the microgravity-induced down-regulation of osteoblast activity model accelerated osteoporosis on Earth, and what novel drug candidates can be validated using this orbital model?</li>
-    </ol>
   </div>
 </section>
 `;
@@ -221,7 +190,10 @@ ${citeItems}
 articles.forEach((art, idx) => {
   // Clean canonical URL without .html
   const cleanArticleUrl = `${SITE_URL}/articles/${art.id}`;
-  const metaDesc = art.metaDescription || art.summary || '';
+  let metaDesc = art.metaDescription || art.summary || '';
+  if (metaDesc.length > 158) {
+    metaDesc = metaDesc.slice(0, 155).replace(/\s+[^\s]*$/, '').trim() + '...';
+  }
   const dateFormatted = art.date || 'October 21, 2026';
   const doi = art.doi || `10.1038/s41586-2026-${1000 + idx}`;
   const authorName = art.author || 'Dr. Elena Rostova';
@@ -336,7 +308,11 @@ articles.forEach((art, idx) => {
     </a>
   `).join('\n');
 
-  const displayTitle = art.seoTitle ? `${escapeHtml(art.seoTitle)} | BioGravity` : `${escapeHtml(art.title)} | BioGravity`;
+  let cleanSeoTitle = (art.seoTitle || art.title).replace(/\s*\|\s*BioGravity.*$/i, '').trim();
+  if (cleanSeoTitle.length > 46) {
+    cleanSeoTitle = cleanSeoTitle.slice(0, 46).replace(/\s+[^\s]*$/, '').trim();
+  }
+  const displayTitle = `${escapeHtml(cleanSeoTitle)} | BioGravity`;
   const socialTitle = escapeHtml(art.seoTitle || art.title);
 
   const html = `<!DOCTYPE html>
@@ -367,6 +343,7 @@ articles.forEach((art, idx) => {
   <meta name="author" content="${escapeHtml(authorName)}">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="${cleanArticleUrl}">
+  <link rel="alternate" type="text/markdown" href="${SITE_URL}/llms.txt" title="LLMs.txt AI Search Digest">
 
   <!-- Clean URL Enforcement for Browsers -->
   <script>
@@ -394,26 +371,8 @@ articles.forEach((art, idx) => {
   <meta name="twitter:description" content="${escapeHtml(metaDesc)}">
   <meta name="twitter:image" content="${escapeHtml(coverUrl)}">
 
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            charcoal: { 900: '#0f172a', 800: '#1e293b', 700: '#334155' },
-            teal: { 600: '#0d9488', 500: '#14b8a6', 50: '#f0fdfa' }
-          },
-          fontFamily: {
-            sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
-            display: ['Space Grotesk', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
-            mono: ['JetBrains Mono', 'monospace']
-          }
-        }
-      }
-    }
-  </script>
+  <!-- Custom Styles & Precompiled Design System -->
+  <link rel="stylesheet" href="/css/styles.css">
 
   <!-- KaTeX for Quantum Equations -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
@@ -614,7 +573,7 @@ ${JSON.stringify(schema, null, 2)}
           
           <!-- Hero Cover Image -->
           <div class="relative rounded-2xl overflow-hidden border border-slate-200/80 h-80 sm:h-96 bg-slate-100 shadow-sm">
-            <img src="${escapeHtml(coverUrl)}" alt="${escapeHtml(coverAlt)}" class="w-full h-full object-cover">
+            <img src="${escapeHtml(coverUrl)}" alt="${escapeHtml(coverAlt)}" width="1200" height="675" fetchpriority="high" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
             <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
               <div class="text-[11px] font-medium px-3 py-1 rounded-full bg-white/95 text-slate-800 shadow-sm">
@@ -917,6 +876,26 @@ ${JSON.stringify(schema, null, 2)}
   }
   fs.writeFileSync(path.join(slugDir, 'index.html'), html, 'utf8');
 
+  // If this article had a legacy truncated slug, create an instant redirect stub
+  if (art.legacyId) {
+    const redirectHtml = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0; url=${cleanArticleUrl}">
+  <link rel="canonical" href="${cleanArticleUrl}">
+  <title>Redirecting to ${escapeHtml(art.seoTitle || art.title)}</title>
+</head>
+<body>
+  <p>Redirecting to <a href="${cleanArticleUrl}">${escapeHtml(art.seoTitle || art.title)}</a>...</p>
+</body>
+</html>`;
+    fs.writeFileSync(path.join(articlesDir, `${art.legacyId}.html`), redirectHtml, 'utf8');
+    const legacyDir = path.join(articlesDir, art.legacyId);
+    if (!fs.existsSync(legacyDir)) fs.mkdirSync(legacyDir, { recursive: true });
+    fs.writeFileSync(path.join(legacyDir, 'index.html'), redirectHtml, 'utf8');
+  }
+
   console.log(`[BUILD-SEO] ✅ Generated clean static page: articles/${art.id} (/articles/${art.id}/)`);
 });
 
@@ -1195,7 +1174,7 @@ if (fs.existsSync(indexPath)) {
           <a href="/news/${encodeURIComponent(item.id)}" class="ux-card group overflow-hidden flex flex-col justify-between bg-white border border-slate-200 rounded-2xl hover:border-slate-300 transition shadow-xs hover:shadow-md">
             <div>
               <div class="relative aspect-video overflow-hidden bg-slate-100">
-                <img src="${escapeHtml(item.cover)}" alt="${escapeHtml(item.coverAlt || item.title)}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <img src="${escapeHtml(item.cover)}" alt="${escapeHtml(item.coverAlt || item.title)}" loading="lazy" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                 <div class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/80 backdrop-blur-md text-[10px] font-semibold text-white tracking-wide uppercase">
                   ${escapeHtml((item.category || 'Science').split('&')[0].trim())}
                 </div>
@@ -1532,7 +1511,6 @@ const notFoundHtml = `<!DOCTYPE html>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Orbital Coordinate Not Found (404) | BioGravity</title>
   <meta name="robots" content="noindex, follow">
-  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="/css/styles.css">
   <script>
     // Smart redirect: if user visited with .html, redirect to clean URL
@@ -1575,10 +1553,12 @@ fs.writeFileSync(path.join(__dirname, '404.html'), notFoundHtml, 'utf8');
 console.log(`[BUILD-SEO] ✅ Generated smart 404.html with automatic .html URL normalization!`);
 
 // =============================================================================
-// 6. GENERATE OPTIMIZED ROBOTS.TXT (MAXIMUM CRAWL RATE)
+// 6. GENERATE OPTIMIZED ROBOTS.TXT (MAXIMUM CRAWL RATE & CLEAN URL FOCUS)
 // =============================================================================
 const robotsTxt = `User-agent: *
 Allow: /
+Disallow: /*?q=*
+Disallow: /*?category=*
 
 # Dedicated Search Engine Crawlers
 # Google AdSense Crawler
@@ -1587,6 +1567,8 @@ Allow: /
 
 User-agent: Googlebot
 Allow: /
+Disallow: /*?q=*
+Disallow: /*?category=*
 
 User-agent: Googlebot-Image
 Allow: /
@@ -1596,17 +1578,141 @@ Allow: /
 
 User-agent: Bingbot
 Allow: /
+Disallow: /*?q=*
+Disallow: /*?category=*
 
 User-agent: DuckDuckBot
 Allow: /
+Disallow: /*?q=*
+Disallow: /*?category=*
 
-# Sitemap Locations
+# =============================================================================
+# Artificial Intelligence & AI Search Engine Crawlers
+# =============================================================================
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Cloudflare / IETF Content Signals Policy
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+
+# Sitemap & AI Digest Locations
 Sitemap: ${SITE_URL}/sitemap.xml
 Sitemap: ${SITE_URL}/sitemap-news.xml
 `;
 
 fs.writeFileSync(path.join(__dirname, 'robots.txt'), robotsTxt, 'utf8');
 console.log(`[BUILD-SEO] ✅ Generated optimized robots.txt!`);
+
+// =============================================================================
+// 6b. GENERATE LLMS.TXT AND LLMS-FULL.TXT (GEO & AI AGENTIC SEARCH DIGESTS)
+// =============================================================================
+console.log(`[BUILD-SEO] 🤖 Generating llms.txt and llms-full.txt for GEO & Agentic Search...`);
+
+let llmsContent = `# BioGravity
+
+> BioGravity (${SITE_URL}) is an open-access scientific publication platform and research bureau dedicated to microgravity science, space biotechnology, and orbital medicine. We investigate how the absence of buoyancy-driven convection, hydrostatic pressure gradients, and mechanical gravity constraints in Low Earth Orbit (LEO) transforms cell biology, protein crystallization, organ bioprinting, and terrestrial therapeutics.
+
+## Core Hubs & Academic Resources
+
+- [Home Hub](${SITE_URL}/): Overview of orbital microgravity research, featured breakthrough dispatches, and terrestrial medicine translation.
+- [Research Feed](${SITE_URL}/research/): Complete open-access archive of ${articles.length} peer-reviewed research dispatches covering mechanobiology, space physics, oncology, and bioprinting.
+- [Interactive Science Tools](${SITE_URL}/tools/): Physics sandboxes, capillary fluidics calculators, and microgravity simulation tools.
+- [Molecular Biology Guide](${SITE_URL}/molecular-biology-research/): Comprehensive reference on macromolecular crystallography, CRISPR proton tunneling, and organoid self-assembly in orbit.
+- [Microgravity Effects on Human Body](${SITE_URL}/microgravity-effects-on-human-body/): Clinical review of musculoskeletal unloading, cardiovascular remodeling, and neuro-ocular syndrome.
+- [Live News Bureau](${SITE_URL}/news/): Breaking global discoveries in aerospace medicine, solid-state batteries, and planetary physics.
+- [World Space Week 2026](${SITE_URL}/world-space-week-2026/): Educational symposium resources and academic workshops.
+- [About & Editorial Board](${SITE_URL}/about/): BioGravity's mission, scientific governance, and open-science CC-BY 4.0 policy.
+
+## Scientific Research Dispatches
+
+`;
+
+articles.forEach(art => {
+  const artUrl = `${SITE_URL}/articles/${art.id}/`;
+  const summary = art.summary || art.metaDescription || '';
+  llmsContent += `- [${art.title}](${artUrl}): ${summary}\n`;
+});
+
+llmsContent += `
+## Syndication & Sitemaps
+
+- [XML Sitemap Index](${SITE_URL}/sitemap.xml): Primary canonical sitemap covering all static routes and clean dispatch URLs.
+- [Google News Sitemap](${SITE_URL}/sitemap-news.xml): Dedicated Google News sitemap for recent science dispatches.
+- [RSS 2.0 Feed](${SITE_URL}/rss.xml): Full syndicated XML feed of published dispatches.
+- [JSON Feed](${SITE_URL}/feed.xml): Machine-readable scientific publication feed.
+- [Full LLM Knowledgebase](${SITE_URL}/llms-full.txt): Comprehensive deep-text digest with FAQs, abstracts, and DOIs.
+`;
+
+fs.writeFileSync(path.join(__dirname, 'llms.txt'), llmsContent, 'utf8');
+
+// Generate llms-full.txt with extensive abstracts, findings, and FAQs
+let llmsFullContent = `# BioGravity: Full Scientific Knowledge Base
+
+> Comprehensive open-access repository of peer-reviewed dispatches on space biotechnology, gravitational cellular biophysics, and translational terrestrial medicine. Published under Creative Commons Attribution 4.0 International (CC BY 4.0).
+
+`;
+
+articles.forEach(art => {
+  const artUrl = `${SITE_URL}/articles/${art.id}/`;
+  llmsFullContent += `## ${art.title}\n\n`;
+  llmsFullContent += `- **Canonical URL:** ${artUrl}\n`;
+  if (art.doi) llmsFullContent += `- **DOI:** https://doi.org/${art.doi}\n`;
+  if (art.author) llmsFullContent += `- **Author:** ${art.author} (${art.authorRole || 'Lead Researcher'})\n`;
+  if (art.authorOrcid) llmsFullContent += `- **ORCID:** ${art.authorOrcid}\n`;
+  if (art.category) llmsFullContent += `- **Discipline:** ${art.category}\n`;
+  llmsFullContent += `- **Published:** ${art.date || TODAY}\n\n`;
+  llmsFullContent += `### Executive Summary\n${art.summary || art.metaDescription || ''}\n\n`;
+  if (art.quickAnswer) {
+    llmsFullContent += `### Core Scientific Finding\n${art.quickAnswer}\n\n`;
+  }
+  if (Array.isArray(art.keyTakeaways) && art.keyTakeaways.length > 0) {
+    llmsFullContent += `### Key Takeaways\n`;
+    art.keyTakeaways.forEach(kt => {
+      llmsFullContent += `- ${kt}\n`;
+    });
+    llmsFullContent += `\n`;
+  }
+  if (Array.isArray(art.faqs) && art.faqs.length > 0) {
+    llmsFullContent += `### Frequently Asked Questions\n`;
+    art.faqs.forEach(faq => {
+      llmsFullContent += `**Q: ${faq.q}**\n${faq.a}\n\n`;
+    });
+  }
+  llmsFullContent += `---\n\n`;
+});
+
+fs.writeFileSync(path.join(__dirname, 'llms-full.txt'), llmsFullContent, 'utf8');
+console.log(`[BUILD-SEO] ✅ Successfully generated llms.txt & llms-full.txt!`);
 
 
 // =============================================================================

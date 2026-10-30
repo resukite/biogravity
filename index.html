@@ -18,6 +18,7 @@
   <title>BioGravity | Space Biotechnology &amp; Microgravity Science</title>
   <meta name="description" content="BioGravity is an open-access scientific publication platform. Discover how orbital microgravity accelerates medicine, organ bioprinting, and human health on Earth.">
   <link rel="canonical" href="https://biogravity.space/">
+  <link rel="alternate" type="text/markdown" href="https://biogravity.space/llms.txt" title="LLMs.txt AI Search Digest">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
   <!-- Open Graph -->
@@ -28,37 +29,6 @@
   
 
   <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            canvas: '#fafbfc',
-            charcoal: {
-              900: '#0f172a',
-              800: '#1e293b',
-              700: '#334155',
-              600: '#475569',
-              500: '#64748b'
-            },
-            teal: {
-              600: '#0d9488',
-              500: '#14b8a6',
-              50: '#f0fdfa'
-            }
-          },
-          fontFamily: {
-            sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
-            display: ['Space Grotesk', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
-            mono: ['JetBrains Mono', 'monospace']
-          }
-        }
-      }
-    }
-  </script>
-
   <!-- Favicon & Styles -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="stylesheet" href="/css/styles.css">
@@ -246,7 +216,7 @@
             src="https://images.unsplash.com/photo-1532693322450-2cb5c511067d?auto=format&fit=crop&w=1400&q=85" 
             alt="Authentic 3D telescopic photograph of the Moon in background" 
             class="w-full h-full object-cover rounded-full mix-blend-multiply filter contrast-110 brightness-100"
-            loading="eager"
+            width="1400" height="1400" width="1400" height="1400" loading="eager"
           >
           <!-- Spherical Curvature Shading & Day/Night Terminator Line -->
           <div class="absolute inset-0 rounded-full shadow-[inset_-45px_-45px_90px_rgba(15,23,42,0.85),inset_15px_15px_40px_rgba(255,255,255,0.35)] pointer-events-none"></div>
@@ -261,14 +231,14 @@
           <!-- Category Badge -->
           <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 backdrop-blur border border-slate-200 text-slate-700 text-xs font-medium shadow-sm">
             <span>✨</span>
-            <span>Open-Access Space Science Platform</span>
+            <span>Open-Access Science, Mysteries &amp; Education Platform</span>
             <span class="text-slate-300">•</span>
             <span class="text-teal-600 font-semibold">100% Free &amp; Open</span>
           </div>
 
           <!-- Headline (Big, Bold, Human & Clear) -->
           <h1 class="text-3xl sm:text-5xl lg:text-6xl font-display font-extrabold text-slate-900 tracking-tight leading-[1.12]">
-            Space medicine explained in <br class="hidden sm:inline">
+            Science mysteries &amp; experiments in <br class="hidden sm:inline">
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-slate-900 via-teal-800 to-teal-600">
               plain, simple English.
             </span>
@@ -276,18 +246,35 @@
 
           <!-- Plain English Subheadline -->
           <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
-            On Earth, gravity pulls cells downward and churns fluids with heat convection. In the weightlessness of orbit, biology behaves in entirely new ways—allowing scientists to grow purer cancer drugs and 3D-print real living human tissue.
+            From quantum physics paradoxes and deep ocean trenches to black holes, bizarre animal biology, and nuclear history—we break down the universe's greatest scientific questions into thrilling, accessible dispatches.
           </p>
 
           <p class="text-xs sm:text-sm text-slate-500 max-w-xl">
-            BioGravity translates orbital laboratory experiments into clear, peer-reviewed scientific dispatches that students, doctors, and curious minds can read and understand without a paywall.
+            BioGravity is an open science hub designed for students, researchers, and curious minds. Discover mind-blowing experiments, historical breakthroughs, and peer-reviewed studies without paywalls.
           </p>
 
           <!-- CTA Buttons -->
           <div class="flex flex-wrap items-center justify-center sm:justify-start gap-3.5 pt-2">
             <a href="/research" class="ux-btn-primary px-7 py-3.5 text-sm flex items-center gap-2 shadow-sm">
-              <span>Explore 22 Research Dispatches</span>
+              <span>Explore All 45 Science Dispatches</span>
               <span>→</span>
+            </a>
+            <a href="/news" class="px-6 py-3.5 rounded-full bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200/90 text-sm font-semibold transition flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
+              <span>24/7 Live Science Wire</span>
+            </a>
+          </div>
+
+          <!-- Trending Topics Quick-Filter Bar -->
+          <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2 pt-3 text-xs text-slate-600">
+            <span class="font-semibold text-slate-800 text-[11px] uppercase tracking-wider">Trending Curiosities:</span>
+            <a href="/articles/what-happens-if-you-fall-into-a-black-hole" class="px-3 py-1 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 transition">🪐 Black Holes</a>
+            <a href="/articles/double-slit-experiment-quantum-mechanics-explained" class="px-3 py-1 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 transition">🔬 Double-Slit</a>
+            <a href="/articles/chernobyl-elephants-foot-deadliest-radioactive-mass" class="px-3 py-1 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 transition">☢️ Chernobyl</a>
+            <a href="/articles/what-would-happen-if-earth-stopped-spinning" class="px-3 py-1 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 transition">🌍 Earth Stopped</a>
+            <a href="/articles/immortal-jellyfish-turritopsis-dohrnii-biological-immortality" class="px-3 py-1 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 transition">🪼 Immortal Jellyfish</a>
+            <a href="/articles/mariana-trench-challenger-deep-creatures-pressure" class="px-3 py-1 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 transition">🌊 Mariana Trench</a>
+          </div>
             </a>
             <a href="/tools" class="ux-btn-secondary px-6 py-3.5 text-sm flex items-center gap-2 shadow-sm">
               <span>🧪 Try Interactive Tools</span>
@@ -345,128 +332,128 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
           
-          <a href="/news/beyond-lithium-non-flammable-sodium-solid-state-battery-achieves" class="ux-card group overflow-hidden flex flex-col justify-between bg-white border border-slate-200 rounded-2xl hover:border-slate-300 transition shadow-xs hover:shadow-md">
+          <a href="/news/renormalization-for-robust-memory-without-synchronization-new" class="ux-card group overflow-hidden flex flex-col justify-between bg-white border border-slate-200 rounded-2xl hover:border-slate-300 transition shadow-xs hover:shadow-md">
             <div>
               <div class="relative aspect-video overflow-hidden bg-slate-100">
-                <img src="https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Renewable biological solar cells and clean environmental nanotechnology" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Deep space exoplanet atmospheric spectroscopy captured by orbital space observatory" loading="lazy" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                 <div class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/80 backdrop-blur-md text-[10px] font-semibold text-white tracking-wide uppercase">
-                  Clean Energy
+                  Space
                 </div>
               </div>
               <div class="p-4 sm:p-5">
                 <div class="flex items-center justify-between text-[11px] mb-2 font-medium">
                   <span class="text-rose-600 font-semibold flex items-center gap-1">
                     <span class="w-1.5 h-1.5 rounded-full bg-rose-500 animate-pulse"></span>
-                    October 28, 2026
+                    October 30, 2026
                   </span>
                   <span class="text-slate-400">4 min read</span>
                 </div>
                 <h3 class="font-display font-bold text-sm sm:text-base text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mb-2 leading-snug">
-                  Beyond Lithium: Non-Flammable Sodium Solid-State Battery Achieves 2,000 Cycles with Zero Dendrites
+                  Renormalization for Robust Memory without Synchronization: New Evidence in Space &amp; Astronomy
                 </h3>
                 <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
-                  Beyond Lithium: Non-Flammable Sodium Solid-State Battery Achieves 2,000 Cycles with Zero Dendrites: Elimination of rare-earth lithium and cobalt allows safe, non-flammable grid-scale energy storage at less than thirty dollars per kilowatt-hour. Published via Advanced Energy Materials Review.
+                  Renormalization for Robust Memory without Synchronization: New Evidence in Space &amp; Astronomy: Local error correction can preserve classical information against noise, but protection under synchronized updates need not survive when sites evolve at independent random times. Establishing stability is particularly challenging when protection relies on the collective action of competing local rules. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40651v1).
                 </p>
               </div>
             </div>
             <div class="px-4 pb-4 sm:px-5 sm:pb-5 pt-0 flex items-center justify-between text-xs border-t border-slate-100 pt-3">
-              <span class="text-slate-400 font-medium text-[11px]">Advanced Energy Materials Review</span>
+              <span class="text-slate-400 font-medium text-[11px]">arXiv Open Science Wire (https://arxiv.org/abs/2610.40651v1)</span>
               <span class="text-slate-900 font-semibold group-hover:text-teal-600 group-hover:translate-x-0.5 transition flex items-center gap-1">
                 Read Story &rarr;
               </span>
             </div>
           </a>
 
-          <a href="/news/virus-proof-biology-scientists-build-synthetic-bacterial-genome" class="ux-card group overflow-hidden flex flex-col justify-between bg-white border border-slate-200 rounded-2xl hover:border-slate-300 transition shadow-xs hover:shadow-md">
+          <a href="/news/reconstructing-hidden-observables-via-quantum-snapshot-new" class="ux-card group overflow-hidden flex flex-col justify-between bg-white border border-slate-200 rounded-2xl hover:border-slate-300 transition shadow-xs hover:shadow-md">
             <div>
               <div class="relative aspect-video overflow-hidden bg-slate-100">
-                <img src="https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Cutting-edge laboratory biophysics and scientific research instrumentation" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" loading="lazy" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                 <div class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/80 backdrop-blur-md text-[10px] font-semibold text-white tracking-wide uppercase">
-                  Synthetic Biology
+                  Quantum
                 </div>
               </div>
               <div class="p-4 sm:p-5">
                 <div class="flex items-center justify-between text-[11px] mb-2 font-medium">
                   <span class="text-rose-600 font-semibold flex items-center gap-1">
                     <span class="w-1.5 h-1.5 rounded-full bg-rose-500 animate-pulse"></span>
-                    October 28, 2026
+                    October 30, 2026
                   </span>
                   <span class="text-slate-400">4 min read</span>
                 </div>
                 <h3 class="font-display font-bold text-sm sm:text-base text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mb-2 leading-snug">
-                  Virus-Proof Biology: Scientists Build Synthetic Bacterial Genome Immune to Infection
+                  Reconstructing hidden observables via quantum snapshot: New Evidence in Quantum &amp; Physics
                 </h3>
                 <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
-                  Virus-Proof Biology: Scientists Build Synthetic Bacterial Genome Immune to Infection: By rewriting 64 standard codons down to 59 and reassigning the remaining 5 to synthetic unnatural amino acids, cells were made fully immune to all known viral bacteriophages. Published via Cellular Genomics Letters.
+                  Reconstructing hidden observables via quantum snapshot: New Evidence in Quantum &amp; Physics: Projective snapshots are a standard readout tool for quantum simulators, but they directly probe only observables that are diagonal in the measurement basis. We show how local equilibration and an independently calibrated equilibrium equation of state can reveal otherwise hidden conserved-density profiles. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40652v1).
                 </p>
               </div>
             </div>
             <div class="px-4 pb-4 sm:px-5 sm:pb-5 pt-0 flex items-center justify-between text-xs border-t border-slate-100 pt-3">
-              <span class="text-slate-400 font-medium text-[11px]">Cellular Genomics Letters</span>
+              <span class="text-slate-400 font-medium text-[11px]">arXiv Open Science Wire (https://arxiv.org/abs/2610.40652v1)</span>
               <span class="text-slate-900 font-semibold group-hover:text-teal-600 group-hover:translate-x-0.5 transition flex items-center gap-1">
                 Read Story &rarr;
               </span>
             </div>
           </a>
 
-          <a href="/news/hidden-beneath-two-miles-of-antarctic-ice-scientists-discover" class="ux-card group overflow-hidden flex flex-col justify-between bg-white border border-slate-200 rounded-2xl hover:border-slate-300 transition shadow-xs hover:shadow-md">
+          <a href="/news/cosmic-echoes-sub-solar-gravitational-wave-detection-points-to" class="ux-card group overflow-hidden flex flex-col justify-between bg-white border border-slate-200 rounded-2xl hover:border-slate-300 transition shadow-xs hover:shadow-md">
             <div>
               <div class="relative aspect-video overflow-hidden bg-slate-100">
-                <img src="https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Glacial ice sheet core sampling and polar climate research expedition" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <img src="https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Renewable biological solar cells and clean environmental nanotechnology" loading="lazy" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                 <div class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/80 backdrop-blur-md text-[10px] font-semibold text-white tracking-wide uppercase">
-                  Geophysics
+                  Cosmology
                 </div>
               </div>
               <div class="p-4 sm:p-5">
                 <div class="flex items-center justify-between text-[11px] mb-2 font-medium">
                   <span class="text-rose-600 font-semibold flex items-center gap-1">
                     <span class="w-1.5 h-1.5 rounded-full bg-rose-500 animate-pulse"></span>
-                    October 28, 2026
+                    October 30, 2026
                   </span>
                   <span class="text-slate-400">4 min read</span>
                 </div>
                 <h3 class="font-display font-bold text-sm sm:text-base text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mb-2 leading-snug">
-                  Hidden Beneath Two Miles of Antarctic Ice: Scientists Discover Immense Prehistoric River Canyon
+                  Cosmic Echoes: Sub-Solar Gravitational Wave Detection Points to Primordial Dark Matter
                 </h3>
                 <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
-                  Hidden Beneath Two Miles of Antarctic Ice: Scientists Discover Immense Prehistoric River Canyon: Airborne ice-penetrating radar traced a 34-million-year-old fluvial valley network preserved undisturbed under two miles of polar ice. Published via International Antarctic Survey.
+                  Cosmic Echoes: Sub-Solar Gravitational Wave Detection Points to Primordial Dark Matter: LIGO-Virgo-KAGRA recorded chirping gravitational ripples from a 0.7-solar-mass binary collision below the Chandrasekhar limit, consistent with early universe primordial genesis. Published via Physical Review Dispatches.
                 </p>
               </div>
             </div>
             <div class="px-4 pb-4 sm:px-5 sm:pb-5 pt-0 flex items-center justify-between text-xs border-t border-slate-100 pt-3">
-              <span class="text-slate-400 font-medium text-[11px]">International Antarctic Survey</span>
+              <span class="text-slate-400 font-medium text-[11px]">Physical Review Dispatches</span>
               <span class="text-slate-900 font-semibold group-hover:text-teal-600 group-hover:translate-x-0.5 transition flex items-center gap-1">
                 Read Story &rarr;
               </span>
             </div>
           </a>
 
-          <a href="/news/cosmic-monster-on-the-loose-runaway-supermassive-black-hole" class="ux-card group overflow-hidden flex flex-col justify-between bg-white border border-slate-200 rounded-2xl hover:border-slate-300 transition shadow-xs hover:shadow-md">
+          <a href="/news/coral-survival-breakthrough-marine-biologists-discover-rapid" class="ux-card group overflow-hidden flex flex-col justify-between bg-white border border-slate-200 rounded-2xl hover:border-slate-300 transition shadow-xs hover:shadow-md">
             <div>
               <div class="relative aspect-video overflow-hidden bg-slate-100">
-                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Deep space exoplanet atmospheric spectroscopy captured by orbital space observatory" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <img src="https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Glacial ice sheet core sampling and polar climate research expedition" loading="lazy" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                 <div class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/80 backdrop-blur-md text-[10px] font-semibold text-white tracking-wide uppercase">
-                  Astrophysics
+                  Marine Ecology
                 </div>
               </div>
               <div class="p-4 sm:p-5">
                 <div class="flex items-center justify-between text-[11px] mb-2 font-medium">
                   <span class="text-rose-600 font-semibold flex items-center gap-1">
                     <span class="w-1.5 h-1.5 rounded-full bg-rose-500 animate-pulse"></span>
-                    October 28, 2026
+                    October 30, 2026
                   </span>
                   <span class="text-slate-400">4 min read</span>
                 </div>
                 <h3 class="font-display font-bold text-sm sm:text-base text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mb-2 leading-snug">
-                  Cosmic Monster on the Loose: Runaway Supermassive Black Hole Leaves 200,000-Light-Year Star Trail
+                  Coral Survival Breakthrough: Marine Biologists Discover Rapid Epigenetic Heat Resistance
                 </h3>
                 <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
-                  Cosmic Monster on the Loose: Runaway Supermassive Black Hole Leaves 200,000-Light-Year Star Trail: The 20-million-solar-mass black hole is speeding through intergalactic space at 4 million miles per hour, compressing gas wake shockwaves into young stellar clusters. Published via Astrophysical Journal Dispatches.
+                  Coral Survival Breakthrough: Marine Biologists Discover Rapid Epigenetic Heat Resistance: Coral polyps in the South Pacific demonstrated rapid non-genetic transgenerational acclimatization, passing heat-shock protein expression patterns to subsequent larvae generations. Published via Oceanic Biological Reports.
                 </p>
               </div>
             </div>
             <div class="px-4 pb-4 sm:px-5 sm:pb-5 pt-0 flex items-center justify-between text-xs border-t border-slate-100 pt-3">
-              <span class="text-slate-400 font-medium text-[11px]">Astrophysical Journal Dispatches</span>
+              <span class="text-slate-400 font-medium text-[11px]">Oceanic Biological Reports</span>
               <span class="text-slate-900 font-semibold group-hover:text-teal-600 group-hover:translate-x-0.5 transition flex items-center gap-1">
                 Read Story &rarr;
               </span>
@@ -679,7 +666,7 @@
           <!-- Article Card 1 -->
           <article class="ux-card overflow-hidden group flex flex-col justify-between">
             <div class="relative h-48 overflow-hidden bg-slate-100">
-              <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80" alt="Mitochondrial Bio-Oscillator Desynchronization" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80" alt="Mitochondrial Bio-Oscillator Desynchronization" width="1200" height="800" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
               <span class="absolute top-3 left-3 text-[10px] font-medium px-2.5 py-0.5 rounded-full bg-white/95 text-slate-800 shadow-sm">Space Physics</span>
               <span class="absolute top-3 right-3 text-[10px] font-medium text-slate-600 bg-white/95 px-2.5 py-0.5 rounded-full shadow-sm">15 min read</span>
             </div>
@@ -705,7 +692,7 @@
           <!-- Article Card 2 -->
           <article class="ux-card overflow-hidden group flex flex-col justify-between">
             <div class="relative h-48 overflow-hidden bg-slate-100">
-              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80" alt="Radical Pair Spin Coherence" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80" alt="Radical Pair Spin Coherence" width="1200" height="800" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
               <span class="absolute top-3 left-3 text-[10px] font-medium px-2.5 py-0.5 rounded-full bg-white/95 text-slate-800 shadow-sm">Quantum Enzymology</span>
               <span class="absolute top-3 right-3 text-[10px] font-medium text-slate-600 bg-white/95 px-2.5 py-0.5 rounded-full shadow-sm">14 min read</span>
             </div>
@@ -731,7 +718,7 @@
           <!-- Article Card 3 -->
           <article class="ux-card overflow-hidden group flex flex-col justify-between">
             <div class="relative h-48 overflow-hidden bg-slate-100">
-              <img src="https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&fit=crop&w=1200&q=80" alt="Synthetic Poly-ADP Metallo-Peptides" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&fit=crop&w=1200&q=80" alt="Synthetic Poly-ADP Metallo-Peptides" width="1200" height="800" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
               <span class="absolute top-3 left-3 text-[10px] font-medium px-2.5 py-0.5 rounded-full bg-white/95 text-slate-800 shadow-sm">Radioprotection</span>
               <span class="absolute top-3 right-3 text-[10px] font-medium text-slate-600 bg-white/95 px-2.5 py-0.5 rounded-full shadow-sm">15 min read</span>
             </div>

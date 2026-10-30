@@ -11,7 +11,9 @@
     "review": "node auto-publisher.js --review",
     "approve": "node auto-publisher.js --approve",
     "reject": "node auto-publisher.js --reject",
+    "build-css": "tailwindcss -i ./css/input.css -o ./css/styles.css --minify",
     "build-seo": "node build-seo.js",
+    "live-news": "node scripts/live_news_engine.js",
     "write-viral": "node scripts/auto-viral-writer.js",
     "sentinel": "node scripts/traffic-sentinel.js",
     "cloud-daemon": "python cloud_seo_daemon.py --run-once",
@@ -38,5 +40,8 @@
     "dotenv": "^16.4.5",
     "googleapis": "^187.0.0",
     "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
   }
 }

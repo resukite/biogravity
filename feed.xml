@@ -5,8 +5,44 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Oct 2026 14:32:16 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 05:59:39 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Renormalization for Robust Memory without Synchronization: New Evidence in Space &amp; Astronomy</title>
+      <link>https://biogravity.space/news/renormalization-for-robust-memory-without-synchronization-new</link>
+      <guid isPermaLink="true">https://biogravity.space/news/renormalization-for-robust-memory-without-synchronization-new</guid>
+      <pubDate>Fri, 30 Oct 2026 05:43:59 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Renormalization for Robust Memory without Synchronization: New Evidence in Space &amp; Astronomy: Local error correction can preserve classical information against noise, but protection under synchronized updates need not survive when sites evolve at independent random times. Establishing stability is particularly challenging when protection relies on the collective action of competing local rules. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40651v1).</description>
+      <category>Space &amp; Astronomy</category>
+    </item>
+    <item>
+      <title>Reconstructing hidden observables via quantum snapshot: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/reconstructing-hidden-observables-via-quantum-snapshot-new</link>
+      <guid isPermaLink="true">https://biogravity.space/news/reconstructing-hidden-observables-via-quantum-snapshot-new</guid>
+      <pubDate>Fri, 30 Oct 2026 05:43:59 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Reconstructing hidden observables via quantum snapshot: New Evidence in Quantum &amp; Physics: Projective snapshots are a standard readout tool for quantum simulators, but they directly probe only observables that are diagonal in the measurement basis. We show how local equilibration and an independently calibrated equilibrium equation of state can reveal otherwise hidden conserved-density profiles. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40652v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
+    <item>
+      <title>Cosmic Echoes: Sub-Solar Gravitational Wave Detection Points to Primordial Dark Matter</title>
+      <link>https://biogravity.space/news/cosmic-echoes-sub-solar-gravitational-wave-detection-points-to</link>
+      <guid isPermaLink="true">https://biogravity.space/news/cosmic-echoes-sub-solar-gravitational-wave-detection-points-to</guid>
+      <pubDate>Fri, 30 Oct 2026 05:22:37 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Cosmic Echoes: Sub-Solar Gravitational Wave Detection Points to Primordial Dark Matter: LIGO-Virgo-KAGRA recorded chirping gravitational ripples from a 0.7-solar-mass binary collision below the Chandrasekhar limit, consistent with early universe primordial genesis. Published via Physical Review Dispatches.</description>
+      <category>Cosmology &amp; Particle Physics</category>
+    </item>
+    <item>
+      <title>Coral Survival Breakthrough: Marine Biologists Discover Rapid Epigenetic Heat Resistance</title>
+      <link>https://biogravity.space/news/coral-survival-breakthrough-marine-biologists-discover-rapid</link>
+      <guid isPermaLink="true">https://biogravity.space/news/coral-survival-breakthrough-marine-biologists-discover-rapid</guid>
+      <pubDate>Fri, 30 Oct 2026 05:22:37 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Coral Survival Breakthrough: Marine Biologists Discover Rapid Epigenetic Heat Resistance: Coral polyps in the South Pacific demonstrated rapid non-genetic transgenerational acclimatization, passing heat-shock protein expression patterns to subsequent larvae generations. Published via Oceanic Biological Reports.</description>
+      <category>Marine Ecology &amp; Climate</category>
+    </item>
     <item>
       <title>Beyond Lithium: Non-Flammable Sodium Solid-State Battery Achieves 2,000 Cycles with Zero Dendrites</title>
       <link>https://biogravity.space/news/beyond-lithium-non-flammable-sodium-solid-state-battery-achieves</link>
@@ -116,6 +152,132 @@
       <category>Science History &amp; Paleoclimatology</category>
     </item>
     <item>
+      <title>Schrödinger&apos;s Cat Explained Simply: The Famous Quantum Paradox</title>
+      <link>https://biogravity.space/articles/schrodingers-cat-quantum-physics-paradox-explained</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/schrodingers-cat-quantum-physics-paradox-explained</guid>
+      <pubDate>Fri, 30 Oct 2026 05:59:05 GMT</pubDate>
+      <dc:creator>Dr. Marcus Thorne</dc:creator>
+      <description>Schrödinger&apos;s Cat is a famous thought experiment proposed by Austrian physicist Erwin Schrödinger in 1935 to demonstrate what he believed was the complete absurdity of the Copenhagen interpretation of quantum mechanics. In the scenario, a hypothetical cat is sealed inside a steel box with a single radioactive atom, a Geiger counter, a hammer, and a flask of deadly poison. If the atom decays, the hammer breaks the flask, killing the cat; if it doesn&apos;t decay, the cat lives. According to quantum theory, until an observer opens the box and looks inside, the atom exists in a &apos;superposition&apos; of both decayed and undecayed states simultaneously—which would mean the cat is simultaneously both alive and dead at the same time.</description>
+      <category>Mind-Bending Science Experiments</category>
+    </item>
+    <item>
+      <title>Why Do Octopuses Have Three Hearts and Blue Blood? Alien Biology</title>
+      <link>https://biogravity.space/articles/why-do-octopuses-have-three-hearts-and-blue-blood</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/why-do-octopuses-have-three-hearts-and-blue-blood</guid>
+      <pubDate>Fri, 30 Oct 2026 05:59:05 GMT</pubDate>
+      <dc:creator>Dr. Marcus Thorne</dc:creator>
+      <description>Octopuses have three hearts and blue blood because of the extreme thermodynamic demands of breathing underwater. Two &apos;branchial hearts&apos; pump deoxygenated blood through the gills, while a larger central &apos;systemic heart&apos; pumps oxygenated blood throughout the rest of the body. Their blood is bright blue instead of red because it relies on a copper-rich protein called &apos;hemocyanin&apos; instead of iron-based hemoglobin. In freezing, oxygen-poor deep ocean waters, copper-based hemocyanin binds oxygen far more efficiently than hemoglobin, allowing octopuses to remain agile predators in hostile marine environments.</description>
+      <category>Zoology &amp; Animal Physiology</category>
+    </item>
+    <item>
+      <title>What Lives in the Mariana Trench? 36,000 Feet Below the Ocean</title>
+      <link>https://biogravity.space/articles/mariana-trench-challenger-deep-creatures-pressure</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/mariana-trench-challenger-deep-creatures-pressure</guid>
+      <pubDate>Fri, 30 Oct 2026 05:59:05 GMT</pubDate>
+      <dc:creator>Dr. Marcus Thorne</dc:creator>
+      <description>At the bottom of the Mariana Trench (Challenger Deep at 36,000 feet or 10,994 meters), the water pressure exceeds 1,071 atmospheres (over 15,750 psi)—equivalent to having an adult elephant standing on your thumb. Sunlight disappears within the first 650 feet, temperatures hover near freezing (1°C to 4°C), and food is scarce. Yet, life thrives: the hadal trench is populated by translucent Mariana snailfish, giant 12-inch amphipods, white xenophyophores (single-celled organisms the size of dinner plates), and unique piezophilic bacteria that thrive by utilizing specialized cellular osmolyte chemicals like TMAO to prevent their cellular proteins from being crushed into jelly.</description>
+      <category>Deep Ocean &amp; Extreme Ecosystems</category>
+    </item>
+    <item>
+      <title>The Immortal Jellyfish: How Turritopsis Dohrnii Cheats Death</title>
+      <link>https://biogravity.space/articles/immortal-jellyfish-turritopsis-dohrnii-biological-immortality</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/immortal-jellyfish-turritopsis-dohrnii-biological-immortality</guid>
+      <pubDate>Fri, 30 Oct 2026 05:59:05 GMT</pubDate>
+      <dc:creator>Dr. Elena Rostova</dc:creator>
+      <description>The immortal jellyfish (Turritopsis dohrnii) is the only known animal capable of reverting back into its juvenile polyp state after reaching sexual maturity. When stressed, starving, injured, or aging, the adult medusa absorbs its tentacles, settles onto the ocean floor, and undergoes a rare biological process called &apos;cellular transdifferentiation&apos;: its specialized muscle and nerve cells transform into undifferentiated stem cells, which assemble into a brand-new polyp colony that buds off genetically identical young jellyfish. In theory, this cycle can repeat indefinitely, making Turritopsis dohrnii biologically immortal.</description>
+      <category>Bizarre Biology &amp; Evolution</category>
+    </item>
+    <item>
+      <title>What Would Happen If Earth Stopped Spinning for 5 Seconds?</title>
+      <link>https://biogravity.space/articles/what-would-happen-if-earth-stopped-spinning</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/what-would-happen-if-earth-stopped-spinning</guid>
+      <pubDate>Fri, 30 Oct 2026 05:59:05 GMT</pubDate>
+      <dc:creator>Dr. Elena Rostova</dc:creator>
+      <description>If the solid Earth suddenly stopped spinning for just 5 seconds, it would trigger instantaneous global devastation due to Newton&apos;s First Law of Motion (inertia). At the equator, the surface of the Earth moves eastward at roughly 1,040 mph (1,670 km/h). If the ground stopped, everything not bolted directly to bedrock—the atmosphere, oceans, buildings, vehicles, soil, and billions of living creatures—would continue hurtling eastward at supersonic speeds, creating 1,000-mph winds that would obliterate all human infrastructure before massive multi-kilometer-high ocean megatsunamis washed across the continents.</description>
+      <category>Earth Science &amp; Planetary Physics</category>
+    </item>
+    <item>
+      <title>Chernobyl&apos;s Elephant&apos;s Foot: Deadliest Radioactive Mass on Earth</title>
+      <link>https://biogravity.space/articles/chernobyl-elephants-foot-deadliest-radioactive-mass</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/chernobyl-elephants-foot-deadliest-radioactive-mass</guid>
+      <pubDate>Fri, 30 Oct 2026 05:59:05 GMT</pubDate>
+      <dc:creator>Dr. Elena Rostova</dc:creator>
+      <description>The Elephant&apos;s Foot is a massive, two-meter-wide mound of solidified &apos;corium&apos;—a toxic nuclear lava formed during the April 26, 1986 Chernobyl disaster when melting uranium dioxide fuel rods liquefied with zirconium cladding, graphite control rods, and melted serpentine sand and concrete. Resting in a dark steam corridor beneath destroyed Reactor No. 4, it was once the most lethal object on the planet: shortly after the disaster, standing near it for just 300 seconds (5 minutes) delivered a lethal radiation dose of 10,000 Roentgens (100 Grays), guaranteeing fatal acute radiation syndrome within days.</description>
+      <category>Science History &amp; Nuclear Physics</category>
+    </item>
+    <item>
+      <title>The Double-Slit Experiment Explained Simply: Quantum Reality</title>
+      <link>https://biogravity.space/articles/double-slit-experiment-quantum-mechanics-explained</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/double-slit-experiment-quantum-mechanics-explained</guid>
+      <pubDate>Fri, 30 Oct 2026 05:59:05 GMT</pubDate>
+      <dc:creator>Dr. Marcus Thorne</dc:creator>
+      <description>The double-slit experiment is the foundational mystery of quantum physics. When tiny particles like electrons or photons are fired at a barrier with two slits, they don&apos;t form two simple straight lines on the back wall like tiny bullets. Instead, they produce an &apos;interference pattern&apos; of multiple striped bands—proving that every single particle travels through both slits simultaneously as a wave of probability. Most shockingly, when physicists place a detector at the slits to observe which slit the particle actually passes through, the wave instantly collapses: the particles immediately act like solid marbles and form two plain lines. Simply measuring the particle changes how reality behaves.</description>
+      <category>Mind-Bending Science Experiments</category>
+    </item>
+    <item>
+      <title>What Happens If You Fall into a Black Hole? Spaghettification Explained</title>
+      <link>https://biogravity.space/articles/what-happens-if-you-fall-into-a-black-hole</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/what-happens-if-you-fall-into-a-black-hole</guid>
+      <pubDate>Fri, 30 Oct 2026 05:59:05 GMT</pubDate>
+      <dc:creator>Dr. Elena Rostova</dc:creator>
+      <description>If you fell into a stellar-mass black hole, extreme gravitational tidal forces would stretch you into a noodle-thin strand of atoms before you even reached the event horizon—a violent physical process called &apos;spaghettification.&apos; However, if you fell into a supermassive black hole (millions of times the mass of the Sun), the tidal forces at the horizon are gentle enough that you would cross the event horizon completely unharmed. To an outside observer watching you from far away, time dilation would make you appear to slow down and freeze permanently at the boundary, turning red and dimming into blackness, while from your own perspective, you would fall straight toward the central gravitational singularity where physics breaks down.</description>
+      <category>Cosmic Mysteries &amp; Astrophysics</category>
+    </item>
+    <item>
+      <title>3D Bioprinting Organs in Microgravity: Why Zero-G Is Better</title>
+      <link>https://biogravity.space/articles/3d-bioprinting-organoids-in-microgravity</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/3d-bioprinting-organoids-in-microgravity</guid>
+      <pubDate>Fri, 30 Oct 2026 05:49:03 GMT</pubDate>
+      <dc:creator>Dr. Marcus Thorne</dc:creator>
+      <description>3D bioprinting human organs in microgravity is vastly superior to terrestrial bioprinting because zero gravity prevents delicate living cells from collapsing under their own weight. On Earth, printing soft biological tissues (such as heart muscle, lung capillaries, and liver lobules) requires rigid synthetic scaffolds or toxic chemical crosslinkers to keep structures from flattening into puddles. In orbital weightlessness, low-viscosity bioinks remain perfectly suspended in 3D space, allowing fragile vascular capillaries and complex organoids to fuse naturally before returning to Earth.</description>
+      <category>Zero-G Biomanufacturing &amp; Biotechnology</category>
+    </item>
+    <item>
+      <title>Space Motion Sickness: Why 70% of Astronauts Suffer in Zero-G</title>
+      <link>https://biogravity.space/articles/space-adaptation-syndrome-space-motion-sickness</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/space-adaptation-syndrome-space-motion-sickness</guid>
+      <pubDate>Fri, 30 Oct 2026 05:49:03 GMT</pubDate>
+      <dc:creator>Dr. Elena Rostova</dc:creator>
+      <description>Space Adaptation Syndrome (SAS)—commonly known as space motion sickness—afflicts roughly 60% to 70% of all astronauts during their first 48 to 72 hours in microgravity. It is triggered by neuro-vestibular sensory conflict: while the inner ear&apos;s semicircular canals correctly detect head rotations, the otolith organs (which rely on gravity-weighted calcium carbonate crystals) fail to register downward pull. The brain receives violent contradictory signals between visual input and inner ear telemetry, resulting in nausea, headache, cold sweats, and sudden emesis.</description>
+      <category>Space Medicine &amp; Human Physiology</category>
+    </item>
+    <item>
+      <title>Can Plants Grow in Space Without Gravity? Orbital Botany Guide</title>
+      <link>https://biogravity.space/articles/can-plants-grow-in-space-without-gravity</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/can-plants-grow-in-space-without-gravity</guid>
+      <pubDate>Fri, 30 Oct 2026 05:49:03 GMT</pubDate>
+      <dc:creator>Dr. Marcus Thorne</dc:creator>
+      <description>Yes, plants can grow in space without gravity: multiple generations of crops—including red romaine lettuce, dwarf tomatoes, radishes, and wheat—have successfully germinated, flowered, and produced viable seeds aboard the International Space Station. While plants on Earth use gravity (gravitropism) to guide roots down and stems up, plants in microgravity adapt by relying heavily on light cues (phototropism) and moisture gradients (hydrotropism). The greatest technical challenge is not plant genetics, but managing water and oxygen in soil without gravity-driven drainage.</description>
+      <category>Space Agriculture &amp; Botany</category>
+    </item>
+    <item>
+      <title>How Do Astronauts Sleep in Space Without Floating Away?</title>
+      <link>https://biogravity.space/articles/how-do-astronauts-sleep-in-space</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/how-do-astronauts-sleep-in-space</guid>
+      <pubDate>Fri, 30 Oct 2026 05:49:03 GMT</pubDate>
+      <dc:creator>Dr. Elena Rostova</dc:creator>
+      <description>In space, astronauts sleep inside personal phone-booth-sized cabins (Crew Quarters) inside specialized padded sleeping bags firmly strapped to the walls or ceiling. Because there is no gravity, there is no physical &apos;up&apos; or &apos;down&apos;, and astronauts require no mattress or pillow. Crucially, sleep stations must be continuously ventilated by forced air fans: without gravity-driven convection, exhaled carbon dioxide pools around an astronaut&apos;s face, creating a localized CO2 bubble that can cause severe headaches, carbon dioxide poisoning, and suffocation.</description>
+      <category>Space Medicine &amp; Human Physiology</category>
+    </item>
+    <item>
+      <title>Why Do Astronauts Lose Bone Density in Space? Osteopenia Science</title>
+      <link>https://biogravity.space/articles/why-do-astronauts-lose-bone-density-in-space</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/why-do-astronauts-lose-bone-density-in-space</guid>
+      <pubDate>Fri, 30 Oct 2026 05:49:03 GMT</pubDate>
+      <dc:creator>Dr. Elena Rostova</dc:creator>
+      <description>Astronauts lose bone density in space because their skeleton is completely unloaded in microgravity: without the continuous downward mechanical stress of body weight, bone-building cells (osteoblasts) shut down, while bone-resorbing cells (osteoclasts) continue actively breaking down bone matrix. Astronauts lose between 1.0% to 1.5% of bone mineral density in weight-bearing bones (lumbar spine, hips, and femurs) for every month in orbit—a rate 10 to 12 times faster than severe postmenopausal osteoporosis on Earth.</description>
+      <category>Space Medicine &amp; Human Physiology</category>
+    </item>
+    <item>
+      <title>Difference Between Zero Gravity and Microgravity: Is There Gravity in Space?</title>
+      <link>https://biogravity.space/articles/difference-between-zero-gravity-and-microgravity</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/difference-between-zero-gravity-and-microgravity</guid>
+      <pubDate>Fri, 30 Oct 2026 05:49:03 GMT</pubDate>
+      <dc:creator>Dr. Elena Rostova</dc:creator>
+      <description>The fundamental difference is that &apos;zero gravity&apos; does not exist in Low Earth Orbit: at the altitude of the International Space Station (~400 km), Earth&apos;s gravitational pull is still roughly 90% as strong as it is on the surface. Astronauts float not because gravity is absent, but because the station travels sideways at 17,500 mph (28,000 km/h)—falling toward Earth at the exact same rate that the planet&apos;s surface curves away beneath it. This continuous free-fall state is scientifically termed &apos;microgravity&apos; (typically 10⁻³ to 10⁻⁶ g).</description>
+      <category>Space Biophysics &amp; Orbital Mechanics</category>
+    </item>
+    <item>
       <title>What Statement About Risks in Social and Behavioral Sciences Research Is Most Accurate? Complete Guide</title>
       <link>https://biogravity.space/articles/what-statement-about-risks-in-social-and-behavioral-sciences-research-is-most-accurate</link>
       <guid isPermaLink="true">https://biogravity.space/articles/what-statement-about-risks-in-social-and-behavioral-sciences-research-is-most-accurate</guid>
@@ -125,16 +287,16 @@
       <category>Research Ethics &amp; Methodology</category>
     </item>
     <item>
-      <title>Growing Cells Without Gravity: How Space Bioreactors Eliminate Fluid Turbulence</title>
-      <link>https://biogravity.space/articles/ideal-interaction-dynamics-of-defects-and-background-fields-in</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/ideal-interaction-dynamics-of-defects-and-background-fields-in</guid>
+      <title>Defects in Condensed Matter: Quantum Background Field Dynamics</title>
+      <link>https://biogravity.space/articles/interaction-dynamics-defects-background-fields</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/interaction-dynamics-defects-background-fields</guid>
       <pubDate>Mon, 26 Oct 2026 22:23:11 GMT</pubDate>
       <dc:creator>François Gay-Balmaz</dc:creator>
       <description>While defect dynamics in condensed matter systems is widely studied and several methods are available to track the defect position over time, the formulation of dynamical models for the coupled evolution of both defect and background field quantities seems to be more challenging....</description>
       <category>Microgravity Fluid Dynamics</category>
     </item>
     <item>
-      <title>Spacecraft Sensors in Orbit: The Physics Behind Maximal Orbital Entanglement from.</title>
+      <title>Maximal Orbital Entanglement: Generating Pure Quantum States</title>
       <link>https://biogravity.space/articles/maximal-orbital-entanglement-from-non-interacting-fermions</link>
       <guid isPermaLink="true">https://biogravity.space/articles/maximal-orbital-entanglement-from-non-interacting-fermions</guid>
       <pubDate>Mon, 26 Oct 2026 12:25:01 GMT</pubDate>
@@ -161,7 +323,7 @@
       <category>Space Medicine &amp; Human Physiology</category>
     </item>
     <item>
-      <title>CRISPR in Zero Gravity: Does Quantum Tunneling Accelerate Gene Editing?</title>
+      <title>Quantum Gibbs Samplers: Sobolev Inequalities &amp; Mixing Times</title>
       <link>https://biogravity.space/articles/size-independent-logarithmic-sobolev-inequalities-for-quantum</link>
       <guid isPermaLink="true">https://biogravity.space/articles/size-independent-logarithmic-sobolev-inequalities-for-quantum</guid>
       <pubDate>Sun, 25 Oct 2026 20:29:27 GMT</pubDate>
@@ -170,7 +332,7 @@
       <category>Quantum Enzymology</category>
     </item>
     <item>
-      <title>CRISPR in Zero Gravity: Does Quantum Tunneling Accelerate Gene Editing?</title>
+      <title>Mixed State Deep Thermalization: Quantum Error Dynamics</title>
       <link>https://biogravity.space/articles/mixed-state-deep-thermalization-under-generic-quantum-errors</link>
       <guid isPermaLink="true">https://biogravity.space/articles/mixed-state-deep-thermalization-under-generic-quantum-errors</guid>
       <pubDate>Sun, 25 Oct 2026 10:53:58 GMT</pubDate>
@@ -179,7 +341,7 @@
       <category>Quantum Enzymology</category>
     </item>
     <item>
-      <title>Quantum Super-Sensors: How Orbital Cold Protects Fragile Entanglement</title>
+      <title>Quantum Simulation of Solid Oxide Cells: Screening New Materials</title>
       <link>https://biogravity.space/articles/screening-strongly-correlated-materials-in-solid-oxide-cells</link>
       <guid isPermaLink="true">https://biogravity.space/articles/screening-strongly-correlated-materials-in-solid-oxide-cells</guid>
       <pubDate>Sun, 25 Oct 2026 06:43:01 GMT</pubDate>
@@ -188,9 +350,9 @@
       <category>Quantum Enzymology</category>
     </item>
     <item>
-      <title>Liquid Physics in Zero Gravity: Why Fluids Do Not Flow Like on Earth</title>
-      <link>https://biogravity.space/articles/a-priori-estimation-of-the-non-linear-compression-potential-and</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/a-priori-estimation-of-the-non-linear-compression-potential-and</guid>
+      <title>AI in Turbulent Flows: Estimating Autoencoder Non-Linearity</title>
+      <link>https://biogravity.space/articles/estimation-non-linear-compression-potential</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/estimation-non-linear-compression-potential</guid>
       <pubDate>Sun, 25 Oct 2026 06:43:01 GMT</pubDate>
       <dc:creator>Niklas Alexander Pissarski</dc:creator>
       <description>Data-driven reduced-order modelling (ROM) of turbulent flows is based on an efficient and physical low-dimensional representation of the flow process. Such a dimension reduction can be achieved using proper orthogonal decomposition (POD) or non-linear autoencoders. Capturing t.</description>
@@ -198,8 +360,8 @@
     </item>
     <item>
       <title>Can Quantum Physics Measure Reality? The No-Go Proof That Shook Metrology</title>
-      <link>https://biogravity.space/articles/what-does-quantum-parameter-estimation-estimate-a-no-go-result-for-tru</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/what-does-quantum-parameter-estimation-estimate-a-no-go-result-for-tru</guid>
+      <link>https://biogravity.space/articles/quantum-parameter-estimation-no-go-result</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/quantum-parameter-estimation-no-go-result</guid>
       <pubDate>Sat, 24 Oct 2026 20:22:31 GMT</pubDate>
       <dc:creator>Jacques L. Pienaar</dc:creator>
       <description>We examine the conditions under which quantum parameter estimation is compatible with the concept of a ``true&apos;&apos; quantity value: a unique value of the estimated quantity that exists prior to and independently of measurement. While quantum parameter estimation typically assumes tha.</description>
@@ -216,8 +378,8 @@
     </item>
     <item>
       <title>Inside Supersolids: How Microgravity Traps Matter That Is Both Liquid and Solid</title>
-      <link>https://biogravity.space/articles/characterizing-supersolid-phase-transitions-in-trapped-quantum-gases-w</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/characterizing-supersolid-phase-transitions-in-trapped-quantum-gases-w</guid>
+      <link>https://biogravity.space/articles/supersolid-phase-transitions-trapped-quantum-gases</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/supersolid-phase-transitions-trapped-quantum-gases</guid>
       <pubDate>Wed, 21 Oct 2026 21:21:15 GMT</pubDate>
       <dc:creator>Julian Kusch</dc:creator>
       <description>Motivated by a recent experimental work arXiv:2608.20327, we theoretically investigate the nature of phase transitions in a trapped dipolar quantum gas upon tuning the contact interaction strength and dipole orientation. Using extended Gross-Pitaevskii simulations including therm.</description>
@@ -251,9 +413,9 @@
       <category>Space Physics &amp; Biosensing</category>
     </item>
     <item>
-      <title>Can Humans Sense Magnetic Fields? The Quantum Secret in Our Eyes</title>
-      <link>https://biogravity.space/articles/radical-pair-spin-coherence-and-magnetoreception-in-human-cryptochrome-4-photore</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/radical-pair-spin-coherence-and-magnetoreception-in-human-cryptochrome-4-photore</guid>
+      <title>Cryptochrome 4 in Humans: Do We Have Quantum Magnetic Senses?</title>
+      <link>https://biogravity.space/articles/radical-pair-spin-coherence-human-cryptochrome-4</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/radical-pair-spin-coherence-human-cryptochrome-4</guid>
       <pubDate>Fri, 16 Oct 2026 13:30:00 GMT</pubDate>
       <dc:creator>Dr. Elena Rostova</dc:creator>
       <description>Conducted aboard BioGravity Station under 0.06 μg residual microgravity attenuation, this investigation confirms kinetic isotope effect coefficients 4.7× above classical Arrhenius predictions. Advanced cryptochrome and radical pair mechanism methodologies validate the quantum mechanical hypothesis, establishing a rigorous framework for next-generation space-based biotechnology.</description>
@@ -261,8 +423,8 @@
     </item>
     <item>
       <title>Deep-Space Radiation Shield: The Synthetic Peptides Protecting Human DNA</title>
-      <link>https://biogravity.space/articles/synthetic-poly-adp-metallo-peptides-for-telomeric-radioprotection-in-deep-space-</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/synthetic-poly-adp-metallo-peptides-for-telomeric-radioprotection-in-deep-space-</guid>
+      <link>https://biogravity.space/articles/synthetic-poly-adp-metallo-peptides-telomeric-radioprotection</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/synthetic-poly-adp-metallo-peptides-telomeric-radioprotection</guid>
       <pubDate>Fri, 16 Oct 2026 13:30:00 GMT</pubDate>
       <dc:creator>Dr. Fatima Zahra</dc:creator>
       <description>Conducted aboard BioGravity Station under controlled 0.04 μg microgravity with magnetic shielding to 0.12 nT, this investigation confirms diffraction resolution improved from 1.85 Å (terrestrial) to 0.82 Å (orbital). Advanced cosmic radiation and telomere protection methodologies validate the quantum mechanical hypothesis, establishing a rigorous framework for next-generation space-based biotechnology.</description>
@@ -270,8 +432,8 @@
     </item>
     <item>
       <title>Why Scientists Are 3D-Printing Beating Human Hearts in Zero Gravity</title>
-      <link>https://biogravity.space/articles/acoustic-levitation-and-scaffold-free-vascularized-cardiac-organoid-bioprinting-</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/acoustic-levitation-and-scaffold-free-vascularized-cardiac-organoid-bioprinting-</guid>
+      <link>https://biogravity.space/articles/acoustic-levitation-scaffold-free-cardiac-organoid-bioprinting</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/acoustic-levitation-scaffold-free-cardiac-organoid-bioprinting</guid>
       <pubDate>Fri, 16 Oct 2026 13:30:00 GMT</pubDate>
       <dc:creator>Dr. Aris Thorne</dc:creator>
       <description>Conducted aboard BioGravity Station under sub-0.08 μg weightlessness with &lt; 5 Hz vibrational noise floor, this investigation confirms coherence lifetimes exceeding 384 ps, an order of magnitude above terrestrial baseline. Advanced 3D bioprinting and acoustic levitation methodologies validate the quantum mechanical hypothesis, establishing a rigorous framework for next-generation space-based biotechnology.</description>
@@ -279,8 +441,8 @@
     </item>
     <item>
       <title>Atomic-Level Drug Design: Growing Perfect Protein Crystals in Space</title>
-      <link>https://biogravity.space/articles/sub-angstrom-macromolecular-crystallography-of-membrane-transporters-in-orbital-</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/sub-angstrom-macromolecular-crystallography-of-membrane-transporters-in-orbital-</guid>
+      <link>https://biogravity.space/articles/macromolecular-crystallography-membrane-transporters-orbit</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/macromolecular-crystallography-membrane-transporters-orbit</guid>
       <pubDate>Fri, 23 Oct 2026 07:00:00 GMT</pubDate>
       <dc:creator>Dr. Hiroshi Tanaka</dc:creator>
       <description>Synchrotron serial femtosecond crystallography of ABCB1 P-glycoprotein microcrystals grown in orbital free-fall achieves 0.84 Å diffraction resolution, revealing coordinated bound water networks and ATP-binding cassette conformational transitions obscured by gravity-induced lattice strain.</description>
@@ -288,8 +450,8 @@
     </item>
     <item>
       <title>CRISPR in Zero Gravity: Does Quantum Tunneling Accelerate DNA Cuts?</title>
-      <link>https://biogravity.space/articles/non-thermal-quantum-proton-tunneling-in-crispr-cas9-catalytic-triads-orbital-evi</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/non-thermal-quantum-proton-tunneling-in-crispr-cas9-catalytic-triads-orbital-evi</guid>
+      <link>https://biogravity.space/articles/quantum-proton-tunneling-crispr-cas9-catalytic-triads</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/quantum-proton-tunneling-crispr-cas9-catalytic-triads</guid>
       <pubDate>Fri, 23 Oct 2026 07:30:00 GMT</pubDate>
       <dc:creator>Dr. Seraphina Vance</dc:creator>
       <description>Cryogenic stopped-flow spectroscopy and kinetic isotope effect (KIE) profiling of the SpCas9 HNH endonuclease active site under orbital microgravity reveal temperature-independent proton tunneling across the His840-Asp861 catalytic dyad, maintaining DNA phosphodiester scission at sub-zero temperatures.</description>

@@ -7,31 +7,31 @@
   <!-- Core Hub Pages (Clean URLs) -->
   <url>
     <loc>https://biogravity.space/</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://biogravity.space/news</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://biogravity.space/research</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://biogravity.space/tools</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://biogravity.space/world-space-week-2026</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -41,7 +41,7 @@
   </url>
   <url>
     <loc>https://biogravity.space/molecular-biology-research</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -51,42 +51,82 @@
   </url>
   <url>
     <loc>https://biogravity.space/about</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://biogravity.space/contact</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://biogravity.space/disclaimer</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://biogravity.space/sitemap</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://biogravity.space/privacy-policy</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://biogravity.space/terms</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <!-- Live Science Dispatches (Google Discover & News Priority) -->
+  <url>
+    <loc>https://biogravity.space/news/renormalization-for-robust-memory-without-synchronization-new</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85</image:loc>
+      <image:title>Renormalization for Robust Memory without Synchronization: New Evidence in Space &amp; Astronomy</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/reconstructing-hidden-observables-via-quantum-snapshot-new</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85</image:loc>
+      <image:title>Reconstructing hidden observables via quantum snapshot: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/cosmic-echoes-sub-solar-gravitational-wave-detection-points-to</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85</image:loc>
+      <image:title>Cosmic Echoes: Sub-Solar Gravitational Wave Detection Points to Primordial Dark Matter</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/coral-survival-breakthrough-marine-biologists-discover-rapid</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85</image:loc>
+      <image:title>Coral Survival Breakthrough: Marine Biologists Discover Rapid Epigenetic Heat Resistance</image:title>
+    </image:image>
+  </url>
   <url>
     <loc>https://biogravity.space/news/beyond-lithium-non-flammable-sodium-solid-state-battery-achieves</loc>
     <lastmod>2026-10-28</lastmod>
@@ -210,6 +250,146 @@
 
   <!-- Pre-Rendered High-Authority Research Dispatches (Clean URLs) -->
   <url>
+    <loc>https://biogravity.space/articles/schrodingers-cat-quantum-physics-paradox-explained</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Schrödinger&apos;s Cat Explained Simply: The Thought Experiment That Confused Quantum Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/why-do-octopuses-have-three-hearts-and-blue-blood</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1545671913-b89ac1b4ac10?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Why Do Octopuses Have Three Hearts and Blue Blood? The Alien Biology of Cephalopods</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/mariana-trench-challenger-deep-creatures-pressure</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>What Lives at the Bottom of the Mariana Trench? 36,000 Feet Below the Ocean Surface</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/immortal-jellyfish-turritopsis-dohrnii-biological-immortality</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>The Immortal Jellyfish: How Turritopsis Dohrnii Cheats Death and Resets Its Age</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/what-would-happen-if-earth-stopped-spinning</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>What Would Happen If the Earth Stopped Spinning for 5 Seconds? Planetary Physics Explained</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/chernobyl-elephants-foot-deadliest-radioactive-mass</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>The Elephant&apos;s Foot of Chernobyl: Inside the Deadliest Radioactive Object on Earth</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/double-slit-experiment-quantum-mechanics-explained</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>The Double-Slit Experiment Explained Simply: Does Reality Exist When Nobody Is Looking?</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/what-happens-if-you-fall-into-a-black-hole</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>What Happens If You Fall into a Black Hole? Spaghettification, Event Horizons &amp; Time Dilation</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/3d-bioprinting-organoids-in-microgravity</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>3D Bioprinting Human Organoids in Microgravity: Why Zero Gravity Beats Earth for Complex Tissue Engineering</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/space-adaptation-syndrome-space-motion-sickness</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Space Adaptation Syndrome: The Neuro-Vestibular Science Behind Space Motion Sickness</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/can-plants-grow-in-space-without-gravity</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Can Plants Grow in Space Without Gravity? How Microgravity Transforms Plant Roots and Crop Biology</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/how-do-astronauts-sleep-in-space</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>How Do Astronauts Sleep in Space Without Floating Away? Crew Quarters, CO2 Bubbles &amp; Circadian Biology</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/why-do-astronauts-lose-bone-density-in-space</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Why Do Astronauts Lose Bone Density in Space? The Molecular Mechanics of Orbital Osteopenia</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/difference-between-zero-gravity-and-microgravity</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>The Difference Between Zero Gravity and Microgravity: Why &apos;Zero-G&apos; Is a Scientific Myth</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://biogravity.space/articles/what-statement-about-risks-in-social-and-behavioral-sciences-research-is-most-accurate</loc>
     <lastmod>2026-10-27</lastmod>
     <changefreq>weekly</changefreq>
@@ -220,7 +400,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://biogravity.space/articles/ideal-interaction-dynamics-of-defects-and-background-fields-in</loc>
+    <loc>https://biogravity.space/articles/interaction-dynamics-defects-background-fields</loc>
     <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
@@ -290,7 +470,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://biogravity.space/articles/a-priori-estimation-of-the-non-linear-compression-potential-and</loc>
+    <loc>https://biogravity.space/articles/estimation-non-linear-compression-potential</loc>
     <lastmod>2026-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
@@ -300,7 +480,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://biogravity.space/articles/what-does-quantum-parameter-estimation-estimate-a-no-go-result-for-tru</loc>
+    <loc>https://biogravity.space/articles/quantum-parameter-estimation-no-go-result</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
@@ -320,7 +500,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://biogravity.space/articles/characterizing-supersolid-phase-transitions-in-trapped-quantum-gases-w</loc>
+    <loc>https://biogravity.space/articles/supersolid-phase-transitions-trapped-quantum-gases</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
@@ -360,7 +540,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://biogravity.space/articles/radical-pair-spin-coherence-and-magnetoreception-in-human-cryptochrome-4-photore</loc>
+    <loc>https://biogravity.space/articles/radical-pair-spin-coherence-human-cryptochrome-4</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
@@ -370,7 +550,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://biogravity.space/articles/synthetic-poly-adp-metallo-peptides-for-telomeric-radioprotection-in-deep-space-</loc>
+    <loc>https://biogravity.space/articles/synthetic-poly-adp-metallo-peptides-telomeric-radioprotection</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
@@ -380,7 +560,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://biogravity.space/articles/acoustic-levitation-and-scaffold-free-vascularized-cardiac-organoid-bioprinting-</loc>
+    <loc>https://biogravity.space/articles/acoustic-levitation-scaffold-free-cardiac-organoid-bioprinting</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
@@ -390,7 +570,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://biogravity.space/articles/sub-angstrom-macromolecular-crystallography-of-membrane-transporters-in-orbital-</loc>
+    <loc>https://biogravity.space/articles/macromolecular-crystallography-membrane-transporters-orbit</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
@@ -400,7 +580,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://biogravity.space/articles/non-thermal-quantum-proton-tunneling-in-crispr-cas9-catalytic-triads-orbital-evi</loc>
+    <loc>https://biogravity.space/articles/quantum-proton-tunneling-crispr-cas9-catalytic-triads</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
