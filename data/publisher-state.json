@@ -1,8 +1,20 @@
 {
-  "lastRunDate": "2026-10-16",
+  "lastRunDate": "2026-10-30",
   "todayPublishedCount": 3,
-  "totalPublishedCount": 5,
+  "totalPublishedCount": 6,
   "history": [
+    {
+      "timestamp": "2026-10-30T06:09:48.799Z",
+      "id": "macroscopic-quantum-coherence-in-nuclear-lncrna-liquid-liquid-phase-transition-c",
+      "title": "Macroscopic Quantum Coherence in Nuclear lncRNA Liquid-Liquid Phase Transition Condensates: Orbital Evidence for Non-Classical Molecular Dynamics",
+      "action": "approved_live"
+    },
+    {
+      "timestamp": "2026-10-30T06:07:56.111Z",
+      "id": "macroscopic-quantum-coherence-in-nuclear-lncrna-liquid-liquid-phase-transition-c",
+      "title": "Macroscopic Quantum Coherence in Nuclear lncRNA Liquid-Liquid Phase Transition Condensates: Orbital Evidence for Non-Classical Molecular Dynamics",
+      "action": "draft_created"
+    },
     {
       "timestamp": "2026-10-16T13:23:30.760Z",
       "id": "radical-pair-spin-coherence-and-magnetoreception-in-human-cryptochrome-4-photore",
@@ -67,6 +79,6 @@
       "doi": "10.1038/s41586-2026-72197"
     }
   ],
-  "todayDraftCount": 3,
-  "totalDraftCount": 5
+  "todayDraftCount": 1,
+  "totalDraftCount": 6
 }

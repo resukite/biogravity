@@ -250,6 +250,16 @@
 
   <!-- Pre-Rendered High-Authority Research Dispatches (Clean URLs) -->
   <url>
+    <loc>https://biogravity.space/articles/macroscopic-quantum-coherence-in-nuclear-lncrna-liquid-liquid-phase-transition-c</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Macroscopic Quantum Coherence in Nuclear lncRNA Liquid-Liquid Phase Transition Condensates: Orbital Evidence for Non-Classical Molecular Dynamics</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://biogravity.space/articles/schrodingers-cat-quantum-physics-paradox-explained</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
