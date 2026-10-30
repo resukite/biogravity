@@ -5,15 +5,51 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Oct 2026 06:20:14 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 06:59:34 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Left-Handed Transmission Lines for the Dynamical: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/left-handed-transmission-lines-for-the-dynamical-new-evidence-in</link>
+      <guid isPermaLink="true">https://biogravity.space/news/left-handed-transmission-lines-for-the-dynamical-new-evidence-in</guid>
+      <pubDate>Fri, 30 Oct 2026 06:59:34 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Left-Handed Transmission Lines for the Dynamical: New Evidence in Quantum &amp; Physics: Left-handed (LH) superconducting transmission lines, built with series capacitors and shunt inductors instead of the series inductors and shunt capacitors of a conventional right-handed (RH) line, have a spectrum with a nonzero lower band edge and modes that become sparse at high frequencies. We study the dynamical Casimir effect in a LH line terminated by a flux-modulated SQUID and compare it with an RH line built from the same elements and with a long coplanar waveguide terminated by the same SQUID. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40624v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
+    <item>
+      <title>Locality in Dissipative Ground-State Preparation: New Evidence in Space &amp; Astronomy</title>
+      <link>https://biogravity.space/news/locality-in-dissipative-ground-state-preparation-new-evidence-in</link>
+      <guid isPermaLink="true">https://biogravity.space/news/locality-in-dissipative-ground-state-preparation-new-evidence-in</guid>
+      <pubDate>Fri, 30 Oct 2026 06:59:34 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Locality in Dissipative Ground-State Preparation: New Evidence in Space &amp; Astronomy: Can the ground state of a local Hamiltonian be prepared by local dissipation? We address this question for free-fermion Hamiltonians, using a quadratic Lindbladian with linear jump operators for the dissipative ground-state preparation. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40628v1).</description>
+      <category>Space &amp; Astronomy</category>
+    </item>
+    <item>
+      <title>Hyaluronic acid over-expression drives tissue: New Evidence in Space &amp; Astronomy</title>
+      <link>https://biogravity.space/news/hyaluronic-acid-over-expression-drives-tissue-new-evidence-in</link>
+      <guid isPermaLink="true">https://biogravity.space/news/hyaluronic-acid-over-expression-drives-tissue-new-evidence-in</guid>
+      <pubDate>Fri, 30 Oct 2026 06:59:34 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Hyaluronic acid over-expression drives tissue: New Evidence in Space &amp; Astronomy: Tissue architecture is shaped by a variety of biomechanical and biochemical mechanisms, including morphogen patterning, differential growth, and spatial variations in cellular contractility. These mechanisms typically emphasize forces generated within cells. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40634v1).</description>
+      <category>Space &amp; Astronomy</category>
+    </item>
+    <item>
+      <title>Comparison of entangling strategies for unitary synthesis: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/comparison-of-entangling-strategies-for-unitary-synthesis-new</link>
+      <guid isPermaLink="true">https://biogravity.space/news/comparison-of-entangling-strategies-for-unitary-synthesis-new</guid>
+      <pubDate>Fri, 30 Oct 2026 06:59:34 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Comparison of entangling strategies for unitary synthesis: New Evidence in Quantum &amp; Physics: Trapped-ion quantum computers are promising as a platform for realizing quantum computational advantage. They promise long coherence times, near all-to-all connectivity, and potential multiqubit gates as distinguishing advantages compared to competing platforms. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40642v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
     <item>
       <title>Renormalization for Robust Memory without Synchronization: New Evidence in Space &amp; Astronomy</title>
       <link>https://biogravity.space/news/renormalization-for-robust-memory-without-synchronization-new</link>
       <guid isPermaLink="true">https://biogravity.space/news/renormalization-for-robust-memory-without-synchronization-new</guid>
       <pubDate>Fri, 30 Oct 2026 05:43:59 GMT</pubDate>
       <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Renormalization for Robust Memory without Synchronization: New Evidence in Space &amp; Astronomy: Local error correction can preserve classical information against noise, but protection under synchronized updates need not survive when sites evolve at independent random times. Establishing stability is particularly challenging when protection relies on the collective action of competing local rules. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40651v1).</description>
+      <description>Renormalization for Robust Memory without Synchronization: New Evidence in Space &amp; Astronomy: Local error correction can preserve classical information...</description>
       <category>Space &amp; Astronomy</category>
     </item>
     <item>
@@ -22,7 +58,7 @@
       <guid isPermaLink="true">https://biogravity.space/news/reconstructing-hidden-observables-via-quantum-snapshot-new</guid>
       <pubDate>Fri, 30 Oct 2026 05:43:59 GMT</pubDate>
       <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Reconstructing hidden observables via quantum snapshot: New Evidence in Quantum &amp; Physics: Projective snapshots are a standard readout tool for quantum simulators, but they directly probe only observables that are diagonal in the measurement basis. We show how local equilibration and an independently calibrated equilibrium equation of state can reveal otherwise hidden conserved-density profiles. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40652v1).</description>
+      <description>Reconstructing hidden observables via quantum snapshot: New Evidence in Quantum &amp; Physics: Projective snapshots are a standard readout tool for quantum...</description>
       <category>Quantum &amp; Physics</category>
     </item>
     <item>
@@ -31,7 +67,7 @@
       <guid isPermaLink="true">https://biogravity.space/news/cosmic-echoes-sub-solar-gravitational-wave-detection-points-to</guid>
       <pubDate>Fri, 30 Oct 2026 05:22:37 GMT</pubDate>
       <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Cosmic Echoes: Sub-Solar Gravitational Wave Detection Points to Primordial Dark Matter: LIGO-Virgo-KAGRA recorded chirping gravitational ripples from a 0.7-solar-mass binary collision below the Chandrasekhar limit, consistent with early universe primordial genesis. Published via Physical Review Dispatches.</description>
+      <description>Cosmic Echoes: Sub-Solar Gravitational Wave Detection Points to Primordial Dark Matter: LIGO-Virgo-KAGRA recorded chirping gravitational ripples from a...</description>
       <category>Cosmology &amp; Particle Physics</category>
     </item>
     <item>
@@ -40,7 +76,7 @@
       <guid isPermaLink="true">https://biogravity.space/news/coral-survival-breakthrough-marine-biologists-discover-rapid</guid>
       <pubDate>Fri, 30 Oct 2026 05:22:37 GMT</pubDate>
       <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Coral Survival Breakthrough: Marine Biologists Discover Rapid Epigenetic Heat Resistance: Coral polyps in the South Pacific demonstrated rapid non-genetic transgenerational acclimatization, passing heat-shock protein expression patterns to subsequent larvae generations. Published via Oceanic Biological Reports.</description>
+      <description>Coral Survival Breakthrough: Marine Biologists Discover Rapid Epigenetic Heat Resistance: Coral polyps in the South Pacific demonstrated rapid...</description>
       <category>Marine Ecology &amp; Climate</category>
     </item>
     <item>
@@ -49,7 +85,7 @@
       <guid isPermaLink="true">https://biogravity.space/news/beyond-lithium-non-flammable-sodium-solid-state-battery-achieves</guid>
       <pubDate>Wed, 28 Oct 2026 14:13:49 GMT</pubDate>
       <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Beyond Lithium: Non-Flammable Sodium Solid-State Battery Achieves 2,000 Cycles with Zero Dendrites: Elimination of rare-earth lithium and cobalt allows safe, non-flammable grid-scale energy storage at less than thirty dollars per kilowatt-hour. Published via Advanced Energy Materials Review.</description>
+      <description>Beyond Lithium: Non-Flammable Sodium Solid-State Battery Achieves 2,000 Cycles with Zero Dendrites: Elimination of rare-earth lithium and cobalt allows...</description>
       <category>Clean Energy &amp; Materials</category>
     </item>
     <item>
@@ -58,7 +94,7 @@
       <guid isPermaLink="true">https://biogravity.space/news/virus-proof-biology-scientists-build-synthetic-bacterial-genome</guid>
       <pubDate>Wed, 28 Oct 2026 14:13:49 GMT</pubDate>
       <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Virus-Proof Biology: Scientists Build Synthetic Bacterial Genome Immune to Infection: By rewriting 64 standard codons down to 59 and reassigning the remaining 5 to synthetic unnatural amino acids, cells were made fully immune to all known viral bacteriophages. Published via Cellular Genomics Letters.</description>
+      <description>Virus-Proof Biology: Scientists Build Synthetic Bacterial Genome Immune to Infection: By rewriting 64 standard codons down to 59 and reassigning the...</description>
       <category>Synthetic Biology &amp; Genomics</category>
     </item>
     <item>
@@ -67,7 +103,7 @@
       <guid isPermaLink="true">https://biogravity.space/news/hidden-beneath-two-miles-of-antarctic-ice-scientists-discover</guid>
       <pubDate>Wed, 28 Oct 2026 14:13:49 GMT</pubDate>
       <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Hidden Beneath Two Miles of Antarctic Ice: Scientists Discover Immense Prehistoric River Canyon: Airborne ice-penetrating radar traced a 34-million-year-old fluvial valley network preserved undisturbed under two miles of polar ice. Published via International Antarctic Survey.</description>
+      <description>Hidden Beneath Two Miles of Antarctic Ice: Scientists Discover Immense Prehistoric River Canyon: Airborne ice-penetrating radar traced a...</description>
       <category>Geophysics &amp; Earth Science</category>
     </item>
     <item>
@@ -76,7 +112,7 @@
       <guid isPermaLink="true">https://biogravity.space/news/cosmic-monster-on-the-loose-runaway-supermassive-black-hole</guid>
       <pubDate>Wed, 28 Oct 2026 14:13:49 GMT</pubDate>
       <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Cosmic Monster on the Loose: Runaway Supermassive Black Hole Leaves 200,000-Light-Year Star Trail: The 20-million-solar-mass black hole is speeding through intergalactic space at 4 million miles per hour, compressing gas wake shockwaves into young stellar clusters. Published via Astrophysical Journal Dispatches.</description>
+      <description>Cosmic Monster on the Loose: Runaway Supermassive Black Hole Leaves 200,000-Light-Year Star Trail: The 20-million-solar-mass black hole is speeding...</description>
       <category>Astrophysics &amp; Space</category>
     </item>
     <item>
@@ -85,7 +121,7 @@
       <guid isPermaLink="true">https://biogravity.space/news/the-forever-chemical-breakthrough-mutant-soil-fungi-wipe-out</guid>
       <pubDate>Tue, 27 Oct 2026 08:26:00 GMT</pubDate>
       <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>The &apos;Forever Chemical&apos; Breakthrough: Mutant Soil Fungi Wipe Out Toxic PFAS in 96 Hours: A mutated strain of white-rot fungus secretes manganese peroxidases capable of cleaving notoriously stable carbon-fluorine bonds in contaminated groundwater. Published via Environmental Science &amp; Technology Reports.</description>
+      <description>The &apos;Forever Chemical&apos; Breakthrough: Mutant Soil Fungi Wipe Out Toxic PFAS in 96 Hours: A mutated strain of white-rot fungus secretes manganese...</description>
       <category>Environmental Science &amp; EVS</category>
     </item>
     <item>
@@ -94,7 +130,7 @@
       <guid isPermaLink="true">https://biogravity.space/news/50-000-year-old-dental-tartar-proves-neanderthals-used-natural</guid>
       <pubDate>Tue, 27 Oct 2026 08:26:00 GMT</pubDate>
       <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>50,000-Year-Old Dental Tartar Proves Neanderthals Used Natural Aspirin and Penicillin: Ancient DNA extraction reveals early hominins consumed natural salicylic acid (aspirin precursor) and penicillin-producing molds to treat abscesses 50,000 years ago. Published via Paleo-Archaeology Today.</description>
+      <description>50,000-Year-Old Dental Tartar Proves Neanderthals Used Natural Aspirin and Penicillin: Ancient DNA extraction reveals early hominins consumed natural...</description>
       <category>Deep Science History</category>
     </item>
     <item>
@@ -103,7 +139,7 @@
       <guid isPermaLink="true">https://biogravity.space/news/fault-tolerant-quantum-leap-physicists-successfully-shield</guid>
       <pubDate>Tue, 27 Oct 2026 08:06:08 GMT</pubDate>
       <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Fault-Tolerant Quantum Leap: Physicists Successfully Shield Qubits from Decoherence: Majorana zero modes manipulated on semiconductor-superconductor nanowires demonstrated non-abelian statistics, eliminating standard thermal decoherence. Published via Advanced Physical Letters.</description>
+      <description>Fault-Tolerant Quantum Leap: Physicists Successfully Shield Qubits from Decoherence: Majorana zero modes manipulated on semiconductor-superconductor...</description>
       <category>Quantum &amp; Physics</category>
     </item>
     <item>
@@ -112,7 +148,7 @@
       <guid isPermaLink="true">https://biogravity.space/news/the-trillion-dollar-moon-economy-why-mining-lunar-ice-will-be</guid>
       <pubDate>Tue, 27 Oct 2026 08:02:06 GMT</pubDate>
       <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>The Trillion-Dollar Moon Economy: Why Mining Lunar Ice Will Be Profitable by 2038: Refueling Mars missions in low lunar orbit reduces launch payload costs by 68%, making off-planet resource extraction commercially viable for private operators. Published via Global Aerospace Economics Review.</description>
+      <description>The Trillion-Dollar Moon Economy: Why Mining Lunar Ice Will Be Profitable by 2038: Refueling Mars missions in low lunar orbit reduces launch payload...</description>
       <category>Science Economics &amp; Space Industry</category>
     </item>
     <item>
@@ -121,7 +157,7 @@
       <guid isPermaLink="true">https://biogravity.space/news/alien-life-at-14-000-feet-below-the-ocean-deep-sea-expedition</guid>
       <pubDate>Tue, 27 Oct 2026 02:35:59 GMT</pubDate>
       <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Alien Life at 14,000 Feet Below the Ocean: Deep-Sea Expedition Finds Unseen Ecosystem: Mineral deposits enriched in rare-earth elements were discovered at 4,200 meters depth, hosting previously unclassified archaea that metabolize serpentinized iron. Published via US Geological &amp; Oceanic Survey.</description>
+      <description>Alien Life at 14,000 Feet Below the Ocean: Deep-Sea Expedition Finds Unseen Ecosystem: Mineral deposits enriched in rare-earth elements were discovered...</description>
       <category>Earth &amp; Geology</category>
     </item>
     <item>
@@ -130,7 +166,7 @@
       <guid isPermaLink="true">https://biogravity.space/news/metal-rain-and-vaporized-iron-webb-telescope-reveals-extreme</guid>
       <pubDate>Tue, 27 Oct 2026 07:35:51 GMT</pubDate>
       <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Metal Rain and Vaporized Iron: Webb Telescope Reveals Extreme Weather on Giant Alien World: Spectroscopic observations by JWST confirm gaseous nickel, iron, and vanadium in the exoplanet upper atmosphere, proving vaporized metal weather systems. Published via NASA Space Science Dispatch.</description>
+      <description>Metal Rain and Vaporized Iron: Webb Telescope Reveals Extreme Weather on Giant Alien World: Spectroscopic observations by JWST confirm gaseous nickel,...</description>
       <category>Space &amp; Astronomy</category>
     </item>
     <item>
@@ -139,7 +175,7 @@
       <guid isPermaLink="true">https://biogravity.space/news/living-solar-panels-scientists-turn-plant-chloroplasts-into</guid>
       <pubDate>Sun, 25 Oct 2026 07:00:26 GMT</pubDate>
       <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Living Solar Panels: Scientists Turn Plant Chloroplasts into Renewable Electricity: By coating carbon nanotube substrates with stabilized plant chloroplast proteins, researchers created solar cells that sequester carbon while producing current. Published via Applied Clean Energy Journal.</description>
+      <description>Living Solar Panels: Scientists Turn Plant Chloroplasts into Renewable Electricity: By coating carbon nanotube substrates with stabilized plant...</description>
       <category>Environmental Science &amp; Energy</category>
     </item>
     <item>
@@ -148,11 +184,11 @@
       <guid isPermaLink="true">https://biogravity.space/news/ancient-greenland-ice-discloses-shocking-climate-flip-that</guid>
       <pubDate>Sun, 25 Oct 2026 07:00:26 GMT</pubDate>
       <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Ancient Greenland Ice Discloses Shocking Climate Flip That Happened in Just 20 Years: Isotope ratios in 120,000-year-old ice show sudden 5-degree temperature spikes can occur much faster than classical geological models predicted. Published via International Glaciological Consortium.</description>
+      <description>Ancient Greenland Ice Discloses Shocking Climate Flip That Happened in Just 20 Years: Isotope ratios in 120,000-year-old ice show sudden 5-degree...</description>
       <category>Science History &amp; Paleoclimatology</category>
     </item>
     <item>
-      <title>How Do Tall Trees Pull Water Against Gravity? The Physics of Redwoods</title>
+      <title>How Do Tall Trees Pull Water Against</title>
       <link>https://biogravity.space/articles/how-do-tall-trees-pull-water-against-gravity</link>
       <guid isPermaLink="true">https://biogravity.space/articles/how-do-tall-trees-pull-water-against-gravity</guid>
       <pubDate>Fri, 30 Oct 2026 06:19:59 GMT</pubDate>
@@ -161,7 +197,7 @@
       <category>Plant Physiology &amp; Fluid Dynamics</category>
     </item>
     <item>
-      <title>Why Is Gold Yellow? The Einstein Relativity Physics Explained</title>
+      <title>Why Is Gold Yellow? The Einstein Relativity</title>
       <link>https://biogravity.space/articles/why-is-gold-yellow-relativistic-quantum-chemistry</link>
       <guid isPermaLink="true">https://biogravity.space/articles/why-is-gold-yellow-relativistic-quantum-chemistry</guid>
       <pubDate>Fri, 30 Oct 2026 06:19:59 GMT</pubDate>
@@ -170,7 +206,7 @@
       <category>Quantum Chemistry &amp; Physics</category>
     </item>
     <item>
-      <title>The Michelson-Morley Experiment: The Greatest Failed Experiment in History</title>
+      <title>The Michelson-Morley Experiment: The</title>
       <link>https://biogravity.space/articles/michelson-morley-experiment-disproved-the-aether</link>
       <guid isPermaLink="true">https://biogravity.space/articles/michelson-morley-experiment-disproved-the-aether</guid>
       <pubDate>Fri, 30 Oct 2026 06:16:43 GMT</pubDate>
@@ -179,7 +215,7 @@
       <category>Physics &amp; Science History</category>
     </item>
     <item>
-      <title>The Fermi Paradox: If Alien Life Is Everywhere, Where Is Everybody?</title>
+      <title>The Fermi Paradox: If Alien Life Is</title>
       <link>https://biogravity.space/articles/fermi-paradox-where-are-all-the-aliens</link>
       <guid isPermaLink="true">https://biogravity.space/articles/fermi-paradox-where-are-all-the-aliens</guid>
       <pubDate>Fri, 30 Oct 2026 06:16:43 GMT</pubDate>
@@ -188,7 +224,7 @@
       <category>Astrophysics &amp; Astrobiology</category>
     </item>
     <item>
-      <title>The Kola Superdeep Borehole: What Did Scientists Find at 40,000 Feet?</title>
+      <title>The Kola Superdeep Borehole: What Did</title>
       <link>https://biogravity.space/articles/kola-superdeep-borehole-deepest-hole-on-earth</link>
       <guid isPermaLink="true">https://biogravity.space/articles/kola-superdeep-borehole-deepest-hole-on-earth</guid>
       <pubDate>Fri, 30 Oct 2026 06:16:43 GMT</pubDate>
@@ -197,7 +233,7 @@
       <category>Geophysics &amp; Earth Science</category>
     </item>
     <item>
-      <title>The Demon Core: The Deadly Physics of Manhattan Project Accidents</title>
+      <title>The Demon Core: The Deadly Physics of</title>
       <link>https://biogravity.space/articles/the-demon-core-manhattan-project-criticality-accidents</link>
       <guid isPermaLink="true">https://biogravity.space/articles/the-demon-core-manhattan-project-criticality-accidents</guid>
       <pubDate>Fri, 30 Oct 2026 06:16:43 GMT</pubDate>
@@ -206,7 +242,7 @@
       <category>Nuclear Physics &amp; History</category>
     </item>
     <item>
-      <title>The Mpemba Effect: Why Hot Water Can Freeze Faster Than Cold Water</title>
+      <title>The Mpemba Effect: Why Hot Water Can Freeze</title>
       <link>https://biogravity.space/articles/mpemba-effect-why-hot-water-freezes-faster-than-cold</link>
       <guid isPermaLink="true">https://biogravity.space/articles/mpemba-effect-why-hot-water-freezes-faster-than-cold</guid>
       <pubDate>Fri, 30 Oct 2026 06:16:43 GMT</pubDate>
@@ -215,7 +251,7 @@
       <category>Thermodynamics &amp; Chemistry</category>
     </item>
     <item>
-      <title>Why Do Flamingos Stand on One Leg? The Passive Biomechanics Explained</title>
+      <title>Why Do Flamingos Stand on One Leg? The</title>
       <link>https://biogravity.space/articles/why-do-flamingos-stand-on-one-leg</link>
       <guid isPermaLink="true">https://biogravity.space/articles/why-do-flamingos-stand-on-one-leg</guid>
       <pubDate>Fri, 30 Oct 2026 06:16:43 GMT</pubDate>
@@ -224,7 +260,7 @@
       <category>Zoology &amp; Biomechanics</category>
     </item>
     <item>
-      <title>Macroscopic Quantum Coherence in Nuclear lncRNA Liquid-Liquid Phase Transition Condensates: Orbital Evidence for Non-Classical Molecular Dynamics</title>
+      <title>Macroscopic Quantum Coherence in Nuclear</title>
       <link>https://biogravity.space/articles/macroscopic-quantum-coherence-in-nuclear-lncrna-liquid-liquid-phase-transition-c</link>
       <guid isPermaLink="true">https://biogravity.space/articles/macroscopic-quantum-coherence-in-nuclear-lncrna-liquid-liquid-phase-transition-c</guid>
       <pubDate>Fri, 30 Oct 2026 06:07:55 GMT</pubDate>
@@ -233,7 +269,7 @@
       <category>Synthetic Biology</category>
     </item>
     <item>
-      <title>Schrödinger&apos;s Cat Explained Simply: The Famous Quantum Paradox</title>
+      <title>Schrödinger&apos;s Cat Explained Simply: The</title>
       <link>https://biogravity.space/articles/schrodingers-cat-quantum-physics-paradox-explained</link>
       <guid isPermaLink="true">https://biogravity.space/articles/schrodingers-cat-quantum-physics-paradox-explained</guid>
       <pubDate>Fri, 30 Oct 2026 05:59:05 GMT</pubDate>
@@ -242,7 +278,7 @@
       <category>Mind-Bending Science Experiments</category>
     </item>
     <item>
-      <title>Why Do Octopuses Have Three Hearts and Blue Blood? Alien Biology</title>
+      <title>Why Do Octopuses Have Three Hearts and Blue</title>
       <link>https://biogravity.space/articles/why-do-octopuses-have-three-hearts-and-blue-blood</link>
       <guid isPermaLink="true">https://biogravity.space/articles/why-do-octopuses-have-three-hearts-and-blue-blood</guid>
       <pubDate>Fri, 30 Oct 2026 05:59:05 GMT</pubDate>
@@ -251,7 +287,7 @@
       <category>Zoology &amp; Animal Physiology</category>
     </item>
     <item>
-      <title>What Lives in the Mariana Trench? 36,000 Feet Below the Ocean</title>
+      <title>What Lives in the Mariana Trench? 36,000</title>
       <link>https://biogravity.space/articles/mariana-trench-challenger-deep-creatures-pressure</link>
       <guid isPermaLink="true">https://biogravity.space/articles/mariana-trench-challenger-deep-creatures-pressure</guid>
       <pubDate>Fri, 30 Oct 2026 05:59:05 GMT</pubDate>
@@ -260,7 +296,7 @@
       <category>Deep Ocean &amp; Extreme Ecosystems</category>
     </item>
     <item>
-      <title>The Immortal Jellyfish: How Turritopsis Dohrnii Cheats Death</title>
+      <title>The Immortal Jellyfish: How Turritopsis</title>
       <link>https://biogravity.space/articles/immortal-jellyfish-turritopsis-dohrnii-biological-immortality</link>
       <guid isPermaLink="true">https://biogravity.space/articles/immortal-jellyfish-turritopsis-dohrnii-biological-immortality</guid>
       <pubDate>Fri, 30 Oct 2026 05:59:05 GMT</pubDate>
@@ -269,7 +305,7 @@
       <category>Bizarre Biology &amp; Evolution</category>
     </item>
     <item>
-      <title>What Would Happen If Earth Stopped Spinning for 5 Seconds?</title>
+      <title>What Would Happen If Earth Stopped Spinning</title>
       <link>https://biogravity.space/articles/what-would-happen-if-earth-stopped-spinning</link>
       <guid isPermaLink="true">https://biogravity.space/articles/what-would-happen-if-earth-stopped-spinning</guid>
       <pubDate>Fri, 30 Oct 2026 05:59:05 GMT</pubDate>
@@ -278,7 +314,7 @@
       <category>Earth Science &amp; Planetary Physics</category>
     </item>
     <item>
-      <title>Chernobyl&apos;s Elephant&apos;s Foot: Deadliest Radioactive Mass on Earth</title>
+      <title>Chernobyl Elephant Foot: Deadliest</title>
       <link>https://biogravity.space/articles/chernobyl-elephants-foot-deadliest-radioactive-mass</link>
       <guid isPermaLink="true">https://biogravity.space/articles/chernobyl-elephants-foot-deadliest-radioactive-mass</guid>
       <pubDate>Fri, 30 Oct 2026 05:59:05 GMT</pubDate>
@@ -287,7 +323,7 @@
       <category>Science History &amp; Nuclear Physics</category>
     </item>
     <item>
-      <title>The Double-Slit Experiment Explained Simply: Quantum Reality</title>
+      <title>The Double-Slit Experiment Explained</title>
       <link>https://biogravity.space/articles/double-slit-experiment-quantum-mechanics-explained</link>
       <guid isPermaLink="true">https://biogravity.space/articles/double-slit-experiment-quantum-mechanics-explained</guid>
       <pubDate>Fri, 30 Oct 2026 05:59:05 GMT</pubDate>
@@ -296,7 +332,7 @@
       <category>Mind-Bending Science Experiments</category>
     </item>
     <item>
-      <title>What Happens If You Fall into a Black Hole? Spaghettification Explained</title>
+      <title>What Happens If You Fall into a Black Hole?</title>
       <link>https://biogravity.space/articles/what-happens-if-you-fall-into-a-black-hole</link>
       <guid isPermaLink="true">https://biogravity.space/articles/what-happens-if-you-fall-into-a-black-hole</guid>
       <pubDate>Fri, 30 Oct 2026 05:59:05 GMT</pubDate>
@@ -305,7 +341,7 @@
       <category>Cosmic Mysteries &amp; Astrophysics</category>
     </item>
     <item>
-      <title>3D Bioprinting Organs in Microgravity: Why Zero-G Is Better</title>
+      <title>3D Bioprinting Organs in Microgravity: Why</title>
       <link>https://biogravity.space/articles/3d-bioprinting-organoids-in-microgravity</link>
       <guid isPermaLink="true">https://biogravity.space/articles/3d-bioprinting-organoids-in-microgravity</guid>
       <pubDate>Fri, 30 Oct 2026 05:49:03 GMT</pubDate>
@@ -314,7 +350,7 @@
       <category>Zero-G Biomanufacturing &amp; Biotechnology</category>
     </item>
     <item>
-      <title>Space Motion Sickness: Why 70% of Astronauts Suffer in Zero-G</title>
+      <title>Space Motion Sickness: Why 70% of</title>
       <link>https://biogravity.space/articles/space-adaptation-syndrome-space-motion-sickness</link>
       <guid isPermaLink="true">https://biogravity.space/articles/space-adaptation-syndrome-space-motion-sickness</guid>
       <pubDate>Fri, 30 Oct 2026 05:49:03 GMT</pubDate>
@@ -323,7 +359,7 @@
       <category>Space Medicine &amp; Human Physiology</category>
     </item>
     <item>
-      <title>Can Plants Grow in Space Without Gravity? Orbital Botany Guide</title>
+      <title>Can Plants Grow in Space Without Gravity?</title>
       <link>https://biogravity.space/articles/can-plants-grow-in-space-without-gravity</link>
       <guid isPermaLink="true">https://biogravity.space/articles/can-plants-grow-in-space-without-gravity</guid>
       <pubDate>Fri, 30 Oct 2026 05:49:03 GMT</pubDate>
@@ -332,7 +368,7 @@
       <category>Space Agriculture &amp; Botany</category>
     </item>
     <item>
-      <title>How Do Astronauts Sleep in Space Without Floating Away?</title>
+      <title>How Do Astronauts Sleep in Space Without</title>
       <link>https://biogravity.space/articles/how-do-astronauts-sleep-in-space</link>
       <guid isPermaLink="true">https://biogravity.space/articles/how-do-astronauts-sleep-in-space</guid>
       <pubDate>Fri, 30 Oct 2026 05:49:03 GMT</pubDate>
@@ -341,7 +377,7 @@
       <category>Space Medicine &amp; Human Physiology</category>
     </item>
     <item>
-      <title>Why Do Astronauts Lose Bone Density in Space? Osteopenia Science</title>
+      <title>Why Do Astronauts Lose Bone Density in</title>
       <link>https://biogravity.space/articles/why-do-astronauts-lose-bone-density-in-space</link>
       <guid isPermaLink="true">https://biogravity.space/articles/why-do-astronauts-lose-bone-density-in-space</guid>
       <pubDate>Fri, 30 Oct 2026 05:49:03 GMT</pubDate>
@@ -350,7 +386,7 @@
       <category>Space Medicine &amp; Human Physiology</category>
     </item>
     <item>
-      <title>Difference Between Zero Gravity and Microgravity: Is There Gravity in Space?</title>
+      <title>Difference Between Zero Gravity and</title>
       <link>https://biogravity.space/articles/difference-between-zero-gravity-and-microgravity</link>
       <guid isPermaLink="true">https://biogravity.space/articles/difference-between-zero-gravity-and-microgravity</guid>
       <pubDate>Fri, 30 Oct 2026 05:49:03 GMT</pubDate>
@@ -359,7 +395,7 @@
       <category>Space Biophysics &amp; Orbital Mechanics</category>
     </item>
     <item>
-      <title>What Statement About Risks in Social and Behavioral Sciences Research Is Most Accurate? Complete Guide</title>
+      <title>What Statement About Risks in Social and</title>
       <link>https://biogravity.space/articles/what-statement-about-risks-in-social-and-behavioral-sciences-research-is-most-accurate</link>
       <guid isPermaLink="true">https://biogravity.space/articles/what-statement-about-risks-in-social-and-behavioral-sciences-research-is-most-accurate</guid>
       <pubDate>Tue, 27 Oct 2026 10:00:00 GMT</pubDate>
@@ -368,7 +404,7 @@
       <category>Research Ethics &amp; Methodology</category>
     </item>
     <item>
-      <title>Defects in Condensed Matter: Quantum Background Field Dynamics</title>
+      <title>Defects in Condensed Matter: Quantum</title>
       <link>https://biogravity.space/articles/interaction-dynamics-defects-background-fields</link>
       <guid isPermaLink="true">https://biogravity.space/articles/interaction-dynamics-defects-background-fields</guid>
       <pubDate>Mon, 26 Oct 2026 22:23:11 GMT</pubDate>
@@ -377,7 +413,7 @@
       <category>Microgravity Fluid Dynamics</category>
     </item>
     <item>
-      <title>Maximal Orbital Entanglement: Generating Pure Quantum States</title>
+      <title>Maximal Orbital Entanglement: Generating</title>
       <link>https://biogravity.space/articles/maximal-orbital-entanglement-from-non-interacting-fermions</link>
       <guid isPermaLink="true">https://biogravity.space/articles/maximal-orbital-entanglement-from-non-interacting-fermions</guid>
       <pubDate>Mon, 26 Oct 2026 12:25:01 GMT</pubDate>
@@ -386,7 +422,7 @@
       <category>Space Physics &amp; Biosensing</category>
     </item>
     <item>
-      <title>How Does Zero Gravity Kill Cancer Cells? The Lab Breakthrough in Orbit</title>
+      <title>How Does Zero Gravity Kill Cancer Cells?</title>
       <link>https://biogravity.space/articles/how-does-zero-gravity-kill-cancer-cells</link>
       <guid isPermaLink="true">https://biogravity.space/articles/how-does-zero-gravity-kill-cancer-cells</guid>
       <pubDate>Mon, 26 Oct 2026 08:20:33 GMT</pubDate>
@@ -395,7 +431,7 @@
       <category>Space Oncology &amp; Molecular Biophysics</category>
     </item>
     <item>
-      <title>What Happens to the Human Body in Zero Gravity? The Shocking Science</title>
+      <title>What Happens to the Human Body in Zero</title>
       <link>https://biogravity.space/articles/what-happens-to-human-body-in-zero-gravity</link>
       <guid isPermaLink="true">https://biogravity.space/articles/what-happens-to-human-body-in-zero-gravity</guid>
       <pubDate>Mon, 26 Oct 2026 08:20:33 GMT</pubDate>
@@ -404,7 +440,7 @@
       <category>Space Medicine &amp; Human Physiology</category>
     </item>
     <item>
-      <title>Quantum Gibbs Samplers: Sobolev Inequalities &amp; Mixing Times</title>
+      <title>Quantum Gibbs Samplers: Sobolev</title>
       <link>https://biogravity.space/articles/size-independent-logarithmic-sobolev-inequalities-for-quantum</link>
       <guid isPermaLink="true">https://biogravity.space/articles/size-independent-logarithmic-sobolev-inequalities-for-quantum</guid>
       <pubDate>Sun, 25 Oct 2026 20:29:27 GMT</pubDate>
@@ -413,7 +449,7 @@
       <category>Quantum Enzymology</category>
     </item>
     <item>
-      <title>Mixed State Deep Thermalization: Quantum Error Dynamics</title>
+      <title>Mixed State Deep Thermalization: Quantum</title>
       <link>https://biogravity.space/articles/mixed-state-deep-thermalization-under-generic-quantum-errors</link>
       <guid isPermaLink="true">https://biogravity.space/articles/mixed-state-deep-thermalization-under-generic-quantum-errors</guid>
       <pubDate>Sun, 25 Oct 2026 10:53:58 GMT</pubDate>
@@ -422,7 +458,7 @@
       <category>Quantum Enzymology</category>
     </item>
     <item>
-      <title>Quantum Simulation of Solid Oxide Cells: Screening New Materials</title>
+      <title>Quantum Simulation of Solid Oxide Cells:</title>
       <link>https://biogravity.space/articles/screening-strongly-correlated-materials-in-solid-oxide-cells</link>
       <guid isPermaLink="true">https://biogravity.space/articles/screening-strongly-correlated-materials-in-solid-oxide-cells</guid>
       <pubDate>Sun, 25 Oct 2026 06:43:01 GMT</pubDate>
@@ -431,7 +467,7 @@
       <category>Quantum Enzymology</category>
     </item>
     <item>
-      <title>AI in Turbulent Flows: Estimating Autoencoder Non-Linearity</title>
+      <title>AI in Turbulent Flows: Estimating</title>
       <link>https://biogravity.space/articles/estimation-non-linear-compression-potential</link>
       <guid isPermaLink="true">https://biogravity.space/articles/estimation-non-linear-compression-potential</guid>
       <pubDate>Sun, 25 Oct 2026 06:43:01 GMT</pubDate>
@@ -440,7 +476,7 @@
       <category>Microgravity Fluid Dynamics</category>
     </item>
     <item>
-      <title>Can Quantum Physics Measure Reality? The No-Go Proof That Shook Metrology</title>
+      <title>Can Quantum Physics Measure Reality? The</title>
       <link>https://biogravity.space/articles/quantum-parameter-estimation-no-go-result</link>
       <guid isPermaLink="true">https://biogravity.space/articles/quantum-parameter-estimation-no-go-result</guid>
       <pubDate>Sat, 24 Oct 2026 20:22:31 GMT</pubDate>
@@ -449,7 +485,7 @@
       <category>Quantum Enzymology</category>
     </item>
     <item>
-      <title>Controlling Free-Electron Recoil: The Next Frontier in Quantum Nanomechanics</title>
+      <title>Controlling Free-Electron Recoil: The Next</title>
       <link>https://biogravity.space/articles/phonon-assisted-free-electron-recoil-control-and-mechanical-sensing</link>
       <guid isPermaLink="true">https://biogravity.space/articles/phonon-assisted-free-electron-recoil-control-and-mechanical-sensing</guid>
       <pubDate>Thu, 22 Oct 2026 21:16:32 GMT</pubDate>
@@ -458,7 +494,7 @@
       <category>Space Physics &amp; Biosensing</category>
     </item>
     <item>
-      <title>Inside Supersolids: How Microgravity Traps Matter That Is Both Liquid and Solid</title>
+      <title>Inside Supersolids: How Microgravity Traps</title>
       <link>https://biogravity.space/articles/supersolid-phase-transitions-trapped-quantum-gases</link>
       <guid isPermaLink="true">https://biogravity.space/articles/supersolid-phase-transitions-trapped-quantum-gases</guid>
       <pubDate>Wed, 21 Oct 2026 21:21:15 GMT</pubDate>
@@ -467,7 +503,7 @@
       <category>Microgravity Fluid Dynamics</category>
     </item>
     <item>
-      <title>Do We Age Slower in Space? Orbital Telemetry on Cellular Aging Clocks</title>
+      <title>Do We Age Slower in Space? Orbital</title>
       <link>https://biogravity.space/articles/relativistic-time-dilation-and-mitochondrial-aging-clocks</link>
       <guid isPermaLink="true">https://biogravity.space/articles/relativistic-time-dilation-and-mitochondrial-aging-clocks</guid>
       <pubDate>Wed, 21 Oct 2026 09:00:00 GMT</pubDate>
@@ -476,7 +512,7 @@
       <category>Space Physics &amp; Biosensing</category>
     </item>
     <item>
-      <title>Growing Cells Without Gravity: How Space Bioreactors Eliminate Fluid Turbulence</title>
+      <title>Growing Cells Without Gravity: How Space</title>
       <link>https://biogravity.space/articles/zero-g-capillary-fluidics-and-surface-tension-bioreactors</link>
       <guid isPermaLink="true">https://biogravity.space/articles/zero-g-capillary-fluidics-and-surface-tension-bioreactors</guid>
       <pubDate>Sat, 17 Oct 2026 20:15:03 GMT</pubDate>
@@ -485,7 +521,7 @@
       <category>Microgravity Fluid Dynamics</category>
     </item>
     <item>
-      <title>Spacecraft Biosensors in Orbit: Overcoming the Ionosphere&apos;s Plasma Sheath</title>
+      <title>Spacecraft Biosensors in Orbit: Overcoming</title>
       <link>https://biogravity.space/articles/debye-shielding-and-plasma-sheath-dynamics-in-spacecraft-biosensing</link>
       <guid isPermaLink="true">https://biogravity.space/articles/debye-shielding-and-plasma-sheath-dynamics-in-spacecraft-biosensing</guid>
       <pubDate>Sat, 17 Oct 2026 10:00:00 GMT</pubDate>
@@ -494,7 +530,7 @@
       <category>Space Physics &amp; Biosensing</category>
     </item>
     <item>
-      <title>Cryptochrome 4 in Humans: Do We Have Quantum Magnetic Senses?</title>
+      <title>Cryptochrome 4 in Humans: Do We Have</title>
       <link>https://biogravity.space/articles/radical-pair-spin-coherence-human-cryptochrome-4</link>
       <guid isPermaLink="true">https://biogravity.space/articles/radical-pair-spin-coherence-human-cryptochrome-4</guid>
       <pubDate>Fri, 16 Oct 2026 13:30:00 GMT</pubDate>
@@ -503,7 +539,7 @@
       <category>Quantum Enzymology</category>
     </item>
     <item>
-      <title>Deep-Space Radiation Shield: The Synthetic Peptides Protecting Human DNA</title>
+      <title>Deep-Space Radiation Shield: The Synthetic</title>
       <link>https://biogravity.space/articles/synthetic-poly-adp-metallo-peptides-telomeric-radioprotection</link>
       <guid isPermaLink="true">https://biogravity.space/articles/synthetic-poly-adp-metallo-peptides-telomeric-radioprotection</guid>
       <pubDate>Fri, 16 Oct 2026 13:30:00 GMT</pubDate>
@@ -512,7 +548,7 @@
       <category>Cosmic Radioprotection</category>
     </item>
     <item>
-      <title>Why Scientists Are 3D-Printing Beating Human Hearts in Zero Gravity</title>
+      <title>Why Scientists Are 3D-Printing Beating</title>
       <link>https://biogravity.space/articles/acoustic-levitation-scaffold-free-cardiac-organoid-bioprinting</link>
       <guid isPermaLink="true">https://biogravity.space/articles/acoustic-levitation-scaffold-free-cardiac-organoid-bioprinting</guid>
       <pubDate>Fri, 16 Oct 2026 13:30:00 GMT</pubDate>
@@ -521,7 +557,7 @@
       <category>Microgravity Genomics</category>
     </item>
     <item>
-      <title>Atomic-Level Drug Design: Growing Perfect Protein Crystals in Space</title>
+      <title>Atomic-Level Drug Design: Growing Perfect</title>
       <link>https://biogravity.space/articles/macromolecular-crystallography-membrane-transporters-orbit</link>
       <guid isPermaLink="true">https://biogravity.space/articles/macromolecular-crystallography-membrane-transporters-orbit</guid>
       <pubDate>Fri, 23 Oct 2026 07:00:00 GMT</pubDate>
@@ -530,7 +566,7 @@
       <category>Structural Biology</category>
     </item>
     <item>
-      <title>CRISPR in Zero Gravity: Does Quantum Tunneling Accelerate DNA Cuts?</title>
+      <title>CRISPR in Zero Gravity: Does Quantum</title>
       <link>https://biogravity.space/articles/quantum-proton-tunneling-crispr-cas9-catalytic-triads</link>
       <guid isPermaLink="true">https://biogravity.space/articles/quantum-proton-tunneling-crispr-cas9-catalytic-triads</guid>
       <pubDate>Fri, 23 Oct 2026 07:30:00 GMT</pubDate>
@@ -539,7 +575,7 @@
       <category>Quantum Biology</category>
     </item>
     <item>
-      <title>Space Station Superbugs: Why Biofilms Mutate and Resist Antibiotics in Orbit</title>
+      <title>Space Station Superbugs: Why Biofilms</title>
       <link>https://biogravity.space/articles/microbial-biofilm-antibiotic-resistance-iss-closed-loop-habitats</link>
       <guid isPermaLink="true">https://biogravity.space/articles/microbial-biofilm-antibiotic-resistance-iss-closed-loop-habitats</guid>
       <pubDate>Fri, 23 Oct 2026 08:00:00 GMT</pubDate>
@@ -548,7 +584,7 @@
       <category>Space Microbiology</category>
     </item>
     <item>
-      <title>Why Astronauts Lose Vision in Space: The Brain Fluid Mystery of SANS</title>
+      <title>Why Astronauts Lose Vision in Space: The</title>
       <link>https://biogravity.space/articles/cerebrovascular-glymphatic-clearance-microgravity-optic-nerve-syndrome</link>
       <guid isPermaLink="true">https://biogravity.space/articles/cerebrovascular-glymphatic-clearance-microgravity-optic-nerve-syndrome</guid>
       <pubDate>Fri, 23 Oct 2026 08:30:00 GMT</pubDate>
@@ -557,7 +593,7 @@
       <category>Space Medicine</category>
     </item>
     <item>
-      <title>Farming on Mars: Re-Engineering Photosynthesis Under Far-Red Orbital Light</title>
+      <title>Farming on Mars: Re-Engineering</title>
       <link>https://biogravity.space/articles/photosystem-ii-charge-separation-far-red-light-orbital-bioreactors</link>
       <guid isPermaLink="true">https://biogravity.space/articles/photosystem-ii-charge-separation-far-red-light-orbital-bioreactors</guid>
       <pubDate>Fri, 23 Oct 2026 09:00:00 GMT</pubDate>
@@ -566,7 +602,7 @@
       <category>Astro-Botany</category>
     </item>
     <item>
-      <title>Creating Fifth-State Matter in Orbit: Polariton Condensation in Zero-G</title>
+      <title>Creating Fifth-State Matter in Orbit:</title>
       <link>https://biogravity.space/articles/bose-einstein-polariton-condensation-orbital-microgravity</link>
       <guid isPermaLink="true">https://biogravity.space/articles/bose-einstein-polariton-condensation-orbital-microgravity</guid>
       <pubDate>Fri, 23 Oct 2026 10:00:00 GMT</pubDate>
@@ -575,7 +611,7 @@
       <category>Quantum Physics &amp; Optics</category>
     </item>
     <item>
-      <title>Astronaut Immunity: How Extended Spaceflight Silences Human T-Cells</title>
+      <title>Astronaut Immunity: How Extended</title>
       <link>https://biogravity.space/articles/epigenetic-t-cell-activation-remodeling-extended-spaceflight</link>
       <guid isPermaLink="true">https://biogravity.space/articles/epigenetic-t-cell-activation-remodeling-extended-spaceflight</guid>
       <pubDate>Fri, 23 Oct 2026 11:00:00 GMT</pubDate>
@@ -584,7 +620,7 @@
       <category>Space Immunology</category>
     </item>
     <item>
-      <title>Flawless Nanotechnology in Space: Self-Assembling Chiral Nanotubes</title>
+      <title>Flawless Nanotechnology in Space:</title>
       <link>https://biogravity.space/articles/self-assembling-chiral-nanotubes-zero-convection-solute-gradients</link>
       <guid isPermaLink="true">https://biogravity.space/articles/self-assembling-chiral-nanotubes-zero-convection-solute-gradients</guid>
       <pubDate>Fri, 23 Oct 2026 12:00:00 GMT</pubDate>
@@ -593,7 +629,7 @@
       <category>Nanomaterials &amp; Biophysics</category>
     </item>
     <item>
-      <title>How Cosmic Rays Choke Cellular Power: Mitochondria Under Space Radiation</title>
+      <title>How Cosmic Rays Choke Cellular Power:</title>
       <link>https://biogravity.space/articles/mitochondrial-electron-transport-efficiency-spaceflight-radiation</link>
       <guid isPermaLink="true">https://biogravity.space/articles/mitochondrial-electron-transport-efficiency-spaceflight-radiation</guid>
       <pubDate>Fri, 23 Oct 2026 13:00:00 GMT</pubDate>
@@ -602,7 +638,7 @@
       <category>Cellular Bioenergetics</category>
     </item>
     <item>
-      <title>Building Bones on the Moon: Hydroxyapatite Scaffolds in Lunar Gravity</title>
+      <title>Building Bones on the Moon: Hydroxyapatite</title>
       <link>https://biogravity.space/articles/biomineralization-hydroxyapatite-scaffolds-simulated-lunar-freefall</link>
       <guid isPermaLink="true">https://biogravity.space/articles/biomineralization-hydroxyapatite-scaffolds-simulated-lunar-freefall</guid>
       <pubDate>Fri, 23 Oct 2026 14:00:00 GMT</pubDate>
@@ -611,7 +647,7 @@
       <category>Bone Physiology &amp; Biomaterials</category>
     </item>
     <item>
-      <title>Blood Vessels in Free-Fall: Single-Cell RNA Sequencing of Astronaut Arteries</title>
+      <title>Blood Vessels in Free-Fall: Single-Cell RNA</title>
       <link>https://biogravity.space/articles/single-cell-rna-seq-endothelial-cells-hyperstatic-weightlessness</link>
       <guid isPermaLink="true">https://biogravity.space/articles/single-cell-rna-seq-endothelial-cells-hyperstatic-weightlessness</guid>
       <pubDate>Fri, 23 Oct 2026 15:00:00 GMT</pubDate>
@@ -620,7 +656,7 @@
       <category>Vascular Biology &amp; Genomics</category>
     </item>
     <item>
-      <title>Measuring Brainwaves in Orbit: SQUID Biosensors Detect Neural Action Potentials</title>
+      <title>Measuring Brainwaves in Orbit: SQUID</title>
       <link>https://biogravity.space/articles/squid-biosensing-neuronal-action-potentials-low-earth-orbit</link>
       <guid isPermaLink="true">https://biogravity.space/articles/squid-biosensing-neuronal-action-potentials-low-earth-orbit</guid>
       <pubDate>Fri, 23 Oct 2026 16:00:00 GMT</pubDate>
@@ -629,7 +665,7 @@
       <category>Neuroscience &amp; Quantum Sensors</category>
     </item>
     <item>
-      <title>Tardigrade Super-Shield: How the Dsup Protein Can Protect Human Cells from Radiation</title>
+      <title>Tardigrade Super-Shield: How the Dsup</title>
       <link>https://biogravity.space/articles/tardigrade-dsup-protein-chromatin-radioprotective-compaction</link>
       <guid isPermaLink="true">https://biogravity.space/articles/tardigrade-dsup-protein-chromatin-radioprotective-compaction</guid>
       <pubDate>Fri, 23 Oct 2026 17:00:00 GMT</pubDate>

@@ -630,7 +630,7 @@ class SEOManager {
       ]
     };
 
-    const related = allNews.filter(n => n.id !== item.id).slice(0, 3);
+    const related = allNews.filter(n => n.id !== item.id).slice(0, 5);
     const relatedCards = related.map(r => `
       <a href="/news/${r.id}" class="ux-card block p-4 rounded-xl border border-slate-200 hover:border-teal-500 hover:shadow-md transition group bg-white">
         <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider">${escapeHtml(r.category)}</span>
@@ -639,9 +639,9 @@ class SEOManager {
       </a>
     `).join('\n');
 
-    let cleanNewsTitle = item.title.replace(/\s*\|\s*BioGravity.*$/i, '').trim();
-    if (cleanNewsTitle.length > 46) {
-      cleanNewsTitle = cleanNewsTitle.slice(0, 46).replace(/\s+[^\s]*$/, '').trim();
+    let cleanNewsTitle = (item.seoTitle || item.title).replace(/\s*\|\s*BioGravity.*$/i, '').replace(/['"“”‘’]/g, '').trim();
+    if (cleanNewsTitle.length > 38) {
+      cleanNewsTitle = cleanNewsTitle.slice(0, 38).replace(/\s+[^\s]*$/, '').trim();
     }
     const pageTitle = `${escapeHtml(cleanNewsTitle)} | BioGravity News`;
 
@@ -719,7 +719,7 @@ ${JSON.stringify(schema, null, 2)}
   <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-xs">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
       <div class="flex items-center gap-4">
-        <a href="/" class="flex items-center gap-2.5">
+        <a href="/" class="flex items-center gap-2.5" aria-label="BioGravity Homepage">
           <div class="w-8 h-8 rounded-lg bg-slate-900 flex items-center justify-center text-white text-sm shadow-sm font-bold">
             ⚛️
           </div>

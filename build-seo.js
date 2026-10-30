@@ -165,7 +165,7 @@ ${faqItems}
     const citeItems = art.citations.map(c => {
     let formatted = c.replace(/href="(http[^"]+)"/g, 'href="$1" target="_blank" rel="noopener noreferrer"');
     if (!formatted.includes('<a') && formatted.includes('DOI:')) {
-      formatted = formatted.replace(/DOI:\s*(10\.[0-9]+\/[^\s]+)/i, 'DOI: <a href="https://doi.org/$1" target="_blank" rel="noopener noreferrer" class="text-teal-600 hover:underline">$1</a>');
+      formatted = formatted.replace(/DOI:\s*(10\.[0-9]+\/[^\s<]+)/i, '<span class="text-slate-500 font-mono">DOI: $1</span>');
     }
     return `    <li>${formatted}</li>`;
   }).join('\n');
@@ -303,14 +303,14 @@ articles.forEach((art, idx) => {
 
   // Tags HTML
   const tagsHtml = tags.map(t => `
-    <a href="/research?q=${encodeURIComponent(t)}" class="text-xs px-2.5 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 hover:bg-slate-200 hover:text-slate-900 transition font-medium">
+    <a href="/research?q=${encodeURIComponent(t)}" rel="nofollow" class="text-xs px-2.5 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 hover:bg-slate-200 hover:text-slate-900 transition font-medium">
       #${escapeHtml(t)}
     </a>
   `).join('\n');
 
   let cleanSeoTitle = (art.seoTitle || art.title).replace(/\s*\|\s*BioGravity.*$/i, '').trim();
-  if (cleanSeoTitle.length > 46) {
-    cleanSeoTitle = cleanSeoTitle.slice(0, 46).replace(/\s+[^\s]*$/, '').trim();
+  if (cleanSeoTitle.length > 44) {
+    cleanSeoTitle = cleanSeoTitle.slice(0, 44).replace(/\s+[^\s]*$/, '').trim();
   }
   const displayTitle = `${escapeHtml(cleanSeoTitle)} | BioGravity`;
   const socialTitle = escapeHtml(art.seoTitle || art.title);
@@ -396,7 +396,7 @@ ${JSON.stringify(schema, null, 2)}
       
       <!-- Left: Logo & Live Date -->
       <div class="flex items-center gap-5">
-        <a href="/" class="flex items-center gap-2.5 group">
+        <a href="/" class="flex items-center gap-2.5 group" aria-label="BioGravity Homepage">
           <div class="w-8 h-8 rounded-lg bg-slate-900 flex items-center justify-center text-white text-sm shadow-sm group-hover:bg-slate-800 transition">
             ⚛️
           </div>
@@ -885,7 +885,7 @@ ${JSON.stringify(schema, null, 2)}
   <meta name="robots" content="noindex, follow">
   <meta http-equiv="refresh" content="0; url=${cleanArticleUrl}">
   <link rel="canonical" href="${cleanArticleUrl}">
-  <title>Redirecting to ${escapeHtml(art.seoTitle || art.title)}</title>
+  <title>Redirecting... | BioGravity</title>
 </head>
 <body>
   <p>Redirecting to <a href="${cleanArticleUrl}">${escapeHtml(art.seoTitle || art.title)}</a>...</p>
@@ -1077,6 +1077,25 @@ corePages.forEach(p => {
 const indexPath = path.join(__dirname, 'index.html');
 if (fs.existsSync(indexPath)) {
   let indexHtml = fs.readFileSync(indexPath, 'utf8');
+
+  const legacyUrlMap = {
+    'acoustic-levitation-and-scaffold-free-vascularized-cardiac-organoid-bioprinting-': 'acoustic-levitation-scaffold-free-cardiac-organoid-bioprinting',
+    'radical-pair-spin-coherence-and-magnetoreception-in-human-cryptochrome-4-photore': 'radical-pair-spin-coherence-human-cryptochrome-4',
+    'synthetic-poly-adp-metallo-peptides-for-telomeric-radioprotection-in-deep-space-': 'synthetic-poly-adp-metallo-peptides-telomeric-radioprotection',
+    'characterizing-supersolid-phase-transitions-in-trapped-quantum-gases-w': 'supersolid-phase-transitions-trapped-quantum-gases',
+    'non-thermal-quantum-proton-tunneling-in-crispr-cas9-catalytic-triads-orbital-evi': 'quantum-proton-tunneling-crispr-cas9-catalytic-triads',
+    'sub-angstrom-macromolecular-crystallography-of-membrane-transporters-in-orbital-': 'macromolecular-crystallography-membrane-transporters-orbit',
+    'what-does-quantum-parameter-estimation-estimate-a-no-go-result-for-tru': 'quantum-parameter-estimation-no-go-result',
+    'ideal-interaction-dynamics-of-defects-and-background-fields-in': 'interaction-dynamics-defects-background-fields',
+    'a-priori-estimation-of-the-non-linear-compression-potential-and': 'estimation-non-linear-compression-potential',
+    'exact-analytical-treatment-of-collectively-pumped-dicke': 'quantum-proton-tunneling-crispr-cas9-catalytic-triads',
+    'mediated-interactions-between-fermi-polarons-in-the-strongly': 'acoustic-levitation-scaffold-free-cardiac-organoid-bioprinting',
+    'optimal-quantum-discrimination-at-liouvillian-exceptional-points': 'quantum-parameter-estimation-no-go-result'
+  };
+  for (const [oldSlug, newSlug] of Object.entries(legacyUrlMap)) {
+    indexHtml = indexHtml.split('/articles/' + oldSlug).join('/articles/' + newSlug);
+  }
+
   indexHtml = indexHtml.replace(/href="research\.html"/g, 'href="/research"');
   indexHtml = indexHtml.replace(/href="world-space-week-2026\.html"/g, 'href="/world-space-week-2026"');
   indexHtml = indexHtml.replace(/href="molecular-biology-research\.html"/g, 'href="/molecular-biology-research"');

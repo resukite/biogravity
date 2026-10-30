@@ -88,6 +88,46 @@
 
   <!-- Live Science Dispatches (Google Discover & News Priority) -->
   <url>
+    <loc>https://biogravity.space/news/left-handed-transmission-lines-for-the-dynamical-new-evidence-in</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85</image:loc>
+      <image:title>Left-Handed Transmission Lines for the Dynamical: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/locality-in-dissipative-ground-state-preparation-new-evidence-in</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85</image:loc>
+      <image:title>Locality in Dissipative Ground-State Preparation: New Evidence in Space &amp; Astronomy</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/hyaluronic-acid-over-expression-drives-tissue-new-evidence-in</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85</image:loc>
+      <image:title>Hyaluronic acid over-expression drives tissue: New Evidence in Space &amp; Astronomy</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/comparison-of-entangling-strategies-for-unitary-synthesis-new</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85</image:loc>
+      <image:title>Comparison of entangling strategies for unitary synthesis: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/renormalization-for-robust-memory-without-synchronization-new</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>daily</changefreq>
@@ -113,7 +153,7 @@
     <changefreq>daily</changefreq>
     <priority>0.98</priority>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85</image:loc>
       <image:title>Cosmic Echoes: Sub-Solar Gravitational Wave Detection Points to Primordial Dark Matter</image:title>
     </image:image>
   </url>
@@ -133,7 +173,7 @@
     <changefreq>daily</changefreq>
     <priority>0.98</priority>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85</image:loc>
       <image:title>Beyond Lithium: Non-Flammable Sodium Solid-State Battery Achieves 2,000 Cycles with Zero Dendrites</image:title>
     </image:image>
   </url>
