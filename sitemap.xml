@@ -250,6 +250,26 @@
 
   <!-- Pre-Rendered High-Authority Research Dispatches (Clean URLs) -->
   <url>
+    <loc>https://biogravity.space/articles/how-do-tall-trees-pull-water-against-gravity</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&amp;fit=crop&amp;w=1600&amp;q=80</image:loc>
+      <image:title>Hydrodynamics of Xylem Cavitation and Cohesion-Tension Transport in Hyper-Tall Conifers</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/why-is-gold-yellow-relativistic-quantum-chemistry</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1610375461246-83df859d849d?auto=format&amp;fit=crop&amp;w=1600&amp;q=80</image:loc>
+      <image:title>Relativistic Quantum Chemistry of Heavy Metals: Why Gold Has a Golden Color</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://biogravity.space/articles/michelson-morley-experiment-disproved-the-aether</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
