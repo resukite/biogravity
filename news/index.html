@@ -4,22 +4,11 @@
   <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8576621614388905" crossorigin="anonymous"></script>
 
-  <!-- Google Analytics 4 (GA4) with Google Consent Mode v2 -->
+  <!-- Google Analytics 4 (GA4) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-BSRJK4DMH7"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    var hasConsent = false;
-    try {
-      var c = localStorage.getItem('biogravity_cookie_consent_v1');
-      if (c && JSON.parse(c).choice === 'all') hasConsent = true;
-    } catch(e) {}
-    gtag('consent', 'default', {
-      'ad_storage': hasConsent ? 'granted' : 'denied',
-      'ad_user_data': hasConsent ? 'granted' : 'denied',
-      'ad_personalization': hasConsent ? 'granted' : 'denied',
-      'analytics_storage': 'granted'
-    });
     gtag('js', new Date());
     gtag('config', 'G-BSRJK4DMH7');
   </script>
@@ -98,14 +87,14 @@
   }
   </script>
 
-  <link rel="stylesheet" href="/css/styles.css?v=2.1">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script defer src="/js/sidebar-menu.js"></script>
   <script>
     if (window.location.pathname.endsWith('.html')) {
       var clean = window.location.pathname.replace(/\.html$/, '');
       window.history.replaceState(null, '', clean + window.location.search + window.location.hash);
     }
   </script>
-  <script defer src="/js/sidebar-menu.js?v=2.1"></script>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col font-sans">
 
@@ -117,7 +106,7 @@
         <span class="font-bold tracking-wider uppercase text-red-400 text-xs">LIVE SCIENCE WIRE</span>
         <span class="text-slate-400 hidden md:inline">| Continuous 24/7 Autonomous Coverage • Updated October 30, 2026</span>
       </div>
-      <span class="text-teal-400 text-xs font-mono font-medium">22 Live Dispatches</span>
+      <span class="text-teal-400 text-xs font-mono font-medium">24 Live Dispatches</span>
     </div>
   </div>
 
@@ -208,11 +197,61 @@
           <p class="text-xs text-slate-500 mt-1">Autonomous, fact-checked, peer-reviewed global reporting updated continuously.</p>
         </div>
         <span class="text-xs font-mono px-3 py-1 bg-slate-100 rounded-full text-slate-700 font-semibold border border-slate-200">
-          22 Active Dispatches
+          24 Active Dispatches
         </span>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         
+      <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
+        <div>
+          <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
+            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="eager">
+          </div>
+          <div class="flex items-center justify-between text-xs mb-2">
+            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Quantum &amp; Physics</span>
+            <span class="text-slate-400 text-[11px]">October 30, 2026</span>
+          </div>
+          <h3 class="font-display font-bold text-base text-slate-900 group-hover:text-teal-600 transition mb-2 leading-snug">
+            <a href="/news/probing-fluctuations-in-photon-emission-statistics-of-new">Probing fluctuations in photon emission statistics of: New Evidence in Quantum &amp; Physics</a>
+          </h3>
+          <p class="text-xs text-slate-600 line-clamp-3 leading-relaxed mb-4">
+            Probing fluctuations in photon emission statistics of: New Evidence in Quantum &amp; Physics: Electrically spin-injected ensembles of InGaAs/GaAs quantum dots emit circularly polarized single photons, with the emission helicity determined by the spin polarization of the injected electrons. A ferromagnetic CoFeB spin-injection layer with perpendicular magnetic anisotropy, combined with an MgO tunnel barrier, enables spin-polarized electron injection into the quantum-dot active region, resulting in circularly polarized photon emission at zero applied magnetic field. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40593v1).
+          </p>
+        </div>
+        <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
+          <span class="text-slate-400 text-[11px]">Via arXiv Open Science Wire (https://arxiv.org/abs/2610.40593v1)</span>
+          <a href="/news/probing-fluctuations-in-photon-emission-statistics-of-new" class="text-teal-700 font-bold hover:text-teal-900 flex items-center gap-1">
+            Read Full Story &rarr;
+          </a>
+        </div>
+      </article>
+    
+
+      <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
+        <div>
+          <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
+            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="eager">
+          </div>
+          <div class="flex items-center justify-between text-xs mb-2">
+            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Quantum &amp; Physics</span>
+            <span class="text-slate-400 text-[11px]">October 30, 2026</span>
+          </div>
+          <h3 class="font-display font-bold text-base text-slate-900 group-hover:text-teal-600 transition mb-2 leading-snug">
+            <a href="/news/algebraic-theory-of-abelian-fractons-and-beyond-new-evidence-in">Algebraic theory of abelian fractons and beyond: New Evidence in Quantum &amp; Physics</a>
+          </h3>
+          <p class="text-xs text-slate-600 line-clamp-3 leading-relaxed mb-4">
+            Algebraic theory of abelian fractons and beyond: New Evidence in Quantum &amp; Physics: We develop an algebraic theory of fusion, mobility, and statistics in abelian gapped fracton orders and topological phases. The framework generalizes the algebraic description of abelian anyons to systems with restricted-mobility and spatially extended excitations. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40596v1).
+          </p>
+        </div>
+        <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
+          <span class="text-slate-400 text-[11px]">Via arXiv Open Science Wire (https://arxiv.org/abs/2610.40596v1)</span>
+          <a href="/news/algebraic-theory-of-abelian-fractons-and-beyond-new-evidence-in" class="text-teal-700 font-bold hover:text-teal-900 flex items-center gap-1">
+            Read Full Story &rarr;
+          </a>
+        </div>
+      </article>
+    
+
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
@@ -266,7 +305,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="eager">
+            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Quantum &amp; Physics</span>
@@ -291,7 +330,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Deep space exoplanet atmospheric spectroscopy captured by orbital space observatory" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="eager">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Deep space exoplanet atmospheric spectroscopy captured by orbital space observatory" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Space &amp; Astronomy</span>

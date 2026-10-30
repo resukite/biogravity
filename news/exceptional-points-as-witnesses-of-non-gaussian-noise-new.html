@@ -4,22 +4,11 @@
   <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8576621614388905" crossorigin="anonymous"></script>
 
-  <!-- Google Analytics 4 (GA4) with Google Consent Mode v2 -->
+  <!-- Google Analytics 4 (GA4) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-BSRJK4DMH7"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    var hasConsent = false;
-    try {
-      var c = localStorage.getItem('biogravity_cookie_consent_v1');
-      if (c && JSON.parse(c).choice === 'all') hasConsent = true;
-    } catch(e) {}
-    gtag('consent', 'default', {
-      'ad_storage': hasConsent ? 'granted' : 'denied',
-      'ad_user_data': hasConsent ? 'granted' : 'denied',
-      'ad_personalization': hasConsent ? 'granted' : 'denied',
-      'analytics_storage': 'granted'
-    });
     gtag('js', new Date());
     gtag('config', 'G-BSRJK4DMH7');
   </script>
@@ -54,7 +43,8 @@
   <meta name="twitter:description" content="Exceptional Points as Witnesses of Non-Gaussian Noise: New Evidence in Quantum &amp; Physics: Efficient control of quantum devices requires the knowledge of their environmental noise, yet the commonly measured power spectrum does not fully characterize non-Gaussian fluctuations of realistic environments. Here we show that exceptional points (EPs) in the noise-averaged dephasing response can expose observable signatures of non-Gaussian statistics, distinguishing environments with identical lower-order statistics. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40612v1).">
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85">
 
-  <link rel="stylesheet" href="/css/styles.css?v=2.1">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script defer src="/js/sidebar-menu.js"></script>
 
   <script type="application/ld+json">
 {
@@ -147,15 +137,49 @@
           </span>
         </a>
       </div>
-      <nav class="flex items-center gap-6 text-sm font-medium text-slate-600">
-        <a href="/" class="hover:text-slate-900 transition">Home</a>
-        <a href="/news" class="text-teal-600 font-bold transition flex items-center gap-1.5">
-          <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span> Live News
+            <!-- Right: Clean Navigation Links + Bespoke 3-Dot Menu Button -->
+      <div class="flex items-center gap-3">
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
+          <a href="/" class="hover:text-slate-900 transition">Home</a>
+          <a href="/news" class="flex items-center gap-1.5 text-rose-600 font-semibold hover:text-rose-700 transition">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-rose-500"></span>
+            </span>
+            Live News
+          </a>
+          <a href="/research" class="hover:text-slate-900 transition">Research</a>
+          <a href="/tools" class="hover:text-slate-900 transition">Tools</a>
+          <a href="/about" class="hover:text-slate-900 transition">About</a>
+          <a href="/contact" class="hover:text-slate-900 transition">Contact</a>
+        </nav>
+
+        <!-- Buy Me a Coffee Supporter Pill -->
+        <a 
+          href="https://buymeacoffee.com/biogravity" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="hidden sm:inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-200/80 transition text-xs font-medium shadow-xs"
+          title="Support BioGravity on Buy Me a Coffee"
+        >
+          <span class="text-xs">☕</span>
+          <span>Support</span>
         </a>
-        <a href="/research" class="hover:text-slate-900 transition">Research Dispatches</a>
-        <a href="/about" class="hover:text-slate-900 transition">About</a>
-        <a href="/contact" class="hover:text-slate-900 transition">Contact</a>
-      </nav>
+
+        <!-- Bespoke 3-Dot Navigation Menu Button -->
+        <button 
+          id="nav-sidebar-toggle" 
+          class="flex items-center gap-2 py-2 px-3.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-200/80 transition cursor-pointer text-xs font-medium shadow-sm group" 
+          aria-label="Open Navigation Menu"
+        >
+          <span class="flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-slate-700 group-hover:bg-slate-900 transition"></span>
+            <span class="w-1.5 h-1.5 rounded-full bg-slate-700 group-hover:bg-slate-900 transition"></span>
+            <span class="w-1.5 h-1.5 rounded-full bg-slate-700 group-hover:bg-slate-900 transition"></span>
+          </span>
+          <span class="font-medium ml-0.5">Menu</span>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -285,6 +309,20 @@
         </h3>
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
           
+      <a href="/news/probing-fluctuations-in-photon-emission-statistics-of-new" class="ux-card block p-4 rounded-xl border border-slate-200 hover:border-teal-500 hover:shadow-md transition group bg-white">
+        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider">Quantum &amp; Physics</span>
+        <h4 class="font-display font-bold text-xs text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">Probing fluctuations in photon emission statistics of: New Evidence in Quantum &amp; Physics</h4>
+        <div class="text-[10px] text-slate-400 mt-2 font-medium">October 30, 2026 • 4 min read</div>
+      </a>
+    
+
+      <a href="/news/algebraic-theory-of-abelian-fractons-and-beyond-new-evidence-in" class="ux-card block p-4 rounded-xl border border-slate-200 hover:border-teal-500 hover:shadow-md transition group bg-white">
+        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider">Quantum &amp; Physics</span>
+        <h4 class="font-display font-bold text-xs text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">Algebraic theory of abelian fractons and beyond: New Evidence in Quantum &amp; Physics</h4>
+        <div class="text-[10px] text-slate-400 mt-2 font-medium">October 30, 2026 • 4 min read</div>
+      </a>
+    
+
       <a href="/news/optimal-diamond-distance-estimation-for-unitary-channels-new" class="ux-card block p-4 rounded-xl border border-slate-200 hover:border-teal-500 hover:shadow-md transition group bg-white">
         <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider">Quantum &amp; Physics</span>
         <h4 class="font-display font-bold text-xs text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">Optimal Diamond Distance Estimation for Unitary Channels: New Evidence in Quantum &amp; Physics</h4>
@@ -302,20 +340,6 @@
       <a href="/news/locality-in-dissipative-ground-state-preparation-new-evidence-in" class="ux-card block p-4 rounded-xl border border-slate-200 hover:border-teal-500 hover:shadow-md transition group bg-white">
         <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider">Space &amp; Astronomy</span>
         <h4 class="font-display font-bold text-xs text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">Locality in Dissipative Ground-State Preparation: New Evidence in Space &amp; Astronomy</h4>
-        <div class="text-[10px] text-slate-400 mt-2 font-medium">October 30, 2026 • 4 min read</div>
-      </a>
-    
-
-      <a href="/news/hyaluronic-acid-over-expression-drives-tissue-new-evidence-in" class="ux-card block p-4 rounded-xl border border-slate-200 hover:border-teal-500 hover:shadow-md transition group bg-white">
-        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider">Space &amp; Astronomy</span>
-        <h4 class="font-display font-bold text-xs text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">Hyaluronic acid over-expression drives tissue: New Evidence in Space &amp; Astronomy</h4>
-        <div class="text-[10px] text-slate-400 mt-2 font-medium">October 30, 2026 • 4 min read</div>
-      </a>
-    
-
-      <a href="/news/comparison-of-entangling-strategies-for-unitary-synthesis-new" class="ux-card block p-4 rounded-xl border border-slate-200 hover:border-teal-500 hover:shadow-md transition group bg-white">
-        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider">Quantum &amp; Physics</span>
-        <h4 class="font-display font-bold text-xs text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">Comparison of entangling strategies for unitary synthesis: New Evidence in Quantum &amp; Physics</h4>
         <div class="text-[10px] text-slate-400 mt-2 font-medium">October 30, 2026 • 4 min read</div>
       </a>
     

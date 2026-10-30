@@ -2,6 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://biogravity.space/news/probing-fluctuations-in-photon-emission-statistics-of-new</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-30T17:19:14.510Z</news:publication_date>
+      <news:title>Probing fluctuations in photon emission statistics of: New Evidence in Quantum &amp; Physics</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/algebraic-theory-of-abelian-fractons-and-beyond-new-evidence-in</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-30T17:19:14.503Z</news:publication_date>
+      <news:title>Algebraic theory of abelian fractons and beyond: New Evidence in Quantum &amp; Physics</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/exceptional-points-as-witnesses-of-non-gaussian-noise-new</loc>
     <news:news>
       <news:publication>
