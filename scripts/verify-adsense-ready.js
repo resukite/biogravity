@@ -46,14 +46,17 @@ function findHtml(dir) {
 findHtml(rootDir);
 
 let missingAdSense = [];
+let validContentPagesCount = 0;
 htmlFiles.forEach(f => {
   const content = fs.readFileSync(f, 'utf8');
+  if (content.includes('http-equiv="refresh"') || content.includes('Redirecting to')) return;
+  validContentPagesCount++;
   if (!content.includes('ca-pub-8576621614388905')) {
     missingAdSense.push(path.relative(rootDir, f));
   }
 });
 
-check('AdSense Tag Coverage', missingAdSense.length === 0, missingAdSense.length === 0 ? `Active in all ${htmlFiles.length} HTML files` : `Missing in: ${missingAdSense.join(', ')}`);
+check('AdSense Tag Coverage', missingAdSense.length === 0, missingAdSense.length === 0 ? `Active in all ${validContentPagesCount} content HTML files` : `Missing in: ${missingAdSense.join(', ')}`);
 
 // 4. Check Mandatory Legal & Policy Pages
 const privacyPath = path.join(rootDir, 'privacy-policy.html');
