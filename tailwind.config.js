@@ -17,7 +17,8 @@ module.exports = {
     './world-space-week-2026/**/*.html',
     './data/**/*.json',
     './build-seo.js',
-    './scripts/**/*.js'
+    './scripts/**/*.js',
+    './js/**/*.js'
   ],
   theme: {
     extend: {

@@ -43,7 +43,7 @@
   <meta name="twitter:description" content="Fault-Tolerant Quantum Leap: Physicists Successfully Shield Qubits from Decoherence: Majorana zero modes manipulated on semiconductor-superconductor...">
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85">
 
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/styles.css?v=2.1">
 
   <script type="application/ld+json">
 {
@@ -108,6 +108,7 @@
   ]
 }
   </script>
+  <script defer src="/js/sidebar-menu.js?v=2.1"></script>
 </head>
 <body class="bg-white text-slate-800 antialiased min-h-screen flex flex-col font-sans">
 
@@ -136,15 +137,49 @@
           </span>
         </a>
       </div>
-      <nav class="flex items-center gap-6 text-sm font-medium text-slate-600">
-        <a href="/" class="hover:text-slate-900 transition">Home</a>
-        <a href="/news" class="text-teal-600 font-bold transition flex items-center gap-1.5">
-          <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span> Live News
+            <!-- Right: Clean Navigation Links + Bespoke 3-Dot Menu Button -->
+      <div class="flex items-center gap-3">
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
+          <a href="/" class="hover:text-slate-900 transition">Home</a>
+          <a href="/news" class="flex items-center gap-1.5 text-rose-600 font-semibold hover:text-rose-700 transition">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-rose-500"></span>
+            </span>
+            Live News
+          </a>
+          <a href="/research" class="hover:text-slate-900 transition">Research</a>
+          <a href="/tools" class="hover:text-slate-900 transition">Tools</a>
+          <a href="/about" class="hover:text-slate-900 transition">About</a>
+          <a href="/contact" class="hover:text-slate-900 transition">Contact</a>
+        </nav>
+
+        <!-- Buy Me a Coffee Supporter Pill -->
+        <a 
+          href="https://buymeacoffee.com/biogravity" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="hidden sm:inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-200/80 transition text-xs font-medium shadow-xs"
+          title="Support BioGravity on Buy Me a Coffee"
+        >
+          <span class="text-xs">☕</span>
+          <span>Support</span>
         </a>
-        <a href="/research" class="hover:text-slate-900 transition">Research Dispatches</a>
-        <a href="/about" class="hover:text-slate-900 transition">About</a>
-        <a href="/contact" class="hover:text-slate-900 transition">Contact</a>
-      </nav>
+
+        <!-- Bespoke 3-Dot Navigation Menu Button -->
+        <button 
+          id="nav-sidebar-toggle" 
+          class="flex items-center gap-2 py-2 px-3.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-200/80 transition cursor-pointer text-xs font-medium shadow-sm group" 
+          aria-label="Open Navigation Menu"
+        >
+          <span class="flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-slate-700 group-hover:bg-slate-900 transition"></span>
+            <span class="w-1.5 h-1.5 rounded-full bg-slate-700 group-hover:bg-slate-900 transition"></span>
+            <span class="w-1.5 h-1.5 rounded-full bg-slate-700 group-hover:bg-slate-900 transition"></span>
+          </span>
+          <span class="font-medium ml-0.5">Menu</span>
+        </button>
+      </div>
     </div>
   </header>
 
