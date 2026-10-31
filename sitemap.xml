@@ -88,6 +88,26 @@
 
   <!-- Live Science Dispatches (Google Discover & News Priority) -->
   <url>
+    <loc>https://biogravity.space/news/quasi-phases-of-quantum-matter-new-evidence-in-quantum-physics</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85</image:loc>
+      <image:title>Quasi-Phases of Quantum Matter: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/mapping-stellar-obliquity-across-space-and-time-new-evidence-in</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85</image:loc>
+      <image:title>Mapping Stellar Obliquity Across Space and Time: New Evidence in Space &amp; Astronomy</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/grow-compress-and-perturb-a-hybrid-new-evidence-in-quantum</loc>
     <lastmod>2026-10-31</lastmod>
     <changefreq>daily</changefreq>

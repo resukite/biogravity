@@ -2,6 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://biogravity.space/news/quasi-phases-of-quantum-matter-new-evidence-in-quantum-physics</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-31T09:00:00.145Z</news:publication_date>
+      <news:title>Quasi-Phases of Quantum Matter: New Evidence in Quantum &amp; Physics</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/mapping-stellar-obliquity-across-space-and-time-new-evidence-in</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-31T09:00:00.138Z</news:publication_date>
+      <news:title>Mapping Stellar Obliquity Across Space and Time: New Evidence in Space &amp; Astronomy</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/grow-compress-and-perturb-a-hybrid-new-evidence-in-quantum</loc>
     <news:news>
       <news:publication>
