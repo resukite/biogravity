@@ -2,6 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://biogravity.space/news/algebraic-strong-to-weak-symmetry-breaking-and-partial-new</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-31T02:55:00.154Z</news:publication_date>
+      <news:title>Algebraic strong-to-weak symmetry breaking and partial: New Evidence in Quantum &amp; Physics</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/the-quantum-chromatic-gap-ii-new-evidence-in-quantum-physics</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-31T02:55:00.147Z</news:publication_date>
+      <news:title>The Quantum Chromatic Gap II: New Evidence in Quantum &amp; Physics</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/what-can-be-computed-with-indefinite-causal-structure-new</loc>
     <news:news>
       <news:publication>
