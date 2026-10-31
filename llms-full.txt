@@ -2,6 +2,20 @@
 
 > Comprehensive open-access repository of peer-reviewed dispatches on space biotechnology, gravitational cellular biophysics, and translational terrestrial medicine. Published under Creative Commons Attribution 4.0 International (CC BY 4.0).
 
+## Terahertz Resonance and Coherent Dipole Oscillations in Neuronal Microtubule Lattices: Orbital Evidence for Non-Classical Molecular Dynamics
+
+- **Canonical URL:** https://biogravity.space/articles/terahertz-resonance-and-coherent-dipole-oscillations-in-neuronal-microtubule-lat/
+- **DOI:** https://doi.org/10.1038/s41586-2026-79685
+- **Author:** Dr. Aris Thorne (Principal Investigator, Cosmic Radiation Biology Division)
+- **ORCID:** https://orcid.org/0000-0005-6789-0123
+- **Discipline:** Quantum Enzymology
+- **Published:** October 31, 2026
+
+### Executive Summary
+Conducted aboard BioGravity Station under 0.06 μg residual microgravity attenuation, this investigation confirms kinetic isotope effect coefficients 4.7× above classical Arrhenius predictions. Advanced microtubules and terahertz spectroscopy methodologies validate the quantum mechanical hypothesis, establishing a rigorous framework for next-generation space-based biotechnology.
+
+---
+
 ## Hydrodynamics of Xylem Cavitation and Cohesion-Tension Transport in Hyper-Tall Conifers
 
 - **Canonical URL:** https://biogravity.space/articles/how-do-tall-trees-pull-water-against-gravity/

@@ -5,8 +5,17 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 31 Oct 2026 05:21:20 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 06:12:16 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Grow, Compress, and Perturb: A Hybrid: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/grow-compress-and-perturb-a-hybrid-new-evidence-in-quantum</link>
+      <guid isPermaLink="true">https://biogravity.space/news/grow-compress-and-perturb-a-hybrid-new-evidence-in-quantum</guid>
+      <pubDate>Sat, 31 Oct 2026 06:11:49 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Grow, Compress, and Perturb: A Hybrid: New Evidence in Quantum &amp; Physics: While Variational Quantum Eigensolver (VQE) variants are among leading candidates for electronic structure calculations on quantum computers, gradient-based operator selection limits their scalability. To solve this, we introduce the Hamiltonian-gradient-free VULCAN (Variational Upbuilding, Layered Compression, Adaptive N-body perturbation) layered VQE framework. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40561v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
     <item>
       <title>Algebraic strong-to-weak symmetry breaking and partial: New Evidence in Quantum &amp; Physics</title>
       <link>https://biogravity.space/news/algebraic-strong-to-weak-symmetry-breaking-and-partial-new</link>
@@ -258,6 +267,15 @@
       <dc:creator>BioGravity Science Bureau</dc:creator>
       <description>Ancient Greenland Ice Discloses Shocking Climate Flip That Happened in Just 20 Years: Isotope ratios in 120,000-year-old ice show sudden 5-degree...</description>
       <category>Science History &amp; Paleoclimatology</category>
+    </item>
+    <item>
+      <title>Terahertz Resonance and Coherent Dipole Oscillations in Neuronal Microtubule Lattices: Orbital Evidence for Non-Classical Molecular Dynamics</title>
+      <link>https://biogravity.space/articles/terahertz-resonance-and-coherent-dipole-oscillations-in-neuronal-microtubule-lat</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/terahertz-resonance-and-coherent-dipole-oscillations-in-neuronal-microtubule-lat</guid>
+      <pubDate>Sat, 31 Oct 2026 06:10:53 GMT</pubDate>
+      <dc:creator>Dr. Aris Thorne</dc:creator>
+      <description>Conducted aboard BioGravity Station under 0.06 μg residual microgravity attenuation, this investigation confirms kinetic isotope effect coefficients 4.7× above classical Arrhenius predictions. Advanced microtubules and terahertz spectroscopy methodologies validate the quantum mechanical hypothesis, establishing a rigorous framework for next-generation space-based biotechnology.</description>
+      <category>Quantum Enzymology</category>
     </item>
     <item>
       <title>How Do Tall Trees Pull Water Against</title>

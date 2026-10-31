@@ -88,6 +88,16 @@
 
   <!-- Live Science Dispatches (Google Discover & News Priority) -->
   <url>
+    <loc>https://biogravity.space/news/grow-compress-and-perturb-a-hybrid-new-evidence-in-quantum</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85</image:loc>
+      <image:title>Grow, Compress, and Perturb: A Hybrid: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/algebraic-strong-to-weak-symmetry-breaking-and-partial-new</loc>
     <lastmod>2026-10-31</lastmod>
     <changefreq>daily</changefreq>
@@ -369,6 +379,16 @@
   </url>
 
   <!-- Pre-Rendered High-Authority Research Dispatches (Clean URLs) -->
+  <url>
+    <loc>https://biogravity.space/articles/terahertz-resonance-and-coherent-dipole-oscillations-in-neuronal-microtubule-lat</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Terahertz Resonance and Coherent Dipole Oscillations in Neuronal Microtubule Lattices: Orbital Evidence for Non-Classical Molecular Dynamics</image:title>
+    </image:image>
+  </url>
   <url>
     <loc>https://biogravity.space/articles/how-do-tall-trees-pull-water-against-gravity</loc>
     <lastmod>2026-10-30</lastmod>

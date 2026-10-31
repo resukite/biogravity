@@ -1,8 +1,20 @@
 {
-  "lastRunDate": "2026-10-30",
+  "lastRunDate": "2026-10-31",
   "todayPublishedCount": 3,
-  "totalPublishedCount": 6,
+  "totalPublishedCount": 7,
   "history": [
+    {
+      "timestamp": "2026-10-31T06:11:32.013Z",
+      "id": "terahertz-resonance-and-coherent-dipole-oscillations-in-neuronal-microtubule-lat",
+      "title": "Terahertz Resonance and Coherent Dipole Oscillations in Neuronal Microtubule Lattices: Orbital Evidence for Non-Classical Molecular Dynamics",
+      "action": "approved_live"
+    },
+    {
+      "timestamp": "2026-10-31T06:10:53.193Z",
+      "id": "terahertz-resonance-and-coherent-dipole-oscillations-in-neuronal-microtubule-lat",
+      "title": "Terahertz Resonance and Coherent Dipole Oscillations in Neuronal Microtubule Lattices: Orbital Evidence for Non-Classical Molecular Dynamics",
+      "action": "draft_created"
+    },
     {
       "timestamp": "2026-10-30T06:09:48.799Z",
       "id": "macroscopic-quantum-coherence-in-nuclear-lncrna-liquid-liquid-phase-transition-c",
@@ -80,5 +92,5 @@
     }
   ],
   "todayDraftCount": 1,
-  "totalDraftCount": 6
+  "totalDraftCount": 7
 }

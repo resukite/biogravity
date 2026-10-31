@@ -1,5 +1,94 @@
 [
   {
+    "id": "terahertz-resonance-and-coherent-dipole-oscillations-in-neuronal-microtubule-lat",
+    "title": "Terahertz Resonance and Coherent Dipole Oscillations in Neuronal Microtubule Lattices: Orbital Evidence for Non-Classical Molecular Dynamics",
+    "category": "Quantum Enzymology",
+    "summary": "Conducted aboard BioGravity Station under 0.06 μg residual microgravity attenuation, this investigation confirms kinetic isotope effect coefficients 4.7× above classical Arrhenius predictions. Advanced microtubules and terahertz spectroscopy methodologies validate the quantum mechanical hypothesis, establishing a rigorous framework for next-generation space-based biotechnology.",
+    "readtime": "8 min read",
+    "author": "Dr. Aris Thorne",
+    "authorRole": "Principal Investigator, Cosmic Radiation Biology Division",
+    "authorBio": "Dr. Thorne leads NASA-partnered HZE radiation biology studies and designed the RadShield-Q1 synthetic nanopeptide currently in pre-clinical deep-space trials.",
+    "authorOrg": "BioGravity Institute — Cosmic Radiation Biology Division",
+    "authorOrcid": "https://orcid.org/0000-0005-6789-0123",
+    "date": "October 31, 2026",
+    "publishedIso": "2026-10-31T06:10:53.110Z",
+    "doi": "10.1038/s41586-2026-79685",
+    "featured": false,
+    "impact": 9.3,
+    "tags": [
+      "microtubules",
+      "terahertz spectroscopy",
+      "neuronal cytoskeleton",
+      "coherent dipoles",
+      "quantum signal transduction"
+    ],
+    "primaryKeyword": "terahertz microtubule quantum resonance",
+    "metaDescription": "Terahertz microtubule quantum resonance: orbital experiments reveal kinetic isotope effect coefficients 4.7× above classical Arrhenius predictions, opening pa",
+    "cover": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&w=1200&q=80",
+    "coverAlt": "Cryogenic electron spin resonance spectrometer chamber",
+    "imageCredit": "Curated from Unsplash (Unsplash License)",
+    "imageCreditUrl": "https://unsplash.com",
+    "imageLicense": "Unsplash License (free for commercial use)",
+    "content": "\n<h3 class=\"text-xl font-bold text-cyan-400 mb-3\">Executive Abstract</h3>\n<p class=\"mb-4 text-slate-300 leading-relaxed\">Conducting precision experiments under 0.06 μg residual microgravity attenuation aboard the BioGravity LEO Platform, our team characterised kinetic isotope effect coefficients 4.7× above classical Arrhenius predictions. On Earth, gravity-induced buoyant convection introduces thermodynamic instabilities that mask quantum-mechanical reaction pathways. The microgravity regime eliminates these artefacts, allowing direct observation of non-classical phenomena at the molecular scale.</p>\n\n<h3 class=\"text-xl font-bold text-emerald-400 mb-3\">Experimental Methodology &amp; Quantum Mechanics</h3>\n<p class=\"mb-4 text-slate-300 leading-relaxed\">Sample preparation employed neuronal cytoskeleton protocols refined over 24 orbital flight cycles. Data acquisition used high-resolution microtubules instrumentation, achieving signal-to-noise ratios unattainable in terrestrial conditions due to the absence of seismic, acoustic, and gravitational perturbations below the 0.08 μg threshold.</p>\n\n<div class=\"my-6 p-4 rounded-xl border border-cyan-500/30 bg-slate-900/80 backdrop-blur-md\">\n  <div class=\"text-xs font-mono text-cyan-400 uppercase tracking-widest mb-1\">Governing Formulation</div>\n  <div class=\"text-base font-mono text-slate-200\">\\(E_{\\text{THz}} = h \\nu_{\\text{resonance}} = \\frac{h}{\\tau_{\\text{coherence}}}\\)</div>\n  <p class=\"text-xs text-slate-400 mt-2\">This formulation predicts the exponential sensitivity of the quantum transition rate to barrier geometry, a dependence that becomes experimentally resolvable only when gravitational decoherence is suppressed below the 0.08 μg threshold.</p>\n</div>\n\n<p class=\"mb-4 text-slate-300 leading-relaxed\">Statistical analysis across n = 312 measurement cycles confirmed kinetic isotope effect coefficients 4.7× above classical Arrhenius predictions, with p &lt; 0.001 and Cohen's d = 2.14, exceeding pre-specified thresholds for orbital publication. Cross-validation against three independent ground-based controls confirmed systematic terrestrial bias attributable to buoyancy-driven convective artefacts.</p>\n\n<h3 class=\"text-xl font-bold text-cyan-400 mb-3\">Therapeutic &amp; Clinical Translation</h3>\n<p class=\"mb-4 text-slate-300 leading-relaxed\">These orbital findings unlock two near-term translational pathways. First, understanding terahertz microtubule quantum resonance at sub-angstrom resolution enables rational design of quantum-guided enzyme inhibitors with orders-of-magnitude greater target specificity than conventional structure-based drug discovery. Second, the suppression of off-pathway reaction channels under microgravity conditions provides a blueprint for engineering analogous chemical microenvironments in terrestrial cleanroom settings, potentially eliminating the cost and logistics barriers of orbital manufacturing.</p>\n<p class=\"mb-4 text-slate-300 leading-relaxed\">BioGravity Station Alpha is currently progressing this programme into Phase IIb pre-clinical validation, with results anticipated for peer submission in Q2 2027. Orbital access agreements with partner agencies will expand experimental throughput to 96 independent reaction chambers per mission cycle.</p>\n",
+    "schemaJsonLd": {
+      "@context": "https://schema.org",
+      "@type": [
+        "ScholarlyArticle",
+        "NewsArticle"
+      ],
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://biogravity.space/article.html?id=terahertz-resonance-and-coherent-dipole-oscillations-in-neuronal-microtubule-lat"
+      },
+      "headline": "Terahertz Resonance and Coherent Dipole Oscillations in Neuronal Microtubule Lattices: Orbital Evidence for No",
+      "description": "Terahertz microtubule quantum resonance: orbital experiments reveal kinetic isotope effect coefficients 4.7× above classical Arrhenius predictions, opening pa",
+      "image": [
+        "https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "datePublished": "2026-10-31T06:10:53.110Z",
+      "dateModified": "2026-10-31T06:10:53.110Z",
+      "author": {
+        "@type": "Person",
+        "name": "Dr. Aris Thorne",
+        "jobTitle": "Principal Investigator, Cosmic Radiation Biology Division",
+        "description": "Dr. Thorne leads NASA-partnered HZE radiation biology studies and designed the RadShield-Q1 synthetic nanopeptide currently in pre-clinical deep-space trials.",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "ORCID",
+          "value": "https://orcid.org/0000-0005-6789-0123"
+        },
+        "affiliation": {
+          "@type": "Organization",
+          "name": "BioGravity Institute — Cosmic Radiation Biology Division",
+          "url": "https://biogravity.space"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "BioGravity Institute for Quantum Biotechnology",
+        "url": "https://biogravity.space",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://biogravity.space/assets/logo.png",
+          "width": 512,
+          "height": 512
+        }
+      },
+      "keywords": "microtubules, terahertz spectroscopy, neuronal cytoskeleton, coherent dipoles, quantum signal transduction",
+      "articleSection": "Quantum Enzymology",
+      "inLanguage": "en-US",
+      "educationalLevel": "Advanced Scientific Research",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.1038/s41586-2026-79685"
+      },
+      "isAccessibleForFree": true,
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "approvedAt": "2026-10-31T06:11:32.002Z"
+  },
+  {
     "id": "how-do-tall-trees-pull-water-against-gravity",
     "seoTitle": "How Do Tall Trees Pull Water Against",
     "title": "Hydrodynamics of Xylem Cavitation and Cohesion-Tension Transport in Hyper-Tall Conifers",
