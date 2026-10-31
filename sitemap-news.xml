@@ -2,6 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://biogravity.space/news/quantum-navigation-in-birds-researchers-clock-extended-radical</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-31T23:49:31.873Z</news:publication_date>
+      <news:title>Quantum Navigation in Birds: Researchers Clock Extended Radical Pair Spin Coherence</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/lattice-moments-and-quantum-designs-new-evidence-in-quantum</loc>
     <news:news>
       <news:publication>
