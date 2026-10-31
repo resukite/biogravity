@@ -5,8 +5,26 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 31 Oct 2026 15:06:35 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 20:43:26 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Lattice moments and quantum designs: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/lattice-moments-and-quantum-designs-new-evidence-in-quantum</link>
+      <guid isPermaLink="true">https://biogravity.space/news/lattice-moments-and-quantum-designs-new-evidence-in-quantum</guid>
+      <pubDate>Sat, 31 Oct 2026 20:43:26 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Lattice moments and quantum designs: New Evidence in Quantum &amp; Physics: We show that the ensemble of unimodular Gottesman$-$Kitaev$-$Preskill distributions fails to form a rigged quantum $3$-design and quantify the replica defect that determines this failure. This is established by rederiving a second moment formula for symplectic lattices in a self-contained manner. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40481v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
+    <item>
+      <title>Fast and accurate neural triage decoding of: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/fast-and-accurate-neural-triage-decoding-of-new-evidence-in</link>
+      <guid isPermaLink="true">https://biogravity.space/news/fast-and-accurate-neural-triage-decoding-of-new-evidence-in</guid>
+      <pubDate>Sat, 31 Oct 2026 20:43:26 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Fast and accurate neural triage decoding of: New Evidence in Quantum &amp; Physics: Quantum error correction is essential for fault-tolerant quantum computing. High-rate quantum low-density parity-check (qLDPC) codes have emerged as a promising approach to reducing the substantial physical qubit overhead of quantum error correction, enabling encoding rates exceeding $1/2$ in blocks of approximately one thousand physical data qubits. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40490v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
     <item>
       <title>Using domain walls to benchmark fast quantum anneals: New Evidence in Quantum &amp; Physics</title>
       <link>https://biogravity.space/news/using-domain-walls-to-benchmark-fast-quantum-anneals-new</link>
