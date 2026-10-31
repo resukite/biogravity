@@ -2,6 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://biogravity.space/news/using-domain-walls-to-benchmark-fast-quantum-anneals-new</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-31T15:06:35.452Z</news:publication_date>
+      <news:title>Using domain walls to benchmark fast quantum anneals: New Evidence in Quantum &amp; Physics</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/the-gauge-invariant-orbital-angular-momentum-of-vector-new</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-31T15:06:35.444Z</news:publication_date>
+      <news:title>The gauge-invariant orbital angular momentum of vector: New Evidence in Quantum &amp; Physics</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/quasi-phases-of-quantum-matter-new-evidence-in-quantum-physics</loc>
     <news:news>
       <news:publication>
