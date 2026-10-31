@@ -93,6 +93,58 @@ function generateEducationalEnrichment(art) {
 `;
 }
 
+
+const CONTEXTUAL_KEYWORD_LINKS = [
+  { phrase: 'cohesion-tension theory', url: '/articles/how-do-tall-trees-pull-water-against-gravity' },
+  { phrase: 'xylem cavitation', url: '/articles/how-do-tall-trees-pull-water-against-gravity' },
+  { phrase: 'Special Theory of Relativity', url: '/articles/why-is-gold-yellow-relativistic-quantum-chemistry' },
+  { phrase: 'relativistic contraction', url: '/articles/why-is-gold-yellow-relativistic-quantum-chemistry' },
+  { phrase: 'luminiferous aether', url: '/articles/michelson-morley-experiment-disproved-the-aether' },
+  { phrase: 'Michelson-Morley experiment', url: '/articles/michelson-morley-experiment-disproved-the-aether' },
+  { phrase: 'Fermi paradox', url: '/articles/fermi-paradox-where-are-all-the-aliens' },
+  { phrase: 'Great Filter', url: '/articles/fermi-paradox-where-are-all-the-aliens' },
+  { phrase: 'Kola Superdeep Borehole', url: '/articles/kola-superdeep-borehole-deepest-hole-on-earth' },
+  { phrase: 'Demon Core', url: '/articles/the-demon-core-manhattan-project-criticality-accidents' },
+  { phrase: 'prompt supercriticality', url: '/articles/the-demon-core-manhattan-project-criticality-accidents' },
+  { phrase: 'Mpemba effect', url: '/articles/mpemba-effect-why-hot-water-freezes-faster-than-cold' },
+  { phrase: "Schrödinger's cat", url: '/articles/schrodingers-cat-quantum-physics-paradox-explained' },
+  { phrase: 'hemocyanin', url: '/articles/why-do-octopuses-have-three-hearts-and-blue-blood' },
+  { phrase: 'Mariana Trench', url: '/articles/mariana-trench-challenger-deep-creatures-pressure' },
+  { phrase: 'Challenger Deep', url: '/articles/mariana-trench-challenger-deep-creatures-pressure' },
+  { phrase: 'Turritopsis dohrnii', url: '/articles/immortal-jellyfish-turritopsis-dohrnii-biological-immortality' },
+  { phrase: 'cellular transdifferentiation', url: '/articles/immortal-jellyfish-turritopsis-dohrnii-biological-immortality' },
+  { phrase: 'Elephant\'s Foot', url: '/articles/chernobyl-elephants-foot-deadliest-radioactive-mass' },
+  { phrase: 'double-slit experiment', url: '/articles/the-double-slit-experiment-quantum-mechanics-explained' },
+  { phrase: 'wave-particle duality', url: '/articles/the-double-slit-experiment-quantum-mechanics-explained' },
+  { phrase: 'spaghettification', url: '/articles/what-happens-if-you-fall-into-a-black-hole-spaghettification' },
+  { phrase: '3D bioprinting', url: '/articles/3d-bioprinting-organoids-in-microgravity' },
+  { phrase: 'space motion sickness', url: '/articles/space-motion-sickness-space-adaptation-syndrome-vestibular' },
+  { phrase: 'grow in space', url: '/articles/can-plants-grow-in-space-without-gravity' },
+  { phrase: 'sleep in space', url: '/articles/how-do-astronauts-sleep-in-space-zero-gravity' },
+  { phrase: 'bone density in space', url: '/articles/why-do-astronauts-lose-bone-density-in-space' },
+  { phrase: 'zero gravity and microgravity', url: '/articles/difference-between-zero-gravity-and-microgravity' },
+  { phrase: 'human body in zero gravity', url: '/articles/what-happens-to-human-body-in-zero-gravity' },
+  { phrase: 'cryptochrome 4', url: '/articles/radical-pair-spin-coherence-and-magnetoreception-in-human-cryptochrome-4-photore' },
+  { phrase: 'Pseudomonas aeruginosa biofilms', url: '/articles/microbial-biofilm-antibiotic-resistance-iss-closed-loop-habitats' },
+  { phrase: 'SANS syndrome', url: '/articles/cerebrovascular-glymphatic-clearance-microgravity-optic-nerve-syndrome' },
+  { phrase: 'Bose-Einstein', url: '/articles/bose-einstein-polariton-condensation-orbital-microgravity' },
+  { phrase: 'Dsup protein', url: '/articles/tardigrade-dsup-protein-chromatin-radioprotective-compaction' },
+  { phrase: 'acoustic levitation', url: '/articles/acoustic-levitation-and-scaffold-free-vascularized-cardiac-organoid-bioprinting-' }
+];
+
+function injectContextualLinks(html, currentArticleId) {
+  let result = html;
+  for (const item of CONTEXTUAL_KEYWORD_LINKS) {
+    if (item.url.includes(currentArticleId)) continue;
+    // Match the phrase only once, outside HTML tags
+    const regex = new RegExp('(?<!<[^>]*)\\b(' + item.phrase.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\function renderArticleBody(art) {') + ')\\b(?![^<]*>)', 'i');
+    if (regex.test(result)) {
+      result = result.replace(regex, '<a href="' + item.url + '" class="text-teal-700 hover:text-teal-900 underline font-medium">$1</a>');
+    }
+  }
+  return result;
+}
+
 function renderArticleBody(art) {
   if (art.content && typeof art.content === 'string' && art.content.trim() && art.content.trim() !== 'undefined') {
     let body = art.content;
@@ -309,8 +361,8 @@ articles.forEach((art, idx) => {
   `).join('\n');
 
   let cleanSeoTitle = (art.seoTitle || art.title).replace(/\s*\|\s*BioGravity.*$/i, '').trim();
-  if (cleanSeoTitle.length > 44) {
-    cleanSeoTitle = cleanSeoTitle.slice(0, 44).replace(/\s+[^\s]*$/, '').trim();
+  if (cleanSeoTitle.length > 52) {
+    cleanSeoTitle = cleanSeoTitle.slice(0, 52).replace(/\s+[^\s]*$/, '').trim();
   }
   const displayTitle = `${escapeHtml(cleanSeoTitle)} | BioGravity`;
   const socialTitle = escapeHtml(art.seoTitle || art.title);
@@ -887,26 +939,20 @@ ${JSON.stringify(schema, null, 2)}
   }
   fs.writeFileSync(path.join(slugDir, 'index.html'), html, 'utf8');
 
-  // If this article had a legacy truncated slug, create an instant redirect stub
-  if (art.legacyId) {
-    const redirectHtml = `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="robots" content="noindex, follow">
-  <meta http-equiv="refresh" content="0; url=${cleanArticleUrl}">
-  <link rel="canonical" href="${cleanArticleUrl}">
-  <title>Redirecting... | BioGravity</title>
-</head>
-<body>
-  <p>Redirecting to <a href="${cleanArticleUrl}">${escapeHtml(art.seoTitle || art.title)}</a>...</p>
-</body>
-</html>`;
-    fs.writeFileSync(path.join(articlesDir, `${art.legacyId}.html`), redirectHtml, 'utf8');
-    const legacyDir = path.join(articlesDir, art.legacyId);
-    if (!fs.existsSync(legacyDir)) fs.mkdirSync(legacyDir, { recursive: true });
-    fs.writeFileSync(path.join(legacyDir, 'index.html'), redirectHtml, 'utf8');
+  // Also write full HTML to all aliases / legacy slugs so no crawler or visitor ever gets a blank noindex redirect!
+  const aliases = [];
+  if (art.legacyId && art.legacyId !== art.id) aliases.push(art.legacyId);
+  if (art.aliasId && art.aliasId !== art.id && !aliases.includes(art.aliasId)) aliases.push(art.aliasId);
+  if (Array.isArray(art.aliases)) {
+    art.aliases.forEach(a => { if (a !== art.id && !aliases.includes(a)) aliases.push(a); });
   }
+
+  aliases.forEach(alias => {
+    fs.writeFileSync(path.join(articlesDir, `${alias}.html`), html, 'utf8');
+    const legacyDir = path.join(articlesDir, alias);
+    if (!fs.existsSync(legacyDir)) fs.mkdirSync(legacyDir, { recursive: true });
+    fs.writeFileSync(path.join(legacyDir, 'index.html'), html, 'utf8');
+  });
 
   console.log(`[BUILD-SEO] ✅ Generated clean static page: articles/${art.id} (/articles/${art.id}/)`);
 });
@@ -1097,7 +1143,6 @@ if (fs.existsSync(indexPath)) {
     'non-thermal-quantum-proton-tunneling-in-crispr-cas9-catalytic-triads-orbital-evi': 'quantum-proton-tunneling-crispr-cas9-catalytic-triads',
     'sub-angstrom-macromolecular-crystallography-of-membrane-transporters-in-orbital-': 'macromolecular-crystallography-membrane-transporters-orbit',
     'what-does-quantum-parameter-estimation-estimate-a-no-go-result-for-tru': 'quantum-parameter-estimation-no-go-result',
-    'ideal-interaction-dynamics-of-defects-and-background-fields-in': 'interaction-dynamics-defects-background-fields',
     'a-priori-estimation-of-the-non-linear-compression-potential-and': 'estimation-non-linear-compression-potential',
     'exact-analytical-treatment-of-collectively-pumped-dicke': 'quantum-proton-tunneling-crispr-cas9-catalytic-triads',
     'mediated-interactions-between-fermi-polarons-in-the-strongly': 'acoustic-levitation-scaffold-free-cardiac-organoid-bioprinting',

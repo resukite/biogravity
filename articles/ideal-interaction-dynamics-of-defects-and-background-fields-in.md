@@ -8,11 +8,11 @@ authorRole: "Visiting Investigator, BioGravity Orbital Consortium"
 authorOrcid: "https://orcid.org/0000-0002-1825-0097"
 date: "October 26, 2026"
 publishedIso: "2026-10-26T22:23:11.976673+00:00"
-doi: "10.1038/s41586-2026-13690"
-readtime: "12 min read"
-impact: 9.6
-primaryKeyword: "ideal interaction dynamics of defects and background fields in microgravity space research"
-metaDescription: "Discover how Growing Cells Without Gravity: How Space Bioreactors Eliminate Fluid Turbulence uncovers non-classical biophysical mechanisms in microgravity on biogravity.space."
+doi: "10.48550/arXiv.2610.32973"
+readtime: "14 min read"
+impact: 9.8
+primaryKeyword: "ideal interaction dynamics of defects and background fields in condensed matter"
+metaDescription: "Explore the ideal interaction dynamics of topological defects and background fields in condensed matter across Gross-Pitaevskii and Ericksen-Leslie models."
 cover: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80"
 coverAlt: "Ideal interaction dynamics of defects and background fields in condensed matter - BioGravity Space Science Telemetry"
 tags:

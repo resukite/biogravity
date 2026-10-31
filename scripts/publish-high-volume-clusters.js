@@ -23,7 +23,6 @@ const SLUG_CLEANUP = {
   'characterizing-supersolid-phase-transitions-in-trapped-quantum-gases-w': 'supersolid-phase-transitions-trapped-quantum-gases',
   'what-does-quantum-parameter-estimation-estimate-a-no-go-result-for-tru': 'quantum-parameter-estimation-no-go-result',
   'a-priori-estimation-of-the-non-linear-compression-potential-and': 'estimation-non-linear-compression-potential',
-  'ideal-interaction-dynamics-of-defects-and-background-fields-in': 'interaction-dynamics-defects-background-fields'
 };
 
 // 1. Clean existing article IDs

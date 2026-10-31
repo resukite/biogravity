@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-31T06:12:32.277Z",
+  "timestamp": "2026-10-31T06:42:37.940Z",
   "totalPages": 110,
   "averageScore": 100,
   "results": [
@@ -516,10 +516,12 @@
     {
       "file": "articles/a-priori-estimation-of-the-non-linear-compression-potential-and.html",
       "score": 100,
-      "title": "Redirect Alias",
-      "canonical": "Redirecting",
+      "title": "AI in Turbulent Flows: Estimating | BioGravity",
+      "canonical": "https://biogravity.space/articles/estimation-non-linear-compression-potential",
       "schemaTypes": [
-        "Redirect"
+        "ScholarlyArticle",
+        "BreadcrumbList",
+        "FAQPage"
       ],
       "issues": [],
       "warnings": []
@@ -527,10 +529,12 @@
     {
       "file": "articles/acoustic-levitation-and-scaffold-free-vascularized-cardiac-organoid-bioprinting-.html",
       "score": 100,
-      "title": "Redirect Alias",
-      "canonical": "Redirecting",
+      "title": "Why Scientists Are 3D-Printing Beating | BioGravity",
+      "canonical": "https://biogravity.space/articles/acoustic-levitation-scaffold-free-cardiac-organoid-bioprinting",
       "schemaTypes": [
-        "Redirect"
+        "ScholarlyArticle",
+        "BreadcrumbList",
+        "FAQPage"
       ],
       "issues": [],
       "warnings": []
@@ -603,10 +607,12 @@
     {
       "file": "articles/characterizing-supersolid-phase-transitions-in-trapped-quantum-gases-w.html",
       "score": 100,
-      "title": "Redirect Alias",
-      "canonical": "Redirecting",
+      "title": "Inside Supersolids: How Microgravity Traps | BioGravity",
+      "canonical": "https://biogravity.space/articles/supersolid-phase-transitions-trapped-quantum-gases",
       "schemaTypes": [
-        "Redirect"
+        "ScholarlyArticle",
+        "BreadcrumbList",
+        "FAQPage"
       ],
       "issues": [],
       "warnings": []
@@ -755,10 +761,12 @@
     {
       "file": "articles/ideal-interaction-dynamics-of-defects-and-background-fields-in.html",
       "score": 100,
-      "title": "Redirect Alias",
-      "canonical": "Redirecting",
+      "title": "Ideal Interaction Dynamics of Defects &amp; Fields | BioGravity",
+      "canonical": "https://biogravity.space/articles/ideal-interaction-dynamics-of-defects-and-background-fields-in",
       "schemaTypes": [
-        "Redirect"
+        "ScholarlyArticle",
+        "BreadcrumbList",
+        "FAQPage"
       ],
       "issues": [],
       "warnings": []
@@ -779,8 +787,8 @@
     {
       "file": "articles/interaction-dynamics-defects-background-fields.html",
       "score": 100,
-      "title": "Defects in Condensed Matter: Quantum | BioGravity",
-      "canonical": "https://biogravity.space/articles/interaction-dynamics-defects-background-fields",
+      "title": "Ideal Interaction Dynamics of Defects &amp; Fields | BioGravity",
+      "canonical": "https://biogravity.space/articles/ideal-interaction-dynamics-of-defects-and-background-fields-in",
       "schemaTypes": [
         "ScholarlyArticle",
         "BreadcrumbList",
@@ -932,10 +940,12 @@
     {
       "file": "articles/non-thermal-quantum-proton-tunneling-in-crispr-cas9-catalytic-triads-orbital-evi.html",
       "score": 100,
-      "title": "Redirect Alias",
-      "canonical": "Redirecting",
+      "title": "CRISPR in Zero Gravity: Does Quantum | BioGravity",
+      "canonical": "https://biogravity.space/articles/quantum-proton-tunneling-crispr-cas9-catalytic-triads",
       "schemaTypes": [
-        "Redirect"
+        "ScholarlyArticle",
+        "BreadcrumbList",
+        "FAQPage"
       ],
       "issues": [],
       "warnings": []
@@ -1006,10 +1016,12 @@
     {
       "file": "articles/radical-pair-spin-coherence-and-magnetoreception-in-human-cryptochrome-4-photore.html",
       "score": 100,
-      "title": "Redirect Alias",
-      "canonical": "Redirecting",
+      "title": "Cryptochrome 4 in Humans: Do We Have | BioGravity",
+      "canonical": "https://biogravity.space/articles/radical-pair-spin-coherence-human-cryptochrome-4",
       "schemaTypes": [
-        "Redirect"
+        "ScholarlyArticle",
+        "BreadcrumbList",
+        "FAQPage"
       ],
       "issues": [],
       "warnings": []
@@ -1145,10 +1157,12 @@
     {
       "file": "articles/sub-angstrom-macromolecular-crystallography-of-membrane-transporters-in-orbital-.html",
       "score": 100,
-      "title": "Redirect Alias",
-      "canonical": "Redirecting",
+      "title": "Atomic-Level Drug Design: Growing Perfect | BioGravity",
+      "canonical": "https://biogravity.space/articles/macromolecular-crystallography-membrane-transporters-orbit",
       "schemaTypes": [
-        "Redirect"
+        "ScholarlyArticle",
+        "BreadcrumbList",
+        "FAQPage"
       ],
       "issues": [],
       "warnings": []
@@ -1169,10 +1183,12 @@
     {
       "file": "articles/synthetic-poly-adp-metallo-peptides-for-telomeric-radioprotection-in-deep-space-.html",
       "score": 100,
-      "title": "Redirect Alias",
-      "canonical": "Redirecting",
+      "title": "Deep-Space Radiation Shield: The Synthetic | BioGravity",
+      "canonical": "https://biogravity.space/articles/synthetic-poly-adp-metallo-peptides-telomeric-radioprotection",
       "schemaTypes": [
-        "Redirect"
+        "ScholarlyArticle",
+        "BreadcrumbList",
+        "FAQPage"
       ],
       "issues": [],
       "warnings": []
@@ -1231,10 +1247,12 @@
     {
       "file": "articles/what-does-quantum-parameter-estimation-estimate-a-no-go-result-for-tru.html",
       "score": 100,
-      "title": "Redirect Alias",
-      "canonical": "Redirecting",
+      "title": "Can Quantum Physics Measure Reality? The | BioGravity",
+      "canonical": "https://biogravity.space/articles/quantum-parameter-estimation-no-go-result",
       "schemaTypes": [
-        "Redirect"
+        "ScholarlyArticle",
+        "BreadcrumbList",
+        "FAQPage"
       ],
       "issues": [],
       "warnings": []
