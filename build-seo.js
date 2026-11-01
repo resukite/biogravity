@@ -361,11 +361,13 @@ articles.forEach((art, idx) => {
   `).join('\n');
 
   let cleanSeoTitle = (art.seoTitle || art.title).replace(/\s*\|\s*BioGravity.*$/i, '').trim();
-  if (cleanSeoTitle.length > 52) {
-    cleanSeoTitle = cleanSeoTitle.slice(0, 52).replace(/\s+[^\s]*$/, '').trim();
+  let displayTitle = '';
+  if (cleanSeoTitle.length + 13 <= 65) {
+    displayTitle = `${escapeHtml(cleanSeoTitle)} | BioGravity`;
+  } else {
+    displayTitle = `${escapeHtml(cleanSeoTitle)}`;
   }
-  const displayTitle = `${escapeHtml(cleanSeoTitle)} | BioGravity`;
-  const socialTitle = escapeHtml(art.seoTitle || art.title);
+  const socialTitle = escapeHtml(cleanSeoTitle);
 
   const html = `<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
