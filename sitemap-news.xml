@@ -2,6 +2,83 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://biogravity.space/news/quantum-navigation-in-birds-researchers-clock-extended-radical</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-31T23:49:31.873Z</news:publication_date>
+      <news:title>Quantum Navigation in Birds: Researchers Clock Extended Radical Pair Spin Coherence</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/lattice-moments-and-quantum-designs-new-evidence-in-quantum</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-31T20:43:26.310Z</news:publication_date>
+      <news:title>Lattice moments and quantum designs: New Evidence in Quantum &amp; Physics</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/fast-and-accurate-neural-triage-decoding-of-new-evidence-in</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-31T20:43:26.301Z</news:publication_date>
+      <news:title>Fast and accurate neural triage decoding of: New Evidence in Quantum &amp; Physics</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/using-domain-walls-to-benchmark-fast-quantum-anneals-new</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-31T15:06:35.452Z</news:publication_date>
+      <news:title>Using domain walls to benchmark fast quantum anneals: New Evidence in Quantum &amp; Physics</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/the-gauge-invariant-orbital-angular-momentum-of-vector-new</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-31T15:06:35.444Z</news:publication_date>
+      <news:title>The gauge-invariant orbital angular momentum of vector: New Evidence in Quantum &amp; Physics</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/quasi-phases-of-quantum-matter-new-evidence-in-quantum-physics</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-31T09:00:00.145Z</news:publication_date>
+      <news:title>Quasi-Phases of Quantum Matter: New Evidence in Quantum &amp; Physics</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/mapping-stellar-obliquity-across-space-and-time-new-evidence-in</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-31T09:00:00.138Z</news:publication_date>
+      <news:title>Mapping Stellar Obliquity Across Space and Time: New Evidence in Space &amp; Astronomy</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/grow-compress-and-perturb-a-hybrid-new-evidence-in-quantum</loc>
     <news:news>
       <news:publication>
