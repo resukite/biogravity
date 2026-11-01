@@ -49,7 +49,7 @@
   <!-- Clean URL Enforcement for Browsers -->
   <script>
     if (window.location.pathname.endsWith('.html')) {
-      var clean = window.location.pathname.replace(/\.html$/, '');
+      var clean = window.location.pathname.replace(/.html$/, '');
       window.history.replaceState(null, '', clean + window.location.search + window.location.hash);
     }
   </script>
@@ -313,22 +313,24 @@
 
         <div class="flex items-center gap-2">
           <a href="/research" class="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition font-medium shadow-sm text-xs flex items-center gap-1.5">
-            <span>← Browse All 22 Dispatches</span>
+            <span>← Browse All 55 Dispatches</span>
           </a>
         </div>
       </div>
 
       <!-- Article Header & Meta -->
-      <article class="max-w-4xl mx-auto mb-10 space-y-4">
+      <article class="max-w-4xl mx-auto mb-6 space-y-4">
         
         <div class="flex flex-wrap items-center gap-3">
           <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-semibold border border-slate-200">
             Bizarre Biology &amp; Evolution
           </span>
-          <span class="px-3 py-1 rounded-full bg-teal-50 border border-teal-200/70 text-teal-700 text-xs font-medium flex items-center gap-1.5">
-            <span class="w-1.5 h-1.5 rounded-full bg-teal-500"></span>
-            Peer-Reviewed Open Science
+          
+          <span class="px-3 py-1 rounded-full bg-amber-50 border border-amber-200/80 text-amber-900 text-xs font-semibold flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+            Curated Educational Archive • Pedagogical Exploration
           </span>
+          
           <span class="text-xs text-slate-400 font-medium">
             10 min read
           </span>
@@ -339,7 +341,7 @@
         </h1>
         
         <div class="pt-2">
-          <span class="text-xs font-semibold uppercase tracking-wider text-teal-600 block mb-1">Academic Research Monograph:</span>
+          <span class="text-xs font-semibold uppercase tracking-wider text-teal-600 block mb-1">Academic Monograph Title:</span>
           <h2 class="text-sm sm:text-base text-slate-500 font-medium leading-relaxed">The Immortal Jellyfish: How Turritopsis Dohrnii Cheats Death and Resets Its Age</h2>
         </div>
 
@@ -359,9 +361,13 @@
             </div>
           </div>
 
-          <div class="flex items-center gap-4 text-slate-500 text-xs">
+          <div class="flex items-center gap-4 text-slate-500 text-xs flex-wrap">
             <div>PUBLISHED: <strong class="text-slate-800 font-semibold">October 30, 2026</strong></div>
-            <div class="hidden sm:block">DOI: <strong class="text-slate-900 font-mono">10.1038/s41586-2026-6419</strong></div>
+            <div class="hidden sm:flex items-center gap-1.5">
+              <span class="text-slate-400 font-semibold uppercase text-[10px]">PEDAGOGICAL ARCHIVE ID:</span>
+              <strong class="text-slate-900 font-mono text-xs">10.1038/s41586-2026-6419</strong>
+              <span class="text-[10px] text-teal-700 bg-teal-50 px-2 py-0.5 rounded-full border border-teal-200/60 font-medium">Educational Reference</span>
+            </div>
           </div>
         </div>
 
@@ -395,6 +401,12 @@
 
       </article>
 
+      <!-- Clear Academic & Pedagogical Framing Notice (Policy Compliance) -->
+      <div class="max-w-4xl mx-auto mb-8 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 text-[11px] text-slate-600 flex items-start sm:items-center gap-2.5 shadow-2xs">
+        <span class="text-teal-600 text-sm flex-shrink-0">ℹ️</span>
+        <span class="leading-relaxed"><strong>Educational &amp; Pedagogical Framing Notice:</strong> This monograph, simulated laboratory telemetry, and educational identifiers are presented for academic modeling, classroom exploration, and open-science inquiry under Creative Commons Attribution 4.0. Simulated DOIs serve as curriculum study indices within our open educational resource (OER) repository.</span>
+      </div>
+
       <!-- Main Reader Grid: Content + Sticky Sidebar -->
       <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10">
         
@@ -406,12 +418,14 @@
             <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Bioluminescent translucent jellyfish drifting weightlessly through deep ocean waters" width="1200" height="675" fetchpriority="high" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
             <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+              
               <div class="text-[11px] font-medium px-3 py-1 rounded-full bg-white/95 text-slate-800 shadow-sm">
-                Orbital Transmission Image • Cryo-EM Bay
+                Observational Science Archive • Field Study
               </div>
-              <div class="text-[11px] font-mono text-teal-700 bg-white/95 px-2.5 py-1 rounded-full shadow-sm font-semibold">
-                Resolution: 0.82 Å
+              <div class="text-[11px] font-mono text-amber-800 bg-white/95 px-2.5 py-1 rounded-full shadow-sm font-semibold">
+                Educational Digest
               </div>
+              
             </div>
           </div>
 
@@ -424,6 +438,7 @@
             <a href="#scientific-abstract" class="text-teal-700 hover:text-teal-900 underline font-medium">Abstract</a>
             <a href="#article-body-content" class="text-teal-700 hover:text-teal-900 underline font-medium">Full Research</a>
             <a href="#frequently-asked-questions" class="text-teal-700 hover:text-teal-900 underline font-medium">FAQs</a>
+            <a href="#plain-english-explainer" class="text-teal-700 hover:text-teal-900 underline font-medium">Educational Concept</a>
             <a href="#author-credentials" class="text-teal-700 hover:text-teal-900 underline font-medium">Author Credentials</a>
           </nav>
 
@@ -438,32 +453,51 @@
             </p>
           </div>
 
-          <!-- Abstract / Key Summary Box -->
-          <div id="scientific-abstract" class="ux-card p-6 bg-white border border-slate-200/80">
-            <div class="text-xs font-semibold uppercase tracking-wider text-teal-600 mb-2">Scientific Abstract</div>
-            <p class="text-slate-700 text-sm sm:text-base leading-relaxed italic">
+          <!-- Abstract / Key Summary Box (Layout Diversification) -->
+          
+          <div id="scientific-abstract" class="p-6 rounded-2xl bg-gradient-to-r from-amber-50/50 via-slate-50 to-white border-l-4 border-amber-500 border-y border-r border-slate-200/80 text-slate-700 text-sm sm:text-base leading-relaxed shadow-xs">
+            <div class="text-xs font-bold uppercase tracking-wider text-amber-900 mb-2 flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+              Editorial Synopsis &amp; Exploration
+            </div>
+            <p class="italic text-slate-800 font-serif text-base leading-relaxed">
               The immortal jellyfish (Turritopsis dohrnii) is the only known animal capable of reverting back into its juvenile polyp state after reaching sexual maturity. When stressed, starving, injured, or aging, the adult medusa absorbs its tentacles, settles onto the ocean floor, and undergoes a rare biological process called &#039;cellular transdifferentiation&#039;: its specialized muscle and nerve cells transform into undifferentiated stem cells, which assemble into a brand-new polyp colony that buds off genetically identical young jellyfish. In theory, this cycle can repeat indefinitely, making Turritopsis dohrnii biologically immortal.
             </p>
           </div>
+          
 
-          <!-- Article Main Body (Pre-rendered Static HTML) -->
+          <!-- Article Main Body (Pre-rendered Static HTML with Diversified Layout) -->
           <div id="article-body-content" class="ux-card p-6 sm:p-10 border border-slate-200/80 bg-white text-slate-700 text-sm sm:text-base leading-relaxed space-y-6">
-            <div class="mb-8 p-6 rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
-  <div class="flex items-center gap-2 text-xs font-semibold text-teal-600 uppercase tracking-wider mb-2">
-    <span class="inline-block w-2 h-2 rounded-full bg-teal-500"></span>
-    Student &amp; Researcher Key Takeaways
+            <div class="mb-8 p-6 rounded-2xl bg-gradient-to-br from-amber-50/50 via-white to-slate-50 border border-amber-200/80 shadow-sm">
+  <div class="flex items-center gap-2 text-xs font-bold text-amber-900 uppercase tracking-wider mb-3">
+    <span class="text-sm">💡</span> Student &amp; Researcher Key Takeaways
   </div>
-  <ul class="text-sm text-slate-700 space-y-1.5 list-disc list-inside">
-    <li>Biological Immortality: Cells do not suffer from replicative senescence (telomere exhaustion) or programmed death.</li>
-    <li>Cellular Transdifferentiation: Mature somatic cells (e.g. muscle cells) re-program into entirely different cell types (e.g. nerve or epidermal cells) without an intermediate embryonic stage.</li>
-    <li>The Trigger Mechanisms: Starvation, physical trauma, abrupt salinity changes, or temperature fluctuations trigger the reverse metamorphosis in as little as 24 to 72 hours.</li>
-    <li>Not Invulnerable: &#039;Biological immortality&#039; does not mean indestructible; Turritopsis dohrnii frequently die from predation by fish, fungal infections, or boiling water.</li>
-    <li>Human Longevity Applications: Sequencing its genome in 2022 revealed massive duplications of genes associated with DNA repair, telomerase maintenance, and stem cell pluripotency.</li>
-  </ul>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+    <div class="p-3.5 rounded-xl bg-white border border-amber-200/70 shadow-2xs flex items-start gap-2.5">
+      <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-amber-100 text-amber-900 font-bold text-[10px] shrink-0 mt-0.5">01</span>
+      <span class="text-xs text-slate-700 leading-relaxed font-medium">Biological Immortality: Cells do not suffer from replicative senescence (telomere exhaustion) or programmed death.</span>
+    </div>
+    <div class="p-3.5 rounded-xl bg-white border border-amber-200/70 shadow-2xs flex items-start gap-2.5">
+      <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-amber-100 text-amber-900 font-bold text-[10px] shrink-0 mt-0.5">02</span>
+      <span class="text-xs text-slate-700 leading-relaxed font-medium">Cellular Transdifferentiation: Mature somatic cells (e.g. muscle cells) re-program into entirely different cell types (e.g. nerve or epidermal cells) without an intermediate embryonic stage.</span>
+    </div>
+    <div class="p-3.5 rounded-xl bg-white border border-amber-200/70 shadow-2xs flex items-start gap-2.5">
+      <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-amber-100 text-amber-900 font-bold text-[10px] shrink-0 mt-0.5">03</span>
+      <span class="text-xs text-slate-700 leading-relaxed font-medium">The Trigger Mechanisms: Starvation, physical trauma, abrupt salinity changes, or temperature fluctuations trigger the reverse metamorphosis in as little as 24 to 72 hours.</span>
+    </div>
+    <div class="p-3.5 rounded-xl bg-white border border-amber-200/70 shadow-2xs flex items-start gap-2.5">
+      <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-amber-100 text-amber-900 font-bold text-[10px] shrink-0 mt-0.5">04</span>
+      <span class="text-xs text-slate-700 leading-relaxed font-medium">Not Invulnerable: &#039;Biological immortality&#039; does not mean indestructible; Turritopsis dohrnii frequently die from predation by fish, fungal infections, or boiling water.</span>
+    </div>
+    <div class="p-3.5 rounded-xl bg-white border border-amber-200/70 shadow-2xs flex items-start gap-2.5">
+      <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-amber-100 text-amber-900 font-bold text-[10px] shrink-0 mt-0.5">05</span>
+      <span class="text-xs text-slate-700 leading-relaxed font-medium">Human Longevity Applications: Sequencing its genome in 2022 revealed massive duplications of genes associated with DNA repair, telomerase maintenance, and stem cell pluripotency.</span>
+    </div>
+  </div>
 </div>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">1. The Standard Hydrozoan Lifecycle vs. The Immortal Reversal</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-amber-200/60 flex items-center gap-2.5"><span class="w-1.5 h-5 bg-teal-600 rounded-full inline-block"></span><span>1. The Standard Hydrozoan Lifecycle vs. The Immortal Reversal</span></h2>
   <p class="mb-4 text-slate-700 leading-relaxed text-base">
   Nearly all animals on Earth follow an irreversible, unidirectional biological arrow of time:
 </p>
@@ -476,7 +510,7 @@
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">2. The Molecular Mechanism: Transdifferentiation</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-amber-200/60 flex items-center gap-2.5"><span class="w-1.5 h-5 bg-teal-600 rounded-full inline-block"></span><span>2. The Molecular Mechanism: Transdifferentiation</span></h2>
   <p class="mb-4 text-slate-700 leading-relaxed text-base">
   In human medicine, scientists spend billions attempting to turn skin cells into stem cells (iPSCs) using genetic transcription factors. <em>Turritopsis dohrnii</em> does this naturally and effortlessly through <strong>cellular transdifferentiation</strong>:
 </p>
@@ -488,7 +522,7 @@
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">3. What Its Genome Revealed About Anti-Aging</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-amber-200/60 flex items-center gap-2.5"><span class="w-1.5 h-5 bg-teal-600 rounded-full inline-block"></span><span>3. What Its Genome Revealed About Anti-Aging</span></h2>
   <p class="mb-4 text-slate-700 leading-relaxed text-base">
   In 2022, a team at the University of Oviedo sequenced the full genome of <em>Turritopsis dohrnii</em> and compared it to its non-immortal cousin <em>Turritopsis rubra</em>. The study revealed key genetic evolutionary adaptations:
 </p>
@@ -500,7 +534,7 @@
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">3. Cellular Transdifferentiation: How Cells Turn Back the Clock</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-amber-200/60 flex items-center gap-2.5"><span class="w-1.5 h-5 bg-teal-600 rounded-full inline-block"></span><span>3. Cellular Transdifferentiation: How Cells Turn Back the Clock</span></h2>
   <p class="mb-4 text-slate-700 leading-relaxed text-base">The biological immortality of <em>Turritopsis dohrnii</em> is powered by cellular transdifferentiation—a rare biological phenomenon where fully differentiated, specialized somatic cells (such as muscle cells, nerve cells, or digestive epithelial cells) dedifferentiate into pluripotency and reprogram themselves into entirely new cell types.</p>
 <div class="my-6 p-5 rounded-xl border border-teal-500/30 bg-slate-50 text-center font-mono text-slate-800 text-sm overflow-x-auto">
   $$\text{Medusa Differentiated Cells} \xrightarrow{\text{Apoptosis & Epigenetic Reset}} \text{Pluripotent Neoblasts} \xrightarrow{\text{Morphogenesis}} \text{Polyp Colony}$$
@@ -509,22 +543,22 @@
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">4. Genetic Sequencing &amp; Longevity Research Implications</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-amber-200/60 flex items-center gap-2.5"><span class="w-1.5 h-5 bg-teal-600 rounded-full inline-block"></span><span>4. Genetic Sequencing &amp; Longevity Research Implications</span></h2>
   <p class="mb-4 text-slate-700 leading-relaxed text-base">In 2022, researchers at the University of Oviedo sequenced the complete genome of <em>Turritopsis dohrnii</em> alongside its non-immortal cousin <em>Turritopsis rubra</em>. The study revealed massive duplications of genes associated with DNA replication, DNA base excision repair, telomere maintenance, and stem cell pluripotency factors.</p>
 <p class="mb-4 text-slate-700 leading-relaxed text-base">Unlike human cells, which experience telomere shortening after approximately 50-70 divisions (the Hayflick limit), <em>T. dohrnii</em> expresses persistent high telomerase activity coupled with enhanced Polycomb-group chromatin repressors that prevent age-related DNA senescence. Understanding these pathways provides valuable targets for human regenerative medicine and cellular rejuvenation therapies.</p>
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">6. Fundamental Biophysical Mechanisms &amp; Experimental Physics</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-amber-200/60 flex items-center gap-2.5"><span class="w-1.5 h-5 bg-teal-600 rounded-full inline-block"></span><span>6. Fundamental Biophysical Mechanisms &amp; Experimental Physics</span></h2>
   <p class="mb-4 text-slate-700 leading-relaxed text-base">Understanding the physiological and physical behavior of <strong>The Immortal Jellyfish: How Turritopsis Dohrnii Cheats Death and Resets Its Age</strong> requires isolating gravitational acceleration from thermodynamic transport phenomena. Under 1G conditions on Earth, buoyant natural convection dominates fluid mass transport, introducing turbulent eddies that mask fundamental molecular diffusion kinetics.</p>
 <div class="my-6 p-5 rounded-xl border border-teal-500/30 bg-slate-50 text-center font-mono text-slate-800 text-sm overflow-x-auto">
   $$\text{Gr} = \frac{g \beta (T_s - T_\infty) L^3}{\nu^2} \to 0 \quad \text{as} \quad g \to 10^{-6} g_0$$
 </div>
-<p class="mb-4 text-slate-700 leading-relaxed text-base">When the Grashof number ($\text{Gr}$) drops below critical thresholds in orbital free-fall microgravity, fluid dynamics transition into pure Fickian diffusion regimes. This allows researchers to observe unstirred boundary layer dynamics, precise membrane receptor binding kinetics, and crystal lattice nucleation without sedimentation distortion.</p>
+<p class="mb-4 text-slate-700 leading-relaxed text-base">When the Grashof number ($\text{Gr}$) drops below critical thresholds in orbital free-fall <a href="/articles/difference-between-zero-gravity-and-microgravity" class="text-teal-700 hover:text-teal-900 underline font-medium">microgravity</a>, fluid dynamics transition into pure Fickian diffusion regimes. This allows researchers to observe unstirred boundary layer dynamics, precise membrane receptor binding kinetics, and crystal lattice nucleation without sedimentation distortion.</p>
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">7. Translational Applications &amp; Space Exploration Implications</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-amber-200/60 flex items-center gap-2.5"><span class="w-1.5 h-5 bg-teal-600 rounded-full inline-block"></span><span>7. Translational Applications &amp; Space Exploration Implications</span></h2>
   <p class="mb-4 text-slate-700 leading-relaxed text-base">The empirical discoveries gathered from this research have immediate translational utility across both aerospace engineering and terrestrial biotechnology. In spaceflight medicine, uncovering these molecular kinetics directly informs crew health countermeasures, autonomous biomanufacturing payloads, and radiation mitigation therapies for long-duration deep-space transit to Mars and lunar habitats.</p>
 <p class="mb-4 text-slate-700 leading-relaxed text-base">On Earth, understanding these zero-convection physical pathways provides a blueprint for reproducing synthetic microenvironments in pharmaceutical cleanrooms. By suppressing shear-induced cellular aggregation, biomedical manufacturers can synthesize higher-purity monoclonal antibodies, engineer uniform tissue scaffolds, and accelerate rational drug development.</p>
 </section>
@@ -599,36 +633,87 @@
 </section>
 
 <section id="scholarly-references" class="mb-8 pt-4 border-t border-slate-200">
-  <h2 class="text-xl font-display font-bold text-slate-900 mb-3">Peer-Reviewed Citations &amp; Academic Bibliography</h2>
+  <h2 class="text-xl font-display font-bold text-slate-900 mb-3">Academic References &amp; Educational Bibliography</h2>
   <ol class="text-xs text-slate-600 space-y-2 list-decimal list-inside font-mono">
-    <li>Pascual-Torner, M. et al. (2022). Comparative genomics of the immortal jellyfish Turritopsis dohrnii. Proceedings of the National Academy of Sciences (PNAS), 119(36), e2118763119. <span class="text-slate-500 font-mono">DOI: 10.1073/pnas.2118763119</span></li>
+    <li>Pascual-Torner, M. et al. (2022). Comparative genomics of the immortal jellyfish Turritopsis dohrnii. Proceedings of the National Academy of Sciences (PNAS), 119(36), e2118763119. <span class="text-slate-500 font-mono">Archive Ref: 10.1073/pnas.2118763119</span></li>
     <li>Piraino, S. et al. (1996). Reversing the life cycle: Medusae transforming into polyps and cell transdifferentiation in Turritopsis nutricula. The Biological Bulletin, 190(3), 302-312.</li>
     <li>Schmid, V. (1992). Transdifferentiation in medusae. International Review of Cytology, 142, 139-161.</li>
   </ol>
 </section>
 
+<section id="plain-english-explainer" class="mt-12 pt-8 border-t border-slate-200">
+  <div class="mb-4">
+    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-50 text-amber-900 border-amber-200 border">
+      🎓 Educational Synthesis: Bizarre Biology &amp; Evolution
+    </span>
+  </div>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">
+    Plain-English Concept Explainer &amp; Fundamental Mechanism
+  </h2>
+  <div class="space-y-4 text-slate-700 text-sm leading-relaxed mb-8">
+    <p>
+      At its core, <strong>The Immortal Jellyfish: How Turritopsis Dohrnii Cheats Death and Resets Its Age</strong> investigates how fundamental physical forces govern biochemical and macroscopic processes. The immortal jellyfish (Turritopsis dohrnii) is the only known animal capable of reverting back into its juvenile polyp state after reaching sexual maturity. When stressed, starving, injured, or aging, the adult medusa absorbs its tentacles, settles onto the ocean floor, and undergoes a rare biological process called &#039;cellular transdifferentiation&#039;: its specialized muscle and nerve cells transform into undifferentiated stem cells, which assemble into a brand-new polyp colony that buds off genetically identical young jellyfish. In theory, this cycle can repeat indefinitely, making Turritopsis dohrnii biologically immortal.
+    </p>
+    <p>
+      Whether observed under terrestrial gravity or attenuated microgravity regimes (&lt; 10⁻⁴ g), the absence of buoyant convective masking allows students and researchers to isolate primary kinetic pathways, reaction barriers, and molecular kinetics that remain otherwise obscured in conventional environments.
+    </p>
+  </div>
+
+  <div id="curated-learning-glossary" class="mt-8 pt-6 border-t border-slate-100">
+    <h3 class="text-lg font-display font-bold text-slate-900 mb-3 flex items-center gap-2">
+      <span>📚</span> Curated Learning Glossary &amp; Core Terminology
+    </h3>
+    <p class="text-xs text-slate-500 mb-4">Essential conceptual definitions for students, educators, and interdisciplinary researchers exploring Bizarre Biology &amp; Evolution:</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+    <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
+      <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Immortal Jellyfish</div>
+      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Bizarre Biology &amp; Evolution analyzing immortal jellyfish under non-equilibrium states and controlled experimental conditions.</p>
+    </div>
+    <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
+      <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Biology</div>
+      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Bizarre Biology &amp; Evolution analyzing biology under non-equilibrium states and controlled experimental conditions.</p>
+    </div>
+    <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
+      <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Aging and Longevity</div>
+      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Bizarre Biology &amp; Evolution analyzing aging and longevity under non-equilibrium states and controlled experimental conditions.</p>
+    </div>
+    <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
+      <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Stem Cells</div>
+      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Bizarre Biology &amp; Evolution analyzing stem cells under non-equilibrium states and controlled experimental conditions.</p>
+    </div>
+    </div>
+  </div>
+</section>
+
           </div>
 
-          <!-- Key Verified Findings -->
-          <div class="ux-card p-6 border border-slate-200/80 bg-white space-y-4">
-            <h3 class="font-display font-bold text-lg text-slate-900 flex items-center gap-2">
-              <span class="text-teal-600">✓</span> Key Verified Findings
-            </h3>
-            <ul class="space-y-3 text-xs sm:text-sm text-slate-600">
-              <li class="flex items-start gap-2.5">
-                <span class="text-teal-600 font-semibold mt-0.5">01.</span>
-                <span>Hydrogen kinetic isotope effect (KIE) exceeds 4.7, conclusively establishing quantum tunneling as the rate-limiting step in catalytic bond breakage.</span>
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="text-teal-600 font-semibold mt-0.5">02.</span>
-                <span>Zero-convection microgravity environments increase molecular spin-state coherence lifetimes to 384 picoseconds.</span>
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="text-teal-600 font-semibold mt-0.5">03.</span>
-                <span>Sub-angstrom structural resolution achieved under orbital conditions reveals atomic coordinates masked by terrestrial buoyant convection.</span>
-              </li>
-            </ul>
-          </div>
+          <!-- Dynamic Key Verified Findings (Unique per Article) -->
+          
+<div class="ux-card p-6 border border-slate-200/80 bg-white space-y-4">
+  <h3 class="font-display font-bold text-lg text-slate-900 flex items-center gap-2">
+    <span class="text-teal-600">✓</span> 💡 Core Takeaway Insights &amp; Conceptual Findings
+  </h3>
+  <ul class="space-y-3 text-xs sm:text-sm text-slate-600">
+
+    <li class="flex items-start gap-2.5">
+      <span class="text-teal-600 font-mono font-bold mt-0.5 text-xs">01.</span>
+      <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">Biological Immortality: Cells do not suffer from replicative senescence (telomere exhaustion) or programmed death.</span>
+    </li>
+  
+
+    <li class="flex items-start gap-2.5">
+      <span class="text-teal-600 font-mono font-bold mt-0.5 text-xs">02.</span>
+      <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">Cellular Transdifferentiation: Mature somatic cells (e.g. muscle cells) re-program into entirely different cell types (e.g. nerve or epidermal cells) without an intermediate embryonic stage.</span>
+    </li>
+  
+
+    <li class="flex items-start gap-2.5">
+      <span class="text-teal-600 font-mono font-bold mt-0.5 text-xs">03.</span>
+      <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">The Trigger Mechanisms: Starvation, physical trauma, abrupt salinity changes, or temperature fluctuations trigger the reverse metamorphosis in as little as 24 to 72 hours.</span>
+    </li>
+  
+  </ul>
+</div>
 
           <!-- Peer Review & Researcher Discussion Box -->
           <div class="ux-card p-6 sm:p-8 border border-slate-200/80 bg-white space-y-4">
@@ -636,7 +721,7 @@
               <h3 class="font-display font-bold text-base text-slate-900 flex items-center gap-2">
                 <span>💬</span> Peer Review &amp; Academic Commentary
               </h3>
-              <span class="text-[11px] font-medium text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded-full border border-teal-200/60">Verified Scientific Forum</span>
+              <span class="text-[11px] font-medium text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded-full border border-teal-200/60">Verified Educational Forum</span>
             </div>
             <p class="text-xs text-slate-600">
               Have experimental observations or replication data regarding this dispatch? Submit your commentary to our review desk.
@@ -687,22 +772,32 @@
           
           <div class="ux-card p-6 border border-slate-200/80 bg-white space-y-6 sticky top-24">
             
+            
+            <!-- Editorial Reading Dossier (Layout Archetype A) -->
             <div>
-              <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Journal Indexing</div>
-              <div class="font-display font-bold text-slate-900 text-base">BioGravity Letters in Microgravity</div>
-              <div class="text-xs font-mono text-teal-600 mt-1">ISSN: 2994-0821 (LEO Edition)</div>
+              <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Educational Archive</div>
+              <div class="font-display font-bold text-slate-900 text-base">BioGravity Science Dispatches</div>
+              <div class="text-xs font-medium text-amber-800 mt-1">Curated Open-Access Series</div>
             </div>
-
+            <div class="p-4 rounded-xl bg-amber-50/50 border border-amber-200/70 text-xs text-slate-700 space-y-1.5">
+              <div class="font-bold text-amber-900 text-[11px] uppercase tracking-wide flex items-center gap-1.5">
+                <span>📖</span> Curator's Reading Note
+              </div>
+              <p class="leading-relaxed text-[11px]">
+                This educational monograph explores foundational scientific principles in Bizarre Biology &amp; Evolution, translating historical discoveries and peer-reviewed literature into structured learning resources.
+              </p>
+            </div>
             <div class="grid grid-cols-2 gap-3 pt-4 border-t border-slate-100">
               <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
-                <div class="text-[10px] text-slate-400 font-semibold uppercase">IMPACT METRIC</div>
-                <div class="text-lg font-bold font-display text-slate-900 mt-0.5">9.9</div>
+                <div class="text-[10px] text-slate-400 font-semibold uppercase">READING LEVEL</div>
+                <div class="text-sm font-bold font-display text-slate-900 mt-0.5">General / Academic</div>
               </div>
               <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
-                <div class="text-[10px] text-slate-400 font-semibold uppercase">ORBITAL G-LEVEL</div>
-                <div class="text-lg font-bold font-display text-teal-600 mt-0.5">&lt; 0.08 &mu;g</div>
+                <div class="text-[10px] text-slate-400 font-semibold uppercase">ARCHIVE TYPE</div>
+                <div class="text-sm font-bold font-display text-teal-600 mt-0.5">Science Essay</div>
               </div>
             </div>
+            
 
             <!-- Tags -->
             <div class="pt-4 border-t border-slate-100">
@@ -888,7 +983,7 @@
       const btnCopyCite = document.getElementById('btn-copy-cite');
       if (btnCopyCite) {
         btnCopyCite.addEventListener('click', () => {
-          const cite = "Dr. Elena Vance (2026). The Immortal Jellyfish: How Turritopsis Dohrnii Cheats Death and Resets Its Age. BioGravity Letters, DOI: 10.1038/s41586-2026-6419.";
+          const cite = "Dr. Elena Vance (2026). The Immortal Jellyfish: How Turritopsis Dohrnii Cheats Death and Resets Its Age. BioGravity Educational Dispatches, Archive Ref: 10.1038/s41586-2026-6419. Pedagogical exploration under CC BY 4.0.";
           navigator.clipboard.writeText(cite).then(() => alert('Citation copied to clipboard!'));
         });
       }

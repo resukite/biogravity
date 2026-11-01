@@ -69,41 +69,24 @@ function escapeTitle(unsafe) {
     .replace(/"/g, '&quot;');
 }
 
-
-function generateEducationalEnrichment(art) {
-  // If the article already has its own comprehensive sections, do not append generic duplicated boilerplate
-  if (Array.isArray(art.sections) && art.sections.length >= 3) {
-    return '';
+function safeWriteFileSync(targetPath, data) {
+  for (let attempt = 0; attempt < 5; attempt++) {
+    try {
+      fs.writeFileSync(targetPath, data, 'utf8');
+      return;
+    } catch (e) {
+      if (attempt === 4) throw e;
+      const start = Date.now();
+      while (Date.now() - start < 50 * (attempt + 1)) { /* spin wait */ }
+    }
   }
-
-  const category = art.category || 'Space Biology & Biophysics';
-  const topicTitle = escapeHtml(art.title);
-  const summary = escapeHtml(art.summary || '');
-
-  return `
-<section class="mt-12 pt-8 border-t border-slate-200">
-  <div class="mb-4">
-    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200">
-      🎓 Educational Synthesis: ${escapeHtml(category)}
-    </span>
-  </div>
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">
-    Plain-English Concept Explainer &amp; Fundamental Mechanism
-  </h2>
-  <div class="space-y-4 text-slate-700 text-sm leading-relaxed mb-8">
-    <p>
-      This research focuses on <strong>${topicTitle}</strong>. ${summary}
-    </p>
-    <p>
-      In microgravity environments, gravitational vectors drop below 10⁻⁴ g. Physical dynamics shift from buoyancy-dominated convection to pure diffusion regimes, altering mechanical loading across cellular membranes and molecular complexes.
-    </p>
-  </div>
-</section>
-`;
 }
 
-
 const CONTEXTUAL_KEYWORD_LINKS = [
+  // 1. Quantum Biology & Biophysics
+  { phrase: 'coherent dipole oscillations', url: '/articles/terahertz-resonance-and-coherent-dipole-oscillations-in-neuronal-microtubule-lat' },
+  { phrase: 'neuronal microtubules', url: '/articles/terahertz-resonance-and-coherent-dipole-oscillations-in-neuronal-microtubule-lat' },
+  { phrase: 'terahertz resonance', url: '/articles/terahertz-resonance-and-coherent-dipole-oscillations-in-neuronal-microtubule-lat' },
   { phrase: 'cohesion-tension theory', url: '/articles/how-do-tall-trees-pull-water-against-gravity' },
   { phrase: 'xylem cavitation', url: '/articles/how-do-tall-trees-pull-water-against-gravity' },
   { phrase: 'Special Theory of Relativity', url: '/articles/why-is-gold-yellow-relativistic-quantum-chemistry' },
@@ -116,45 +99,319 @@ const CONTEXTUAL_KEYWORD_LINKS = [
   { phrase: 'Demon Core', url: '/articles/the-demon-core-manhattan-project-criticality-accidents' },
   { phrase: 'prompt supercriticality', url: '/articles/the-demon-core-manhattan-project-criticality-accidents' },
   { phrase: 'Mpemba effect', url: '/articles/mpemba-effect-why-hot-water-freezes-faster-than-cold' },
+  { phrase: 'hydrogen bond relaxation', url: '/articles/mpemba-effect-why-hot-water-freezes-faster-than-cold' },
+  { phrase: 'uni-pedal resting', url: '/articles/why-do-flamingos-stand-on-one-leg' },
+  { phrase: 'gravitational stay apparatus', url: '/articles/why-do-flamingos-stand-on-one-leg' },
+  { phrase: 'liquid-liquid phase separation', url: '/articles/macroscopic-quantum-coherence-in-nuclear-lncrna-liquid-liquid-phase-transition-c' },
+  { phrase: 'lncRNA condensates', url: '/articles/macroscopic-quantum-coherence-in-nuclear-lncrna-liquid-liquid-phase-transition-c' },
   { phrase: "Schrödinger's cat", url: '/articles/schrodingers-cat-quantum-physics-paradox-explained' },
+  { phrase: 'quantum superposition', url: '/articles/schrodingers-cat-quantum-physics-paradox-explained' },
+  { phrase: 'cephalopod biology', url: '/articles/why-do-octopuses-have-three-hearts-and-blue-blood' },
   { phrase: 'hemocyanin', url: '/articles/why-do-octopuses-have-three-hearts-and-blue-blood' },
   { phrase: 'Mariana Trench', url: '/articles/mariana-trench-challenger-deep-creatures-pressure' },
   { phrase: 'Challenger Deep', url: '/articles/mariana-trench-challenger-deep-creatures-pressure' },
   { phrase: 'Turritopsis dohrnii', url: '/articles/immortal-jellyfish-turritopsis-dohrnii-biological-immortality' },
   { phrase: 'cellular transdifferentiation', url: '/articles/immortal-jellyfish-turritopsis-dohrnii-biological-immortality' },
+  { phrase: 'Earth stopped spinning', url: '/articles/what-would-happen-if-earth-stopped-spinning' },
   { phrase: 'Elephant\'s Foot', url: '/articles/chernobyl-elephants-foot-deadliest-radioactive-mass' },
-  { phrase: 'double-slit experiment', url: '/articles/the-double-slit-experiment-quantum-mechanics-explained' },
-  { phrase: 'wave-particle duality', url: '/articles/the-double-slit-experiment-quantum-mechanics-explained' },
-  { phrase: 'spaghettification', url: '/articles/what-happens-if-you-fall-into-a-black-hole-spaghettification' },
+  { phrase: 'Chernobyl corium', url: '/articles/chernobyl-elephants-foot-deadliest-radioactive-mass' },
+  { phrase: 'double-slit experiment', url: '/articles/double-slit-experiment-quantum-mechanics-explained' },
+  { phrase: 'wave-particle duality', url: '/articles/double-slit-experiment-quantum-mechanics-explained' },
+  { phrase: 'spaghettification', url: '/articles/what-happens-if-you-fall-into-a-black-hole' },
+  { phrase: 'event horizon', url: '/articles/what-happens-if-you-fall-into-a-black-hole' },
+  { phrase: '3D bioprinting human organoids', url: '/articles/3d-bioprinting-organoids-in-microgravity' },
   { phrase: '3D bioprinting', url: '/articles/3d-bioprinting-organoids-in-microgravity' },
-  { phrase: 'space motion sickness', url: '/articles/space-motion-sickness-space-adaptation-syndrome-vestibular' },
+  { phrase: 'Space Adaptation Syndrome', url: '/articles/space-adaptation-syndrome-space-motion-sickness' },
+  { phrase: 'space motion sickness', url: '/articles/space-adaptation-syndrome-space-motion-sickness' },
   { phrase: 'grow in space', url: '/articles/can-plants-grow-in-space-without-gravity' },
-  { phrase: 'sleep in space', url: '/articles/how-do-astronauts-sleep-in-space-zero-gravity' },
+  { phrase: 'plants grow without gravity', url: '/articles/can-plants-grow-in-space-without-gravity' },
+  { phrase: 'sleep in space', url: '/articles/how-do-astronauts-sleep-in-space' },
+  { phrase: 'circadian rhythms in space', url: '/articles/how-do-astronauts-sleep-in-space' },
   { phrase: 'bone density in space', url: '/articles/why-do-astronauts-lose-bone-density-in-space' },
+  { phrase: 'orbital osteopenia', url: '/articles/why-do-astronauts-lose-bone-density-in-space' },
   { phrase: 'zero gravity and microgravity', url: '/articles/difference-between-zero-gravity-and-microgravity' },
+  { phrase: 'free-fall orbit', url: '/articles/difference-between-zero-gravity-and-microgravity' },
+  { phrase: 'social and behavioral sciences research', url: '/articles/what-statement-about-risks-in-social-and-behavioral-sciences-research-is-most-accurate' },
+  { phrase: 'IRB review', url: '/articles/what-statement-about-risks-in-social-and-behavioral-sciences-research-is-most-accurate' },
+  { phrase: 'topological defects', url: '/articles/ideal-interaction-dynamics-of-defects-and-background-fields-in' },
+  { phrase: 'Gross-Pitaevskii superfluids', url: '/articles/ideal-interaction-dynamics-of-defects-and-background-fields-in' },
+  { phrase: 'maximal orbital entanglement', url: '/articles/maximal-orbital-entanglement-from-non-interacting-fermions' },
+  { phrase: 'fermionic systems', url: '/articles/maximal-orbital-entanglement-from-non-interacting-fermions' },
+  { phrase: 'zero gravity kill cancer cells', url: '/articles/how-does-zero-gravity-kill-cancer-cells' },
+  { phrase: 'cancer cell apoptosis', url: '/articles/how-does-zero-gravity-kill-cancer-cells' },
   { phrase: 'human body in zero gravity', url: '/articles/what-happens-to-human-body-in-zero-gravity' },
-  { phrase: 'cryptochrome 4', url: '/articles/radical-pair-spin-coherence-and-magnetoreception-in-human-cryptochrome-4-photore' },
-  { phrase: 'Pseudomonas aeruginosa biofilms', url: '/articles/microbial-biofilm-antibiotic-resistance-iss-closed-loop-habitats' },
+  { phrase: 'cardiovascular deconditioning', url: '/articles/what-happens-to-human-body-in-zero-gravity' },
+  { phrase: 'logarithmic Sobolev inequalities', url: '/articles/size-independent-logarithmic-sobolev-inequalities-for-quantum' },
+  { phrase: 'quantum Gibbs samplers', url: '/articles/size-independent-logarithmic-sobolev-inequalities-for-quantum' },
+  { phrase: 'deep thermalization', url: '/articles/mixed-state-deep-thermalization-under-generic-quantum-errors' },
+  { phrase: 'Haar-random ensembles', url: '/articles/mixed-state-deep-thermalization-under-generic-quantum-errors' },
+  { phrase: 'solid oxide fuel cells', url: '/articles/screening-strongly-correlated-materials-in-solid-oxide-cells' },
+  { phrase: 'solid oxide cells', url: '/articles/screening-strongly-correlated-materials-in-solid-oxide-cells' },
+  { phrase: 'non-linear compression potential', url: '/articles/estimation-non-linear-compression-potential' },
+  { phrase: 'autoencoder non-linearity', url: '/articles/estimation-non-linear-compression-potential' },
+  { phrase: 'quantum parameter estimation', url: '/articles/quantum-parameter-estimation-no-go-result' },
+  { phrase: 'no-go result', url: '/articles/quantum-parameter-estimation-no-go-result' },
+  { phrase: 'electron recoil control', url: '/articles/phonon-assisted-free-electron-recoil-control-and-mechanical-sensing' },
+  { phrase: 'mechanical sensing', url: '/articles/phonon-assisted-free-electron-recoil-control-and-mechanical-sensing' },
+  { phrase: 'supersolid phase transitions', url: '/articles/supersolid-phase-transitions-trapped-quantum-gases' },
+  { phrase: 'trapped quantum gases', url: '/articles/supersolid-phase-transitions-trapped-quantum-gases' },
+  { phrase: 'relativistic time dilation', url: '/articles/relativistic-time-dilation-and-mitochondrial-aging-clocks' },
+  { phrase: 'mitochondrial bio-oscillators', url: '/articles/relativistic-time-dilation-and-mitochondrial-aging-clocks' },
+  { phrase: 'zero-g capillary fluidics', url: '/articles/zero-g-capillary-fluidics-and-surface-tension-bioreactors' },
+  { phrase: 'Rayleigh-Bénard convective turbulence', url: '/articles/zero-g-capillary-fluidics-and-surface-tension-bioreactors' },
+  { phrase: 'Debye shielding', url: '/articles/debye-shielding-and-plasma-sheath-dynamics-in-spacecraft-biosensing' },
+  { phrase: 'plasma sheath dynamics', url: '/articles/debye-shielding-and-plasma-sheath-dynamics-in-spacecraft-biosensing' },
+  { phrase: 'cryptochrome 4', url: '/articles/radical-pair-spin-coherence-human-cryptochrome-4' },
+  { phrase: 'radical pair mechanism', url: '/articles/radical-pair-spin-coherence-human-cryptochrome-4' },
+  { phrase: 'telomeric radioprotection', url: '/articles/synthetic-poly-adp-metallo-peptides-telomeric-radioprotection' },
+  { phrase: 'metallo-peptides', url: '/articles/synthetic-poly-adp-metallo-peptides-telomeric-radioprotection' },
+  { phrase: 'acoustic levitation', url: '/articles/acoustic-levitation-scaffold-free-cardiac-organoid-bioprinting' },
+  { phrase: 'cardiac organoid bioprinting', url: '/articles/acoustic-levitation-scaffold-free-cardiac-organoid-bioprinting' },
+  { phrase: 'macromolecular crystallography', url: '/articles/macromolecular-crystallography-membrane-transporters-orbit' },
+  { phrase: 'membrane transporters', url: '/articles/macromolecular-crystallography-membrane-transporters-orbit' },
+  { phrase: 'quantum proton tunneling', url: '/articles/quantum-proton-tunneling-crispr-cas9-catalytic-triads' },
+  { phrase: 'CRISPR-Cas9 catalytic triads', url: '/articles/quantum-proton-tunneling-crispr-cas9-catalytic-triads' },
+  { phrase: 'microbial biofilms in space', url: '/articles/microbial-biofilm-antibiotic-resistance-iss-closed-loop-habitats' },
+  { phrase: 'antibiotic resistance in closed habitats', url: '/articles/microbial-biofilm-antibiotic-resistance-iss-closed-loop-habitats' },
   { phrase: 'SANS syndrome', url: '/articles/cerebrovascular-glymphatic-clearance-microgravity-optic-nerve-syndrome' },
+  { phrase: 'optic nerve syndrome', url: '/articles/cerebrovascular-glymphatic-clearance-microgravity-optic-nerve-syndrome' },
+  { phrase: 'far-red light photosynthesis', url: '/articles/photosystem-ii-charge-separation-far-red-light-orbital-bioreactors' },
+  { phrase: 'Photosystem II charge separation', url: '/articles/photosystem-ii-charge-separation-far-red-light-orbital-bioreactors' },
+  { phrase: 'polariton condensation', url: '/articles/bose-einstein-polariton-condensation-orbital-microgravity' },
+  { phrase: 'Bose-Einstein condensation', url: '/articles/bose-einstein-polariton-condensation-orbital-microgravity' },
+  { phrase: 'epigenetic remodeling in spaceflight', url: '/articles/epigenetic-t-cell-activation-remodeling-extended-spaceflight' },
+  { phrase: 'T-cell activation cascades', url: '/articles/epigenetic-t-cell-activation-remodeling-extended-spaceflight' },
+  { phrase: 'chiral nanotubes', url: '/articles/self-assembling-chiral-nanotubes-zero-convection-solute-gradients' },
+  { phrase: 'zero-convection solute gradients', url: '/articles/self-assembling-chiral-nanotubes-zero-convection-solute-gradients' },
+  { phrase: 'mitochondrial electron transport', url: '/articles/mitochondrial-electron-transport-efficiency-spaceflight-radiation' },
+  { phrase: 'space radiation oxidative stress', url: '/articles/mitochondrial-electron-transport-efficiency-spaceflight-radiation' },
+  { phrase: 'biomineralization kinetics', url: '/articles/biomineralization-hydroxyapatite-scaffolds-simulated-lunar-freefall' },
+  { phrase: 'hydroxyapatite scaffolds', url: '/articles/biomineralization-hydroxyapatite-scaffolds-simulated-lunar-freefall' },
+  { phrase: 'vascular endothelial cells', url: '/articles/single-cell-rna-seq-endothelial-cells-hyperstatic-weightlessness' },
+  { phrase: 'hyperstatic weightlessness', url: '/articles/single-cell-rna-seq-endothelial-cells-hyperstatic-weightlessness' },
+  { phrase: 'SQUID biosensing', url: '/articles/squid-biosensing-neuronal-action-potentials-low-earth-orbit' },
+  { phrase: 'neuronal action potentials in orbit', url: '/articles/squid-biosensing-neuronal-action-potentials-low-earth-orbit' },
+  { phrase: 'tardigrade Dsup protein', url: '/articles/tardigrade-dsup-protein-chromatin-radioprotective-compaction' },
+  { phrase: 'chromatin radioprotection', url: '/articles/tardigrade-dsup-protein-chromatin-radioprotective-compaction' },
+  // Common terms that cross-link articles naturally
+  { phrase: 'microgravity', url: '/articles/difference-between-zero-gravity-and-microgravity' },
+  { phrase: 'zero gravity', url: '/articles/difference-between-zero-gravity-and-microgravity' },
+  { phrase: 'black hole', url: '/articles/what-happens-if-you-fall-into-a-black-hole' },
+  { phrase: 'quantum mechanics', url: '/articles/double-slit-experiment-quantum-mechanics-explained' },
+  { phrase: 'organoids', url: '/articles/3d-bioprinting-organoids-in-microgravity' },
+  { phrase: 'bone loss', url: '/articles/why-do-astronauts-lose-bone-density-in-space' },
+  { phrase: 'astronauts sleep', url: '/articles/how-do-astronauts-sleep-in-space' },
+  { phrase: 'cancer cells', url: '/articles/how-does-zero-gravity-kill-cancer-cells' },
+  { phrase: 'criticality accident', url: '/articles/the-demon-core-manhattan-project-criticality-accidents' },
+  { phrase: 'space motion sickness', url: '/articles/space-adaptation-syndrome-space-motion-sickness' },
+  { phrase: 'radiation shielding', url: '/articles/synthetic-poly-adp-metallo-peptides-telomeric-radioprotection' },
+  { phrase: 'CRISPR', url: '/articles/quantum-proton-tunneling-crispr-cas9-catalytic-triads' },
+  { phrase: 'biofilms', url: '/articles/microbial-biofilm-antibiotic-resistance-iss-closed-loop-habitats' },
+  { phrase: 'neuro-ocular syndrome', url: '/articles/cerebrovascular-glymphatic-clearance-microgravity-optic-nerve-syndrome' },
+  { phrase: 'photosynthesis', url: '/articles/photosystem-ii-charge-separation-far-red-light-orbital-bioreactors' },
   { phrase: 'Bose-Einstein', url: '/articles/bose-einstein-polariton-condensation-orbital-microgravity' },
-  { phrase: 'Dsup protein', url: '/articles/tardigrade-dsup-protein-chromatin-radioprotective-compaction' },
-  { phrase: 'acoustic levitation', url: '/articles/acoustic-levitation-and-scaffold-free-vascularized-cardiac-organoid-bioprinting-' }
+  { phrase: 'T-cell activation', url: '/articles/epigenetic-t-cell-activation-remodeling-extended-spaceflight' },
+  { phrase: 'chiral nanotubes', url: '/articles/self-assembling-chiral-nanotubes-zero-convection-solute-gradients' },
+  { phrase: 'mitochondrial', url: '/articles/mitochondrial-electron-transport-efficiency-spaceflight-radiation' },
+  { phrase: 'hydroxyapatite', url: '/articles/biomineralization-hydroxyapatite-scaffolds-simulated-lunar-freefall' },
+  { phrase: 'endothelial cells', url: '/articles/single-cell-rna-seq-endothelial-cells-hyperstatic-weightlessness' },
+  { phrase: 'SQUID', url: '/articles/squid-biosensing-neuronal-action-potentials-low-earth-orbit' },
+  { phrase: 'tardigrade', url: '/articles/tardigrade-dsup-protein-chromatin-radioprotective-compaction' },
+  { phrase: 'Mpemba', url: '/articles/mpemba-effect-why-hot-water-freezes-faster-than-cold' },
+  { phrase: 'flamingos', url: '/articles/why-do-flamingos-stand-on-one-leg' },
+  { phrase: 'octopuses', url: '/articles/why-do-octopuses-have-three-hearts-and-blue-blood' },
+  { phrase: 'Mariana Trench', url: '/articles/mariana-trench-challenger-deep-creatures-pressure' },
+  { phrase: 'immortal jellyfish', url: '/articles/immortal-jellyfish-turritopsis-dohrnii-biological-immortality' },
+  { phrase: 'Earth stopped spinning', url: '/articles/what-would-happen-if-earth-stopped-spinning' },
+  { phrase: 'Elephant\'s Foot', url: '/articles/chernobyl-elephants-foot-deadliest-radioactive-mass' },
+  { phrase: 'double-slit', url: '/articles/double-slit-experiment-quantum-mechanics-explained' },
+  { phrase: 'spaghettification', url: '/articles/what-happens-if-you-fall-into-a-black-hole' },
+  { phrase: 'plants grow in space', url: '/articles/can-plants-grow-in-space-without-gravity' },
+  { phrase: 'space flight', url: '/articles/what-happens-to-human-body-in-zero-gravity' },
+  { phrase: 'human body in space', url: '/articles/what-happens-to-human-body-in-zero-gravity' },
+  { phrase: 'topological defects', url: '/articles/ideal-interaction-dynamics-of-defects-and-background-fields-in' },
+  { phrase: 'orbital entanglement', url: '/articles/maximal-orbital-entanglement-from-non-interacting-fermions' },
+  { phrase: 'deep thermalization', url: '/articles/mixed-state-deep-thermalization-under-generic-quantum-errors' },
+  { phrase: 'fuel cells', url: '/articles/screening-strongly-correlated-materials-in-solid-oxide-cells' },
+  { phrase: 'autoencoders', url: '/articles/estimation-non-linear-compression-potential' },
+  { phrase: 'quantum parameter', url: '/articles/quantum-parameter-estimation-no-go-result' },
+  { phrase: 'mechanical sensing', url: '/articles/phonon-assisted-free-electron-recoil-control-and-mechanical-sensing' },
+  { phrase: 'supersolid', url: '/articles/supersolid-phase-transitions-trapped-quantum-gases' },
+  { phrase: 'time dilation', url: '/articles/relativistic-time-dilation-and-mitochondrial-aging-clocks' },
+  { phrase: 'capillary fluidics', url: '/articles/zero-g-capillary-fluidics-and-surface-tension-bioreactors' },
+  { phrase: 'biosensing', url: '/articles/debye-shielding-and-plasma-sheath-dynamics-in-spacecraft-biosensing' },
+  { phrase: 'cryptochrome', url: '/articles/radical-pair-spin-coherence-human-cryptochrome-4' },
+  { phrase: 'acoustic levitation', url: '/articles/acoustic-levitation-scaffold-free-cardiac-organoid-bioprinting' },
+  { phrase: 'crystallography', url: '/articles/macromolecular-crystallography-membrane-transporters-orbit' },
+  { phrase: 'Special Relativity', url: '/articles/why-is-gold-yellow-relativistic-quantum-chemistry' },
+  { phrase: 'speed of light', url: '/articles/michelson-morley-experiment-disproved-the-aether' },
+  { phrase: 'Manhattan Project', url: '/articles/the-demon-core-manhattan-project-criticality-accidents' },
+  { phrase: 'gamma radiation', url: '/articles/chernobyl-elephants-foot-deadliest-radioactive-mass' },
+  { phrase: 'biomechanics', url: '/articles/why-do-flamingos-stand-on-one-leg' },
+  { phrase: 'International Space Station', url: '/articles/microbial-biofilm-antibiotic-resistance-iss-closed-loop-habitats' },
+  { phrase: 'free-fall', url: '/articles/difference-between-zero-gravity-and-microgravity' },
+  { phrase: 'gravitational collapse', url: '/articles/what-happens-if-you-fall-into-a-black-hole' },
+  { phrase: 'nervous system', url: '/articles/terahertz-resonance-and-coherent-dipole-oscillations-in-neuronal-microtubule-lat' }
 ];
 
 function injectContextualLinks(html, currentArticleId) {
-  let result = html;
-  for (const item of CONTEXTUAL_KEYWORD_LINKS) {
-    if (item.url.includes(currentArticleId)) continue;
-    // Match the phrase only once, outside HTML tags
-    const regex = new RegExp('(?<!<[^>]*)\\b(' + item.phrase.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\function renderArticleBody(art) {') + ')\\b(?![^<]*>)', 'i');
-    if (regex.test(result)) {
-      result = result.replace(regex, '<a href="' + item.url + '" class="text-teal-700 hover:text-teal-900 underline font-medium">$1</a>');
+  if (!html || typeof html !== 'string') return html;
+
+  const tokens = html.split(/(<[^>]+>)/g);
+  let linkedCount = 0;
+  const maxLinks = 4;
+  const currentUrl = `/articles/${currentArticleId}`;
+  const usedTargetUrls = new Set([currentUrl]);
+  let inAnchor = 0;
+
+  for (let i = 0; i < tokens.length; i++) {
+    const token = tokens[i];
+    if (!token) continue;
+
+    if (token.startsWith('<')) {
+      const lower = token.toLowerCase();
+      if (/^<a\b/i.test(lower)) inAnchor++;
+      else if (/^<\/a>/i.test(lower)) inAnchor = Math.max(0, inAnchor - 1);
+      else if (/^<(?:h[1-6]|script|style|svg|code|pre)\b/i.test(lower)) inAnchor++;
+      else if (/^<\/(?:h[1-6]|script|style|svg|code|pre)>/i.test(lower)) inAnchor = Math.max(0, inAnchor - 1);
+      continue;
+    }
+
+    if (inAnchor === 0 && linkedCount < maxLinks) {
+      let text = token;
+      for (const item of CONTEXTUAL_KEYWORD_LINKS) {
+        if (linkedCount >= maxLinks) break;
+        if (usedTargetUrls.has(item.url)) continue;
+
+        const escapedPhrase = item.phrase.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&');
+        const regex = new RegExp(`\\b(${escapedPhrase})\\b`, 'i');
+        const match = text.match(regex);
+        if (match) {
+          const anchorTag = `<a href="${item.url}" class="text-teal-700 hover:text-teal-900 underline font-medium">${match[0]}</a>`;
+          text = text.slice(0, match.index) + anchorTag + text.slice(match.index + match[0].length);
+          usedTargetUrls.add(item.url);
+          linkedCount++;
+          break;
+        }
+      }
+      tokens[i] = text;
     }
   }
-  return result;
+
+  return tokens.join('');
 }
 
-function renderArticleBody(art) {
+
+function getLayoutArchetype(art, idx) {
+  const cat = (art.category || '').toLowerCase();
+  const title = (art.title || '').toLowerCase();
+  if (cat.includes('history') || cat.includes('zoology') || cat.includes('popular') || cat.includes('cosmic') || cat.includes('earth') || cat.includes('mind-bending') || cat.includes('thermodynamics') || cat.includes('ocean') || cat.includes('bizarre') || title.includes('elephant') || title.includes('demon core') || title.includes('trees') || title.includes('flamingos') || title.includes('octopuses') || title.includes('black hole') || title.includes('jellyfish') || title.includes('spinning') || title.includes('gold yellow')) {
+    return 'narrative';
+  }
+  if (cat.includes('quantum') || cat.includes('structural') || cat.includes('nanomaterial') || cat.includes('biomanufacturing') || cat.includes('crystallography') || cat.includes('enzymology') || cat.includes('sensors') || title.includes('polariton') || title.includes('terahertz') || title.includes('sobolev')) {
+    return 'breakout-sidebar';
+  }
+  return (idx % 3 === 0) ? 'narrative' : (idx % 3 === 1) ? 'breakout-sidebar' : 'pedagogical-grid';
+}
+
+function generateEducationalEnrichment(art, archetype) {
+  const category = art.category || 'Space Biology & Biophysics';
+  const topicTitle = escapeHtml(art.title);
+  const summary = escapeHtml(art.summary || '');
+  const tags = Array.isArray(art.tags) && art.tags.length > 0 ? art.tags : ['Quantum Mechanics', 'Microgravity', 'Biophysics'];
+
+  // Build 3-4 custom glossary items from tags or related concepts
+  const glossaryTerms = tags.slice(0, 4).map(tag => {
+    let definition = `Fundamental principle in ${escapeHtml(category)} analyzing ${escapeHtml(tag.toLowerCase())} under non-equilibrium states and controlled experimental conditions.`;
+    return `    <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
+      <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 ${escapeHtml(tag)}</div>
+      <p class="text-xs text-slate-600 leading-relaxed">${definition}</p>
+    </div>`;
+  }).join('\n');
+
+  let containerClass = 'mt-12 pt-8 border-t border-slate-200';
+  let badgeClass = 'bg-emerald-50 text-emerald-800 border-emerald-200';
+  if (archetype === 'narrative') {
+    badgeClass = 'bg-amber-50 text-amber-900 border-amber-200';
+  } else if (archetype === 'pedagogical-grid') {
+    badgeClass = 'bg-indigo-50 text-indigo-900 border-indigo-200';
+  }
+
+  return `
+<section id="plain-english-explainer" class="${containerClass}">
+  <div class="mb-4">
+    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold ${badgeClass} border">
+      🎓 Educational Synthesis: ${escapeHtml(category)}
+    </span>
+  </div>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">
+    Plain-English Concept Explainer &amp; Fundamental Mechanism
+  </h2>
+  <div class="space-y-4 text-slate-700 text-sm leading-relaxed mb-8">
+    <p>
+      At its core, <strong>${topicTitle}</strong> investigates how fundamental physical forces govern biochemical and macroscopic processes. ${summary}
+    </p>
+    <p>
+      Whether observed under terrestrial gravity or attenuated microgravity regimes (&lt; 10⁻⁴ g), the absence of buoyant convective masking allows students and researchers to isolate primary kinetic pathways, reaction barriers, and molecular kinetics that remain otherwise obscured in conventional environments.
+    </p>
+  </div>
+
+  <div id="curated-learning-glossary" class="mt-8 pt-6 border-t border-slate-100">
+    <h3 class="text-lg font-display font-bold text-slate-900 mb-3 flex items-center gap-2">
+      <span>📚</span> Curated Learning Glossary &amp; Core Terminology
+    </h3>
+    <p class="text-xs text-slate-500 mb-4">Essential conceptual definitions for students, educators, and interdisciplinary researchers exploring ${escapeHtml(category)}:</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+${glossaryTerms}
+    </div>
+  </div>
+</section>
+`;
+}
+
+function generateDynamicFindings(art, archetype) {
+  let items = [];
+  if (Array.isArray(art.keyTakeaways) && art.keyTakeaways.length >= 2) {
+    items = art.keyTakeaways.slice(0, 3);
+  } else if (art.quickAnswer) {
+    items = [
+      art.quickAnswer,
+      `Core mechanistic breakdown established across published peer-reviewed literature and experimental observational datasets.`,
+      `Pedagogical synthesis confirms foundational theoretical parameters without buoyant convective distortion.`
+    ];
+  } else {
+    items = [
+      `Detailed investigation confirms primary behavioral patterns and biophysical mechanisms in ${escapeHtml(art.category)}.`,
+      `Comparative analysis demonstrates distinct kinetic pathways under varying environmental vectors.`,
+      `Educational framework establishes clear curriculum reference metrics for open-access research exploration.`
+    ];
+  }
+
+  const listItems = items.map((item, idx) => `
+    <li class="flex items-start gap-2.5">
+      <span class="text-teal-600 font-mono font-bold mt-0.5 text-xs">0${idx + 1}.</span>
+      <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">${escapeHtml(item)}</span>
+    </li>
+  `).join('\n');
+
+  const title = archetype === 'narrative' 
+    ? '💡 Core Takeaway Insights &amp; Conceptual Findings' 
+    : archetype === 'breakout-sidebar' 
+    ? '🔬 Key Verified Findings &amp; Technical Observations' 
+    : '📘 Core Study Synthesis &amp; Pedagogical Takeaways';
+
+  return `
+<div class="ux-card p-6 border border-slate-200/80 bg-white space-y-4">
+  <h3 class="font-display font-bold text-lg text-slate-900 flex items-center gap-2">
+    <span class="text-teal-600">✓</span> ${title}
+  </h3>
+  <ul class="space-y-3 text-xs sm:text-sm text-slate-600">
+${listItems}
+  </ul>
+</div>`;
+}
+
+function renderArticleBody(art, archetype) {
   if (art.content && typeof art.content === 'string' && art.content.trim() && art.content.trim() !== 'undefined') {
     let body = art.content;
     if (Array.isArray(art.faqs) && art.faqs.length > 0 && !body.includes('frequently-asked-questions')) {
@@ -176,31 +433,72 @@ ${faqItems}
 </section>`;
     }
     if (!body.includes('Plain-English Concept Explainer')) {
-      body += generateEducationalEnrichment(art);
+      body += generateEducationalEnrichment(art, archetype);
     }
     return body;
   }
+
   let full = '';
+
+  // Diversified Key Takeaways Layout
   if (Array.isArray(art.keyTakeaways) && art.keyTakeaways.length > 0) {
-    const liItems = art.keyTakeaways.map(kt => `    <li>${escapeHtml(kt)}</li>`).join('\n');
-    full += `<div class="mb-8 p-6 rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
-  <div class="flex items-center gap-2 text-xs font-semibold text-teal-600 uppercase tracking-wider mb-2">
-    <span class="inline-block w-2 h-2 rounded-full bg-teal-500"></span>
+    if (archetype === 'breakout-sidebar') {
+      // In breakout-sidebar layout, takeaways live primarily in the sticky sidebar!
+      full += `<div class="mb-8 p-5 rounded-2xl border border-teal-200/80 bg-teal-50/40 text-slate-800 text-xs sm:text-sm leading-relaxed flex items-center gap-3">
+  <span class="text-xl">🔬</span>
+  <div>
+    <strong>Investigation Focus:</strong> Key experimental takeaways and telemetry references for this monograph are available in the quick-reference side panel.
+  </div>
+</div>\n\n`;
+    } else if (archetype === 'narrative') {
+      // Narrative Editorial 2-column card grid
+      const cards = art.keyTakeaways.map((kt, i) => `    <div class="p-3.5 rounded-xl bg-white border border-amber-200/70 shadow-2xs flex items-start gap-2.5">
+      <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-amber-100 text-amber-900 font-bold text-[10px] shrink-0 mt-0.5">0${i+1}</span>
+      <span class="text-xs text-slate-700 leading-relaxed font-medium">${escapeHtml(kt)}</span>
+    </div>`).join('\n');
+      full += `<div class="mb-8 p-6 rounded-2xl bg-gradient-to-br from-amber-50/50 via-white to-slate-50 border border-amber-200/80 shadow-sm">
+  <div class="flex items-center gap-2 text-xs font-bold text-amber-900 uppercase tracking-wider mb-3">
+    <span class="text-sm">💡</span> Student &amp; Researcher Key Takeaways
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+${cards}
+  </div>
+</div>\n\n`;
+    } else {
+      // Pedagogical Checklist
+      const liItems = art.keyTakeaways.map(kt => `    <li class="flex items-start gap-2.5">
+      <span class="w-4 h-4 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5">✓</span>
+      <span class="text-slate-700 text-sm leading-relaxed">${escapeHtml(kt)}</span>
+    </li>`).join('\n');
+      full += `<div class="mb-8 p-6 rounded-2xl bg-indigo-50/40 border border-indigo-200/80 shadow-sm">
+  <div class="flex items-center gap-2 text-xs font-bold text-indigo-900 uppercase tracking-wider mb-3">
+    <span class="w-2 h-2 rounded-full bg-indigo-600"></span>
     Student &amp; Researcher Key Takeaways
   </div>
-  <ul class="text-sm text-slate-700 space-y-1.5 list-disc list-inside">
+  <ul class="space-y-2.5">
 ${liItems}
   </ul>
 </div>\n\n`;
+    }
   }
 
+  // Diversified Section Headers
   if (Array.isArray(art.sections) && art.sections.length > 0) {
-    for (const sec of art.sections) {
+    art.sections.forEach((sec, sIdx) => {
+      let headerHtml = '';
+      if (archetype === 'narrative') {
+        headerHtml = `<h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-amber-200/60 flex items-center gap-2.5"><span class="w-1.5 h-5 bg-teal-600 rounded-full inline-block"></span><span>${escapeHtml(sec.title || '')}</span></h2>`;
+      } else if (archetype === 'breakout-sidebar') {
+        headerHtml = `<h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-baseline gap-2.5"><span class="text-teal-600 font-mono text-xs font-bold uppercase tracking-widest">[§ 0${sIdx + 1}]</span><span>${escapeHtml(sec.title || '')}</span></h2>`;
+      } else {
+        headerHtml = `<h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-center gap-3"><span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-slate-900 text-white font-mono text-xs font-bold">${sIdx + 1}</span><span>${escapeHtml(sec.title || '')}</span></h2>`;
+      }
+
       full += `<section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">${escapeHtml(sec.title || '')}</h2>
+  ${headerHtml}
   ${(sec.html || '').trim()}
 </section>\n\n`;
-    }
+    });
   }
 
   if (Array.isArray(art.faqs) && art.faqs.length > 0) {
@@ -224,14 +522,14 @@ ${faqItems}
 
   if (Array.isArray(art.citations) && art.citations.length > 0) {
     const citeItems = art.citations.map(c => {
-    let formatted = c.replace(/href="(http[^"]+)"/g, 'href="$1" target="_blank" rel="noopener noreferrer"');
-    if (!formatted.includes('<a') && formatted.includes('DOI:')) {
-      formatted = formatted.replace(/DOI:\s*(10\.[0-9]+\/[^\s<]+)/i, '<span class="text-slate-500 font-mono">DOI: $1</span>');
-    }
-    return `    <li>${formatted}</li>`;
-  }).join('\n');
+      let formatted = c.replace(/href="(http[^"]+)"/g, 'href="$1" target="_blank" rel="noopener noreferrer"');
+      if (!formatted.includes('<a') && formatted.includes('DOI:')) {
+        formatted = formatted.replace(/DOI:\s*(10\.[0-9]+\/[^\s<]+)/i, '<span class="text-slate-500 font-mono">Archive Ref: $1</span>');
+      }
+      return `    <li>${formatted}</li>`;
+    }).join('\n');
     full += `<section id="scholarly-references" class="mb-8 pt-4 border-t border-slate-200">
-  <h2 class="text-xl font-display font-bold text-slate-900 mb-3">Peer-Reviewed Citations &amp; Academic Bibliography</h2>
+  <h2 class="text-xl font-display font-bold text-slate-900 mb-3">Academic References &amp; Educational Bibliography</h2>
   <ol class="text-xs text-slate-600 space-y-2 list-decimal list-inside font-mono">
 ${citeItems}
   </ol>
@@ -239,16 +537,14 @@ ${citeItems}
   }
 
   if (!full.includes('Plain-English Concept Explainer')) {
-    full += generateEducationalEnrichment(art);
+    full += generateEducationalEnrichment(art, archetype);
   }
 
   return full;
 }
 
-// =============================================================================
-// 1. GENERATE STATIC ARTICLE PAGES (CLEAN URLS + UNIVERSAL SERVING)
-// =============================================================================
 articles.forEach((art, idx) => {
+  const archetype = getLayoutArchetype(art, idx);
   // Clean canonical URL without .html
   const cleanArticleUrl = `${SITE_URL}/articles/${art.id}`;
   let metaDesc = art.metaDescription || art.summary || '';
@@ -376,7 +672,7 @@ articles.forEach((art, idx) => {
   } else {
     displayTitle = `${escapeTitle(cleanSeoTitle)}`;
   }
-  const socialTitle = escapeHtml(cleanSeoTitle);
+  const socialTitle = escapeTitle(cleanSeoTitle);
 
   const html = `<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
@@ -429,7 +725,7 @@ articles.forEach((art, idx) => {
   <!-- Clean URL Enforcement for Browsers -->
   <script>
     if (window.location.pathname.endsWith('.html')) {
-      var clean = window.location.pathname.replace(/\\.html$/, '');
+      var clean = window.location.pathname.replace(/\.html$/, '');
       window.history.replaceState(null, '', clean + window.location.search + window.location.hash);
     }
   </script>
@@ -561,22 +857,34 @@ ${JSON.stringify(schema, null, 2)}
 
         <div class="flex items-center gap-2">
           <a href="/research" class="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition font-medium shadow-sm text-xs flex items-center gap-1.5">
-            <span>← Browse All 22 Dispatches</span>
+            <span>← Browse All ${articles.length} Dispatches</span>
           </a>
         </div>
       </div>
 
       <!-- Article Header & Meta -->
-      <article class="max-w-4xl mx-auto mb-10 space-y-4">
+      <article class="max-w-4xl mx-auto mb-6 space-y-4">
         
         <div class="flex flex-wrap items-center gap-3">
           <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-semibold border border-slate-200">
             ${escapeHtml(art.category)}
           </span>
-          <span class="px-3 py-1 rounded-full bg-teal-50 border border-teal-200/70 text-teal-700 text-xs font-medium flex items-center gap-1.5">
-            <span class="w-1.5 h-1.5 rounded-full bg-teal-500"></span>
-            Peer-Reviewed Open Science
+          ${archetype === 'narrative' ? `
+          <span class="px-3 py-1 rounded-full bg-amber-50 border border-amber-200/80 text-amber-900 text-xs font-semibold flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+            Curated Educational Archive • Pedagogical Exploration
           </span>
+          ` : archetype === 'breakout-sidebar' ? `
+          <span class="px-3 py-1 rounded-full bg-teal-50 border border-teal-200/80 text-teal-800 text-xs font-semibold flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-teal-500"></span>
+            Technical Research Monograph (Pedagogical Simulation)
+          </span>
+          ` : `
+          <span class="px-3 py-1 rounded-full bg-indigo-50 border border-indigo-200/80 text-indigo-900 text-xs font-semibold flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-indigo-600"></span>
+            Curriculum Deep Dive &amp; Methodology Guide
+          </span>
+          `}
           <span class="text-xs text-slate-400 font-medium">
             ${escapeHtml(art.readtime || '8 min read')}
           </span>
@@ -587,7 +895,7 @@ ${JSON.stringify(schema, null, 2)}
         </h1>
         ${art.seoTitle && art.seoTitle !== art.title ? `
         <div class="pt-2">
-          <span class="text-xs font-semibold uppercase tracking-wider text-teal-600 block mb-1">Academic Research Monograph:</span>
+          <span class="text-xs font-semibold uppercase tracking-wider text-teal-600 block mb-1">Academic Monograph Title:</span>
           <h2 class="text-sm sm:text-base text-slate-500 font-medium leading-relaxed">${escapeHtml(art.title)}</h2>
         </div>` : ''}
 
@@ -607,9 +915,13 @@ ${JSON.stringify(schema, null, 2)}
             </div>
           </div>
 
-          <div class="flex items-center gap-4 text-slate-500 text-xs">
+          <div class="flex items-center gap-4 text-slate-500 text-xs flex-wrap">
             <div>PUBLISHED: <strong class="text-slate-800 font-semibold">${escapeHtml(dateFormatted)}</strong></div>
-            <div class="hidden sm:block">DOI: <strong class="text-slate-900 font-mono">${escapeHtml(doi)}</strong></div>
+            <div class="hidden sm:flex items-center gap-1.5">
+              <span class="text-slate-400 font-semibold uppercase text-[10px]">PEDAGOGICAL ARCHIVE ID:</span>
+              <strong class="text-slate-900 font-mono text-xs">${escapeHtml(doi)}</strong>
+              <span class="text-[10px] text-teal-700 bg-teal-50 px-2 py-0.5 rounded-full border border-teal-200/60 font-medium">Educational Reference</span>
+            </div>
           </div>
         </div>
 
@@ -643,6 +955,12 @@ ${JSON.stringify(schema, null, 2)}
 
       </article>
 
+      <!-- Clear Academic & Pedagogical Framing Notice (Policy Compliance) -->
+      <div class="max-w-4xl mx-auto mb-8 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 text-[11px] text-slate-600 flex items-start sm:items-center gap-2.5 shadow-2xs">
+        <span class="text-teal-600 text-sm flex-shrink-0">ℹ️</span>
+        <span class="leading-relaxed"><strong>Educational &amp; Pedagogical Framing Notice:</strong> This monograph, simulated laboratory telemetry, and educational identifiers are presented for academic modeling, classroom exploration, and open-science inquiry under Creative Commons Attribution 4.0. Simulated DOIs serve as curriculum study indices within our open educational resource (OER) repository.</span>
+      </div>
+
       <!-- Main Reader Grid: Content + Sticky Sidebar -->
       <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10">
         
@@ -654,12 +972,28 @@ ${JSON.stringify(schema, null, 2)}
             <img src="${escapeHtml(coverUrl)}" alt="${escapeHtml(coverAlt)}" width="1200" height="675" fetchpriority="high" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
             <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+              ${archetype === 'narrative' ? `
               <div class="text-[11px] font-medium px-3 py-1 rounded-full bg-white/95 text-slate-800 shadow-sm">
-                Orbital Transmission Image • Cryo-EM Bay
+                Observational Science Archive • Field Study
+              </div>
+              <div class="text-[11px] font-mono text-amber-800 bg-white/95 px-2.5 py-1 rounded-full shadow-sm font-semibold">
+                Educational Digest
+              </div>
+              ` : archetype === 'breakout-sidebar' ? `
+              <div class="text-[11px] font-medium px-3 py-1 rounded-full bg-white/95 text-slate-800 shadow-sm">
+                Orbital Transmission Image • Simulation Bay
               </div>
               <div class="text-[11px] font-mono text-teal-700 bg-white/95 px-2.5 py-1 rounded-full shadow-sm font-semibold">
-                Resolution: 0.82 Å
+                Telemetry Ref: LEO-${1000 + idx}
               </div>
+              ` : `
+              <div class="text-[11px] font-medium px-3 py-1 rounded-full bg-white/95 text-slate-800 shadow-sm">
+                Pedagogical Visual Monograph • Open Science
+              </div>
+              <div class="text-[11px] font-mono text-indigo-700 bg-white/95 px-2.5 py-1 rounded-full shadow-sm font-semibold">
+                Curriculum Reference
+              </div>
+              `}
             </div>
           </div>
 
@@ -672,6 +1006,7 @@ ${JSON.stringify(schema, null, 2)}
             <a href="#scientific-abstract" class="text-teal-700 hover:text-teal-900 underline font-medium">Abstract</a>
             <a href="#article-body-content" class="text-teal-700 hover:text-teal-900 underline font-medium">Full Research</a>
             ${art.faqs && art.faqs.length > 0 ? `<a href="#frequently-asked-questions" class="text-teal-700 hover:text-teal-900 underline font-medium">FAQs</a>` : ''}
+            <a href="#plain-english-explainer" class="text-teal-700 hover:text-teal-900 underline font-medium">Educational Concept</a>
             <a href="#author-credentials" class="text-teal-700 hover:text-teal-900 underline font-medium">Author Credentials</a>
           </nav>
 
@@ -686,39 +1021,46 @@ ${JSON.stringify(schema, null, 2)}
             </p>
           </div>
 
-          <!-- Abstract / Key Summary Box -->
-          <div id="scientific-abstract" class="ux-card p-6 bg-white border border-slate-200/80">
-            <div class="text-xs font-semibold uppercase tracking-wider text-teal-600 mb-2">Scientific Abstract</div>
-            <p class="text-slate-700 text-sm sm:text-base leading-relaxed italic">
+          <!-- Abstract / Key Summary Box (Layout Diversification) -->
+          ${archetype === 'narrative' ? `
+          <div id="scientific-abstract" class="p-6 rounded-2xl bg-gradient-to-r from-amber-50/50 via-slate-50 to-white border-l-4 border-amber-500 border-y border-r border-slate-200/80 text-slate-700 text-sm sm:text-base leading-relaxed shadow-xs">
+            <div class="text-xs font-bold uppercase tracking-wider text-amber-900 mb-2 flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+              Editorial Synopsis &amp; Exploration
+            </div>
+            <p class="italic text-slate-800 font-serif text-base leading-relaxed">
               ${escapeHtml(art.summary)}
             </p>
           </div>
+          ` : archetype === 'breakout-sidebar' ? `
+          <div id="scientific-abstract" class="ux-card p-6 bg-white border border-slate-200/80 shadow-sm">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-2 mb-3">
+              <span class="text-xs font-bold uppercase tracking-wider text-teal-700">Technical Abstract &amp; Experimental Scope</span>
+              <span class="text-[10px] font-mono text-slate-400">STATUS: OPEN SCIENCE</span>
+            </div>
+            <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+              ${escapeHtml(art.summary)}
+            </p>
+          </div>
+          ` : `
+          <div id="scientific-abstract" class="p-6 rounded-2xl bg-indigo-50/40 border border-indigo-200/80 shadow-sm">
+            <div class="text-xs font-bold uppercase tracking-wider text-indigo-900 mb-2 flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-indigo-600"></span>
+              Pedagogical Abstract &amp; Concept Overview
+            </div>
+            <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+              ${escapeHtml(art.summary)}
+            </p>
+          </div>
+          `}
 
-          <!-- Article Main Body (Pre-rendered Static HTML) -->
+          <!-- Article Main Body (Pre-rendered Static HTML with Diversified Layout) -->
           <div id="article-body-content" class="ux-card p-6 sm:p-10 border border-slate-200/80 bg-white text-slate-700 text-sm sm:text-base leading-relaxed space-y-6">
-            ${renderArticleBody(art)}
+            ${injectContextualLinks(renderArticleBody(art, archetype), art.id)}
           </div>
 
-          <!-- Key Verified Findings -->
-          <div class="ux-card p-6 border border-slate-200/80 bg-white space-y-4">
-            <h3 class="font-display font-bold text-lg text-slate-900 flex items-center gap-2">
-              <span class="text-teal-600">✓</span> Key Verified Findings
-            </h3>
-            <ul class="space-y-3 text-xs sm:text-sm text-slate-600">
-              <li class="flex items-start gap-2.5">
-                <span class="text-teal-600 font-semibold mt-0.5">01.</span>
-                <span>Hydrogen kinetic isotope effect (KIE) exceeds 4.7, conclusively establishing quantum tunneling as the rate-limiting step in catalytic bond breakage.</span>
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="text-teal-600 font-semibold mt-0.5">02.</span>
-                <span>Zero-convection microgravity environments increase molecular spin-state coherence lifetimes to 384 picoseconds.</span>
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="text-teal-600 font-semibold mt-0.5">03.</span>
-                <span>Sub-angstrom structural resolution achieved under orbital conditions reveals atomic coordinates masked by terrestrial buoyant convection.</span>
-              </li>
-            </ul>
-          </div>
+          <!-- Dynamic Key Verified Findings (Unique per Article) -->
+          ${generateDynamicFindings(art, archetype)}
 
           <!-- Peer Review & Researcher Discussion Box -->
           <div class="ux-card p-6 sm:p-8 border border-slate-200/80 bg-white space-y-4">
@@ -726,7 +1068,7 @@ ${JSON.stringify(schema, null, 2)}
               <h3 class="font-display font-bold text-base text-slate-900 flex items-center gap-2">
                 <span>💬</span> Peer Review &amp; Academic Commentary
               </h3>
-              <span class="text-[11px] font-medium text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded-full border border-teal-200/60">Verified Scientific Forum</span>
+              <span class="text-[11px] font-medium text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded-full border border-teal-200/60">Verified Educational Forum</span>
             </div>
             <p class="text-xs text-slate-600">
               Have experimental observations or replication data regarding this dispatch? Submit your commentary to our review desk.
@@ -777,22 +1119,79 @@ ${JSON.stringify(schema, null, 2)}
           
           <div class="ux-card p-6 border border-slate-200/80 bg-white space-y-6 sticky top-24">
             
+            ${archetype === 'breakout-sidebar' ? `
+            <!-- Sticky Breakout Takeaways (Layout Archetype B) -->
+            <div class="p-4 rounded-xl bg-teal-50/70 border border-teal-200/90 space-y-2.5">
+              <div class="flex items-center gap-2 text-xs font-bold text-teal-900 uppercase tracking-wider">
+                <span class="w-2 h-2 rounded-full bg-teal-600 animate-pulse"></span>
+                Key Takeaways Breakout
+              </div>
+              <ul class="space-y-2 text-xs text-slate-700">
+                ${(Array.isArray(art.keyTakeaways) && art.keyTakeaways.length > 0 ? art.keyTakeaways : [art.summary]).map(k => `
+                <li class="flex items-start gap-2">
+                  <span class="text-teal-600 font-bold">•</span>
+                  <span>${escapeHtml(k)}</span>
+                </li>`).join('')}
+              </ul>
+            </div>
             <div>
               <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Journal Indexing</div>
               <div class="font-display font-bold text-slate-900 text-base">BioGravity Letters in Microgravity</div>
               <div class="text-xs font-mono text-teal-600 mt-1">ISSN: 2994-0821 (LEO Edition)</div>
             </div>
-
             <div class="grid grid-cols-2 gap-3 pt-4 border-t border-slate-100">
               <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
-                <div class="text-[10px] text-slate-400 font-semibold uppercase">IMPACT METRIC</div>
-                <div class="text-lg font-bold font-display text-slate-900 mt-0.5">${escapeHtml(art.impact || '9.6')}</div>
+                <div class="text-[10px] text-slate-400 font-semibold uppercase">CURRICULUM LEVEL</div>
+                <div class="text-sm font-bold font-display text-slate-900 mt-0.5">Advanced OER</div>
               </div>
               <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
-                <div class="text-[10px] text-slate-400 font-semibold uppercase">ORBITAL G-LEVEL</div>
-                <div class="text-lg font-bold font-display text-teal-600 mt-0.5">&lt; 0.08 &mu;g</div>
+                <div class="text-[10px] text-slate-400 font-semibold uppercase">SIMULATION G</div>
+                <div class="text-sm font-bold font-display text-teal-600 mt-0.5">&lt; 0.08 &mu;g</div>
               </div>
             </div>
+            ` : archetype === 'narrative' ? `
+            <!-- Editorial Reading Dossier (Layout Archetype A) -->
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Educational Archive</div>
+              <div class="font-display font-bold text-slate-900 text-base">BioGravity Science Dispatches</div>
+              <div class="text-xs font-medium text-amber-800 mt-1">Curated Open-Access Series</div>
+            </div>
+            <div class="p-4 rounded-xl bg-amber-50/50 border border-amber-200/70 text-xs text-slate-700 space-y-1.5">
+              <div class="font-bold text-amber-900 text-[11px] uppercase tracking-wide flex items-center gap-1.5">
+                <span>📖</span> Curator's Reading Note
+              </div>
+              <p class="leading-relaxed text-[11px]">
+                This educational monograph explores foundational scientific principles in ${escapeHtml(art.category)}, translating historical discoveries and peer-reviewed literature into structured learning resources.
+              </p>
+            </div>
+            <div class="grid grid-cols-2 gap-3 pt-4 border-t border-slate-100">
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
+                <div class="text-[10px] text-slate-400 font-semibold uppercase">READING LEVEL</div>
+                <div class="text-sm font-bold font-display text-slate-900 mt-0.5">General / Academic</div>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
+                <div class="text-[10px] text-slate-400 font-semibold uppercase">ARCHIVE TYPE</div>
+                <div class="text-sm font-bold font-display text-teal-600 mt-0.5">Science Essay</div>
+              </div>
+            </div>
+            ` : `
+            <!-- Pedagogical Framework (Layout Archetype C) -->
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Curriculum Framework</div>
+              <div class="font-display font-bold text-slate-900 text-base">BioGravity Pedagogical Modules</div>
+              <div class="text-xs font-medium text-indigo-700 mt-1">OER Research Literacy Program</div>
+            </div>
+            <div class="grid grid-cols-2 gap-3 pt-4 border-t border-slate-100">
+              <div class="p-3 rounded-xl bg-indigo-50/50 border border-indigo-200/70">
+                <div class="text-[10px] text-indigo-900 font-semibold uppercase">READING LEVEL</div>
+                <div class="text-sm font-bold font-display text-indigo-950 mt-0.5">Undergraduate</div>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
+                <div class="text-[10px] text-slate-400 font-semibold uppercase">MODULE TYPE</div>
+                <div class="text-sm font-bold font-display text-slate-900 mt-0.5">Deep Dive</div>
+              </div>
+            </div>
+            `}
 
             <!-- Tags -->
             <div class="pt-4 border-t border-slate-100">
@@ -929,7 +1328,7 @@ ${JSON.stringify(schema, null, 2)}
       const btnCopyCite = document.getElementById('btn-copy-cite');
       if (btnCopyCite) {
         btnCopyCite.addEventListener('click', () => {
-          const cite = "${escapeHtml(authorName)} (2026). ${escapeHtml(art.title)}. BioGravity Letters, DOI: ${escapeHtml(doi)}.";
+          const cite = "${escapeHtml(authorName)} (2026). ${escapeHtml(art.title)}. BioGravity Educational Dispatches, Archive Ref: ${escapeHtml(doi)}. Pedagogical exploration under CC BY 4.0.";
           navigator.clipboard.writeText(cite).then(() => alert('Citation copied to clipboard!'));
         });
       }
@@ -965,17 +1364,11 @@ ${JSON.stringify(schema, null, 2)}
   </script>
 </body>
 </html>`;
-
-  // Write file 1: articles/slug.html (for GitHub Pages extensionless fallback / direct request)
-  const filePathHtml = path.join(articlesDir, `${art.id}.html`);
-  fs.writeFileSync(filePathHtml, html, 'utf8');
-
-  // Write file 2: articles/slug/index.html (guarantees clean URL serving on all static web hosts)
   const slugDir = path.join(articlesDir, art.id);
   if (!fs.existsSync(slugDir)) {
     fs.mkdirSync(slugDir, { recursive: true });
   }
-  fs.writeFileSync(path.join(slugDir, 'index.html'), html, 'utf8');
+  safeWriteFileSync(path.join(slugDir, 'index.html'), html);
 
   // Also write full HTML to all aliases / legacy slugs so no crawler or visitor ever gets a blank noindex redirect!
   const aliases = [];
@@ -986,10 +1379,10 @@ ${JSON.stringify(schema, null, 2)}
   }
 
   aliases.forEach(alias => {
-    fs.writeFileSync(path.join(articlesDir, `${alias}.html`), html, 'utf8');
+    safeWriteFileSync(path.join(articlesDir, `${alias}.html`), html);
     const legacyDir = path.join(articlesDir, alias);
     if (!fs.existsSync(legacyDir)) fs.mkdirSync(legacyDir, { recursive: true });
-    fs.writeFileSync(path.join(legacyDir, 'index.html'), html, 'utf8');
+    safeWriteFileSync(path.join(legacyDir, 'index.html'), html);
   });
 
   console.log(`[BUILD-SEO] ✅ Generated clean static page: articles/${art.id} (/articles/${art.id}/)`);
@@ -1059,6 +1452,14 @@ if (fs.existsSync(researchPath)) {
   researchHtml = researchHtml.replace(/href="css\/styles\.css"/g, 'href="/css/styles.css?v=2.1"');
   researchHtml = researchHtml.replace(/href="logo\.png"/g, 'href="/logo.png"');
   researchHtml = researchHtml.replace(/href="articles\/\$\{encodeURIComponent\(article\.id\)\}\.html"/g, 'href="/articles/${encodeURIComponent(article.id)}"');
+
+  // Add Core Web Vitals Resource Hints
+  if (!researchHtml.includes('rel="preconnect" href="https://images.unsplash.com"')) {
+    researchHtml = researchHtml.replace(
+      '<head>',
+      `<head>\n  <!-- Resource Hints for High Speed & Core Web Vitals (LCP) -->\n  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>\n  <link rel="dns-prefetch" href="https://images.unsplash.com">\n  <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>\n  <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">`
+    );
+  }
 
   // Ensure clean URL script is in <head>
   if (!researchHtml.includes("window.location.pathname.endsWith('.html')")) {
@@ -1136,6 +1537,14 @@ corePages.forEach(p => {
       content = content.replace(
         '<a href="/research"',
         `<a href="/news" class="flex items-center gap-1.5 text-rose-600 font-semibold hover:text-rose-700 transition"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-rose-500"></span></span>Live News</a>\n          <a href="/research"`
+      );
+    }
+
+    // Add Core Web Vitals Resource Hints if missing
+    if (!content.includes('rel="preconnect" href="https://images.unsplash.com"')) {
+      content = content.replace(
+        '<head>',
+        `<head>\n  <!-- Resource Hints for High Speed & Core Web Vitals (LCP) -->\n  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>\n  <link rel="dns-prefetch" href="https://images.unsplash.com">\n  <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>\n  <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">`
       );
     }
 
@@ -1363,6 +1772,14 @@ if (fs.existsSync(indexPath)) {
         `${liveNewsSectionHtml.trim()}\n\n    $1`
       );
     }
+  }
+
+  // Add Core Web Vitals Resource Hints
+  if (!indexHtml.includes('rel="preconnect" href="https://images.unsplash.com"')) {
+    indexHtml = indexHtml.replace(
+      '<head>',
+      `<head>\n  <!-- Resource Hints for High Speed & Core Web Vitals (LCP) -->\n  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>\n  <link rel="dns-prefetch" href="https://images.unsplash.com">\n  <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>\n  <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">`
+    );
   }
 
   // Ensure clean URL script in <head>

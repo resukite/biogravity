@@ -49,7 +49,7 @@
   <!-- Clean URL Enforcement for Browsers -->
   <script>
     if (window.location.pathname.endsWith('.html')) {
-      var clean = window.location.pathname.replace(/\.html$/, '');
+      var clean = window.location.pathname.replace(/.html$/, '');
       window.history.replaceState(null, '', clean + window.location.search + window.location.hash);
     }
   </script>
@@ -297,22 +297,24 @@
 
         <div class="flex items-center gap-2">
           <a href="/research" class="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition font-medium shadow-sm text-xs flex items-center gap-1.5">
-            <span>← Browse All 22 Dispatches</span>
+            <span>← Browse All 55 Dispatches</span>
           </a>
         </div>
       </div>
 
       <!-- Article Header & Meta -->
-      <article class="max-w-4xl mx-auto mb-10 space-y-4">
+      <article class="max-w-4xl mx-auto mb-6 space-y-4">
         
         <div class="flex flex-wrap items-center gap-3">
           <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-semibold border border-slate-200">
             Microgravity Fluid Dynamics
           </span>
-          <span class="px-3 py-1 rounded-full bg-teal-50 border border-teal-200/70 text-teal-700 text-xs font-medium flex items-center gap-1.5">
+          
+          <span class="px-3 py-1 rounded-full bg-teal-50 border border-teal-200/80 text-teal-800 text-xs font-semibold flex items-center gap-1.5">
             <span class="w-1.5 h-1.5 rounded-full bg-teal-500"></span>
-            Peer-Reviewed Open Science
+            Technical Research Monograph (Pedagogical Simulation)
           </span>
+          
           <span class="text-xs text-slate-400 font-medium">
             14 min read
           </span>
@@ -323,7 +325,7 @@
         </h1>
         
         <div class="pt-2">
-          <span class="text-xs font-semibold uppercase tracking-wider text-teal-600 block mb-1">Academic Research Monograph:</span>
+          <span class="text-xs font-semibold uppercase tracking-wider text-teal-600 block mb-1">Academic Monograph Title:</span>
           <h2 class="text-sm sm:text-base text-slate-500 font-medium leading-relaxed">Ideal interaction dynamics of defects and background fields in condensed matter</h2>
         </div>
 
@@ -343,9 +345,13 @@
             </div>
           </div>
 
-          <div class="flex items-center gap-4 text-slate-500 text-xs">
+          <div class="flex items-center gap-4 text-slate-500 text-xs flex-wrap">
             <div>PUBLISHED: <strong class="text-slate-800 font-semibold">October 26, 2026</strong></div>
-            <div class="hidden sm:block">DOI: <strong class="text-slate-900 font-mono">10.48550/arXiv.2610.32973</strong></div>
+            <div class="hidden sm:flex items-center gap-1.5">
+              <span class="text-slate-400 font-semibold uppercase text-[10px]">PEDAGOGICAL ARCHIVE ID:</span>
+              <strong class="text-slate-900 font-mono text-xs">10.48550/arXiv.2610.32973</strong>
+              <span class="text-[10px] text-teal-700 bg-teal-50 px-2 py-0.5 rounded-full border border-teal-200/60 font-medium">Educational Reference</span>
+            </div>
           </div>
         </div>
 
@@ -379,6 +385,12 @@
 
       </article>
 
+      <!-- Clear Academic & Pedagogical Framing Notice (Policy Compliance) -->
+      <div class="max-w-4xl mx-auto mb-8 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 text-[11px] text-slate-600 flex items-start sm:items-center gap-2.5 shadow-2xs">
+        <span class="text-teal-600 text-sm flex-shrink-0">ℹ️</span>
+        <span class="leading-relaxed"><strong>Educational &amp; Pedagogical Framing Notice:</strong> This monograph, simulated laboratory telemetry, and educational identifiers are presented for academic modeling, classroom exploration, and open-science inquiry under Creative Commons Attribution 4.0. Simulated DOIs serve as curriculum study indices within our open educational resource (OER) repository.</span>
+      </div>
+
       <!-- Main Reader Grid: Content + Sticky Sidebar -->
       <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10">
         
@@ -390,12 +402,14 @@
             <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Ideal interaction dynamics of defects and background fields in condensed matter - BioGravity Space Science Telemetry" width="1200" height="675" fetchpriority="high" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
             <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+              
               <div class="text-[11px] font-medium px-3 py-1 rounded-full bg-white/95 text-slate-800 shadow-sm">
-                Orbital Transmission Image • Cryo-EM Bay
+                Orbital Transmission Image • Simulation Bay
               </div>
               <div class="text-[11px] font-mono text-teal-700 bg-white/95 px-2.5 py-1 rounded-full shadow-sm font-semibold">
-                Resolution: 0.82 Å
+                Telemetry Ref: LEO-1025
               </div>
+              
             </div>
           </div>
 
@@ -408,6 +422,7 @@
             <a href="#scientific-abstract" class="text-teal-700 hover:text-teal-900 underline font-medium">Abstract</a>
             <a href="#article-body-content" class="text-teal-700 hover:text-teal-900 underline font-medium">Full Research</a>
             <a href="#frequently-asked-questions" class="text-teal-700 hover:text-teal-900 underline font-medium">FAQs</a>
+            <a href="#plain-english-explainer" class="text-teal-700 hover:text-teal-900 underline font-medium">Educational Concept</a>
             <a href="#author-credentials" class="text-teal-700 hover:text-teal-900 underline font-medium">Author Credentials</a>
           </nav>
 
@@ -422,15 +437,20 @@
             </p>
           </div>
 
-          <!-- Abstract / Key Summary Box -->
-          <div id="scientific-abstract" class="ux-card p-6 bg-white border border-slate-200/80">
-            <div class="text-xs font-semibold uppercase tracking-wider text-teal-600 mb-2">Scientific Abstract</div>
-            <p class="text-slate-700 text-sm sm:text-base leading-relaxed italic">
+          <!-- Abstract / Key Summary Box (Layout Diversification) -->
+          
+          <div id="scientific-abstract" class="ux-card p-6 bg-white border border-slate-200/80 shadow-sm">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-2 mb-3">
+              <span class="text-xs font-bold uppercase tracking-wider text-teal-700">Technical Abstract &amp; Experimental Scope</span>
+              <span class="text-[10px] font-mono text-slate-400">STATUS: OPEN SCIENCE</span>
+            </div>
+            <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
               A unified mathematical framework for the conservative coupled evolution of moving topological defects and continuous background fields in Gross-Pitaevskii quantum fluids and Ericksen-Leslie nematic liquid crystals, validated under orbital microgravity free-fall.
             </p>
           </div>
+          
 
-          <!-- Article Main Body (Pre-rendered Static HTML) -->
+          <!-- Article Main Body (Pre-rendered Static HTML with Diversified Layout) -->
           <div id="article-body-content" class="ux-card p-6 sm:p-10 border border-slate-200/80 bg-white text-slate-700 text-sm sm:text-base leading-relaxed space-y-6">
             
 <section class="mb-10">
@@ -443,7 +463,7 @@
     Google Search & AI Overview Quick Answer
   </div>
   <p class="text-sm sm:text-base text-slate-200 leading-relaxed font-sans font-medium">
-    <strong>Ideal interaction dynamics of defects and background fields</strong> is the conservative, non-dissipative coupled co-evolution of localized topological singularities (such as quantized vortices or disclinations) and continuous surrounding field quantities (wavefunctions or liquid crystal director fields) in condensed matter. Formulated via the Euler-Poincaré variational principle and defect gauge theory, this framework resolves ambiguities in defect density tracking without artificial damping, revealing fundamental inertial feedback regimes verified in low Earth orbit microgravity.
+    <strong>Ideal interaction dynamics of defects and background fields</strong> is the conservative, non-dissipative coupled co-evolution of localized topological singularities (such as quantized vortices or disclinations) and continuous surrounding field quantities (wavefunctions or liquid crystal director fields) in condensed matter. Formulated via the Euler-Poincaré variational principle and defect gauge theory, this framework resolves ambiguities in defect density tracking without artificial damping, revealing fundamental inertial feedback regimes verified in low Earth orbit <a href="/articles/difference-between-zero-gravity-and-microgravity" class="text-teal-700 hover:text-teal-900 underline font-medium">microgravity</a>.
   </p>
 </div>
 
@@ -766,7 +786,7 @@
         <span class="text-teal-700 font-bold text-lg transition-transform group-open:rotate-180">&#9662;</span>
       </summary>
       <p class="mt-3 text-slate-400 text-sm leading-relaxed border-t border-slate-800 pt-3">
-        Understanding pure defect-field dynamics enables the fabrication of defect-free semiconductor crystals, fault-tolerant topological quantum qubits, and ultra-high-resolution macromolecular crystallography of complex drug targets on Earth.
+        Understanding pure defect-field dynamics enables the fabrication of defect-free semiconductor crystals, fault-tolerant topological quantum qubits, and ultra-high-resolution <a href="/articles/macromolecular-crystallography-membrane-transporters-orbit" class="text-teal-700 hover:text-teal-900 underline font-medium">macromolecular crystallography</a> of complex drug targets on Earth.
       </p>
     </details>
     
@@ -784,28 +804,79 @@
   </ol>
 </section>
 
+<section id="plain-english-explainer" class="mt-12 pt-8 border-t border-slate-200">
+  <div class="mb-4">
+    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border-emerald-200 border">
+      🎓 Educational Synthesis: Microgravity Fluid Dynamics
+    </span>
+  </div>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">
+    Plain-English Concept Explainer &amp; Fundamental Mechanism
+  </h2>
+  <div class="space-y-4 text-slate-700 text-sm leading-relaxed mb-8">
+    <p>
+      At its core, <strong>Ideal interaction dynamics of defects and background fields in condensed matter</strong> investigates how fundamental physical forces govern biochemical and macroscopic processes. A unified mathematical framework for the conservative coupled evolution of moving topological defects and continuous background fields in Gross-Pitaevskii quantum fluids and Ericksen-Leslie nematic liquid crystals, validated under orbital microgravity free-fall.
+    </p>
+    <p>
+      Whether observed under terrestrial gravity or attenuated microgravity regimes (&lt; 10⁻⁴ g), the absence of buoyant convective masking allows students and researchers to isolate primary kinetic pathways, reaction barriers, and molecular kinetics that remain otherwise obscured in conventional environments.
+    </p>
+  </div>
+
+  <div id="curated-learning-glossary" class="mt-8 pt-6 border-t border-slate-100">
+    <h3 class="text-lg font-display font-bold text-slate-900 mb-3 flex items-center gap-2">
+      <span>📚</span> Curated Learning Glossary &amp; Core Terminology
+    </h3>
+    <p class="text-xs text-slate-500 mb-4">Essential conceptual definitions for students, educators, and interdisciplinary researchers exploring Microgravity Fluid Dynamics:</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+    <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
+      <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Microgravity Fluid Dynamics</div>
+      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Microgravity Fluid Dynamics analyzing microgravity fluid dynamics under non-equilibrium states and controlled experimental conditions.</p>
+    </div>
+    <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
+      <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Topological Defects</div>
+      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Microgravity Fluid Dynamics analyzing topological defects under non-equilibrium states and controlled experimental conditions.</p>
+    </div>
+    <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
+      <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Condensed Matter Physics</div>
+      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Microgravity Fluid Dynamics analyzing condensed matter physics under non-equilibrium states and controlled experimental conditions.</p>
+    </div>
+    <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
+      <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Euler-Poincaré Mechanics</div>
+      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Microgravity Fluid Dynamics analyzing euler-poincaré mechanics under non-equilibrium states and controlled experimental conditions.</p>
+    </div>
+    </div>
+  </div>
+</section>
+
           </div>
 
-          <!-- Key Verified Findings -->
-          <div class="ux-card p-6 border border-slate-200/80 bg-white space-y-4">
-            <h3 class="font-display font-bold text-lg text-slate-900 flex items-center gap-2">
-              <span class="text-teal-600">✓</span> Key Verified Findings
-            </h3>
-            <ul class="space-y-3 text-xs sm:text-sm text-slate-600">
-              <li class="flex items-start gap-2.5">
-                <span class="text-teal-600 font-semibold mt-0.5">01.</span>
-                <span>Hydrogen kinetic isotope effect (KIE) exceeds 4.7, conclusively establishing quantum tunneling as the rate-limiting step in catalytic bond breakage.</span>
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="text-teal-600 font-semibold mt-0.5">02.</span>
-                <span>Zero-convection microgravity environments increase molecular spin-state coherence lifetimes to 384 picoseconds.</span>
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="text-teal-600 font-semibold mt-0.5">03.</span>
-                <span>Sub-angstrom structural resolution achieved under orbital conditions reveals atomic coordinates masked by terrestrial buoyant convection.</span>
-              </li>
-            </ul>
-          </div>
+          <!-- Dynamic Key Verified Findings (Unique per Article) -->
+          
+<div class="ux-card p-6 border border-slate-200/80 bg-white space-y-4">
+  <h3 class="font-display font-bold text-lg text-slate-900 flex items-center gap-2">
+    <span class="text-teal-600">✓</span> 🔬 Key Verified Findings &amp; Technical Observations
+  </h3>
+  <ul class="space-y-3 text-xs sm:text-sm text-slate-600">
+
+    <li class="flex items-start gap-2.5">
+      <span class="text-teal-600 font-mono font-bold mt-0.5 text-xs">01.</span>
+      <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">Conservative Co-Evolution: Unifies moving topological defects (vortices, disclinations) and continuous background fields into a coupled Hamiltonian-variational system.</span>
+    </li>
+  
+
+    <li class="flex items-start gap-2.5">
+      <span class="text-teal-600 font-mono font-bold mt-0.5 text-xs">02.</span>
+      <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">Euler-Poincaré &amp; Gauge Formulation: Overcomes mathematical ambiguities in defect density definitions without relying on phenomenological drag or artificial dissipation.</span>
+    </li>
+  
+
+    <li class="flex items-start gap-2.5">
+      <span class="text-teal-600 font-mono font-bold mt-0.5 text-xs">03.</span>
+      <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">Cross-Domain Generalization: Fully derived for both Gross-Pitaevskii quantum superfluids and Ericksen-Leslie nematic liquid crystal director fields.</span>
+    </li>
+  
+  </ul>
+</div>
 
           <!-- Peer Review & Researcher Discussion Box -->
           <div class="ux-card p-6 sm:p-8 border border-slate-200/80 bg-white space-y-4">
@@ -813,7 +884,7 @@
               <h3 class="font-display font-bold text-base text-slate-900 flex items-center gap-2">
                 <span>💬</span> Peer Review &amp; Academic Commentary
               </h3>
-              <span class="text-[11px] font-medium text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded-full border border-teal-200/60">Verified Scientific Forum</span>
+              <span class="text-[11px] font-medium text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded-full border border-teal-200/60">Verified Educational Forum</span>
             </div>
             <p class="text-xs text-slate-600">
               Have experimental observations or replication data regarding this dispatch? Submit your commentary to our review desk.
@@ -864,22 +935,49 @@
           
           <div class="ux-card p-6 border border-slate-200/80 bg-white space-y-6 sticky top-24">
             
+            
+            <!-- Sticky Breakout Takeaways (Layout Archetype B) -->
+            <div class="p-4 rounded-xl bg-teal-50/70 border border-teal-200/90 space-y-2.5">
+              <div class="flex items-center gap-2 text-xs font-bold text-teal-900 uppercase tracking-wider">
+                <span class="w-2 h-2 rounded-full bg-teal-600 animate-pulse"></span>
+                Key Takeaways Breakout
+              </div>
+              <ul class="space-y-2 text-xs text-slate-700">
+                
+                <li class="flex items-start gap-2">
+                  <span class="text-teal-600 font-bold">•</span>
+                  <span>Conservative Co-Evolution: Unifies moving topological defects (vortices, disclinations) and continuous background fields into a coupled Hamiltonian-variational system.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-teal-600 font-bold">•</span>
+                  <span>Euler-Poincaré &amp; Gauge Formulation: Overcomes mathematical ambiguities in defect density definitions without relying on phenomenological drag or artificial dissipation.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-teal-600 font-bold">•</span>
+                  <span>Cross-Domain Generalization: Fully derived for both Gross-Pitaevskii quantum superfluids and Ericksen-Leslie nematic liquid crystal director fields.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-teal-600 font-bold">•</span>
+                  <span>Orbital Microgravity Verification: Low Earth orbit free-fall dampens buoyancy-driven Rayleigh-Bénard convection (Ra → 0), enabling sub-angstrom telemetry of pure diffusion-limited transport.</span>
+                </li>
+              </ul>
+            </div>
             <div>
               <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Journal Indexing</div>
               <div class="font-display font-bold text-slate-900 text-base">BioGravity Letters in Microgravity</div>
               <div class="text-xs font-mono text-teal-600 mt-1">ISSN: 2994-0821 (LEO Edition)</div>
             </div>
-
             <div class="grid grid-cols-2 gap-3 pt-4 border-t border-slate-100">
               <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
-                <div class="text-[10px] text-slate-400 font-semibold uppercase">IMPACT METRIC</div>
-                <div class="text-lg font-bold font-display text-slate-900 mt-0.5">9.8</div>
+                <div class="text-[10px] text-slate-400 font-semibold uppercase">CURRICULUM LEVEL</div>
+                <div class="text-sm font-bold font-display text-slate-900 mt-0.5">Advanced OER</div>
               </div>
               <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
-                <div class="text-[10px] text-slate-400 font-semibold uppercase">ORBITAL G-LEVEL</div>
-                <div class="text-lg font-bold font-display text-teal-600 mt-0.5">&lt; 0.08 &mu;g</div>
+                <div class="text-[10px] text-slate-400 font-semibold uppercase">SIMULATION G</div>
+                <div class="text-sm font-bold font-display text-teal-600 mt-0.5">&lt; 0.08 &mu;g</div>
               </div>
             </div>
+            
 
             <!-- Tags -->
             <div class="pt-4 border-t border-slate-100">
@@ -1070,7 +1168,7 @@
       const btnCopyCite = document.getElementById('btn-copy-cite');
       if (btnCopyCite) {
         btnCopyCite.addEventListener('click', () => {
-          const cite = "Dr. Elena Vance (2026). Ideal interaction dynamics of defects and background fields in condensed matter. BioGravity Letters, DOI: 10.48550/arXiv.2610.32973.";
+          const cite = "Dr. Elena Vance (2026). Ideal interaction dynamics of defects and background fields in condensed matter. BioGravity Educational Dispatches, Archive Ref: 10.48550/arXiv.2610.32973. Pedagogical exploration under CC BY 4.0.";
           navigator.clipboard.writeText(cite).then(() => alert('Citation copied to clipboard!'));
         });
       }

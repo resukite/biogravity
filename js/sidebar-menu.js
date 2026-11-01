@@ -166,7 +166,7 @@
             <span>Support BioGravity on Buy Me a Coffee</span>
           </a>
           <div class="flex items-center justify-between text-xs text-slate-500 pt-1">
-            <span>&copy; 2026 BioGravity Institute</span>
+            <span>&copy; 2026 BioGravity Educational Platform</span>
             <span class="text-teal-600 font-medium">Open-Access Science</span>
           </div>
         </div>

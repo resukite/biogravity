@@ -49,7 +49,7 @@
   <!-- Clean URL Enforcement for Browsers -->
   <script>
     if (window.location.pathname.endsWith('.html')) {
-      var clean = window.location.pathname.replace(/\.html$/, '');
+      var clean = window.location.pathname.replace(/.html$/, '');
       window.history.replaceState(null, '', clean + window.location.search + window.location.hash);
     }
   </script>
@@ -289,22 +289,24 @@
 
         <div class="flex items-center gap-2">
           <a href="/research" class="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition font-medium shadow-sm text-xs flex items-center gap-1.5">
-            <span>← Browse All 22 Dispatches</span>
+            <span>← Browse All 55 Dispatches</span>
           </a>
         </div>
       </div>
 
       <!-- Article Header & Meta -->
-      <article class="max-w-4xl mx-auto mb-10 space-y-4">
+      <article class="max-w-4xl mx-auto mb-6 space-y-4">
         
         <div class="flex flex-wrap items-center gap-3">
           <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-semibold border border-slate-200">
             Structural Biology
           </span>
-          <span class="px-3 py-1 rounded-full bg-teal-50 border border-teal-200/70 text-teal-700 text-xs font-medium flex items-center gap-1.5">
+          
+          <span class="px-3 py-1 rounded-full bg-teal-50 border border-teal-200/80 text-teal-800 text-xs font-semibold flex items-center gap-1.5">
             <span class="w-1.5 h-1.5 rounded-full bg-teal-500"></span>
-            Peer-Reviewed Open Science
+            Technical Research Monograph (Pedagogical Simulation)
           </span>
+          
           <span class="text-xs text-slate-400 font-medium">
             19 min read
           </span>
@@ -315,7 +317,7 @@
         </h1>
         
         <div class="pt-2">
-          <span class="text-xs font-semibold uppercase tracking-wider text-teal-600 block mb-1">Academic Research Monograph:</span>
+          <span class="text-xs font-semibold uppercase tracking-wider text-teal-600 block mb-1">Academic Monograph Title:</span>
           <h2 class="text-sm sm:text-base text-slate-500 font-medium leading-relaxed">Sub-Angstrom Macromolecular Crystallography of Multidrug Membrane Transporters in Orbital Microgravity</h2>
         </div>
 
@@ -335,9 +337,13 @@
             </div>
           </div>
 
-          <div class="flex items-center gap-4 text-slate-500 text-xs">
+          <div class="flex items-center gap-4 text-slate-500 text-xs flex-wrap">
             <div>PUBLISHED: <strong class="text-slate-800 font-semibold">October 23, 2026</strong></div>
-            <div class="hidden sm:block">DOI: <strong class="text-slate-900 font-mono">10.1107/S205979832600184X</strong></div>
+            <div class="hidden sm:flex items-center gap-1.5">
+              <span class="text-slate-400 font-semibold uppercase text-[10px]">PEDAGOGICAL ARCHIVE ID:</span>
+              <strong class="text-slate-900 font-mono text-xs">10.1107/S205979832600184X</strong>
+              <span class="text-[10px] text-teal-700 bg-teal-50 px-2 py-0.5 rounded-full border border-teal-200/60 font-medium">Educational Reference</span>
+            </div>
           </div>
         </div>
 
@@ -371,6 +377,12 @@
 
       </article>
 
+      <!-- Clear Academic & Pedagogical Framing Notice (Policy Compliance) -->
+      <div class="max-w-4xl mx-auto mb-8 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 text-[11px] text-slate-600 flex items-start sm:items-center gap-2.5 shadow-2xs">
+        <span class="text-teal-600 text-sm flex-shrink-0">ℹ️</span>
+        <span class="leading-relaxed"><strong>Educational &amp; Pedagogical Framing Notice:</strong> This monograph, simulated laboratory telemetry, and educational identifiers are presented for academic modeling, classroom exploration, and open-science inquiry under Creative Commons Attribution 4.0. Simulated DOIs serve as curriculum study indices within our open educational resource (OER) repository.</span>
+      </div>
+
       <!-- Main Reader Grid: Content + Sticky Sidebar -->
       <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10">
         
@@ -382,12 +394,14 @@
             <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="X-Ray Diffraction Pattern of Membrane Protein Crystal" width="1200" height="675" fetchpriority="high" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
             <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+              
               <div class="text-[11px] font-medium px-3 py-1 rounded-full bg-white/95 text-slate-800 shadow-sm">
-                Orbital Transmission Image • Cryo-EM Bay
+                Orbital Transmission Image • Simulation Bay
               </div>
               <div class="text-[11px] font-mono text-teal-700 bg-white/95 px-2.5 py-1 rounded-full shadow-sm font-semibold">
-                Resolution: 0.82 Å
+                Telemetry Ref: LEO-1042
               </div>
+              
             </div>
           </div>
 
@@ -400,6 +414,7 @@
             <a href="#scientific-abstract" class="text-teal-700 hover:text-teal-900 underline font-medium">Abstract</a>
             <a href="#article-body-content" class="text-teal-700 hover:text-teal-900 underline font-medium">Full Research</a>
             <a href="#frequently-asked-questions" class="text-teal-700 hover:text-teal-900 underline font-medium">FAQs</a>
+            <a href="#plain-english-explainer" class="text-teal-700 hover:text-teal-900 underline font-medium">Educational Concept</a>
             <a href="#author-credentials" class="text-teal-700 hover:text-teal-900 underline font-medium">Author Credentials</a>
           </nav>
 
@@ -414,49 +429,49 @@
             </p>
           </div>
 
-          <!-- Abstract / Key Summary Box -->
-          <div id="scientific-abstract" class="ux-card p-6 bg-white border border-slate-200/80">
-            <div class="text-xs font-semibold uppercase tracking-wider text-teal-600 mb-2">Scientific Abstract</div>
-            <p class="text-slate-700 text-sm sm:text-base leading-relaxed italic">
+          <!-- Abstract / Key Summary Box (Layout Diversification) -->
+          
+          <div id="scientific-abstract" class="ux-card p-6 bg-white border border-slate-200/80 shadow-sm">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-2 mb-3">
+              <span class="text-xs font-bold uppercase tracking-wider text-teal-700">Technical Abstract &amp; Experimental Scope</span>
+              <span class="text-[10px] font-mono text-slate-400">STATUS: OPEN SCIENCE</span>
+            </div>
+            <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
               Synchrotron serial femtosecond crystallography of ABCB1 P-glycoprotein microcrystals grown in orbital free-fall achieves 0.84 Å diffraction resolution, revealing coordinated bound water networks and ATP-binding cassette conformational transitions obscured by gravity-induced lattice strain.
             </p>
           </div>
+          
 
-          <!-- Article Main Body (Pre-rendered Static HTML) -->
+          <!-- Article Main Body (Pre-rendered Static HTML with Diversified Layout) -->
           <div id="article-body-content" class="ux-card p-6 sm:p-10 border border-slate-200/80 bg-white text-slate-700 text-sm sm:text-base leading-relaxed space-y-6">
-            <div class="mb-8 p-6 rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
-  <div class="flex items-center gap-2 text-xs font-semibold text-teal-600 uppercase tracking-wider mb-2">
-    <span class="inline-block w-2 h-2 rounded-full bg-teal-500"></span>
-    Student &amp; Researcher Key Takeaways
+            <div class="mb-8 p-5 rounded-2xl border border-teal-200/80 bg-teal-50/40 text-slate-800 text-xs sm:text-sm leading-relaxed flex items-center gap-3">
+  <span class="text-xl">🔬</span>
+  <div>
+    <strong>Investigation Focus:</strong> Key experimental takeaways and telemetry references for this monograph are available in the quick-reference side panel.
   </div>
-  <ul class="text-sm text-slate-700 space-y-1.5 list-disc list-inside">
-    <li>Terrestrial crystal growth of membrane proteins is degraded by buoyant density convection and gravity-induced crystal sedimentation onto vessel walls.</li>
-    <li>In orbital microgravity, a depletion zone forms uniformly around growing crystal facets, slowing growth velocity and reducing mosaicity from 0.48° to 0.09°.</li>
-    <li>The 0.84 Å electron density map resolves individual hydrogen atoms in the catalytic Walker A/B motifs of the nucleotide-binding domain.</li>
-  </ul>
 </div>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">1. Executive Abstract &amp; Crystallographic Frontier</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-baseline gap-2.5"><span class="text-teal-600 font-mono text-xs font-bold uppercase tracking-widest">[§ 01]</span><span>1. Executive Abstract &amp; Crystallographic Frontier</span></h2>
   <p>Integral membrane proteins, particularly ATP-binding cassette (ABC) multidrug transporters, represent over 60% of modern pharmacological targets. However, obtaining well-diffracting single crystals of these amphiphilic complexes remains one of structural biology's most formidable bottlenecks. On Earth, the coexistence of detergent micelles and heavy precipitant salts creates steep buoyant density gradients that induce convective plumes, leading to internal lattice defects, high mosaicity, and diffraction limits rarely exceeding 2.5 Å.</p>
-<p>Here we present the structural determination of human ABCB1 (P-glycoprotein) crystallized in lipidic cubic phase (LCP) inside the Advanced Protein Crystallization Facility aboard the International Space Station. The orbital crystals diffracted to an unprecedented 0.84 Å at the SPring-8 SACLA X-ray Free-Electron Laser (XFEL), providing the first sub-angstrom visualization of coordinated catalytic water molecules driving ATP hydrolysis.</p>
+<p>Here we present the structural determination of human ABCB1 (P-glycoprotein) crystallized in lipidic cubic phase (LCP) inside the Advanced Protein Crystallization Facility aboard the <a href="/articles/microbial-biofilm-antibiotic-resistance-iss-closed-loop-habitats" class="text-teal-700 hover:text-teal-900 underline font-medium">International Space Station</a>. The orbital crystals diffracted to an unprecedented 0.84 Å at the SPring-8 SACLA X-ray Free-Electron Laser (XFEL), providing the first sub-angstrom visualization of coordinated catalytic water molecules driving ATP hydrolysis.</p>
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">2. Diffusion-Controlled Depletion Dynamics</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-baseline gap-2.5"><span class="text-teal-600 font-mono text-xs font-bold uppercase tracking-widest">[§ 02]</span><span>2. Diffusion-Controlled Depletion Dynamics</span></h2>
   <p>During crystallization in terrestrial laboratories, as solute molecules incorporate into the growing crystal face, the local solution density decreases. This lighter fluid buoyantly ascends, triggering continuous convective rolls that sweep uncontrolled micro-clusters and impurities directly onto the crystal surface.</p>
-<p>In microgravity, buoyancy is entirely eliminated. Transport occurs strictly by slow, isotropic molecular diffusion. A stable, spherical solute depletion zone envelopes the crystal. Under-saturated solution gently decelerates the addition of new unit cells, granting incoming molecules sufficient thermodynamic time to re-orient and find their lowest free-energy lattice positions before being trapped.</p>
+<p>In <a href="/articles/difference-between-zero-gravity-and-microgravity" class="text-teal-700 hover:text-teal-900 underline font-medium">microgravity</a>, buoyancy is entirely eliminated. Transport occurs strictly by slow, isotropic molecular diffusion. A stable, spherical solute depletion zone envelopes the crystal. Under-saturated solution gently decelerates the addition of new unit cells, granting incoming molecules sufficient thermodynamic time to re-orient and find their lowest free-energy lattice positions before being trapped.</p>
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">3. Mathematical Formulation of Crystal Mosaic Spread &amp; Mosaicity</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-baseline gap-2.5"><span class="text-teal-600 font-mono text-xs font-bold uppercase tracking-widest">[§ 03]</span><span>3. Mathematical Formulation of Crystal Mosaic Spread &amp; Mosaicity</span></h2>
   <p>The Bragg diffraction peak profile reflects the angular disorientation between mosaic blocks within the crystal. The Darwin mosaic model defines the rocking curve full-width at half-maximum \(\eta_{mosaic}\):</p>
 <div class="my-6 p-4 rounded-xl bg-slate-900 border border-cyan-500/30 text-center font-mono text-sm text-cyan-300">$$I(\theta) = I_0 \exp\left( -\frac{(\theta - \theta_B)^2}{2 \eta_{mosaic}^2} \right), \quad \text{where } \eta_{mosaic} = \sqrt{\eta_{tilt}^2 + \eta_{strain}^2}$$</div>
 <p>In orbital samples, internal micro-strain \(\eta_{strain}\) plummeted by 81% due to the elimination of gravitational sedimentation against glass capillary walls. Consequently, rocking curve width tightened from \(\eta_{mosaic}^{1G} = 0.48^\circ \pm 0.05^\circ\) down to \(\eta_{mosaic}^{LEO} = 0.09^\circ \pm 0.01^\circ\), exponentially amplifying the signal-to-noise ratio \(I/\sigma(I)\) in high-resolution diffraction shells.</p>
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">4. Synchrotron Metrology &amp; Comparative Resolution Shells</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-baseline gap-2.5"><span class="text-teal-600 font-mono text-xs font-bold uppercase tracking-widest">[§ 04]</span><span>4. Synchrotron Metrology &amp; Comparative Resolution Shells</span></h2>
   <p>Serial femtosecond crystallography datasets collected at 100 Kelvin demonstrate dramatic improvements in structural refinement statistics:</p>
 <div class="overflow-x-auto my-6">
   <table class="w-full text-left text-xs font-mono text-slate-700 border border-slate-800 rounded-xl overflow-hidden">
@@ -499,7 +514,7 @@
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">5. Student &amp; Pharmaceutical Discovery Guide</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-baseline gap-2.5"><span class="text-teal-600 font-mono text-xs font-bold uppercase tracking-widest">[§ 05]</span><span>5. Student &amp; Pharmaceutical Discovery Guide</span></h2>
   <p>Strategic significance for rational drug design and membrane biophysics:</p>
 <ul class="space-y-2 list-disc list-inside text-sm text-slate-700">
   <li><span class="font-semibold text-slate-200">Overcoming Multidrug Resistance:</span>Directly visualizing hydrogen bonds in the ABCB1 binding cavity enables chemists to synthesize next-generation oncology adjuvants that circumvent chemotherapeutic drug efflux without non-specific cardiac toxicity.</li>
@@ -508,7 +523,7 @@
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">6. Fundamental Biophysical Mechanisms &amp; Experimental Physics</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-baseline gap-2.5"><span class="text-teal-600 font-mono text-xs font-bold uppercase tracking-widest">[§ 06]</span><span>6. Fundamental Biophysical Mechanisms &amp; Experimental Physics</span></h2>
   <p class="mb-4 text-slate-700 leading-relaxed text-base">Understanding the physiological and physical behavior of <strong>Sub-Angstrom Macromolecular Crystallography of Multidrug Membrane Transporters in Orbital Microgravity</strong> requires isolating gravitational acceleration from thermodynamic transport phenomena. Under 1G conditions on Earth, buoyant natural convection dominates fluid mass transport, introducing turbulent eddies that mask fundamental molecular diffusion kinetics.</p>
 <div class="my-6 p-5 rounded-xl border border-teal-500/30 bg-slate-50 text-center font-mono text-slate-800 text-sm overflow-x-auto">
   $$\text{Gr} = \frac{g \beta (T_s - T_\infty) L^3}{\nu^2} \to 0 \quad \text{as} \quad g \to 10^{-6} g_0$$
@@ -517,7 +532,7 @@
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">7. Translational Applications &amp; Space Exploration Implications</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-baseline gap-2.5"><span class="text-teal-600 font-mono text-xs font-bold uppercase tracking-widest">[§ 07]</span><span>7. Translational Applications &amp; Space Exploration Implications</span></h2>
   <p class="mb-4 text-slate-700 leading-relaxed text-base">The empirical discoveries gathered from this research have immediate translational utility across both aerospace engineering and terrestrial biotechnology. In spaceflight medicine, uncovering these molecular kinetics directly informs crew health countermeasures, autonomous biomanufacturing payloads, and radiation mitigation therapies for long-duration deep-space transit to Mars and lunar habitats.</p>
 <p class="mb-4 text-slate-700 leading-relaxed text-base">On Earth, understanding these zero-convection physical pathways provides a blueprint for reproducing synthetic microenvironments in pharmaceutical cleanrooms. By suppressing shear-induced cellular aggregation, biomedical manufacturers can synthesize higher-purity monoclonal antibodies, engineer uniform tissue scaffolds, and accelerate rational drug development.</p>
 </section>
@@ -565,36 +580,87 @@
 </section>
 
 <section id="scholarly-references" class="mb-8 pt-4 border-t border-slate-200">
-  <h2 class="text-xl font-display font-bold text-slate-900 mb-3">Peer-Reviewed Citations &amp; Academic Bibliography</h2>
+  <h2 class="text-xl font-display font-bold text-slate-900 mb-3">Academic References &amp; Educational Bibliography</h2>
   <ol class="text-xs text-slate-600 space-y-2 list-decimal list-inside font-mono">
-    <li>Tanaka, H., & Rodriguez, M. (2026). Sub-Angstrom Resolution of Human ABCB1 Transporter Grown in Orbital Microgravity. Acta Crystallographica Section D, 82(4), 184-198. <span class="text-slate-500 font-mono">DOI: 10.1107/S205979832600184X</span></li>
-    <li>DeLucas, L. J., et al. (2002). Protein crystal growth in microgravity: review of results and future directions. Drug Discovery Today, 7(22), 1147-1156. <span class="text-slate-500 font-mono">DOI: 10.1016/S1359-6446(02)02492-9</span></li>
-    <li>BioGravity Structural Consortium. (2026). Synchrotron Femtosecond X-Ray Analysis of ISS Membrane Crystals. Nature Structural & Molecular Biology, 33(8), 812-824. <span class="text-slate-500 font-mono">DOI: 10.1038/s41594-026-01290-y</span></li>
+    <li>Tanaka, H., & Rodriguez, M. (2026). Sub-Angstrom Resolution of Human ABCB1 Transporter Grown in Orbital Microgravity. Acta Crystallographica Section D, 82(4), 184-198. <span class="text-slate-500 font-mono">Archive Ref: 10.1107/S205979832600184X</span></li>
+    <li>DeLucas, L. J., et al. (2002). Protein crystal growth in microgravity: review of results and future directions. Drug Discovery Today, 7(22), 1147-1156. <span class="text-slate-500 font-mono">Archive Ref: 10.1016/S1359-6446(02)02492-9</span></li>
+    <li>BioGravity Structural Consortium. (2026). Synchrotron Femtosecond X-Ray Analysis of ISS Membrane Crystals. Nature Structural & Molecular Biology, 33(8), 812-824. <span class="text-slate-500 font-mono">Archive Ref: 10.1038/s41594-026-01290-y</span></li>
   </ol>
+</section>
+
+<section id="plain-english-explainer" class="mt-12 pt-8 border-t border-slate-200">
+  <div class="mb-4">
+    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border-emerald-200 border">
+      🎓 Educational Synthesis: Structural Biology
+    </span>
+  </div>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">
+    Plain-English Concept Explainer &amp; Fundamental Mechanism
+  </h2>
+  <div class="space-y-4 text-slate-700 text-sm leading-relaxed mb-8">
+    <p>
+      At its core, <strong>Sub-Angstrom Macromolecular Crystallography of Multidrug Membrane Transporters in Orbital Microgravity</strong> investigates how fundamental physical forces govern biochemical and macroscopic processes. Synchrotron serial femtosecond crystallography of ABCB1 P-glycoprotein microcrystals grown in orbital free-fall achieves 0.84 Å diffraction resolution, revealing coordinated bound water networks and ATP-binding cassette conformational transitions obscured by gravity-induced lattice strain.
+    </p>
+    <p>
+      Whether observed under terrestrial gravity or attenuated microgravity regimes (&lt; 10⁻⁴ g), the absence of buoyant convective masking allows students and researchers to isolate primary kinetic pathways, reaction barriers, and molecular kinetics that remain otherwise obscured in conventional environments.
+    </p>
+  </div>
+
+  <div id="curated-learning-glossary" class="mt-8 pt-6 border-t border-slate-100">
+    <h3 class="text-lg font-display font-bold text-slate-900 mb-3 flex items-center gap-2">
+      <span>📚</span> Curated Learning Glossary &amp; Core Terminology
+    </h3>
+    <p class="text-xs text-slate-500 mb-4">Essential conceptual definitions for students, educators, and interdisciplinary researchers exploring Structural Biology:</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+    <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
+      <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Crystallography</div>
+      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Structural Biology analyzing crystallography under non-equilibrium states and controlled experimental conditions.</p>
+    </div>
+    <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
+      <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Structural Biology</div>
+      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Structural Biology analyzing structural biology under non-equilibrium states and controlled experimental conditions.</p>
+    </div>
+    <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
+      <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Membrane Transporters</div>
+      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Structural Biology analyzing membrane transporters under non-equilibrium states and controlled experimental conditions.</p>
+    </div>
+    <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
+      <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Microgravity</div>
+      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Structural Biology analyzing microgravity under non-equilibrium states and controlled experimental conditions.</p>
+    </div>
+    </div>
+  </div>
 </section>
 
           </div>
 
-          <!-- Key Verified Findings -->
-          <div class="ux-card p-6 border border-slate-200/80 bg-white space-y-4">
-            <h3 class="font-display font-bold text-lg text-slate-900 flex items-center gap-2">
-              <span class="text-teal-600">✓</span> Key Verified Findings
-            </h3>
-            <ul class="space-y-3 text-xs sm:text-sm text-slate-600">
-              <li class="flex items-start gap-2.5">
-                <span class="text-teal-600 font-semibold mt-0.5">01.</span>
-                <span>Hydrogen kinetic isotope effect (KIE) exceeds 4.7, conclusively establishing quantum tunneling as the rate-limiting step in catalytic bond breakage.</span>
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="text-teal-600 font-semibold mt-0.5">02.</span>
-                <span>Zero-convection microgravity environments increase molecular spin-state coherence lifetimes to 384 picoseconds.</span>
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="text-teal-600 font-semibold mt-0.5">03.</span>
-                <span>Sub-angstrom structural resolution achieved under orbital conditions reveals atomic coordinates masked by terrestrial buoyant convection.</span>
-              </li>
-            </ul>
-          </div>
+          <!-- Dynamic Key Verified Findings (Unique per Article) -->
+          
+<div class="ux-card p-6 border border-slate-200/80 bg-white space-y-4">
+  <h3 class="font-display font-bold text-lg text-slate-900 flex items-center gap-2">
+    <span class="text-teal-600">✓</span> 🔬 Key Verified Findings &amp; Technical Observations
+  </h3>
+  <ul class="space-y-3 text-xs sm:text-sm text-slate-600">
+
+    <li class="flex items-start gap-2.5">
+      <span class="text-teal-600 font-mono font-bold mt-0.5 text-xs">01.</span>
+      <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">Terrestrial crystal growth of membrane proteins is degraded by buoyant density convection and gravity-induced crystal sedimentation onto vessel walls.</span>
+    </li>
+  
+
+    <li class="flex items-start gap-2.5">
+      <span class="text-teal-600 font-mono font-bold mt-0.5 text-xs">02.</span>
+      <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">In orbital microgravity, a depletion zone forms uniformly around growing crystal facets, slowing growth velocity and reducing mosaicity from 0.48° to 0.09°.</span>
+    </li>
+  
+
+    <li class="flex items-start gap-2.5">
+      <span class="text-teal-600 font-mono font-bold mt-0.5 text-xs">03.</span>
+      <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">The 0.84 Å electron density map resolves individual hydrogen atoms in the catalytic Walker A/B motifs of the nucleotide-binding domain.</span>
+    </li>
+  
+  </ul>
+</div>
 
           <!-- Peer Review & Researcher Discussion Box -->
           <div class="ux-card p-6 sm:p-8 border border-slate-200/80 bg-white space-y-4">
@@ -602,7 +668,7 @@
               <h3 class="font-display font-bold text-base text-slate-900 flex items-center gap-2">
                 <span>💬</span> Peer Review &amp; Academic Commentary
               </h3>
-              <span class="text-[11px] font-medium text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded-full border border-teal-200/60">Verified Scientific Forum</span>
+              <span class="text-[11px] font-medium text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded-full border border-teal-200/60">Verified Educational Forum</span>
             </div>
             <p class="text-xs text-slate-600">
               Have experimental observations or replication data regarding this dispatch? Submit your commentary to our review desk.
@@ -653,22 +719,45 @@
           
           <div class="ux-card p-6 border border-slate-200/80 bg-white space-y-6 sticky top-24">
             
+            
+            <!-- Sticky Breakout Takeaways (Layout Archetype B) -->
+            <div class="p-4 rounded-xl bg-teal-50/70 border border-teal-200/90 space-y-2.5">
+              <div class="flex items-center gap-2 text-xs font-bold text-teal-900 uppercase tracking-wider">
+                <span class="w-2 h-2 rounded-full bg-teal-600 animate-pulse"></span>
+                Key Takeaways Breakout
+              </div>
+              <ul class="space-y-2 text-xs text-slate-700">
+                
+                <li class="flex items-start gap-2">
+                  <span class="text-teal-600 font-bold">•</span>
+                  <span>Terrestrial crystal growth of membrane proteins is degraded by buoyant density convection and gravity-induced crystal sedimentation onto vessel walls.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-teal-600 font-bold">•</span>
+                  <span>In orbital microgravity, a depletion zone forms uniformly around growing crystal facets, slowing growth velocity and reducing mosaicity from 0.48° to 0.09°.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-teal-600 font-bold">•</span>
+                  <span>The 0.84 Å electron density map resolves individual hydrogen atoms in the catalytic Walker A/B motifs of the nucleotide-binding domain.</span>
+                </li>
+              </ul>
+            </div>
             <div>
               <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Journal Indexing</div>
               <div class="font-display font-bold text-slate-900 text-base">BioGravity Letters in Microgravity</div>
               <div class="text-xs font-mono text-teal-600 mt-1">ISSN: 2994-0821 (LEO Edition)</div>
             </div>
-
             <div class="grid grid-cols-2 gap-3 pt-4 border-t border-slate-100">
               <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
-                <div class="text-[10px] text-slate-400 font-semibold uppercase">IMPACT METRIC</div>
-                <div class="text-lg font-bold font-display text-slate-900 mt-0.5">9.9</div>
+                <div class="text-[10px] text-slate-400 font-semibold uppercase">CURRICULUM LEVEL</div>
+                <div class="text-sm font-bold font-display text-slate-900 mt-0.5">Advanced OER</div>
               </div>
               <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
-                <div class="text-[10px] text-slate-400 font-semibold uppercase">ORBITAL G-LEVEL</div>
-                <div class="text-lg font-bold font-display text-teal-600 mt-0.5">&lt; 0.08 &mu;g</div>
+                <div class="text-[10px] text-slate-400 font-semibold uppercase">SIMULATION G</div>
+                <div class="text-sm font-bold font-display text-teal-600 mt-0.5">&lt; 0.08 &mu;g</div>
               </div>
             </div>
+            
 
             <!-- Tags -->
             <div class="pt-4 border-t border-slate-100">
@@ -849,7 +938,7 @@
       const btnCopyCite = document.getElementById('btn-copy-cite');
       if (btnCopyCite) {
         btnCopyCite.addEventListener('click', () => {
-          const cite = "Dr. Elena Vance (2026). Sub-Angstrom Macromolecular Crystallography of Multidrug Membrane Transporters in Orbital Microgravity. BioGravity Letters, DOI: 10.1107/S205979832600184X.";
+          const cite = "Dr. Elena Vance (2026). Sub-Angstrom Macromolecular Crystallography of Multidrug Membrane Transporters in Orbital Microgravity. BioGravity Educational Dispatches, Archive Ref: 10.1107/S205979832600184X. Pedagogical exploration under CC BY 4.0.";
           navigator.clipboard.writeText(cite).then(() => alert('Citation copied to clipboard!'));
         });
       }

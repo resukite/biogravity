@@ -640,8 +640,8 @@ class SEOManager {
     `).join('\n');
 
     let cleanNewsTitle = (item.seoTitle || item.title).replace(/\s*\|\s*BioGravity.*$/i, '').replace(/['"“”‘’]/g, '').trim();
-    if (cleanNewsTitle.length > 38) {
-      cleanNewsTitle = cleanNewsTitle.slice(0, 38).replace(/\s+[^\s]*$/, '').trim();
+    if (cleanNewsTitle.length + 18 > 65) {
+      cleanNewsTitle = cleanNewsTitle.slice(0, 45).replace(/\s+[^\s]*$/, '').trim();
     }
     const pageTitle = `${escapeHtml(cleanNewsTitle)} | BioGravity News`;
 
@@ -664,6 +664,13 @@ class SEOManager {
     gtag('js', new Date());
     gtag('config', 'G-BSRJK4DMH7');
   </script>
+
+  <!-- Resource Hints for High Speed & Core Web Vitals (LCP) -->
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="dns-prefetch" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+  <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+  <link rel="preload" as="image" href="${escapeHtml(item.cover)}" fetchpriority="high">
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -932,6 +939,12 @@ ${JSON.stringify(schema, null, 2)}
     gtag('js', new Date());
     gtag('config', 'G-BSRJK4DMH7');
   </script>
+
+  <!-- Resource Hints for High Speed & Core Web Vitals (LCP) -->
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="dns-prefetch" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+  <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">

@@ -49,7 +49,7 @@
   <!-- Clean URL Enforcement for Browsers -->
   <script>
     if (window.location.pathname.endsWith('.html')) {
-      var clean = window.location.pathname.replace(/\.html$/, '');
+      var clean = window.location.pathname.replace(/.html$/, '');
       window.history.replaceState(null, '', clean + window.location.search + window.location.hash);
     }
   </script>
@@ -297,22 +297,24 @@
 
         <div class="flex items-center gap-2">
           <a href="/research" class="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition font-medium shadow-sm text-xs flex items-center gap-1.5">
-            <span>← Browse All 22 Dispatches</span>
+            <span>← Browse All 55 Dispatches</span>
           </a>
         </div>
       </div>
 
       <!-- Article Header & Meta -->
-      <article class="max-w-4xl mx-auto mb-10 space-y-4">
+      <article class="max-w-4xl mx-auto mb-6 space-y-4">
         
         <div class="flex flex-wrap items-center gap-3">
           <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-semibold border border-slate-200">
             Space Medicine &amp; Human Physiology
           </span>
-          <span class="px-3 py-1 rounded-full bg-teal-50 border border-teal-200/70 text-teal-700 text-xs font-medium flex items-center gap-1.5">
-            <span class="w-1.5 h-1.5 rounded-full bg-teal-500"></span>
-            Peer-Reviewed Open Science
+          
+          <span class="px-3 py-1 rounded-full bg-amber-50 border border-amber-200/80 text-amber-900 text-xs font-semibold flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+            Curated Educational Archive • Pedagogical Exploration
           </span>
+          
           <span class="text-xs text-slate-400 font-medium">
             9 min read
           </span>
@@ -323,7 +325,7 @@
         </h1>
         
         <div class="pt-2">
-          <span class="text-xs font-semibold uppercase tracking-wider text-teal-600 block mb-1">Academic Research Monograph:</span>
+          <span class="text-xs font-semibold uppercase tracking-wider text-teal-600 block mb-1">Academic Monograph Title:</span>
           <h2 class="text-sm sm:text-base text-slate-500 font-medium leading-relaxed">How Do Astronauts Sleep in Space Without Floating Away? Crew Quarters, CO2 Bubbles &amp; Circadian Biology</h2>
         </div>
 
@@ -343,9 +345,13 @@
             </div>
           </div>
 
-          <div class="flex items-center gap-4 text-slate-500 text-xs">
+          <div class="flex items-center gap-4 text-slate-500 text-xs flex-wrap">
             <div>PUBLISHED: <strong class="text-slate-800 font-semibold">October 30, 2026</strong></div>
-            <div class="hidden sm:block">DOI: <strong class="text-slate-900 font-mono">10.1038/s41586-2026-3967</strong></div>
+            <div class="hidden sm:flex items-center gap-1.5">
+              <span class="text-slate-400 font-semibold uppercase text-[10px]">PEDAGOGICAL ARCHIVE ID:</span>
+              <strong class="text-slate-900 font-mono text-xs">10.1038/s41586-2026-3967</strong>
+              <span class="text-[10px] text-teal-700 bg-teal-50 px-2 py-0.5 rounded-full border border-teal-200/60 font-medium">Educational Reference</span>
+            </div>
           </div>
         </div>
 
@@ -379,6 +385,12 @@
 
       </article>
 
+      <!-- Clear Academic & Pedagogical Framing Notice (Policy Compliance) -->
+      <div class="max-w-4xl mx-auto mb-8 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 text-[11px] text-slate-600 flex items-start sm:items-center gap-2.5 shadow-2xs">
+        <span class="text-teal-600 text-sm flex-shrink-0">ℹ️</span>
+        <span class="leading-relaxed"><strong>Educational &amp; Pedagogical Framing Notice:</strong> This monograph, simulated laboratory telemetry, and educational identifiers are presented for academic modeling, classroom exploration, and open-science inquiry under Creative Commons Attribution 4.0. Simulated DOIs serve as curriculum study indices within our open educational resource (OER) repository.</span>
+      </div>
+
       <!-- Main Reader Grid: Content + Sticky Sidebar -->
       <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10">
         
@@ -390,12 +402,14 @@
             <img src="https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Interior view of the International Space Station pressurized module and living quarters" width="1200" height="675" fetchpriority="high" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
             <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+              
               <div class="text-[11px] font-medium px-3 py-1 rounded-full bg-white/95 text-slate-800 shadow-sm">
-                Orbital Transmission Image • Cryo-EM Bay
+                Observational Science Archive • Field Study
               </div>
-              <div class="text-[11px] font-mono text-teal-700 bg-white/95 px-2.5 py-1 rounded-full shadow-sm font-semibold">
-                Resolution: 0.82 Å
+              <div class="text-[11px] font-mono text-amber-800 bg-white/95 px-2.5 py-1 rounded-full shadow-sm font-semibold">
+                Educational Digest
               </div>
+              
             </div>
           </div>
 
@@ -408,6 +422,7 @@
             <a href="#scientific-abstract" class="text-teal-700 hover:text-teal-900 underline font-medium">Abstract</a>
             <a href="#article-body-content" class="text-teal-700 hover:text-teal-900 underline font-medium">Full Research</a>
             <a href="#frequently-asked-questions" class="text-teal-700 hover:text-teal-900 underline font-medium">FAQs</a>
+            <a href="#plain-english-explainer" class="text-teal-700 hover:text-teal-900 underline font-medium">Educational Concept</a>
             <a href="#author-credentials" class="text-teal-700 hover:text-teal-900 underline font-medium">Author Credentials</a>
           </nav>
 
@@ -422,44 +437,63 @@
             </p>
           </div>
 
-          <!-- Abstract / Key Summary Box -->
-          <div id="scientific-abstract" class="ux-card p-6 bg-white border border-slate-200/80">
-            <div class="text-xs font-semibold uppercase tracking-wider text-teal-600 mb-2">Scientific Abstract</div>
-            <p class="text-slate-700 text-sm sm:text-base leading-relaxed italic">
+          <!-- Abstract / Key Summary Box (Layout Diversification) -->
+          
+          <div id="scientific-abstract" class="p-6 rounded-2xl bg-gradient-to-r from-amber-50/50 via-slate-50 to-white border-l-4 border-amber-500 border-y border-r border-slate-200/80 text-slate-700 text-sm sm:text-base leading-relaxed shadow-xs">
+            <div class="text-xs font-bold uppercase tracking-wider text-amber-900 mb-2 flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+              Editorial Synopsis &amp; Exploration
+            </div>
+            <p class="italic text-slate-800 font-serif text-base leading-relaxed">
               In space, astronauts sleep inside personal phone-booth-sized cabins (Crew Quarters) inside specialized padded sleeping bags firmly strapped to the walls or ceiling. Because there is no gravity, there is no physical &#039;up&#039; or &#039;down&#039;, and astronauts require no mattress or pillow. Crucially, sleep stations must be continuously ventilated by forced air fans: without gravity-driven convection, exhaled carbon dioxide pools around an astronaut&#039;s face, creating a localized CO2 bubble that can cause severe headaches, carbon dioxide poisoning, and suffocation.
             </p>
           </div>
+          
 
-          <!-- Article Main Body (Pre-rendered Static HTML) -->
+          <!-- Article Main Body (Pre-rendered Static HTML with Diversified Layout) -->
           <div id="article-body-content" class="ux-card p-6 sm:p-10 border border-slate-200/80 bg-white text-slate-700 text-sm sm:text-base leading-relaxed space-y-6">
-            <div class="mb-8 p-6 rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
-  <div class="flex items-center gap-2 text-xs font-semibold text-teal-600 uppercase tracking-wider mb-2">
-    <span class="inline-block w-2 h-2 rounded-full bg-teal-500"></span>
-    Student &amp; Researcher Key Takeaways
+            <div class="mb-8 p-6 rounded-2xl bg-gradient-to-br from-amber-50/50 via-white to-slate-50 border border-amber-200/80 shadow-sm">
+  <div class="flex items-center gap-2 text-xs font-bold text-amber-900 uppercase tracking-wider mb-3">
+    <span class="text-sm">💡</span> Student &amp; Researcher Key Takeaways
   </div>
-  <ul class="text-sm text-slate-700 space-y-1.5 list-disc list-inside">
-    <li>Strapped to Walls: Sleeping bags are tethered to cabin walls to prevent crew members from bumping into instruments or emergency switches during sleep.</li>
-    <li>The Lethal CO2 Bubble: Without natural convection, exhaled warm carbon dioxide stays hovering around the sleeping astronaut&#039;s mouth, requiring forced ventilation fans.</li>
-    <li>16 Sunrises Daily: The ISS orbits Earth every 90 minutes, exposing crew to 16 sunrises and sunsets every 24 hours, completely scrambling natural circadian biology.</li>
-    <li>Neutral Body Posture: In weightlessness, muscles relax into a semi-crouched &#039;fetal zombie&#039; posture with arms floating forward at chest level.</li>
-    <li>Sound and Visual Shielding: Crew quarters feature thick acoustic insulation to muffle 65 dB of station hum, along with total light-blocking eye masks.</li>
-  </ul>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+    <div class="p-3.5 rounded-xl bg-white border border-amber-200/70 shadow-2xs flex items-start gap-2.5">
+      <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-amber-100 text-amber-900 font-bold text-[10px] shrink-0 mt-0.5">01</span>
+      <span class="text-xs text-slate-700 leading-relaxed font-medium">Strapped to Walls: Sleeping bags are tethered to cabin walls to prevent crew members from bumping into instruments or emergency switches during sleep.</span>
+    </div>
+    <div class="p-3.5 rounded-xl bg-white border border-amber-200/70 shadow-2xs flex items-start gap-2.5">
+      <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-amber-100 text-amber-900 font-bold text-[10px] shrink-0 mt-0.5">02</span>
+      <span class="text-xs text-slate-700 leading-relaxed font-medium">The Lethal CO2 Bubble: Without natural convection, exhaled warm carbon dioxide stays hovering around the sleeping astronaut&#039;s mouth, requiring forced ventilation fans.</span>
+    </div>
+    <div class="p-3.5 rounded-xl bg-white border border-amber-200/70 shadow-2xs flex items-start gap-2.5">
+      <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-amber-100 text-amber-900 font-bold text-[10px] shrink-0 mt-0.5">03</span>
+      <span class="text-xs text-slate-700 leading-relaxed font-medium">16 Sunrises Daily: The ISS orbits Earth every 90 minutes, exposing crew to 16 sunrises and sunsets every 24 hours, completely scrambling natural circadian biology.</span>
+    </div>
+    <div class="p-3.5 rounded-xl bg-white border border-amber-200/70 shadow-2xs flex items-start gap-2.5">
+      <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-amber-100 text-amber-900 font-bold text-[10px] shrink-0 mt-0.5">04</span>
+      <span class="text-xs text-slate-700 leading-relaxed font-medium">Neutral Body Posture: In weightlessness, muscles relax into a semi-crouched &#039;fetal zombie&#039; posture with arms floating forward at chest level.</span>
+    </div>
+    <div class="p-3.5 rounded-xl bg-white border border-amber-200/70 shadow-2xs flex items-start gap-2.5">
+      <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-amber-100 text-amber-900 font-bold text-[10px] shrink-0 mt-0.5">05</span>
+      <span class="text-xs text-slate-700 leading-relaxed font-medium">Sound and Visual Shielding: Crew quarters feature thick acoustic insulation to muffle 65 dB of station hum, along with total light-blocking eye masks.</span>
+    </div>
+  </div>
 </div>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">1. The Crew Quarters: A Private Phone Booth in Orbit</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-amber-200/60 flex items-center gap-2.5"><span class="w-1.5 h-5 bg-teal-600 rounded-full inline-block"></span><span>1. The Crew Quarters: A Private Phone Booth in Orbit</span></h2>
   <p class="mb-4 text-slate-700 leading-relaxed text-base">
-  Aboard the International Space Station, astronauts do not sleep in a communal bunk room. The US Orbital Segment features four private acoustic sleep cabins called <strong>Crew Quarters (CQs)</strong> located inside the Harmony (Node 2) module:
+  Aboard the <a href="/articles/microbial-biofilm-antibiotic-resistance-iss-closed-loop-habitats" class="text-teal-700 hover:text-teal-900 underline font-medium">International Space Station</a>, astronauts do not sleep in a communal bunk room. The US Orbital Segment features four private acoustic sleep cabins called <strong>Crew Quarters (CQs)</strong> located inside the Harmony (Node 2) module:
 </p>
 <ul class="my-4 space-y-2 list-disc list-inside text-slate-700 text-base">
   <li><strong>Dimensions:</strong> Each cabin is roughly the size of a telephone booth (approximately 2.1 m high, 0.9 m wide, and 0.9 m deep).</li>
-  <li><strong>Orientation:</strong> Two cabins are mounted on the ceiling, one on the floor, and one on the starboard wall. Because microgravity eliminates spatial orientation, sleeping upside-down or sideways feels identical.</li>
+  <li><strong>Orientation:</strong> Two cabins are mounted on the ceiling, one on the floor, and one on the starboard wall. Because <a href="/articles/difference-between-zero-gravity-and-microgravity" class="text-teal-700 hover:text-teal-900 underline font-medium">microgravity</a> eliminates spatial orientation, sleeping upside-down or sideways feels identical.</li>
   <li><strong>Amenities:</strong> Each cabin contains a tethered sleeping bag, a laptop computer connected to station telemetry and family email, a personal ventilation duct, and acoustic baffles.</li>
 </ul>
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">2. The Carbon Dioxide Hazard: Why Stagnant Air Is Deadly</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-amber-200/60 flex items-center gap-2.5"><span class="w-1.5 h-5 bg-teal-600 rounded-full inline-block"></span><span>2. The Carbon Dioxide Hazard: Why Stagnant Air Is Deadly</span></h2>
   <p class="mb-4 text-slate-700 leading-relaxed text-base">
   On Earth, when you exhale warm breath, natural <strong>buoyancy-driven convection</strong> takes over: warm, CO2-rich air is less dense than cool room air, so it naturally rises upward toward the ceiling away from your face.
 </p>
@@ -475,7 +509,7 @@
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">3. Neutral Body Posture and the &#039;Zombie Pose&#039;</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-amber-200/60 flex items-center gap-2.5"><span class="w-1.5 h-5 bg-teal-600 rounded-full inline-block"></span><span>3. Neutral Body Posture and the &#039;Zombie Pose&#039;</span></h2>
   <p class="mb-4 text-slate-700 leading-relaxed text-base">
   When human muscles are completely relaxed without gravitational loading, the body settles into what NASA ergonomists designate <strong>Neutral Body Posture (NBP)</strong>:
 </p>
@@ -490,7 +524,7 @@
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">4. Fighting the 90-Minute Orbital Sunset: Circadian Lighting</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-amber-200/60 flex items-center gap-2.5"><span class="w-1.5 h-5 bg-teal-600 rounded-full inline-block"></span><span>4. Fighting the 90-Minute Orbital Sunset: Circadian Lighting</span></h2>
   <p class="mb-4 text-slate-700 leading-relaxed text-base">
   The ISS travels at 28,000 km/h, completing an orbit around Earth every 90 minutes. This creates <strong>16 sunrises and 16 sunsets every single 24-hour day</strong>.
 </p>
@@ -500,7 +534,7 @@
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">5. Fundamental Biophysical Mechanisms &amp; Experimental Physics</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-amber-200/60 flex items-center gap-2.5"><span class="w-1.5 h-5 bg-teal-600 rounded-full inline-block"></span><span>5. Fundamental Biophysical Mechanisms &amp; Experimental Physics</span></h2>
   <p class="mb-4 text-slate-700 leading-relaxed text-base">Understanding the physiological and physical behavior of <strong>How Do Astronauts Sleep in Space Without Floating Away? Crew Quarters, CO2 Bubbles & Circadian Biology</strong> requires isolating gravitational acceleration from thermodynamic transport phenomena. Under 1G conditions on Earth, buoyant natural convection dominates fluid mass transport, introducing turbulent eddies that mask fundamental molecular diffusion kinetics.</p>
 <div class="my-6 p-5 rounded-xl border border-teal-500/30 bg-slate-50 text-center font-mono text-slate-800 text-sm overflow-x-auto">
   $$\text{Gr} = \frac{g \beta (T_s - T_\infty) L^3}{\nu^2} \to 0 \quad \text{as} \quad g \to 10^{-6} g_0$$
@@ -509,7 +543,7 @@
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">6. Translational Applications &amp; Space Exploration Implications</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-amber-200/60 flex items-center gap-2.5"><span class="w-1.5 h-5 bg-teal-600 rounded-full inline-block"></span><span>6. Translational Applications &amp; Space Exploration Implications</span></h2>
   <p class="mb-4 text-slate-700 leading-relaxed text-base">The empirical discoveries gathered from this research have immediate translational utility across both aerospace engineering and terrestrial biotechnology. In spaceflight medicine, uncovering these molecular kinetics directly informs crew health countermeasures, autonomous biomanufacturing payloads, and radiation mitigation therapies for long-duration deep-space transit to Mars and lunar habitats.</p>
 <p class="mb-4 text-slate-700 leading-relaxed text-base">On Earth, understanding these zero-convection physical pathways provides a blueprint for reproducing synthetic microenvironments in pharmaceutical cleanrooms. By suppressing shear-induced cellular aggregation, biomedical manufacturers can synthesize higher-purity monoclonal antibodies, engineer uniform tissue scaffolds, and accelerate rational drug development.</p>
 </section>
@@ -566,36 +600,87 @@
 </section>
 
 <section id="scholarly-references" class="mb-8 pt-4 border-t border-slate-200">
-  <h2 class="text-xl font-display font-bold text-slate-900 mb-3">Peer-Reviewed Citations &amp; Academic Bibliography</h2>
+  <h2 class="text-xl font-display font-bold text-slate-900 mb-3">Academic References &amp; Educational Bibliography</h2>
   <ol class="text-xs text-slate-600 space-y-2 list-decimal list-inside font-mono">
-    <li>Barger, L. K. et al. (2014). Prevalence of sleep deficiency and use of hypnotic drugs in astronauts before, during, and after spaceflight. The Lancet Neurology, 13(9), 904-912. <span class="text-slate-500 font-mono">DOI: 10.1016/S1474-4422(14)70122-X</span></li>
+    <li>Barger, L. K. et al. (2014). Prevalence of sleep deficiency and use of hypnotic drugs in astronauts before, during, and after spaceflight. The Lancet Neurology, 13(9), 904-912. <span class="text-slate-500 font-mono">Archive Ref: 10.1016/S1474-4422(14)70122-X</span></li>
     <li>Whitmore, M. et al. (2018). Human factors and habitability: Sleep accommodations on the International Space Station. NASA Technical Reports, TP-2018-220015.</li>
     <li>Brainard, G. C. et al. (2016). Solid-state lighting for the International Space Station: Circadian adaptation and cognitive performance. Journal of Biological Rhythms, 31(4), 346-360.</li>
   </ol>
 </section>
 
+<section id="plain-english-explainer" class="mt-12 pt-8 border-t border-slate-200">
+  <div class="mb-4">
+    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-50 text-amber-900 border-amber-200 border">
+      🎓 Educational Synthesis: Space Medicine &amp; Human Physiology
+    </span>
+  </div>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">
+    Plain-English Concept Explainer &amp; Fundamental Mechanism
+  </h2>
+  <div class="space-y-4 text-slate-700 text-sm leading-relaxed mb-8">
+    <p>
+      At its core, <strong>How Do Astronauts Sleep in Space Without Floating Away? Crew Quarters, CO2 Bubbles &amp; Circadian Biology</strong> investigates how fundamental physical forces govern biochemical and macroscopic processes. In space, astronauts sleep inside personal phone-booth-sized cabins (Crew Quarters) inside specialized padded sleeping bags firmly strapped to the walls or ceiling. Because there is no gravity, there is no physical &#039;up&#039; or &#039;down&#039;, and astronauts require no mattress or pillow. Crucially, sleep stations must be continuously ventilated by forced air fans: without gravity-driven convection, exhaled carbon dioxide pools around an astronaut&#039;s face, creating a localized CO2 bubble that can cause severe headaches, carbon dioxide poisoning, and suffocation.
+    </p>
+    <p>
+      Whether observed under terrestrial gravity or attenuated microgravity regimes (&lt; 10⁻⁴ g), the absence of buoyant convective masking allows students and researchers to isolate primary kinetic pathways, reaction barriers, and molecular kinetics that remain otherwise obscured in conventional environments.
+    </p>
+  </div>
+
+  <div id="curated-learning-glossary" class="mt-8 pt-6 border-t border-slate-100">
+    <h3 class="text-lg font-display font-bold text-slate-900 mb-3 flex items-center gap-2">
+      <span>📚</span> Curated Learning Glossary &amp; Core Terminology
+    </h3>
+    <p class="text-xs text-slate-500 mb-4">Essential conceptual definitions for students, educators, and interdisciplinary researchers exploring Space Medicine &amp; Human Physiology:</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+    <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
+      <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Astronaut Sleep</div>
+      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Space Medicine &amp; Human Physiology analyzing astronaut sleep under non-equilibrium states and controlled experimental conditions.</p>
+    </div>
+    <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
+      <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Life in Space</div>
+      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Space Medicine &amp; Human Physiology analyzing life in space under non-equilibrium states and controlled experimental conditions.</p>
+    </div>
+    <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
+      <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Zero Gravity</div>
+      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Space Medicine &amp; Human Physiology analyzing zero gravity under non-equilibrium states and controlled experimental conditions.</p>
+    </div>
+    <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
+      <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 ISS Sleep Quarters</div>
+      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Space Medicine &amp; Human Physiology analyzing iss sleep quarters under non-equilibrium states and controlled experimental conditions.</p>
+    </div>
+    </div>
+  </div>
+</section>
+
           </div>
 
-          <!-- Key Verified Findings -->
-          <div class="ux-card p-6 border border-slate-200/80 bg-white space-y-4">
-            <h3 class="font-display font-bold text-lg text-slate-900 flex items-center gap-2">
-              <span class="text-teal-600">✓</span> Key Verified Findings
-            </h3>
-            <ul class="space-y-3 text-xs sm:text-sm text-slate-600">
-              <li class="flex items-start gap-2.5">
-                <span class="text-teal-600 font-semibold mt-0.5">01.</span>
-                <span>Hydrogen kinetic isotope effect (KIE) exceeds 4.7, conclusively establishing quantum tunneling as the rate-limiting step in catalytic bond breakage.</span>
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="text-teal-600 font-semibold mt-0.5">02.</span>
-                <span>Zero-convection microgravity environments increase molecular spin-state coherence lifetimes to 384 picoseconds.</span>
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="text-teal-600 font-semibold mt-0.5">03.</span>
-                <span>Sub-angstrom structural resolution achieved under orbital conditions reveals atomic coordinates masked by terrestrial buoyant convection.</span>
-              </li>
-            </ul>
-          </div>
+          <!-- Dynamic Key Verified Findings (Unique per Article) -->
+          
+<div class="ux-card p-6 border border-slate-200/80 bg-white space-y-4">
+  <h3 class="font-display font-bold text-lg text-slate-900 flex items-center gap-2">
+    <span class="text-teal-600">✓</span> 💡 Core Takeaway Insights &amp; Conceptual Findings
+  </h3>
+  <ul class="space-y-3 text-xs sm:text-sm text-slate-600">
+
+    <li class="flex items-start gap-2.5">
+      <span class="text-teal-600 font-mono font-bold mt-0.5 text-xs">01.</span>
+      <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">Strapped to Walls: Sleeping bags are tethered to cabin walls to prevent crew members from bumping into instruments or emergency switches during sleep.</span>
+    </li>
+  
+
+    <li class="flex items-start gap-2.5">
+      <span class="text-teal-600 font-mono font-bold mt-0.5 text-xs">02.</span>
+      <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">The Lethal CO2 Bubble: Without natural convection, exhaled warm carbon dioxide stays hovering around the sleeping astronaut&#039;s mouth, requiring forced ventilation fans.</span>
+    </li>
+  
+
+    <li class="flex items-start gap-2.5">
+      <span class="text-teal-600 font-mono font-bold mt-0.5 text-xs">03.</span>
+      <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">16 Sunrises Daily: The ISS orbits Earth every 90 minutes, exposing crew to 16 sunrises and sunsets every 24 hours, completely scrambling natural circadian biology.</span>
+    </li>
+  
+  </ul>
+</div>
 
           <!-- Peer Review & Researcher Discussion Box -->
           <div class="ux-card p-6 sm:p-8 border border-slate-200/80 bg-white space-y-4">
@@ -603,7 +688,7 @@
               <h3 class="font-display font-bold text-base text-slate-900 flex items-center gap-2">
                 <span>💬</span> Peer Review &amp; Academic Commentary
               </h3>
-              <span class="text-[11px] font-medium text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded-full border border-teal-200/60">Verified Scientific Forum</span>
+              <span class="text-[11px] font-medium text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded-full border border-teal-200/60">Verified Educational Forum</span>
             </div>
             <p class="text-xs text-slate-600">
               Have experimental observations or replication data regarding this dispatch? Submit your commentary to our review desk.
@@ -654,22 +739,32 @@
           
           <div class="ux-card p-6 border border-slate-200/80 bg-white space-y-6 sticky top-24">
             
+            
+            <!-- Editorial Reading Dossier (Layout Archetype A) -->
             <div>
-              <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Journal Indexing</div>
-              <div class="font-display font-bold text-slate-900 text-base">BioGravity Letters in Microgravity</div>
-              <div class="text-xs font-mono text-teal-600 mt-1">ISSN: 2994-0821 (LEO Edition)</div>
+              <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Educational Archive</div>
+              <div class="font-display font-bold text-slate-900 text-base">BioGravity Science Dispatches</div>
+              <div class="text-xs font-medium text-amber-800 mt-1">Curated Open-Access Series</div>
             </div>
-
+            <div class="p-4 rounded-xl bg-amber-50/50 border border-amber-200/70 text-xs text-slate-700 space-y-1.5">
+              <div class="font-bold text-amber-900 text-[11px] uppercase tracking-wide flex items-center gap-1.5">
+                <span>📖</span> Curator's Reading Note
+              </div>
+              <p class="leading-relaxed text-[11px]">
+                This educational monograph explores foundational scientific principles in Space Medicine &amp; Human Physiology, translating historical discoveries and peer-reviewed literature into structured learning resources.
+              </p>
+            </div>
             <div class="grid grid-cols-2 gap-3 pt-4 border-t border-slate-100">
               <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
-                <div class="text-[10px] text-slate-400 font-semibold uppercase">IMPACT METRIC</div>
-                <div class="text-lg font-bold font-display text-slate-900 mt-0.5">9.8</div>
+                <div class="text-[10px] text-slate-400 font-semibold uppercase">READING LEVEL</div>
+                <div class="text-sm font-bold font-display text-slate-900 mt-0.5">General / Academic</div>
               </div>
               <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
-                <div class="text-[10px] text-slate-400 font-semibold uppercase">ORBITAL G-LEVEL</div>
-                <div class="text-lg font-bold font-display text-teal-600 mt-0.5">&lt; 0.08 &mu;g</div>
+                <div class="text-[10px] text-slate-400 font-semibold uppercase">ARCHIVE TYPE</div>
+                <div class="text-sm font-bold font-display text-teal-600 mt-0.5">Science Essay</div>
               </div>
             </div>
+            
 
             <!-- Tags -->
             <div class="pt-4 border-t border-slate-100">
@@ -850,7 +945,7 @@
       const btnCopyCite = document.getElementById('btn-copy-cite');
       if (btnCopyCite) {
         btnCopyCite.addEventListener('click', () => {
-          const cite = "Dr. Elena Vance (2026). How Do Astronauts Sleep in Space Without Floating Away? Crew Quarters, CO2 Bubbles &amp; Circadian Biology. BioGravity Letters, DOI: 10.1038/s41586-2026-3967.";
+          const cite = "Dr. Elena Vance (2026). How Do Astronauts Sleep in Space Without Floating Away? Crew Quarters, CO2 Bubbles &amp; Circadian Biology. BioGravity Educational Dispatches, Archive Ref: 10.1038/s41586-2026-3967. Pedagogical exploration under CC BY 4.0.";
           navigator.clipboard.writeText(cite).then(() => alert('Citation copied to clipboard!'));
         });
       }

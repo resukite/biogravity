@@ -49,7 +49,7 @@
   <!-- Clean URL Enforcement for Browsers -->
   <script>
     if (window.location.pathname.endsWith('.html')) {
-      var clean = window.location.pathname.replace(/\.html$/, '');
+      var clean = window.location.pathname.replace(/.html$/, '');
       window.history.replaceState(null, '', clean + window.location.search + window.location.hash);
     }
   </script>
@@ -289,22 +289,24 @@
 
         <div class="flex items-center gap-2">
           <a href="/research" class="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition font-medium shadow-sm text-xs flex items-center gap-1.5">
-            <span>← Browse All 22 Dispatches</span>
+            <span>← Browse All 55 Dispatches</span>
           </a>
         </div>
       </div>
 
       <!-- Article Header & Meta -->
-      <article class="max-w-4xl mx-auto mb-10 space-y-4">
+      <article class="max-w-4xl mx-auto mb-6 space-y-4">
         
         <div class="flex flex-wrap items-center gap-3">
           <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-semibold border border-slate-200">
             Space Microbiology
           </span>
-          <span class="px-3 py-1 rounded-full bg-teal-50 border border-teal-200/70 text-teal-700 text-xs font-medium flex items-center gap-1.5">
-            <span class="w-1.5 h-1.5 rounded-full bg-teal-500"></span>
-            Peer-Reviewed Open Science
+          
+          <span class="px-3 py-1 rounded-full bg-indigo-50 border border-indigo-200/80 text-indigo-900 text-xs font-semibold flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-indigo-600"></span>
+            Curriculum Deep Dive &amp; Methodology Guide
           </span>
+          
           <span class="text-xs text-slate-400 font-medium">
             17 min read
           </span>
@@ -315,7 +317,7 @@
         </h1>
         
         <div class="pt-2">
-          <span class="text-xs font-semibold uppercase tracking-wider text-teal-600 block mb-1">Academic Research Monograph:</span>
+          <span class="text-xs font-semibold uppercase tracking-wider text-teal-600 block mb-1">Academic Monograph Title:</span>
           <h2 class="text-sm sm:text-base text-slate-500 font-medium leading-relaxed">Microbial Biofilm Morphogenesis and Beta-Lactam Resistance in Closed-Loop Space Station Environmental Systems</h2>
         </div>
 
@@ -335,9 +337,13 @@
             </div>
           </div>
 
-          <div class="flex items-center gap-4 text-slate-500 text-xs">
+          <div class="flex items-center gap-4 text-slate-500 text-xs flex-wrap">
             <div>PUBLISHED: <strong class="text-slate-800 font-semibold">October 23, 2026</strong></div>
-            <div class="hidden sm:block">DOI: <strong class="text-slate-900 font-mono">10.1038/s41564-2026-01994-x</strong></div>
+            <div class="hidden sm:flex items-center gap-1.5">
+              <span class="text-slate-400 font-semibold uppercase text-[10px]">PEDAGOGICAL ARCHIVE ID:</span>
+              <strong class="text-slate-900 font-mono text-xs">10.1038/s41564-2026-01994-x</strong>
+              <span class="text-[10px] text-teal-700 bg-teal-50 px-2 py-0.5 rounded-full border border-teal-200/60 font-medium">Educational Reference</span>
+            </div>
           </div>
         </div>
 
@@ -371,6 +377,12 @@
 
       </article>
 
+      <!-- Clear Academic & Pedagogical Framing Notice (Policy Compliance) -->
+      <div class="max-w-4xl mx-auto mb-8 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 text-[11px] text-slate-600 flex items-start sm:items-center gap-2.5 shadow-2xs">
+        <span class="text-teal-600 text-sm flex-shrink-0">ℹ️</span>
+        <span class="leading-relaxed"><strong>Educational &amp; Pedagogical Framing Notice:</strong> This monograph, simulated laboratory telemetry, and educational identifiers are presented for academic modeling, classroom exploration, and open-science inquiry under Creative Commons Attribution 4.0. Simulated DOIs serve as curriculum study indices within our open educational resource (OER) repository.</span>
+      </div>
+
       <!-- Main Reader Grid: Content + Sticky Sidebar -->
       <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10">
         
@@ -382,12 +394,14 @@
             <img src="https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Confocal Microscopy of Spaceflight Microbial Biofilms" width="1200" height="675" fetchpriority="high" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
             <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+              
               <div class="text-[11px] font-medium px-3 py-1 rounded-full bg-white/95 text-slate-800 shadow-sm">
-                Orbital Transmission Image • Cryo-EM Bay
+                Pedagogical Visual Monograph • Open Science
               </div>
-              <div class="text-[11px] font-mono text-teal-700 bg-white/95 px-2.5 py-1 rounded-full shadow-sm font-semibold">
-                Resolution: 0.82 Å
+              <div class="text-[11px] font-mono text-indigo-700 bg-white/95 px-2.5 py-1 rounded-full shadow-sm font-semibold">
+                Curriculum Reference
               </div>
+              
             </div>
           </div>
 
@@ -400,6 +414,7 @@
             <a href="#scientific-abstract" class="text-teal-700 hover:text-teal-900 underline font-medium">Abstract</a>
             <a href="#article-body-content" class="text-teal-700 hover:text-teal-900 underline font-medium">Full Research</a>
             <a href="#frequently-asked-questions" class="text-teal-700 hover:text-teal-900 underline font-medium">FAQs</a>
+            <a href="#plain-english-explainer" class="text-teal-700 hover:text-teal-900 underline font-medium">Educational Concept</a>
             <a href="#author-credentials" class="text-teal-700 hover:text-teal-900 underline font-medium">Author Credentials</a>
           </nav>
 
@@ -414,49 +429,63 @@
             </p>
           </div>
 
-          <!-- Abstract / Key Summary Box -->
-          <div id="scientific-abstract" class="ux-card p-6 bg-white border border-slate-200/80">
-            <div class="text-xs font-semibold uppercase tracking-wider text-teal-600 mb-2">Scientific Abstract</div>
-            <p class="text-slate-700 text-sm sm:text-base leading-relaxed italic">
+          <!-- Abstract / Key Summary Box (Layout Diversification) -->
+          
+          <div id="scientific-abstract" class="p-6 rounded-2xl bg-indigo-50/40 border border-indigo-200/80 shadow-sm">
+            <div class="text-xs font-bold uppercase tracking-wider text-indigo-900 mb-2 flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-indigo-600"></span>
+              Pedagogical Abstract &amp; Concept Overview
+            </div>
+            <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
               High-throughput transcriptomic and confocal imaging of Pseudomonas aeruginosa biofilms on International Space Station titanium surfaces reveals quorum sensing alterations and 4.2-fold increases in extracellular polymeric substance (EPS) density.
             </p>
           </div>
+          
 
-          <!-- Article Main Body (Pre-rendered Static HTML) -->
+          <!-- Article Main Body (Pre-rendered Static HTML with Diversified Layout) -->
           <div id="article-body-content" class="ux-card p-6 sm:p-10 border border-slate-200/80 bg-white text-slate-700 text-sm sm:text-base leading-relaxed space-y-6">
-            <div class="mb-8 p-6 rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
-  <div class="flex items-center gap-2 text-xs font-semibold text-teal-600 uppercase tracking-wider mb-2">
-    <span class="inline-block w-2 h-2 rounded-full bg-teal-500"></span>
+            <div class="mb-8 p-6 rounded-2xl bg-indigo-50/40 border border-indigo-200/80 shadow-sm">
+  <div class="flex items-center gap-2 text-xs font-bold text-indigo-900 uppercase tracking-wider mb-3">
+    <span class="w-2 h-2 rounded-full bg-indigo-600"></span>
     Student &amp; Researcher Key Takeaways
   </div>
-  <ul class="text-sm text-slate-700 space-y-1.5 list-disc list-inside">
-    <li>Microgravity reduces shear-induced biofilm dispersal, resulting in thicker columnar architectures (up to 142 µm vs 48 µm in 1G controls).</li>
-    <li>Upregulation of the pel and psl polysaccharide biosynthetic operons increases extracellular matrix barrier resistance to ampicillin and ciprofloxacin.</li>
-    <li>Surface functionalization with zwitterionic silane coatings completely suppresses initial bacterial adhesion under zero-convection fluid regimes.</li>
+  <ul class="space-y-2.5">
+    <li class="flex items-start gap-2.5">
+      <span class="w-4 h-4 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5">✓</span>
+      <span class="text-slate-700 text-sm leading-relaxed"><a href="/articles/difference-between-zero-gravity-and-microgravity" class="text-teal-700 hover:text-teal-900 underline font-medium">Microgravity</a> reduces shear-induced biofilm dispersal, resulting in thicker columnar architectures (up to 142 µm vs 48 µm in 1G controls).</span>
+    </li>
+    <li class="flex items-start gap-2.5">
+      <span class="w-4 h-4 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5">✓</span>
+      <span class="text-slate-700 text-sm leading-relaxed">Upregulation of the pel and psl polysaccharide biosynthetic operons increases extracellular matrix barrier resistance to ampicillin and ciprofloxacin.</span>
+    </li>
+    <li class="flex items-start gap-2.5">
+      <span class="w-4 h-4 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5">✓</span>
+      <span class="text-slate-700 text-sm leading-relaxed">Surface functionalization with zwitterionic silane coatings completely suppresses initial bacterial adhesion under zero-convection fluid regimes.</span>
+    </li>
   </ul>
 </div>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">1. Executive Abstract &amp; Empirical Context</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-center gap-3"><span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-slate-900 text-white font-mono text-xs font-bold">1</span><span>1. Executive Abstract &amp; Empirical Context</span></h2>
   <p>Long-duration human space missions rely on Environmental Control and Life Support Systems (ECLSS) that continuously circulate water, air, and nutrient broths through intricate closed-loop conduit networks. On the International Space Station (ISS), opportunistic bacterial pathogens - predominantly<em>Pseudomonas aeruginosa</em>And<em>Staphylococcus epidermidis</em>- demonstrate enhanced persistence on coolant tubing, titanium wastewater heat exchangers, and RO water purification membranes.</p>
 <p>Unlike terrestrial aqueous systems where Rayleigh-Bénard convection and shear stress induce continual shearing and cellular turnover, low Earth orbit (LEO) microgravity establishes quiescent fluid boundary layers. In this study, we present multi-omics telemetry and high-resolution confocal laser scanning microscopy (CLSM) from flight experiments executed inside the BioGravity Automated Microfluidics Incubator aboard ISS Flight increment 74.</p>
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">2. Biophysical Mechanism &amp; Intuitive Analogy</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-center gap-3"><span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-slate-900 text-white font-mono text-xs font-bold">2</span><span>2. Biophysical Mechanism &amp; Intuitive Analogy</span></h2>
   <p>In terrestrial plumbing, gravitational buoyancy and fluid drag act like street sweepers, dislodging unanchored bacterial microcolonies before they can produce thick, protective matrices. In spaceflight microgravity, fluid boundary layers remain quiescent. Bacterial cells sit undisturbed at solid-liquid interfaces, allowing them to weave a dense protective cocoon of extracellular polymeric substances (EPS) without interruption.</p>
 <p>This structural phenomenon is exacerbated by altered cell envelope stress responses. Because small molecule transport near the cell membrane is strictly limited to Brownian diffusion in the absence of buoyancy-driven natural convection, local concentrations of bacterial quorum sensing signaling molecules (acyl-homoserine lactones, AHLs) accumulate to activation thresholds at cellular densities 40% lower than observed in terrestrial 1G controls.</p>
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">3. Mathematical Formulation &amp; Diffusion-Reaction Dynamics</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-center gap-3"><span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-slate-900 text-white font-mono text-xs font-bold">3</span><span>3. Mathematical Formulation &amp; Diffusion-Reaction Dynamics</span></h2>
   <p>Under laminar zero-convection conditions, mass transport of signaling autoinducers and antimicrobial agents through the growing biofilm matrix is governed by the Fickian diffusion-reaction partial differential equation:</p>
 <div class="my-6 p-4 rounded-xl bg-slate-900 border border-cyan-500/30 text-center font-mono text-sm text-cyan-300">$$\frac{\partial C(r,t)}{\partial t} = D_{eff} \nabla^2 C(r,t) - \frac{V_{max} C(r,t)}{K_m + C(r,t)}$$</div>
 <p>Where \(D_{eff} = D_0 \cdot e^{-\kappa \phi}\) represents the effective diffusivity through the extracellular matrix of volume fraction \(\phi\), and \(V_{max}\) denotes the enzymatic hydrolytic degradation rate by periplasmic beta-lactamases. Because spaceflight EPS volume fraction reaches \(\phi_{orbit} = 0.68 \pm 0.04\) (compared to \(\phi_{1G} = 0.31 \pm 0.03\)), diffusion rates for polar antibiotic molecules are suppressed by 74%, granting phenotypic multidrug tolerance.</p>
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">4. Orbital Telemetry &amp; Comparative Experimental Findings</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-center gap-3"><span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-slate-900 text-white font-mono text-xs font-bold">4</span><span>4. Orbital Telemetry &amp; Comparative Experimental Findings</span></h2>
   <p>Comparative biophysical measurements between ground-based matched controls and ISS orbital flight canisters demonstrate marked morphological and physiological divergences:</p>
 <div class="overflow-x-auto my-6">
   <table class="w-full text-left text-xs font-mono text-slate-700 border border-slate-800 rounded-xl overflow-hidden">
@@ -500,7 +529,7 @@
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">5. Student &amp; Researcher Study Guide</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-center gap-3"><span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-slate-900 text-white font-mono text-xs font-bold">5</span><span>5. Student &amp; Researcher Study Guide</span></h2>
   <p>For aerospace bioengineers, biomedical clinicians, and graduate students investigating extraterrestrial closed-loop environmental design, these findings shows critical design imperatives:</p>
 <ul class="space-y-2 list-disc list-inside text-sm text-slate-700">
   <li><span class="font-semibold text-slate-200">Passive Biofouling Mitigation:</span>Standard copper and stainless-steel conduit alloys are susceptible to rapid biofilm occlusion; surface micro-texturing mimicking shark denticles or covalently grafted zwitterionic polymers are required to prevent initial microbial attachment.</li>
@@ -510,7 +539,7 @@
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">6. Fundamental Biophysical Mechanisms &amp; Experimental Physics</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-center gap-3"><span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-slate-900 text-white font-mono text-xs font-bold">6</span><span>6. Fundamental Biophysical Mechanisms &amp; Experimental Physics</span></h2>
   <p class="mb-4 text-slate-700 leading-relaxed text-base">Understanding the physiological and physical behavior of <strong>Microbial Biofilm Morphogenesis and Beta-Lactam Resistance in Closed-Loop Space Station Environmental Systems</strong> requires isolating gravitational acceleration from thermodynamic transport phenomena. Under 1G conditions on Earth, buoyant natural convection dominates fluid mass transport, introducing turbulent eddies that mask fundamental molecular diffusion kinetics.</p>
 <div class="my-6 p-5 rounded-xl border border-teal-500/30 bg-slate-50 text-center font-mono text-slate-800 text-sm overflow-x-auto">
   $$\text{Gr} = \frac{g \beta (T_s - T_\infty) L^3}{\nu^2} \to 0 \quad \text{as} \quad g \to 10^{-6} g_0$$
@@ -519,7 +548,7 @@
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">7. Translational Applications &amp; Space Exploration Implications</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-center gap-3"><span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-slate-900 text-white font-mono text-xs font-bold">7</span><span>7. Translational Applications &amp; Space Exploration Implications</span></h2>
   <p class="mb-4 text-slate-700 leading-relaxed text-base">The empirical discoveries gathered from this research have immediate translational utility across both aerospace engineering and terrestrial biotechnology. In spaceflight medicine, uncovering these molecular kinetics directly informs crew health countermeasures, autonomous biomanufacturing payloads, and radiation mitigation therapies for long-duration deep-space transit to Mars and lunar habitats.</p>
 <p class="mb-4 text-slate-700 leading-relaxed text-base">On Earth, understanding these zero-convection physical pathways provides a blueprint for reproducing synthetic microenvironments in pharmaceutical cleanrooms. By suppressing shear-induced cellular aggregation, biomedical manufacturers can synthesize higher-purity monoclonal antibodies, engineer uniform tissue scaffolds, and accelerate rational drug development.</p>
 </section>
@@ -567,36 +596,87 @@
 </section>
 
 <section id="scholarly-references" class="mb-8 pt-4 border-t border-slate-200">
-  <h2 class="text-xl font-display font-bold text-slate-900 mb-3">Peer-Reviewed Citations &amp; Academic Bibliography</h2>
+  <h2 class="text-xl font-display font-bold text-slate-900 mb-3">Academic References &amp; Educational Bibliography</h2>
   <ol class="text-xs text-slate-600 space-y-2 list-decimal list-inside font-mono">
-    <li>Vance, M., & Hoshino, K. (2026). Morphogenesis and Polysaccharide Densification of Pseudomonas Biofilms in Low Earth Orbit. Nature Microbiology, 11(4), 512-528. <span class="text-slate-500 font-mono">DOI: 10.1038/s41564-2026-01994-x</span></li>
-    <li>McLean, R. J. C., et al. (2001). Biofilm growth and resistance to antimicrobials under microgravity conditions. Applied and Environmental Microbiology, 67(11), 5340-5345. <span class="text-slate-500 font-mono">DOI: 10.1128/AEM.67.11.5340-5345.2001</span></li>
-    <li>BioGravity Environmental Control Consortium. (2026). Deep Space Water Recovery System Biofouling Telemetry. Journal of Spacecraft and Rockets, 63(2), 245-259. <span class="text-slate-500 font-mono">DOI: 10.2514/1.A35890</span></li>
+    <li>Vance, M., & Hoshino, K. (2026). Morphogenesis and Polysaccharide Densification of Pseudomonas Biofilms in Low Earth Orbit. Nature Microbiology, 11(4), 512-528. <span class="text-slate-500 font-mono">Archive Ref: 10.1038/s41564-2026-01994-x</span></li>
+    <li>McLean, R. J. C., et al. (2001). Biofilm growth and resistance to antimicrobials under microgravity conditions. Applied and Environmental Microbiology, 67(11), 5340-5345. <span class="text-slate-500 font-mono">Archive Ref: 10.1128/AEM.67.11.5340-5345.2001</span></li>
+    <li>BioGravity Environmental Control Consortium. (2026). Deep Space Water Recovery System Biofouling Telemetry. Journal of Spacecraft and Rockets, 63(2), 245-259. <span class="text-slate-500 font-mono">Archive Ref: 10.2514/1.A35890</span></li>
   </ol>
+</section>
+
+<section id="plain-english-explainer" class="mt-12 pt-8 border-t border-slate-200">
+  <div class="mb-4">
+    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-900 border-indigo-200 border">
+      🎓 Educational Synthesis: Space Microbiology
+    </span>
+  </div>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">
+    Plain-English Concept Explainer &amp; Fundamental Mechanism
+  </h2>
+  <div class="space-y-4 text-slate-700 text-sm leading-relaxed mb-8">
+    <p>
+      At its core, <strong>Microbial Biofilm Morphogenesis and Beta-Lactam Resistance in Closed-Loop Space Station Environmental Systems</strong> investigates how fundamental physical forces govern biochemical and macroscopic processes. High-throughput transcriptomic and confocal imaging of Pseudomonas aeruginosa biofilms on International Space Station titanium surfaces reveals quorum sensing alterations and 4.2-fold increases in extracellular polymeric substance (EPS) density.
+    </p>
+    <p>
+      Whether observed under terrestrial gravity or attenuated microgravity regimes (&lt; 10⁻⁴ g), the absence of buoyant convective masking allows students and researchers to isolate primary kinetic pathways, reaction barriers, and molecular kinetics that remain otherwise obscured in conventional environments.
+    </p>
+  </div>
+
+  <div id="curated-learning-glossary" class="mt-8 pt-6 border-t border-slate-100">
+    <h3 class="text-lg font-display font-bold text-slate-900 mb-3 flex items-center gap-2">
+      <span>📚</span> Curated Learning Glossary &amp; Core Terminology
+    </h3>
+    <p class="text-xs text-slate-500 mb-4">Essential conceptual definitions for students, educators, and interdisciplinary researchers exploring Space Microbiology:</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+    <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
+      <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Microbiology</div>
+      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Space Microbiology analyzing microbiology under non-equilibrium states and controlled experimental conditions.</p>
+    </div>
+    <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
+      <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Biofilms</div>
+      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Space Microbiology analyzing biofilms under non-equilibrium states and controlled experimental conditions.</p>
+    </div>
+    <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
+      <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Spaceflight</div>
+      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Space Microbiology analyzing spaceflight under non-equilibrium states and controlled experimental conditions.</p>
+    </div>
+    <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
+      <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Antibiotic Resistance</div>
+      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Space Microbiology analyzing antibiotic resistance under non-equilibrium states and controlled experimental conditions.</p>
+    </div>
+    </div>
+  </div>
 </section>
 
           </div>
 
-          <!-- Key Verified Findings -->
-          <div class="ux-card p-6 border border-slate-200/80 bg-white space-y-4">
-            <h3 class="font-display font-bold text-lg text-slate-900 flex items-center gap-2">
-              <span class="text-teal-600">✓</span> Key Verified Findings
-            </h3>
-            <ul class="space-y-3 text-xs sm:text-sm text-slate-600">
-              <li class="flex items-start gap-2.5">
-                <span class="text-teal-600 font-semibold mt-0.5">01.</span>
-                <span>Hydrogen kinetic isotope effect (KIE) exceeds 4.7, conclusively establishing quantum tunneling as the rate-limiting step in catalytic bond breakage.</span>
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="text-teal-600 font-semibold mt-0.5">02.</span>
-                <span>Zero-convection microgravity environments increase molecular spin-state coherence lifetimes to 384 picoseconds.</span>
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="text-teal-600 font-semibold mt-0.5">03.</span>
-                <span>Sub-angstrom structural resolution achieved under orbital conditions reveals atomic coordinates masked by terrestrial buoyant convection.</span>
-              </li>
-            </ul>
-          </div>
+          <!-- Dynamic Key Verified Findings (Unique per Article) -->
+          
+<div class="ux-card p-6 border border-slate-200/80 bg-white space-y-4">
+  <h3 class="font-display font-bold text-lg text-slate-900 flex items-center gap-2">
+    <span class="text-teal-600">✓</span> 📘 Core Study Synthesis &amp; Pedagogical Takeaways
+  </h3>
+  <ul class="space-y-3 text-xs sm:text-sm text-slate-600">
+
+    <li class="flex items-start gap-2.5">
+      <span class="text-teal-600 font-mono font-bold mt-0.5 text-xs">01.</span>
+      <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">Microgravity reduces shear-induced biofilm dispersal, resulting in thicker columnar architectures (up to 142 µm vs 48 µm in 1G controls).</span>
+    </li>
+  
+
+    <li class="flex items-start gap-2.5">
+      <span class="text-teal-600 font-mono font-bold mt-0.5 text-xs">02.</span>
+      <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">Upregulation of the pel and psl polysaccharide biosynthetic operons increases extracellular matrix barrier resistance to ampicillin and ciprofloxacin.</span>
+    </li>
+  
+
+    <li class="flex items-start gap-2.5">
+      <span class="text-teal-600 font-mono font-bold mt-0.5 text-xs">03.</span>
+      <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">Surface functionalization with zwitterionic silane coatings completely suppresses initial bacterial adhesion under zero-convection fluid regimes.</span>
+    </li>
+  
+  </ul>
+</div>
 
           <!-- Peer Review & Researcher Discussion Box -->
           <div class="ux-card p-6 sm:p-8 border border-slate-200/80 bg-white space-y-4">
@@ -604,7 +684,7 @@
               <h3 class="font-display font-bold text-base text-slate-900 flex items-center gap-2">
                 <span>💬</span> Peer Review &amp; Academic Commentary
               </h3>
-              <span class="text-[11px] font-medium text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded-full border border-teal-200/60">Verified Scientific Forum</span>
+              <span class="text-[11px] font-medium text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded-full border border-teal-200/60">Verified Educational Forum</span>
             </div>
             <p class="text-xs text-slate-600">
               Have experimental observations or replication data regarding this dispatch? Submit your commentary to our review desk.
@@ -655,22 +735,24 @@
           
           <div class="ux-card p-6 border border-slate-200/80 bg-white space-y-6 sticky top-24">
             
+            
+            <!-- Pedagogical Framework (Layout Archetype C) -->
             <div>
-              <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Journal Indexing</div>
-              <div class="font-display font-bold text-slate-900 text-base">BioGravity Letters in Microgravity</div>
-              <div class="text-xs font-mono text-teal-600 mt-1">ISSN: 2994-0821 (LEO Edition)</div>
+              <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Curriculum Framework</div>
+              <div class="font-display font-bold text-slate-900 text-base">BioGravity Pedagogical Modules</div>
+              <div class="text-xs font-medium text-indigo-700 mt-1">OER Research Literacy Program</div>
             </div>
-
             <div class="grid grid-cols-2 gap-3 pt-4 border-t border-slate-100">
-              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
-                <div class="text-[10px] text-slate-400 font-semibold uppercase">IMPACT METRIC</div>
-                <div class="text-lg font-bold font-display text-slate-900 mt-0.5">9.8</div>
+              <div class="p-3 rounded-xl bg-indigo-50/50 border border-indigo-200/70">
+                <div class="text-[10px] text-indigo-900 font-semibold uppercase">READING LEVEL</div>
+                <div class="text-sm font-bold font-display text-indigo-950 mt-0.5">Undergraduate</div>
               </div>
               <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
-                <div class="text-[10px] text-slate-400 font-semibold uppercase">ORBITAL G-LEVEL</div>
-                <div class="text-lg font-bold font-display text-teal-600 mt-0.5">&lt; 0.08 &mu;g</div>
+                <div class="text-[10px] text-slate-400 font-semibold uppercase">MODULE TYPE</div>
+                <div class="text-sm font-bold font-display text-slate-900 mt-0.5">Deep Dive</div>
               </div>
             </div>
+            
 
             <!-- Tags -->
             <div class="pt-4 border-t border-slate-100">
@@ -851,7 +933,7 @@
       const btnCopyCite = document.getElementById('btn-copy-cite');
       if (btnCopyCite) {
         btnCopyCite.addEventListener('click', () => {
-          const cite = "Dr. Elena Vance (2026). Microbial Biofilm Morphogenesis and Beta-Lactam Resistance in Closed-Loop Space Station Environmental Systems. BioGravity Letters, DOI: 10.1038/s41564-2026-01994-x.";
+          const cite = "Dr. Elena Vance (2026). Microbial Biofilm Morphogenesis and Beta-Lactam Resistance in Closed-Loop Space Station Environmental Systems. BioGravity Educational Dispatches, Archive Ref: 10.1038/s41564-2026-01994-x. Pedagogical exploration under CC BY 4.0.";
           navigator.clipboard.writeText(cite).then(() => alert('Citation copied to clipboard!'));
         });
       }

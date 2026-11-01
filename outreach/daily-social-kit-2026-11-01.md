@@ -29,7 +29,9 @@ In terrestrial 1G environments, gravity-driven buoyant convection and hydrostati
 
 ### What the Orbital Data Demonstrates
 In low Earth orbit (<0.05 μg background acceleration), mass transport shifts strictly to pure Fickian diffusion. Key observations from this dispatch:
-
+- Neuronal tubulin dimers exhibit coherent dipole resonance modes centered at 1.2 THz under low thermal noise.
+- Microgravity isolation suppresses convective decoherence, extending coherent oscillation lifetimes to 384 picoseconds.
+- Kinetic isotope substitution confirms quantum hydrogen tunneling pathways along the tubulin C-terminal tails.
 
 ### Open Discussion
 Given that diffusion-limited regimes alter activation energy barriers and conformational lifetimes, could spaceborne bioreactors become the standard for macro-crystallography within the next decade?
@@ -74,7 +76,8 @@ https://biogravity.space/articles/terahertz-resonance-and-coherent-dipole-oscill
 * **Tweet 2 (Insights):**
 ```text
 2/3 🔬 Key Findings:
-
+• Neuronal tubulin dimers exhibit coherent dipole resonance modes centered at 1.2 THz under low thermal noise.
+• Microgravity isolation suppresses convective decoherence, extending coherent oscillation lifetimes to 384 picoseconds.
 
 Under diffusion-limited regimes, sub-angstrom structural resolution becomes achievable without mechanical shear.
 
