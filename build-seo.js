@@ -248,7 +248,7 @@ articles.forEach((art, idx) => {
   }
   const dateFormatted = art.date || 'October 21, 2026';
   const doi = art.doi || `10.1038/s41586-2026-${1000 + idx}`;
-  const authorName = art.author || 'Dr. Elena Rostova';
+  const authorName = typeof art.author === 'object' && art.author !== null ? (art.author.name || 'Dr. Elena Rostova') : (art.author || 'Dr. Elena Rostova');
   const authorRole = art.authorRole || 'Lead Investigator, BioGravity Consortium';
   const authorBio = art.authorBio || 'Specialist in quantum biology, non-classical transition states, and microgravity laboratory instrumentation.';
   const authorOrcid = art.authorOrcid || 'https://orcid.org/0000-0002-1825-0097';

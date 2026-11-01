@@ -1,0 +1,62 @@
+name: BioGravity Daily Cloud Indexing & Audit Automation
+
+on:
+  schedule:
+    # Runs 100% automatically in the cloud every day at 03:00 UTC (space telemetry cycle)
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+    inputs:
+      force_push_all:
+        description: 'Force push all canonical URLs to IndexNow & Search Engines'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  daily-indexing:
+    name: Autonomous Cloud Indexing & Health Audit
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🛰️ Checkout BioGravity Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🟢 Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: 📦 Install Project Dependencies
+        run: |
+          npm ci || npm install
+
+      - name: 🚀 Execute Cloud Indexing & Verification Engine
+        env:
+          GSC_KEY_JSON: ${{ secrets.GSC_KEY_JSON }}
+          SITE_URL: 'https://biogravity.space'
+        run: |
+          echo "Initiating daily autonomous cloud indexation run..."
+          node scripts/daily_cloud_indexing.js
+
+      - name: 📊 Commit and Push Updated Indexing Status & Report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Stage indexing health telemetry, status database, and public dashboard
+          git add exact-indexing-status.json data/indexing-health.json INDEXING-REPORT.md
+
+          if git diff --staged --quiet; then
+            echo "✅ No indexing status changes detected. Repository is up-to-date."
+          else
+            git commit -m "chore(cloud-indexing): daily autonomous indexation audit & push [skip ci]"
+            git pull --rebase origin main || true
+            git push origin main
+            echo "🎉 Successfully synchronized cloud indexing report with biogravity.space!"
+          fi

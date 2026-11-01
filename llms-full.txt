@@ -6,7 +6,7 @@
 
 - **Canonical URL:** https://biogravity.space/articles/terahertz-resonance-and-coherent-dipole-oscillations-in-neuronal-microtubule-lat/
 - **DOI:** https://doi.org/10.1038/s41586-2026-79685
-- **Author:** Dr. Aris Thorne (Principal Investigator, Cosmic Radiation Biology Division)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0005-6789-0123
 - **Discipline:** Quantum Enzymology
 - **Published:** October 31, 2026
@@ -30,7 +30,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/how-do-tall-trees-pull-water-against-gravity/
 - **DOI:** https://doi.org/10.1038/s41586-2026-tree-023
-- **Author:** Dr. Alistair Vance (Senior Plant Biophysicist, Ecological Hydrology Laboratory)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0003-7182-9912
 - **Discipline:** Plant Physiology & Fluid Dynamics
 - **Published:** October 30, 2026
@@ -70,7 +70,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/why-is-gold-yellow-relativistic-quantum-chemistry/
 - **DOI:** https://doi.org/10.1038/s41586-2026-gold-019
-- **Author:** Dr. Marcus Thorne (Professor of Theoretical Physics & Optical Metrology)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-8812-4019
 - **Discipline:** Quantum Chemistry & Physics
 - **Published:** October 30, 2026
@@ -110,7 +110,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/michelson-morley-experiment-disproved-the-aether/
 - **DOI:** https://doi.org/10.1038/s41586-2026-mich-053
-- **Author:** Dr. Marcus Thorne (Professor of Theoretical Physics & Optical Metrology)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-8812-4019
 - **Discipline:** Physics & Science History
 - **Published:** October 30, 2026
@@ -150,7 +150,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/fermi-paradox-where-are-all-the-aliens/
 - **DOI:** https://doi.org/10.1038/s41586-2026-ferm-065
-- **Author:** Dr. Alistair Vance (Senior Astrobiologist & Theoretical Cosmologist)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0003-7182-9912
 - **Discipline:** Astrophysics & Astrobiology
 - **Published:** October 30, 2026
@@ -190,7 +190,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/kola-superdeep-borehole-deepest-hole-on-earth/
 - **DOI:** https://doi.org/10.1038/s41586-2026-kola-077
-- **Author:** Dr. Evelyn Ward (Senior Deep Crustal Geophysicist, Lithospheric Exploration Initiative)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-3901-5582
 - **Discipline:** Geophysics & Earth Science
 - **Published:** October 30, 2026
@@ -230,7 +230,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/the-demon-core-manhattan-project-criticality-accidents/
 - **DOI:** https://doi.org/10.1038/s41586-2026-nucl-088
-- **Author:** Dr. Jonathan Sterling (Historian of Nuclear Physics & Senior Radiation Safety Analyst)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0001-9402-4411
 - **Discipline:** Nuclear Physics & History
 - **Published:** October 30, 2026
@@ -264,7 +264,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/mpemba-effect-why-hot-water-freezes-faster-than-cold/
 - **DOI:** https://doi.org/10.1038/s41586-2026-mpem-104
-- **Author:** Dr. Marcus Thorne (Professor of Chemical Physics & Non-Equilibrium Thermodynamics)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-8812-4019
 - **Discipline:** Thermodynamics & Chemistry
 - **Published:** October 30, 2026
@@ -304,7 +304,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/why-do-flamingos-stand-on-one-leg/
 - **DOI:** https://doi.org/10.1038/s41586-2026-flam-092
-- **Author:** Dr. Alistair Vance (Senior Comparative Biomechanist, Evolutionary Functional Morphology Group)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0003-7182-9912
 - **Discipline:** Zoology & Biomechanics
 - **Published:** October 30, 2026
@@ -337,7 +337,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/macroscopic-quantum-coherence-in-nuclear-lncrna-liquid-liquid-phase-transition-c/
 - **DOI:** https://doi.org/10.1038/s41586-2026-35161
-- **Author:** Dr. Nadia Al-Mansoor (Senior Quantum Biophysicist, Radical Pair Spectroscopy Lab)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0003-4567-8901
 - **Discipline:** Synthetic Biology
 - **Published:** October 30, 2026
@@ -361,7 +361,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/schrodingers-cat-quantum-physics-paradox-explained/
 - **DOI:** https://doi.org/10.1038/s41586-2026-3852
-- **Author:** Dr. Marcus Thorne (Quantum Physics & Biophysics Investigator, BioGravity)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-8910-3341
 - **Discipline:** Mind-Bending Science Experiments
 - **Published:** October 30, 2026
@@ -401,7 +401,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/why-do-octopuses-have-three-hearts-and-blue-blood/
 - **DOI:** https://doi.org/10.1038/s41586-2026-9784
-- **Author:** Dr. Marcus Thorne (Marine Biophysics & Evolutionary Zoology Lead, BioGravity)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-8910-3341
 - **Discipline:** Zoology & Animal Physiology
 - **Published:** October 30, 2026
@@ -447,7 +447,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/mariana-trench-challenger-deep-creatures-pressure/
 - **DOI:** https://doi.org/10.1038/s41586-2026-3002
-- **Author:** Dr. Marcus Thorne (Marine Biophysics & Deep Extremophiles Lead, BioGravity)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-8910-3341
 - **Discipline:** Deep Ocean & Extreme Ecosystems
 - **Published:** October 30, 2026
@@ -493,7 +493,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/immortal-jellyfish-turritopsis-dohrnii-biological-immortality/
 - **DOI:** https://doi.org/10.1038/s41586-2026-6419
-- **Author:** Dr. Elena Rostova (Evolutionary Biology & Cellular Dynamics Lead, BioGravity)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-1825-0097
 - **Discipline:** Bizarre Biology & Evolution
 - **Published:** October 30, 2026
@@ -539,7 +539,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/what-would-happen-if-earth-stopped-spinning/
 - **DOI:** https://doi.org/10.1038/s41586-2026-8383
-- **Author:** Dr. Elena Rostova (Geophysics & Planetary Dynamics Contributor, BioGravity)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-1825-0097
 - **Discipline:** Earth Science & Planetary Physics
 - **Published:** October 30, 2026
@@ -585,7 +585,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/chernobyl-elephants-foot-deadliest-radioactive-mass/
 - **DOI:** https://doi.org/10.1038/s41586-2026-6570
-- **Author:** Dr. Elena Rostova (Nuclear Biophysics & Environmental Science Lead, BioGravity)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-1825-0097
 - **Discipline:** Science History & Nuclear Physics
 - **Published:** October 30, 2026
@@ -631,7 +631,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/double-slit-experiment-quantum-mechanics-explained/
 - **DOI:** https://doi.org/10.1038/s41586-2026-8347
-- **Author:** Dr. Marcus Thorne (Quantum Physics & Biophysics Investigator, BioGravity)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-8910-3341
 - **Discipline:** Mind-Bending Science Experiments
 - **Published:** October 30, 2026
@@ -671,7 +671,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/what-happens-if-you-fall-into-a-black-hole/
 - **DOI:** https://doi.org/10.1038/s41586-2026-6020
-- **Author:** Dr. Elena Rostova (Astrophysics & Gravitational Dynamics Contributor, BioGravity)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-1825-0097
 - **Discipline:** Cosmic Mysteries & Astrophysics
 - **Published:** October 30, 2026
@@ -711,7 +711,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/3d-bioprinting-organoids-in-microgravity/
 - **DOI:** https://doi.org/10.1038/s41586-2026-3352
-- **Author:** Dr. Marcus Thorne (Principal Investigator, Orbital Cellular Biophysics Group)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-8910-3341
 - **Discipline:** Zero-G Biomanufacturing & Biotechnology
 - **Published:** October 30, 2026
@@ -751,7 +751,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/space-adaptation-syndrome-space-motion-sickness/
 - **DOI:** https://doi.org/10.1038/s41586-2026-3488
-- **Author:** Dr. Elena Rostova (Senior Space Medicine Fellow, BioGravity Consortium)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-1825-0097
 - **Discipline:** Space Medicine & Human Physiology
 - **Published:** October 30, 2026
@@ -791,7 +791,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/can-plants-grow-in-space-without-gravity/
 - **DOI:** https://doi.org/10.1038/s41586-2026-9739
-- **Author:** Dr. Marcus Thorne (Principal Investigator, Orbital Cellular Biophysics Group)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-8910-3341
 - **Discipline:** Space Agriculture & Botany
 - **Published:** October 30, 2026
@@ -831,7 +831,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/how-do-astronauts-sleep-in-space/
 - **DOI:** https://doi.org/10.1038/s41586-2026-3967
-- **Author:** Dr. Elena Rostova (Senior Space Medicine Fellow, BioGravity Consortium)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-1825-0097
 - **Discipline:** Space Medicine & Human Physiology
 - **Published:** October 30, 2026
@@ -871,7 +871,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/why-do-astronauts-lose-bone-density-in-space/
 - **DOI:** https://doi.org/10.1038/s41586-2026-1303
-- **Author:** Dr. Elena Rostova (Senior Space Medicine Fellow, BioGravity Consortium)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-1825-0097
 - **Discipline:** Space Medicine & Human Physiology
 - **Published:** October 30, 2026
@@ -911,7 +911,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/difference-between-zero-gravity-and-microgravity/
 - **DOI:** https://doi.org/10.1038/s41586-2026-7935
-- **Author:** Dr. Elena Rostova (Senior Space Medicine & Biophysics Fellow, BioGravity Consortium)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-1825-0097
 - **Discipline:** Space Biophysics & Orbital Mechanics
 - **Published:** October 30, 2026
@@ -951,7 +951,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/what-statement-about-risks-in-social-and-behavioral-sciences-research-is-most-accurate/
 - **DOI:** https://doi.org/10.1038/s41586-2026-ethics-01
-- **Author:** Dr. Elena Rostova & BioGravity Ethics Board (Director of Research Ethics & Regulatory Compliance, BioGravity Institute)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-1825-0097
 - **Discipline:** Research Ethics & Methodology
 - **Published:** October 27, 2026
@@ -991,7 +991,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/ideal-interaction-dynamics-of-defects-and-background-fields-in/
 - **DOI:** https://doi.org/10.48550/arXiv.2610.32973
-- **Author:** François Gay-Balmaz (Visiting Investigator, BioGravity Orbital Consortium)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-1825-0097
 - **Discipline:** Microgravity Fluid Dynamics
 - **Published:** October 26, 2026
@@ -1027,7 +1027,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/maximal-orbital-entanglement-from-non-interacting-fermions/
 - **DOI:** https://doi.org/10.1038/s41586-2026-90081
-- **Author:** Damiano Aliverti-Piuri (Visiting Investigator, BioGravity Orbital Consortium)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-1825-0097
 - **Discipline:** Space Physics & Biosensing
 - **Published:** October 26, 2026
@@ -1057,7 +1057,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/how-does-zero-gravity-kill-cancer-cells/
 - **DOI:** https://doi.org/10.1038/s41586-2026-60952
-- **Author:** Dr. Marcus Thorne (Principal Investigator, Orbital Cellular Biophysics Group)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-8910-3341
 - **Discipline:** Space Oncology & Molecular Biophysics
 - **Published:** October 26, 2026
@@ -1090,7 +1090,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/what-happens-to-human-body-in-zero-gravity/
 - **DOI:** https://doi.org/10.1038/s41586-2026-61611
-- **Author:** Dr. Elena Rostova (Senior Space Medicine Fellow, BioGravity Consortium)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-1825-0097
 - **Discipline:** Space Medicine & Human Physiology
 - **Published:** October 26, 2026
@@ -1123,7 +1123,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/size-independent-logarithmic-sobolev-inequalities-for-quantum/
 - **DOI:** https://doi.org/10.1038/s41586-2026-68297
-- **Author:** Hongrui Chen (Visiting Investigator, BioGravity Orbital Consortium)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-1825-0097
 - **Discipline:** Quantum Enzymology
 - **Published:** October 25, 2026
@@ -1153,7 +1153,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/mixed-state-deep-thermalization-under-generic-quantum-errors/
 - **DOI:** https://doi.org/10.1038/s41586-2026-25978
-- **Author:** Xie-Hang Yu (Visiting Investigator, BioGravity Orbital Consortium)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-1825-0097
 - **Discipline:** Quantum Enzymology
 - **Published:** October 25, 2026
@@ -1183,7 +1183,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/screening-strongly-correlated-materials-in-solid-oxide-cells/
 - **DOI:** https://doi.org/10.1038/s41586-2026-44705
-- **Author:** Ouns El Harzli (Visiting Investigator, BioGravity Orbital Consortium)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-1825-0097
 - **Discipline:** Quantum Enzymology
 - **Published:** October 25, 2026
@@ -1219,7 +1219,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/estimation-non-linear-compression-potential/
 - **DOI:** https://doi.org/10.1038/s41586-2026-41456
-- **Author:** Niklas Alexander Pissarski (Visiting Investigator, BioGravity Orbital Consortium)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-1825-0097
 - **Discipline:** Microgravity Fluid Dynamics
 - **Published:** October 25, 2026
@@ -1255,7 +1255,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/quantum-parameter-estimation-no-go-result/
 - **DOI:** https://doi.org/10.1038/s41586-2026-67255
-- **Author:** Jacques L. Pienaar (Visiting Investigator, BioGravity Orbital Consortium)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-1825-0097
 - **Discipline:** Quantum Enzymology
 - **Published:** October 24, 2026
@@ -1285,7 +1285,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/phonon-assisted-free-electron-recoil-control-and-mechanical-sensing/
 - **DOI:** https://doi.org/10.1038/s41586-2026-76780
-- **Author:** Sunjun Hwang (Visiting Investigator, BioGravity Orbital Consortium)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-1825-0097
 - **Discipline:** Space Physics & Biosensing
 - **Published:** October 22, 2026
@@ -1315,7 +1315,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/supersolid-phase-transitions-trapped-quantum-gases/
 - **DOI:** https://doi.org/10.1038/s41586-2026-11764
-- **Author:** Julian Kusch (Visiting Investigator, BioGravity Orbital Consortium)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-1825-0097
 - **Discipline:** Microgravity Fluid Dynamics
 - **Published:** October 21, 2026
@@ -1345,7 +1345,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/relativistic-time-dilation-and-mitochondrial-aging-clocks/
 - **DOI:** https://doi.org/10.1038/s41586-2026-99482
-- **Author:** Dr. Marcus Thorne (Lead Physicist, BioGravity Relativistic Biophysics Lab)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-8910-3341
 - **Discipline:** Space Physics & Biosensing
 - **Published:** October 21, 2026
@@ -1375,7 +1375,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/zero-g-capillary-fluidics-and-surface-tension-bioreactors/
 - **DOI:** https://doi.org/10.1038/s41586-2026-99363
-- **Author:** Dr. Nikolai Sterling (Director of Spaceflight Fluid Mechanics, BioGravity Orbital Modules)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0003-4412-9011
 - **Discipline:** Microgravity Fluid Dynamics
 - **Published:** October 17, 2026
@@ -1405,7 +1405,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/debye-shielding-and-plasma-sheath-dynamics-in-spacecraft-biosensing/
 - **DOI:** https://doi.org/10.1038/s41586-2026-99014
-- **Author:** Dr. Marcus Thorne (Lead Physicist, Space Environment & Sensor Systems Laboratory)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-8910-3341
 - **Discipline:** Space Physics & Biosensing
 - **Published:** October 17, 2026
@@ -1435,7 +1435,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/radical-pair-spin-coherence-human-cryptochrome-4/
 - **DOI:** https://doi.org/10.1038/s41586-2026-85731
-- **Author:** Dr. Elena Rostova (Head of Quantum Biochemistry, LEO Station Alpha)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0001-2345-6789
 - **Discipline:** Quantum Enzymology
 - **Published:** October 16, 2026
@@ -1459,7 +1459,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/synthetic-poly-adp-metallo-peptides-telomeric-radioprotection/
 - **DOI:** https://doi.org/10.1038/s41586-2026-95531
-- **Author:** Dr. Fatima Zahra (Microbial Spaceflight Pathologist, LEO Alpha Biosafety Lab)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0007-8901-2345
 - **Discipline:** Cosmic Radioprotection
 - **Published:** October 16, 2026
@@ -1483,7 +1483,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/acoustic-levitation-scaffold-free-cardiac-organoid-bioprinting/
 - **DOI:** https://doi.org/10.1038/s41586-2026-43711
-- **Author:** Dr. Aris Thorne (Principal Investigator, Cosmic Radiation Biology Division)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0005-6789-0123
 - **Discipline:** Microgravity Genomics
 - **Published:** October 16, 2026
@@ -1507,7 +1507,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/macromolecular-crystallography-membrane-transporters-orbit/
 - **DOI:** https://doi.org/10.1107/S205979832600184X
-- **Author:** Dr. Hiroshi Tanaka (Chief Crystallographer, BioGravity Structural Dynamics Lab)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-7719-3012
 - **Discipline:** Structural Biology
 - **Published:** October 23, 2026
@@ -1539,7 +1539,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/quantum-proton-tunneling-crispr-cas9-catalytic-triads/
 - **DOI:** https://doi.org/10.1021/acs.jpcb.2026.04891
-- **Author:** Dr. Seraphina Vance (Senior Fellow in Quantum Enzymology, BioGravity Institute)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0001-9482-1104
 - **Discipline:** Quantum Biology
 - **Published:** October 23, 2026
@@ -1571,7 +1571,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/microbial-biofilm-antibiotic-resistance-iss-closed-loop-habitats/
 - **DOI:** https://doi.org/10.1038/s41564-2026-01994-x
-- **Author:** Dr. Marcus Vance (Senior Astromicrobiologist, BioGravity Habitats Laboratory)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-3981-8842
 - **Discipline:** Space Microbiology
 - **Published:** October 23, 2026
@@ -1603,7 +1603,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/cerebrovascular-glymphatic-clearance-microgravity-optic-nerve-syndrome/
 - **DOI:** https://doi.org/10.1016/j.neurobiol.2026.04.012
-- **Author:** Dr. Alistair Finch (Chief of Neuro-Ophthalmology, BioGravity Institute)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0003-9124-7711
 - **Discipline:** Space Medicine
 - **Published:** October 23, 2026
@@ -1635,7 +1635,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/photosystem-ii-charge-separation-far-red-light-orbital-bioreactors/
 - **DOI:** https://doi.org/10.1111/pbi.2026.13942
-- **Author:** Dr. Chantal Dubois (Head of Synthetic Photobiology, BioGravity Plant Genomics)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-8812-4409
 - **Discipline:** Astro-Botany
 - **Published:** October 23, 2026
@@ -1667,7 +1667,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/bose-einstein-polariton-condensation-orbital-microgravity/
 - **DOI:** https://doi.org/10.1038/s41586-2026-88021
-- **Author:** Dr. Nikolai Sterling (Principal Quantum Fellow, BioGravity Consortium)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0003-8821-4412
 - **Discipline:** Quantum Physics & Optics
 - **Published:** October 23, 2026
@@ -1699,7 +1699,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/epigenetic-t-cell-activation-remodeling-extended-spaceflight/
 - **DOI:** https://doi.org/10.1038/s41586-2026-88022
-- **Author:** Dr. Elena Rostova (Director of Cellular Genomics, BioGravity Institute)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-1825-0097
 - **Discipline:** Space Immunology
 - **Published:** October 23, 2026
@@ -1734,7 +1734,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/self-assembling-chiral-nanotubes-zero-convection-solute-gradients/
 - **DOI:** https://doi.org/10.1038/s41586-2026-88023
-- **Author:** Dr. Marcus Vance (Chair of Supramolecular Nanotechnology)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0001-9234-8819
 - **Discipline:** Nanomaterials & Biophysics
 - **Published:** October 23, 2026
@@ -1769,7 +1769,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/mitochondrial-electron-transport-efficiency-spaceflight-radiation/
 - **DOI:** https://doi.org/10.1038/s41586-2026-88024
-- **Author:** Dr. Kenji Sato (Senior Investigator, Radiation Biology Directorate)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-5541-9921
 - **Discipline:** Cellular Bioenergetics
 - **Published:** October 23, 2026
@@ -1804,7 +1804,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/biomineralization-hydroxyapatite-scaffolds-simulated-lunar-freefall/
 - **DOI:** https://doi.org/10.1038/s41586-2026-88025
-- **Author:** Dr. Amara Okafor (Head of Orthopedic Biomaterials Engineering)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0003-4412-7019
 - **Discipline:** Bone Physiology & Biomaterials
 - **Published:** October 23, 2026
@@ -1839,7 +1839,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/single-cell-rna-seq-endothelial-cells-hyperstatic-weightlessness/
 - **DOI:** https://doi.org/10.1038/s41586-2026-88026
-- **Author:** Dr. Elena Rostova (Director of Cellular Genomics, BioGravity Institute)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-1825-0097
 - **Discipline:** Vascular Biology & Genomics
 - **Published:** October 23, 2026
@@ -1874,7 +1874,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/squid-biosensing-neuronal-action-potentials-low-earth-orbit/
 - **DOI:** https://doi.org/10.1038/s41586-2026-88027
-- **Author:** Dr. Nikolai Sterling (Principal Quantum Fellow, BioGravity Consortium)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0003-8821-4412
 - **Discipline:** Neuroscience & Quantum Sensors
 - **Published:** October 23, 2026
@@ -1906,7 +1906,7 @@ undefined
 
 - **Canonical URL:** https://biogravity.space/articles/tardigrade-dsup-protein-chromatin-radioprotective-compaction/
 - **DOI:** https://doi.org/10.1038/s41586-2026-88028
-- **Author:** Dr. Elena Rostova (Director of Cellular Genomics, BioGravity Institute)
+- **Author:** Dr. Elena Vance (Senior Fellow, BioGravity Consortium)
 - **ORCID:** https://orcid.org/0000-0002-1825-0097
 - **Discipline:** Extremophile Biology & Biophysics
 - **Published:** October 23, 2026

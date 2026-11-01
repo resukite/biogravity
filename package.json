@@ -22,7 +22,9 @@
     "sync-md": "node sync-markdown.js",
     "gsc": "node scripts/gsc-manager.js",
     "submit-index": "node scripts/submit-indexing.js",
-    "check-index": "node scripts/check-indexing.js"
+    "check-index": "node scripts/check-indexing.js",
+    "cloud-index": "node scripts/daily_cloud_indexing.js",
+    "cloud-seo": "node scripts/daily_seo_optimizer.js"
   },
   "keywords": [
     "biotechnology",
