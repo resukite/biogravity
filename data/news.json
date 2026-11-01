@@ -1,7 +1,7 @@
 [
   {
     "id": "quantum-navigation-in-birds-researchers-clock-extended-radical",
-    "title": "Quantum Navigation in Birds: Researchers Clock Extended Radical Pair Spin Coherence",
+    "title": "Quantum Navigation in Birds: Clocking Radical Pair Coherence",
     "originalMonograph": "Direct Observation of Coherent Quantum Vibrations in Avian Cryptochrome Signaling Complexes",
     "category": "Quantum Biology & Biophysics",
     "summary": "Quantum Navigation in Birds: Researchers Clock Extended Radical Pair Spin Coherence: Ultrafast spectroscopy confirmed quantum radical pair spin-coherence lifetimes exceed 15 microseconds within intact cryptochrome-4 sensory protein scaffolds. Published via Biophysical Research Letters.",
@@ -47,7 +47,7 @@
   },
   {
     "id": "fast-and-accurate-neural-triage-decoding-of-new-evidence-in",
-    "title": "Fast and accurate neural triage decoding of: New Evidence in Quantum & Physics",
+    "title": "Fast and Accurate Neural Triage Decoding [2026 Breakthrough]",
     "originalMonograph": "Fast and accurate neural triage decoding of ultra-high-rate quantum LDPC codes",
     "category": "Quantum & Physics",
     "summary": "Fast and accurate neural triage decoding of: New Evidence in Quantum & Physics: Quantum error correction is essential for fault-tolerant quantum computing. High-rate quantum low-density parity-check (qLDPC) codes have emerged as a promising approach to reducing the substantial physical qubit overhead of quantum error correction, enabling encoding rates exceeding $1/2$ in blocks of approximately one thousand physical data qubits. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40490v1).",
@@ -70,7 +70,7 @@
   },
   {
     "id": "using-domain-walls-to-benchmark-fast-quantum-anneals-new",
-    "title": "Using domain walls to benchmark fast quantum anneals: New Evidence in Quantum & Physics",
+    "title": "Benchmarking Fast Quantum Anneals with Domain Walls [2026]",
     "originalMonograph": "Using domain walls to benchmark fast quantum anneals",
     "category": "Quantum & Physics",
     "summary": "Using domain walls to benchmark fast quantum anneals: New Evidence in Quantum & Physics: We consider the distribution of domain walls arising in ground states of frustrated 1-dimensional Ising spin chains with anti-parallel boundary spins. For ideal chains, a sine-squared particle-in-a-box distribution of domain walls is expected in the quantum setting, and a uniform distribution expected classically. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40504v1).",
@@ -93,7 +93,7 @@
   },
   {
     "id": "the-gauge-invariant-orbital-angular-momentum-of-vector-new",
-    "title": "The gauge-invariant orbital angular momentum of vector: New Evidence in Quantum & Physics",
+    "title": "Gauge-Invariant Orbital Angular Momentum of Vector Bosons",
     "originalMonograph": "On the gauge-invariant orbital angular momentum of vector optical vortices in the paraxial approximation and beyond",
     "category": "Quantum & Physics",
     "summary": "The gauge-invariant orbital angular momentum of vector: New Evidence in Quantum & Physics: In this paper we present a gauge-invariant formalism for describing the spin and orbital angular momenta of scalar and vector optical vortices. The correction term, arising from consistent incorporation of the transverse vector potential's nonlocality, restores gauge invariance and makes it possible to separate the total angular momentum into spin and orbital components. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40523v1).",
@@ -139,7 +139,7 @@
   },
   {
     "id": "mapping-stellar-obliquity-across-space-and-time-new-evidence-in",
-    "title": "Mapping Stellar Obliquity Across Space and Time: New Evidence in Space & Astronomy",
+    "title": "Mapping Stellar Obliquity Across Space and Time [Astrophysics]",
     "originalMonograph": "Mapping Stellar Obliquity Across Space and Time",
     "category": "Space & Astronomy",
     "summary": "Mapping Stellar Obliquity Across Space and Time: New Evidence in Space & Astronomy: The angle between a star's rotational angular momentum vector and the orbital angular momentum vector of its planets---stellar obliquity---encodes the initial conditions and dynamical history of planetary systems. Variations in obliquity with orbital separation may arise from either primordial disk structure (e.g., broken or warped protoplanetary disks with misaligned inner and outer regions) or subsequent dynamical interactions with planets or external perturbers. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40527v1).",
@@ -162,7 +162,7 @@
   },
   {
     "id": "grow-compress-and-perturb-a-hybrid-new-evidence-in-quantum",
-    "title": "Grow, Compress, and Perturb: A Hybrid: New Evidence in Quantum & Physics",
+    "title": "Grow, Compress, and Perturb: Hybrid Quantum Tensor Networks",
     "originalMonograph": "Grow, Compress, and Perturb: A Hybrid Quantum-Classical Pathway to Scalable Quantum Chemistry on Quantum Computers",
     "category": "Quantum & Physics",
     "summary": "Grow, Compress, and Perturb: A Hybrid: New Evidence in Quantum & Physics: While Variational Quantum Eigensolver (VQE) variants are among leading candidates for electronic structure calculations on quantum computers, gradient-based operator selection limits their scalability. To solve this, we introduce the Hamiltonian-gradient-free VULCAN (Variational Upbuilding, Layered Compression, Adaptive N-body perturbation) layered VQE framework. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40561v1).",
@@ -185,7 +185,7 @@
   },
   {
     "id": "algebraic-strong-to-weak-symmetry-breaking-and-partial-new",
-    "title": "Algebraic strong-to-weak symmetry breaking and partial: New Evidence in Quantum & Physics",
+    "title": "Strong-to-Weak Symmetry Breaking in Quantum Many-Body Systems",
     "originalMonograph": "Algebraic strong-to-weak symmetry breaking and partial decodability in the surface code",
     "category": "Quantum & Physics",
     "summary": "Algebraic strong-to-weak symmetry breaking and partial: New Evidence in Quantum & Physics: Coherent noise can give rise to unconventional regimes of quantum information recovery and mixed-state order. We study these phenomena in two settings related by Wegner duality: the triangular-lattice surface code subject to single-qubit Pauli-$Z$ rotations followed by syndrome measurements, and a $\\mathbb{Z}_2$ paramagnet subject to strongly symmetric decoherence. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40567v1).",
@@ -231,7 +231,7 @@
   },
   {
     "id": "what-can-be-computed-with-indefinite-causal-structure-new",
-    "title": "What Can Be Computed with Indefinite Causal Structure?: New Evidence in Quantum & Physics",
+    "title": "Computing with Indefinite Causal Structure in Quantum Physics",
     "originalMonograph": "What Can Be Computed with Indefinite Causal Structure?",
     "category": "Quantum & Physics",
     "summary": "What Can Be Computed with Indefinite Causal Structure?: New Evidence in Quantum & Physics: Can quantum computation become more powerful when operations do not need to follow a definite causal order? We study this question in the process matrix formalism of Oreshkov et al. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40573v1).",
@@ -254,7 +254,7 @@
   },
   {
     "id": "classical-communication-over-quantum-channels-does-new-evidence",
-    "title": "Classical communication over quantum channels: does: New Evidence in Quantum & Physics",
+    "title": "Classical Communication Limits Over Quantum Channels [Study]",
     "originalMonograph": "Classical communication over quantum channels: does entanglement help in nature?",
     "category": "Quantum & Physics",
     "summary": "Classical communication over quantum channels: does: New Evidence in Quantum & Physics: Can entangling codewords across independent uses of a quantum channel improve the rate of classical communication? An old conjecture states that there is no such entanglement advantage for all channels. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40585v1).",
@@ -277,7 +277,7 @@
   },
   {
     "id": "probing-fluctuations-in-photon-emission-statistics-of-new",
-    "title": "Probing fluctuations in photon emission statistics of: New Evidence in Quantum & Physics",
+    "title": "Probing Fluctuations in Single-Photon Emission Statistics",
     "originalMonograph": "Probing fluctuations in photon emission statistics of spin injected quantum dots with time dependent electronic excitation",
     "category": "Quantum & Physics",
     "summary": "Probing fluctuations in photon emission statistics of: New Evidence in Quantum & Physics: Electrically spin-injected ensembles of InGaAs/GaAs quantum dots emit circularly polarized single photons, with the emission helicity determined by the spin polarization of the injected electrons. A ferromagnetic CoFeB spin-injection layer with perpendicular magnetic anisotropy, combined with an MgO tunnel barrier, enables spin-polarized electron injection into the quantum-dot active region, resulting in circularly polarized photon emission at zero applied magnetic field. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40593v1).",
@@ -300,7 +300,7 @@
   },
   {
     "id": "algebraic-theory-of-abelian-fractons-and-beyond-new-evidence-in",
-    "title": "Algebraic theory of abelian fractons and beyond: New Evidence in Quantum & Physics",
+    "title": "Algebraic Theory of Abelian Fractons in Topological Matter",
     "originalMonograph": "Algebraic theory of abelian fractons and beyond",
     "category": "Quantum & Physics",
     "summary": "Algebraic theory of abelian fractons and beyond: New Evidence in Quantum & Physics: We develop an algebraic theory of fusion, mobility, and statistics in abelian gapped fracton orders and topological phases. The framework generalizes the algebraic description of abelian anyons to systems with restricted-mobility and spatially extended excitations. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40596v1).",
@@ -323,7 +323,7 @@
   },
   {
     "id": "exceptional-points-as-witnesses-of-non-gaussian-noise-new",
-    "title": "Exceptional Points as Witnesses of Non-Gaussian Noise: New Evidence in Quantum & Physics",
+    "title": "Exceptional Points as Witnesses of Non-Gaussian Noise [2026]",
     "originalMonograph": "Exceptional Points as Witnesses of Non-Gaussian Noise",
     "category": "Quantum & Physics",
     "summary": "Exceptional Points as Witnesses of Non-Gaussian Noise: New Evidence in Quantum & Physics: Efficient control of quantum devices requires the knowledge of their environmental noise, yet the commonly measured power spectrum does not fully characterize non-Gaussian fluctuations of realistic environments. Here we show that exceptional points (EPs) in the noise-averaged dephasing response can expose observable signatures of non-Gaussian statistics, distinguishing environments with identical lower-order statistics. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40612v1).",
@@ -346,7 +346,7 @@
   },
   {
     "id": "optimal-diamond-distance-estimation-for-unitary-channels-new",
-    "title": "Optimal Diamond Distance Estimation for Unitary Channels: New Evidence in Quantum & Physics",
+    "title": "Optimal Diamond Distance Estimation for Unitary Channels",
     "originalMonograph": "Optimal Diamond Distance Estimation for Unitary Channels",
     "category": "Quantum & Physics",
     "summary": "Optimal Diamond Distance Estimation for Unitary Channels: New Evidence in Quantum & Physics: The diamond distance between two quantum channels determines the optimal probability of distinguishing them from a single use. We give a quantum algorithm that estimates the diamond distance between two unknown $d$-dimensional unitary channels to within additive error $\\varepsilon$, using $O(\\sqrt{d}/\\varepsilon)$ queries to the unitary channels and their inverses. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40623v1).",
@@ -369,7 +369,7 @@
   },
   {
     "id": "left-handed-transmission-lines-for-the-dynamical-new-evidence-in",
-    "title": "Left-Handed Transmission Lines for the Dynamical: New Evidence in Quantum & Physics",
+    "title": "Left-Handed Transmission Lines for Dynamical Casimir Physics",
     "originalMonograph": "Left-Handed Transmission Lines for the Dynamical Casimir Effect",
     "category": "Quantum & Physics",
     "summary": "Left-Handed Transmission Lines for the Dynamical: New Evidence in Quantum & Physics: Left-handed (LH) superconducting transmission lines, built with series capacitors and shunt inductors instead of the series inductors and shunt capacitors of a conventional right-handed (RH) line, have a spectrum with a nonzero lower band edge and modes that become sparse at high frequencies. We study the dynamical Casimir effect in a LH line terminated by a flux-modulated SQUID and compare it with an RH line built from the same elements and with a long coplanar waveguide terminated by the same SQUID. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40624v1).",
@@ -392,7 +392,7 @@
   },
   {
     "id": "locality-in-dissipative-ground-state-preparation-new-evidence-in",
-    "title": "Locality in Dissipative Ground-State Preparation: New Evidence in Space & Astronomy",
+    "title": "Locality in Dissipative Ground-State Preparation [Quantum]",
     "originalMonograph": "Locality in Dissipative Ground-State Preparation",
     "category": "Space & Astronomy",
     "summary": "Locality in Dissipative Ground-State Preparation: New Evidence in Space & Astronomy: Can the ground state of a local Hamiltonian be prepared by local dissipation? We address this question for free-fermion Hamiltonians, using a quadratic Lindbladian with linear jump operators for the dissipative ground-state preparation. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40628v1).",
@@ -415,7 +415,7 @@
   },
   {
     "id": "hyaluronic-acid-over-expression-drives-tissue-new-evidence-in",
-    "title": "Hyaluronic acid over-expression drives tissue: New Evidence in Space & Astronomy",
+    "title": "Hyaluronic Acid Overexpression in Tissue Regeneration [LEO]",
     "originalMonograph": "Hyaluronic acid over-expression drives tissue architecture in both healthy and diseased states",
     "category": "Space & Astronomy",
     "summary": "Hyaluronic acid over-expression drives tissue: New Evidence in Space & Astronomy: Tissue architecture is shaped by a variety of biomechanical and biochemical mechanisms, including morphogen patterning, differential growth, and spatial variations in cellular contractility. These mechanisms typically emphasize forces generated within cells. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40634v1).",
@@ -438,7 +438,7 @@
   },
   {
     "id": "comparison-of-entangling-strategies-for-unitary-synthesis-new",
-    "title": "Comparison of entangling strategies for unitary synthesis: New Evidence in Quantum & Physics",
+    "title": "Entangling Strategies for Unitary Quantum Circuit Synthesis",
     "originalMonograph": "Comparison of entangling strategies for unitary synthesis",
     "category": "Quantum & Physics",
     "summary": "Comparison of entangling strategies for unitary synthesis: New Evidence in Quantum & Physics: Trapped-ion quantum computers are promising as a platform for realizing quantum computational advantage. They promise long coherence times, near all-to-all connectivity, and potential multiqubit gates as distinguishing advantages compared to competing platforms. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40642v1).",
@@ -461,7 +461,7 @@
   },
   {
     "id": "renormalization-for-robust-memory-without-synchronization-new",
-    "title": "Renormalization for Robust Memory without Synchronization: New Evidence in Space & Astronomy",
+    "title": "Renormalization for Robust Quantum Memory Synchronization",
     "originalMonograph": "Renormalization for Robust Memory without Synchronization",
     "category": "Space & Astronomy",
     "summary": "Renormalization for Robust Memory without Synchronization: New Evidence in Space & Astronomy: Local error correction can preserve classical information...",
@@ -486,7 +486,7 @@
   },
   {
     "id": "reconstructing-hidden-observables-via-quantum-snapshot-new",
-    "title": "Reconstructing hidden observables via quantum snapshot: New Evidence in Quantum & Physics",
+    "title": "Reconstructing Hidden Quantum Observables via State Snapshots",
     "originalMonograph": "Reconstructing hidden observables via quantum snapshot thermometry",
     "category": "Quantum & Physics",
     "summary": "Reconstructing hidden observables via quantum snapshot: New Evidence in Quantum & Physics: Projective snapshots are a standard readout tool for quantum...",
@@ -511,7 +511,7 @@
   },
   {
     "id": "cosmic-echoes-sub-solar-gravitational-wave-detection-points-to",
-    "title": "Cosmic Echoes: Sub-Solar Gravitational Wave Detection Points to Primordial Dark Matter",
+    "title": "Sub-Solar Gravitational Waves: Evidence for Primordial Dark Matter",
     "originalMonograph": "Laser interferometer gravitational-wave detectors identify sub-solar mass compact object merger pointing to primordial black hole dark matter",
     "category": "Cosmology & Particle Physics",
     "summary": "Cosmic Echoes: Sub-Solar Gravitational Wave Detection Points to Primordial Dark Matter: LIGO-Virgo-KAGRA recorded chirping gravitational ripples from a...",
@@ -536,7 +536,7 @@
   },
   {
     "id": "coral-survival-breakthrough-marine-biologists-discover-rapid",
-    "title": "Coral Survival Breakthrough: Marine Biologists Discover Rapid Epigenetic Heat Resistance",
+    "title": "Coral Survival Breakthrough: Rapid Epigenetic Heat Resistance",
     "originalMonograph": "Marine scientists record spontaneous coral reef thermal resilience adaptation following heatwave via epigenetic histone modifications",
     "category": "Marine Ecology & Climate",
     "summary": "Coral Survival Breakthrough: Marine Biologists Discover Rapid Epigenetic Heat Resistance: Coral polyps in the South Pacific demonstrated rapid...",
@@ -561,7 +561,7 @@
   },
   {
     "id": "beyond-lithium-non-flammable-sodium-solid-state-battery-achieves",
-    "title": "Beyond Lithium: Non-Flammable Sodium Solid-State Battery Achieves 2,000 Cycles with Zero Dendrites",
+    "title": "Beyond Lithium: Non-Flammable Sodium Battery Achieves 2,000 Cycles",
     "originalMonograph": "Next-generation solid-state sodium battery achieves 2,000 cycles with zero dendrite formation using ceramic-polymer composite electrolyte",
     "category": "Clean Energy & Materials",
     "summary": "Beyond Lithium: Non-Flammable Sodium Solid-State Battery Achieves 2,000 Cycles with Zero Dendrites: Elimination of rare-earth lithium and cobalt allows...",
@@ -586,7 +586,7 @@
   },
   {
     "id": "virus-proof-biology-scientists-build-synthetic-bacterial-genome",
-    "title": "Virus-Proof Biology: Scientists Build Synthetic Bacterial Genome Immune to Infection",
+    "title": "Virus-Proof Biology: Synthetic Bacterial Genome Immune to Infection",
     "originalMonograph": "Synthetic biologists build synthetic minimal bacterial genome utilizing entirely artificial non-canonical genetic codon triplets",
     "category": "Synthetic Biology & Genomics",
     "summary": "Virus-Proof Biology: Scientists Build Synthetic Bacterial Genome Immune to Infection: By rewriting 64 standard codons down to 59 and reassigning the...",
@@ -611,7 +611,7 @@
   },
   {
     "id": "hidden-beneath-two-miles-of-antarctic-ice-scientists-discover",
-    "title": "Hidden Beneath Two Miles of Antarctic Ice: Scientists Discover Immense Prehistoric River Canyon",
+    "title": "Beneath Two Miles of Antarctic Ice: Immense River Canyon Found",
     "originalMonograph": "Deep ice radar mapping underneath Antarctica East Ice Sheet reveals massive prehistoric river canyon system predating continental glaciation",
     "category": "Geophysics & Earth Science",
     "summary": "Hidden Beneath Two Miles of Antarctic Ice: Scientists Discover Immense Prehistoric River Canyon: Airborne ice-penetrating radar traced a...",
@@ -636,7 +636,7 @@
   },
   {
     "id": "cosmic-monster-on-the-loose-runaway-supermassive-black-hole",
-    "title": "Cosmic Monster on the Loose: Runaway Supermassive Black Hole Leaves 200,000-Light-Year Star Trail",
+    "title": "Runaway Supermassive Black Hole Leaves 200,000-Light-Year Star Trail",
     "originalMonograph": "Hubble and Chandra detect hypervelocity runaway black hole trailing a 200,000 light-year corridor of new star formation",
     "category": "Astrophysics & Space",
     "summary": "Cosmic Monster on the Loose: Runaway Supermassive Black Hole Leaves 200,000-Light-Year Star Trail: The 20-million-solar-mass black hole is speeding...",
@@ -661,7 +661,7 @@
   },
   {
     "id": "the-forever-chemical-breakthrough-mutant-soil-fungi-wipe-out",
-    "title": "The 'Forever Chemical' Breakthrough: Mutant Soil Fungi Wipe Out Toxic PFAS in 96 Hours",
+    "title": "Mutant Soil Fungi Wipe Out Toxic 'Forever Chemicals' in 96 Hours",
     "originalMonograph": "Engineered soil micro-fungi break down fluorinated PFAS 'forever chemicals' into non-toxic fluoride ions within 96 hours",
     "category": "Environmental Science & EVS",
     "summary": "The 'Forever Chemical' Breakthrough: Mutant Soil Fungi Wipe Out Toxic PFAS in 96 Hours: A mutated strain of white-rot fungus secretes manganese...",
@@ -686,7 +686,7 @@
   },
   {
     "id": "50-000-year-old-dental-tartar-proves-neanderthals-used-natural",
-    "title": "50,000-Year-Old Dental Tartar Proves Neanderthals Used Natural Aspirin and Penicillin",
+    "title": "Dental Tartar Proves Neanderthals Used Natural Aspirin & Penicillin",
     "originalMonograph": "Archaeogeneticists sequence Neanderthal dental tartar to reconstruct prehistoric pharmacology and medicinal plant consumption",
     "category": "Deep Science History",
     "summary": "50,000-Year-Old Dental Tartar Proves Neanderthals Used Natural Aspirin and Penicillin: Ancient DNA extraction reveals early hominins consumed natural...",
@@ -711,7 +711,7 @@
   },
   {
     "id": "fault-tolerant-quantum-leap-physicists-successfully-shield",
-    "title": "Fault-Tolerant Quantum Leap: Physicists Successfully Shield Qubits from Decoherence",
+    "title": "Fault-Tolerant Quantum Leap: Physicists Shield Qubits from Noise",
     "originalMonograph": "Quantum computing researchers achieve topological qubit braiding with zero error propagation across 100 logical gates",
     "category": "Quantum & Physics",
     "summary": "Fault-Tolerant Quantum Leap: Physicists Successfully Shield Qubits from Decoherence: Majorana zero modes manipulated on semiconductor-superconductor...",
@@ -736,7 +736,7 @@
   },
   {
     "id": "the-trillion-dollar-moon-economy-why-mining-lunar-ice-will-be",
-    "title": "The Trillion-Dollar Moon Economy: Why Mining Lunar Ice Will Be Profitable by 2038",
+    "title": "The Trillion-Dollar Moon Economy: Why Mining Lunar Ice Is Feasible",
     "originalMonograph": "Economists calculate the economic ROI of lunar water harvesting reaches profitability by 2038 due to deep-space propellant manufacturing",
     "category": "Science Economics & Space Industry",
     "summary": "The Trillion-Dollar Moon Economy: Why Mining Lunar Ice Will Be Profitable by 2038: Refueling Mars missions in low lunar orbit reduces launch payload...",
@@ -761,7 +761,7 @@
   },
   {
     "id": "alien-life-at-14-000-feet-below-the-ocean-deep-sea-expedition",
-    "title": "Alien Life at 14,000 Feet Below the Ocean: Deep-Sea Expedition Finds Unseen Ecosystem",
+    "title": "Deep-Sea Expedition Finds Unseen Ecosystem 14,000 Feet Below Ocean",
     "originalMonograph": "Deep sea submersibles discover superheated hydrothermal vents supporting chemosynthetic microbial life off Mariana Trench",
     "category": "Earth & Geology",
     "summary": "Alien Life at 14,000 Feet Below the Ocean: Deep-Sea Expedition Finds Unseen Ecosystem: Mineral deposits enriched in rare-earth elements were discovered...",
@@ -786,7 +786,7 @@
   },
   {
     "id": "metal-rain-and-vaporized-iron-webb-telescope-reveals-extreme",
-    "title": "Metal Rain and Vaporized Iron: Webb Telescope Reveals Extreme Weather on Giant Alien World",
+    "title": "Webb Telescope Reveals Metal Rain & Vaporized Iron on Exoplanet",
     "originalMonograph": "James Webb Space Telescope detects heavy elements in the atmosphere of ultra-hot gas giant WASP-121b",
     "category": "Space & Astronomy",
     "summary": "Metal Rain and Vaporized Iron: Webb Telescope Reveals Extreme Weather on Giant Alien World: Spectroscopic observations by JWST confirm gaseous nickel,...",
@@ -811,7 +811,7 @@
   },
   {
     "id": "living-solar-panels-scientists-turn-plant-chloroplasts-into",
-    "title": "Living Solar Panels: Scientists Turn Plant Chloroplasts into Renewable Electricity",
+    "title": "Living Solar Panels: Chloroplasts Converted to Clean Electricity",
     "originalMonograph": "Novel photosynthetic bio-panels achieve 18 percent light-to-electricity conversion using genetically stabilized thylakoid membranes",
     "category": "Environmental Science & Energy",
     "summary": "Living Solar Panels: Scientists Turn Plant Chloroplasts into Renewable Electricity: By coating carbon nanotube substrates with stabilized plant...",
@@ -836,7 +836,7 @@
   },
   {
     "id": "ancient-greenland-ice-discloses-shocking-climate-flip-that",
-    "title": "Ancient Greenland Ice Discloses Shocking Climate Flip That Happened in Just 20 Years",
+    "title": "Ancient Greenland Ice Reveals 20-Year Abrupt Climate Transition",
     "originalMonograph": "Ancient Greenland ice core analysis reveals abrupt Arctic temperature swing occurred within only two decades during the Eemian period",
     "category": "Science History & Paleoclimatology",
     "summary": "Ancient Greenland Ice Discloses Shocking Climate Flip That Happened in Just 20 Years: Isotope ratios in 120,000-year-old ice show sudden 5-degree...",

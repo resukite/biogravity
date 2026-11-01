@@ -24,6 +24,13 @@
     gtag('config', 'G-BSRJK4DMH7');
   </script>
 
+  <!-- Resource Hints for High Speed & Core Web Vitals (LCP) -->
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="dns-prefetch" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+  <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" fetchpriority="high">
+
   <!-- Security Headers & Content Security Policy (CSP) -->
   <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; img-src 'self' https: data:; font-src 'self' https: data:;">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -64,9 +71,6 @@
   <meta name="twitter:title" content="Why Astronauts Lose 1-2% Bone Density Every Month in Space">
   <meta name="twitter:description" content="Why do astronauts lose bone density in space? Discover how microgravity accelerates bone mineral loss by 10x, osteoclast mechanisms, and Earth...">
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
-
-  <!-- Custom Styles & Precompiled Design System -->
-  <link rel="stylesheet" href="/css/styles.css?v=2.1">
 
   <!-- KaTeX for Quantum Equations -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
@@ -395,8 +399,31 @@
             </div>
           </div>
 
+          <!-- Quick Jump Navigation for Google Sitelinks -->
+          <nav aria-label="Table of contents" class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/90 text-xs text-slate-600 flex flex-wrap items-center gap-x-4 gap-y-2">
+            <span class="font-bold text-slate-800 uppercase tracking-wider text-[11px] flex items-center gap-1.5">
+              <span>📑</span> Jump to:
+            </span>
+            <a href="#quick-answer" class="text-teal-700 hover:text-teal-900 underline font-medium">Quick Answer</a>
+            <a href="#scientific-abstract" class="text-teal-700 hover:text-teal-900 underline font-medium">Abstract</a>
+            <a href="#article-body-content" class="text-teal-700 hover:text-teal-900 underline font-medium">Full Research</a>
+            <a href="#frequently-asked-questions" class="text-teal-700 hover:text-teal-900 underline font-medium">FAQs</a>
+            <a href="#author-credentials" class="text-teal-700 hover:text-teal-900 underline font-medium">Author Credentials</a>
+          </nav>
+
+          <!-- Featured Snippet Direct Answer Card (Position #1 Target) -->
+          <div class="ux-card p-6 bg-teal-50/70 border border-teal-200/90 rounded-2xl shadow-sm" id="quick-answer">
+            <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-teal-800 mb-2">
+              <span class="flex h-2 w-2 rounded-full bg-teal-600"></span>
+              Core Finding &amp; Direct Answer (TL;DR)
+            </div>
+            <p class="text-slate-800 text-sm sm:text-base leading-relaxed font-medium">
+              Astronauts lose bone density in space because their skeleton is completely unloaded in microgravity: without the continuous downward mechanical stress of body weight, bone-building cells (osteoblasts) shut down, while bone-resorbing cells (osteoclasts) continue actively breaking down bone matrix. Astronauts lose between 1.0% to 1.5% of bone mineral density in weight-bearing bones (lumbar spine, hips, and femurs) for every month in orbit—a rate 10 to 12 times faster than severe postmenopausal osteoporosis on Earth.
+            </p>
+          </div>
+
           <!-- Abstract / Key Summary Box -->
-          <div class="ux-card p-6 bg-white border border-slate-200/80">
+          <div id="scientific-abstract" class="ux-card p-6 bg-white border border-slate-200/80">
             <div class="text-xs font-semibold uppercase tracking-wider text-teal-600 mb-2">Scientific Abstract</div>
             <p class="text-slate-700 text-sm sm:text-base leading-relaxed italic">
               Astronauts lose bone density in space because their skeleton is completely unloaded in microgravity: without the continuous downward mechanical stress of body weight, bone-building cells (osteoblasts) shut down, while bone-resorbing cells (osteoclasts) continue actively breaking down bone matrix. Astronauts lose between 1.0% to 1.5% of bone mineral density in weight-bearing bones (lumbar spine, hips, and femurs) for every month in orbit—a rate 10 to 12 times faster than severe postmenopausal osteoporosis on Earth.
@@ -620,7 +647,7 @@
           </div>
 
           <!-- Author Bio & E-E-A-T Card -->
-          <div class="ux-card rounded-2xl p-6 bg-white border border-slate-200/80 flex flex-col gap-4">
+          <div id="author-credentials" class="ux-card rounded-2xl p-6 bg-white border border-slate-200/80 flex flex-col gap-4">
             <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4">
               <div class="w-16 h-16 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center font-display font-extrabold text-xl text-slate-800 flex-shrink-0">
                 DE

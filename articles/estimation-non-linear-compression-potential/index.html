@@ -24,6 +24,13 @@
     gtag('config', 'G-BSRJK4DMH7');
   </script>
 
+  <!-- Resource Hints for High Speed & Core Web Vitals (LCP) -->
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="dns-prefetch" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+  <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" fetchpriority="high">
+
   <!-- Security Headers & Content Security Policy (CSP) -->
   <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; img-src 'self' https: data:; font-src 'self' https: data:;">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -64,9 +71,6 @@
   <meta name="twitter:title" content="AI in Turbulent Fluid Flows: Estimating Compression Potential">
   <meta name="twitter:description" content="Quantifying autoencoder non-linearity in turbulent fluid flows: a priori mathematical estimation of compression potential for aerodynamic and orbital...">
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
-
-  <!-- Custom Styles & Precompiled Design System -->
-  <link rel="stylesheet" href="/css/styles.css?v=2.1">
 
   <!-- KaTeX for Quantum Equations -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
@@ -395,8 +399,31 @@
             </div>
           </div>
 
+          <!-- Quick Jump Navigation for Google Sitelinks -->
+          <nav aria-label="Table of contents" class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/90 text-xs text-slate-600 flex flex-wrap items-center gap-x-4 gap-y-2">
+            <span class="font-bold text-slate-800 uppercase tracking-wider text-[11px] flex items-center gap-1.5">
+              <span>📑</span> Jump to:
+            </span>
+            <a href="#quick-answer" class="text-teal-700 hover:text-teal-900 underline font-medium">Quick Answer</a>
+            <a href="#scientific-abstract" class="text-teal-700 hover:text-teal-900 underline font-medium">Abstract</a>
+            <a href="#article-body-content" class="text-teal-700 hover:text-teal-900 underline font-medium">Full Research</a>
+            <a href="#frequently-asked-questions" class="text-teal-700 hover:text-teal-900 underline font-medium">FAQs</a>
+            <a href="#author-credentials" class="text-teal-700 hover:text-teal-900 underline font-medium">Author Credentials</a>
+          </nav>
+
+          <!-- Featured Snippet Direct Answer Card (Position #1 Target) -->
+          <div class="ux-card p-6 bg-teal-50/70 border border-teal-200/90 rounded-2xl shadow-sm" id="quick-answer">
+            <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-teal-800 mb-2">
+              <span class="flex h-2 w-2 rounded-full bg-teal-600"></span>
+              Core Finding &amp; Direct Answer (TL;DR)
+            </div>
+            <p class="text-slate-800 text-sm sm:text-base leading-relaxed font-medium">
+              Non-linear autoencoders achieve up to 80% greater dimensional reduction than classical Proper Orthogonal Decomposition (POD) in turbulent flow modeling. An a priori metric quantifies manifold curvature and spectral energy decay, predicting whether deep neural network architectures outperform linear low-dimensional embeddings.
+            </p>
+          </div>
+
           <!-- Abstract / Key Summary Box -->
-          <div class="ux-card p-6 bg-white border border-slate-200/80">
+          <div id="scientific-abstract" class="ux-card p-6 bg-white border border-slate-200/80">
             <div class="text-xs font-semibold uppercase tracking-wider text-teal-600 mb-2">Scientific Abstract</div>
             <p class="text-slate-700 text-sm sm:text-base leading-relaxed italic">
               Data-driven reduced-order modelling (ROM) of turbulent flows is based on an efficient and physical low-dimensional representation of the flow process. Such a dimension reduction can be achieved using proper orthogonal decomposition (POD) or non-linear autoencoders. Capturing t.
@@ -604,7 +631,7 @@
           </div>
 
           <!-- Author Bio & E-E-A-T Card -->
-          <div class="ux-card rounded-2xl p-6 bg-white border border-slate-200/80 flex flex-col gap-4">
+          <div id="author-credentials" class="ux-card rounded-2xl p-6 bg-white border border-slate-200/80 flex flex-col gap-4">
             <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4">
               <div class="w-16 h-16 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center font-display font-extrabold text-xl text-slate-800 flex-shrink-0">
                 DE

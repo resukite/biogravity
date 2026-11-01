@@ -60,6 +60,15 @@ function escapeHtml(unsafe) {
     .replace(/'/g, '&#039;');
 }
 
+function escapeTitle(unsafe) {
+  if (!unsafe) return '';
+  return String(unsafe)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
 
 function generateEducationalEnrichment(art) {
   // If the article already has its own comprehensive sections, do not append generic duplicated boilerplate
@@ -362,10 +371,10 @@ articles.forEach((art, idx) => {
 
   let cleanSeoTitle = (art.seoTitle || art.title).replace(/\s*\|\s*BioGravity.*$/i, '').trim();
   let displayTitle = '';
-  if (cleanSeoTitle.length + 13 <= 65) {
-    displayTitle = `${escapeHtml(cleanSeoTitle)} | BioGravity`;
+  if (cleanSeoTitle.length + 13 <= 60) {
+    displayTitle = `${escapeTitle(cleanSeoTitle)} | BioGravity`;
   } else {
-    displayTitle = `${escapeHtml(cleanSeoTitle)}`;
+    displayTitle = `${escapeTitle(cleanSeoTitle)}`;
   }
   const socialTitle = escapeHtml(cleanSeoTitle);
 
@@ -394,6 +403,13 @@ articles.forEach((art, idx) => {
     gtag('js', new Date());
     gtag('config', 'G-BSRJK4DMH7');
   </script>
+
+  <!-- Resource Hints for High Speed & Core Web Vitals (LCP) -->
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="dns-prefetch" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+  <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+  <link rel="preload" as="image" href="${escapeHtml(coverUrl)}" fetchpriority="high">
 
   <!-- Security Headers & Content Security Policy (CSP) -->
   <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; img-src 'self' https: data:; font-src 'self' https: data:;">
@@ -435,9 +451,6 @@ articles.forEach((art, idx) => {
   <meta name="twitter:title" content="${socialTitle}">
   <meta name="twitter:description" content="${escapeHtml(metaDesc)}">
   <meta name="twitter:image" content="${escapeHtml(coverUrl)}">
-
-  <!-- Custom Styles & Precompiled Design System -->
-  <link rel="stylesheet" href="/css/styles.css?v=2.1">
 
   <!-- KaTeX for Quantum Equations -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
@@ -650,8 +663,31 @@ ${JSON.stringify(schema, null, 2)}
             </div>
           </div>
 
+          <!-- Quick Jump Navigation for Google Sitelinks -->
+          <nav aria-label="Table of contents" class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/90 text-xs text-slate-600 flex flex-wrap items-center gap-x-4 gap-y-2">
+            <span class="font-bold text-slate-800 uppercase tracking-wider text-[11px] flex items-center gap-1.5">
+              <span>📑</span> Jump to:
+            </span>
+            <a href="#quick-answer" class="text-teal-700 hover:text-teal-900 underline font-medium">Quick Answer</a>
+            <a href="#scientific-abstract" class="text-teal-700 hover:text-teal-900 underline font-medium">Abstract</a>
+            <a href="#article-body-content" class="text-teal-700 hover:text-teal-900 underline font-medium">Full Research</a>
+            ${art.faqs && art.faqs.length > 0 ? `<a href="#frequently-asked-questions" class="text-teal-700 hover:text-teal-900 underline font-medium">FAQs</a>` : ''}
+            <a href="#author-credentials" class="text-teal-700 hover:text-teal-900 underline font-medium">Author Credentials</a>
+          </nav>
+
+          <!-- Featured Snippet Direct Answer Card (Position #1 Target) -->
+          <div class="ux-card p-6 bg-teal-50/70 border border-teal-200/90 rounded-2xl shadow-sm" id="quick-answer">
+            <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-teal-800 mb-2">
+              <span class="flex h-2 w-2 rounded-full bg-teal-600"></span>
+              Core Finding &amp; Direct Answer (TL;DR)
+            </div>
+            <p class="text-slate-800 text-sm sm:text-base leading-relaxed font-medium">
+              ${escapeHtml(art.quickAnswer || art.summary)}
+            </p>
+          </div>
+
           <!-- Abstract / Key Summary Box -->
-          <div class="ux-card p-6 bg-white border border-slate-200/80">
+          <div id="scientific-abstract" class="ux-card p-6 bg-white border border-slate-200/80">
             <div class="text-xs font-semibold uppercase tracking-wider text-teal-600 mb-2">Scientific Abstract</div>
             <p class="text-slate-700 text-sm sm:text-base leading-relaxed italic">
               ${escapeHtml(art.summary)}
@@ -708,7 +744,7 @@ ${JSON.stringify(schema, null, 2)}
           </div>
 
           <!-- Author Bio & E-E-A-T Card -->
-          <div class="ux-card rounded-2xl p-6 bg-white border border-slate-200/80 flex flex-col gap-4">
+          <div id="author-credentials" class="ux-card rounded-2xl p-6 bg-white border border-slate-200/80 flex flex-col gap-4">
             <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4">
               <div class="w-16 h-16 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center font-display font-extrabold text-xl text-slate-800 flex-shrink-0">
                 ${escapeHtml(authorName.split(' ').map(n=>n[0]).join('').slice(0, 2))}
@@ -1723,20 +1759,20 @@ let llmsContent = `# BioGravity
 ## Core Hubs & Academic Resources
 
 - [Home Hub](${SITE_URL}/): Overview of orbital microgravity research, featured breakthrough dispatches, and terrestrial medicine translation.
-- [Research Feed](${SITE_URL}/research/): Complete open-access archive of ${articles.length} peer-reviewed research dispatches covering mechanobiology, space physics, oncology, and bioprinting.
-- [Interactive Science Tools](${SITE_URL}/tools/): Physics sandboxes, capillary fluidics calculators, and microgravity simulation tools.
-- [Molecular Biology Guide](${SITE_URL}/molecular-biology-research/): Comprehensive reference on macromolecular crystallography, CRISPR proton tunneling, and organoid self-assembly in orbit.
-- [Microgravity Effects on Human Body](${SITE_URL}/microgravity-effects-on-human-body/): Clinical review of musculoskeletal unloading, cardiovascular remodeling, and neuro-ocular syndrome.
-- [Live News Bureau](${SITE_URL}/news/): Breaking global discoveries in aerospace medicine, solid-state batteries, and planetary physics.
-- [World Space Week 2026](${SITE_URL}/world-space-week-2026/): Educational symposium resources and academic workshops.
-- [About & Editorial Board](${SITE_URL}/about/): BioGravity's mission, scientific governance, and open-science CC-BY 4.0 policy.
+- [Research Feed](${SITE_URL}/research): Complete open-access archive of ${articles.length} peer-reviewed research dispatches covering mechanobiology, space physics, oncology, and bioprinting.
+- [Interactive Science Tools](${SITE_URL}/tools): Physics sandboxes, capillary fluidics calculators, and microgravity simulation tools.
+- [Molecular Biology Guide](${SITE_URL}/molecular-biology-research): Comprehensive reference on macromolecular crystallography, CRISPR proton tunneling, and organoid self-assembly in orbit.
+- [Microgravity Effects on Human Body](${SITE_URL}/microgravity-effects-on-human-body): Clinical review of musculoskeletal unloading, cardiovascular remodeling, and neuro-ocular syndrome.
+- [Live News Bureau](${SITE_URL}/news): Breaking global discoveries in aerospace medicine, solid-state batteries, and planetary physics.
+- [World Space Week 2026](${SITE_URL}/world-space-week-2026): Educational symposium resources and academic workshops.
+- [About & Editorial Board](${SITE_URL}/about): BioGravity's mission, scientific governance, and open-science CC-BY 4.0 policy.
 
 ## Scientific Research Dispatches
 
 `;
 
 articles.forEach(art => {
-  const artUrl = `${SITE_URL}/articles/${art.id}/`;
+  const artUrl = `${SITE_URL}/articles/${art.id}`;
   const summary = art.summary || art.metaDescription || '';
   llmsContent += `- [${art.title}](${artUrl}): ${summary}\n`;
 });
@@ -1761,7 +1797,7 @@ let llmsFullContent = `# BioGravity: Full Scientific Knowledge Base
 `;
 
 articles.forEach(art => {
-  const artUrl = `${SITE_URL}/articles/${art.id}/`;
+  const artUrl = `${SITE_URL}/articles/${art.id}`;
   llmsFullContent += `## ${art.title}\n\n`;
   llmsFullContent += `- **Canonical URL:** ${artUrl}\n`;
   if (art.doi) llmsFullContent += `- **DOI:** https://doi.org/${art.doi}\n`;
@@ -1783,7 +1819,7 @@ articles.forEach(art => {
   if (Array.isArray(art.faqs) && art.faqs.length > 0) {
     llmsFullContent += `### Frequently Asked Questions\n`;
     art.faqs.forEach(faq => {
-      llmsFullContent += `**Q: ${faq.q}**\n${faq.a}\n\n`;
+      llmsFullContent += `**Q: ${faq.question || faq.q}**\n${faq.answer || faq.a}\n\n`;
     });
   }
   llmsFullContent += `---\n\n`;
