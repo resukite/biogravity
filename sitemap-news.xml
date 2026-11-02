@@ -2,6 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://biogravity.space/news/persistence-of-unitary-almost-mathieu-operator-gaps-new-evidence</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-02T20:56:40.834Z</news:publication_date>
+      <news:title>Persistence of Unitary Almost Mathieu Operator Gaps: New Evidence in Advanced Physics &amp; Deep Science</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/weighted-hypergraph-states-as-a-resource-for-quantum-new</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-02T20:56:40.828Z</news:publication_date>
+      <news:title>Weighted hypergraph states as a resource for quantum: New Evidence in Quantum &amp; Physics</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/time-optimal-quantum-dynamics-under-fixed-norm-generators-new</loc>
     <news:news>
       <news:publication>

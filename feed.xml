@@ -5,8 +5,26 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Nov 2026 18:53:35 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 20:56:41 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Persistence of Unitary Almost Mathieu Operator Gaps: New Evidence in Advanced Physics &amp; Deep Science</title>
+      <link>https://biogravity.space/news/persistence-of-unitary-almost-mathieu-operator-gaps-new-evidence</link>
+      <guid isPermaLink="true">https://biogravity.space/news/persistence-of-unitary-almost-mathieu-operator-gaps-new-evidence</guid>
+      <pubDate>Mon, 02 Nov 2026 20:56:40 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Persistence of Unitary Almost Mathieu Operator Gaps: New Evidence in Advanced Physics &amp; Deep Science: We determine exactly which gap labels are realized by open spectral gaps for the unitary almost Mathieu operator at every irrational frequency and all coupling constants ($0&amp;lt;λ_1,λ_2\leq1$). When both couplings are strictly less than one, every permitted gap label is realized by an open gap, including in the critical case ($λ_1=λ_2$). Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.42120v1).</description>
+      <category>Advanced Physics &amp; Deep Science</category>
+    </item>
+    <item>
+      <title>Weighted hypergraph states as a resource for quantum: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/weighted-hypergraph-states-as-a-resource-for-quantum-new</link>
+      <guid isPermaLink="true">https://biogravity.space/news/weighted-hypergraph-states-as-a-resource-for-quantum-new</guid>
+      <pubDate>Mon, 02 Nov 2026 20:56:40 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Weighted hypergraph states as a resource for quantum: New Evidence in Quantum &amp; Physics: Quantum correlations can be used to improve sensing precision beyond classical limits, yet the correlated resource states needed can be challenging to prepare and preserve. Here, we study the family of weighted hypergraph states and identify subclasses characterized by their underlying graph topology that exhibit enhanced metrological performance. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.42129v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
     <item>
       <title>Time-optimal quantum dynamics under fixed-norm generators: New Evidence in Quantum &amp; Physics</title>
       <link>https://biogravity.space/news/time-optimal-quantum-dynamics-under-fixed-norm-generators-new</link>
