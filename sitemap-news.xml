@@ -2,6 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://biogravity.space/news/large-eddy-simulation-study-of-turbine-pitch-motion-new-evidence</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-02T02:56:13.927Z</news:publication_date>
+      <news:title>Large Eddy Simulation Study of Turbine Pitch Motion: New Evidence in Biophysics &amp; Genomics</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/longitudinal-electric-corner-modes-in-continuum-new-evidence-in</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-02T02:56:13.919Z</news:publication_date>
+      <news:title>Longitudinal electric corner modes in continuum: New Evidence in Quantum &amp; Physics</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/quantum-navigation-in-birds-researchers-clock-extended-radical</loc>
     <news:news>
       <news:publication>
