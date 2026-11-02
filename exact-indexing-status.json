@@ -1,18 +1,58 @@
 {
-  "updatedAt": "2026-11-01T14:49:44.345Z",
-  "totalUrls": 104,
+  "updatedAt": "2026-11-02T10:10:48.548Z",
+  "totalUrls": 106,
   "indexedCount": 51,
-  "notIndexedCount": 53,
-  "indexedPercentage": "49.0%",
-  "pushedToIndexingCount": 53,
+  "notIndexedCount": 55,
+  "indexedPercentage": "48.1%",
+  "pushedToIndexingCount": 55,
   "allFullyIndexed": false,
   "results": [
+    {
+      "url": "https://biogravity.space/",
+      "status": "INDEXED"
+    },
+    {
+      "url": "https://biogravity.space/research",
+      "status": "INDEXED"
+    },
+    {
+      "url": "https://biogravity.space/about",
+      "status": "INDEXED"
+    },
+    {
+      "url": "https://biogravity.space/news",
+      "status": "INDEXED"
+    },
     {
       "url": "https://biogravity.space/tools",
       "status": "INDEXED",
       "verdict": "PASS",
       "coverage": "Submitted and indexed",
       "lastChecked": "2026-11-01T14:44:49.793Z"
+    },
+    {
+      "url": "https://biogravity.space/contact",
+      "status": "INDEXED"
+    },
+    {
+      "url": "https://biogravity.space/terms",
+      "status": "INDEXED"
+    },
+    {
+      "url": "https://biogravity.space/privacy-policy",
+      "status": "INDEXED"
+    },
+    {
+      "url": "https://biogravity.space/disclaimer",
+      "status": "INDEXED"
+    },
+    {
+      "url": "https://biogravity.space/world-space-week-2026",
+      "status": "INDEXED"
+    },
+    {
+      "url": "https://biogravity.space/molecular-biology-research",
+      "status": "INDEXED"
     },
     {
       "url": "https://biogravity.space/microgravity-effects-on-human-body",
@@ -27,6 +67,18 @@
       "verdict": "PASS",
       "coverage": "Submitted and indexed",
       "lastChecked": "2026-11-01T14:45:04.867Z"
+    },
+    {
+      "url": "https://biogravity.space/news/large-eddy-simulation-study-of-turbine-pitch-motion-new-evidence",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-02T10:10:47.753Z"
+    },
+    {
+      "url": "https://biogravity.space/news/longitudinal-electric-corner-modes-in-continuum-new-evidence-in",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-02T10:10:47.753Z"
     },
     {
       "url": "https://biogravity.space/news/quantum-navigation-in-birds-researchers-clock-extended-radical",
@@ -253,6 +305,22 @@
       "lastChecked": "2026-11-01T14:49:04.830Z"
     },
     {
+      "url": "https://biogravity.space/news/alien-life-at-14-000-feet-below-the-ocean-deep-sea-expedition",
+      "status": "INDEXED"
+    },
+    {
+      "url": "https://biogravity.space/news/metal-rain-and-vaporized-iron-webb-telescope-reveals-extreme",
+      "status": "INDEXED"
+    },
+    {
+      "url": "https://biogravity.space/news/living-solar-panels-scientists-turn-plant-chloroplasts-into",
+      "status": "INDEXED"
+    },
+    {
+      "url": "https://biogravity.space/news/ancient-greenland-ice-discloses-shocking-climate-flip-that",
+      "status": "INDEXED"
+    },
+    {
       "url": "https://biogravity.space/articles/terahertz-resonance-and-coherent-dipole-oscillations-in-neuronal-microtubule-lat",
       "status": "NOT_INDEXED",
       "verdict": "NEUTRAL",
@@ -437,6 +505,14 @@
       "reason": "Queued (Published Today)"
     },
     {
+      "url": "https://biogravity.space/articles/mixed-state-deep-thermalization-under-generic-quantum-errors",
+      "status": "INDEXED"
+    },
+    {
+      "url": "https://biogravity.space/articles/screening-strongly-correlated-materials-in-solid-oxide-cells",
+      "status": "INDEXED"
+    },
+    {
       "url": "https://biogravity.space/articles/estimation-non-linear-compression-potential",
       "status": "NOT_INDEXED",
       "coverage": "Discovered - newly submitted",
@@ -449,10 +525,26 @@
       "lastChecked": "2026-11-01T14:49:43.068Z"
     },
     {
+      "url": "https://biogravity.space/articles/phonon-assisted-free-electron-recoil-control-and-mechanical-sensing",
+      "status": "INDEXED"
+    },
+    {
       "url": "https://biogravity.space/articles/supersolid-phase-transitions-trapped-quantum-gases",
       "status": "NOT_INDEXED",
       "coverage": "Discovered - newly submitted",
       "lastChecked": "2026-11-01T14:49:43.068Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/relativistic-time-dilation-and-mitochondrial-aging-clocks",
+      "status": "INDEXED"
+    },
+    {
+      "url": "https://biogravity.space/articles/zero-g-capillary-fluidics-and-surface-tension-bioreactors",
+      "status": "INDEXED"
+    },
+    {
+      "url": "https://biogravity.space/articles/debye-shielding-and-plasma-sheath-dynamics-in-spacecraft-biosensing",
+      "status": "INDEXED"
     },
     {
       "url": "https://biogravity.space/articles/radical-pair-spin-coherence-human-cryptochrome-4",
@@ -549,86 +641,6 @@
       "status": "NOT_INDEXED",
       "coverage": "URL is unknown to Google",
       "reason": "URL is unknown to Google"
-    },
-    {
-      "url": "https://biogravity.space/",
-      "status": "INDEXED"
-    },
-    {
-      "url": "https://biogravity.space/research",
-      "status": "INDEXED"
-    },
-    {
-      "url": "https://biogravity.space/about",
-      "status": "INDEXED"
-    },
-    {
-      "url": "https://biogravity.space/news",
-      "status": "INDEXED"
-    },
-    {
-      "url": "https://biogravity.space/contact",
-      "status": "INDEXED"
-    },
-    {
-      "url": "https://biogravity.space/terms",
-      "status": "INDEXED"
-    },
-    {
-      "url": "https://biogravity.space/privacy-policy",
-      "status": "INDEXED"
-    },
-    {
-      "url": "https://biogravity.space/disclaimer",
-      "status": "INDEXED"
-    },
-    {
-      "url": "https://biogravity.space/world-space-week-2026",
-      "status": "INDEXED"
-    },
-    {
-      "url": "https://biogravity.space/molecular-biology-research",
-      "status": "INDEXED"
-    },
-    {
-      "url": "https://biogravity.space/news/alien-life-at-14-000-feet-below-the-ocean-deep-sea-expedition",
-      "status": "INDEXED"
-    },
-    {
-      "url": "https://biogravity.space/news/metal-rain-and-vaporized-iron-webb-telescope-reveals-extreme",
-      "status": "INDEXED"
-    },
-    {
-      "url": "https://biogravity.space/news/living-solar-panels-scientists-turn-plant-chloroplasts-into",
-      "status": "INDEXED"
-    },
-    {
-      "url": "https://biogravity.space/news/ancient-greenland-ice-discloses-shocking-climate-flip-that",
-      "status": "INDEXED"
-    },
-    {
-      "url": "https://biogravity.space/articles/mixed-state-deep-thermalization-under-generic-quantum-errors",
-      "status": "INDEXED"
-    },
-    {
-      "url": "https://biogravity.space/articles/screening-strongly-correlated-materials-in-solid-oxide-cells",
-      "status": "INDEXED"
-    },
-    {
-      "url": "https://biogravity.space/articles/phonon-assisted-free-electron-recoil-control-and-mechanical-sensing",
-      "status": "INDEXED"
-    },
-    {
-      "url": "https://biogravity.space/articles/relativistic-time-dilation-and-mitochondrial-aging-clocks",
-      "status": "INDEXED"
-    },
-    {
-      "url": "https://biogravity.space/articles/zero-g-capillary-fluidics-and-surface-tension-bioreactors",
-      "status": "INDEXED"
-    },
-    {
-      "url": "https://biogravity.space/articles/debye-shielding-and-plasma-sheath-dynamics-in-spacecraft-biosensing",
-      "status": "INDEXED"
     }
   ]
 }

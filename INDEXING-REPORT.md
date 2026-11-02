@@ -1,13 +1,13 @@
 # 🛰️ BioGravity Cloud Indexing Health Report
 
-> **Automated Cloud Run**: Sun, 01 Nov 2026 14:49:44 GMT  
-> **Total Canonical Pages**: 104  
-> **Google Indexation Progress**: **49.0%** (51 indexed / 53 in queue)  
+> **Automated Cloud Run**: Mon, 02 Nov 2026 10:10:48 GMT  
+> **Total Canonical Pages**: 106  
+> **Google Indexation Progress**: **48.1%** (51 indexed / 55 in queue)  
 > **Status**: ⚡ **Active Cloud Indexing Push Active**
 
 ## 🚀 Today's Indexing Actions
 
-- **Pushed to IndexNow (Bing/Yandex/Partners)**: 53 URLs
+- **Pushed to IndexNow (Bing/Yandex/Partners)**: 55 URLs
 - **Google Search Console Sitemap Ping**: Synchronized `sitemap.xml`
 - **Next Scheduled Run**: Automatically executes tomorrow at 03:00 UTC in GitHub Actions Cloud.
 
@@ -15,9 +15,21 @@
 
 | URL | Status | Google Coverage / Reason | Last Checked |
 | :--- | :---: | :--- | :--- |
+| [`/`](https://biogravity.space/) | ✅ INDEXED | Discovered / Pending crawl | Today |
+| [`/research`](https://biogravity.space/research) | ✅ INDEXED | Discovered / Pending crawl | Today |
+| [`/about`](https://biogravity.space/about) | ✅ INDEXED | Discovered / Pending crawl | Today |
+| [`/news`](https://biogravity.space/news) | ✅ INDEXED | Discovered / Pending crawl | Today |
 | [`/tools`](https://biogravity.space/tools) | ✅ INDEXED | Submitted and indexed | 2026-11-01 |
+| [`/contact`](https://biogravity.space/contact) | ✅ INDEXED | Discovered / Pending crawl | Today |
+| [`/terms`](https://biogravity.space/terms) | ✅ INDEXED | Discovered / Pending crawl | Today |
+| [`/privacy-policy`](https://biogravity.space/privacy-policy) | ✅ INDEXED | Discovered / Pending crawl | Today |
+| [`/disclaimer`](https://biogravity.space/disclaimer) | ✅ INDEXED | Discovered / Pending crawl | Today |
+| [`/world-space-week-2026`](https://biogravity.space/world-space-week-2026) | ✅ INDEXED | Discovered / Pending crawl | Today |
+| [`/molecular-biology-research`](https://biogravity.space/molecular-biology-research) | ✅ INDEXED | Discovered / Pending crawl | Today |
 | [`/microgravity-effects-on-human-body`](https://biogravity.space/microgravity-effects-on-human-body) | ⏳ QUEUED | URL is unknown to Google | 2026-11-01 |
 | [`/sitemap`](https://biogravity.space/sitemap) | ✅ INDEXED | Submitted and indexed | 2026-11-01 |
+| [`/news/large-eddy-simulation-study-of-turbine-pitch-motion-new-evidence`](https://biogravity.space/news/large-eddy-simulation-study-of-turbine-pitch-motion-new-evidence) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-02 |
+| [`/news/longitudinal-electric-corner-modes-in-continuum-new-evidence-in`](https://biogravity.space/news/longitudinal-electric-corner-modes-in-continuum-new-evidence-in) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-02 |
 | [`/news/quantum-navigation-in-birds-researchers-clock-extended-radical`](https://biogravity.space/news/quantum-navigation-in-birds-researchers-clock-extended-radical) | ✅ INDEXED | Submitted and indexed | 2026-11-01 |
 | [`/news/lattice-moments-and-quantum-designs-new-evidence-in-quantum`](https://biogravity.space/news/lattice-moments-and-quantum-designs-new-evidence-in-quantum) | ✅ INDEXED | Submitted and indexed | 2026-11-01 |
 | [`/news/fast-and-accurate-neural-triage-decoding-of-new-evidence-in`](https://biogravity.space/news/fast-and-accurate-neural-triage-decoding-of-new-evidence-in) | ⏳ QUEUED | URL is unknown to Google | 2026-11-01 |
@@ -50,6 +62,10 @@
 | [`/news/50-000-year-old-dental-tartar-proves-neanderthals-used-natural`](https://biogravity.space/news/50-000-year-old-dental-tartar-proves-neanderthals-used-natural) | ✅ INDEXED | Submitted and indexed | 2026-11-01 |
 | [`/news/fault-tolerant-quantum-leap-physicists-successfully-shield`](https://biogravity.space/news/fault-tolerant-quantum-leap-physicists-successfully-shield) | ⏳ QUEUED | URL is unknown to Google | 2026-11-01 |
 | [`/news/the-trillion-dollar-moon-economy-why-mining-lunar-ice-will-be`](https://biogravity.space/news/the-trillion-dollar-moon-economy-why-mining-lunar-ice-will-be) | ✅ INDEXED | Submitted and indexed | 2026-11-01 |
+| [`/news/alien-life-at-14-000-feet-below-the-ocean-deep-sea-expedition`](https://biogravity.space/news/alien-life-at-14-000-feet-below-the-ocean-deep-sea-expedition) | ✅ INDEXED | Discovered / Pending crawl | Today |
+| [`/news/metal-rain-and-vaporized-iron-webb-telescope-reveals-extreme`](https://biogravity.space/news/metal-rain-and-vaporized-iron-webb-telescope-reveals-extreme) | ✅ INDEXED | Discovered / Pending crawl | Today |
+| [`/news/living-solar-panels-scientists-turn-plant-chloroplasts-into`](https://biogravity.space/news/living-solar-panels-scientists-turn-plant-chloroplasts-into) | ✅ INDEXED | Discovered / Pending crawl | Today |
+| [`/news/ancient-greenland-ice-discloses-shocking-climate-flip-that`](https://biogravity.space/news/ancient-greenland-ice-discloses-shocking-climate-flip-that) | ✅ INDEXED | Discovered / Pending crawl | Today |
 | [`/articles/terahertz-resonance-and-coherent-dipole-oscillations-in-neuronal-microtubule-lat`](https://biogravity.space/articles/terahertz-resonance-and-coherent-dipole-oscillations-in-neuronal-microtubule-lat) | ⏳ QUEUED | URL is unknown to Google | 2026-11-01 |
 | [`/articles/how-do-tall-trees-pull-water-against-gravity`](https://biogravity.space/articles/how-do-tall-trees-pull-water-against-gravity) | ✅ INDEXED | Submitted and indexed | 2026-11-01 |
 | [`/articles/why-is-gold-yellow-relativistic-quantum-chemistry`](https://biogravity.space/articles/why-is-gold-yellow-relativistic-quantum-chemistry) | ✅ INDEXED | Submitted and indexed | 2026-11-01 |
@@ -80,9 +96,15 @@
 | [`/articles/how-does-zero-gravity-kill-cancer-cells`](https://biogravity.space/articles/how-does-zero-gravity-kill-cancer-cells) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-01 |
 | [`/articles/what-happens-to-human-body-in-zero-gravity`](https://biogravity.space/articles/what-happens-to-human-body-in-zero-gravity) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-01 |
 | [`/articles/size-independent-logarithmic-sobolev-inequalities-for-quantum`](https://biogravity.space/articles/size-independent-logarithmic-sobolev-inequalities-for-quantum) | ⏳ QUEUED | Queued (Published Today) | Today |
+| [`/articles/mixed-state-deep-thermalization-under-generic-quantum-errors`](https://biogravity.space/articles/mixed-state-deep-thermalization-under-generic-quantum-errors) | ✅ INDEXED | Discovered / Pending crawl | Today |
+| [`/articles/screening-strongly-correlated-materials-in-solid-oxide-cells`](https://biogravity.space/articles/screening-strongly-correlated-materials-in-solid-oxide-cells) | ✅ INDEXED | Discovered / Pending crawl | Today |
 | [`/articles/estimation-non-linear-compression-potential`](https://biogravity.space/articles/estimation-non-linear-compression-potential) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-01 |
 | [`/articles/quantum-parameter-estimation-no-go-result`](https://biogravity.space/articles/quantum-parameter-estimation-no-go-result) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-01 |
+| [`/articles/phonon-assisted-free-electron-recoil-control-and-mechanical-sensing`](https://biogravity.space/articles/phonon-assisted-free-electron-recoil-control-and-mechanical-sensing) | ✅ INDEXED | Discovered / Pending crawl | Today |
 | [`/articles/supersolid-phase-transitions-trapped-quantum-gases`](https://biogravity.space/articles/supersolid-phase-transitions-trapped-quantum-gases) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-01 |
+| [`/articles/relativistic-time-dilation-and-mitochondrial-aging-clocks`](https://biogravity.space/articles/relativistic-time-dilation-and-mitochondrial-aging-clocks) | ✅ INDEXED | Discovered / Pending crawl | Today |
+| [`/articles/zero-g-capillary-fluidics-and-surface-tension-bioreactors`](https://biogravity.space/articles/zero-g-capillary-fluidics-and-surface-tension-bioreactors) | ✅ INDEXED | Discovered / Pending crawl | Today |
+| [`/articles/debye-shielding-and-plasma-sheath-dynamics-in-spacecraft-biosensing`](https://biogravity.space/articles/debye-shielding-and-plasma-sheath-dynamics-in-spacecraft-biosensing) | ✅ INDEXED | Discovered / Pending crawl | Today |
 | [`/articles/radical-pair-spin-coherence-human-cryptochrome-4`](https://biogravity.space/articles/radical-pair-spin-coherence-human-cryptochrome-4) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-01 |
 | [`/articles/synthetic-poly-adp-metallo-peptides-telomeric-radioprotection`](https://biogravity.space/articles/synthetic-poly-adp-metallo-peptides-telomeric-radioprotection) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-01 |
 | [`/articles/acoustic-levitation-scaffold-free-cardiac-organoid-bioprinting`](https://biogravity.space/articles/acoustic-levitation-scaffold-free-cardiac-organoid-bioprinting) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-01 |
@@ -99,23 +121,3 @@
 | [`/articles/single-cell-rna-seq-endothelial-cells-hyperstatic-weightlessness`](https://biogravity.space/articles/single-cell-rna-seq-endothelial-cells-hyperstatic-weightlessness) | ⏳ QUEUED | URL is unknown to Google | Today |
 | [`/articles/squid-biosensing-neuronal-action-potentials-low-earth-orbit`](https://biogravity.space/articles/squid-biosensing-neuronal-action-potentials-low-earth-orbit) | ⏳ QUEUED | URL is unknown to Google | Today |
 | [`/articles/tardigrade-dsup-protein-chromatin-radioprotective-compaction`](https://biogravity.space/articles/tardigrade-dsup-protein-chromatin-radioprotective-compaction) | ⏳ QUEUED | URL is unknown to Google | Today |
-| [`/`](https://biogravity.space/) | ✅ INDEXED | Discovered / Pending crawl | Today |
-| [`/research`](https://biogravity.space/research) | ✅ INDEXED | Discovered / Pending crawl | Today |
-| [`/about`](https://biogravity.space/about) | ✅ INDEXED | Discovered / Pending crawl | Today |
-| [`/news`](https://biogravity.space/news) | ✅ INDEXED | Discovered / Pending crawl | Today |
-| [`/contact`](https://biogravity.space/contact) | ✅ INDEXED | Discovered / Pending crawl | Today |
-| [`/terms`](https://biogravity.space/terms) | ✅ INDEXED | Discovered / Pending crawl | Today |
-| [`/privacy-policy`](https://biogravity.space/privacy-policy) | ✅ INDEXED | Discovered / Pending crawl | Today |
-| [`/disclaimer`](https://biogravity.space/disclaimer) | ✅ INDEXED | Discovered / Pending crawl | Today |
-| [`/world-space-week-2026`](https://biogravity.space/world-space-week-2026) | ✅ INDEXED | Discovered / Pending crawl | Today |
-| [`/molecular-biology-research`](https://biogravity.space/molecular-biology-research) | ✅ INDEXED | Discovered / Pending crawl | Today |
-| [`/news/alien-life-at-14-000-feet-below-the-ocean-deep-sea-expedition`](https://biogravity.space/news/alien-life-at-14-000-feet-below-the-ocean-deep-sea-expedition) | ✅ INDEXED | Discovered / Pending crawl | Today |
-| [`/news/metal-rain-and-vaporized-iron-webb-telescope-reveals-extreme`](https://biogravity.space/news/metal-rain-and-vaporized-iron-webb-telescope-reveals-extreme) | ✅ INDEXED | Discovered / Pending crawl | Today |
-| [`/news/living-solar-panels-scientists-turn-plant-chloroplasts-into`](https://biogravity.space/news/living-solar-panels-scientists-turn-plant-chloroplasts-into) | ✅ INDEXED | Discovered / Pending crawl | Today |
-| [`/news/ancient-greenland-ice-discloses-shocking-climate-flip-that`](https://biogravity.space/news/ancient-greenland-ice-discloses-shocking-climate-flip-that) | ✅ INDEXED | Discovered / Pending crawl | Today |
-| [`/articles/mixed-state-deep-thermalization-under-generic-quantum-errors`](https://biogravity.space/articles/mixed-state-deep-thermalization-under-generic-quantum-errors) | ✅ INDEXED | Discovered / Pending crawl | Today |
-| [`/articles/screening-strongly-correlated-materials-in-solid-oxide-cells`](https://biogravity.space/articles/screening-strongly-correlated-materials-in-solid-oxide-cells) | ✅ INDEXED | Discovered / Pending crawl | Today |
-| [`/articles/phonon-assisted-free-electron-recoil-control-and-mechanical-sensing`](https://biogravity.space/articles/phonon-assisted-free-electron-recoil-control-and-mechanical-sensing) | ✅ INDEXED | Discovered / Pending crawl | Today |
-| [`/articles/relativistic-time-dilation-and-mitochondrial-aging-clocks`](https://biogravity.space/articles/relativistic-time-dilation-and-mitochondrial-aging-clocks) | ✅ INDEXED | Discovered / Pending crawl | Today |
-| [`/articles/zero-g-capillary-fluidics-and-surface-tension-bioreactors`](https://biogravity.space/articles/zero-g-capillary-fluidics-and-surface-tension-bioreactors) | ✅ INDEXED | Discovered / Pending crawl | Today |
-| [`/articles/debye-shielding-and-plasma-sheath-dynamics-in-spacecraft-biosensing`](https://biogravity.space/articles/debye-shielding-and-plasma-sheath-dynamics-in-spacecraft-biosensing) | ✅ INDEXED | Discovered / Pending crawl | Today |
