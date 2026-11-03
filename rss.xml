@@ -5,8 +5,26 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Nov 2026 20:56:41 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 02:43:20 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Compressed Oracle Duality: A simple framework for: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/compressed-oracle-duality-a-simple-framework-for-new-evidence-in</link>
+      <guid isPermaLink="true">https://biogravity.space/news/compressed-oracle-duality-a-simple-framework-for-new-evidence-in</guid>
+      <pubDate>Tue, 03 Nov 2026 02:43:20 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Compressed Oracle Duality: A simple framework for: New Evidence in Quantum &amp; Physics: Given a quantum adversary that queries a random oracle, how do we characterize the information that they &quot;know&quot;? The Compressed Oracle method of Zhandry (CRYPTO 2019) is one method that records the queries that the adversary makes; this recording is a representation of the information that is learned. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.00609v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
+    <item>
+      <title>Discovering Models for Experimental Quantum Systems: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/discovering-models-for-experimental-quantum-systems-new-evidence</link>
+      <guid isPermaLink="true">https://biogravity.space/news/discovering-models-for-experimental-quantum-systems-new-evidence</guid>
+      <pubDate>Tue, 03 Nov 2026 02:43:20 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Discovering Models for Experimental Quantum Systems: New Evidence in Quantum &amp; Physics: A central obstacle in realizing color center cavity-QED-based quantum technologies is inhomogeneity, or disorder, among individual emitters. As the number of emitters increases, so does the complexity of the experimental data, making it difficult to quantify the present physical mechanisms of disorder. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.00620v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
     <item>
       <title>Persistence of Unitary Almost Mathieu Operator Gaps: New Evidence in Advanced Physics &amp; Deep Science</title>
       <link>https://biogravity.space/news/persistence-of-unitary-almost-mathieu-operator-gaps-new-evidence</link>
