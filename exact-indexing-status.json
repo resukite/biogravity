@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-02T10:10:48.548Z",
-  "totalUrls": 106,
+  "updatedAt": "2026-11-03T10:12:17.894Z",
+  "totalUrls": 112,
   "indexedCount": 51,
-  "notIndexedCount": 55,
-  "indexedPercentage": "48.1%",
-  "pushedToIndexingCount": 55,
+  "notIndexedCount": 61,
+  "indexedPercentage": "45.5%",
+  "pushedToIndexingCount": 61,
   "allFullyIndexed": false,
   "results": [
     {
@@ -67,6 +67,42 @@
       "verdict": "PASS",
       "coverage": "Submitted and indexed",
       "lastChecked": "2026-11-01T14:45:04.867Z"
+    },
+    {
+      "url": "https://biogravity.space/news/compressed-oracle-duality-a-simple-framework-for-new-evidence-in",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-03T10:12:17.580Z"
+    },
+    {
+      "url": "https://biogravity.space/news/discovering-models-for-experimental-quantum-systems-new-evidence",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-03T10:12:17.580Z"
+    },
+    {
+      "url": "https://biogravity.space/news/persistence-of-unitary-almost-mathieu-operator-gaps-new-evidence",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-03T10:12:17.580Z"
+    },
+    {
+      "url": "https://biogravity.space/news/weighted-hypergraph-states-as-a-resource-for-quantum-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-03T10:12:17.580Z"
+    },
+    {
+      "url": "https://biogravity.space/news/time-optimal-quantum-dynamics-under-fixed-norm-generators-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-03T10:12:17.580Z"
+    },
+    {
+      "url": "https://biogravity.space/news/secret-shared-teleportation-of-a-two-qudit-gate-with-a-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-03T10:12:17.580Z"
     },
     {
       "url": "https://biogravity.space/news/large-eddy-simulation-study-of-turbine-pitch-motion-new-evidence",

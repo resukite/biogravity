@@ -1,13 +1,13 @@
 # 🛰️ BioGravity Cloud Indexing Health Report
 
-> **Automated Cloud Run**: Mon, 02 Nov 2026 10:10:48 GMT  
-> **Total Canonical Pages**: 106  
-> **Google Indexation Progress**: **48.1%** (51 indexed / 55 in queue)  
+> **Automated Cloud Run**: Tue, 03 Nov 2026 10:12:17 GMT  
+> **Total Canonical Pages**: 112  
+> **Google Indexation Progress**: **45.5%** (51 indexed / 61 in queue)  
 > **Status**: ⚡ **Active Cloud Indexing Push Active**
 
 ## 🚀 Today's Indexing Actions
 
-- **Pushed to IndexNow (Bing/Yandex/Partners)**: 55 URLs
+- **Pushed to IndexNow (Bing/Yandex/Partners)**: 61 URLs
 - **Google Search Console Sitemap Ping**: Synchronized `sitemap.xml`
 - **Next Scheduled Run**: Automatically executes tomorrow at 03:00 UTC in GitHub Actions Cloud.
 
@@ -28,6 +28,12 @@
 | [`/molecular-biology-research`](https://biogravity.space/molecular-biology-research) | ✅ INDEXED | Discovered / Pending crawl | Today |
 | [`/microgravity-effects-on-human-body`](https://biogravity.space/microgravity-effects-on-human-body) | ⏳ QUEUED | URL is unknown to Google | 2026-11-01 |
 | [`/sitemap`](https://biogravity.space/sitemap) | ✅ INDEXED | Submitted and indexed | 2026-11-01 |
+| [`/news/compressed-oracle-duality-a-simple-framework-for-new-evidence-in`](https://biogravity.space/news/compressed-oracle-duality-a-simple-framework-for-new-evidence-in) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-03 |
+| [`/news/discovering-models-for-experimental-quantum-systems-new-evidence`](https://biogravity.space/news/discovering-models-for-experimental-quantum-systems-new-evidence) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-03 |
+| [`/news/persistence-of-unitary-almost-mathieu-operator-gaps-new-evidence`](https://biogravity.space/news/persistence-of-unitary-almost-mathieu-operator-gaps-new-evidence) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-03 |
+| [`/news/weighted-hypergraph-states-as-a-resource-for-quantum-new`](https://biogravity.space/news/weighted-hypergraph-states-as-a-resource-for-quantum-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-03 |
+| [`/news/time-optimal-quantum-dynamics-under-fixed-norm-generators-new`](https://biogravity.space/news/time-optimal-quantum-dynamics-under-fixed-norm-generators-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-03 |
+| [`/news/secret-shared-teleportation-of-a-two-qudit-gate-with-a-new`](https://biogravity.space/news/secret-shared-teleportation-of-a-two-qudit-gate-with-a-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-03 |
 | [`/news/large-eddy-simulation-study-of-turbine-pitch-motion-new-evidence`](https://biogravity.space/news/large-eddy-simulation-study-of-turbine-pitch-motion-new-evidence) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-02 |
 | [`/news/longitudinal-electric-corner-modes-in-continuum-new-evidence-in`](https://biogravity.space/news/longitudinal-electric-corner-modes-in-continuum-new-evidence-in) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-02 |
 | [`/news/quantum-navigation-in-birds-researchers-clock-extended-radical`](https://biogravity.space/news/quantum-navigation-in-birds-researchers-clock-extended-radical) | ✅ INDEXED | Submitted and indexed | 2026-11-01 |
