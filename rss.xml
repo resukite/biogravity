@@ -5,8 +5,26 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Nov 2026 16:39:30 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 18:43:32 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Lee-Yang theorems for $q$-deformed oscillators and: New Evidence in Biophysics &amp; Genomics</title>
+      <link>https://biogravity.space/news/lee-yang-theorems-for-q-deformed-oscillators-and-new-evidence-in</link>
+      <guid isPermaLink="true">https://biogravity.space/news/lee-yang-theorems-for-q-deformed-oscillators-and-new-evidence-in</guid>
+      <pubDate>Tue, 03 Nov 2026 18:43:32 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Lee-Yang theorems for $q$-deformed oscillators and: New Evidence in Biophysics &amp; Genomics: We show that the vacuum partition function of the $q$-deformed oscillator \[ L_q(z):= \langle0|e^{zT_q}|0\rangle, \qquad T_q := \mathsf{a}_q + \mathsf{a}_q^* \] satisfies the Lee-Yang property, i.e., all zeros of $L_q$ lie on the imaginary line for all $q\in[-1, 1)$, proving the conjectures of Okuyama&apos;23. Using the connection between $q$-deformed oscillators and the Sachdev-Ye-Kitaev (SYK) Hamiltonian in the doubly-scaled regime, we show that the annealed SYK partition function satisfies the Lee-Yang property in the thermodynamic limit, that is, all of its Fisher zeros are on the imaginary axis. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.03624v1).</description>
+      <category>Biophysics &amp; Genomics</category>
+    </item>
+    <item>
+      <title>Mutual information to all orders from modular flow: a: New Evidence in Biophysics &amp; Genomics</title>
+      <link>https://biogravity.space/news/mutual-information-to-all-orders-from-modular-flow-a-new</link>
+      <guid isPermaLink="true">https://biogravity.space/news/mutual-information-to-all-orders-from-modular-flow-a-new</guid>
+      <pubDate>Tue, 03 Nov 2026 18:43:32 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Mutual information to all orders from modular flow: a: New Evidence in Biophysics &amp; Genomics: We derive an all-orders long-distance expansion of vacuum mutual information between two disjoint balls in generic $d$-dimensional CFTs. The derivation uses a novel radial sewing expansion of the joint vacuum density matrix, together with a modular response formula for relative entropy and the geometric modular flow of a single ball, without analytic continuation in replica number. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.03630v1).</description>
+      <category>Biophysics &amp; Genomics</category>
+    </item>
     <item>
       <title>Quantum channel tomography: optimal bounds in the: New Evidence in Quantum &amp; Physics</title>
       <link>https://biogravity.space/news/quantum-channel-tomography-optimal-bounds-in-the-new-evidence-in</link>
