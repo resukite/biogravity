@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-01T16:04:12.185Z",
+  "updatedAt": "2026-11-03T06:06:00.373Z",
   "goal": 20,
-  "currentClicks": 8,
-  "currentImpressions": 173,
-  "viewsNeeded": 12,
-  "daysRemaining": 2,
-  "requiredPacePerDay": "6.0",
+  "currentClicks": 6,
+  "currentImpressions": 224,
+  "viewsNeeded": 14,
+  "daysRemaining": 1,
+  "requiredPacePerDay": "14.0",
   "status": "ACTIVE_PUSH_REQUIRED"
 }

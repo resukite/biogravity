@@ -84,7 +84,7 @@
               </a>
               <a href="/research" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-slate-100 text-slate-800 hover:text-teal-600 transition font-medium">
                 <span>Research Archive</span>
-                <span class="text-xs text-slate-400">22 Dispatches</span>
+                <span class="text-xs text-slate-400">55 Dispatches</span>
               </a>
               <a href="/tools" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-slate-100 text-slate-800 hover:text-teal-600 transition font-medium">
                 <span>Interactive Tools Suite</span>
@@ -103,12 +103,12 @@
                 <span class="text-xs text-slate-400">Space Medicine</span>
               </a>
               <a href="/about" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-slate-100 text-slate-800 hover:text-teal-600 transition font-medium">
-                <span>About BioGravity</span>
+                <span>About Us (BioGravity)</span>
                 <span class="text-xs text-slate-400">Our Mission</span>
               </a>
               <a href="/contact" class="flex items-center justify-between p-2.5 rounded-xl hover:bg-slate-100 text-slate-800 hover:text-teal-600 transition font-medium">
-                <span>Contact Editorial Desk</span>
-                <span class="text-xs text-slate-400">Inquiries</span>
+                <span>Contact Us</span>
+                <span class="text-xs text-slate-400">Editorial Desk</span>
               </a>
             </div>
           </div>
