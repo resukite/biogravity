@@ -5,8 +5,26 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Nov 2026 02:43:20 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 10:12:12 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Quantum channel tomography: optimal bounds in the: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/quantum-channel-tomography-optimal-bounds-in-the-new-evidence-in</link>
+      <guid isPermaLink="true">https://biogravity.space/news/quantum-channel-tomography-optimal-bounds-in-the-new-evidence-in</guid>
+      <pubDate>Tue, 03 Nov 2026 10:12:12 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Quantum channel tomography: optimal bounds in the: New Evidence in Quantum &amp; Physics: Quantum channel tomography (also known as quantum process tomography) is a fundamental task in quantum information and quantum computing, aiming to learn the full description of an unknown quantum channel from black-box queries. For channels with input dimension $d_1$, output dimension $d_2$, and Kraus rank at most $r$, [CGO+26] identifies the dilation rate $τ=rd_2/d_1\geq 1$ as a key parameter governing a Heisenberg-to-classical transition in query complexity. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.03639v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
+    <item>
+      <title>Neptunian ridge through the lens of TESS: New Evidence in Space &amp; Astronomy</title>
+      <link>https://biogravity.space/news/neptunian-ridge-through-the-lens-of-tess-new-evidence-in-space</link>
+      <guid isPermaLink="true">https://biogravity.space/news/neptunian-ridge-through-the-lens-of-tess-new-evidence-in-space</guid>
+      <pubDate>Tue, 03 Nov 2026 10:12:12 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Neptunian ridge through the lens of TESS: New Evidence in Space &amp; Astronomy: The Neptunian desert and savanna are separated by a ridge, an overdensity at orbital periods of approximately 3-6 d identified with Kepler. Like the hot Jupiter pileup at larger radii, this feature has been linked to the accumulation of successful outcomes of high-eccentricity migration (HEM). Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.03643v1).</description>
+      <category>Space &amp; Astronomy</category>
+    </item>
     <item>
       <title>Compressed Oracle Duality: A simple framework for: New Evidence in Quantum &amp; Physics</title>
       <link>https://biogravity.space/news/compressed-oracle-duality-a-simple-framework-for-new-evidence-in</link>

@@ -88,6 +88,26 @@
 
   <!-- Live Science Dispatches (Google Discover & News Priority) -->
   <url>
+    <loc>https://biogravity.space/news/quantum-channel-tomography-optimal-bounds-in-the-new-evidence-in</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85</image:loc>
+      <image:title>Quantum channel tomography: optimal bounds in the: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/neptunian-ridge-through-the-lens-of-tess-new-evidence-in-space</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85</image:loc>
+      <image:title>Neptunian ridge through the lens of TESS: New Evidence in Space &amp; Astronomy</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/compressed-oracle-duality-a-simple-framework-for-new-evidence-in</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>daily</changefreq>
