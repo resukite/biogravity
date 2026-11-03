@@ -120,7 +120,8 @@
       },
       "identifier": {
         "@type": "PropertyValue",
-        "propertyID": "DOI",
+        "propertyID": "OER-Curriculum-Reference",
+        "name": "Educational Archive Identifier",
         "value": "10.1038/s41586-2026-88027"
       },
       "keywords": "SQUID, Neuroscience, Quantum Sensors, Biomagnetism",
@@ -237,6 +238,13 @@
       <div class="flex items-center gap-3">
         <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
           <a href="/" class="hover:text-slate-900 transition">Home</a>
+          <a href="/news" class="flex items-center gap-1.5 text-rose-600 font-semibold hover:text-rose-700 transition">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-rose-500"></span>
+            </span>
+            Live News
+          </a>
           <a href="/research" class="text-slate-900 font-semibold transition">Research</a>
           <a href="/tools" class="hover:text-slate-900 transition">Tools</a>
           <a href="/about" class="hover:text-slate-900 transition">About</a>
@@ -289,7 +297,7 @@
 
         <div class="flex items-center gap-2">
           <a href="/research" class="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition font-medium shadow-sm text-xs flex items-center gap-1.5">
-            <span>← Browse All 55 Dispatches</span>
+            <span>← Browse All 56 Dispatches</span>
           </a>
         </div>
       </div>
@@ -399,7 +407,7 @@
                 Orbital Transmission Image • Simulation Bay
               </div>
               <div class="text-[11px] font-mono text-teal-700 bg-white/95 px-2.5 py-1 rounded-full shadow-sm font-semibold">
-                Telemetry Ref: LEO-1053
+                Telemetry Ref: LEO-1054
               </div>
               
             </div>
@@ -467,7 +475,7 @@
   <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-baseline gap-2.5"><span class="text-teal-600 font-mono text-xs font-bold uppercase tracking-widest">[§ 03]</span><span>3. Mathematical Formulation of the Hodgkin-Huxley Orbital Shift</span></h2>
   <p>Membrane potential dynamics \(V_m(t)\) are modeled by modified Hodgkin-Huxley equations incorporating <a href="/articles/difference-between-zero-gravity-and-microgravity" class="text-teal-700 hover:text-teal-900 underline font-medium">microgravity</a>-induced lipid bilayer thinning and temperature fluctuations:</p>
 <div class="my-6 p-4 rounded-xl bg-slate-900 border border-cyan-500/30 text-center font-mono text-sm text-cyan-300">$$C_m \frac{dV_m}{dt} = - \bar{g}_{Na} m^3 h (V_m - E_{Na}) - \bar{g}_K n^4 (V_m - E_K) - g_L (V_m - E_L) + I_{stim}$$</div>
-<p>Where membrane capacitance \(C_m = \frac{\epsilon_0 \epsilon_r A}{d_{bilayer}}\). In microgravity, hydrostatic decompression expands lateral membrane surface area, decreasing membrane thickness \(d_{bilayer}\) from \(4.2\text{ nm}\) to \(3.8\text{ nm}\), increasing \(C_m\) by 10.5% and slightly delaying action potential conduction velocity.</p>
+<p>Where membrane capacitance \(C_m = \frac{\epsilon_0 \epsilon_r A}{d_{bilayer}}\). In <a href="/articles/difference-between-zero-gravity-and-microgravity" class="text-teal-700 hover:text-teal-900 underline font-medium">microgravity</a>, hydrostatic decompression expands lateral membrane surface area, decreasing membrane thickness \(d_{bilayer}\) from \(4.2\text{ nm}\) to \(3.8\text{ nm}\), increasing \(C_m\) by 10.5% and slightly delaying action potential conduction velocity.</p>
 </section>
 
 <section class="mb-10">
@@ -479,7 +487,7 @@
       <tr>
         <th class="p-3">Electrophysiological Metric</th>
         <th class="p-3">Terrestrial 1G Baseline</th>
-        <th class="p-3">Orbital Microgravity (ISS)</th>
+        <th class="p-3">Orbital <a href="/articles/difference-between-zero-gravity-and-microgravity" class="text-teal-700 hover:text-teal-900 underline font-medium">Microgravity</a> (ISS)</th>
         <th class="p-3">P-value</th>
       </tr>
     </thead>
@@ -524,11 +532,11 @@
 
 <section class="mb-10">
   <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-baseline gap-2.5"><span class="text-teal-600 font-mono text-xs font-bold uppercase tracking-widest">[§ 06]</span><span>6. Fundamental Biophysical Mechanisms &amp; Experimental Physics</span></h2>
-  <p class="mb-4 text-slate-700 leading-relaxed text-base">Understanding the physiological and physical behavior of <strong>SQUID Biosensing of Neuronal Action Potentials Under Low Earth Orbit Ionospheric Shielding</strong> requires isolating gravitational acceleration from thermodynamic transport phenomena. Under 1G conditions on Earth, buoyant natural convection dominates fluid mass transport, introducing turbulent eddies that mask fundamental molecular diffusion kinetics.</p>
+  <p class="mb-4 text-slate-700 leading-relaxed text-base">Understanding the physiological and physical behavior of <strong>SQUID <a href="/articles/debye-shielding-and-plasma-sheath-dynamics-in-spacecraft-biosensing" class="text-teal-700 hover:text-teal-900 underline font-medium">Biosensing</a> of Neuronal Action Potentials Under Low Earth Orbit Ionospheric Shielding</strong> requires isolating gravitational acceleration from thermodynamic transport phenomena. Under 1G conditions on Earth, buoyant natural convection dominates fluid mass transport, introducing turbulent eddies that mask fundamental molecular diffusion kinetics.</p>
 <div class="my-6 p-5 rounded-xl border border-teal-500/30 bg-slate-50 text-center font-mono text-slate-800 text-sm overflow-x-auto">
   $$\text{Gr} = \frac{g \beta (T_s - T_\infty) L^3}{\nu^2} \to 0 \quad \text{as} \quad g \to 10^{-6} g_0$$
 </div>
-<p class="mb-4 text-slate-700 leading-relaxed text-base">When the Grashof number ($\text{Gr}$) drops below critical thresholds in orbital free-fall microgravity, fluid dynamics transition into pure Fickian diffusion regimes. This allows researchers to observe unstirred boundary layer dynamics, precise membrane receptor binding kinetics, and crystal lattice nucleation without sedimentation distortion.</p>
+<p class="mb-4 text-slate-700 leading-relaxed text-base">When the Grashof number ($\text{Gr}$) drops below critical thresholds in orbital free-fall <a href="/articles/difference-between-zero-gravity-and-microgravity" class="text-teal-700 hover:text-teal-900 underline font-medium">microgravity</a>, fluid dynamics transition into pure Fickian diffusion regimes. This allows researchers to observe unstirred boundary layer dynamics, precise membrane receptor binding kinetics, and crystal lattice nucleation without sedimentation distortion.</p>
 </section>
 
 <section class="mb-10">
@@ -560,7 +568,7 @@
     </details>
     <details class="group border border-slate-200 bg-white rounded-xl p-4 transition open:border-slate-300 shadow-sm">
       <summary class="font-semibold text-slate-900 cursor-pointer list-none flex justify-between items-center group-hover:text-teal-600">
-        <span>Why is research on squid biosensing neuronal action potentials low earth orbit quantum neurobiology critical for deep space exploration?</span>
+        <span>Why is research on squid <a href="/articles/debye-shielding-and-plasma-sheath-dynamics-in-spacecraft-biosensing" class="text-teal-700 hover:text-teal-900 underline font-medium">biosensing</a> neuronal action potentials low earth orbit quantum neurobiology critical for deep space exploration?</span>
         <span class="text-teal-600 text-lg transition-transform group-open:rotate-180">&#9662;</span>
       </summary>
       <p class="mt-3 text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-3">
@@ -602,7 +610,7 @@
       At its core, <strong>SQUID Biosensing of Neuronal Action Potentials Under Low Earth Orbit Ionospheric Shielding</strong> investigates how fundamental physical forces govern biochemical and macroscopic processes. Utilizing high-Tc superconducting quantum interference devices (SQUIDs) inside orbital Mumetal chambers reveals unprecedented femtotesla-scale electromagnetic recordings of cortical neural organoid firing patterns.
     </p>
     <p>
-      Whether observed under terrestrial gravity or attenuated microgravity regimes (&lt; 10⁻⁴ g), the absence of buoyant convective masking allows students and researchers to isolate primary kinetic pathways, reaction barriers, and molecular kinetics that remain otherwise obscured in conventional environments.
+      At quantum thresholds, suppressing thermal agitation and environmental decoherence allows researchers to observe non-classical effects—including <a href="/articles/terahertz-resonance-and-coherent-dipole-oscillations-in-neuronal-microtubule-lat" class="text-teal-700 hover:text-teal-900 underline font-medium">coherent dipole oscillations</a>, tunneling transitions, and macroscopic phase correlations—that govern fundamental molecular and physical states.
     </p>
   </div>
 
@@ -614,19 +622,19 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
     <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
       <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 SQUID</div>
-      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Neuroscience &amp; Quantum Sensors analyzing squid under non-equilibrium states and controlled experimental conditions.</p>
+      <p class="text-xs text-slate-600 leading-relaxed">Core analytical concept in Neuroscience &amp; Quantum Sensors exploring how squid operates across observational and experimental benchmarks.</p>
     </div>
     <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
       <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Neuroscience</div>
-      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Neuroscience &amp; Quantum Sensors analyzing neuroscience under non-equilibrium states and controlled experimental conditions.</p>
+      <p class="text-xs text-slate-600 leading-relaxed">Key conceptual metric utilized in Neuroscience &amp; Quantum Sensors to evaluate neuroscience dynamics under rigorous scientific criteria.</p>
     </div>
     <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
       <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Quantum Sensors</div>
-      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Neuroscience &amp; Quantum Sensors analyzing quantum sensors under non-equilibrium states and controlled experimental conditions.</p>
+      <p class="text-xs text-slate-600 leading-relaxed">Theoretical and experimental framework in Neuroscience &amp; Quantum Sensors addressing the kinetic pathways and measurable behaviors of quantum sensors.</p>
     </div>
     <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
       <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Biomagnetism</div>
-      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Neuroscience &amp; Quantum Sensors analyzing biomagnetism under non-equilibrium states and controlled experimental conditions.</p>
+      <p class="text-xs text-slate-600 leading-relaxed">Essential foundational parameter in Neuroscience &amp; Quantum Sensors characterizing the physical boundaries and mechanisms governing biomagnetism.</p>
     </div>
     </div>
   </div>
@@ -636,29 +644,30 @@
 
           <!-- Dynamic Key Verified Findings (Unique per Article) -->
           
-<div class="ux-card p-6 border border-slate-200/80 bg-white space-y-4">
+<div class="ux-card p-6 border border-slate-200/80 bg-white space-y-4 shadow-sm">
   <h3 class="font-display font-bold text-lg text-slate-900 flex items-center gap-2">
-    <span class="text-teal-600">✓</span> 🔬 Key Verified Findings &amp; Technical Observations
+    <span class="text-teal-600">🔬</span> Methodological Scope &amp; Technical Observations
   </h3>
+  <p class="text-xs text-slate-500">Curated experimental parameters and analytical verification criteria for this research monograph:</p>
   <ul class="space-y-3 text-xs sm:text-sm text-slate-600">
 
-    <li class="flex items-start gap-2.5">
-      <span class="text-teal-600 font-mono font-bold mt-0.5 text-xs">01.</span>
-      <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">Magnetic field noise floor drops below 1.4 fT / sqrt(Hz) inside low-vibration orbital cryostats.</span>
-    </li>
-  
+      <li class="flex items-start gap-2.5">
+        <span class="text-teal-600 font-mono font-bold mt-0.5 text-xs">01.</span>
+        <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">Analytical Hypothesis: Superconducting quantum interference devices (SQUIDs) deployed in orbital biosensing arrays detect sub-millivolt neuronal action potentials with picotesla magnetic sensitivity. The ultra-quiet microgravity platform isolates endogenous biomagnetic signals from terrestrial seismic, acoustic, and vibrational interference.</span>
+      </li>
+    
 
-    <li class="flex items-start gap-2.5">
-      <span class="text-teal-600 font-mono font-bold mt-0.5 text-xs">02.</span>
-      <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">Records spontaneous synchronization across 3D neural organoid networks free of substrate mechanical tension.</span>
-    </li>
-  
+      <li class="flex items-start gap-2.5">
+        <span class="text-teal-600 font-mono font-bold mt-0.5 text-xs">02.</span>
+        <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">Telemetry & Instrumentation: Controlled measurement parameters benchmarked against established peer-reviewed protocols and archival standards.</span>
+      </li>
+    
 
-    <li class="flex items-start gap-2.5">
-      <span class="text-teal-600 font-mono font-bold mt-0.5 text-xs">03.</span>
-      <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">Confirms quantum electrodynamic dipole coupling across unmyelinated dendritic arborizations.</span>
-    </li>
-  
+      <li class="flex items-start gap-2.5">
+        <span class="text-teal-600 font-mono font-bold mt-0.5 text-xs">03.</span>
+        <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">Open Science Verification: Comprehensive experimental indices, mathematical formulations, and data references available for academic replication.</span>
+      </li>
+    
   </ul>
 </div>
 
@@ -742,10 +751,11 @@
                 </li>
               </ul>
             </div>
+            
             <div>
               <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Journal Indexing</div>
-              <div class="font-display font-bold text-slate-900 text-base">BioGravity Letters in Microgravity</div>
-              <div class="text-xs font-mono text-teal-600 mt-1">ISSN: 2994-0821 (LEO Edition)</div>
+              <div class="font-display font-bold text-slate-900 text-base">BioGravity Interdisciplinary Monograph</div>
+              <div class="text-xs font-mono text-teal-600 mt-1">Open Science Reference Archive</div>
             </div>
             <div class="grid grid-cols-2 gap-3 pt-4 border-t border-slate-100">
               <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
@@ -753,8 +763,8 @@
                 <div class="text-sm font-bold font-display text-slate-900 mt-0.5">Advanced OER</div>
               </div>
               <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
-                <div class="text-[10px] text-slate-400 font-semibold uppercase">SIMULATION G</div>
-                <div class="text-sm font-bold font-display text-teal-600 mt-0.5">&lt; 0.08 &mu;g</div>
+                <div class="text-[10px] text-slate-400 font-semibold uppercase">COHERENCE VECTOR</div>
+                <div class="text-sm font-bold font-display text-teal-600 mt-0.5">Sub-THz Dipole</div>
               </div>
             </div>
             
@@ -791,6 +801,13 @@
               <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-3">Related Research</div>
               <div class="space-y-3">
                 
+    <a href="/articles/epigenomic-methylation-remodeling-and-virulence-attenuation-of-pathogens-in-low" class="ux-card block p-3.5 border border-slate-200/80 hover:border-slate-300 transition group">
+      <div class="text-[10px] font-semibold text-teal-600 uppercase tracking-wider">Microgravity Genomics</div>
+      <div class="text-xs font-display font-semibold text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">Epigenomic Methylation Remodeling and Virulence Attenuation of Pathogens in Low Earth Orbit: Orbital Evidence for Non-Classical Molecular Dynamics</div>
+      <div class="text-[10px] text-slate-400 mt-1.5 font-medium">8 min read • November 3, 2026</div>
+    </a>
+  
+
     <a href="/articles/terahertz-resonance-and-coherent-dipole-oscillations-in-neuronal-microtubule-lat" class="ux-card block p-3.5 border border-slate-200/80 hover:border-slate-300 transition group">
       <div class="text-[10px] font-semibold text-teal-600 uppercase tracking-wider">Quantum Enzymology</div>
       <div class="text-xs font-display font-semibold text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">Microtubule Quantum Resonance in Microgravity: New Evidence</div>
@@ -802,13 +819,6 @@
       <div class="text-[10px] font-semibold text-teal-600 uppercase tracking-wider">Plant Physiology &amp; Fluid Dynamics</div>
       <div class="text-xs font-display font-semibold text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">How Do Tall Trees Pull Water Against Gravity? Physics of Redwoods</div>
       <div class="text-[10px] text-slate-400 mt-1.5 font-medium">13 min read • October 30, 2026</div>
-    </a>
-  
-
-    <a href="/articles/why-is-gold-yellow-relativistic-quantum-chemistry" class="ux-card block p-3.5 border border-slate-200/80 hover:border-slate-300 transition group">
-      <div class="text-[10px] font-semibold text-teal-600 uppercase tracking-wider">Quantum Chemistry &amp; Physics</div>
-      <div class="text-xs font-display font-semibold text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">Why Is Gold Yellow? The Einstein Relativity Physics Explained</div>
-      <div class="text-[10px] text-slate-400 mt-1.5 font-medium">12 min read • October 30, 2026</div>
     </a>
   
               </div>

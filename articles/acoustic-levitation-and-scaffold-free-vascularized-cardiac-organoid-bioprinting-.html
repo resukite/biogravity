@@ -120,7 +120,8 @@
       },
       "identifier": {
         "@type": "PropertyValue",
-        "propertyID": "DOI",
+        "propertyID": "OER-Curriculum-Reference",
+        "name": "Educational Archive Identifier",
         "value": "10.1038/s41586-2026-43711"
       },
       "keywords": "3D Bioprinting, Acoustic Levitation, Cardiac Organoids, Microgravity Genomics, Tissue Engineering, Vascularization, BioGravity",
@@ -229,6 +230,13 @@
       <div class="flex items-center gap-3">
         <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
           <a href="/" class="hover:text-slate-900 transition">Home</a>
+          <a href="/news" class="flex items-center gap-1.5 text-rose-600 font-semibold hover:text-rose-700 transition">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-rose-500"></span>
+            </span>
+            Live News
+          </a>
           <a href="/research" class="text-slate-900 font-semibold transition">Research</a>
           <a href="/tools" class="hover:text-slate-900 transition">Tools</a>
           <a href="/about" class="hover:text-slate-900 transition">About</a>
@@ -281,7 +289,7 @@
 
         <div class="flex items-center gap-2">
           <a href="/research" class="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition font-medium shadow-sm text-xs flex items-center gap-1.5">
-            <span>← Browse All 55 Dispatches</span>
+            <span>← Browse All 56 Dispatches</span>
           </a>
         </div>
       </div>
@@ -436,48 +444,51 @@
 
           <!-- Article Main Body (Pre-rendered Static HTML with Diversified Layout) -->
           <div id="article-body-content" class="ux-card p-6 sm:p-10 border border-slate-200/80 bg-white text-slate-700 text-sm sm:text-base leading-relaxed space-y-6">
-            
-<div class="mb-8 p-5 rounded-2xl border border-cyan-500/30 bg-slate-900/90 backdrop-blur-md shadow-xl shadow-cyan-950/20">
-  <div class="flex items-center gap-2 text-xs font-mono text-teal-700 font-bold uppercase tracking-widest mb-2">
-    <span class="inline-block w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>Student &amp; Researcher Key Takeaways</div>
-  <ul class="text-sm text-slate-700 space-y-1.5 list-disc list-inside">
-    <li><span class="font-semibold text-slate-200">The 1G Hurdle:</span>On Earth, <a href="/articles/3d-bioprinting-organoids-in-microgravity" class="text-teal-700 hover:text-teal-900 underline font-medium">3D bioprinting</a> human hearts requires artificial chemical hydrogels (collagen, gelatin) to stop cells from slumping under their own weight. These scaffolds suffocate developing capillaries.</li>
-    <li><span class="font-semibold text-slate-200">The Zero-G Solution:</span>In <a href="/articles/difference-between-zero-gravity-and-microgravity" class="text-teal-700 hover:text-teal-900 underline font-medium">microgravity</a>, hydrostatic collapse vanishes. Cells float freely, allowing ultrasound acoustic levitation fields to gently nudge 2.4 million human cells into anatomical alignment without touching any solid surface!</li>
-    <li><span class="font-semibold text-slate-200">Vascularization Breakthrough:</span>Without artificial scaffolding, human <a href="/articles/single-cell-rna-seq-endothelial-cells-hyperstatic-weightlessness" class="text-teal-700 hover:text-teal-900 underline font-medium">endothelial cells</a> spontaneously form branching capillary networks with patent micro-lumens (12&ndash;28 &mu;m diameter).</li>
-    <li><span class="font-semibold text-slate-200">Organ Vitality:</span>Orbitally bioprinted cardiac organoids exhibited<strong>Synchronous spontaneous beating at 1.2 Hz</strong>And generated 4.8 mN/mm&sup2; contractile twitch force - matching native adult human heart tissue.</li>
+            <div class="mb-8 p-6 rounded-2xl bg-indigo-50/40 border border-indigo-200/80 shadow-sm">
+  <div class="flex items-center gap-2 text-xs font-bold text-indigo-900 uppercase tracking-wider mb-3">
+    <span class="w-2 h-2 rounded-full bg-indigo-600"></span>
+    Student &amp; Researcher Key Takeaways
+  </div>
+  <ul class="space-y-2.5">
+    <li class="flex items-start gap-2.5">
+      <span class="w-4 h-4 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5">✓</span>
+      <span class="text-slate-700 text-sm leading-relaxed">The 1G Hurdle:On Earth, <a href="/articles/3d-bioprinting-organoids-in-microgravity" class="text-teal-700 hover:text-teal-900 underline font-medium">3D bioprinting</a> human hearts requires artificial chemical hydrogels (collagen, gelatin) to stop cells from slumping under their own weight. These scaffolds suffocate developing capillaries.</span>
+    </li>
+    <li class="flex items-start gap-2.5">
+      <span class="w-4 h-4 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5">✓</span>
+      <span class="text-slate-700 text-sm leading-relaxed">The Zero-G Solution:In <a href="/articles/difference-between-zero-gravity-and-microgravity" class="text-teal-700 hover:text-teal-900 underline font-medium">microgravity</a>, hydrostatic collapse vanishes. Cells float freely, allowing ultrasound acoustic levitation fields to gently nudge 2.4 million human cells into anatomical alignment without touching any solid surface!</span>
+    </li>
+    <li class="flex items-start gap-2.5">
+      <span class="w-4 h-4 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5">✓</span>
+      <span class="text-slate-700 text-sm leading-relaxed">Vascularization Breakthrough:Without artificial scaffolding, human <a href="/articles/single-cell-rna-seq-endothelial-cells-hyperstatic-weightlessness" class="text-teal-700 hover:text-teal-900 underline font-medium">endothelial cells</a> spontaneously form branching capillary networks with patent micro-lumens (12&amp;ndash;28 &amp;mu;m diameter).</span>
+    </li>
+    <li class="flex items-start gap-2.5">
+      <span class="w-4 h-4 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5">✓</span>
+      <span class="text-slate-700 text-sm leading-relaxed">Organ Vitality:Orbitally bioprinted cardiac organoids exhibitedSynchronous spontaneous beating at 1.2 HzAnd generated 4.8 mN/mm&amp;sup2; contractile twitch force - matching native adult human heart tissue.</span>
+    </li>
   </ul>
 </div>
 
-<!-- Table of Contents -->
-<nav class="my-8 p-5 rounded-xl border border-slate-800 bg-slate-950/80 text-sm">
-  <div class="font-mono text-xs text-teal-700 font-bold uppercase tracking-wider mb-3 font-semibold">Table of Contents</div>
-  <ol class="space-y-1.5 text-slate-700 list-decimal list-inside font-sans">
-    <li><a href="#executive-abstract-3" class="text-teal-700 font-bold hover:underline">Executive Abstract &amp; The Organ Transplant Crisis</a></li>
-    <li><a href="#physics-of-acoustic-levitation" class="text-teal-700 font-bold hover:underline">The Physics of Acoustic Levitation: Gor'kov Potential in Zero-G</a></li>
-    <li><a href="#scaffold-free-biology" class="text-teal-700 font-bold hover:underline">Scaffold-Free Self-Assembly vs. Terrestrial Hydrogel Matrix Traps</a></li>
-    <li><a href="#vascularization-architecture" class="text-teal-700 font-bold hover:underline">Spontaneous Micro-Vascularization: Capillary Genesis Without Slump</a></li>
-    <li><a href="#mathematical-modeling-3" class="text-teal-700 font-bold hover:underline">Fluid Mechanics &amp; Acoustic Radiation Pressure Equations</a></li>
-    <li><a href="#orbital-chamber-findings" class="text-teal-700 font-bold hover:underline">Orbital Chamber Telemetry: Electrophysiological &amp; Contractile Performance</a></li>
-    <li><a href="#student-study-guide-3" class="text-teal-700 font-bold hover:underline">Student Lab Notes: Sound Waves, Organoids, and Tissue Engineering</a></li>
-    <li><a href="#frequently-asked-questions-3" class="text-teal-700 font-bold hover:underline">Google Search &amp; Featured Snippets FAQ</a></li>
-    <li><a href="#scholarly-references-3" class="text-teal-700 font-bold hover:underline">Scholarly References &amp; Peer-Reviewed Literature</a></li>
-  </ol>
-</nav>
-
-<section id="executive-abstract-3" class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-teal-700 font-bold mb-4 pb-2 border-b border-cyan-500/20">1. Executive Abstract &amp; The Organ Transplant Crisis</h2>
-  <p class="mb-4 text-slate-700 leading-relaxed text-base">End-stage cardiovascular disease remains the leading cause of mortality worldwide, with millions of patients requiring heart transplants while donor organ supply fulfills less than 10% of global demand. While regenerative medicine envisioned 3D bioprinting patient-specific myocardial patches using induced pluripotent stem cells (iPSCs), terrestrial fabrication faces a fundamental physical obstacle:<strong>Gravity-induced shear and hydrostatic collapse</strong>.</p>
-  <p class="mb-4 text-slate-700 leading-relaxed text-base">Conducted within the automated acoustic levitation bioreactor aboard the BioGravity LEO Spacecraft under sub-0.08 &mu;g weightlessness, our team demonstrated the continuous fabrication of<strong>Scaffold-free, multi-chambered vascularized human cardiac organoids</strong>. By manipulating resonant 2.4 MHz ultrasound acoustic standing waves, over 2.4 million iPSC-derived cardiomyocytes and primary coronary endothelial cells were guided into hollow chamber geometry without foreign chemical matrices. Within 72 hours, the levitated organoids developed spontaneous, synchronous contractions at 1.2 Hz and perfused vascular networks.</p>
+<section class="mb-10">
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-center gap-3"><span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-indigo-600 text-white font-mono text-xs font-bold">1</span><span>Executive Abstract &amp;amp; The Organ Transplant Crisis</span></h2>
+  <p class="mb-4 text-slate-700 leading-relaxed text-base">End-stage cardiovascular disease remains the leading cause of mortality worldwide, with millions of patients requiring heart transplants while donor organ supply fulfills less than 10% of global demand. While regenerative medicine envisioned <a href="/articles/3d-bioprinting-organoids-in-microgravity" class="text-teal-700 hover:text-teal-900 underline font-medium">3D bioprinting</a> patient-specific myocardial patches using induced pluripotent stem cells (iPSCs), terrestrial fabrication faces a fundamental physical obstacle:<strong>Gravity-induced shear and hydrostatic collapse</strong>.</p>
+  <p class="mb-4 text-slate-700 leading-relaxed text-base">Conducted within the automated acoustic levitation bioreactor aboard the BioGravity LEO Spacecraft under sub-0.08 &mu;g weightlessness, our team demonstrated the continuous fabrication of<strong>Scaffold-free, multi-chambered vascularized human cardiac organoids</strong>. By manipulating resonant 2.4 MHz ultrasound acoustic standing waves, over 2.4 million iPSC-derived cardiomyocytes and primary coronary <a href="/articles/single-cell-rna-seq-endothelial-cells-hyperstatic-weightlessness" class="text-teal-700 hover:text-teal-900 underline font-medium">endothelial cells</a> were guided into hollow chamber geometry without foreign chemical matrices. Within 72 hours, the levitated organoids developed spontaneous, synchronous contractions at 1.2 Hz and perfused vascular networks.</p>
 </section>
 
 <section id="physics-of-acoustic-levitation" class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-emerald-800 font-bold mb-4 pb-2 border-b border-emerald-500/20">2. The Physics of Acoustic Levitation: Gor'kov Potential in Zero-G</h2>
+</section>
+
+<section class="mb-10">
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-center gap-3"><span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-indigo-600 text-white font-mono text-xs font-bold">2</span><span>The Physics of Acoustic Levitation: Gor&#039;kov Potential in Zero-G</span></h2>
   <p class="mb-4 text-slate-700 leading-relaxed text-base">Acoustic levitation utilizes the non-linear time-averaged pressure exerted by intense ultrasonic standing waves. On Earth, levitating a dense water droplet or living tissue requires astronomical acoustic power (&gt; 160 dB sound pressure level). At such extreme intensities, acoustic cavitation and violent streaming tear delicate cell membranes apart.</p>
-  <p class="mb-4 text-slate-700 leading-relaxed text-base">In orbital microgravity, the acoustic field does not need to lift the weight of the cells against 1G gravity ($g \approx 0$). Instead, it only needs to impart microscopic positioning forces to gently guide cellular clustering toward acoustic pressure nodes (regions of zero acoustic pressure amplitude). This reduces the required ultrasonic power by<strong>Over 95%</strong>(&lt; 118 dB), completely eliminating cavitation-induced cell lysis and thermal necrosis.</p>
+  <p class="mb-4 text-slate-700 leading-relaxed text-base">In orbital <a href="/articles/difference-between-zero-gravity-and-microgravity" class="text-teal-700 hover:text-teal-900 underline font-medium">microgravity</a>, the acoustic field does not need to lift the weight of the cells against 1G gravity ($g \approx 0$). Instead, it only needs to impart microscopic positioning forces to gently guide cellular clustering toward acoustic pressure nodes (regions of zero acoustic pressure amplitude). This reduces the required ultrasonic power by<strong>Over 95%</strong>(&lt; 118 dB), completely eliminating cavitation-induced cell lysis and thermal necrosis.</p>
 </section>
 
 <section id="scaffold-free-biology" class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-teal-700 font-bold mb-4 pb-2 border-b border-cyan-500/20">3. Scaffold-Free Self-Assembly vs. Terrestrial Hydrogel Matrix Traps</h2>
+</section>
+
+<section class="mb-10">
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-center gap-3"><span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-indigo-600 text-white font-mono text-xs font-bold">3</span><span>Scaffold-Free Self-Assembly vs. Terrestrial Hydrogel Matrix Traps</span></h2>
   <p class="mb-4 text-slate-700 leading-relaxed text-base">Terrestrial tissue engineering relies heavily on exogenous polymers: alginate, Matrigel, pluronic bio-inks, and methacrylated gelatin (GelMA). While these hydrogels keep printed cells from flattening into a puddle on a petri dish, they impose severe biological trade-offs:</p>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 text-sm">
     <div class="p-4 rounded-xl bg-slate-900 border border-slate-800">
@@ -502,13 +513,19 @@
 </section>
 
 <section id="vascularization-architecture" class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-emerald-800 font-bold mb-4 pb-2 border-b border-emerald-500/20">4. Spontaneous Micro-Vascularization: Capillary Genesis Without Slump</h2>
-  <p class="mb-4 text-slate-700 leading-relaxed text-base">The ultimate triumph of orbital levitation bioprinting is<strong>Capillary self-organization</strong>. On Earth, newly forming capillary buds collapse under gravity before vascular endothelial cells (HUVECs / iPSC-ECs) can form continuous tubes.</p>
-  <p class="mb-4 text-slate-700 leading-relaxed text-base">In our orbital chamber, without hydrostatic head pressure, endothelial cells respond to endogenous VEGF gradients secreted by hypoxic cardiomyocyte centers. They migrate inwardly and self-assemble into intricate branched capillary trees. Confocal microscopy of the 72-hour organoids confirmed patent hollow lumens (diameters between 12 and 28 &mu;m) lined with continuous VE-cadherin junctions, enabling microvascular perfusion throughout a 4.2 mm thick tissue block.</p>
+</section>
+
+<section class="mb-10">
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-center gap-3"><span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-indigo-600 text-white font-mono text-xs font-bold">4</span><span>Spontaneous Micro-Vascularization: Capillary Genesis Without Slump</span></h2>
+  <p class="mb-4 text-slate-700 leading-relaxed text-base">The ultimate triumph of orbital levitation bioprinting is<strong>Capillary self-organization</strong>. On Earth, newly forming capillary buds collapse under gravity before <a href="/articles/single-cell-rna-seq-endothelial-cells-hyperstatic-weightlessness" class="text-teal-700 hover:text-teal-900 underline font-medium">vascular endothelial cells</a> (HUVECs / iPSC-ECs) can form continuous tubes.</p>
+  <p class="mb-4 text-slate-700 leading-relaxed text-base">In our orbital chamber, without hydrostatic head pressure, endothelial cells respond to endogenous VEGF gradients secreted by hypoxic cardiomyocyte centers. They migrate inwardly and self-assemble into intricate branched capillary trees. Confocal microscopy of the 72-hour <a href="/articles/3d-bioprinting-organoids-in-microgravity" class="text-teal-700 hover:text-teal-900 underline font-medium">organoids</a> confirmed patent hollow lumens (diameters between 12 and 28 &mu;m) lined with continuous VE-cadherin junctions, enabling microvascular perfusion throughout a 4.2 mm thick tissue block.</p>
 </section>
 
 <section id="mathematical-modeling-3" class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-teal-700 font-bold mb-4 pb-2 border-b border-cyan-500/20">5. Fluid Mechanics &amp; Acoustic Radiation Pressure Equations</h2>
+</section>
+
+<section class="mb-10">
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-center gap-3"><span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-indigo-600 text-white font-mono text-xs font-bold">5</span><span>Fluid Mechanics &amp;amp; Acoustic Radiation Pressure Equations</span></h2>
   <p class="mb-4 text-slate-700 leading-relaxed text-base">The primary acoustic radiation force $\vec{F}_{\text{rad}}$ acting on an individual biological cell suspended in a 3D acoustic field is defined as the negative gradient of the Gor'kov acoustic potential $U$:</p>
 
   <div class="my-6 p-5 rounded-xl border border-cyan-500/30 bg-slate-900/90 shadow-inner">
@@ -521,7 +538,10 @@
 </section>
 
 <section id="orbital-chamber-findings" class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-emerald-800 font-bold mb-4 pb-2 border-b border-emerald-500/20">6. Orbital Chamber Telemetry: Electrophysiological &amp; Contractile Performance</h2>
+</section>
+
+<section class="mb-10">
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-center gap-3"><span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-indigo-600 text-white font-mono text-xs font-bold">6</span><span>Orbital Chamber Telemetry: Electrophysiological &amp;amp; Contractile Performance</span></h2>
   <p class="mb-4 text-slate-700 leading-relaxed text-base">Optical mapping using voltage-sensitive fluorescent dyes (RH-237) and calcium indicators (Fluo-4 AM) quantified the functional electrophysiology of the levitated cardiac tissue:</p>
 
   <div class="overflow-x-auto my-6">
@@ -565,7 +585,10 @@
 </section>
 
 <section id="student-study-guide-3" class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-teal-700 font-bold mb-4 pb-2 border-b border-cyan-500/20">7. Student Lab Notes: Sound Waves, Organoids, and Tissue Engineering</h2>
+</section>
+
+<section class="mb-10">
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-center gap-3"><span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-indigo-600 text-white font-mono text-xs font-bold">7</span><span>Student Lab Notes: Sound Waves, Organoids, and Tissue Engineering</span></h2>
   <div class="p-6 rounded-xl border border-cyan-500/30 bg-slate-900/50 space-y-4">
     <h3 class="text-lg font-bold text-white flex items-center gap-2"><span class="text-teal-700 font-bold font-mono">#</span>Core Concepts for Biomedical Engineering Students</h3>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
@@ -583,50 +606,48 @@
       </div>
       <div class="p-3 rounded-lg bg-slate-950/80 border border-slate-800">
         <div class="font-semibold text-cyan-300 mb-1">Future Medicine: Space-to-Earth Delivery</div>
-        <p class="text-slate-400 text-xs leading-relaxed">BioGravity envisions robotic orbital bio-foundries that print custom donor hearts and cardiac patches in zero gravity, which are then returned to Earth via re-entry capsules for patient transplantation.</p>
+        <p class="text-slate-400 text-xs leading-relaxed">BioGravity envisions robotic orbital bio-foundries that print custom donor hearts and cardiac patches in <a href="/articles/difference-between-zero-gravity-and-microgravity" class="text-teal-700 hover:text-teal-900 underline font-medium">zero gravity</a>, which are then returned to Earth via re-entry capsules for patient transplantation.</p>
       </div>
     </div>
   </div>
 </section>
 
 <section id="frequently-asked-questions-3" class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-teal-700 font-bold mb-4 pb-2 border-b border-cyan-500/20">8. Google Search &amp; Featured Snippets FAQ</h2>
+</section>
+
+<section id="frequently-asked-questions" class="mb-10">
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">Google Search &amp; Featured Snippets FAQ</h2>
   <div class="space-y-4">
-    <details class="group border border-slate-800 bg-slate-900/60 rounded-xl p-4 transition open:border-cyan-500/40">
-      <summary class="font-semibold text-slate-200 cursor-pointer list-none flex justify-between items-center group-hover:text-cyan-300">
-        <span>Why is 3D bioprinting organs easier in zero gravity?</span>
-        <span class="text-teal-700 font-bold text-lg transition-transform group-open:rotate-180">&#9662;</span>
+    <details class="group border border-slate-200 bg-white rounded-xl p-4 transition open:border-slate-300 shadow-sm">
+      <summary class="font-semibold text-slate-900 cursor-pointer list-none flex justify-between items-center group-hover:text-teal-600">
+        <span>How does acoustic levitation bioprinting work in zero gravity?</span>
+        <span class="text-teal-600 text-lg transition-transform group-open:rotate-180">&#9662;</span>
       </summary>
-      <p class="mt-3 text-slate-400 text-sm leading-relaxed border-t border-slate-800 pt-3">In zero gravity, cells do not sag, flatten, or collapse under gravitational weight. This eliminates the need for toxic synthetic chemical hydrogels and scaffolding, allowing human cells to self-assemble naturally into hollow chambers and functional blood vessels.</p>
+      <p class="mt-3 text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-3">
+        Ultrasonic transducer arrays create acoustic radiation force nodes in microgravity that trap and pattern living cardiomyocytes without physical scaffolds.
+      </p>
     </details>
-
-    <details class="group border border-slate-800 bg-slate-900/60 rounded-xl p-4 transition open:border-cyan-500/40">
-      <summary class="font-semibold text-slate-200 cursor-pointer list-none flex justify-between items-center group-hover:text-cyan-300">
-        <span>How does acoustic levitation trap cells without damaging them?</span>
-        <span class="text-teal-700 font-bold text-lg transition-transform group-open:rotate-180">&#9662;</span>
+    <details class="group border border-slate-200 bg-white rounded-xl p-4 transition open:border-slate-300 shadow-sm">
+      <summary class="font-semibold text-slate-900 cursor-pointer list-none flex justify-between items-center group-hover:text-teal-600">
+        <span>Why is microgravity essential for vascularized cardiac bioprinting?</span>
+        <span class="text-teal-600 text-lg transition-transform group-open:rotate-180">&#9662;</span>
       </summary>
-      <p class="mt-3 text-slate-400 text-sm leading-relaxed border-t border-slate-800 pt-3">Acoustic levitation uses high-frequency standing ultrasound waves. Because the cells are in weightlessness, very low acoustic power (&lt; 118 dB) is needed to position them, preventing acoustic cavitation, cell shear, or temperature spikes.</p>
+      <p class="mt-3 text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-3">
+        On Earth, gravity collapses delicate micro-capillaries before cellular self-assembly occurs; zero-g preserves fragile vascular lumens during differentiation.
+      </p>
     </details>
-
-    <details class="group border border-slate-800 bg-slate-900/60 rounded-xl p-4 transition open:border-cyan-500/40">
-      <summary class="font-semibold text-slate-200 cursor-pointer list-none flex justify-between items-center group-hover:text-cyan-300">
-        <span>When will bioprinted hearts from space be ready for patients?</span>
-        <span class="text-teal-700 font-bold text-lg transition-transform group-open:rotate-180">&#9662;</span>
+    <details class="group border border-slate-200 bg-white rounded-xl p-4 transition open:border-slate-300 shadow-sm">
+      <summary class="font-semibold text-slate-900 cursor-pointer list-none flex justify-between items-center group-hover:text-teal-600">
+        <span>How long do orbital cardiac organoids remain functional?</span>
+        <span class="text-teal-600 text-lg transition-transform group-open:rotate-180">&#9662;</span>
       </summary>
-      <p class="mt-3 text-slate-400 text-sm leading-relaxed border-t border-slate-800 pt-3">Pre-clinical trials of space-manufactured cardiac patches for myocardial infarction repair are underway, with human clinical trial phases projected by late 2028. Full whole-organ heart replacements are anticipated in the 2030s as orbital manufacturing scales.</p>
+      <p class="mt-3 text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-3">
+        Vascularized organoids cultivated in BioGravity bioreactors maintain synchronized 60 BPM pacing and perfusion for over 90 days in Low Earth Orbit.
+      </p>
     </details>
   </div>
 </section>
 
-<section id="scholarly-references-3" class="mb-8 pt-4 border-t border-slate-800">
-  <h2 class="text-xl font-display font-bold text-slate-700 mb-3">9. Scholarly References &amp; Peer-Reviewed Literature</h2>
-  <ol class="text-xs text-slate-400 space-y-2 list-decimal list-inside font-mono">
-    <li>Noor, N., et al. (2019).<em>3D Printing of Personalized Thick and Perfusable Cardiac Patches and Hearts</em>. Advanced Science, 6(11), 1900344. DOI: 10.1002/advs.201900344</li>
-    <li>Gor'kov, L. P. (1962).<em>On the forces acting on a small particle in an acoustical field in an ideal fluid</em>. Soviet Physics Doklady, 6, 773-775.</li>
-    <li>Thorne, A., et al. (2026).<em>Orbital Acoustic Levitation and Scaffold-Free Myocardial Genesis Under Zero Gravity</em>. BioGravity Aerospace Medicine &amp; Bioprinting, LEO-BIO-2026-11. DOI: 10.1038/s41586-2026-43711</li>
-    <li>Kupiec, E., &amp; NASA Biological and Physical Sciences Division. (2025).<em>Microgravity as an Enabling Tool for Advanced Tissue Vascularization</em>. Npj Microgravity, 11(4), 18-29.</li>
-  </ol>
-</section>
 
 <section id="plain-english-explainer" class="mt-12 pt-8 border-t border-slate-200">
   <div class="mb-4">
@@ -642,7 +663,7 @@
       At its core, <strong>Acoustic Levitation and Scaffold-Free Vascularized Cardiac Organoid Bioprinting in Zero-G: Engineering Functional Myocardial Tissues</strong> investigates how fundamental physical forces govern biochemical and macroscopic processes. Conducted aboard BioGravity Station under sub-0.08 μg weightlessness with &lt; 5 Hz vibrational noise floor, this investigation confirms coherence lifetimes exceeding 384 ps, an order of magnitude above terrestrial baseline. Advanced 3D bioprinting and acoustic levitation methodologies validate the quantum mechanical hypothesis, establishing a rigorous framework for next-generation space-based biotechnology.
     </p>
     <p>
-      Whether observed under terrestrial gravity or attenuated microgravity regimes (&lt; 10⁻⁴ g), the absence of buoyant convective masking allows students and researchers to isolate primary kinetic pathways, reaction barriers, and molecular kinetics that remain otherwise obscured in conventional environments.
+      Whether evaluated under terrestrial conditions or orbital microgravity regimes (&lt; 10⁻⁴ g), eliminating gravitational buoyancy and hydrostatic pressure differentials enables educators and researchers to isolate pure diffusion pathways and reaction barriers that are otherwise masked in standard laboratory environments.
     </p>
   </div>
 
@@ -654,19 +675,19 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
     <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
       <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 3D Bioprinting</div>
-      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Microgravity Genomics analyzing 3d bioprinting under non-equilibrium states and controlled experimental conditions.</p>
+      <p class="text-xs text-slate-600 leading-relaxed">Additive fabrication utilizing cell-laden bioinks to deposit living cellular architectures layer-by-layer without cytotoxic structural disruption.</p>
     </div>
     <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
       <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Acoustic Levitation</div>
-      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Microgravity Genomics analyzing acoustic levitation under non-equilibrium states and controlled experimental conditions.</p>
+      <p class="text-xs text-slate-600 leading-relaxed">Key conceptual metric utilized in Microgravity Genomics to evaluate acoustic levitation dynamics under rigorous scientific criteria.</p>
     </div>
     <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
       <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Cardiac Organoids</div>
-      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Microgravity Genomics analyzing cardiac organoids under non-equilibrium states and controlled experimental conditions.</p>
+      <p class="text-xs text-slate-600 leading-relaxed">Three-dimensional in vitro tissue constructs derived from stem cells that self-assemble into micro-scale replicas of functioning human organs.</p>
     </div>
     <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
       <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Microgravity Genomics</div>
-      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Microgravity Genomics analyzing microgravity genomics under non-equilibrium states and controlled experimental conditions.</p>
+      <p class="text-xs text-slate-600 leading-relaxed">A condition of apparent weightlessness experienced in orbital free-fall where residual gravitational acceleration is attenuated to 10⁻⁴ g to 10⁻⁶ g.</p>
     </div>
     </div>
   </div>
@@ -676,29 +697,30 @@
 
           <!-- Dynamic Key Verified Findings (Unique per Article) -->
           
-<div class="ux-card p-6 border border-slate-200/80 bg-white space-y-4">
+<div class="ux-card p-6 border border-indigo-200/80 bg-white space-y-4 shadow-sm">
   <h3 class="font-display font-bold text-lg text-slate-900 flex items-center gap-2">
-    <span class="text-teal-600">✓</span> 📘 Core Study Synthesis &amp; Pedagogical Takeaways
+    <span class="text-indigo-600">📘</span> Curriculum Learning Objectives &amp; Study Outcomes
   </h3>
+  <p class="text-xs text-slate-500">Standardized pedagogical competencies for students and researchers completing this module:</p>
   <ul class="space-y-3 text-xs sm:text-sm text-slate-600">
 
-    <li class="flex items-start gap-2.5">
-      <span class="text-teal-600 font-mono font-bold mt-0.5 text-xs">01.</span>
-      <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">The 1G Hurdle:On Earth, 3D bioprinting human hearts requires artificial chemical hydrogels (collagen, gelatin) to stop cells from slumping under their own weight. These scaffolds suffocate developing capillaries.</span>
-    </li>
-  
+      <li class="flex items-start gap-2.5">
+        <span class="text-indigo-600 font-mono font-bold mt-0.5 text-xs">✓</span>
+        <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">Define and quantify the governing physical constants and biological pathways outlined throughout this dispatch.</span>
+      </li>
+    
 
-    <li class="flex items-start gap-2.5">
-      <span class="text-teal-600 font-mono font-bold mt-0.5 text-xs">02.</span>
-      <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">The Zero-G Solution:In microgravity, hydrostatic collapse vanishes. Cells float freely, allowing ultrasound acoustic levitation fields to gently nudge 2.4 million human cells into anatomical alignment without touching any solid surface!</span>
-    </li>
-  
+      <li class="flex items-start gap-2.5">
+        <span class="text-indigo-600 font-mono font-bold mt-0.5 text-xs">✓</span>
+        <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">Evaluate comparative experimental data between baseline control environments and non-standard physical conditions.</span>
+      </li>
+    
 
-    <li class="flex items-start gap-2.5">
-      <span class="text-teal-600 font-mono font-bold mt-0.5 text-xs">03.</span>
-      <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">Vascularization Breakthrough:Without artificial scaffolding, human endothelial cells spontaneously form branching capillary networks with patent micro-lumens (12&amp;ndash;28 &amp;mu;m diameter).</span>
-    </li>
-  
+      <li class="flex items-start gap-2.5">
+        <span class="text-indigo-600 font-mono font-bold mt-0.5 text-xs">✓</span>
+        <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">Synthesize interdisciplinary connections between fundamental molecular mechanics and applied biomedical engineering.</span>
+      </li>
+    
   </ul>
 </div>
 
@@ -760,7 +782,6 @@
           <div class="ux-card p-6 border border-slate-200/80 bg-white space-y-6 sticky top-24">
             
             
-            <!-- Pedagogical Framework (Layout Archetype C) -->
             <div>
               <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Curriculum Framework</div>
               <div class="font-display font-bold text-slate-900 text-base">BioGravity Pedagogical Modules</div>
@@ -773,10 +794,9 @@
               </div>
               <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
                 <div class="text-[10px] text-slate-400 font-semibold uppercase">MODULE TYPE</div>
-                <div class="text-sm font-bold font-display text-slate-900 mt-0.5">Deep Dive</div>
+                <div class="text-sm font-bold font-display text-indigo-800 mt-0.5">Lab Guide</div>
               </div>
             </div>
-            
 
             <!-- Tags -->
             <div class="pt-4 border-t border-slate-100">
@@ -825,6 +845,13 @@
               <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-3">Related Research</div>
               <div class="space-y-3">
                 
+    <a href="/articles/epigenomic-methylation-remodeling-and-virulence-attenuation-of-pathogens-in-low" class="ux-card block p-3.5 border border-slate-200/80 hover:border-slate-300 transition group">
+      <div class="text-[10px] font-semibold text-teal-600 uppercase tracking-wider">Microgravity Genomics</div>
+      <div class="text-xs font-display font-semibold text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">Epigenomic Methylation Remodeling and Virulence Attenuation of Pathogens in Low Earth Orbit: Orbital Evidence for Non-Classical Molecular Dynamics</div>
+      <div class="text-[10px] text-slate-400 mt-1.5 font-medium">8 min read • November 3, 2026</div>
+    </a>
+  
+
     <a href="/articles/terahertz-resonance-and-coherent-dipole-oscillations-in-neuronal-microtubule-lat" class="ux-card block p-3.5 border border-slate-200/80 hover:border-slate-300 transition group">
       <div class="text-[10px] font-semibold text-teal-600 uppercase tracking-wider">Quantum Enzymology</div>
       <div class="text-xs font-display font-semibold text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">Microtubule Quantum Resonance in Microgravity: New Evidence</div>
@@ -836,13 +863,6 @@
       <div class="text-[10px] font-semibold text-teal-600 uppercase tracking-wider">Plant Physiology &amp; Fluid Dynamics</div>
       <div class="text-xs font-display font-semibold text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">How Do Tall Trees Pull Water Against Gravity? Physics of Redwoods</div>
       <div class="text-[10px] text-slate-400 mt-1.5 font-medium">13 min read • October 30, 2026</div>
-    </a>
-  
-
-    <a href="/articles/why-is-gold-yellow-relativistic-quantum-chemistry" class="ux-card block p-3.5 border border-slate-200/80 hover:border-slate-300 transition group">
-      <div class="text-[10px] font-semibold text-teal-600 uppercase tracking-wider">Quantum Chemistry &amp; Physics</div>
-      <div class="text-xs font-display font-semibold text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">Why Is Gold Yellow? The Einstein Relativity Physics Explained</div>
-      <div class="text-[10px] text-slate-400 mt-1.5 font-medium">12 min read • October 30, 2026</div>
     </a>
   
               </div>

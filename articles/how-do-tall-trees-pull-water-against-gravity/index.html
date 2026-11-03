@@ -120,7 +120,8 @@
       },
       "identifier": {
         "@type": "PropertyValue",
-        "propertyID": "DOI",
+        "propertyID": "OER-Curriculum-Reference",
+        "name": "Educational Archive Identifier",
         "value": "10.1038/s41586-2026-tree-023"
       },
       "keywords": "Fluid Dynamics, Plant Biology, Physics, Ecology, Hydrodynamics",
@@ -245,6 +246,13 @@
       <div class="flex items-center gap-3">
         <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
           <a href="/" class="hover:text-slate-900 transition">Home</a>
+          <a href="/news" class="flex items-center gap-1.5 text-rose-600 font-semibold hover:text-rose-700 transition">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-rose-500"></span>
+            </span>
+            Live News
+          </a>
           <a href="/research" class="text-slate-900 font-semibold transition">Research</a>
           <a href="/tools" class="hover:text-slate-900 transition">Tools</a>
           <a href="/about" class="hover:text-slate-900 transition">About</a>
@@ -297,7 +305,7 @@
 
         <div class="flex items-center gap-2">
           <a href="/research" class="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition font-medium shadow-sm text-xs flex items-center gap-1.5">
-            <span>← Browse All 55 Dispatches</span>
+            <span>← Browse All 56 Dispatches</span>
           </a>
         </div>
       </div>
@@ -310,9 +318,9 @@
             Plant Physiology &amp; Fluid Dynamics
           </span>
           
-          <span class="px-3 py-1 rounded-full bg-teal-50 border border-teal-200/80 text-teal-800 text-xs font-semibold flex items-center gap-1.5">
-            <span class="w-1.5 h-1.5 rounded-full bg-teal-500"></span>
-            Technical Research Monograph (Pedagogical Simulation)
+          <span class="px-3 py-1 rounded-full bg-amber-50 border border-amber-200/80 text-amber-900 text-xs font-semibold flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+            Curated Educational Archive • Pedagogical Exploration
           </span>
           
           <span class="text-xs text-slate-400 font-medium">
@@ -404,10 +412,10 @@
             <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
               
               <div class="text-[11px] font-medium px-3 py-1 rounded-full bg-white/95 text-slate-800 shadow-sm">
-                Orbital Transmission Image • Simulation Bay
+                Observational Science Archive • Field Study
               </div>
-              <div class="text-[11px] font-mono text-teal-700 bg-white/95 px-2.5 py-1 rounded-full shadow-sm font-semibold">
-                Telemetry Ref: LEO-1001
+              <div class="text-[11px] font-mono text-amber-800 bg-white/95 px-2.5 py-1 rounded-full shadow-sm font-semibold">
+                Educational Digest
               </div>
               
             </div>
@@ -439,12 +447,12 @@
 
           <!-- Abstract / Key Summary Box (Layout Diversification) -->
           
-          <div id="scientific-abstract" class="ux-card p-6 bg-white border border-slate-200/80 shadow-sm">
-            <div class="flex items-center justify-between border-b border-slate-100 pb-2 mb-3">
-              <span class="text-xs font-bold uppercase tracking-wider text-teal-700">Technical Abstract &amp; Experimental Scope</span>
-              <span class="text-[10px] font-mono text-slate-400">STATUS: OPEN SCIENCE</span>
+          <div id="scientific-abstract" class="p-6 rounded-2xl bg-gradient-to-r from-amber-50/50 via-slate-50 to-white border-l-4 border-amber-500 border-y border-r border-slate-200/80 text-slate-700 text-sm sm:text-base leading-relaxed shadow-xs">
+            <div class="text-xs font-bold uppercase tracking-wider text-amber-900 mb-2 flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+              Editorial Synopsis &amp; Exploration
             </div>
-            <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+            <p class="italic text-slate-800 font-serif text-base leading-relaxed">
               At heights exceeding 380 feet (115 meters), California coast redwoods transport hundreds of gallons of water daily from soil to their crown against gravitational pull. Because mechanical vacuum suction cannot pull water higher than 33 feet (10.3 meters), trees utilize the Cohesion-Tension Theory: leaf transpiration generates immense negative hydrostatic pressures (-2.5 MPa) that pull water upward like unbroken microscopic steel cables.
             </p>
           </div>
@@ -452,15 +460,36 @@
 
           <!-- Article Main Body (Pre-rendered Static HTML with Diversified Layout) -->
           <div id="article-body-content" class="ux-card p-6 sm:p-10 border border-slate-200/80 bg-white text-slate-700 text-sm sm:text-base leading-relaxed space-y-6">
-            <div class="mb-8 p-5 rounded-2xl border border-teal-200/80 bg-teal-50/40 text-slate-800 text-xs sm:text-sm leading-relaxed flex items-center gap-3">
-  <span class="text-xl">🔬</span>
-  <div>
-    <strong>Investigation Focus:</strong> Key experimental takeaways and telemetry references for this monograph are available in the quick-reference side panel.
+            <div class="mb-8 p-6 rounded-2xl bg-gradient-to-br from-amber-50/50 via-white to-slate-50 border border-amber-200/80 shadow-sm">
+  <div class="flex items-center gap-2 text-xs font-bold text-amber-900 uppercase tracking-wider mb-3">
+    <span class="text-sm">💡</span> Student &amp; Researcher Key Takeaways
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+    <div class="p-3.5 rounded-xl bg-white border border-amber-200/70 shadow-2xs flex items-start gap-2.5">
+      <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-amber-100 text-amber-900 font-bold text-[10px] shrink-0 mt-0.5">01</span>
+      <span class="text-xs text-slate-700 leading-relaxed font-medium">Barometric physics limits pure atmospheric suction to roughly 10.3 meters (33.8 feet); trees over 100 meters tall cannot rely on vacuum pumps.</span>
+    </div>
+    <div class="p-3.5 rounded-xl bg-white border border-amber-200/70 shadow-2xs flex items-start gap-2.5">
+      <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-amber-100 text-amber-900 font-bold text-[10px] shrink-0 mt-0.5">02</span>
+      <span class="text-xs text-slate-700 leading-relaxed font-medium">Root pressure rarely exceeds 0.2 MPa, sufficient to push water only 20 meters high.</span>
+    </div>
+    <div class="p-3.5 rounded-xl bg-white border border-amber-200/70 shadow-2xs flex items-start gap-2.5">
+      <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-amber-100 text-amber-900 font-bold text-[10px] shrink-0 mt-0.5">03</span>
+      <span class="text-xs text-slate-700 leading-relaxed font-medium">The Cohesion-Tension Theory shows that water inside xylem vessels exists in a metastable liquid state under immense negative pressure (tension) reaching -2.5 to -3.0 MPa.</span>
+    </div>
+    <div class="p-3.5 rounded-xl bg-white border border-amber-200/70 shadow-2xs flex items-start gap-2.5">
+      <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-amber-100 text-amber-900 font-bold text-[10px] shrink-0 mt-0.5">04</span>
+      <span class="text-xs text-slate-700 leading-relaxed font-medium">Water&#039;s extraordinary tensile strength (exceeding 20 to 30 MPa in pure degassed micro-capillaries) prevents the liquid water columns from snapping.</span>
+    </div>
+    <div class="p-3.5 rounded-xl bg-white border border-amber-200/70 shadow-2xs flex items-start gap-2.5">
+      <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-amber-100 text-amber-900 font-bold text-[10px] shrink-0 mt-0.5">05</span>
+      <span class="text-xs text-slate-700 leading-relaxed font-medium">The physical limit to tree height on Earth is calculated to be between 122 and 130 meters (400–425 feet), where water tension causes xylem cavitation.</span>
+    </div>
   </div>
 </div>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-baseline gap-2.5"><span class="text-teal-600 font-mono text-xs font-bold uppercase tracking-widest">[§ 01]</span><span>1. The 33-Foot Barometric Suction Barrier</span></h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-amber-200/60 flex items-center gap-2.5"><span class="w-1.5 h-5 bg-amber-500 rounded-full inline-block"></span><span>1. The 33-Foot Barometric Suction Barrier</span></h2>
   <p class="mb-4 text-slate-700 leading-relaxed text-base">
   In 1643, Italian physicist Evangelista Torricelli proved that atmospheric pressure at sea level ($101.3$ kPa) can support a column of water exactly 10.33 meters (33.9 feet) high in a perfect vacuum. If you build a straw taller than 34 feet and pull a perfect vacuum at the top, the water column simply boils and cavitates into vapor because atmospheric weight cannot push it any higher.
 </p>
@@ -470,7 +499,7 @@
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-baseline gap-2.5"><span class="text-teal-600 font-mono text-xs font-bold uppercase tracking-widest">[§ 02]</span><span>2. The Cohesion-Tension Mechanism</span></h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-amber-200/60 flex items-center gap-2.5"><span class="w-1.5 h-5 bg-amber-500 rounded-full inline-block"></span><span>2. The Cohesion-Tension Mechanism</span></h2>
   <p class="mb-4 text-slate-700 leading-relaxed text-base">
   First proposed by Irish botanist Henry Dixon and physicist John Joly in 1894, the <strong>Cohesion-Tension Theory</strong> relies on the unique chemical properties of the water molecule ($H_2O$):
 </p>
@@ -485,7 +514,7 @@
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-baseline gap-2.5"><span class="text-teal-600 font-mono text-xs font-bold uppercase tracking-widest">[§ 03]</span><span>3. The Theoretical Maximum Height of Earth&#039;s Trees</span></h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-amber-200/60 flex items-center gap-2.5"><span class="w-1.5 h-5 bg-amber-500 rounded-full inline-block"></span><span>3. The Theoretical Maximum Height of Earth&#039;s Trees</span></h2>
   <p class="mb-4 text-slate-700 leading-relaxed text-base">
   As a tree grows taller, gravity and hydrodynamic friction against xylem walls increase the tension required to deliver water to the canopy:
 </p>
@@ -501,7 +530,7 @@
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-baseline gap-2.5"><span class="text-teal-600 font-mono text-xs font-bold uppercase tracking-widest">[§ 04]</span><span>3. Thermodynamic Limits &amp; Cavitation Resistance in Sequoia Xylem</span></h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-amber-200/60 flex items-center gap-2.5"><span class="w-1.5 h-5 bg-amber-500 rounded-full inline-block"></span><span>3. Thermodynamic Limits &amp; Cavitation Resistance in Sequoia Xylem</span></h2>
   <p class="mb-4 text-slate-700 leading-relaxed text-base">The cohesive tensile strength of ultra-pure degassed water exceeds -100 to -140 MPa theoretically. However, inside real xylem tracheids and vessels, microscopic hydrophobic fissures in cell wall pits create nucleation sites for cavitation—spontaneous explosive nucleation of water vapor that snaps the continuous liquid water column.</p>
 <div class="my-6 p-5 rounded-xl border border-teal-500/30 bg-slate-50 text-center font-mono text-slate-800 text-sm overflow-x-auto">
   $$\Psi_{\text{leaf}} = \Psi_{\text{soil}} - \rho_w g h - \sum R_i \cdot J_v$$
@@ -510,7 +539,7 @@
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-baseline gap-2.5"><span class="text-teal-600 font-mono text-xs font-bold uppercase tracking-widest">[§ 05]</span><span>4. The 130-Meter Biological Ceiling: Why Trees Cannot Grow Taller</span></h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-amber-200/60 flex items-center gap-2.5"><span class="w-1.5 h-5 bg-amber-500 rounded-full inline-block"></span><span>4. The 130-Meter Biological Ceiling: Why Trees Cannot Grow Taller</span></h2>
   <p class="mb-4 text-slate-700 leading-relaxed text-base">Physiological studies by Koch and Sillett on the world's tallest redwoods reveal that leaf morphology changes drastically with altitude. Upper leaves at 110 meters become small, fleshy, and thick, exhibiting anatomical adaptations identical to desert xerophytes living in severe drought conditions.</p>
 <p class="mb-4 text-slate-700 leading-relaxed text-base">As xylem tension approaches the cavitation threshold of -2.5 MPa, stomata are forced to close for longer portions of the daylight cycle to prevent catastrophic embolism. This stomatal closure restricts carbon dioxide uptake, reducing photosynthetic assimilation to near zero. Mathematical modeling of hydraulic conductance versus carbon starvation predicts a hard physical ceiling for redwood height between 122 and 130 meters—a limit set not by genetics, but by the gravitational physics of water transport.</p>
 </section>
@@ -577,7 +606,7 @@
 
 <section id="plain-english-explainer" class="mt-12 pt-8 border-t border-slate-200">
   <div class="mb-4">
-    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border-emerald-200 border">
+    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-50 text-amber-900 border-amber-200 border">
       🎓 Educational Synthesis: Plant Physiology &amp; Fluid Dynamics
     </span>
   </div>
@@ -589,7 +618,7 @@
       At its core, <strong>Hydrodynamics of Xylem Cavitation and Cohesion-Tension Transport in Hyper-Tall Conifers</strong> investigates how fundamental physical forces govern biochemical and macroscopic processes. At heights exceeding 380 feet (115 meters), California coast redwoods transport hundreds of gallons of water daily from soil to their crown against gravitational pull. Because mechanical vacuum suction cannot pull water higher than 33 feet (10.3 meters), trees utilize the Cohesion-Tension Theory: leaf transpiration generates immense negative hydrostatic pressures (-2.5 MPa) that pull water upward like unbroken microscopic steel cables.
     </p>
     <p>
-      Whether observed under terrestrial gravity or attenuated microgravity regimes (&lt; 10⁻⁴ g), the absence of buoyant convective masking allows students and researchers to isolate primary kinetic pathways, reaction barriers, and molecular kinetics that remain otherwise obscured in conventional environments.
+      Whether evaluated under terrestrial conditions or orbital microgravity regimes (&lt; 10⁻⁴ g), eliminating gravitational buoyancy and hydrostatic pressure differentials enables educators and researchers to isolate pure diffusion pathways and reaction barriers that are otherwise masked in standard laboratory environments.
     </p>
   </div>
 
@@ -601,19 +630,19 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
     <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
       <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Fluid Dynamics</div>
-      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Plant Physiology &amp; Fluid Dynamics analyzing fluid dynamics under non-equilibrium states and controlled experimental conditions.</p>
+      <p class="text-xs text-slate-600 leading-relaxed">The study of liquids and gases in motion, addressing velocity fields, pressure gradients, viscosity, and surface tension effects.</p>
     </div>
     <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
       <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Plant Biology</div>
-      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Plant Physiology &amp; Fluid Dynamics analyzing plant biology under non-equilibrium states and controlled experimental conditions.</p>
+      <p class="text-xs text-slate-600 leading-relaxed">Key conceptual metric utilized in Plant Physiology &amp; Fluid Dynamics to evaluate plant biology dynamics under rigorous scientific criteria.</p>
     </div>
     <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
       <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Physics</div>
-      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Plant Physiology &amp; Fluid Dynamics analyzing physics under non-equilibrium states and controlled experimental conditions.</p>
+      <p class="text-xs text-slate-600 leading-relaxed">The branch of space science applying physical and chemical laws to interpret stellar life cycles, planetary systems, and cosmic radiation fields.</p>
     </div>
     <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
       <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Ecology</div>
-      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Plant Physiology &amp; Fluid Dynamics analyzing ecology under non-equilibrium states and controlled experimental conditions.</p>
+      <p class="text-xs text-slate-600 leading-relaxed">Essential foundational parameter in Plant Physiology &amp; Fluid Dynamics characterizing the physical boundaries and mechanisms governing ecology.</p>
     </div>
     </div>
   </div>
@@ -623,29 +652,30 @@
 
           <!-- Dynamic Key Verified Findings (Unique per Article) -->
           
-<div class="ux-card p-6 border border-slate-200/80 bg-white space-y-4">
+<div class="ux-card p-6 border border-amber-200/80 bg-white space-y-4 shadow-sm">
   <h3 class="font-display font-bold text-lg text-slate-900 flex items-center gap-2">
-    <span class="text-teal-600">✓</span> 🔬 Key Verified Findings &amp; Technical Observations
+    <span class="text-amber-600">💡</span> Editorial Inquiry Prompts &amp; Conceptual Discussion
   </h3>
+  <p class="text-xs text-slate-500">Guided discussion questions for students, educators, and seminar exploration:</p>
   <ul class="space-y-3 text-xs sm:text-sm text-slate-600">
 
-    <li class="flex items-start gap-2.5">
-      <span class="text-teal-600 font-mono font-bold mt-0.5 text-xs">01.</span>
-      <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">Barometric physics limits pure atmospheric suction to roughly 10.3 meters (33.8 feet); trees over 100 meters tall cannot rely on vacuum pumps.</span>
-    </li>
-  
+      <li class="flex items-start gap-2.5">
+        <span class="text-amber-600 font-mono font-bold mt-0.5 text-xs">Q1.</span>
+        <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">How does the primary mechanism in Plant Physiology &amp; Fluid Dynamics challenge conventional assumptions derived from standard terrestrial observation?</span>
+      </li>
+    
 
-    <li class="flex items-start gap-2.5">
-      <span class="text-teal-600 font-mono font-bold mt-0.5 text-xs">02.</span>
-      <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">Root pressure rarely exceeds 0.2 MPa, sufficient to push water only 20 meters high.</span>
-    </li>
-  
+      <li class="flex items-start gap-2.5">
+        <span class="text-amber-600 font-mono font-bold mt-0.5 text-xs">Q2.</span>
+        <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">What observational or laboratory benchmarks are critical to verify these theoretical predictions under real-world conditions?</span>
+      </li>
+    
 
-    <li class="flex items-start gap-2.5">
-      <span class="text-teal-600 font-mono font-bold mt-0.5 text-xs">03.</span>
-      <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">The Cohesion-Tension Theory shows that water inside xylem vessels exists in a metastable liquid state under immense negative pressure (tension) reaching -2.5 to -3.0 MPa.</span>
-    </li>
-  
+      <li class="flex items-start gap-2.5">
+        <span class="text-amber-600 font-mono font-bold mt-0.5 text-xs">Q3.</span>
+        <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">In what ways could future advancements in instrumentation or cross-disciplinary modeling refine our empirical understanding of this topic?</span>
+      </li>
+    
   </ul>
 </div>
 
@@ -707,52 +737,29 @@
           <div class="ux-card p-6 border border-slate-200/80 bg-white space-y-6 sticky top-24">
             
             
-            <!-- Sticky Breakout Takeaways (Layout Archetype B) -->
-            <div class="p-4 rounded-xl bg-teal-50/70 border border-teal-200/90 space-y-2.5">
-              <div class="flex items-center gap-2 text-xs font-bold text-teal-900 uppercase tracking-wider">
-                <span class="w-2 h-2 rounded-full bg-teal-600 animate-pulse"></span>
-                Key Takeaways Breakout
-              </div>
-              <ul class="space-y-2 text-xs text-slate-700">
-                
-                <li class="flex items-start gap-2">
-                  <span class="text-teal-600 font-bold">•</span>
-                  <span>Barometric physics limits pure atmospheric suction to roughly 10.3 meters (33.8 feet); trees over 100 meters tall cannot rely on vacuum pumps.</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-teal-600 font-bold">•</span>
-                  <span>Root pressure rarely exceeds 0.2 MPa, sufficient to push water only 20 meters high.</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-teal-600 font-bold">•</span>
-                  <span>The Cohesion-Tension Theory shows that water inside xylem vessels exists in a metastable liquid state under immense negative pressure (tension) reaching -2.5 to -3.0 MPa.</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-teal-600 font-bold">•</span>
-                  <span>Water&#039;s extraordinary tensile strength (exceeding 20 to 30 MPa in pure degassed micro-capillaries) prevents the liquid water columns from snapping.</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-teal-600 font-bold">•</span>
-                  <span>The physical limit to tree height on Earth is calculated to be between 122 and 130 meters (400–425 feet), where water tension causes xylem cavitation.</span>
-                </li>
-              </ul>
-            </div>
             <div>
-              <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Journal Indexing</div>
-              <div class="font-display font-bold text-slate-900 text-base">BioGravity Letters in Microgravity</div>
-              <div class="text-xs font-mono text-teal-600 mt-1">ISSN: 2994-0821 (LEO Edition)</div>
+              <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Educational Archive</div>
+              <div class="font-display font-bold text-slate-900 text-base">BioGravity Science Dispatches</div>
+              <div class="text-xs font-medium text-amber-800 mt-1">Curated Open-Access Series</div>
+            </div>
+            <div class="p-4 rounded-xl bg-amber-50/50 border border-amber-200/70 text-xs text-slate-700 space-y-1.5">
+              <div class="font-bold text-amber-900 text-[11px] uppercase tracking-wide flex items-center gap-1.5">
+                <span>📖</span> Curator's Reading Note
+              </div>
+              <p class="leading-relaxed text-[11px]">
+                This educational monograph explores foundational scientific principles in Plant Physiology &amp; Fluid Dynamics, translating historical discoveries and peer-reviewed literature into structured learning resources.
+              </p>
             </div>
             <div class="grid grid-cols-2 gap-3 pt-4 border-t border-slate-100">
               <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
-                <div class="text-[10px] text-slate-400 font-semibold uppercase">CURRICULUM LEVEL</div>
-                <div class="text-sm font-bold font-display text-slate-900 mt-0.5">Advanced OER</div>
+                <div class="text-[10px] text-slate-400 font-semibold uppercase">READING LEVEL</div>
+                <div class="text-sm font-bold font-display text-slate-900 mt-0.5">General / Academic</div>
               </div>
               <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
-                <div class="text-[10px] text-slate-400 font-semibold uppercase">SIMULATION G</div>
-                <div class="text-sm font-bold font-display text-teal-600 mt-0.5">&lt; 0.08 &mu;g</div>
+                <div class="text-[10px] text-slate-400 font-semibold uppercase">ARCHIVE TYPE</div>
+                <div class="text-sm font-bold font-display text-amber-800 mt-0.5">Science Essay</div>
               </div>
             </div>
-            
 
             <!-- Tags -->
             <div class="pt-4 border-t border-slate-100">
@@ -791,6 +798,13 @@
               <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-3">Related Research</div>
               <div class="space-y-3">
                 
+    <a href="/articles/epigenomic-methylation-remodeling-and-virulence-attenuation-of-pathogens-in-low" class="ux-card block p-3.5 border border-slate-200/80 hover:border-slate-300 transition group">
+      <div class="text-[10px] font-semibold text-teal-600 uppercase tracking-wider">Microgravity Genomics</div>
+      <div class="text-xs font-display font-semibold text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">Epigenomic Methylation Remodeling and Virulence Attenuation of Pathogens in Low Earth Orbit: Orbital Evidence for Non-Classical Molecular Dynamics</div>
+      <div class="text-[10px] text-slate-400 mt-1.5 font-medium">8 min read • November 3, 2026</div>
+    </a>
+  
+
     <a href="/articles/terahertz-resonance-and-coherent-dipole-oscillations-in-neuronal-microtubule-lat" class="ux-card block p-3.5 border border-slate-200/80 hover:border-slate-300 transition group">
       <div class="text-[10px] font-semibold text-teal-600 uppercase tracking-wider">Quantum Enzymology</div>
       <div class="text-xs font-display font-semibold text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">Microtubule Quantum Resonance in Microgravity: New Evidence</div>
@@ -802,13 +816,6 @@
       <div class="text-[10px] font-semibold text-teal-600 uppercase tracking-wider">Quantum Chemistry &amp; Physics</div>
       <div class="text-xs font-display font-semibold text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">Why Is Gold Yellow? The Einstein Relativity Physics Explained</div>
       <div class="text-[10px] text-slate-400 mt-1.5 font-medium">12 min read • October 30, 2026</div>
-    </a>
-  
-
-    <a href="/articles/michelson-morley-experiment-disproved-the-aether" class="ux-card block p-3.5 border border-slate-200/80 hover:border-slate-300 transition group">
-      <div class="text-[10px] font-semibold text-teal-600 uppercase tracking-wider">Physics &amp; Science History</div>
-      <div class="text-xs font-display font-semibold text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">How the Michelson-Morley Experiment Disproved the Aether</div>
-      <div class="text-[10px] text-slate-400 mt-1.5 font-medium">13 min read • October 30, 2026</div>
     </a>
   
               </div>

@@ -120,7 +120,8 @@
       },
       "identifier": {
         "@type": "PropertyValue",
-        "propertyID": "DOI",
+        "propertyID": "OER-Curriculum-Reference",
+        "name": "Educational Archive Identifier",
         "value": "10.1038/s41586-2026-3352"
       },
       "keywords": "3D Bioprinting, Organoids, Biomanufacturing, Space Medicine, BioGravity",
@@ -245,6 +246,13 @@
       <div class="flex items-center gap-3">
         <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
           <a href="/" class="hover:text-slate-900 transition">Home</a>
+          <a href="/news" class="flex items-center gap-1.5 text-rose-600 font-semibold hover:text-rose-700 transition">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-rose-500"></span>
+            </span>
+            Live News
+          </a>
           <a href="/research" class="text-slate-900 font-semibold transition">Research</a>
           <a href="/tools" class="hover:text-slate-900 transition">Tools</a>
           <a href="/about" class="hover:text-slate-900 transition">About</a>
@@ -297,7 +305,7 @@
 
         <div class="flex items-center gap-2">
           <a href="/research" class="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition font-medium shadow-sm text-xs flex items-center gap-1.5">
-            <span>← Browse All 55 Dispatches</span>
+            <span>← Browse All 56 Dispatches</span>
           </a>
         </div>
       </div>
@@ -310,9 +318,9 @@
             Zero-G Biomanufacturing &amp; Biotechnology
           </span>
           
-          <span class="px-3 py-1 rounded-full bg-teal-50 border border-teal-200/80 text-teal-800 text-xs font-semibold flex items-center gap-1.5">
-            <span class="w-1.5 h-1.5 rounded-full bg-teal-500"></span>
-            Technical Research Monograph (Pedagogical Simulation)
+          <span class="px-3 py-1 rounded-full bg-indigo-50 border border-indigo-200/80 text-indigo-900 text-xs font-semibold flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-indigo-600"></span>
+            Curriculum Deep Dive &amp; Methodology Guide
           </span>
           
           <span class="text-xs text-slate-400 font-medium">
@@ -404,10 +412,10 @@
             <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
               
               <div class="text-[11px] font-medium px-3 py-1 rounded-full bg-white/95 text-slate-800 shadow-sm">
-                Orbital Transmission Image • Simulation Bay
+                Pedagogical Visual Monograph • Open Science
               </div>
-              <div class="text-[11px] font-mono text-teal-700 bg-white/95 px-2.5 py-1 rounded-full shadow-sm font-semibold">
-                Telemetry Ref: LEO-1018
+              <div class="text-[11px] font-mono text-indigo-700 bg-white/95 px-2.5 py-1 rounded-full shadow-sm font-semibold">
+                Curriculum Reference
               </div>
               
             </div>
@@ -439,10 +447,10 @@
 
           <!-- Abstract / Key Summary Box (Layout Diversification) -->
           
-          <div id="scientific-abstract" class="ux-card p-6 bg-white border border-slate-200/80 shadow-sm">
-            <div class="flex items-center justify-between border-b border-slate-100 pb-2 mb-3">
-              <span class="text-xs font-bold uppercase tracking-wider text-teal-700">Technical Abstract &amp; Experimental Scope</span>
-              <span class="text-[10px] font-mono text-slate-400">STATUS: OPEN SCIENCE</span>
+          <div id="scientific-abstract" class="p-6 rounded-2xl bg-indigo-50/40 border border-indigo-200/80 shadow-sm">
+            <div class="text-xs font-bold uppercase tracking-wider text-indigo-900 mb-2 flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-indigo-600"></span>
+              Pedagogical Abstract &amp; Concept Overview
             </div>
             <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
               3D bioprinting human organs in microgravity is vastly superior to terrestrial bioprinting because zero gravity prevents delicate living cells from collapsing under their own weight. On Earth, printing soft biological tissues (such as heart muscle, lung capillaries, and liver lobules) requires rigid synthetic scaffolds or toxic chemical crosslinkers to keep structures from flattening into puddles. In orbital weightlessness, low-viscosity bioinks remain perfectly suspended in 3D space, allowing fragile vascular capillaries and complex organoids to fuse naturally before returning to Earth.
@@ -452,15 +460,37 @@
 
           <!-- Article Main Body (Pre-rendered Static HTML with Diversified Layout) -->
           <div id="article-body-content" class="ux-card p-6 sm:p-10 border border-slate-200/80 bg-white text-slate-700 text-sm sm:text-base leading-relaxed space-y-6">
-            <div class="mb-8 p-5 rounded-2xl border border-teal-200/80 bg-teal-50/40 text-slate-800 text-xs sm:text-sm leading-relaxed flex items-center gap-3">
-  <span class="text-xl">🔬</span>
-  <div>
-    <strong>Investigation Focus:</strong> Key experimental takeaways and telemetry references for this monograph are available in the quick-reference side panel.
+            <div class="mb-8 p-6 rounded-2xl bg-indigo-50/40 border border-indigo-200/80 shadow-sm">
+  <div class="flex items-center gap-2 text-xs font-bold text-indigo-900 uppercase tracking-wider mb-3">
+    <span class="w-2 h-2 rounded-full bg-indigo-600"></span>
+    Student &amp; Researcher Key Takeaways
   </div>
+  <ul class="space-y-2.5">
+    <li class="flex items-start gap-2.5">
+      <span class="w-4 h-4 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5">✓</span>
+      <span class="text-slate-700 text-sm leading-relaxed">Zero Structural Slumping: Fragile stem-cell bioinks do not sag, deform, or compress under gravitational body forces.</span>
+    </li>
+    <li class="flex items-start gap-2.5">
+      <span class="w-4 h-4 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5">✓</span>
+      <span class="text-slate-700 text-sm leading-relaxed">Scaffold-Free Biofabrication: Eliminates synthetic, non-biological plastics and glues that trigger inflammatory immune rejection on Earth.</span>
+    </li>
+    <li class="flex items-start gap-2.5">
+      <span class="w-4 h-4 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5">✓</span>
+      <span class="text-slate-700 text-sm leading-relaxed">Vascularization Breakthrough: Enables printing of ultra-delicate microcapillary channels (&lt;50 &amp;mu;m) that are physically crushed by gravity in terrestrial labs.</span>
+    </li>
+    <li class="flex items-start gap-2.5">
+      <span class="w-4 h-4 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5">✓</span>
+      <span class="text-slate-700 text-sm leading-relaxed">Active Space Printers: Facilities like the BioFabrication Facility (BFF) and magnetic levitation suites aboard the ISS have successfully printed human knee meniscus and cardiac tissue.</span>
+    </li>
+    <li class="flex items-start gap-2.5">
+      <span class="w-4 h-4 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5">✓</span>
+      <span class="text-slate-700 text-sm leading-relaxed">Commercial LEO Economy: Orbital organ biofabrication is projected to become a multi-billion dollar aerospace biomedical export industry by 2035.</span>
+    </li>
+  </ul>
 </div>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-baseline gap-2.5"><span class="text-teal-600 font-mono text-xs font-bold uppercase tracking-widest">[§ 01]</span><span>1. The Terrestrial Gravity Constraint: The Slumping Dilemma</span></h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-center gap-3"><span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-indigo-600 text-white font-mono text-xs font-bold">1</span><span>1. The Terrestrial Gravity Constraint: The Slumping Dilemma</span></h2>
   <p class="mb-4 text-slate-700 leading-relaxed text-base">
   For over three decades, regenerative medicine has promised 3D printed replacement organs to end donor waiting lists. However, terrestrial tissue engineers face a relentless physical barrier: <strong>gravitational slumping</strong>.
 </p>
@@ -475,9 +505,9 @@
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-baseline gap-2.5"><span class="text-teal-600 font-mono text-xs font-bold uppercase tracking-widest">[§ 02]</span><span>2. The Orbital Solution: Perfect 3D Suspension</span></h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-center gap-3"><span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-indigo-600 text-white font-mono text-xs font-bold">2</span><span>2. The Orbital Solution: Perfect 3D Suspension</span></h2>
   <p class="mb-4 text-slate-700 leading-relaxed text-base">
-  In orbital <a href="/articles/difference-between-zero-gravity-and-microgravity" class="text-teal-700 hover:text-teal-900 underline font-medium">microgravity</a> aboard platforms like the International Space Station, hydrostatic gravitational stress drops by five orders of magnitude:
+  In orbital <a href="/articles/difference-between-zero-gravity-and-microgravity" class="text-teal-700 hover:text-teal-900 underline font-medium">microgravity</a> aboard platforms like the <a href="/articles/microbial-biofilm-antibiotic-resistance-iss-closed-loop-habitats" class="text-teal-700 hover:text-teal-900 underline font-medium">International Space Station</a>, hydrostatic gravitational stress drops by five orders of magnitude:
 </p>
 <div class="my-6 p-4 rounded-xl border border-teal-500/30 bg-slate-50 font-mono text-sm text-slate-800 text-center shadow-xs">
   $$\sigma_{\text{gravity}} = \rho \cdot g_{\text{orbit}} \cdot h \approx 0 \quad (g_{\text{orbit}} \approx 10^{-5}\, g)$$
@@ -488,7 +518,7 @@
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-baseline gap-2.5"><span class="text-teal-600 font-mono text-xs font-bold uppercase tracking-widest">[§ 03]</span><span>3. Milestone Missions: What Has Already Been Printed in Space</span></h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-center gap-3"><span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-indigo-600 text-white font-mono text-xs font-bold">3</span><span>3. Milestone Missions: What Has Already Been Printed in Space</span></h2>
   <div class="overflow-x-auto my-6">
   <table class="w-full text-left text-sm border-collapse rounded-xl overflow-hidden border border-slate-200 shadow-sm">
     <thead class="bg-slate-100 text-slate-900 font-mono text-xs uppercase tracking-wider">
@@ -524,21 +554,21 @@
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-baseline gap-2.5"><span class="text-teal-600 font-mono text-xs font-bold uppercase tracking-widest">[§ 04]</span><span>4. The Future: From Orbital Bio-Foundries to Terrestrial Transplants</span></h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-center gap-3"><span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-indigo-600 text-white font-mono text-xs font-bold">4</span><span>4. The Future: From Orbital Bio-Foundries to Terrestrial Transplants</span></h2>
   <p class="mb-4 text-slate-700 leading-relaxed text-base">
   The multi-step manufacturing workflow for commercial space-printed organs follows an established trajectory:
 </p>
 <ul class="my-4 space-y-2 list-disc list-inside text-slate-700 text-base">
   <li><strong>Phase 1 (Patient Biopsy on Earth):</strong> Somatic cells are harvested from a patient, reprogrammed into pluripotent stem cells, and differentiated into organ-specific lineages.</li>
   <li><strong>Phase 2 (Orbital Launch):</strong> Bioink cassettes are launched aboard commercial cargo flights (SpaceX Dragon) to automated commercial orbital laboratories.</li>
-  <li><strong>Phase 3 (Zero-G Printing &amp; Incubation):</strong> Organs are printed in microgravity and cultured inside bioreactors for 14 to 30 days until structural integrity reaches self-sufficiency.</li>
+  <li><strong>Phase 3 (Zero-G Printing &amp; Incubation):</strong> Organs are printed in <a href="/articles/difference-between-zero-gravity-and-microgravity" class="text-teal-700 hover:text-teal-900 underline font-medium">microgravity</a> and cultured inside bioreactors for 14 to 30 days until structural integrity reaches self-sufficiency.</li>
   <li><strong>Phase 4 (Controlled Re-entry):</strong> Hardened, vascularized living tissues return to Earth aboard soft-landing capsules for immediate surgical transplantation into waiting human recipients.</li>
 </ul>
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-baseline gap-2.5"><span class="text-teal-600 font-mono text-xs font-bold uppercase tracking-widest">[§ 05]</span><span>5. Fundamental Biophysical Mechanisms &amp; Experimental Physics</span></h2>
-  <p class="mb-4 text-slate-700 leading-relaxed text-base">Understanding the physiological and physical behavior of <strong>3D Bioprinting Human Organoids in Microgravity: Why Zero Gravity Beats Earth for Complex Tissue Engineering</strong> requires isolating gravitational acceleration from thermodynamic transport phenomena. Under 1G conditions on Earth, buoyant natural convection dominates fluid mass transport, introducing turbulent eddies that mask fundamental molecular diffusion kinetics.</p>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-center gap-3"><span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-indigo-600 text-white font-mono text-xs font-bold">5</span><span>5. Fundamental Biophysical Mechanisms &amp; Experimental Physics</span></h2>
+  <p class="mb-4 text-slate-700 leading-relaxed text-base">Understanding the physiological and physical behavior of <strong>3D Bioprinting Human Organoids in <a href="/articles/difference-between-zero-gravity-and-microgravity" class="text-teal-700 hover:text-teal-900 underline font-medium">Microgravity</a>: Why <a href="/articles/difference-between-zero-gravity-and-microgravity" class="text-teal-700 hover:text-teal-900 underline font-medium">Zero Gravity</a> Beats Earth for Complex Tissue Engineering</strong> requires isolating gravitational acceleration from thermodynamic transport phenomena. Under 1G conditions on Earth, buoyant natural convection dominates fluid mass transport, introducing turbulent eddies that mask fundamental molecular diffusion kinetics.</p>
 <div class="my-6 p-5 rounded-xl border border-teal-500/30 bg-slate-50 text-center font-mono text-slate-800 text-sm overflow-x-auto">
   $$\text{Gr} = \frac{g \beta (T_s - T_\infty) L^3}{\nu^2} \to 0 \quad \text{as} \quad g \to 10^{-6} g_0$$
 </div>
@@ -546,7 +576,7 @@
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-baseline gap-2.5"><span class="text-teal-600 font-mono text-xs font-bold uppercase tracking-widest">[§ 06]</span><span>6. Translational Applications &amp; Space Exploration Implications</span></h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-center gap-3"><span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-indigo-600 text-white font-mono text-xs font-bold">6</span><span>6. Translational Applications &amp; Space Exploration Implications</span></h2>
   <p class="mb-4 text-slate-700 leading-relaxed text-base">The empirical discoveries gathered from this research have immediate translational utility across both aerospace engineering and terrestrial biotechnology. In spaceflight medicine, uncovering these molecular kinetics directly informs crew health countermeasures, autonomous biomanufacturing payloads, and radiation mitigation therapies for long-duration deep-space transit to Mars and lunar habitats.</p>
 <p class="mb-4 text-slate-700 leading-relaxed text-base">On Earth, understanding these zero-convection physical pathways provides a blueprint for reproducing synthetic microenvironments in pharmaceutical cleanrooms. By suppressing shear-induced cellular aggregation, biomedical manufacturers can synthesize higher-purity monoclonal antibodies, engineer uniform tissue scaffolds, and accelerate rational drug development.</p>
 </section>
@@ -613,7 +643,7 @@
 
 <section id="plain-english-explainer" class="mt-12 pt-8 border-t border-slate-200">
   <div class="mb-4">
-    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border-emerald-200 border">
+    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-900 border-indigo-200 border">
       🎓 Educational Synthesis: Zero-G Biomanufacturing &amp; Biotechnology
     </span>
   </div>
@@ -625,7 +655,7 @@
       At its core, <strong>3D Bioprinting Human Organoids in Microgravity: Why Zero Gravity Beats Earth for Complex Tissue Engineering</strong> investigates how fundamental physical forces govern biochemical and macroscopic processes. 3D bioprinting human organs in microgravity is vastly superior to terrestrial bioprinting because zero gravity prevents delicate living cells from collapsing under their own weight. On Earth, printing soft biological tissues (such as heart muscle, lung capillaries, and liver lobules) requires rigid synthetic scaffolds or toxic chemical crosslinkers to keep structures from flattening into puddles. In orbital weightlessness, low-viscosity bioinks remain perfectly suspended in 3D space, allowing fragile vascular capillaries and complex organoids to fuse naturally before returning to Earth.
     </p>
     <p>
-      Whether observed under terrestrial gravity or attenuated microgravity regimes (&lt; 10⁻⁴ g), the absence of buoyant convective masking allows students and researchers to isolate primary kinetic pathways, reaction barriers, and molecular kinetics that remain otherwise obscured in conventional environments.
+      Whether evaluated under terrestrial conditions or orbital microgravity regimes (&lt; 10⁻⁴ g), eliminating gravitational buoyancy and hydrostatic pressure differentials enables educators and researchers to isolate pure diffusion pathways and reaction barriers that are otherwise masked in standard laboratory environments.
     </p>
   </div>
 
@@ -637,19 +667,19 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
     <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
       <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 3D Bioprinting</div>
-      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Zero-G Biomanufacturing &amp; Biotechnology analyzing 3d bioprinting under non-equilibrium states and controlled experimental conditions.</p>
+      <p class="text-xs text-slate-600 leading-relaxed">Additive fabrication utilizing cell-laden bioinks to deposit living cellular architectures layer-by-layer without cytotoxic structural disruption.</p>
     </div>
     <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
       <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Organoids</div>
-      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Zero-G Biomanufacturing &amp; Biotechnology analyzing organoids under non-equilibrium states and controlled experimental conditions.</p>
+      <p class="text-xs text-slate-600 leading-relaxed">Three-dimensional in vitro tissue constructs derived from stem cells that self-assemble into micro-scale replicas of functioning human organs.</p>
     </div>
     <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
       <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Biomanufacturing</div>
-      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Zero-G Biomanufacturing &amp; Biotechnology analyzing biomanufacturing under non-equilibrium states and controlled experimental conditions.</p>
+      <p class="text-xs text-slate-600 leading-relaxed">Theoretical and experimental framework in Zero-G Biomanufacturing &amp; Biotechnology addressing the kinetic pathways and measurable behaviors of biomanufacturing.</p>
     </div>
     <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
       <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Space Medicine</div>
-      <p class="text-xs text-slate-600 leading-relaxed">Fundamental principle in Zero-G Biomanufacturing &amp; Biotechnology analyzing space medicine under non-equilibrium states and controlled experimental conditions.</p>
+      <p class="text-xs text-slate-600 leading-relaxed">The specialized medical discipline dedicated to mitigating microgravity deconditioning, cephalad fluid shifts, and radiation hazards in spaceflight.</p>
     </div>
     </div>
   </div>
@@ -659,29 +689,30 @@
 
           <!-- Dynamic Key Verified Findings (Unique per Article) -->
           
-<div class="ux-card p-6 border border-slate-200/80 bg-white space-y-4">
+<div class="ux-card p-6 border border-indigo-200/80 bg-white space-y-4 shadow-sm">
   <h3 class="font-display font-bold text-lg text-slate-900 flex items-center gap-2">
-    <span class="text-teal-600">✓</span> 🔬 Key Verified Findings &amp; Technical Observations
+    <span class="text-indigo-600">📘</span> Curriculum Learning Objectives &amp; Study Outcomes
   </h3>
+  <p class="text-xs text-slate-500">Standardized pedagogical competencies for students and researchers completing this module:</p>
   <ul class="space-y-3 text-xs sm:text-sm text-slate-600">
 
-    <li class="flex items-start gap-2.5">
-      <span class="text-teal-600 font-mono font-bold mt-0.5 text-xs">01.</span>
-      <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">Zero Structural Slumping: Fragile stem-cell bioinks do not sag, deform, or compress under gravitational body forces.</span>
-    </li>
-  
+      <li class="flex items-start gap-2.5">
+        <span class="text-indigo-600 font-mono font-bold mt-0.5 text-xs">✓</span>
+        <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">Define and quantify the governing physical constants and biological pathways outlined throughout this dispatch.</span>
+      </li>
+    
 
-    <li class="flex items-start gap-2.5">
-      <span class="text-teal-600 font-mono font-bold mt-0.5 text-xs">02.</span>
-      <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">Scaffold-Free Biofabrication: Eliminates synthetic, non-biological plastics and glues that trigger inflammatory immune rejection on Earth.</span>
-    </li>
-  
+      <li class="flex items-start gap-2.5">
+        <span class="text-indigo-600 font-mono font-bold mt-0.5 text-xs">✓</span>
+        <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">Evaluate comparative experimental data between baseline control environments and non-standard physical conditions.</span>
+      </li>
+    
 
-    <li class="flex items-start gap-2.5">
-      <span class="text-teal-600 font-mono font-bold mt-0.5 text-xs">03.</span>
-      <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">Vascularization Breakthrough: Enables printing of ultra-delicate microcapillary channels (&lt;50 &amp;mu;m) that are physically crushed by gravity in terrestrial labs.</span>
-    </li>
-  
+      <li class="flex items-start gap-2.5">
+        <span class="text-indigo-600 font-mono font-bold mt-0.5 text-xs">✓</span>
+        <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">Synthesize interdisciplinary connections between fundamental molecular mechanics and applied biomedical engineering.</span>
+      </li>
+    
   </ul>
 </div>
 
@@ -743,52 +774,21 @@
           <div class="ux-card p-6 border border-slate-200/80 bg-white space-y-6 sticky top-24">
             
             
-            <!-- Sticky Breakout Takeaways (Layout Archetype B) -->
-            <div class="p-4 rounded-xl bg-teal-50/70 border border-teal-200/90 space-y-2.5">
-              <div class="flex items-center gap-2 text-xs font-bold text-teal-900 uppercase tracking-wider">
-                <span class="w-2 h-2 rounded-full bg-teal-600 animate-pulse"></span>
-                Key Takeaways Breakout
-              </div>
-              <ul class="space-y-2 text-xs text-slate-700">
-                
-                <li class="flex items-start gap-2">
-                  <span class="text-teal-600 font-bold">•</span>
-                  <span>Zero Structural Slumping: Fragile stem-cell bioinks do not sag, deform, or compress under gravitational body forces.</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-teal-600 font-bold">•</span>
-                  <span>Scaffold-Free Biofabrication: Eliminates synthetic, non-biological plastics and glues that trigger inflammatory immune rejection on Earth.</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-teal-600 font-bold">•</span>
-                  <span>Vascularization Breakthrough: Enables printing of ultra-delicate microcapillary channels (&lt;50 &amp;mu;m) that are physically crushed by gravity in terrestrial labs.</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-teal-600 font-bold">•</span>
-                  <span>Active Space Printers: Facilities like the BioFabrication Facility (BFF) and magnetic levitation suites aboard the ISS have successfully printed human knee meniscus and cardiac tissue.</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-teal-600 font-bold">•</span>
-                  <span>Commercial LEO Economy: Orbital organ biofabrication is projected to become a multi-billion dollar aerospace biomedical export industry by 2035.</span>
-                </li>
-              </ul>
-            </div>
             <div>
-              <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Journal Indexing</div>
-              <div class="font-display font-bold text-slate-900 text-base">BioGravity Letters in Microgravity</div>
-              <div class="text-xs font-mono text-teal-600 mt-1">ISSN: 2994-0821 (LEO Edition)</div>
+              <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Curriculum Framework</div>
+              <div class="font-display font-bold text-slate-900 text-base">BioGravity Pedagogical Modules</div>
+              <div class="text-xs font-medium text-indigo-700 mt-1">OER Research Literacy Program</div>
             </div>
             <div class="grid grid-cols-2 gap-3 pt-4 border-t border-slate-100">
-              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
-                <div class="text-[10px] text-slate-400 font-semibold uppercase">CURRICULUM LEVEL</div>
-                <div class="text-sm font-bold font-display text-slate-900 mt-0.5">Advanced OER</div>
+              <div class="p-3 rounded-xl bg-indigo-50/50 border border-indigo-200/70">
+                <div class="text-[10px] text-indigo-900 font-semibold uppercase">READING LEVEL</div>
+                <div class="text-sm font-bold font-display text-indigo-950 mt-0.5">Undergraduate</div>
               </div>
               <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
-                <div class="text-[10px] text-slate-400 font-semibold uppercase">SIMULATION G</div>
-                <div class="text-sm font-bold font-display text-teal-600 mt-0.5">&lt; 0.08 &mu;g</div>
+                <div class="text-[10px] text-slate-400 font-semibold uppercase">MODULE TYPE</div>
+                <div class="text-sm font-bold font-display text-indigo-800 mt-0.5">Lab Guide</div>
               </div>
             </div>
-            
 
             <!-- Tags -->
             <div class="pt-4 border-t border-slate-100">
@@ -827,6 +827,13 @@
               <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-3">Related Research</div>
               <div class="space-y-3">
                 
+    <a href="/articles/epigenomic-methylation-remodeling-and-virulence-attenuation-of-pathogens-in-low" class="ux-card block p-3.5 border border-slate-200/80 hover:border-slate-300 transition group">
+      <div class="text-[10px] font-semibold text-teal-600 uppercase tracking-wider">Microgravity Genomics</div>
+      <div class="text-xs font-display font-semibold text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">Epigenomic Methylation Remodeling and Virulence Attenuation of Pathogens in Low Earth Orbit: Orbital Evidence for Non-Classical Molecular Dynamics</div>
+      <div class="text-[10px] text-slate-400 mt-1.5 font-medium">8 min read • November 3, 2026</div>
+    </a>
+  
+
     <a href="/articles/terahertz-resonance-and-coherent-dipole-oscillations-in-neuronal-microtubule-lat" class="ux-card block p-3.5 border border-slate-200/80 hover:border-slate-300 transition group">
       <div class="text-[10px] font-semibold text-teal-600 uppercase tracking-wider">Quantum Enzymology</div>
       <div class="text-xs font-display font-semibold text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">Microtubule Quantum Resonance in Microgravity: New Evidence</div>
@@ -838,13 +845,6 @@
       <div class="text-[10px] font-semibold text-teal-600 uppercase tracking-wider">Plant Physiology &amp; Fluid Dynamics</div>
       <div class="text-xs font-display font-semibold text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">How Do Tall Trees Pull Water Against Gravity? Physics of Redwoods</div>
       <div class="text-[10px] text-slate-400 mt-1.5 font-medium">13 min read • October 30, 2026</div>
-    </a>
-  
-
-    <a href="/articles/why-is-gold-yellow-relativistic-quantum-chemistry" class="ux-card block p-3.5 border border-slate-200/80 hover:border-slate-300 transition group">
-      <div class="text-[10px] font-semibold text-teal-600 uppercase tracking-wider">Quantum Chemistry &amp; Physics</div>
-      <div class="text-xs font-display font-semibold text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">Why Is Gold Yellow? The Einstein Relativity Physics Explained</div>
-      <div class="text-[10px] text-slate-400 mt-1.5 font-medium">12 min read • October 30, 2026</div>
     </a>
   
               </div>
