@@ -5,8 +5,134 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Nov 2026 04:37:33 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 04:43:24 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Automatic Generation of Novel Highly-Functional: New Evidence in Space &amp; Astronomy</title>
+      <link>https://biogravity.space/news/automatic-generation-of-novel-highly-functional-new-evidence-in</link>
+      <guid isPermaLink="true">https://biogravity.space/news/automatic-generation-of-novel-highly-functional-new-evidence-in</guid>
+      <pubDate>Wed, 04 Nov 2026 00:56:52 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Automatic Generation of Novel Highly-Functional: New Evidence in Space &amp; Astronomy: While multiple methods now exist to generate functional sequence variants from existing annotated examples, it is unclear how well such methods can be used to generate sequences that exceed the functionality of those contained in the example set. Using two complete fitness landscapes, we quantify how effectively generative tools can search sequence space and find rare, novel, highly functional sequences, focusing on variational auto-encoders and information-theoretic methods. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.03603v1).</description>
+      <category>Space &amp; Astronomy</category>
+    </item>
+    <item>
+      <title>Giant Planet Mass Function Across Stellar Mass and: New Evidence in Space &amp; Astronomy</title>
+      <link>https://biogravity.space/news/giant-planet-mass-function-across-stellar-mass-and-new-evidence</link>
+      <guid isPermaLink="true">https://biogravity.space/news/giant-planet-mass-function-across-stellar-mass-and-new-evidence</guid>
+      <pubDate>Wed, 04 Nov 2026 00:56:52 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Giant Planet Mass Function Across Stellar Mass and: New Evidence in Space &amp; Astronomy: Although giant planet occurrence correlates with stellar mass and metallicity, it remains unclear whether these properties also shape the companion mass distribution. We investigate this question using 719 FGKM stars from the California Legacy Survey and companion true-mass constraints from radial velocities and Hipparcos-Gaia astrometry. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.03613v1).</description>
+      <category>Space &amp; Astronomy</category>
+    </item>
+    <item>
+      <title>Lee-Yang theorems for $q$-deformed oscillators and: New Evidence in Biophysics &amp; Genomics</title>
+      <link>https://biogravity.space/news/lee-yang-theorems-for-q-deformed-oscillators-and-new-evidence-in</link>
+      <guid isPermaLink="true">https://biogravity.space/news/lee-yang-theorems-for-q-deformed-oscillators-and-new-evidence-in</guid>
+      <pubDate>Tue, 03 Nov 2026 18:43:32 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Lee-Yang theorems for $q$-deformed oscillators and: New Evidence in Biophysics &amp; Genomics: We show that the vacuum partition function of the $q$-deformed oscillator \[ L_q(z):= \langle0|e^{zT_q}|0\rangle, \qquad T_q := \mathsf{a}_q + \mathsf{a}_q^* \] satisfies the Lee-Yang property, i.e., all zeros of $L_q$ lie on the imaginary line for all $q\in[-1, 1)$, proving the conjectures of Okuyama&apos;23. Using the connection between $q$-deformed oscillators and the Sachdev-Ye-Kitaev (SYK) Hamiltonian in the doubly-scaled regime, we show that the annealed SYK partition function satisfies the Lee-Yang property in the thermodynamic limit, that is, all of its Fisher zeros are on the imaginary axis. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.03624v1).</description>
+      <category>Biophysics &amp; Genomics</category>
+    </item>
+    <item>
+      <title>Mutual information to all orders from modular flow: a: New Evidence in Biophysics &amp; Genomics</title>
+      <link>https://biogravity.space/news/mutual-information-to-all-orders-from-modular-flow-a-new</link>
+      <guid isPermaLink="true">https://biogravity.space/news/mutual-information-to-all-orders-from-modular-flow-a-new</guid>
+      <pubDate>Tue, 03 Nov 2026 18:43:32 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Mutual information to all orders from modular flow: a: New Evidence in Biophysics &amp; Genomics: We derive an all-orders long-distance expansion of vacuum mutual information between two disjoint balls in generic $d$-dimensional CFTs. The derivation uses a novel radial sewing expansion of the joint vacuum density matrix, together with a modular response formula for relative entropy and the geometric modular flow of a single ball, without analytic continuation in replica number. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.03630v1).</description>
+      <category>Biophysics &amp; Genomics</category>
+    </item>
+    <item>
+      <title>Quantum channel tomography: optimal bounds in the: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/quantum-channel-tomography-optimal-bounds-in-the-new-evidence-in</link>
+      <guid isPermaLink="true">https://biogravity.space/news/quantum-channel-tomography-optimal-bounds-in-the-new-evidence-in</guid>
+      <pubDate>Tue, 03 Nov 2026 10:12:12 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Quantum channel tomography: optimal bounds in the: New Evidence in Quantum &amp; Physics: Quantum channel tomography (also known as quantum process tomography) is a fundamental task in quantum information and quantum computing, aiming to learn the full description of an unknown quantum channel from black-box queries. For channels with input dimension $d_1$, output dimension $d_2$, and Kraus rank at most $r$, [CGO+26] identifies the dilation rate $τ=rd_2/d_1\geq 1$ as a key parameter governing a Heisenberg-to-classical transition in query complexity. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.03639v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
+    <item>
+      <title>Neptunian ridge through the lens of TESS: New Evidence in Space &amp; Astronomy</title>
+      <link>https://biogravity.space/news/neptunian-ridge-through-the-lens-of-tess-new-evidence-in-space</link>
+      <guid isPermaLink="true">https://biogravity.space/news/neptunian-ridge-through-the-lens-of-tess-new-evidence-in-space</guid>
+      <pubDate>Tue, 03 Nov 2026 10:12:12 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Neptunian ridge through the lens of TESS: New Evidence in Space &amp; Astronomy: The Neptunian desert and savanna are separated by a ridge, an overdensity at orbital periods of approximately 3-6 d identified with Kepler. Like the hot Jupiter pileup at larger radii, this feature has been linked to the accumulation of successful outcomes of high-eccentricity migration (HEM). Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.03643v1).</description>
+      <category>Space &amp; Astronomy</category>
+    </item>
+    <item>
+      <title>Compressed Oracle Duality: A simple framework for: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/compressed-oracle-duality-a-simple-framework-for-new-evidence-in</link>
+      <guid isPermaLink="true">https://biogravity.space/news/compressed-oracle-duality-a-simple-framework-for-new-evidence-in</guid>
+      <pubDate>Tue, 03 Nov 2026 02:43:20 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Compressed Oracle Duality: A simple framework for: New Evidence in Quantum &amp; Physics: Given a quantum adversary that queries a random oracle, how do we characterize the information that they &quot;know&quot;? The Compressed Oracle method of Zhandry (CRYPTO 2019) is one method that records the queries that the adversary makes; this recording is a representation of the information that is learned. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.00609v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
+    <item>
+      <title>Discovering Models for Experimental Quantum Systems: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/discovering-models-for-experimental-quantum-systems-new-evidence</link>
+      <guid isPermaLink="true">https://biogravity.space/news/discovering-models-for-experimental-quantum-systems-new-evidence</guid>
+      <pubDate>Tue, 03 Nov 2026 02:43:20 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Discovering Models for Experimental Quantum Systems: New Evidence in Quantum &amp; Physics: A central obstacle in realizing color center cavity-QED-based quantum technologies is inhomogeneity, or disorder, among individual emitters. As the number of emitters increases, so does the complexity of the experimental data, making it difficult to quantify the present physical mechanisms of disorder. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.00620v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
+    <item>
+      <title>Persistence of Unitary Almost Mathieu Operator Gaps: New Evidence in Advanced Physics &amp; Deep Science</title>
+      <link>https://biogravity.space/news/persistence-of-unitary-almost-mathieu-operator-gaps-new-evidence</link>
+      <guid isPermaLink="true">https://biogravity.space/news/persistence-of-unitary-almost-mathieu-operator-gaps-new-evidence</guid>
+      <pubDate>Mon, 02 Nov 2026 20:56:40 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Persistence of Unitary Almost Mathieu Operator Gaps: New Evidence in Advanced Physics &amp; Deep Science: We determine exactly which gap labels are realized by open spectral gaps for the unitary almost Mathieu operator at every irrational frequency and all coupling constants ($0&amp;lt;λ_1,λ_2\leq1$). When both couplings are strictly less than one, every permitted gap label is realized by an open gap, including in the critical case ($λ_1=λ_2$). Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.42120v1).</description>
+      <category>Advanced Physics &amp; Deep Science</category>
+    </item>
+    <item>
+      <title>Weighted hypergraph states as a resource for quantum: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/weighted-hypergraph-states-as-a-resource-for-quantum-new</link>
+      <guid isPermaLink="true">https://biogravity.space/news/weighted-hypergraph-states-as-a-resource-for-quantum-new</guid>
+      <pubDate>Mon, 02 Nov 2026 20:56:40 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Weighted hypergraph states as a resource for quantum: New Evidence in Quantum &amp; Physics: Quantum correlations can be used to improve sensing precision beyond classical limits, yet the correlated resource states needed can be challenging to prepare and preserve. Here, we study the family of weighted hypergraph states and identify subclasses characterized by their underlying graph topology that exhibit enhanced metrological performance. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.42129v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
+    <item>
+      <title>Time-optimal quantum dynamics under fixed-norm generators: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/time-optimal-quantum-dynamics-under-fixed-norm-generators-new</link>
+      <guid isPermaLink="true">https://biogravity.space/news/time-optimal-quantum-dynamics-under-fixed-norm-generators-new</guid>
+      <pubDate>Mon, 02 Nov 2026 10:16:58 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Time-optimal quantum dynamics under fixed-norm generators: New Evidence in Quantum &amp; Physics: We investigate the dynamics of quantum systems whose evolution is governed by linear generators of fixed unitarily invariant norm. For this broad class of evolutions, we derive a universal time-optimal generator of the dynamics converting one given state into another. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.42131v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
+    <item>
+      <title>Secret-shared teleportation of a two-qudit gate with a: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/secret-shared-teleportation-of-a-two-qudit-gate-with-a-new</link>
+      <guid isPermaLink="true">https://biogravity.space/news/secret-shared-teleportation-of-a-two-qudit-gate-with-a-new</guid>
+      <pubDate>Mon, 02 Nov 2026 10:16:58 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Secret-shared teleportation of a two-qudit gate with a: New Evidence in Quantum &amp; Physics: An unknown quantum operation, like an unknown quantum state, cannot be perfectly copied or stored for later use. A specific gate can be embedded in an entangled resource and teleported, but its destination is fixed when the resource is created. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.42150v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
+    <item>
+      <title>Large Eddy Simulation Study of Turbine Pitch Motion: New Evidence in Biophysics &amp; Genomics</title>
+      <link>https://biogravity.space/news/large-eddy-simulation-study-of-turbine-pitch-motion-new-evidence</link>
+      <guid isPermaLink="true">https://biogravity.space/news/large-eddy-simulation-study-of-turbine-pitch-motion-new-evidence</guid>
+      <pubDate>Mon, 02 Nov 2026 02:56:13 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Large Eddy Simulation Study of Turbine Pitch Motion: New Evidence in Biophysics &amp; Genomics: Interactions between floating wind turbines and the marine atmospheric boundary layer affect turbine wakes and power output. This study examines the impact of turbine representations and platform pitching motion on power predictions for aligned floating wind turbine arrays. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.41224v1).</description>
+      <category>Biophysics &amp; Genomics</category>
+    </item>
+    <item>
+      <title>Longitudinal electric corner modes in continuum: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/longitudinal-electric-corner-modes-in-continuum-new-evidence-in</link>
+      <guid isPermaLink="true">https://biogravity.space/news/longitudinal-electric-corner-modes-in-continuum-new-evidence-in</guid>
+      <pubDate>Mon, 02 Nov 2026 02:56:13 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Longitudinal electric corner modes in continuum: New Evidence in Quantum &amp; Physics: Subregions in gauge theories give rise to edge modes and corner charges supported on their boundaries. While this is well-established classically and in quantum lattice gauge theories, the fate of corner modes remains poorly understood in continuum quantum field theories owing to their distributional nature. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.41240v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
     <item>
       <title>Quantum Navigation in Birds: Clocking Radical Pair Coherence</title>
       <link>https://biogravity.space/news/quantum-navigation-in-birds-researchers-clock-extended-radical</link>
