@@ -64,6 +64,22 @@
       "lastChecked": "2026-11-03T06:08:02.742Z"
     },
     {
+      "url": "https://biogravity.space/news/alien-life-at-14-000-feet-below-the-ocean-deep-sea-expedition",
+      "status": "INDEXED"
+    },
+    {
+      "url": "https://biogravity.space/news/metal-rain-and-vaporized-iron-webb-telescope-reveals-extreme",
+      "status": "INDEXED"
+    },
+    {
+      "url": "https://biogravity.space/news/living-solar-panels-scientists-turn-plant-chloroplasts-into",
+      "status": "INDEXED"
+    },
+    {
+      "url": "https://biogravity.space/news/ancient-greenland-ice-discloses-shocking-climate-flip-that",
+      "status": "INDEXED"
+    },
+    {
       "url": "https://biogravity.space/articles/terahertz-resonance-and-coherent-dipole-oscillations-in-neuronal-microtubule-lat",
       "status": "INDEXED",
       "verdict": "NEUTRAL",
@@ -246,6 +262,14 @@
       "lastChecked": "2026-11-03T06:11:15.683Z"
     },
     {
+      "url": "https://biogravity.space/articles/mixed-state-deep-thermalization-under-generic-quantum-errors",
+      "status": "INDEXED"
+    },
+    {
+      "url": "https://biogravity.space/articles/screening-strongly-correlated-materials-in-solid-oxide-cells",
+      "status": "INDEXED"
+    },
+    {
       "url": "https://biogravity.space/articles/estimation-non-linear-compression-potential",
       "status": "INDEXED",
       "verdict": "PASS",
@@ -260,11 +284,27 @@
       "lastChecked": "2026-11-03T06:11:30.564Z"
     },
     {
+      "url": "https://biogravity.space/articles/phonon-assisted-free-electron-recoil-control-and-mechanical-sensing",
+      "status": "INDEXED"
+    },
+    {
       "url": "https://biogravity.space/articles/supersolid-phase-transitions-trapped-quantum-gases",
       "status": "INDEXED",
       "verdict": "NEUTRAL",
       "coverage": "Discovered - currently not indexed",
       "lastChecked": "2026-11-03T06:11:37.824Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/relativistic-time-dilation-and-mitochondrial-aging-clocks",
+      "status": "INDEXED"
+    },
+    {
+      "url": "https://biogravity.space/articles/zero-g-capillary-fluidics-and-surface-tension-bioreactors",
+      "status": "INDEXED"
+    },
+    {
+      "url": "https://biogravity.space/articles/debye-shielding-and-plasma-sheath-dynamics-in-spacecraft-biosensing",
+      "status": "INDEXED"
     },
     {
       "url": "https://biogravity.space/articles/radical-pair-spin-coherence-human-cryptochrome-4",
