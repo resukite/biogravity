@@ -2,6 +2,7 @@ User-agent: *
 Allow: /
 Disallow: /*?q=*
 Disallow: /*?category=*
+Disallow: /archive/
 
 # Dedicated Search Engine Crawlers
 # Google AdSense Crawler
@@ -12,6 +13,7 @@ User-agent: Googlebot
 Allow: /
 Disallow: /*?q=*
 Disallow: /*?category=*
+Disallow: /archive/
 
 User-agent: Googlebot-Image
 Allow: /

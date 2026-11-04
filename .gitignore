@@ -21,3 +21,9 @@ Thumbs.db
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Archived low-value/pruned articles & news
+archive/
+data/*.backup*.json
+data/*.removed.json
+

@@ -5,7 +5,7 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Nov 2026 06:14:58 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 04:37:33 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Quantum Navigation in Birds: Clocking Radical Pair Coherence</title>
@@ -17,48 +17,12 @@
       <category>Quantum Biology &amp; Biophysics</category>
     </item>
     <item>
-      <title>Lattice moments and quantum designs: New Evidence in Quantum &amp; Physics</title>
-      <link>https://biogravity.space/news/lattice-moments-and-quantum-designs-new-evidence-in-quantum</link>
-      <guid isPermaLink="true">https://biogravity.space/news/lattice-moments-and-quantum-designs-new-evidence-in-quantum</guid>
-      <pubDate>Sat, 31 Oct 2026 20:43:26 GMT</pubDate>
-      <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Lattice moments and quantum designs: New Evidence in Quantum &amp; Physics: We show that the ensemble of unimodular Gottesman$-$Kitaev$-$Preskill distributions fails to form a rigged quantum $3$-design and quantify the replica defect that determines this failure. This is established by rederiving a second moment formula for symplectic lattices in a self-contained manner. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40481v1).</description>
-      <category>Quantum &amp; Physics</category>
-    </item>
-    <item>
       <title>Fast and Accurate Neural Triage Decoding [2026 Breakthrough]</title>
       <link>https://biogravity.space/news/fast-and-accurate-neural-triage-decoding-of-new-evidence-in</link>
       <guid isPermaLink="true">https://biogravity.space/news/fast-and-accurate-neural-triage-decoding-of-new-evidence-in</guid>
       <pubDate>Sat, 31 Oct 2026 20:43:26 GMT</pubDate>
       <dc:creator>BioGravity Science Bureau</dc:creator>
       <description>Fast and accurate neural triage decoding of: New Evidence in Quantum &amp; Physics: Quantum error correction is essential for fault-tolerant quantum computing. High-rate quantum low-density parity-check (qLDPC) codes have emerged as a promising approach to reducing the substantial physical qubit overhead of quantum error correction, enabling encoding rates exceeding $1/2$ in blocks of approximately one thousand physical data qubits. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40490v1).</description>
-      <category>Quantum &amp; Physics</category>
-    </item>
-    <item>
-      <title>Benchmarking Fast Quantum Anneals with Domain Walls [2026]</title>
-      <link>https://biogravity.space/news/using-domain-walls-to-benchmark-fast-quantum-anneals-new</link>
-      <guid isPermaLink="true">https://biogravity.space/news/using-domain-walls-to-benchmark-fast-quantum-anneals-new</guid>
-      <pubDate>Sat, 31 Oct 2026 15:06:35 GMT</pubDate>
-      <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Using domain walls to benchmark fast quantum anneals: New Evidence in Quantum &amp; Physics: We consider the distribution of domain walls arising in ground states of frustrated 1-dimensional Ising spin chains with anti-parallel boundary spins. For ideal chains, a sine-squared particle-in-a-box distribution of domain walls is expected in the quantum setting, and a uniform distribution expected classically. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40504v1).</description>
-      <category>Quantum &amp; Physics</category>
-    </item>
-    <item>
-      <title>Gauge-Invariant Orbital Angular Momentum of Vector Bosons</title>
-      <link>https://biogravity.space/news/the-gauge-invariant-orbital-angular-momentum-of-vector-new</link>
-      <guid isPermaLink="true">https://biogravity.space/news/the-gauge-invariant-orbital-angular-momentum-of-vector-new</guid>
-      <pubDate>Sat, 31 Oct 2026 15:06:35 GMT</pubDate>
-      <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>The gauge-invariant orbital angular momentum of vector: New Evidence in Quantum &amp; Physics: In this paper we present a gauge-invariant formalism for describing the spin and orbital angular momenta of scalar and vector optical vortices. The correction term, arising from consistent incorporation of the transverse vector potential&apos;s nonlocality, restores gauge invariance and makes it possible to separate the total angular momentum into spin and orbital components. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40523v1).</description>
-      <category>Quantum &amp; Physics</category>
-    </item>
-    <item>
-      <title>Quasi-Phases of Quantum Matter: New Evidence in Quantum &amp; Physics</title>
-      <link>https://biogravity.space/news/quasi-phases-of-quantum-matter-new-evidence-in-quantum-physics</link>
-      <guid isPermaLink="true">https://biogravity.space/news/quasi-phases-of-quantum-matter-new-evidence-in-quantum-physics</guid>
-      <pubDate>Sat, 31 Oct 2026 09:00:00 GMT</pubDate>
-      <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Quasi-Phases of Quantum Matter: New Evidence in Quantum &amp; Physics: Within quantum many-body phase diagrams, continuous transition lines can appear and then terminate. However, it has remained unclear whether the neighboring regimes can be meaningfully described as distinct phases, akin to water and vapour, since any sharp characterization would have to go beyond the usual notion of phases of matter. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40526v1).</description>
       <category>Quantum &amp; Physics</category>
     </item>
     <item>
@@ -69,141 +33,6 @@
       <dc:creator>BioGravity Science Bureau</dc:creator>
       <description>Mapping Stellar Obliquity Across Space and Time: New Evidence in Space &amp; Astronomy: The angle between a star&apos;s rotational angular momentum vector and the orbital angular momentum vector of its planets---stellar obliquity---encodes the initial conditions and dynamical history of planetary systems. Variations in obliquity with orbital separation may arise from either primordial disk structure (e.g., broken or warped protoplanetary disks with misaligned inner and outer regions) or subsequent dynamical interactions with planets or external perturbers. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40527v1).</description>
       <category>Space &amp; Astronomy</category>
-    </item>
-    <item>
-      <title>Grow, Compress, and Perturb: Hybrid Quantum Tensor Networks</title>
-      <link>https://biogravity.space/news/grow-compress-and-perturb-a-hybrid-new-evidence-in-quantum</link>
-      <guid isPermaLink="true">https://biogravity.space/news/grow-compress-and-perturb-a-hybrid-new-evidence-in-quantum</guid>
-      <pubDate>Sat, 31 Oct 2026 06:11:49 GMT</pubDate>
-      <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Grow, Compress, and Perturb: A Hybrid: New Evidence in Quantum &amp; Physics: While Variational Quantum Eigensolver (VQE) variants are among leading candidates for electronic structure calculations on quantum computers, gradient-based operator selection limits their scalability. To solve this, we introduce the Hamiltonian-gradient-free VULCAN (Variational Upbuilding, Layered Compression, Adaptive N-body perturbation) layered VQE framework. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40561v1).</description>
-      <category>Quantum &amp; Physics</category>
-    </item>
-    <item>
-      <title>Strong-to-Weak Symmetry Breaking in Quantum Many-Body Systems</title>
-      <link>https://biogravity.space/news/algebraic-strong-to-weak-symmetry-breaking-and-partial-new</link>
-      <guid isPermaLink="true">https://biogravity.space/news/algebraic-strong-to-weak-symmetry-breaking-and-partial-new</guid>
-      <pubDate>Sat, 31 Oct 2026 02:55:00 GMT</pubDate>
-      <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Algebraic strong-to-weak symmetry breaking and partial: New Evidence in Quantum &amp; Physics: Coherent noise can give rise to unconventional regimes of quantum information recovery and mixed-state order. We study these phenomena in two settings related by Wegner duality: the triangular-lattice surface code subject to single-qubit Pauli-$Z$ rotations followed by syndrome measurements, and a $\mathbb{Z}_2$ paramagnet subject to strongly symmetric decoherence. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40567v1).</description>
-      <category>Quantum &amp; Physics</category>
-    </item>
-    <item>
-      <title>The Quantum Chromatic Gap II: New Evidence in Quantum &amp; Physics</title>
-      <link>https://biogravity.space/news/the-quantum-chromatic-gap-ii-new-evidence-in-quantum-physics</link>
-      <guid isPermaLink="true">https://biogravity.space/news/the-quantum-chromatic-gap-ii-new-evidence-in-quantum-physics</guid>
-      <pubDate>Sat, 31 Oct 2026 02:55:00 GMT</pubDate>
-      <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>The Quantum Chromatic Gap II: New Evidence in Quantum &amp; Physics: We confirm a conjecture of the first author [SODA&apos;26] on a strong form of pseudo-telepathy for Khot&apos;s $d$-to-$1$ games: for every $d\geq 4$, every $ε&amp;gt;0$, and every $k\in\mathbb N$, there is a $d$-to-$1$ label-cover game of classical value less than $ε$ that admits a perfect quantum strategy using finite-dimensional shared entanglement with measurement contexts of radius at least $k$. As a consequence, there exist graphs whose quantum chromatic number $χ_q$ is $3$ and whose classical chromatic number $χ$ is arbitrarily large. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40571v1).</description>
-      <category>Quantum &amp; Physics</category>
-    </item>
-    <item>
-      <title>Computing with Indefinite Causal Structure in Quantum Physics</title>
-      <link>https://biogravity.space/news/what-can-be-computed-with-indefinite-causal-structure-new</link>
-      <guid isPermaLink="true">https://biogravity.space/news/what-can-be-computed-with-indefinite-causal-structure-new</guid>
-      <pubDate>Fri, 30 Oct 2026 21:43:48 GMT</pubDate>
-      <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>What Can Be Computed with Indefinite Causal Structure?: New Evidence in Quantum &amp; Physics: Can quantum computation become more powerful when operations do not need to follow a definite causal order? We study this question in the process matrix formalism of Oreshkov et al. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40573v1).</description>
-      <category>Quantum &amp; Physics</category>
-    </item>
-    <item>
-      <title>Classical Communication Limits Over Quantum Channels [Study]</title>
-      <link>https://biogravity.space/news/classical-communication-over-quantum-channels-does-new-evidence</link>
-      <guid isPermaLink="true">https://biogravity.space/news/classical-communication-over-quantum-channels-does-new-evidence</guid>
-      <pubDate>Fri, 30 Oct 2026 21:43:48 GMT</pubDate>
-      <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Classical communication over quantum channels: does: New Evidence in Quantum &amp; Physics: Can entangling codewords across independent uses of a quantum channel improve the rate of classical communication? An old conjecture states that there is no such entanglement advantage for all channels. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40585v1).</description>
-      <category>Quantum &amp; Physics</category>
-    </item>
-    <item>
-      <title>Probing Fluctuations in Single-Photon Emission Statistics</title>
-      <link>https://biogravity.space/news/probing-fluctuations-in-photon-emission-statistics-of-new</link>
-      <guid isPermaLink="true">https://biogravity.space/news/probing-fluctuations-in-photon-emission-statistics-of-new</guid>
-      <pubDate>Fri, 30 Oct 2026 17:19:14 GMT</pubDate>
-      <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Probing fluctuations in photon emission statistics of: New Evidence in Quantum &amp; Physics: Electrically spin-injected ensembles of InGaAs/GaAs quantum dots emit circularly polarized single photons, with the emission helicity determined by the spin polarization of the injected electrons. A ferromagnetic CoFeB spin-injection layer with perpendicular magnetic anisotropy, combined with an MgO tunnel barrier, enables spin-polarized electron injection into the quantum-dot active region, resulting in circularly polarized photon emission at zero applied magnetic field. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40593v1).</description>
-      <category>Quantum &amp; Physics</category>
-    </item>
-    <item>
-      <title>Algebraic Theory of Abelian Fractons in Topological Matter</title>
-      <link>https://biogravity.space/news/algebraic-theory-of-abelian-fractons-and-beyond-new-evidence-in</link>
-      <guid isPermaLink="true">https://biogravity.space/news/algebraic-theory-of-abelian-fractons-and-beyond-new-evidence-in</guid>
-      <pubDate>Fri, 30 Oct 2026 17:19:14 GMT</pubDate>
-      <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Algebraic theory of abelian fractons and beyond: New Evidence in Quantum &amp; Physics: We develop an algebraic theory of fusion, mobility, and statistics in abelian gapped fracton orders and topological phases. The framework generalizes the algebraic description of abelian anyons to systems with restricted-mobility and spatially extended excitations. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40596v1).</description>
-      <category>Quantum &amp; Physics</category>
-    </item>
-    <item>
-      <title>Exceptional Points as Witnesses of Non-Gaussian Noise [2026]</title>
-      <link>https://biogravity.space/news/exceptional-points-as-witnesses-of-non-gaussian-noise-new</link>
-      <guid isPermaLink="true">https://biogravity.space/news/exceptional-points-as-witnesses-of-non-gaussian-noise-new</guid>
-      <pubDate>Fri, 30 Oct 2026 11:45:08 GMT</pubDate>
-      <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Exceptional Points as Witnesses of Non-Gaussian Noise: New Evidence in Quantum &amp; Physics: Efficient control of quantum devices requires the knowledge of their environmental noise, yet the commonly measured power spectrum does not fully characterize non-Gaussian fluctuations of realistic environments. Here we show that exceptional points (EPs) in the noise-averaged dephasing response can expose observable signatures of non-Gaussian statistics, distinguishing environments with identical lower-order statistics. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40612v1).</description>
-      <category>Quantum &amp; Physics</category>
-    </item>
-    <item>
-      <title>Optimal Diamond Distance Estimation for Unitary Channels</title>
-      <link>https://biogravity.space/news/optimal-diamond-distance-estimation-for-unitary-channels-new</link>
-      <guid isPermaLink="true">https://biogravity.space/news/optimal-diamond-distance-estimation-for-unitary-channels-new</guid>
-      <pubDate>Fri, 30 Oct 2026 11:45:08 GMT</pubDate>
-      <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Optimal Diamond Distance Estimation for Unitary Channels: New Evidence in Quantum &amp; Physics: The diamond distance between two quantum channels determines the optimal probability of distinguishing them from a single use. We give a quantum algorithm that estimates the diamond distance between two unknown $d$-dimensional unitary channels to within additive error $\varepsilon$, using $O(\sqrt{d}/\varepsilon)$ queries to the unitary channels and their inverses. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40623v1).</description>
-      <category>Quantum &amp; Physics</category>
-    </item>
-    <item>
-      <title>Left-Handed Transmission Lines for Dynamical Casimir Physics</title>
-      <link>https://biogravity.space/news/left-handed-transmission-lines-for-the-dynamical-new-evidence-in</link>
-      <guid isPermaLink="true">https://biogravity.space/news/left-handed-transmission-lines-for-the-dynamical-new-evidence-in</guid>
-      <pubDate>Fri, 30 Oct 2026 06:59:34 GMT</pubDate>
-      <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Left-Handed Transmission Lines for the Dynamical: New Evidence in Quantum &amp; Physics: Left-handed (LH) superconducting transmission lines, built with series capacitors and shunt inductors instead of the series inductors and shunt capacitors of a conventional right-handed (RH) line, have a spectrum with a nonzero lower band edge and modes that become sparse at high frequencies. We study the dynamical Casimir effect in a LH line terminated by a flux-modulated SQUID and compare it with an RH line built from the same elements and with a long coplanar waveguide terminated by the same SQUID. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40624v1).</description>
-      <category>Quantum &amp; Physics</category>
-    </item>
-    <item>
-      <title>Locality in Dissipative Ground-State Preparation [Quantum]</title>
-      <link>https://biogravity.space/news/locality-in-dissipative-ground-state-preparation-new-evidence-in</link>
-      <guid isPermaLink="true">https://biogravity.space/news/locality-in-dissipative-ground-state-preparation-new-evidence-in</guid>
-      <pubDate>Fri, 30 Oct 2026 06:59:34 GMT</pubDate>
-      <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Locality in Dissipative Ground-State Preparation: New Evidence in Space &amp; Astronomy: Can the ground state of a local Hamiltonian be prepared by local dissipation? We address this question for free-fermion Hamiltonians, using a quadratic Lindbladian with linear jump operators for the dissipative ground-state preparation. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40628v1).</description>
-      <category>Space &amp; Astronomy</category>
-    </item>
-    <item>
-      <title>Hyaluronic Acid Overexpression in Tissue Regeneration [LEO]</title>
-      <link>https://biogravity.space/news/hyaluronic-acid-over-expression-drives-tissue-new-evidence-in</link>
-      <guid isPermaLink="true">https://biogravity.space/news/hyaluronic-acid-over-expression-drives-tissue-new-evidence-in</guid>
-      <pubDate>Fri, 30 Oct 2026 06:59:34 GMT</pubDate>
-      <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Hyaluronic acid over-expression drives tissue: New Evidence in Space &amp; Astronomy: Tissue architecture is shaped by a variety of biomechanical and biochemical mechanisms, including morphogen patterning, differential growth, and spatial variations in cellular contractility. These mechanisms typically emphasize forces generated within cells. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40634v1).</description>
-      <category>Space &amp; Astronomy</category>
-    </item>
-    <item>
-      <title>Entangling Strategies for Unitary Quantum Circuit Synthesis</title>
-      <link>https://biogravity.space/news/comparison-of-entangling-strategies-for-unitary-synthesis-new</link>
-      <guid isPermaLink="true">https://biogravity.space/news/comparison-of-entangling-strategies-for-unitary-synthesis-new</guid>
-      <pubDate>Fri, 30 Oct 2026 06:59:34 GMT</pubDate>
-      <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Comparison of entangling strategies for unitary synthesis: New Evidence in Quantum &amp; Physics: Trapped-ion quantum computers are promising as a platform for realizing quantum computational advantage. They promise long coherence times, near all-to-all connectivity, and potential multiqubit gates as distinguishing advantages compared to competing platforms. Published via arXiv Open Science Wire (https://arxiv.org/abs/2610.40642v1).</description>
-      <category>Quantum &amp; Physics</category>
-    </item>
-    <item>
-      <title>Renormalization for Robust Quantum Memory Synchronization</title>
-      <link>https://biogravity.space/news/renormalization-for-robust-memory-without-synchronization-new</link>
-      <guid isPermaLink="true">https://biogravity.space/news/renormalization-for-robust-memory-without-synchronization-new</guid>
-      <pubDate>Fri, 30 Oct 2026 05:43:59 GMT</pubDate>
-      <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Renormalization for Robust Memory without Synchronization: New Evidence in Space &amp; Astronomy: Local error correction can preserve classical information...</description>
-      <category>Space &amp; Astronomy</category>
-    </item>
-    <item>
-      <title>Reconstructing Hidden Quantum Observables via State Snapshots</title>
-      <link>https://biogravity.space/news/reconstructing-hidden-observables-via-quantum-snapshot-new</link>
-      <guid isPermaLink="true">https://biogravity.space/news/reconstructing-hidden-observables-via-quantum-snapshot-new</guid>
-      <pubDate>Fri, 30 Oct 2026 05:43:59 GMT</pubDate>
-      <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Reconstructing hidden observables via quantum snapshot: New Evidence in Quantum &amp; Physics: Projective snapshots are a standard readout tool for quantum...</description>
-      <category>Quantum &amp; Physics</category>
     </item>
     <item>
       <title>Sub-Solar Gravitational Waves: Evidence for Primordial Dark Matter</title>
@@ -222,114 +51,6 @@
       <dc:creator>BioGravity Science Bureau</dc:creator>
       <description>Coral Survival Breakthrough: Marine Biologists Discover Rapid Epigenetic Heat Resistance: Coral polyps in the South Pacific demonstrated rapid...</description>
       <category>Marine Ecology &amp; Climate</category>
-    </item>
-    <item>
-      <title>Beyond Lithium: Non-Flammable Sodium Battery Achieves 2,000 Cycles</title>
-      <link>https://biogravity.space/news/beyond-lithium-non-flammable-sodium-solid-state-battery-achieves</link>
-      <guid isPermaLink="true">https://biogravity.space/news/beyond-lithium-non-flammable-sodium-solid-state-battery-achieves</guid>
-      <pubDate>Wed, 28 Oct 2026 14:13:49 GMT</pubDate>
-      <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Beyond Lithium: Non-Flammable Sodium Solid-State Battery Achieves 2,000 Cycles with Zero Dendrites: Elimination of rare-earth lithium and cobalt allows...</description>
-      <category>Clean Energy &amp; Materials</category>
-    </item>
-    <item>
-      <title>Virus-Proof Biology: Synthetic Bacterial Genome Immune to Infection</title>
-      <link>https://biogravity.space/news/virus-proof-biology-scientists-build-synthetic-bacterial-genome</link>
-      <guid isPermaLink="true">https://biogravity.space/news/virus-proof-biology-scientists-build-synthetic-bacterial-genome</guid>
-      <pubDate>Wed, 28 Oct 2026 14:13:49 GMT</pubDate>
-      <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Virus-Proof Biology: Scientists Build Synthetic Bacterial Genome Immune to Infection: By rewriting 64 standard codons down to 59 and reassigning the...</description>
-      <category>Synthetic Biology &amp; Genomics</category>
-    </item>
-    <item>
-      <title>Beneath Two Miles of Antarctic Ice: Immense River Canyon Found</title>
-      <link>https://biogravity.space/news/hidden-beneath-two-miles-of-antarctic-ice-scientists-discover</link>
-      <guid isPermaLink="true">https://biogravity.space/news/hidden-beneath-two-miles-of-antarctic-ice-scientists-discover</guid>
-      <pubDate>Wed, 28 Oct 2026 14:13:49 GMT</pubDate>
-      <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Hidden Beneath Two Miles of Antarctic Ice: Scientists Discover Immense Prehistoric River Canyon: Airborne ice-penetrating radar traced a...</description>
-      <category>Geophysics &amp; Earth Science</category>
-    </item>
-    <item>
-      <title>Runaway Supermassive Black Hole Leaves 200,000-Light-Year Star Trail</title>
-      <link>https://biogravity.space/news/cosmic-monster-on-the-loose-runaway-supermassive-black-hole</link>
-      <guid isPermaLink="true">https://biogravity.space/news/cosmic-monster-on-the-loose-runaway-supermassive-black-hole</guid>
-      <pubDate>Wed, 28 Oct 2026 14:13:49 GMT</pubDate>
-      <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Cosmic Monster on the Loose: Runaway Supermassive Black Hole Leaves 200,000-Light-Year Star Trail: The 20-million-solar-mass black hole is speeding...</description>
-      <category>Astrophysics &amp; Space</category>
-    </item>
-    <item>
-      <title>Mutant Soil Fungi Wipe Out Toxic &apos;Forever Chemicals&apos; in 96 Hours</title>
-      <link>https://biogravity.space/news/the-forever-chemical-breakthrough-mutant-soil-fungi-wipe-out</link>
-      <guid isPermaLink="true">https://biogravity.space/news/the-forever-chemical-breakthrough-mutant-soil-fungi-wipe-out</guid>
-      <pubDate>Tue, 27 Oct 2026 08:26:00 GMT</pubDate>
-      <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>The &apos;Forever Chemical&apos; Breakthrough: Mutant Soil Fungi Wipe Out Toxic PFAS in 96 Hours: A mutated strain of white-rot fungus secretes manganese...</description>
-      <category>Environmental Science &amp; EVS</category>
-    </item>
-    <item>
-      <title>Dental Tartar Proves Neanderthals Used Natural Aspirin &amp; Penicillin</title>
-      <link>https://biogravity.space/news/50-000-year-old-dental-tartar-proves-neanderthals-used-natural</link>
-      <guid isPermaLink="true">https://biogravity.space/news/50-000-year-old-dental-tartar-proves-neanderthals-used-natural</guid>
-      <pubDate>Tue, 27 Oct 2026 08:26:00 GMT</pubDate>
-      <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>50,000-Year-Old Dental Tartar Proves Neanderthals Used Natural Aspirin and Penicillin: Ancient DNA extraction reveals early hominins consumed natural...</description>
-      <category>Deep Science History</category>
-    </item>
-    <item>
-      <title>Fault-Tolerant Quantum Leap: Physicists Shield Qubits from Noise</title>
-      <link>https://biogravity.space/news/fault-tolerant-quantum-leap-physicists-successfully-shield</link>
-      <guid isPermaLink="true">https://biogravity.space/news/fault-tolerant-quantum-leap-physicists-successfully-shield</guid>
-      <pubDate>Tue, 27 Oct 2026 08:06:08 GMT</pubDate>
-      <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Fault-Tolerant Quantum Leap: Physicists Successfully Shield Qubits from Decoherence: Majorana zero modes manipulated on semiconductor-superconductor...</description>
-      <category>Quantum &amp; Physics</category>
-    </item>
-    <item>
-      <title>The Trillion-Dollar Moon Economy: Why Mining Lunar Ice Is Feasible</title>
-      <link>https://biogravity.space/news/the-trillion-dollar-moon-economy-why-mining-lunar-ice-will-be</link>
-      <guid isPermaLink="true">https://biogravity.space/news/the-trillion-dollar-moon-economy-why-mining-lunar-ice-will-be</guid>
-      <pubDate>Tue, 27 Oct 2026 08:02:06 GMT</pubDate>
-      <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>The Trillion-Dollar Moon Economy: Why Mining Lunar Ice Will Be Profitable by 2038: Refueling Mars missions in low lunar orbit reduces launch payload...</description>
-      <category>Science Economics &amp; Space Industry</category>
-    </item>
-    <item>
-      <title>Deep-Sea Expedition Finds Unseen Ecosystem 14,000 Feet Below Ocean</title>
-      <link>https://biogravity.space/news/alien-life-at-14-000-feet-below-the-ocean-deep-sea-expedition</link>
-      <guid isPermaLink="true">https://biogravity.space/news/alien-life-at-14-000-feet-below-the-ocean-deep-sea-expedition</guid>
-      <pubDate>Tue, 27 Oct 2026 02:35:59 GMT</pubDate>
-      <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Alien Life at 14,000 Feet Below the Ocean: Deep-Sea Expedition Finds Unseen Ecosystem: Mineral deposits enriched in rare-earth elements were discovered...</description>
-      <category>Earth &amp; Geology</category>
-    </item>
-    <item>
-      <title>Webb Telescope Reveals Metal Rain &amp; Vaporized Iron on Exoplanet</title>
-      <link>https://biogravity.space/news/metal-rain-and-vaporized-iron-webb-telescope-reveals-extreme</link>
-      <guid isPermaLink="true">https://biogravity.space/news/metal-rain-and-vaporized-iron-webb-telescope-reveals-extreme</guid>
-      <pubDate>Tue, 27 Oct 2026 07:35:51 GMT</pubDate>
-      <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Metal Rain and Vaporized Iron: Webb Telescope Reveals Extreme Weather on Giant Alien World: Spectroscopic observations by JWST confirm gaseous nickel,...</description>
-      <category>Space &amp; Astronomy</category>
-    </item>
-    <item>
-      <title>Living Solar Panels: Chloroplasts Converted to Clean Electricity</title>
-      <link>https://biogravity.space/news/living-solar-panels-scientists-turn-plant-chloroplasts-into</link>
-      <guid isPermaLink="true">https://biogravity.space/news/living-solar-panels-scientists-turn-plant-chloroplasts-into</guid>
-      <pubDate>Sun, 25 Oct 2026 07:00:26 GMT</pubDate>
-      <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Living Solar Panels: Scientists Turn Plant Chloroplasts into Renewable Electricity: By coating carbon nanotube substrates with stabilized plant...</description>
-      <category>Environmental Science &amp; Energy</category>
-    </item>
-    <item>
-      <title>Ancient Greenland Ice Reveals 20-Year Abrupt Climate Transition</title>
-      <link>https://biogravity.space/news/ancient-greenland-ice-discloses-shocking-climate-flip-that</link>
-      <guid isPermaLink="true">https://biogravity.space/news/ancient-greenland-ice-discloses-shocking-climate-flip-that</guid>
-      <pubDate>Sun, 25 Oct 2026 07:00:26 GMT</pubDate>
-      <dc:creator>BioGravity Science Bureau</dc:creator>
-      <description>Ancient Greenland Ice Discloses Shocking Climate Flip That Happened in Just 20 Years: Isotope ratios in 120,000-year-old ice show sudden 5-degree...</description>
-      <category>Science History &amp; Paleoclimatology</category>
     </item>
     <item>
       <title>Epigenomic Methylation Remodeling and Virulence Attenuation of Pathogens in Low Earth Orbit: Orbital Evidence for Non-Classical Molecular Dynamics</title>
@@ -359,24 +80,6 @@
       <category>Plant Physiology &amp; Fluid Dynamics</category>
     </item>
     <item>
-      <title>Why Is Gold Yellow? The Einstein Relativity Physics Explained</title>
-      <link>https://biogravity.space/articles/why-is-gold-yellow-relativistic-quantum-chemistry</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/why-is-gold-yellow-relativistic-quantum-chemistry</guid>
-      <pubDate>Fri, 30 Oct 2026 06:19:59 GMT</pubDate>
-      <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>Almost every elemental metal on the periodic table—from aluminum and silver to iron and platinum—is silvery-gray because they reflect all visible wavelengths equally. Gold is a radiant yellow because of Einstein&apos;s Special Relativity: gold&apos;s massive nucleus pulls inner electrons to 58% the speed of light, shifting orbital energy levels so the atom absorbs blue light and reflects rich golden hues.</description>
-      <category>Quantum Chemistry &amp; Physics</category>
-    </item>
-    <item>
-      <title>How the Michelson-Morley Experiment Disproved the Aether</title>
-      <link>https://biogravity.space/articles/michelson-morley-experiment-disproved-the-aether</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/michelson-morley-experiment-disproved-the-aether</guid>
-      <pubDate>Fri, 30 Oct 2026 06:16:43 GMT</pubDate>
-      <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>In 1887, Albert A. Michelson and Edward W. Morley built an ultra-sensitive optical interferometer floating on a pool of mercury to detect the &apos;aether wind&apos; caused by Earth moving through space. The experiment returned a stunning null result: the speed of light was identical in all directions, shattering nineteenth-century physics and paving the way for Einstein&apos;s theory of Special Relativity.</description>
-      <category>Physics &amp; Science History</category>
-    </item>
-    <item>
       <title>The Fermi Paradox: If Aliens Exist, Where Is Everybody?</title>
       <link>https://biogravity.space/articles/fermi-paradox-where-are-all-the-aliens</link>
       <guid isPermaLink="true">https://biogravity.space/articles/fermi-paradox-where-are-all-the-aliens</guid>
@@ -386,42 +89,6 @@
       <category>Astrophysics &amp; Astrobiology</category>
     </item>
     <item>
-      <title>Kola Superdeep Borehole: What Did Scientists Find 12 km Down?</title>
-      <link>https://biogravity.space/articles/kola-superdeep-borehole-deepest-hole-on-earth</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/kola-superdeep-borehole-deepest-hole-on-earth</guid>
-      <pubDate>Fri, 30 Oct 2026 06:16:43 GMT</pubDate>
-      <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>Drilled over two decades in the Soviet Arctic, the Kola Superdeep Borehole (SG-3) penetrated 12,262 meters (40,230 feet) into continental crust. Instead of the anticipated granite-basalt seismic boundary, geologists discovered fractured rock saturated with hydrothermal water, high concentrations of hydrogen gas, and microscopic plankton fossils preserved under crushing pressures.</description>
-      <category>Geophysics &amp; Earth Science</category>
-    </item>
-    <item>
-      <title>The Demon Core: Deadly Physics of Manhattan Project Accidents</title>
-      <link>https://biogravity.space/articles/the-demon-core-manhattan-project-criticality-accidents</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/the-demon-core-manhattan-project-criticality-accidents</guid>
-      <pubDate>Fri, 30 Oct 2026 06:16:43 GMT</pubDate>
-      <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>Manufactured at Los Alamos for a planned third atomic strike in World War II, the Demon Core was a 6.2-kilogram sphere of subcritical delta-phase plutonium-gallium alloy. In 1945 and 1946, two catastrophic human errors during experimental neutron reflection assemblies triggered prompt criticality accidents, bathing physicists Harry Daghlian and Louis Slotin in lethal neutron and gamma radiation bursts.</description>
-      <category>Nuclear Physics &amp; History</category>
-    </item>
-    <item>
-      <title>The Mpemba Effect: Why Hot Water Can Freeze Faster Than Cold</title>
-      <link>https://biogravity.space/articles/mpemba-effect-why-hot-water-freezes-faster-than-cold</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/mpemba-effect-why-hot-water-freezes-faster-than-cold</guid>
-      <pubDate>Fri, 30 Oct 2026 06:16:43 GMT</pubDate>
-      <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>Discovered empirically in 1963 by Tanzanian high schooler Erasto Mpemba, the phenomenon where initially hot water freezes into ice faster than cold water baffled physicists from Aristotle to modern laboratories. Contemporary molecular dynamics experiments reveal that anomalous hydrogen bonding relaxation, evaporative convection loops, and dissolved gas expulsion drive this non-equilibrium thermodynamic anomaly.</description>
-      <category>Thermodynamics &amp; Chemistry</category>
-    </item>
-    <item>
-      <title>Why Do Flamingos Stand on One Leg? Biomechanics Explained</title>
-      <link>https://biogravity.space/articles/why-do-flamingos-stand-on-one-leg</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/why-do-flamingos-stand-on-one-leg</guid>
-      <pubDate>Fri, 30 Oct 2026 06:16:43 GMT</pubDate>
-      <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>For decades, biologists assumed flamingos stood on one leg strictly for thermoregulation. Groundbreaking robotic and anatomical investigations revealed that flamingos possess a passive gravitational stay apparatus: when balancing on a single limb, body weight drives a mechanical lock in the knee and ankle joints, allowing them to remain asleep with virtually zero active muscle contraction.</description>
-      <category>Zoology &amp; Biomechanics</category>
-    </item>
-    <item>
       <title>Quantum Coherence in Nuclear lncRNA: Orbital Cell Dynamics</title>
       <link>https://biogravity.space/articles/macroscopic-quantum-coherence-in-nuclear-lncrna-liquid-liquid-phase-transition-c</link>
       <guid isPermaLink="true">https://biogravity.space/articles/macroscopic-quantum-coherence-in-nuclear-lncrna-liquid-liquid-phase-transition-c</guid>
@@ -429,78 +96,6 @@
       <dc:creator>Dr. Elena Vance</dc:creator>
       <description>Conducted aboard BioGravity Station under 0.06 μg residual microgravity attenuation, this investigation confirms kinetic isotope effect coefficients 4.7× above classical Arrhenius predictions. Advanced liquid-liquid phase separation and lncRNA methodologies validate the quantum mechanical hypothesis, establishing a rigorous framework for next-generation space-based biotechnology.</description>
       <category>Synthetic Biology</category>
-    </item>
-    <item>
-      <title>Schrödinger&apos;s Cat Explained Simply: The Quantum Paradox</title>
-      <link>https://biogravity.space/articles/schrodingers-cat-quantum-physics-paradox-explained</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/schrodingers-cat-quantum-physics-paradox-explained</guid>
-      <pubDate>Fri, 30 Oct 2026 05:59:05 GMT</pubDate>
-      <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>Schrödinger&apos;s Cat is a famous thought experiment proposed by Austrian physicist Erwin Schrödinger in 1935 to demonstrate what he believed was the complete absurdity of the Copenhagen interpretation of quantum mechanics. In the scenario, a hypothetical cat is sealed inside a steel box with a single radioactive atom, a Geiger counter, a hammer, and a flask of deadly poison. If the atom decays, the hammer breaks the flask, killing the cat; if it doesn&apos;t decay, the cat lives. According to quantum theory, until an observer opens the box and looks inside, the atom exists in a &apos;superposition&apos; of both decayed and undecayed states simultaneously—which would mean the cat is simultaneously both alive and dead at the same time.</description>
-      <category>Mind-Bending Science Experiments</category>
-    </item>
-    <item>
-      <title>Why Do Octopuses Have Three Hearts and Blue Blood?</title>
-      <link>https://biogravity.space/articles/why-do-octopuses-have-three-hearts-and-blue-blood</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/why-do-octopuses-have-three-hearts-and-blue-blood</guid>
-      <pubDate>Fri, 30 Oct 2026 05:59:05 GMT</pubDate>
-      <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>Octopuses have three hearts and blue blood because of the extreme thermodynamic demands of breathing underwater. Two &apos;branchial hearts&apos; pump deoxygenated blood through the gills, while a larger central &apos;systemic heart&apos; pumps oxygenated blood throughout the rest of the body. Their blood is bright blue instead of red because it relies on a copper-rich protein called &apos;hemocyanin&apos; instead of iron-based hemoglobin. In freezing, oxygen-poor deep ocean waters, copper-based hemocyanin binds oxygen far more efficiently than hemoglobin, allowing octopuses to remain agile predators in hostile marine environments.</description>
-      <category>Zoology &amp; Animal Physiology</category>
-    </item>
-    <item>
-      <title>What Lives at the Bottom of Mariana Trench at 36,000 Feet?</title>
-      <link>https://biogravity.space/articles/mariana-trench-challenger-deep-creatures-pressure</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/mariana-trench-challenger-deep-creatures-pressure</guid>
-      <pubDate>Fri, 30 Oct 2026 05:59:05 GMT</pubDate>
-      <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>At the bottom of the Mariana Trench (Challenger Deep at 36,000 feet or 10,994 meters), the water pressure exceeds 1,071 atmospheres (over 15,750 psi)—equivalent to having an adult elephant standing on your thumb. Sunlight disappears within the first 650 feet, temperatures hover near freezing (1°C to 4°C), and food is scarce. Yet, life thrives: the hadal trench is populated by translucent Mariana snailfish, giant 12-inch amphipods, white xenophyophores (single-celled organisms the size of dinner plates), and unique piezophilic bacteria that thrive by utilizing specialized cellular osmolyte chemicals like TMAO to prevent their cellular proteins from being crushed into jelly.</description>
-      <category>Deep Ocean &amp; Extreme Ecosystems</category>
-    </item>
-    <item>
-      <title>The Immortal Jellyfish: How Turritopsis Cheats Natural Aging</title>
-      <link>https://biogravity.space/articles/immortal-jellyfish-turritopsis-dohrnii-biological-immortality</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/immortal-jellyfish-turritopsis-dohrnii-biological-immortality</guid>
-      <pubDate>Fri, 30 Oct 2026 05:59:05 GMT</pubDate>
-      <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>The immortal jellyfish (Turritopsis dohrnii) is the only known animal capable of reverting back into its juvenile polyp state after reaching sexual maturity. When stressed, starving, injured, or aging, the adult medusa absorbs its tentacles, settles onto the ocean floor, and undergoes a rare biological process called &apos;cellular transdifferentiation&apos;: its specialized muscle and nerve cells transform into undifferentiated stem cells, which assemble into a brand-new polyp colony that buds off genetically identical young jellyfish. In theory, this cycle can repeat indefinitely, making Turritopsis dohrnii biologically immortal.</description>
-      <category>Bizarre Biology &amp; Evolution</category>
-    </item>
-    <item>
-      <title>What Would Happen If Earth Stopped Spinning for 5 Seconds?</title>
-      <link>https://biogravity.space/articles/what-would-happen-if-earth-stopped-spinning</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/what-would-happen-if-earth-stopped-spinning</guid>
-      <pubDate>Fri, 30 Oct 2026 05:59:05 GMT</pubDate>
-      <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>If the solid Earth suddenly stopped spinning for just 5 seconds, it would trigger instantaneous global devastation due to Newton&apos;s First Law of Motion (inertia). At the equator, the surface of the Earth moves eastward at roughly 1,040 mph (1,670 km/h). If the ground stopped, everything not bolted directly to bedrock—the atmosphere, oceans, buildings, vehicles, soil, and billions of living creatures—would continue hurtling eastward at supersonic speeds, creating 1,000-mph winds that would obliterate all human infrastructure before massive multi-kilometer-high ocean megatsunamis washed across the continents.</description>
-      <category>Earth Science &amp; Planetary Physics</category>
-    </item>
-    <item>
-      <title>Chernobyl Elephant&apos;s Foot: Inside Earth&apos;s Deadliest Object</title>
-      <link>https://biogravity.space/articles/chernobyl-elephants-foot-deadliest-radioactive-mass</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/chernobyl-elephants-foot-deadliest-radioactive-mass</guid>
-      <pubDate>Fri, 30 Oct 2026 05:59:05 GMT</pubDate>
-      <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>The Elephant&apos;s Foot is a massive, two-meter-wide mound of solidified &apos;corium&apos;—a toxic nuclear lava formed during the April 26, 1986 Chernobyl disaster when melting uranium dioxide fuel rods liquefied with zirconium cladding, graphite control rods, and melted serpentine sand and concrete. Resting in a dark steam corridor beneath destroyed Reactor No. 4, it was once the most lethal object on the planet: shortly after the disaster, standing near it for just 300 seconds (5 minutes) delivered a lethal radiation dose of 10,000 Roentgens (100 Grays), guaranteeing fatal acute radiation syndrome within days.</description>
-      <category>Science History &amp; Nuclear Physics</category>
-    </item>
-    <item>
-      <title>The Double-Slit Experiment Explained Simply: Quantum Reality</title>
-      <link>https://biogravity.space/articles/double-slit-experiment-quantum-mechanics-explained</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/double-slit-experiment-quantum-mechanics-explained</guid>
-      <pubDate>Fri, 30 Oct 2026 05:59:05 GMT</pubDate>
-      <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>The double-slit experiment is the foundational mystery of quantum physics. When tiny particles like electrons or photons are fired at a barrier with two slits, they don&apos;t form two simple straight lines on the back wall like tiny bullets. Instead, they produce an &apos;interference pattern&apos; of multiple striped bands—proving that every single particle travels through both slits simultaneously as a wave of probability. Most shockingly, when physicists place a detector at the slits to observe which slit the particle actually passes through, the wave instantly collapses: the particles immediately act like solid marbles and form two plain lines. Simply measuring the particle changes how reality behaves.</description>
-      <category>Mind-Bending Science Experiments</category>
-    </item>
-    <item>
-      <title>What Happens If You Fall into a Black Hole? Spaghettification</title>
-      <link>https://biogravity.space/articles/what-happens-if-you-fall-into-a-black-hole</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/what-happens-if-you-fall-into-a-black-hole</guid>
-      <pubDate>Fri, 30 Oct 2026 05:59:05 GMT</pubDate>
-      <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>If you fell into a stellar-mass black hole, extreme gravitational tidal forces would stretch you into a noodle-thin strand of atoms before you even reached the event horizon—a violent physical process called &apos;spaghettification.&apos; However, if you fell into a supermassive black hole (millions of times the mass of the Sun), the tidal forces at the horizon are gentle enough that you would cross the event horizon completely unharmed. To an outside observer watching you from far away, time dilation would make you appear to slow down and freeze permanently at the boundary, turning red and dimming into blackness, while from your own perspective, you would fall straight toward the central gravitational singularity where physics breaks down.</description>
-      <category>Cosmic Mysteries &amp; Astrophysics</category>
     </item>
     <item>
       <title>3D Bioprinting Organs in Space: Why Zero-G Changes Everything</title>
@@ -557,33 +152,6 @@
       <category>Space Biophysics &amp; Orbital Mechanics</category>
     </item>
     <item>
-      <title>What Statement About Social Science Research Risks Is Accurate?</title>
-      <link>https://biogravity.space/articles/what-statement-about-risks-in-social-and-behavioral-sciences-research-is-most-accurate</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/what-statement-about-risks-in-social-and-behavioral-sciences-research-is-most-accurate</guid>
-      <pubDate>Tue, 27 Oct 2026 10:00:00 GMT</pubDate>
-      <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>The most accurate statement about risks in social and behavioral sciences research is that risks are primarily non-physical - centered on psychological distress, breaches of confidentiality, social stigma, and economic or legal liability - and the vast majority of studies fall under the regulatory threshold of &quot;minimal risk.&quot; Discover the comprehensive Common Rule (45 CFR 46) breakdown, IRB review levels, and risk mitigation frameworks.</description>
-      <category>Research Ethics &amp; Methodology</category>
-    </item>
-    <item>
-      <title>Topological Defects and Background Fields in Quantum Systems</title>
-      <link>https://biogravity.space/articles/ideal-interaction-dynamics-of-defects-and-background-fields-in</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/ideal-interaction-dynamics-of-defects-and-background-fields-in</guid>
-      <pubDate>Mon, 26 Oct 2026 22:23:11 GMT</pubDate>
-      <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>A unified mathematical framework for the conservative coupled evolution of moving topological defects and continuous background fields in Gross-Pitaevskii quantum fluids and Ericksen-Leslie nematic liquid crystals, validated under orbital microgravity free-fall.</description>
-      <category>Microgravity Fluid Dynamics</category>
-    </item>
-    <item>
-      <title>Maximal Orbital Entanglement from Non-Interacting Fermions</title>
-      <link>https://biogravity.space/articles/maximal-orbital-entanglement-from-non-interacting-fermions</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/maximal-orbital-entanglement-from-non-interacting-fermions</guid>
-      <pubDate>Mon, 26 Oct 2026 12:25:01 GMT</pubDate>
-      <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>Orbital rotations are used in quantum many-body physics and chemistry to reduce the complexity of quantum states by compressing their correlation into a small set of relevant orbitals. In striking contrast, quantum information processing strives for the opposite: orbitals that ma.</description>
-      <category>Space Physics &amp; Biosensing</category>
-    </item>
-    <item>
       <title>How Does Zero Gravity Kill Cancer Cells? Space Oncology Research</title>
       <link>https://biogravity.space/articles/how-does-zero-gravity-kill-cancer-cells</link>
       <guid isPermaLink="true">https://biogravity.space/articles/how-does-zero-gravity-kill-cancer-cells</guid>
@@ -600,69 +168,6 @@
       <dc:creator>Dr. Elena Vance</dc:creator>
       <description>In zero gravity, the human body undergoes immediate and deep changes: approximately 2 liters of fluid shift upwards into the head and chest (causing &apos;puffy face bird-legs syndrome&apos;), the spine stretches up to 2 inches due to lack of spinal compression, bones lose 1% to 1.5% of their mineral density each month, and the heart shrinks slightly because it no longer needs to pump blood against gravity.</description>
       <category>Space Medicine &amp; Human Physiology</category>
-    </item>
-    <item>
-      <title>Logarithmic Sobolev Inequalities in Dissipative Quantum Systems</title>
-      <link>https://biogravity.space/articles/size-independent-logarithmic-sobolev-inequalities-for-quantum</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/size-independent-logarithmic-sobolev-inequalities-for-quantum</guid>
-      <pubDate>Sun, 25 Oct 2026 20:29:27 GMT</pubDate>
-      <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>We propose a new method for proving $L^2$ and modified logarithmic Sobolev inequalities with constants independent of system size for quantum Gibbs samplers whose Lindblad generators satisfy Kubo-Martin-Schwinger (KMS) detailed balance. We first establish the $L^2$ logarithmic So.</description>
-      <category>Quantum Enzymology</category>
-    </item>
-    <item>
-      <title>Deep Thermalization in Mixed Quantum States Under Decoherence</title>
-      <link>https://biogravity.space/articles/mixed-state-deep-thermalization-under-generic-quantum-errors</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/mixed-state-deep-thermalization-under-generic-quantum-errors</guid>
-      <pubDate>Sun, 25 Oct 2026 10:53:58 GMT</pubDate>
-      <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>Pure-state deep thermalization predicts that, after sufficient scrambling, projected ensembles approach universal distributions that contain information beyond the reduced density matrix. In realistic quantum systems, however, noise is unavoidable and the projected states are gen.</description>
-      <category>Quantum Enzymology</category>
-    </item>
-    <item>
-      <title>Screening Fuel Cell Catalysts via Quantum Simulation</title>
-      <link>https://biogravity.space/articles/screening-strongly-correlated-materials-in-solid-oxide-cells</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/screening-strongly-correlated-materials-in-solid-oxide-cells</guid>
-      <pubDate>Sun, 25 Oct 2026 06:43:01 GMT</pubDate>
-      <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>We develop an end-to-end framework for assessing a quantum-computing application in industrial materials science: the screening of strongly correlated oxygen-electrode materials for SOFCs and SOECs. We formulate the materials problem in terms of interface observables including.</description>
-      <category>Quantum Enzymology</category>
-    </item>
-    <item>
-      <title>AI in Turbulent Fluid Flows: Estimating Compression Potential</title>
-      <link>https://biogravity.space/articles/estimation-non-linear-compression-potential</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/estimation-non-linear-compression-potential</guid>
-      <pubDate>Sun, 25 Oct 2026 06:43:01 GMT</pubDate>
-      <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>Data-driven reduced-order modelling (ROM) of turbulent flows is based on an efficient and physical low-dimensional representation of the flow process. Such a dimension reduction can be achieved using proper orthogonal decomposition (POD) or non-linear autoencoders. Capturing t.</description>
-      <category>Microgravity Fluid Dynamics</category>
-    </item>
-    <item>
-      <title>Can Quantum Physics Measure Reality? The No-Go Proof Explained</title>
-      <link>https://biogravity.space/articles/quantum-parameter-estimation-no-go-result</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/quantum-parameter-estimation-no-go-result</guid>
-      <pubDate>Sat, 24 Oct 2026 20:22:31 GMT</pubDate>
-      <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>We examine the conditions under which quantum parameter estimation is compatible with the concept of a ``true&apos;&apos; quantity value: a unique value of the estimated quantity that exists prior to and independently of measurement. While quantum parameter estimation typically assumes tha.</description>
-      <category>Quantum Enzymology</category>
-    </item>
-    <item>
-      <title>Controlling Free-Electron Recoil: Quantum Nanomechanics</title>
-      <link>https://biogravity.space/articles/phonon-assisted-free-electron-recoil-control-and-mechanical-sensing</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/phonon-assisted-free-electron-recoil-control-and-mechanical-sensing</guid>
-      <pubDate>Thu, 22 Oct 2026 21:16:32 GMT</pubDate>
-      <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>Mechanical vibrations are fundamental to a wide range of physical phenomena and technologies, yet their ability to actively shape free-electron dynamics remains largely unexplored. Here we theoretically show how an optomechanical membrane provides a phonon-assisted optical interf.</description>
-      <category>Space Physics &amp; Biosensing</category>
-    </item>
-    <item>
-      <title>Inside Supersolids: Trapping Matter That Is Liquid &amp; Solid</title>
-      <link>https://biogravity.space/articles/supersolid-phase-transitions-trapped-quantum-gases</link>
-      <guid isPermaLink="true">https://biogravity.space/articles/supersolid-phase-transitions-trapped-quantum-gases</guid>
-      <pubDate>Wed, 21 Oct 2026 21:21:15 GMT</pubDate>
-      <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>Motivated by a recent experimental work arXiv:2608.20327, we theoretically investigate the nature of phase transitions in a trapped dipolar quantum gas upon tuning the contact interaction strength and dipole orientation. Using extended Gross-Pitaevskii simulations including therm.</description>
-      <category>Microgravity Fluid Dynamics</category>
     </item>
     <item>
       <title>Do We Age Slower in Space? Relativity and Cellular Clocks</title>
