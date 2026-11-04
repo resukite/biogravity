@@ -1,9 +1,9 @@
 name: BioGravity Cloud SEO Publishing Daemon
 
 on:
-  schedule:
-    # Runs 24/7 twice daily at 06:00 and 18:00 UTC (space telemetry cycle)
-    - cron: '0 6,18 * * *'
+  # Automated schedule temporarily paused for AdSense review stability
+  # schedule:
+  #   - cron: '0 6,18 * * *'
   workflow_dispatch:
     inputs:
       force:

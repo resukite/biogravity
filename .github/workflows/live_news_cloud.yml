@@ -1,9 +1,9 @@
 name: BioGravity Autonomous 24/7 Live Science Wire
 
 on:
-  schedule:
-    # Runs every 3 hours around the clock (24/7 autonomous breaking science reporting)
-    - cron: '0 */3 * * *'
+  # Automated schedule temporarily paused for AdSense review stability
+  # schedule:
+  #   - cron: '0 */3 * * *'
   workflow_dispatch:
     inputs:
       count:
