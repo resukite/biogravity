@@ -87,7 +87,40 @@
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/"
     },
-    "approvedAt": "2026-11-03T06:14:37.759Z"
+    "approvedAt": "2026-11-03T06:14:37.759Z",
+    "relatedArticles": [
+      {
+        "id": "terahertz-resonance-and-coherent-dipole-oscillations-in-neuronal-microtubule-lat",
+        "title": "Terahertz Resonance and Coherent Dipole Oscillations in Neuronal Microtubule Lattices: Orbital Evidence for Non-Classical Molecular Dynamics",
+        "url": "/articles/terahertz-resonance-and-coherent-dipole-oscillations-in-neuronal-microtubule-lat"
+      },
+      {
+        "id": "macroscopic-quantum-coherence-in-nuclear-lncrna-liquid-liquid-phase-transition-c",
+        "title": "Macroscopic Quantum Coherence in Nuclear lncRNA Liquid-Liquid Phase Transition Condensates: Orbital Evidence for Non-Classical Molecular Dynamics",
+        "url": "/articles/macroscopic-quantum-coherence-in-nuclear-lncrna-liquid-liquid-phase-transition-c"
+      },
+      {
+        "id": "radical-pair-spin-coherence-human-cryptochrome-4",
+        "title": "Radical Pair Spin Coherence and Magnetoreception in Human Cryptochrome 4 Photoreceptors: Orbital Evidence for Quantum Biology in Spaceflight",
+        "url": "/articles/radical-pair-spin-coherence-human-cryptochrome-4"
+      },
+      {
+        "id": "synthetic-poly-adp-metallo-peptides-telomeric-radioprotection",
+        "title": "Synthetic Poly-ADP Metallo-Peptides for Telomeric Radioprotection in Deep-Space Environments: Molecular Architecture and Radiolytic Shielding",
+        "url": "/articles/synthetic-poly-adp-metallo-peptides-telomeric-radioprotection"
+      }
+    ],
+    "seoTitle": "Epigenomic Methylation Remodeling and Virulence Attenuation of Pathogens in Low Earth Orbit: Orbital Evidence for Non-Classical Molecular Dynamics | BioGravity Research",
+    "faqs": [
+      {
+        "question": "What are the primary findings regarding Epigenomic Methylation Remodeling and Virulence Attenuation of Pathogens in Low Earth Orbit: Orbital Evidence for Non-Classical Molecular Dynamics?",
+        "answer": "The study demonstrates critical mechanisms observed in microgravity and quantum biophysical environments, providing empirical telemetry on biological responses."
+      },
+      {
+        "question": "How does orbital microgravity alter these biological mechanisms?",
+        "answer": "By removing buoyancy-driven convection and hydrostatic pressure gradients, orbital conditions isolate pure diffusion and surface-tension effects."
+      }
+    ]
   },
   {
     "id": "terahertz-resonance-and-coherent-dipole-oscillations-in-neuronal-microtubule-lat",

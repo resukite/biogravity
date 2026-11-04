@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-11-03T06:15:29.364Z",
-  "totalPages": 117,
+  "timestamp": "2026-11-04T06:05:25.027Z",
+  "totalPages": 76,
   "averageScore": 100,
   "results": [
     {
@@ -153,10 +153,10 @@
       "warnings": []
     },
     {
-      "file": "news/50-000-year-old-dental-tartar-proves-neanderthals-used-natural.html",
+      "file": "news/automatic-generation-of-novel-highly-functional-new-evidence-in.html",
       "score": 100,
-      "title": "50,000-Year-Old Dental Tartar Proves | BioGravity News",
-      "canonical": "https://biogravity.space/news/50-000-year-old-dental-tartar-proves-neanderthals-used-natural",
+      "title": "Automatic Generation of Novel | BioGravity News",
+      "canonical": "https://biogravity.space/news/automatic-generation-of-novel-highly-functional-new-evidence-in",
       "schemaTypes": [
         "NewsArticle",
         "BreadcrumbList"
@@ -165,82 +165,10 @@
       "warnings": []
     },
     {
-      "file": "news/algebraic-strong-to-weak-symmetry-breaking-and-partial-new.html",
+      "file": "news/compressed-oracle-duality-a-simple-framework-for-new-evidence-in.html",
       "score": 100,
-      "title": "Strong-to-Weak Symmetry Breaking in Quantum | BioGravity News",
-      "canonical": "https://biogravity.space/news/algebraic-strong-to-weak-symmetry-breaking-and-partial-new",
-      "schemaTypes": [
-        "NewsArticle",
-        "BreadcrumbList"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
-      "file": "news/algebraic-theory-of-abelian-fractons-and-beyond-new-evidence-in.html",
-      "score": 100,
-      "title": "Algebraic Theory of Abelian Fractons in | BioGravity News",
-      "canonical": "https://biogravity.space/news/algebraic-theory-of-abelian-fractons-and-beyond-new-evidence-in",
-      "schemaTypes": [
-        "NewsArticle",
-        "BreadcrumbList"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
-      "file": "news/alien-life-at-14-000-feet-below-the-ocean-deep-sea-expedition.html",
-      "score": 100,
-      "title": "Alien Life at 14,000 Feet Below the | BioGravity News",
-      "canonical": "https://biogravity.space/news/alien-life-at-14-000-feet-below-the-ocean-deep-sea-expedition",
-      "schemaTypes": [
-        "NewsArticle",
-        "BreadcrumbList"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
-      "file": "news/ancient-greenland-ice-discloses-shocking-climate-flip-that.html",
-      "score": 100,
-      "title": "Ancient Greenland Ice Discloses | BioGravity News",
-      "canonical": "https://biogravity.space/news/ancient-greenland-ice-discloses-shocking-climate-flip-that",
-      "schemaTypes": [
-        "NewsArticle",
-        "BreadcrumbList"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
-      "file": "news/beyond-lithium-non-flammable-sodium-solid-state-battery-achieves.html",
-      "score": 100,
-      "title": "Beyond Lithium: Non-Flammable Sodium | BioGravity News",
-      "canonical": "https://biogravity.space/news/beyond-lithium-non-flammable-sodium-solid-state-battery-achieves",
-      "schemaTypes": [
-        "NewsArticle",
-        "BreadcrumbList"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
-      "file": "news/classical-communication-over-quantum-channels-does-new-evidence.html",
-      "score": 100,
-      "title": "Classical Communication Limits Over Quantum | BioGravity News",
-      "canonical": "https://biogravity.space/news/classical-communication-over-quantum-channels-does-new-evidence",
-      "schemaTypes": [
-        "NewsArticle",
-        "BreadcrumbList"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
-      "file": "news/comparison-of-entangling-strategies-for-unitary-synthesis-new.html",
-      "score": 100,
-      "title": "Entangling Strategies for Unitary Quantum | BioGravity News",
-      "canonical": "https://biogravity.space/news/comparison-of-entangling-strategies-for-unitary-synthesis-new",
+      "title": "Compressed Oracle Duality: A simple | BioGravity News",
+      "canonical": "https://biogravity.space/news/compressed-oracle-duality-a-simple-framework-for-new-evidence-in",
       "schemaTypes": [
         "NewsArticle",
         "BreadcrumbList"
@@ -273,22 +201,10 @@
       "warnings": []
     },
     {
-      "file": "news/cosmic-monster-on-the-loose-runaway-supermassive-black-hole.html",
+      "file": "news/discovering-models-for-experimental-quantum-systems-new-evidence.html",
       "score": 100,
-      "title": "Cosmic Monster on the Loose: Runaway | BioGravity News",
-      "canonical": "https://biogravity.space/news/cosmic-monster-on-the-loose-runaway-supermassive-black-hole",
-      "schemaTypes": [
-        "NewsArticle",
-        "BreadcrumbList"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
-      "file": "news/exceptional-points-as-witnesses-of-non-gaussian-noise-new.html",
-      "score": 100,
-      "title": "Exceptional Points as Witnesses of | BioGravity News",
-      "canonical": "https://biogravity.space/news/exceptional-points-as-witnesses-of-non-gaussian-noise-new",
+      "title": "Discovering Models for Experimental | BioGravity News",
+      "canonical": "https://biogravity.space/news/discovering-models-for-experimental-quantum-systems-new-evidence",
       "schemaTypes": [
         "NewsArticle",
         "BreadcrumbList"
@@ -309,10 +225,10 @@
       "warnings": []
     },
     {
-      "file": "news/fault-tolerant-quantum-leap-physicists-successfully-shield.html",
+      "file": "news/giant-planet-mass-function-across-stellar-mass-and-new-evidence.html",
       "score": 100,
-      "title": "Fault-Tolerant Quantum Leap: Physicists | BioGravity News",
-      "canonical": "https://biogravity.space/news/fault-tolerant-quantum-leap-physicists-successfully-shield",
+      "title": "Giant Planet Mass Function Across | BioGravity News",
+      "canonical": "https://biogravity.space/news/giant-planet-mass-function-across-stellar-mass-and-new-evidence",
       "schemaTypes": [
         "NewsArticle",
         "BreadcrumbList"
@@ -321,10 +237,10 @@
       "warnings": []
     },
     {
-      "file": "news/grow-compress-and-perturb-a-hybrid-new-evidence-in-quantum.html",
+      "file": "news/large-eddy-simulation-study-of-turbine-pitch-motion-new-evidence.html",
       "score": 100,
-      "title": "Grow, Compress, and Perturb: Hybrid Quantum | BioGravity News",
-      "canonical": "https://biogravity.space/news/grow-compress-and-perturb-a-hybrid-new-evidence-in-quantum",
+      "title": "Large Eddy Simulation Study of | BioGravity News",
+      "canonical": "https://biogravity.space/news/large-eddy-simulation-study-of-turbine-pitch-motion-new-evidence",
       "schemaTypes": [
         "NewsArticle",
         "BreadcrumbList"
@@ -333,10 +249,10 @@
       "warnings": []
     },
     {
-      "file": "news/hidden-beneath-two-miles-of-antarctic-ice-scientists-discover.html",
+      "file": "news/lee-yang-theorems-for-q-deformed-oscillators-and-new-evidence-in.html",
       "score": 100,
-      "title": "Hidden Beneath Two Miles of Antarctic | BioGravity News",
-      "canonical": "https://biogravity.space/news/hidden-beneath-two-miles-of-antarctic-ice-scientists-discover",
+      "title": "Lee-Yang theorems for $q$-deformed | BioGravity News",
+      "canonical": "https://biogravity.space/news/lee-yang-theorems-for-q-deformed-oscillators-and-new-evidence-in",
       "schemaTypes": [
         "NewsArticle",
         "BreadcrumbList"
@@ -345,58 +261,10 @@
       "warnings": []
     },
     {
-      "file": "news/hyaluronic-acid-over-expression-drives-tissue-new-evidence-in.html",
+      "file": "news/longitudinal-electric-corner-modes-in-continuum-new-evidence-in.html",
       "score": 100,
-      "title": "Hyaluronic Acid Overexpression in Tissue | BioGravity News",
-      "canonical": "https://biogravity.space/news/hyaluronic-acid-over-expression-drives-tissue-new-evidence-in",
-      "schemaTypes": [
-        "NewsArticle",
-        "BreadcrumbList"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
-      "file": "news/lattice-moments-and-quantum-designs-new-evidence-in-quantum.html",
-      "score": 100,
-      "title": "Lattice moments and quantum designs: New | BioGravity News",
-      "canonical": "https://biogravity.space/news/lattice-moments-and-quantum-designs-new-evidence-in-quantum",
-      "schemaTypes": [
-        "NewsArticle",
-        "BreadcrumbList"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
-      "file": "news/left-handed-transmission-lines-for-the-dynamical-new-evidence-in.html",
-      "score": 100,
-      "title": "Left-Handed Transmission Lines for Dynamical | BioGravity News",
-      "canonical": "https://biogravity.space/news/left-handed-transmission-lines-for-the-dynamical-new-evidence-in",
-      "schemaTypes": [
-        "NewsArticle",
-        "BreadcrumbList"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
-      "file": "news/living-solar-panels-scientists-turn-plant-chloroplasts-into.html",
-      "score": 100,
-      "title": "Living Solar Panels: Scientists Turn | BioGravity News",
-      "canonical": "https://biogravity.space/news/living-solar-panels-scientists-turn-plant-chloroplasts-into",
-      "schemaTypes": [
-        "NewsArticle",
-        "BreadcrumbList"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
-      "file": "news/locality-in-dissipative-ground-state-preparation-new-evidence-in.html",
-      "score": 100,
-      "title": "Locality in Dissipative Ground-State | BioGravity News",
-      "canonical": "https://biogravity.space/news/locality-in-dissipative-ground-state-preparation-new-evidence-in",
+      "title": "Longitudinal electric corner modes in | BioGravity News",
+      "canonical": "https://biogravity.space/news/longitudinal-electric-corner-modes-in-continuum-new-evidence-in",
       "schemaTypes": [
         "NewsArticle",
         "BreadcrumbList"
@@ -417,10 +285,10 @@
       "warnings": []
     },
     {
-      "file": "news/metal-rain-and-vaporized-iron-webb-telescope-reveals-extreme.html",
+      "file": "news/mutual-information-to-all-orders-from-modular-flow-a-new.html",
       "score": 100,
-      "title": "Metal Rain and Vaporized Iron: Webb | BioGravity News",
-      "canonical": "https://biogravity.space/news/metal-rain-and-vaporized-iron-webb-telescope-reveals-extreme",
+      "title": "Mutual information to all orders from | BioGravity News",
+      "canonical": "https://biogravity.space/news/mutual-information-to-all-orders-from-modular-flow-a-new",
       "schemaTypes": [
         "NewsArticle",
         "BreadcrumbList"
@@ -429,10 +297,10 @@
       "warnings": []
     },
     {
-      "file": "news/optimal-diamond-distance-estimation-for-unitary-channels-new.html",
+      "file": "news/neptunian-ridge-through-the-lens-of-tess-new-evidence-in-space.html",
       "score": 100,
-      "title": "Optimal Diamond Distance Estimation for | BioGravity News",
-      "canonical": "https://biogravity.space/news/optimal-diamond-distance-estimation-for-unitary-channels-new",
+      "title": "Neptunian ridge through the lens of | BioGravity News",
+      "canonical": "https://biogravity.space/news/neptunian-ridge-through-the-lens-of-tess-new-evidence-in-space",
       "schemaTypes": [
         "NewsArticle",
         "BreadcrumbList"
@@ -441,10 +309,22 @@
       "warnings": []
     },
     {
-      "file": "news/probing-fluctuations-in-photon-emission-statistics-of-new.html",
+      "file": "news/persistence-of-unitary-almost-mathieu-operator-gaps-new-evidence.html",
       "score": 100,
-      "title": "Probing Fluctuations in Single-Photon | BioGravity News",
-      "canonical": "https://biogravity.space/news/probing-fluctuations-in-photon-emission-statistics-of-new",
+      "title": "Persistence of Unitary Almost Mathieu | BioGravity News",
+      "canonical": "https://biogravity.space/news/persistence-of-unitary-almost-mathieu-operator-gaps-new-evidence",
+      "schemaTypes": [
+        "NewsArticle",
+        "BreadcrumbList"
+      ],
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "file": "news/quantum-channel-tomography-optimal-bounds-in-the-new-evidence-in.html",
+      "score": 100,
+      "title": "Quantum channel tomography: optimal | BioGravity News",
+      "canonical": "https://biogravity.space/news/quantum-channel-tomography-optimal-bounds-in-the-new-evidence-in",
       "schemaTypes": [
         "NewsArticle",
         "BreadcrumbList"
@@ -465,10 +345,10 @@
       "warnings": []
     },
     {
-      "file": "news/quasi-phases-of-quantum-matter-new-evidence-in-quantum-physics.html",
+      "file": "news/secret-shared-teleportation-of-a-two-qudit-gate-with-a-new.html",
       "score": 100,
-      "title": "Quasi-Phases of Quantum Matter: New Evidence | BioGravity News",
-      "canonical": "https://biogravity.space/news/quasi-phases-of-quantum-matter-new-evidence-in-quantum-physics",
+      "title": "Secret-shared teleportation of a | BioGravity News",
+      "canonical": "https://biogravity.space/news/secret-shared-teleportation-of-a-two-qudit-gate-with-a-new",
       "schemaTypes": [
         "NewsArticle",
         "BreadcrumbList"
@@ -477,10 +357,10 @@
       "warnings": []
     },
     {
-      "file": "news/reconstructing-hidden-observables-via-quantum-snapshot-new.html",
+      "file": "news/time-optimal-quantum-dynamics-under-fixed-norm-generators-new.html",
       "score": 100,
-      "title": "Reconstructing hidden observables via | BioGravity News",
-      "canonical": "https://biogravity.space/news/reconstructing-hidden-observables-via-quantum-snapshot-new",
+      "title": "Time-optimal quantum dynamics under | BioGravity News",
+      "canonical": "https://biogravity.space/news/time-optimal-quantum-dynamics-under-fixed-norm-generators-new",
       "schemaTypes": [
         "NewsArticle",
         "BreadcrumbList"
@@ -489,94 +369,10 @@
       "warnings": []
     },
     {
-      "file": "news/renormalization-for-robust-memory-without-synchronization-new.html",
+      "file": "news/weighted-hypergraph-states-as-a-resource-for-quantum-new.html",
       "score": 100,
-      "title": "Renormalization for Robust Memory | BioGravity News",
-      "canonical": "https://biogravity.space/news/renormalization-for-robust-memory-without-synchronization-new",
-      "schemaTypes": [
-        "NewsArticle",
-        "BreadcrumbList"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
-      "file": "news/the-forever-chemical-breakthrough-mutant-soil-fungi-wipe-out.html",
-      "score": 100,
-      "title": "Forever Chemical Breakthrough: Fungi | BioGravity News",
-      "canonical": "https://biogravity.space/news/the-forever-chemical-breakthrough-mutant-soil-fungi-wipe-out",
-      "schemaTypes": [
-        "NewsArticle",
-        "BreadcrumbList"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
-      "file": "news/the-gauge-invariant-orbital-angular-momentum-of-vector-new.html",
-      "score": 100,
-      "title": "Gauge-Invariant Orbital Angular Momentum of | BioGravity News",
-      "canonical": "https://biogravity.space/news/the-gauge-invariant-orbital-angular-momentum-of-vector-new",
-      "schemaTypes": [
-        "NewsArticle",
-        "BreadcrumbList"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
-      "file": "news/the-quantum-chromatic-gap-ii-new-evidence-in-quantum-physics.html",
-      "score": 100,
-      "title": "The Quantum Chromatic Gap II: New Evidence | BioGravity News",
-      "canonical": "https://biogravity.space/news/the-quantum-chromatic-gap-ii-new-evidence-in-quantum-physics",
-      "schemaTypes": [
-        "NewsArticle",
-        "BreadcrumbList"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
-      "file": "news/the-trillion-dollar-moon-economy-why-mining-lunar-ice-will-be.html",
-      "score": 100,
-      "title": "The Trillion-Dollar Moon Economy: Why | BioGravity News",
-      "canonical": "https://biogravity.space/news/the-trillion-dollar-moon-economy-why-mining-lunar-ice-will-be",
-      "schemaTypes": [
-        "NewsArticle",
-        "BreadcrumbList"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
-      "file": "news/using-domain-walls-to-benchmark-fast-quantum-anneals-new.html",
-      "score": 100,
-      "title": "Benchmarking Fast Quantum Anneals with | BioGravity News",
-      "canonical": "https://biogravity.space/news/using-domain-walls-to-benchmark-fast-quantum-anneals-new",
-      "schemaTypes": [
-        "NewsArticle",
-        "BreadcrumbList"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
-      "file": "news/virus-proof-biology-scientists-build-synthetic-bacterial-genome.html",
-      "score": 100,
-      "title": "Virus-Proof Biology: Scientists Build | BioGravity News",
-      "canonical": "https://biogravity.space/news/virus-proof-biology-scientists-build-synthetic-bacterial-genome",
-      "schemaTypes": [
-        "NewsArticle",
-        "BreadcrumbList"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
-      "file": "news/what-can-be-computed-with-indefinite-causal-structure-new.html",
-      "score": 100,
-      "title": "Computing with Indefinite Causal Structure | BioGravity News",
-      "canonical": "https://biogravity.space/news/what-can-be-computed-with-indefinite-causal-structure-new",
+      "title": "Weighted hypergraph states as a | BioGravity News",
+      "canonical": "https://biogravity.space/news/weighted-hypergraph-states-as-a-resource-for-quantum-new",
       "schemaTypes": [
         "NewsArticle",
         "BreadcrumbList"
@@ -702,19 +498,6 @@
       "warnings": []
     },
     {
-      "file": "articles/chernobyl-elephants-foot-deadliest-radioactive-mass.html",
-      "score": 100,
-      "title": "Chernobyl Elephant's Foot: Inside Earth's Deadliest Object",
-      "canonical": "https://biogravity.space/articles/chernobyl-elephants-foot-deadliest-radioactive-mass",
-      "schemaTypes": [
-        "ScholarlyArticle",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
       "file": "articles/debye-shielding-and-plasma-sheath-dynamics-in-spacecraft-biosensing.html",
       "score": 100,
       "title": "Spacecraft Biosensors: Overcoming Plasma Sheaths in Orbit",
@@ -741,36 +524,10 @@
       "warnings": []
     },
     {
-      "file": "articles/double-slit-experiment-quantum-mechanics-explained.html",
-      "score": 100,
-      "title": "The Double-Slit Experiment Explained Simply: Quantum Reality",
-      "canonical": "https://biogravity.space/articles/double-slit-experiment-quantum-mechanics-explained",
-      "schemaTypes": [
-        "ScholarlyArticle",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
       "file": "articles/epigenetic-t-cell-activation-remodeling-extended-spaceflight.html",
       "score": 100,
       "title": "Astronaut Immunity: How Long Spaceflight Alters T-Cells",
       "canonical": "https://biogravity.space/articles/epigenetic-t-cell-activation-remodeling-extended-spaceflight",
-      "schemaTypes": [
-        "ScholarlyArticle",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
-      "file": "articles/estimation-non-linear-compression-potential.html",
-      "score": 100,
-      "title": "AI in Turbulent Fluid Flows: Estimating Compression Potential",
-      "canonical": "https://biogravity.space/articles/estimation-non-linear-compression-potential",
       "schemaTypes": [
         "ScholarlyArticle",
         "BreadcrumbList",
@@ -843,49 +600,10 @@
       "warnings": []
     },
     {
-      "file": "articles/ideal-interaction-dynamics-of-defects-and-background-fields-in.html",
-      "score": 100,
-      "title": "Topological Defects and Background Fields in Quantum Systems",
-      "canonical": "https://biogravity.space/articles/ideal-interaction-dynamics-of-defects-and-background-fields-in",
-      "schemaTypes": [
-        "ScholarlyArticle",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
-      "file": "articles/immortal-jellyfish-turritopsis-dohrnii-biological-immortality.html",
-      "score": 100,
-      "title": "The Immortal Jellyfish: How Turritopsis Cheats Natural Aging",
-      "canonical": "https://biogravity.space/articles/immortal-jellyfish-turritopsis-dohrnii-biological-immortality",
-      "schemaTypes": [
-        "ScholarlyArticle",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
       "file": "articles/interaction-dynamics-defects-background-fields.html",
       "score": 100,
       "title": "Topological Defects and Background Fields in Quantum Systems",
       "canonical": "https://biogravity.space/articles/ideal-interaction-dynamics-of-defects-and-background-fields-in",
-      "schemaTypes": [
-        "ScholarlyArticle",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
-      "file": "articles/kola-superdeep-borehole-deepest-hole-on-earth.html",
-      "score": 100,
-      "title": "Kola Superdeep Borehole: What Did Scientists Find 12 km Down?",
-      "canonical": "https://biogravity.space/articles/kola-superdeep-borehole-deepest-hole-on-earth",
       "schemaTypes": [
         "ScholarlyArticle",
         "BreadcrumbList",
@@ -921,51 +639,12 @@
       "warnings": []
     },
     {
-      "file": "articles/mariana-trench-challenger-deep-creatures-pressure.html",
-      "score": 100,
-      "title": "What Lives at the Bottom of Mariana Trench at 36,000 Feet?",
-      "canonical": "https://biogravity.space/articles/mariana-trench-challenger-deep-creatures-pressure",
-      "schemaTypes": [
-        "ScholarlyArticle",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
-      "file": "articles/maximal-orbital-entanglement-from-non-interacting-fermions.html",
-      "score": 100,
-      "title": "Maximal Orbital Entanglement from Non-Interacting Fermions",
-      "canonical": "https://biogravity.space/articles/maximal-orbital-entanglement-from-non-interacting-fermions",
-      "schemaTypes": [
-        "ScholarlyArticle",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
       "file": "articles/mediated-interactions-between-fermi-polarons-in-the-strongly.html",
       "score": 100,
       "title": "Redirect Alias",
       "canonical": "Redirecting",
       "schemaTypes": [
         "Redirect"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
-      "file": "articles/michelson-morley-experiment-disproved-the-aether.html",
-      "score": 100,
-      "title": "How the Michelson-Morley Experiment Disproved the Aether",
-      "canonical": "https://biogravity.space/articles/michelson-morley-experiment-disproved-the-aether",
-      "schemaTypes": [
-        "ScholarlyArticle",
-        "BreadcrumbList",
-        "FAQPage"
       ],
       "issues": [],
       "warnings": []
@@ -988,32 +667,6 @@
       "score": 100,
       "title": "How Cosmic Radiation Damages Mitochondria and Cellular Energy",
       "canonical": "https://biogravity.space/articles/mitochondrial-electron-transport-efficiency-spaceflight-radiation",
-      "schemaTypes": [
-        "ScholarlyArticle",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
-      "file": "articles/mixed-state-deep-thermalization-under-generic-quantum-errors.html",
-      "score": 100,
-      "title": "Deep Thermalization in Mixed Quantum States Under Decoherence",
-      "canonical": "https://biogravity.space/articles/mixed-state-deep-thermalization-under-generic-quantum-errors",
-      "schemaTypes": [
-        "ScholarlyArticle",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
-      "file": "articles/mpemba-effect-why-hot-water-freezes-faster-than-cold.html",
-      "score": 100,
-      "title": "The Mpemba Effect: Why Hot Water Can Freeze Faster Than Cold",
-      "canonical": "https://biogravity.space/articles/mpemba-effect-why-hot-water-freezes-faster-than-cold",
       "schemaTypes": [
         "ScholarlyArticle",
         "BreadcrumbList",
@@ -1047,36 +700,10 @@
       "warnings": []
     },
     {
-      "file": "articles/phonon-assisted-free-electron-recoil-control-and-mechanical-sensing.html",
-      "score": 100,
-      "title": "Controlling Free-Electron Recoil: Quantum Nanomechanics",
-      "canonical": "https://biogravity.space/articles/phonon-assisted-free-electron-recoil-control-and-mechanical-sensing",
-      "schemaTypes": [
-        "ScholarlyArticle",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
       "file": "articles/photosystem-ii-charge-separation-far-red-light-orbital-bioreactors.html",
       "score": 100,
       "title": "Farming on Mars: Far-Red Photosynthesis in Space Bioreactors",
       "canonical": "https://biogravity.space/articles/photosystem-ii-charge-separation-far-red-light-orbital-bioreactors",
-      "schemaTypes": [
-        "ScholarlyArticle",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
-      "file": "articles/quantum-parameter-estimation-no-go-result.html",
-      "score": 100,
-      "title": "Can Quantum Physics Measure Reality? The No-Go Proof Explained",
-      "canonical": "https://biogravity.space/articles/quantum-parameter-estimation-no-go-result",
       "schemaTypes": [
         "ScholarlyArticle",
         "BreadcrumbList",
@@ -1138,32 +765,6 @@
       "warnings": []
     },
     {
-      "file": "articles/schrodingers-cat-quantum-physics-paradox-explained.html",
-      "score": 100,
-      "title": "Schrödinger's Cat Explained Simply: The Quantum Paradox",
-      "canonical": "https://biogravity.space/articles/schrodingers-cat-quantum-physics-paradox-explained",
-      "schemaTypes": [
-        "ScholarlyArticle",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
-      "file": "articles/screening-strongly-correlated-materials-in-solid-oxide-cells.html",
-      "score": 100,
-      "title": "Screening Fuel Cell Catalysts via Quantum Simulation",
-      "canonical": "https://biogravity.space/articles/screening-strongly-correlated-materials-in-solid-oxide-cells",
-      "schemaTypes": [
-        "ScholarlyArticle",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
       "file": "articles/self-assembling-chiral-nanotubes-zero-convection-solute-gradients.html",
       "score": 100,
       "title": "Flawless Space Nanotech: Chiral Nanotube Self-Assembly",
@@ -1181,19 +782,6 @@
       "score": 100,
       "title": "Blood Vessels in Space: Single-Cell RNA Sequencing in Free-Fall",
       "canonical": "https://biogravity.space/articles/single-cell-rna-seq-endothelial-cells-hyperstatic-weightlessness",
-      "schemaTypes": [
-        "ScholarlyArticle",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
-      "file": "articles/size-independent-logarithmic-sobolev-inequalities-for-quantum.html",
-      "score": 100,
-      "title": "Logarithmic Sobolev Inequalities in Dissipative Quantum Systems",
-      "canonical": "https://biogravity.space/articles/size-independent-logarithmic-sobolev-inequalities-for-quantum",
       "schemaTypes": [
         "ScholarlyArticle",
         "BreadcrumbList",
@@ -1244,19 +832,6 @@
       "score": 100,
       "title": "Growing Perfect Protein Crystals in Zero Gravity for Drug Design",
       "canonical": "https://biogravity.space/articles/macromolecular-crystallography-membrane-transporters-orbit",
-      "schemaTypes": [
-        "ScholarlyArticle",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
-      "file": "articles/supersolid-phase-transitions-trapped-quantum-gases.html",
-      "score": 100,
-      "title": "Inside Supersolids: Trapping Matter That Is Liquid &amp; Solid",
-      "canonical": "https://biogravity.space/articles/supersolid-phase-transitions-trapped-quantum-gases",
       "schemaTypes": [
         "ScholarlyArticle",
         "BreadcrumbList",
@@ -1318,36 +893,10 @@
       "warnings": []
     },
     {
-      "file": "articles/the-demon-core-manhattan-project-criticality-accidents.html",
-      "score": 100,
-      "title": "The Demon Core: Deadly Physics of Manhattan Project Accidents",
-      "canonical": "https://biogravity.space/articles/the-demon-core-manhattan-project-criticality-accidents",
-      "schemaTypes": [
-        "ScholarlyArticle",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
       "file": "articles/what-does-quantum-parameter-estimation-estimate-a-no-go-result-for-tru.html",
       "score": 100,
       "title": "Can Quantum Physics Measure Reality? The No-Go Proof Explained",
       "canonical": "https://biogravity.space/articles/quantum-parameter-estimation-no-go-result",
-      "schemaTypes": [
-        "ScholarlyArticle",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
-      "file": "articles/what-happens-if-you-fall-into-a-black-hole.html",
-      "score": 100,
-      "title": "What Happens If You Fall into a Black Hole? Spaghettification",
-      "canonical": "https://biogravity.space/articles/what-happens-if-you-fall-into-a-black-hole",
       "schemaTypes": [
         "ScholarlyArticle",
         "BreadcrumbList",
@@ -1370,75 +919,10 @@
       "warnings": []
     },
     {
-      "file": "articles/what-statement-about-risks-in-social-and-behavioral-sciences-research-is-most-accurate.html",
-      "score": 100,
-      "title": "What Statement About Social Science Research Risks Is Accurate?",
-      "canonical": "https://biogravity.space/articles/what-statement-about-risks-in-social-and-behavioral-sciences-research-is-most-accurate",
-      "schemaTypes": [
-        "ScholarlyArticle",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
-      "file": "articles/what-would-happen-if-earth-stopped-spinning.html",
-      "score": 100,
-      "title": "What Would Happen If Earth Stopped Spinning for 5 Seconds?",
-      "canonical": "https://biogravity.space/articles/what-would-happen-if-earth-stopped-spinning",
-      "schemaTypes": [
-        "ScholarlyArticle",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
       "file": "articles/why-do-astronauts-lose-bone-density-in-space.html",
       "score": 100,
       "title": "Why Astronauts Lose 1-2% Bone Density Every Month in Space",
       "canonical": "https://biogravity.space/articles/why-do-astronauts-lose-bone-density-in-space",
-      "schemaTypes": [
-        "ScholarlyArticle",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
-      "file": "articles/why-do-flamingos-stand-on-one-leg.html",
-      "score": 100,
-      "title": "Why Do Flamingos Stand on One Leg? Biomechanics Explained",
-      "canonical": "https://biogravity.space/articles/why-do-flamingos-stand-on-one-leg",
-      "schemaTypes": [
-        "ScholarlyArticle",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
-      "file": "articles/why-do-octopuses-have-three-hearts-and-blue-blood.html",
-      "score": 100,
-      "title": "Why Do Octopuses Have Three Hearts and Blue Blood?",
-      "canonical": "https://biogravity.space/articles/why-do-octopuses-have-three-hearts-and-blue-blood",
-      "schemaTypes": [
-        "ScholarlyArticle",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "issues": [],
-      "warnings": []
-    },
-    {
-      "file": "articles/why-is-gold-yellow-relativistic-quantum-chemistry.html",
-      "score": 100,
-      "title": "Why Is Gold Yellow? The Einstein Relativity Physics Explained",
-      "canonical": "https://biogravity.space/articles/why-is-gold-yellow-relativistic-quantum-chemistry",
       "schemaTypes": [
         "ScholarlyArticle",
         "BreadcrumbList",
