@@ -25,7 +25,8 @@
     "submit-index": "node scripts/submit-indexing.js",
     "check-index": "node scripts/check-indexing.js",
     "cloud-index": "node scripts/daily_cloud_indexing.js",
-    "cloud-seo": "node scripts/daily_seo_optimizer.js"
+    "cloud-seo": "node scripts/daily_seo_optimizer.js",
+    "top5-boost": "node scripts/top5_ranking_booster.js"
   },
   "keywords": [
     "biotechnology",

@@ -97,6 +97,12 @@
   <script defer src="/js/cookie-consent.min.js?v=2.2"></script>
   <link rel="stylesheet" href="/css/styles.min.css?v=2.2">
   <script defer src="/js/sidebar-menu.min.js?v=2.2"></script>
+  <script>
+    if (window.location.pathname.endsWith('.html')) {
+      var clean = window.location.pathname.replace(/\.html$/, '');
+      window.history.replaceState(null, '', clean + window.location.search + window.location.hash);
+    }
+  </script>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col font-sans">
 

@@ -36,12 +36,13 @@ jobs:
         run: |
           npm ci || npm install
 
-      - name: ⚡ Execute Autonomous SEO Ranking Optimizer
+      - name: ⚡ Execute Autonomous SEO Ranking Optimizer & Top 5 Booster
         env:
           GSC_KEY_JSON: ${{ secrets.GSC_KEY_JSON }}
           SITE_URL: 'https://biogravity.space'
         run: |
-          echo "Executing daily cloud SEO ranking optimization cycle..."
+          echo "Executing daily cloud SEO ranking optimization and Top 5 booster cycle..."
+          node scripts/top5_ranking_booster.js
           node scripts/daily_seo_optimizer.js
 
       - name: 🚀 Commit and Push Ranking Enhancements, Rebuilt Pages & Reports
@@ -49,8 +50,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Stage modified databases, HTML pages, sitemaps, RSS, and the ranking report
-          git add data/ articles/ sitemap.xml index.html research/ research.html feed.xml rss.xml SEO-RANKING-REPORT.md
+          # Stage modified databases, HTML pages, sitemaps, RSS, and reports
+          git add data/ articles/ sitemap.xml index.html research/ research.html feed.xml rss.xml SEO-RANKING-REPORT.md TOP-5-BREAKTHROUGH-REPORT.md package.json scripts/
 
           if git diff --staged --quiet; then
             echo "✅ No new ranking changes detected. Repository is already fully optimized."
