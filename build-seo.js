@@ -859,7 +859,12 @@ articles.forEach((art, idx) => {
         "keywords": tags.join(', '),
         "educationalLevel": "Advanced Scientific Research",
         "isAccessibleForFree": true,
-        "license": "https://creativecommons.org/licenses/by/4.0/"
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [".featured-snippet-box", "h1", ".executive-summary", ".quick-answer"]
+        },
+        "inLanguage": "en-US"
       },
       {
         "@type": "BreadcrumbList",
@@ -2360,6 +2365,24 @@ Disallow: /*?category=*
 # Artificial Intelligence & AI Search Engine Crawlers
 # =============================================================================
 User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Google-CloudVertexBot
+Allow: /
+
+User-agent: Google-Agent
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Meta-ExternalAgent
 Allow: /
 
 User-agent: ChatGPT-User

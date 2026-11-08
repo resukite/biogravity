@@ -85,7 +85,16 @@
         "value": "10.1038/s41586-2026-44922"
       },
       "isAccessibleForFree": true,
-      "license": "https://creativecommons.org/licenses/by/4.0/"
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "about": {
+        "@type": "Thing",
+        "name": "spaceflight microbial epigenomics virulence",
+        "sameAs": "https://en.wikipedia.org/wiki/Microgravity"
+      },
+      "citation": [
+        "https://doi.org/10.1038/s41586-2026-44922",
+        "https://biogravity.space/research"
+      ]
     },
     "approvedAt": "2026-11-03T06:14:37.759Z",
     "relatedArticles": [
@@ -208,7 +217,16 @@
         "value": "10.1038/s41586-2026-79685"
       },
       "isAccessibleForFree": true,
-      "license": "https://creativecommons.org/licenses/by/4.0/"
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "about": {
+        "@type": "Thing",
+        "name": "microtubules quantum resonance terahertz neuronal cytoskeleton",
+        "sameAs": "https://en.wikipedia.org/wiki/Microgravity"
+      },
+      "citation": [
+        "https://doi.org/10.1038/s41586-2026-79685",
+        "https://biogravity.space/research"
+      ]
     },
     "approvedAt": "2026-10-31T06:11:32.002Z",
     "seoTitle": "Microtubule Quantum Resonance in Microgravity: New Evidence",
@@ -587,7 +605,16 @@
         "value": "10.1038/s41586-2026-35161"
       },
       "isAccessibleForFree": true,
-      "license": "https://creativecommons.org/licenses/by/4.0/"
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "about": {
+        "@type": "Thing",
+        "name": "lncRNA phase transition kinetics microgravity",
+        "sameAs": "https://en.wikipedia.org/wiki/Microgravity"
+      },
+      "citation": [
+        "https://doi.org/10.1038/s41586-2026-35161",
+        "https://biogravity.space/research"
+      ]
     },
     "approvedAt": "2026-10-30T06:09:48.784Z",
     "seoTitle": "Quantum Coherence in Nuclear lncRNA: Orbital Cell Dynamics",
@@ -1994,7 +2021,17 @@
       },
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "@id": "https://biogravity.space/articles/radical-pair-spin-coherence-human-cryptochrome-4#article"
+      "@id": "https://biogravity.space/articles/radical-pair-spin-coherence-human-cryptochrome-4#article",
+      "about": {
+        "@type": "Thing",
+        "name": "Cryptochrome",
+        "sameAs": "https://en.wikipedia.org/wiki/Cryptochrome",
+        "identifier": "https://www.wikidata.org/wiki/Q424269"
+      },
+      "citation": [
+        "https://doi.org/10.1038/s41586-2026-85731",
+        "https://biogravity.space/research"
+      ]
     },
     "approvedAt": "2026-10-16T13:35:00+00:00",
     "seoTitle": "Cryptochrome 4 in Humans: Quantum Magnetoreception Mechanism Explained",
@@ -2158,7 +2195,16 @@
         "value": "10.1038/s41586-2026-95531"
       },
       "isAccessibleForFree": true,
-      "license": "https://creativecommons.org/licenses/by/4.0/"
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "about": {
+        "@type": "Thing",
+        "name": "telomeric radioprotection deep space cosmic rays",
+        "sameAs": "https://en.wikipedia.org/wiki/Microgravity"
+      },
+      "citation": [
+        "https://doi.org/10.1038/s41586-2026-95531",
+        "https://biogravity.space/research"
+      ]
     },
     "approvedAt": "2026-10-16T13:35:00+00:00",
     "seoTitle": "Deep-Space Radiation Shield: Peptides Protecting DNA",
@@ -2330,7 +2376,16 @@
         "value": "10.1038/s41586-2026-43711"
       },
       "isAccessibleForFree": true,
-      "license": "https://creativecommons.org/licenses/by/4.0/"
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "about": {
+        "@type": "Thing",
+        "name": "acoustic levitation zero gravity cardiac organoid bioprinting",
+        "sameAs": "https://en.wikipedia.org/wiki/Microgravity"
+      },
+      "citation": [
+        "https://doi.org/10.1038/s41586-2026-43711",
+        "https://biogravity.space/research"
+      ]
     },
     "approvedAt": "2026-10-16T13:35:00+00:00",
     "seoTitle": "3D-Printing Beating Hearts: Zero-G Levitation",
