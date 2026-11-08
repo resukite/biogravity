@@ -97,8 +97,6 @@
   <script defer src="/js/cookie-consent.min.js?v=2.2"></script>
   <link rel="stylesheet" href="/css/styles.min.css?v=2.2">
   <script defer src="/js/sidebar-menu.min.js?v=2.2"></script>
-  <script defer src="/js/firebase-config.js"></script>
-  <script defer src="/js/auth-system.js"></script>
   <script>
     if (window.location.pathname.endsWith('.html')) {
       var clean = window.location.pathname.replace(/\.html$/, '');
@@ -116,7 +114,7 @@
         <span class="font-bold tracking-wider uppercase text-red-400 text-xs">LIVE SCIENCE WIRE</span>
         <span class="text-slate-400 hidden md:inline">| Continuous 24/7 Autonomous Coverage • Updated November 8, 2026</span>
       </div>
-      <span class="text-teal-400 text-xs font-mono font-medium">50 Live Dispatches</span>
+      <span class="text-teal-400 text-xs font-mono font-medium">52 Live Dispatches</span>
     </div>
   </div>
 
@@ -146,7 +144,6 @@
           </a>
           <a href="/research" class="hover:text-slate-900 transition">Research</a>
           <a href="/tools" class="hover:text-slate-900 transition">Tools</a>
-          <a href="/newsletter" class="hover:text-slate-900 transition">Newsletter</a>
           <a href="/about" class="hover:text-slate-900 transition">About</a>
           <a href="/contact" class="hover:text-slate-900 transition">Contact</a>
         </nav>
@@ -163,15 +160,7 @@
           <span>Support</span>
         </a>
 
-                <!-- User Sign In / Account Pill -->
-        <div id="header-auth-container" class="flex items-center mr-1">
-          <button id="nav-signin-btn" class="flex items-center gap-1.5 py-1.5 px-3 rounded-full bg-slate-900 hover:bg-slate-800 text-white transition text-xs font-medium shadow-xs cursor-pointer group" aria-label="Sign In">
-            <svg class="w-3.5 h-3.5 text-slate-300 group-hover:text-white transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
-            <span>Sign In</span>
-          </button>
-        </div>
-
-<!-- Bespoke 3-Dot Navigation Menu Button -->
+        <!-- Bespoke 3-Dot Navigation Menu Button -->
         <button 
           id="nav-sidebar-toggle" 
           class="flex items-center gap-2 py-2 px-3.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-200/80 transition cursor-pointer text-xs font-medium shadow-sm group" 
@@ -216,11 +205,61 @@
           <p class="text-xs text-slate-500 mt-1">Autonomous, fact-checked, peer-reviewed global reporting updated continuously.</p>
         </div>
         <span class="text-xs font-mono px-3 py-1 bg-slate-100 rounded-full text-slate-700 font-semibold border border-slate-200">
-          50 Active Dispatches
+          52 Active Dispatches
         </span>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         
+      <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
+        <div>
+          <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Deep space exoplanet atmospheric spectroscopy captured by orbital space observatory" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="eager">
+          </div>
+          <div class="flex items-center justify-between text-xs mb-2">
+            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Space &amp; Astronomy</span>
+            <span class="text-slate-400 text-[11px]">November 8, 2026</span>
+          </div>
+          <h3 class="font-display font-bold text-base text-slate-900 group-hover:text-teal-600 transition mb-2 leading-snug">
+            <a href="/news/evolution-of-dust-in-protoplanetary-disks-with-new-evidence-in">Evolution of Dust In Protoplanetary Disks With: New Evidence in Space &amp; Astronomy</a>
+          </h3>
+          <p class="text-xs text-slate-600 line-clamp-3 leading-relaxed mb-4">
+            Evolution of Dust In Protoplanetary Disks With: New Evidence in Space &amp; Astronomy: Observations and theory increasingly indicate that protoplanetary disks are weakly turbulent, implying that magnetized disk winds may dominate their angular momentum transport and long-term evolution. Yet dust evolution in wind-dominated disks remains poorly understood, despite its importance for planet formation. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.08484v1).
+          </p>
+        </div>
+        <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
+          <span class="text-slate-400 text-[11px]">Via arXiv Open Science Wire (https://arxiv.org/abs/2611.08484v1)</span>
+          <a href="/news/evolution-of-dust-in-protoplanetary-disks-with-new-evidence-in" class="text-teal-700 font-bold hover:text-teal-900 flex items-center gap-1">
+            Read Full Story &rarr;
+          </a>
+        </div>
+      </article>
+    
+
+      <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
+        <div>
+          <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Deep space exoplanet atmospheric spectroscopy captured by orbital space observatory" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="eager">
+          </div>
+          <div class="flex items-center justify-between text-xs mb-2">
+            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Space &amp; Astronomy</span>
+            <span class="text-slate-400 text-[11px]">November 8, 2026</span>
+          </div>
+          <h3 class="font-display font-bold text-base text-slate-900 group-hover:text-teal-600 transition mb-2 leading-snug">
+            <a href="/news/bear-the-bern-atmospheric-retrieval-code-a-new-evidence-in-space">BeAR: The Bern Atmospheric Retrieval code - A: New Evidence in Space &amp; Astronomy</a>
+          </h3>
+          <p class="text-xs text-slate-600 line-clamp-3 leading-relaxed mb-4">
+            BeAR: The Bern Atmospheric Retrieval code - A: New Evidence in Space &amp; Astronomy: We present BeAR, the Bern Atmospheric Retrieval code and successor of Helios-r, and its new high-resolution cross-correlation framework for emission and transmission spectra. BeAR performs joint retrievals by adding the log-likelihoods of high- and low-resolution data computed from the same model atmosphere. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.08489v1).
+          </p>
+        </div>
+        <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
+          <span class="text-slate-400 text-[11px]">Via arXiv Open Science Wire (https://arxiv.org/abs/2611.08489v1)</span>
+          <a href="/news/bear-the-bern-atmospheric-retrieval-code-a-new-evidence-in-space" class="text-teal-700 font-bold hover:text-teal-900 flex items-center gap-1">
+            Read Full Story &rarr;
+          </a>
+        </div>
+      </article>
+    
+
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
@@ -274,7 +313,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="eager">
+            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Biophysics &amp; Genomics</span>
@@ -299,7 +338,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="eager">
+            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Biophysics &amp; Genomics</span>
