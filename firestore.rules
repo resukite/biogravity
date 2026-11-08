@@ -1,0 +1,218 @@
+rules_version = '2';
+
+// ===============================================================
+// Assumed Data Model
+// ===============================================================
+//
+// This security rules file assumes the following data structures:
+//
+// Collection: users
+// Document ID: {userId} (matches request.auth.uid)
+// Fields:
+//   - email: string (required, valid email format, max 254 chars, immutable on update)
+//   - name: string (optional, max 120 chars) - user's display name
+//   - photoURL: string (optional, max 2048 chars, valid URL or relative path, or empty string)
+//   - createdAt: timestamp | string (required, valid date/time format, max 40 chars, immutable on update)
+//   - newsletterSubscribed: bool (required) - newsletter subscription status flag
+//   - bookmarks: list (required, max 200 items) - saved reading list articles [{slug, title, url, savedAt}]
+//
+// Collection: newsletter_subscribers
+// Document ID: {subscriberEmail} (lowercase subscriber email address)
+// Fields:
+//   - email: string (required, valid email format, max 254 chars, must match document ID)
+//   - subscribedAt: timestamp | string (required, valid date/time format, max 40 chars)
+//   - source: string (optional, max 100 chars) - origin source (e.g. 'web_portal', 'sidebar')
+//   - status: string (optional, max 50 chars) - status (e.g. 'active', 'unsubscribed')
+//   - userId: string | null (optional, max 128 chars) - linked Firebase Auth UID if authenticated
+//
+// ===============================================================
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ===============================================================
+    // Helper Functions
+    // ===============================================================
+
+    // Check if the request is from an authenticated user
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    // Check if the authenticated user owns the document by path UID
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    // Check if the user is a verified administrator via custom claim or verified bootstrap email
+    function isAdmin() {
+      return isAuthenticated() &&
+        (
+          ('email' in request.auth.token &&
+           'email_verified' in request.auth.token &&
+           request.auth.token.email_verified == true &&
+           request.auth.token.email in ['biogravity.space@gmail.com', 'admin@biogravity.space']) ||
+          ('admin' in request.auth.token && request.auth.token.admin == true)
+        );
+    }
+
+    // Validate that document has all required fields
+    function hasRequiredFields(fields) {
+      return request.resource.data.keys().hasAll(fields);
+    }
+
+    // Validate that document contains only allowed fields
+    function hasOnlyAllowedFields(fields) {
+      return request.resource.data.keys().hasOnly(fields);
+    }
+
+    // Validate email format and length bounds
+    function isValidEmail(email) {
+      return email is string &&
+        email.size() >= 5 &&
+        email.size() <= 254 &&
+        email.matches('^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$');
+    }
+
+    // Validate URL format (http, https, or relative path) and length bounds
+    function isValidUrl(url) {
+      return url is string &&
+        url.size() <= 2048 &&
+        (url == '' || url.matches('^https?://.*') || url.matches('^/.*'));
+    }
+
+    // Validate date format: accepts Firestore native timestamp or ISO 8601 string
+    function isValidTimestampOrDateString(val) {
+      return val is timestamp ||
+        (val is string &&
+         val.size() >= 10 &&
+         val.size() <= 40 &&
+         val.matches('^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?(Z|[+-]\\d{2}:\\d{2})?$'));
+    }
+
+    // ===============================================================
+    // Domain Validators
+    // ===============================================================
+
+    // Validate complete user profile document schema and bounds
+    function isValidUser(data) {
+      return hasOnlyAllowedFields(['email', 'name', 'photoURL', 'createdAt', 'newsletterSubscribed', 'bookmarks']) &&
+        hasRequiredFields(['email', 'createdAt', 'newsletterSubscribed', 'bookmarks']) &&
+        isValidEmail(data.email) &&
+        isValidTimestampOrDateString(data.createdAt) &&
+        data.newsletterSubscribed is bool &&
+        data.bookmarks is list &&
+        data.bookmarks.size() <= 200 &&
+        (!('name' in data) || (data.name is string && data.name.size() <= 120)) &&
+        (!('photoURL' in data) || (data.photoURL is string && isValidUrl(data.photoURL)));
+    }
+
+    // Validate newsletter subscriber document schema and bounds
+    function isValidSubscriber(data) {
+      return hasOnlyAllowedFields(['email', 'subscribedAt', 'source', 'status', 'userId']) &&
+        hasRequiredFields(['email', 'subscribedAt']) &&
+        isValidEmail(data.email) &&
+        isValidTimestampOrDateString(data.subscribedAt) &&
+        (!('source' in data) || (data.source is string && data.source.size() <= 100)) &&
+        (!('status' in data) || (data.status is string && data.status.size() <= 50)) &&
+        (!('userId' in data) || data.userId == null || (data.userId is string && data.userId.size() <= 128));
+    }
+
+    // Validate subscriber updates: enforce schema, email immutability and UID integrity
+    function isValidSubscriberUpdate(subscriberEmail) {
+      return isValidSubscriber(request.resource.data) &&
+        request.resource.data.email == subscriberEmail &&
+        request.resource.data.email == resource.data.email &&
+        // If the subscriber is linked to a userId, non-owners cannot reassign or erase it
+        (!('userId' in resource.data) || resource.data.userId == null ||
+         (isAuthenticated() && request.auth.uid == resource.data.userId && request.resource.data.userId == resource.data.userId));
+    }
+
+    // ===============================================================
+    // Collection Rules
+    // ===============================================================
+
+    // 1. Users collection
+    // Private user profiles containing PII and reading lists
+    match /users/{userId} {
+      // Owners can read their profile; verified admins can inspect all profiles
+      allow get: if isOwner(userId) || isAdmin();
+      // Only admins may list all user profiles (prevents enumeration / PII leaks)
+      allow list: if isAdmin();
+
+      // Users can only create their own profile document with valid data and matching token email
+      allow create: if isOwner(userId) &&
+                       isValidUser(request.resource.data) &&
+                       (!('email' in request.auth.token) || request.resource.data.email == request.auth.token.email);
+
+      // Users can update their profile; immutable fields (createdAt, email) are locked down
+      allow update: if isOwner(userId) &&
+                       isValidUser(request.resource.data) &&
+                       request.resource.data.createdAt == resource.data.createdAt &&
+                       request.resource.data.email == resource.data.email;
+
+      // Owners can delete their profile, or administrators can manage accounts
+      allow delete: if isOwner(userId) || isAdmin();
+    }
+
+    // 2. Newsletter subscribers collection
+    // Document ID is subscriber's email address
+    match /newsletter_subscribers/{subscriberEmail} {
+      // Admins can read all subscriber documents; authenticated subscribers can read their own
+      allow get: if isAdmin() ||
+                    (isAuthenticated() && (
+                      (resource.data.userId != null && request.auth.uid == resource.data.userId) ||
+                      ('email' in request.auth.token &&
+                       'email_verified' in request.auth.token &&
+                       request.auth.token.email_verified == true &&
+                       request.auth.token.email == subscriberEmail)
+                    ));
+
+      // Only administrators can list the entire subscriber directory (prevents email harvesting)
+      allow list: if isAdmin();
+
+      // Anyone (authenticated or unauthenticated) can subscribe with valid email format
+      allow create: if isValidSubscriber(request.resource.data) &&
+                       request.resource.data.email == subscriberEmail &&
+                       (
+                         (!('userId' in request.resource.data) || request.resource.data.userId == null) ||
+                         (isAuthenticated() && request.resource.data.userId == request.auth.uid)
+                       );
+
+      // Subscribers can update their status if admin, authenticated owner, or matching subscriber
+      allow update: if isValidSubscriberUpdate(subscriberEmail) &&
+                       (
+                         isAdmin() ||
+                         (isAuthenticated() && (
+                           (resource.data.userId != null && request.auth.uid == resource.data.userId) ||
+                           ('email' in request.auth.token &&
+                            'email_verified' in request.auth.token &&
+                            request.auth.token.email_verified == true &&
+                            request.auth.token.email == subscriberEmail)
+                         )) ||
+                         // Unauthenticated subscriber resubscribing or updating status for unlinked entry
+                         (!isAuthenticated() &&
+                          (!('userId' in resource.data) || resource.data.userId == null) &&
+                          (!('userId' in request.resource.data) || request.resource.data.userId == null))
+                       );
+
+      // Only administrators or authenticated subscribers owning their record can delete
+      allow delete: if isAdmin() ||
+                       (isAuthenticated() && (
+                         (resource.data.userId != null && request.auth.uid == resource.data.userId) ||
+                         ('email' in request.auth.token &&
+                          'email_verified' in request.auth.token &&
+                          request.auth.token.email_verified == true &&
+                          request.auth.token.email == subscriberEmail)
+                       ));
+    }
+
+    // ===============================================================
+    // Default Deny Rule
+    // ===============================================================
+    // Deny all reads and writes to any unspecified documents
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

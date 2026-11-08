@@ -31,6 +31,21 @@
         </div>
 
         <!-- Drawer Content -->
+
+          <!-- Reader Account & Sign In Box -->
+          <div id="sidebar-auth-card" class="p-3.5 rounded-2xl bg-slate-900 text-white flex items-center justify-between shadow-sm">
+            <div class="flex items-center gap-2.5">
+              <span class="text-base">👤</span>
+              <div>
+                <div class="font-semibold text-xs">Reader Account</div>
+                <div class="text-[10px] text-slate-400">Save papers & customize feed</div>
+              </div>
+            </div>
+            <button id="mobile-drawer-signin-btn" class="py-1.5 px-3 rounded-xl bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold text-xs transition cursor-pointer">
+              Sign In
+            </button>
+          </div>
+
         <div class="p-6 space-y-7 flex-1 text-xs">
           <!-- Direct Editorial Desk (Gmail & X) -->
           <div class="rounded-2xl p-4 bg-[#f8fafc] border border-slate-200/80 space-y-3">

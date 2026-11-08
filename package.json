@@ -8,6 +8,7 @@
     "generate-now": "node auto-publisher.js --run-now",
     "generate-force": "node auto-publisher.js --run-now --force",
     "status": "node auto-publisher.js --status",
+    "db-check": "node scripts/init-firestore.js",
     "review": "node auto-publisher.js --review",
     "approve": "node auto-publisher.js --approve",
     "reject": "node auto-publisher.js --reject",
