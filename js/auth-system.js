@@ -133,7 +133,12 @@
       // Attach global login handlers
       window.bioGravitySignInWithGoogle = async () => {
         try {
-          await signInWithPopup(authInstance, googleProvider);
+          const res = await signInWithPopup(authInstance, googleProvider);
+          const optin = document.getElementById('auth-newsletter-optin');
+          const shouldSubscribe = optin ? optin.checked : true;
+          if (shouldSubscribe && res && res.user && res.user.email) {
+            await subscribeNewsletter(res.user.email);
+          }
           closeAuthModal();
           showNotification('Welcome to BioGravity!', 'success');
         } catch (err) {
@@ -335,18 +340,25 @@
                 >
               </div>
 
-              <!-- Newsletter Opt-In Checkbox -->
-              <label class="flex items-start gap-2.5 cursor-pointer pt-1 select-none">
-                <input type="checkbox" id="auth-newsletter-optin" checked class="mt-0.5 rounded border-slate-300 text-teal-600 focus:ring-teal-500">
-                <span class="text-xs text-slate-600 leading-snug">
-                  Keep me updated with the <strong>BioGravity Dispatch</strong> (Weekly science briefing on microgravity &amp; space biotech).
-                </span>
-              </label>
-
               <button type="submit" class="w-full py-2.5 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-medium text-xs shadow-sm transition cursor-pointer">
-                Continue to BioGravity &rarr;
+                Continue with Email &rarr;
               </button>
             </form>
+
+            <!-- Prominent Newsletter Card under Sign In (Always Pre-Ticked by Default) -->
+            <div class="p-3.5 rounded-2xl bg-teal-50/90 border border-teal-200/90 select-none">
+              <label class="flex items-start gap-2.5 cursor-pointer">
+                <input type="checkbox" id="auth-newsletter-optin" checked class="mt-0.5 rounded border-teal-400 text-teal-600 focus:ring-teal-500 w-4 h-4 cursor-pointer">
+                <span class="text-xs text-slate-800 leading-snug">
+                  <span class="font-bold text-slate-900 flex items-center gap-1.5">
+                    <span>📬</span> Subscribe to The BioGravity Dispatch
+                  </span>
+                  <span class="block text-[11px] text-slate-600 mt-0.5">
+                    Free weekly briefing on microgravity breakthroughs &amp; space biotech. You can untick anytime.
+                  </span>
+                </span>
+              </label>
+            </div>
 
             <div class="text-[10px] text-slate-400 text-center pt-2">
               By continuing, you agree to our <a href="/terms" class="underline hover:text-slate-600">Terms</a> &amp; <a href="/privacy-policy" class="underline hover:text-slate-600">Privacy Policy</a>.
@@ -683,6 +695,10 @@
     const modal = document.getElementById('biogravity-auth-modal');
     const card = document.getElementById('auth-modal-card');
     if (!modal || !card) return;
+
+    // Always ensure newsletter checkbox is ticked by default whenever anyone opens login
+    const optin = document.getElementById('auth-newsletter-optin');
+    if (optin) optin.checked = true;
 
     switchTab(defaultTab);
 
