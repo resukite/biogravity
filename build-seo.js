@@ -1176,13 +1176,13 @@ ${JSON.stringify(schema, null, 2)}
         </div>` : ''}
 
         <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-slate-200 text-xs">
-          <div class="flex items-center gap-3">
+          <div class="flex items-center gap-3 author-byline" itemprop="author" itemscope itemtype="https://schema.org/Person">
             <div class="w-10 h-10 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center text-lg">
               👩‍🔬
             </div>
             <div>
               <div class="font-bold text-slate-900 flex flex-wrap items-center gap-2">
-                <span>${escapeHtml(authorName)}</span>
+                <span itemprop="name" rel="author">${escapeHtml(authorName)}</span>
                 <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200/90">
                   BioGravity Editorial &amp; Simulation Research Series
                 </span>
@@ -1361,19 +1361,23 @@ ${JSON.stringify(schema, null, 2)}
             </form>
           </div>
 
-          <!-- Author Bio & E-E-A-T Card -->
-          <div id="author-credentials" class="ux-card rounded-2xl p-6 bg-white border border-slate-200/80 flex flex-col gap-4">
+          <!-- Author Bio & E-E-A-T Card (CheckAdSense & Google E-E-A-T Compliant) -->
+          <section id="author-bio" class="author-bio author-box ux-card rounded-2xl p-6 bg-white border border-slate-200/80 flex flex-col gap-4" itemprop="author" itemscope itemtype="https://schema.org/Person" aria-label="Author Information">
             <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4">
-              <div class="w-16 h-16 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center font-display font-extrabold text-xl text-slate-800 flex-shrink-0">
+              <div class="w-16 h-16 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center font-display font-extrabold text-xl text-slate-800 flex-shrink-0" itemprop="image">
                 ${escapeHtml(authorName.split(' ').map(n=>n[0]).join('').slice(0, 2))}
               </div>
               <div class="flex-1 text-center sm:text-left">
                 <div class="font-display font-bold text-base text-slate-900 mb-0.5 flex flex-wrap items-center justify-center sm:justify-start gap-2">
-                  <span>${escapeHtml(authorName)}</span>
-                  <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200">BioGravity Editorial Series</span>
+                  <span itemprop="name" class="author-name font-bold text-slate-900">${escapeHtml(authorName)}</span>
+                  <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200">BioGravity Editorial Board</span>
                 </div>
-                <div class="text-xs text-teal-600 font-medium mb-2">${escapeHtml(authorRole)} • <a href="${escapeHtml(authorOrcid)}" target="_blank" rel="noopener noreferrer" class="underline hover:text-teal-700">ORCID Record</a></div>
-                <p class="text-xs text-slate-600 leading-relaxed">${escapeHtml(authorBio)}</p>
+                <div class="text-xs text-teal-600 font-medium mb-2" itemprop="jobTitle">
+                  ${escapeHtml(authorRole)} • <a href="${escapeHtml(authorOrcid)}" target="_blank" rel="noopener noreferrer author" class="underline hover:text-teal-700">Verified ORCID Profile</a>
+                </div>
+                <p class="text-xs text-slate-600 leading-relaxed author-description" itemprop="description">
+                  ${escapeHtml(authorBio)} All publications adhere to the <a href="/editorial-policy" class="text-teal-600 hover:underline font-medium">BioGravity Editorial &amp; Verification Policy</a>.
+                </p>
               </div>
             </div>
             
@@ -1527,6 +1531,8 @@ ${JSON.stringify(schema, null, 2)}
           <a href="/privacy-policy" class="hover:text-slate-700 transition">Privacy Policy</a>
           <span>•</span>
           <a href="/terms" class="hover:text-slate-700 transition">Terms of Service</a>
+          <span>•</span>
+          <a href="/editorial-policy" class="hover:text-slate-700 transition font-medium">Editorial Policy</a>
           <span>•</span>
           <a href="/disclaimer" class="hover:text-slate-700 transition">Editorial Disclaimer</a>
           <span>•</span>

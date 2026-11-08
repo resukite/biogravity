@@ -50,6 +50,8 @@
   <link rel="stylesheet" href="/css/styles.min.css?v=2.2">
   <script defer src="/js/cookie-consent.min.js?v=2.2"></script>
   <script defer src="/js/sidebar-menu.min.js?v=2.2"></script>
+  <script defer src="/js/firebase-config.js"></script>
+  <script defer src="/js/auth-system.js"></script>
 
   <!-- Schema.org ContactPage -->
   <!-- JSON-LD Structured Data -->
@@ -148,6 +150,7 @@
           <a href="/news" class="flex items-center gap-1.5 text-rose-600 font-semibold hover:text-rose-700 transition"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-rose-500"></span></span>Live News</a>
           <a href="/research" class="hover:text-slate-900 transition">Research</a>
           <a href="/tools" class="hover:text-slate-900 transition">Tools</a>
+          <a href="/newsletter" class="hover:text-slate-900 transition">Newsletter</a>
           <a href="/about" class="hover:text-slate-900 transition">About</a>
           <a href="/contact" class="text-slate-900 font-semibold">Contact</a>
         </nav>
@@ -164,7 +167,15 @@
           <span>Support</span>
         </a>
 
-        <!-- Bespoke 3-Dot Navigation Menu Button -->
+                <!-- User Sign In / Account Pill -->
+        <div id="header-auth-container" class="flex items-center mr-1">
+          <button id="nav-signin-btn" class="flex items-center gap-1.5 py-1.5 px-3 rounded-full bg-slate-900 hover:bg-slate-800 text-white transition text-xs font-medium shadow-xs cursor-pointer group" aria-label="Sign In">
+            <svg class="w-3.5 h-3.5 text-slate-300 group-hover:text-white transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+            <span>Sign In</span>
+          </button>
+        </div>
+
+<!-- Bespoke 3-Dot Navigation Menu Button -->
         <button 
           id="nav-sidebar-toggle" 
           class="flex items-center gap-2 py-2 px-3.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-200/80 transition cursor-pointer text-xs font-medium shadow-sm group" 
@@ -378,6 +389,8 @@
           <a href="/privacy-policy" class="hover:text-slate-700 transition">Privacy Policy</a>
           <span>•</span>
           <a href="/terms" class="hover:text-slate-700 transition">Terms of Service</a>
+          <span>•</span>
+          <a href="/editorial-policy" class="hover:text-slate-700 transition font-medium">Editorial Policy</a>
           <span>•</span>
           <a href="/disclaimer" class="hover:text-slate-700 transition">Editorial Disclaimer</a>
           <span>•</span>

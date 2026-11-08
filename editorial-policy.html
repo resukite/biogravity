@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
+  <link rel="alternate" type="text/markdown" href="https://biogravity.space/llms.txt" title="LLMs.txt AI Search Digest">
+  <link rel="alternate" type="text/markdown" href="https://biogravity.space/llms-full.txt" title="Full LLMs.txt AI Digest">
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="dns-prefetch" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+  <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+  <!-- Security Headers & Content Security Policy (CSP) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; img-src 'self' https: data:; font-src 'self' https: data:;">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  
+  <script defer src="/js/cookie-consent.min.js?v=2.2"></script>
+  <script defer src="/js/sidebar-menu.min.js?v=2.2"></script>
+  <script defer src="/js/firebase-config.js"></script>
+  <script defer src="/js/auth-system.js"></script>
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BSRJK4DMH7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    var hasConsent = false;
+    try {
+      var c = localStorage.getItem('biogravity_cookie_consent_v1');
+      if (c && JSON.parse(c).choice === 'all') hasConsent = true;
+    } catch(e) {}
+    gtag('consent', 'default', {
+      'ad_storage': hasConsent ? 'granted' : 'denied',
+      'ad_user_data': hasConsent ? 'granted' : 'denied',
+      'ad_personalization': hasConsent ? 'granted' : 'denied',
+      'analytics_storage': 'granted'
+    });
+    gtag('js', new Date());
+    gtag('config', 'G-BSRJK4DMH7');
+  </script>
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8576621614388905" crossorigin="anonymous"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editorial Policy & Scientific Standards | BioGravity</title>
+  <meta name="description" content="Discover BioGravity's rigorous editorial guidelines, peer-review standards, human-in-the-loop AI research review gates, fact-checking protocols, and corrections policy.">
+  <link rel="canonical" href="https://biogravity.space/editorial-policy">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/css/styles.min.css?v=2.2">
+  <script>
+    if (window.location.pathname.endsWith('.html')) {
+      var clean = window.location.pathname.replace(/\.html$/, '');
+      window.history.replaceState(null, '', clean + window.location.search + window.location.hash);
+    }
+  </script>
+
+  <!-- Schema.org WebPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "BioGravity Editorial Policy and Scientific Integrity Standards",
+    "url": "https://biogravity.space/editorial-policy",
+    "description": "Editorial standards, verification procedures, and ethics policies for BioGravity space biotechnology research.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "BioGravity",
+      "url": "https://biogravity.space",
+      "logo": "https://biogravity.space/favicon.svg"
+    }
+  }
+  </script>
+</head>
+<body class="bg-white text-slate-800 antialiased font-sans flex flex-col min-h-screen selection:bg-teal-500 selection:text-white">
+
+  <!-- Global Header Navigation -->
+  <header class="sticky top-0 z-40 w-full bg-white/90 backdrop-blur-md border-b border-slate-200/80 transition">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      
+      <!-- Left: Logo & Live Date -->
+      <div class="flex items-center gap-6">
+        <a href="/" class="flex items-center gap-3 group">
+          <div class="w-9 h-9 rounded-xl bg-slate-900 flex items-center justify-center text-white text-base shadow-sm group-hover:bg-slate-800 transition">
+            ⚛️
+          </div>
+          <div>
+            <span class="font-display font-bold text-xl tracking-tight text-slate-900 group-hover:text-teal-600 transition">BioGravity<span class="text-teal-600">.</span></span>
+            <span class="block text-[10px] text-slate-400 font-medium tracking-wider uppercase -mt-1">Open Science &amp; Standards</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Right: Navigation Links & Auth Actions -->
+      <div class="flex items-center gap-3">
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
+          <a href="/" class="hover:text-slate-900 transition">Home</a>
+          <a href="/news" class="flex items-center gap-1.5 text-rose-600 font-semibold hover:text-rose-700 transition">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-rose-500"></span>
+            </span>
+            Live News
+          </a>
+          <a href="/research" class="hover:text-slate-900 transition">Research</a>
+          <a href="/tools" class="hover:text-slate-900 transition">Tools</a>
+          <a href="/newsletter" class="hover:text-slate-900 transition">Newsletter</a>
+          <a href="/about" class="hover:text-slate-900 transition">About</a>
+        </nav>
+
+        <!-- Buy Me a Coffee Supporter Pill -->
+        <a 
+          href="https://buymeacoffee.com/biogravity" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="hidden sm:inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-200/80 transition text-xs font-medium shadow-xs"
+          title="Support BioGravity on Buy Me a Coffee"
+        >
+          <span class="text-xs">☕</span>
+          <span>Support</span>
+        </a>
+
+        <!-- User Sign In / Account Pill -->
+        <div id="header-auth-container" class="flex items-center mr-1">
+          <button id="nav-signin-btn" class="flex items-center gap-1.5 py-1.5 px-3 rounded-full bg-slate-900 hover:bg-slate-800 text-white transition text-xs font-medium shadow-xs cursor-pointer group" aria-label="Sign In">
+            <svg class="w-3.5 h-3.5 text-slate-300 group-hover:text-white transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+            <span>Sign In</span>
+          </button>
+        </div>
+
+        <!-- Bespoke 3-Dot Navigation Menu Button -->
+        <button 
+          id="nav-sidebar-toggle" 
+          class="flex items-center gap-2 py-2 px-3.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-200/80 transition cursor-pointer text-xs font-medium shadow-sm group" 
+          aria-label="Open Navigation Menu"
+        >
+          <span class="flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-slate-700 group-hover:bg-slate-900 transition"></span>
+            <span class="w-1.5 h-1.5 rounded-full bg-slate-700 group-hover:bg-slate-900 transition"></span>
+            <span class="w-1.5 h-1.5 rounded-full bg-slate-700 group-hover:bg-slate-900 transition"></span>
+          </span>
+          <span class="font-medium ml-0.5">Menu</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 py-14 w-full">
+    
+    <!-- Hero Header -->
+    <div class="mb-10 text-center sm:text-left">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 border border-teal-200 text-teal-800 text-xs font-semibold mb-3">
+        <span>🛡️</span>
+        <span>E-E-A-T &amp; Journalistic Integrity</span>
+      </div>
+      <h1 class="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-slate-900 tracking-tight mb-3">
+        BioGravity Editorial Policy &amp; Standards
+      </h1>
+      <p class="text-slate-500 text-xs sm:text-sm">
+        Published by the BioGravity Scientific Governance Board • Last Updated: October 2026
+      </p>
+    </div>
+
+    <!-- Policy Sections -->
+    <div class="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200/80 shadow-xs text-slate-600 text-sm leading-relaxed space-y-10">
+      
+      <!-- Section 1: Core Mission -->
+      <section class="space-y-4">
+        <h2 class="text-xl sm:text-2xl font-display font-bold text-slate-900 flex items-center gap-2.5">
+          <span class="w-2 h-6 bg-teal-600 rounded-full inline-block"></span>
+          <span>1. Editorial Mission &amp; Purpose</span>
+        </h2>
+        <p>
+          <strong>BioGravity (biogravity.space)</strong> is an independent open-access scientific publication and educational simulation platform. Our core objective is to demystify complex space biotechnology, microgravity cellular biology, and orbital pharmacology for researchers, educators, students, and life science professionals worldwide.
+        </p>
+        <p>
+          We operate under the principle of radical transparency, scientific reproducibility, and open-access licensing (Creative Commons CC-BY 4.0).
+        </p>
+      </section>
+
+      <!-- Section 2: Fact-Checking & Primary Sources -->
+      <section class="space-y-4 border-t border-slate-100 pt-8">
+        <h2 class="text-xl sm:text-2xl font-display font-bold text-slate-900 flex items-center gap-2.5">
+          <span class="w-2 h-6 bg-teal-600 rounded-full inline-block"></span>
+          <span>2. Fact-Checking &amp; Primary Source Hierarchy</span>
+        </h2>
+        <p>
+          Every research dispatch and educational article published on BioGravity must adhere to a strict evidentiary hierarchy:
+        </p>
+        <ul class="space-y-2.5 list-disc pl-5 text-slate-700">
+          <li><strong>Tier 1 Primary Evidence:</strong> Peer-reviewed articles indexed in PubMed, ScienceDirect, Nature, and Cell; official telemetry and flight data from NASA GeneLab, ESA, JAXA, and Roscosmos.</li>
+          <li><strong>Tier 2 Preprints:</strong> Preprints from bioRxiv, medRxiv, and arXiv with clear editorial labeling that findings await formal peer review.</li>
+          <li><strong>DOI Attribution:</strong> Every factual claim, constant, or experimental protocol must include a permanent Digital Object Identifier (DOI) or verifiable institutional hyperlink.</li>
+        </ul>
+      </section>
+
+      <!-- Section 3: AI Transparency & Mandatory Human Editorial Gate -->
+      <section class="space-y-4 border-t border-slate-100 pt-8">
+        <h2 class="text-xl sm:text-2xl font-display font-bold text-slate-900 flex items-center gap-2.5">
+          <span class="w-2 h-6 bg-teal-600 rounded-full inline-block"></span>
+          <span>3. AI Transparency &amp; Human Editorial Review Protocol</span>
+        </h2>
+        <p>
+          In full accordance with Google Search, Google AdSense, and COPE (Committee on Publication Ethics) guidelines:
+        </p>
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-xs space-y-2 text-slate-800">
+          <div class="font-bold text-slate-900 flex items-center gap-2">
+            <span>🔬</span>
+            <span>Mandatory Human Review Gate</span>
+          </div>
+          <p class="leading-relaxed">
+            While AI research models may assist our editors with synthesizing literature and structuring datasets, <strong>no article is ever published automatically without mandatory human review and verification</strong>. Every drafted dispatch must be reviewed, fact-checked, verified for citations, and approved by a named human editor before going live.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 4: Corrections & Retractions -->
+      <section class="space-y-4 border-t border-slate-100 pt-8">
+        <h2 class="text-xl sm:text-2xl font-display font-bold text-slate-900 flex items-center gap-2.5">
+          <span class="w-2 h-6 bg-teal-600 rounded-full inline-block"></span>
+          <span>4. Corrections, Errata &amp; Retraction Policy</span>
+        </h2>
+        <p>
+          We are committed to correcting errors promptly and transparently. If a factual error, calculation inaccuracy, or misrepresented preprint finding is identified:
+        </p>
+        <ul class="space-y-2 list-disc pl-5 text-slate-700">
+          <li><strong>Minor Corrections:</strong> Typographical or numerical fixes are noted with a timestamped correction note at the bottom of the article.</li>
+          <li><strong>Substantive Errata:</strong> If a paper's conclusion is impacted by revised laboratory findings, an editorial notice is prominently displayed at the top of the dispatch.</li>
+          <li><strong>Reader Submissions:</strong> Readers and researchers can report suspected errors directly to <a href="mailto:biogravity.space@gmail.com" class="text-teal-600 font-mono hover:underline">biogravity.space@gmail.com</a>. Our board responds within 48 business hours.</li>
+        </ul>
+      </section>
+
+      <!-- Section 5: Independence & Conflict of Interest -->
+      <section class="space-y-4 border-t border-slate-100 pt-8">
+        <h2 class="text-xl sm:text-2xl font-display font-bold text-slate-900 flex items-center gap-2.5">
+          <span class="w-2 h-6 bg-teal-600 rounded-full inline-block"></span>
+          <span>5. Scientific Independence &amp; Commercial Non-Bias</span>
+        </h2>
+        <p>
+          BioGravity maintains complete editorial autonomy. Commercial advertisers, sponsors, or affiliate relationships exercise zero influence over our scientific coverage, evaluation of clinical research, or critique of aerospace payloads. Any sponsored or collaborative content is explicitly disclosed with clear visual badges.
+        </p>
+      </section>
+
+      <!-- Section 6: Editorial Board Contact -->
+      <section class="space-y-4 border-t border-slate-100 pt-8">
+        <h2 class="text-xl sm:text-2xl font-display font-bold text-slate-900 flex items-center gap-2.5">
+          <span class="w-2 h-6 bg-teal-600 rounded-full inline-block"></span>
+          <span>6. Editorial Board &amp; Inquiries</span>
+        </h2>
+        <p>
+          Our editorial desk is managed by a multidisciplinary collective of biophysicists, space medicine researchers, and science communicators. For press inquiries, peer-review correspondence, or manuscript corrections:
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 pt-2">
+          <div class="p-4 rounded-2xl bg-teal-50 border border-teal-200 text-xs flex-1">
+            <div class="font-bold text-teal-950 mb-1">Editorial Desk</div>
+            <a href="mailto:biogravity.space@gmail.com" class="text-teal-700 font-mono hover:underline">biogravity.space@gmail.com</a>
+          </div>
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-xs flex-1">
+            <div class="font-bold text-slate-900 mb-1">Official Updates</div>
+            <a href="https://x.com/Biogravityspace" target="_blank" rel="noopener noreferrer" class="text-slate-700 hover:text-teal-600 font-mono">@Biogravityspace on 𝕏</a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="bg-slate-50 border-t border-slate-200/80 text-xs text-slate-500 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4 border-b border-slate-200 pb-8">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-slate-900 flex items-center justify-center text-white text-sm">⚛️</div>
+          <div>
+            <span class="font-display font-bold text-base text-slate-900">BioGravity<span class="text-teal-600">.</span></span>
+            <span class="block text-[10px] text-slate-400">Open-Access Space Science Publication</span>
+          </div>
+        </div>
+        <div class="flex flex-wrap items-center gap-4 text-xs">
+          <a href="/editorial-policy" class="text-teal-600 font-semibold hover:underline">Editorial Policy</a>
+          <a href="/privacy-policy" class="hover:text-slate-900 transition">Privacy Policy</a>
+          <a href="/terms" class="hover:text-slate-900 transition">Terms of Service</a>
+          <a href="/disclaimer" class="hover:text-slate-900 transition">Medical Disclaimer</a>
+          <a href="/contact" class="hover:text-slate-900 transition">Contact</a>
+          <a href="/about" class="hover:text-slate-900 transition">About</a>
+        </div>
+      </div>
+      <div class="text-center text-[11px] text-slate-400">
+        &copy; 2026 BioGravity Educational Science Platform. Open Access CC-BY 4.0.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
