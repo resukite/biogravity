@@ -1,12 +1,443 @@
 {
-  "updatedAt": "2026-11-07T09:21:16.279Z",
-  "totalUrls": 64,
-  "indexedCount": 54,
-  "notIndexedCount": 10,
-  "indexedPercentage": "84.4%",
-  "pushedToIndexingCount": 10,
+  "updatedAt": "2026-11-08T05:53:28.009Z",
+  "totalUrls": 119,
+  "indexedCount": 75,
+  "notIndexedCount": 44,
+  "indexedPercentage": "63.0%",
+  "pushedToIndexingCount": 44,
   "allFullyIndexed": false,
   "results": [
+    {
+      "url": "https://biogravity.space/microgravity-effects-on-human-body",
+      "status": "INDEXED",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastChecked": "2026-11-08T05:48:33.837Z"
+    },
+    {
+      "url": "https://biogravity.space/news/automatic-generation-of-novel-highly-functional-new-evidence-in",
+      "status": "INDEXED",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastChecked": "2026-11-08T05:48:41.237Z"
+    },
+    {
+      "url": "https://biogravity.space/news/giant-planet-mass-function-across-stellar-mass-and-new-evidence",
+      "status": "INDEXED",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastChecked": "2026-11-08T05:48:48.601Z"
+    },
+    {
+      "url": "https://biogravity.space/news/lee-yang-theorems-for-q-deformed-oscillators-and-new-evidence-in",
+      "status": "INDEXED",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastChecked": "2026-11-08T05:48:55.980Z"
+    },
+    {
+      "url": "https://biogravity.space/news/mutual-information-to-all-orders-from-modular-flow-a-new",
+      "status": "INDEXED",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastChecked": "2026-11-08T05:49:03.299Z"
+    },
+    {
+      "url": "https://biogravity.space/news/weighted-hypergraph-states-as-a-resource-for-quantum-new",
+      "status": "INDEXED",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastChecked": "2026-11-08T05:49:10.650Z"
+    },
+    {
+      "url": "https://biogravity.space/news/lattice-moments-and-quantum-designs-new-evidence-in-quantum",
+      "status": "INDEXED",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastChecked": "2026-11-08T05:49:18.095Z"
+    },
+    {
+      "url": "https://biogravity.space/news/using-domain-walls-to-benchmark-fast-quantum-anneals-new",
+      "status": "INDEXED",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastChecked": "2026-11-08T05:49:25.778Z"
+    },
+    {
+      "url": "https://biogravity.space/news/the-gauge-invariant-orbital-angular-momentum-of-vector-new",
+      "status": "INDEXED",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastChecked": "2026-11-08T05:49:33.152Z"
+    },
+    {
+      "url": "https://biogravity.space/news/quasi-phases-of-quantum-matter-new-evidence-in-quantum-physics",
+      "status": "INDEXED",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastChecked": "2026-11-08T05:49:40.409Z"
+    },
+    {
+      "url": "https://biogravity.space/news/grow-compress-and-perturb-a-hybrid-new-evidence-in-quantum",
+      "status": "NOT_INDEXED",
+      "verdict": "NEUTRAL",
+      "coverage": "URL is unknown to Google",
+      "lastChecked": "2026-11-08T05:49:47.617Z"
+    },
+    {
+      "url": "https://biogravity.space/news/algebraic-strong-to-weak-symmetry-breaking-and-partial-new",
+      "status": "NOT_INDEXED",
+      "verdict": "NEUTRAL",
+      "coverage": "URL is unknown to Google",
+      "lastChecked": "2026-11-08T05:49:55.123Z"
+    },
+    {
+      "url": "https://biogravity.space/news/the-quantum-chromatic-gap-ii-new-evidence-in-quantum-physics",
+      "status": "NOT_INDEXED",
+      "verdict": "NEUTRAL",
+      "coverage": "URL is unknown to Google",
+      "lastChecked": "2026-11-08T05:50:02.559Z"
+    },
+    {
+      "url": "https://biogravity.space/news/what-can-be-computed-with-indefinite-causal-structure-new",
+      "status": "NOT_INDEXED",
+      "verdict": "NEUTRAL",
+      "coverage": "URL is unknown to Google",
+      "lastChecked": "2026-11-08T05:50:09.980Z"
+    },
+    {
+      "url": "https://biogravity.space/news/classical-communication-over-quantum-channels-does-new-evidence",
+      "status": "NOT_INDEXED",
+      "verdict": "NEUTRAL",
+      "coverage": "URL is unknown to Google",
+      "lastChecked": "2026-11-08T05:50:17.226Z"
+    },
+    {
+      "url": "https://biogravity.space/news/probing-fluctuations-in-photon-emission-statistics-of-new",
+      "status": "NOT_INDEXED",
+      "verdict": "NEUTRAL",
+      "coverage": "URL is unknown to Google",
+      "lastChecked": "2026-11-08T05:50:24.743Z"
+    },
+    {
+      "url": "https://biogravity.space/news/algebraic-theory-of-abelian-fractons-and-beyond-new-evidence-in",
+      "status": "INDEXED",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastChecked": "2026-11-08T05:50:32.012Z"
+    },
+    {
+      "url": "https://biogravity.space/news/exceptional-points-as-witnesses-of-non-gaussian-noise-new",
+      "status": "NOT_INDEXED",
+      "verdict": "NEUTRAL",
+      "coverage": "URL is unknown to Google",
+      "lastChecked": "2026-11-08T05:50:39.306Z"
+    },
+    {
+      "url": "https://biogravity.space/news/optimal-diamond-distance-estimation-for-unitary-channels-new",
+      "status": "NOT_INDEXED",
+      "verdict": "NEUTRAL",
+      "coverage": "URL is unknown to Google",
+      "lastChecked": "2026-11-08T05:50:46.670Z"
+    },
+    {
+      "url": "https://biogravity.space/news/left-handed-transmission-lines-for-the-dynamical-new-evidence-in",
+      "status": "NOT_INDEXED",
+      "verdict": "NEUTRAL",
+      "coverage": "URL is unknown to Google",
+      "lastChecked": "2026-11-08T05:50:54.143Z"
+    },
+    {
+      "url": "https://biogravity.space/news/locality-in-dissipative-ground-state-preparation-new-evidence-in",
+      "status": "NOT_INDEXED",
+      "verdict": "NEUTRAL",
+      "coverage": "URL is unknown to Google",
+      "lastChecked": "2026-11-08T05:51:01.637Z"
+    },
+    {
+      "url": "https://biogravity.space/news/hyaluronic-acid-over-expression-drives-tissue-new-evidence-in",
+      "status": "NOT_INDEXED",
+      "verdict": "NEUTRAL",
+      "coverage": "URL is unknown to Google",
+      "lastChecked": "2026-11-08T05:51:08.900Z"
+    },
+    {
+      "url": "https://biogravity.space/news/comparison-of-entangling-strategies-for-unitary-synthesis-new",
+      "status": "NOT_INDEXED",
+      "verdict": "NEUTRAL",
+      "coverage": "URL is unknown to Google",
+      "lastChecked": "2026-11-08T05:51:16.260Z"
+    },
+    {
+      "url": "https://biogravity.space/news/renormalization-for-robust-memory-without-synchronization-new",
+      "status": "NOT_INDEXED",
+      "verdict": "NEUTRAL",
+      "coverage": "URL is unknown to Google",
+      "lastChecked": "2026-11-08T05:51:23.534Z"
+    },
+    {
+      "url": "https://biogravity.space/news/reconstructing-hidden-observables-via-quantum-snapshot-new",
+      "status": "NOT_INDEXED",
+      "verdict": "NEUTRAL",
+      "coverage": "URL is unknown to Google",
+      "lastChecked": "2026-11-08T05:51:30.806Z"
+    },
+    {
+      "url": "https://biogravity.space/news/beyond-lithium-non-flammable-sodium-solid-state-battery-achieves",
+      "status": "NOT_INDEXED",
+      "verdict": "NEUTRAL",
+      "coverage": "URL is unknown to Google",
+      "lastChecked": "2026-11-08T05:51:38.170Z"
+    },
+    {
+      "url": "https://biogravity.space/news/virus-proof-biology-scientists-build-synthetic-bacterial-genome",
+      "status": "NOT_INDEXED",
+      "verdict": "NEUTRAL",
+      "coverage": "URL is unknown to Google",
+      "lastChecked": "2026-11-08T05:51:45.453Z"
+    },
+    {
+      "url": "https://biogravity.space/news/hidden-beneath-two-miles-of-antarctic-ice-scientists-discover",
+      "status": "INDEXED",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastChecked": "2026-11-08T05:51:52.877Z"
+    },
+    {
+      "url": "https://biogravity.space/news/cosmic-monster-on-the-loose-runaway-supermassive-black-hole",
+      "status": "INDEXED",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastChecked": "2026-11-08T05:52:00.186Z"
+    },
+    {
+      "url": "https://biogravity.space/news/the-forever-chemical-breakthrough-mutant-soil-fungi-wipe-out",
+      "status": "INDEXED",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastChecked": "2026-11-08T05:52:07.636Z"
+    },
+    {
+      "url": "https://biogravity.space/news/50-000-year-old-dental-tartar-proves-neanderthals-used-natural",
+      "status": "INDEXED",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastChecked": "2026-11-08T05:52:15.119Z"
+    },
+    {
+      "url": "https://biogravity.space/news/fault-tolerant-quantum-leap-physicists-successfully-shield",
+      "status": "INDEXED",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastChecked": "2026-11-08T05:52:22.480Z"
+    },
+    {
+      "url": "https://biogravity.space/news/the-trillion-dollar-moon-economy-why-mining-lunar-ice-will-be",
+      "status": "INDEXED",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastChecked": "2026-11-08T05:52:29.842Z"
+    },
+    {
+      "url": "https://biogravity.space/news/alien-life-at-14-000-feet-below-the-ocean-deep-sea-expedition",
+      "status": "INDEXED",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastChecked": "2026-11-08T05:52:37.059Z"
+    },
+    {
+      "url": "https://biogravity.space/news/metal-rain-and-vaporized-iron-webb-telescope-reveals-extreme",
+      "status": "INDEXED",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastChecked": "2026-11-08T05:52:48.936Z"
+    },
+    {
+      "url": "https://biogravity.space/news/living-solar-panels-scientists-turn-plant-chloroplasts-into",
+      "status": "INDEXED",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastChecked": "2026-11-08T05:52:56.413Z"
+    },
+    {
+      "url": "https://biogravity.space/news/ancient-greenland-ice-discloses-shocking-climate-flip-that",
+      "status": "INDEXED",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastChecked": "2026-11-08T05:53:04.069Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/epigenomic-methylation-remodeling-and-virulence-attenuation-of-pathogens-in-low",
+      "status": "NOT_INDEXED",
+      "verdict": "NEUTRAL",
+      "coverage": "Page with redirect",
+      "lastChecked": "2026-11-08T05:53:11.571Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/self-assembling-chiral-nanotubes-zero-convection-solute-gradients",
+      "status": "NOT_INDEXED",
+      "verdict": "NEUTRAL",
+      "coverage": "URL is unknown to Google",
+      "lastChecked": "2026-11-08T05:53:19.045Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/single-cell-rna-seq-endothelial-cells-hyperstatic-weightlessness",
+      "status": "NOT_INDEXED",
+      "verdict": "NEUTRAL",
+      "coverage": "URL is unknown to Google",
+      "lastChecked": "2026-11-08T05:53:26.277Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/squid-biosensing-neuronal-action-potentials-low-earth-orbit",
+      "status": "NOT_INDEXED",
+      "verdict": "NEUTRAL",
+      "coverage": "URL is unknown to Google",
+      "lastChecked": "2026-11-04T06:15:44.635Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/why-is-gold-yellow-relativistic-quantum-chemistry",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-08T05:53:26.889Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/michelson-morley-experiment-disproved-the-aether",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-08T05:53:26.889Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/kola-superdeep-borehole-deepest-hole-on-earth",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-08T05:53:26.890Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/the-demon-core-manhattan-project-criticality-accidents",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-08T05:53:26.890Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/mpemba-effect-why-hot-water-freezes-faster-than-cold",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-08T05:53:26.890Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/why-do-flamingos-stand-on-one-leg",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-08T05:53:26.890Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/schrodingers-cat-quantum-physics-paradox-explained",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-08T05:53:26.890Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/why-do-octopuses-have-three-hearts-and-blue-blood",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-08T05:53:26.890Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/mariana-trench-challenger-deep-creatures-pressure",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-08T05:53:26.890Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/immortal-jellyfish-turritopsis-dohrnii-biological-immortality",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-08T05:53:26.890Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/what-would-happen-if-earth-stopped-spinning",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-08T05:53:26.890Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/chernobyl-elephants-foot-deadliest-radioactive-mass",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-08T05:53:26.890Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/double-slit-experiment-quantum-mechanics-explained",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-08T05:53:26.890Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/what-happens-if-you-fall-into-a-black-hole",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-08T05:53:26.890Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/what-statement-about-risks-in-social-and-behavioral-sciences-research-is-most-accurate",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-08T05:53:26.890Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/ideal-interaction-dynamics-of-defects-and-background-fields-in",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-08T05:53:26.890Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/maximal-orbital-entanglement-from-non-interacting-fermions",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-08T05:53:26.890Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/size-independent-logarithmic-sobolev-inequalities-for-quantum",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-08T05:53:26.890Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/mixed-state-deep-thermalization-under-generic-quantum-errors",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-08T05:53:26.890Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/screening-strongly-correlated-materials-in-solid-oxide-cells",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-08T05:53:26.890Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/estimation-non-linear-compression-potential",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-08T05:53:26.890Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/quantum-parameter-estimation-no-go-result",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-08T05:53:26.890Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/phonon-assisted-free-electron-recoil-control-and-mechanical-sensing",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-08T05:53:26.890Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/supersolid-phase-transitions-trapped-quantum-gases",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-08T05:53:26.890Z"
+    },
     {
       "url": "https://biogravity.space/",
       "status": "INDEXED",
@@ -82,46 +513,11 @@
       "status": "INDEXED"
     },
     {
-      "url": "https://biogravity.space/microgravity-effects-on-human-body",
-      "status": "NOT_INDEXED",
-      "verdict": "NEUTRAL",
-      "coverage": "URL is unknown to Google",
-      "lastChecked": "2026-11-04T06:09:42.461Z"
-    },
-    {
       "url": "https://biogravity.space/sitemap",
       "status": "INDEXED",
       "verdict": "PASS",
       "coverage": "Submitted and indexed",
       "lastChecked": "2026-11-01T14:45:04.867Z"
-    },
-    {
-      "url": "https://biogravity.space/news/automatic-generation-of-novel-highly-functional-new-evidence-in",
-      "status": "NOT_INDEXED",
-      "verdict": "NEUTRAL",
-      "coverage": "URL is unknown to Google",
-      "lastChecked": "2026-11-04T06:09:50.099Z"
-    },
-    {
-      "url": "https://biogravity.space/news/giant-planet-mass-function-across-stellar-mass-and-new-evidence",
-      "status": "NOT_INDEXED",
-      "verdict": "NEUTRAL",
-      "coverage": "URL is unknown to Google",
-      "lastChecked": "2026-11-04T06:09:57.546Z"
-    },
-    {
-      "url": "https://biogravity.space/news/lee-yang-theorems-for-q-deformed-oscillators-and-new-evidence-in",
-      "status": "NOT_INDEXED",
-      "verdict": "NEUTRAL",
-      "coverage": "URL is unknown to Google",
-      "lastChecked": "2026-11-04T06:10:05.028Z"
-    },
-    {
-      "url": "https://biogravity.space/news/mutual-information-to-all-orders-from-modular-flow-a-new",
-      "status": "NOT_INDEXED",
-      "verdict": "NEUTRAL",
-      "coverage": "URL is unknown to Google",
-      "lastChecked": "2026-11-04T06:10:12.261Z"
     },
     {
       "url": "https://biogravity.space/news/quantum-channel-tomography-optimal-bounds-in-the-new-evidence-in",
@@ -157,12 +553,6 @@
       "verdict": "PASS",
       "coverage": "Submitted and indexed",
       "lastChecked": "2026-11-04T06:10:50.519Z"
-    },
-    {
-      "url": "https://biogravity.space/news/weighted-hypergraph-states-as-a-resource-for-quantum-new",
-      "status": "NOT_INDEXED",
-      "reason": "request to https://searchconsole.googleapis.com/v1/urlInspection/index:inspect failed, reason: read ECONNRESET",
-      "lastChecked": "2026-11-04T06:13:31.237Z"
     },
     {
       "url": "https://biogravity.space/news/time-optimal-quantum-dynamics-under-fixed-norm-generators-new",
@@ -226,13 +616,6 @@
       "verdict": "NEUTRAL",
       "coverage": "Discovered - currently not indexed",
       "lastChecked": "2026-11-01T14:48:04.347Z"
-    },
-    {
-      "url": "https://biogravity.space/articles/epigenomic-methylation-remodeling-and-virulence-attenuation-of-pathogens-in-low",
-      "status": "NOT_INDEXED",
-      "verdict": "NEUTRAL",
-      "coverage": "URL is unknown to Google",
-      "lastChecked": "2026-11-04T06:14:08.436Z"
     },
     {
       "url": "https://biogravity.space/articles/terahertz-resonance-and-coherent-dipole-oscillations-in-neuronal-microtubule-lat",
@@ -401,13 +784,6 @@
       "lastChecked": "2026-11-04T06:15:08.543Z"
     },
     {
-      "url": "https://biogravity.space/articles/self-assembling-chiral-nanotubes-zero-convection-solute-gradients",
-      "status": "NOT_INDEXED",
-      "verdict": "NEUTRAL",
-      "coverage": "URL is unknown to Google",
-      "lastChecked": "2026-11-04T06:15:15.777Z"
-    },
-    {
       "url": "https://biogravity.space/articles/mitochondrial-electron-transport-efficiency-spaceflight-radiation",
       "status": "INDEXED",
       "verdict": "PASS",
@@ -420,20 +796,6 @@
       "verdict": "PASS",
       "coverage": "Submitted and indexed",
       "lastChecked": "2026-11-04T06:15:30.174Z"
-    },
-    {
-      "url": "https://biogravity.space/articles/single-cell-rna-seq-endothelial-cells-hyperstatic-weightlessness",
-      "status": "NOT_INDEXED",
-      "verdict": "NEUTRAL",
-      "coverage": "URL is unknown to Google",
-      "lastChecked": "2026-11-04T06:15:37.442Z"
-    },
-    {
-      "url": "https://biogravity.space/articles/squid-biosensing-neuronal-action-potentials-low-earth-orbit",
-      "status": "NOT_INDEXED",
-      "verdict": "NEUTRAL",
-      "coverage": "URL is unknown to Google",
-      "lastChecked": "2026-11-04T06:15:44.635Z"
     },
     {
       "url": "https://biogravity.space/articles/tardigrade-dsup-protein-chromatin-radioprotective-compaction",

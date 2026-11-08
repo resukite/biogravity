@@ -34,6 +34,9 @@
   <title>Interactive Scientific Simulators &amp; Tools | BioGravity</title>
   <meta name="description" content="Explore interactive scientific calculators, quantum spin yield predictors, and zero-gravity hydrodynamic particle simulations.">
   <link rel="canonical" href="https://biogravity.space/tools">
+  <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
+  <link rel="alternate" type="text/markdown" href="https://biogravity.space/llms.txt" title="LLMs.txt AI Search Digest">
+  <link rel="alternate" type="text/markdown" href="https://biogravity.space/llms-full.txt" title="Full LLMs.txt AI Digest">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
   <!-- Security & CSP -->
@@ -52,9 +55,9 @@
 
   <!-- Favicon & Styles -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="stylesheet" href="/css/styles.css?v=2.1">
-  <script defer src="/js/cookie-consent.js?v=2.1"></script>
-  <script defer src="/js/sidebar-menu.js?v=2.1"></script>
+  <link rel="stylesheet" href="/css/styles.min.css?v=2.2">
+  <script defer src="/js/cookie-consent.min.js?v=2.2"></script>
+  <script defer src="/js/sidebar-menu.min.js?v=2.2"></script>
   <script>
     if (window.location.pathname.endsWith('.html')) {
       var clean = window.location.pathname.replace(/\.html$/, '');
@@ -98,7 +101,12 @@
       "offers": {
         "@type": "Offer",
         "price": "0",
-        "priceCurrency": "USD"
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://biogravity.space/tools"
       },
       "publisher": {
         "@type": "Organization",

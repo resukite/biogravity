@@ -702,8 +702,10 @@ class SEOManager {
   <meta name="twitter:description" content="${escapeHtml(item.summary)}">
   <meta name="twitter:image" content="${escapeHtml(item.cover)}">
 
-  <link rel="stylesheet" href="/css/styles.css">
-  <script defer src="/js/sidebar-menu.js"></script>
+  <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
+  <script defer src="/js/cookie-consent.min.js?v=2.2"></script>
+  <link rel="stylesheet" href="/css/styles.min.css?v=2.2">
+  <script defer src="/js/sidebar-menu.min.js?v=2.2"></script>
 
   <script type="application/ld+json">
 ${JSON.stringify(schema, null, 2)}
@@ -1020,8 +1022,10 @@ ${JSON.stringify(schema, null, 2)}
   }
   </script>
 
-  <link rel="stylesheet" href="/css/styles.css">
-  <script defer src="/js/sidebar-menu.js"></script>
+  <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
+  <script defer src="/js/cookie-consent.min.js?v=2.2"></script>
+  <link rel="stylesheet" href="/css/styles.min.css?v=2.2">
+  <script defer src="/js/sidebar-menu.min.js?v=2.2"></script>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col font-sans">
 

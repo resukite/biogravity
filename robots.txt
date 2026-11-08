@@ -68,6 +68,10 @@ Allow: /
 # Cloudflare / IETF Content Signals Policy
 Content-Signal: search=yes, ai-input=yes, ai-train=no
 
+# LLMs.txt AI Search & Agent Digest
+Allow: /llms.txt
+Allow: /llms-full.txt
+
 # Sitemap & AI Digest Locations
 Sitemap: https://biogravity.space/sitemap.xml
 Sitemap: https://biogravity.space/sitemap-news.xml

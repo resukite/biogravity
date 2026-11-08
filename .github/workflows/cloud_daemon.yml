@@ -1,9 +1,8 @@
 name: BioGravity Cloud SEO Publishing Daemon
 
 on:
-  # Automated schedule temporarily paused for AdSense review stability
-  # schedule:
-  #   - cron: '0 6,18 * * *'
+  schedule:
+    - cron: '0 6,18 * * *'
   workflow_dispatch:
     inputs:
       force:

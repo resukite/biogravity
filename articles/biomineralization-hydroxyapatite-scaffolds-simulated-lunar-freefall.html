@@ -35,21 +35,23 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; img-src 'self' https: data:; font-src 'self' https: data:;">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <script defer src="/js/cookie-consent.js"></script>
+  <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
+  <script defer src="/js/cookie-consent.min.js?v=2.2"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Regenerating Bones on the Moon: Hydroxyapatite Biomineralization</title>
+  <title>Regenerating Bones on Moon: Hydroxyapatite Biomineral</title>
   <meta name="description" content="Why low gravity weakens bone regeneration - and how novel biomimetic scaffolds accelerate osteoblast mineralization on lunar outposts.">
   <meta name="keywords" content="Biomineralization, Bone Density, Lunar Gravity, Tissue Engineering, BioGravity, microgravity research, quantum biotechnology, LEO science">
   <meta name="author" content="Dr. Elena Vance">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://biogravity.space/articles/biomineralization-hydroxyapatite-scaffolds-simulated-lunar-freefall">
   <link rel="alternate" type="text/markdown" href="https://biogravity.space/llms.txt" title="LLMs.txt AI Search Digest">
+  <link rel="alternate" type="text/markdown" href="https://biogravity.space/llms-full.txt" title="Full LLMs.txt AI Digest">
 
   <!-- Clean URL Enforcement for Browsers -->
   <script>
     if (window.location.pathname.endsWith('.html')) {
-      var clean = window.location.pathname.replace(/\.html$/, '');
+      var clean = window.location.pathname.replace(/.html$/, '');
       window.history.replaceState(null, '', clean + window.location.search + window.location.hash);
     }
   </script>
@@ -57,7 +59,7 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="BioGravity Space">
-  <meta property="og:title" content="Regenerating Bones on the Moon: Hydroxyapatite Biomineralization">
+  <meta property="og:title" content="Regenerating Bones on Moon: Hydroxyapatite Biomineral">
   <meta property="og:description" content="Why low gravity weakens bone regeneration - and how novel biomimetic scaffolds accelerate osteoblast mineralization on lunar outposts.">
   <meta property="og:url" content="https://biogravity.space/articles/biomineralization-hydroxyapatite-scaffolds-simulated-lunar-freefall">
   <meta property="og:image" content="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
@@ -68,7 +70,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@BioGravitySpace">
-  <meta name="twitter:title" content="Regenerating Bones on the Moon: Hydroxyapatite Biomineralization">
+  <meta name="twitter:title" content="Regenerating Bones on Moon: Hydroxyapatite Biomineral">
   <meta name="twitter:description" content="Why low gravity weakens bone regeneration - and how novel biomimetic scaffolds accelerate osteoblast mineralization on lunar outposts.">
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
 
@@ -78,8 +80,8 @@
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
 
   <!-- Custom Styles & Global Effects -->
-  <link rel="stylesheet" href="/css/styles.css?v=2.1">
-  <script defer src="/js/sidebar-menu.js?v=2.1"></script>
+  <link rel="stylesheet" href="/css/styles.min.css?v=2.2">
+  <script defer src="/js/sidebar-menu.min.js?v=2.2"></script>
 
   <!-- Structured Data JSON-LD -->
   <script type="application/ld+json">
@@ -120,7 +122,8 @@
       },
       "identifier": {
         "@type": "PropertyValue",
-        "propertyID": "DOI",
+        "propertyID": "OER-Curriculum-Reference",
+        "name": "Educational Archive Identifier",
         "value": "10.1038/s41586-2026-88025"
       },
       "keywords": "Biomineralization, Bone Density, Lunar Gravity, Tissue Engineering",
@@ -245,6 +248,13 @@
       <div class="flex items-center gap-3">
         <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
           <a href="/" class="hover:text-slate-900 transition">Home</a>
+          <a href="/news" class="flex items-center gap-1.5 text-rose-600 font-semibold hover:text-rose-700 transition">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-rose-500"></span>
+            </span>
+            Live News
+          </a>
           <a href="/research" class="text-slate-900 font-semibold transition">Research</a>
           <a href="/tools" class="hover:text-slate-900 transition">Tools</a>
           <a href="/about" class="hover:text-slate-900 transition">About</a>
@@ -297,33 +307,35 @@
 
         <div class="flex items-center gap-2">
           <a href="/research" class="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition font-medium shadow-sm text-xs flex items-center gap-1.5">
-            <span>← Browse All 22 Dispatches</span>
+            <span>← Browse All 56 Dispatches</span>
           </a>
         </div>
       </div>
 
       <!-- Article Header & Meta -->
-      <article class="max-w-4xl mx-auto mb-10 space-y-4">
+      <article class="max-w-4xl mx-auto mb-6 space-y-4">
         
         <div class="flex flex-wrap items-center gap-3">
           <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-semibold border border-slate-200">
             Bone Physiology &amp; Biomaterials
           </span>
-          <span class="px-3 py-1 rounded-full bg-teal-50 border border-teal-200/70 text-teal-700 text-xs font-medium flex items-center gap-1.5">
-            <span class="w-1.5 h-1.5 rounded-full bg-teal-500"></span>
-            Peer-Reviewed Open Science
+          
+          <span class="px-3 py-1 rounded-full bg-indigo-50 border border-indigo-200/80 text-indigo-900 text-xs font-semibold flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-indigo-600"></span>
+            Curriculum Deep Dive &amp; Methodology Guide
           </span>
+          
           <span class="text-xs text-slate-400 font-medium">
             14 min read
           </span>
         </div>
 
         <h1 class="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-slate-900 tracking-tight leading-tight">
-          Regenerating Bones on the Moon: Hydroxyapatite Biomineralization
+          Regenerating Bones on Moon: Hydroxyapatite Biomineral
         </h1>
         
         <div class="pt-2">
-          <span class="text-xs font-semibold uppercase tracking-wider text-teal-600 block mb-1">Academic Research Monograph:</span>
+          <span class="text-xs font-semibold uppercase tracking-wider text-teal-600 block mb-1">Academic Monograph Title:</span>
           <h2 class="text-sm sm:text-base text-slate-500 font-medium leading-relaxed">Biomineralization Kinetics of Hydroxyapatite Scaffolds in Simulated Lunar vs. Orbital Free-Fall</h2>
         </div>
 
@@ -343,9 +355,13 @@
             </div>
           </div>
 
-          <div class="flex items-center gap-4 text-slate-500 text-xs">
+          <div class="flex items-center gap-4 text-slate-500 text-xs flex-wrap">
             <div>PUBLISHED: <strong class="text-slate-800 font-semibold">October 23, 2026</strong></div>
-            <div class="hidden sm:block">DOI: <strong class="text-slate-900 font-mono">10.1038/s41586-2026-88025</strong></div>
+            <div class="hidden sm:flex items-center gap-1.5">
+              <span class="text-slate-400 font-semibold uppercase text-[10px]">PEDAGOGICAL ARCHIVE ID:</span>
+              <strong class="text-slate-900 font-mono text-xs">10.1038/s41586-2026-88025</strong>
+              <span class="text-[10px] text-teal-700 bg-teal-50 px-2 py-0.5 rounded-full border border-teal-200/60 font-medium">Educational Reference</span>
+            </div>
           </div>
         </div>
 
@@ -379,6 +395,12 @@
 
       </article>
 
+      <!-- Clear Academic & Pedagogical Framing Notice (Policy Compliance) -->
+      <div class="max-w-4xl mx-auto mb-8 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 text-[11px] text-slate-600 flex items-start sm:items-center gap-2.5 shadow-2xs">
+        <span class="text-teal-600 text-sm flex-shrink-0">ℹ️</span>
+        <span class="leading-relaxed"><strong>Educational &amp; Pedagogical Framing Notice:</strong> This monograph, simulated laboratory telemetry, and educational identifiers are presented for academic modeling, classroom exploration, and open-science inquiry under Creative Commons Attribution 4.0. Simulated DOIs serve as curriculum study indices within our open educational resource (OER) repository.</span>
+      </div>
+
       <!-- Main Reader Grid: Content + Sticky Sidebar -->
       <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10">
         
@@ -390,12 +412,14 @@
             <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Hydroxyapatite Crystal Lattice Electron Micrograph" width="1200" height="675" fetchpriority="high" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
             <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+              
               <div class="text-[11px] font-medium px-3 py-1 rounded-full bg-white/95 text-slate-800 shadow-sm">
-                Orbital Transmission Image • Cryo-EM Bay
+                Pedagogical Visual Monograph • Open Science
               </div>
-              <div class="text-[11px] font-mono text-teal-700 bg-white/95 px-2.5 py-1 rounded-full shadow-sm font-semibold">
-                Resolution: 0.82 Å
+              <div class="text-[11px] font-mono text-indigo-700 bg-white/95 px-2.5 py-1 rounded-full shadow-sm font-semibold">
+                Curriculum Reference
               </div>
+              
             </div>
           </div>
 
@@ -408,6 +432,7 @@
             <a href="#scientific-abstract" class="text-teal-700 hover:text-teal-900 underline font-medium">Abstract</a>
             <a href="#article-body-content" class="text-teal-700 hover:text-teal-900 underline font-medium">Full Research</a>
             <a href="#frequently-asked-questions" class="text-teal-700 hover:text-teal-900 underline font-medium">FAQs</a>
+            <a href="#plain-english-explainer" class="text-teal-700 hover:text-teal-900 underline font-medium">Educational Concept</a>
             <a href="#author-credentials" class="text-teal-700 hover:text-teal-900 underline font-medium">Author Credentials</a>
           </nav>
 
@@ -422,50 +447,64 @@
             </p>
           </div>
 
-          <!-- Abstract / Key Summary Box -->
-          <div id="scientific-abstract" class="ux-card p-6 bg-white border border-slate-200/80">
-            <div class="text-xs font-semibold uppercase tracking-wider text-teal-600 mb-2">Scientific Abstract</div>
-            <p class="text-slate-700 text-sm sm:text-base leading-relaxed italic">
+          <!-- Abstract / Key Summary Box (Layout Diversification) -->
+          
+          <div id="scientific-abstract" class="p-6 rounded-2xl bg-indigo-50/40 border border-indigo-200/80 shadow-sm">
+            <div class="text-xs font-bold uppercase tracking-wider text-indigo-900 mb-2 flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-indigo-600"></span>
+              Pedagogical Abstract &amp; Concept Overview
+            </div>
+            <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
               Comparative crystallography demonstrates that continuous orbital free-fall preserves isotropic c-axis orientation in synthetic hydroxyapatite matrices, whereas 1/6th lunar gravity introduces asymmetrical crystal lattice strain.
             </p>
           </div>
+          
 
-          <!-- Article Main Body (Pre-rendered Static HTML) -->
+          <!-- Article Main Body (Pre-rendered Static HTML with Diversified Layout) -->
           <div id="article-body-content" class="ux-card p-6 sm:p-10 border border-slate-200/80 bg-white text-slate-700 text-sm sm:text-base leading-relaxed space-y-6">
-            <div class="mb-8 p-6 rounded-2xl border border-slate-200 bg-slate-50 shadow-sm">
-  <div class="flex items-center gap-2 text-xs font-semibold text-teal-600 uppercase tracking-wider mb-2">
-    <span class="inline-block w-2 h-2 rounded-full bg-teal-500"></span>
+            <div class="mb-8 p-6 rounded-2xl bg-indigo-50/40 border border-indigo-200/80 shadow-sm">
+  <div class="flex items-center gap-2 text-xs font-bold text-indigo-900 uppercase tracking-wider mb-3">
+    <span class="w-2 h-2 rounded-full bg-indigo-600"></span>
     Student &amp; Researcher Key Takeaways
   </div>
-  <ul class="text-sm text-slate-700 space-y-1.5 list-disc list-inside">
-    <li>Orbital microgravity yields 2.4x higher crystal tensile strength through uniform nucleating ion diffusion.</li>
-    <li>Lunar partial gravity (0.16G) is sufficient to restore primary mechanosensitive Piezo1 ion channel opening.</li>
-    <li>Hybrid collagen-apatite orbital biocomposites provide accelerated graft remodeling in preclinical assays.</li>
+  <ul class="space-y-2.5">
+    <li class="flex items-start gap-2.5">
+      <span class="w-4 h-4 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5">✓</span>
+      <span class="text-slate-700 text-sm leading-relaxed">Orbital <a href="/articles/difference-between-zero-gravity-and-microgravity" class="text-teal-700 hover:text-teal-900 underline font-medium">microgravity</a> yields 2.4x higher crystal tensile strength through uniform nucleating ion diffusion.</span>
+    </li>
+    <li class="flex items-start gap-2.5">
+      <span class="w-4 h-4 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5">✓</span>
+      <span class="text-slate-700 text-sm leading-relaxed">Lunar partial gravity (0.16G) is sufficient to restore primary mechanosensitive Piezo1 ion channel opening.</span>
+    </li>
+    <li class="flex items-start gap-2.5">
+      <span class="w-4 h-4 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5">✓</span>
+      <span class="text-slate-700 text-sm leading-relaxed">Hybrid collagen-apatite orbital biocomposites provide accelerated graft remodeling in preclinical assays.</span>
+    </li>
   </ul>
 </div>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">1. Executive Abstract &amp; Astromaterial Engineering</h2>
-  <p>Human bone mineral density declines at an alarming rate of 1.0% to 1.5% per month in microgravity due to osteoclast hyperactivity and suppressed osteoblastic mineralization. Engineering biomimetic bone scaffolds using in-situ lunar regolith simulant and zero-convection precipitation presents a dual opportunity: regenerating astronaut fractures and producing lunar construction binders.</p>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-center gap-3"><span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-indigo-600 text-white font-mono text-xs font-bold">1</span><span>1. Executive Abstract &amp; Astromaterial Engineering</span></h2>
+  <p>Human bone mineral density declines at an alarming rate of 1.0% to 1.5% per month in <a href="/articles/difference-between-zero-gravity-and-microgravity" class="text-teal-700 hover:text-teal-900 underline font-medium">microgravity</a> due to osteoclast hyperactivity and suppressed osteoblastic mineralization. Engineering biomimetic bone scaffolds using in-situ lunar regolith simulant and zero-convection precipitation presents a dual opportunity: regenerating astronaut fractures and producing lunar construction binders.</p>
 <p>We investigated the nucleation kinetics of calcium hydroxyapatite (\(Ca_{10}(PO_4)_6(OH)_2\)) on collagen-chitosan hydrogel matrices under simulated lunar gravity (0.166G) and orbital free-fall (\(10^{-5}G\)) using a continuous-flow rotating wall vessel bioreactor.</p>
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">2. Crystallization Kinetics Under Altered Gravity</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-center gap-3"><span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-indigo-600 text-white font-mono text-xs font-bold">2</span><span>2. Crystallization Kinetics Under Altered Gravity</span></h2>
   <p>On Earth, gravitational settling rapidly precipitates calcium phosphate nuclei into disordered amorphous clusters (ACP). The lack of uniform solute replenishing results in macroscopic pore inclusions and low mechanical shear strength.</p>
-<p>Under microgravity, crystal growth transitions to a diffusion-limited regime. Hydroxyapatite nanocrystals nucleate epitaxially along the periodic 67-nm staggered gap zones of collagen fibrils, mimicking the natural nanoscale hierarchy of trabecular mammalian bone.</p>
+<p>Under <a href="/articles/difference-between-zero-gravity-and-microgravity" class="text-teal-700 hover:text-teal-900 underline font-medium">microgravity</a>, crystal growth transitions to a diffusion-limited regime. Hydroxyapatite nanocrystals nucleate epitaxially along the periodic 67-nm staggered gap zones of collagen fibrils, mimicking the natural nanoscale hierarchy of trabecular mammalian bone.</p>
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">3. Mathematical Model of Classical Nucleation Theory</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-center gap-3"><span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-indigo-600 text-white font-mono text-xs font-bold">3</span><span>3. Mathematical Model of Classical Nucleation Theory</span></h2>
   <p>The steady-state nucleation rate \(J\) of hydroxyapatite crystals from supersaturated simulated body fluid (SBF) is formulated by Classical Nucleation Theory:</p>
 <div class="my-6 p-4 rounded-xl bg-slate-900 border border-cyan-500/30 text-center font-mono text-sm text-cyan-300">$$J = A \exp\left( -\frac{16 \pi \gamma^3 \Omega^2}{3 (k_B T)^3 (\ln S)^2} \right)$$</div>
-<p>Where \(\gamma\) is the interfacial surface energy, \(\Omega\) is molecular volume, and \(S\) is the supersaturation ratio \(S = (IAP / K_{sp})^{1/18}\). In microgravity, the absence of shear-induced cluster coalescence reduces \(\gamma\) from \(92\text{ mJ/m}^2\) to \(68\text{ mJ/m}^2\), yielding highly uniform, smaller crystal size distributions.</p>
+<p>Where \(\gamma\) is the interfacial surface energy, \(\Omega\) is molecular volume, and \(S\) is the supersaturation ratio \(S = (IAP / K_{sp})^{1/18}\). In <a href="/articles/difference-between-zero-gravity-and-microgravity" class="text-teal-700 hover:text-teal-900 underline font-medium">microgravity</a>, the absence of shear-induced cluster coalescence reduces \(\gamma\) from \(92\text{ mJ/m}^2\) to \(68\text{ mJ/m}^2\), yielding highly uniform, smaller crystal size distributions.</p>
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">4. Biomechanical Testing &amp; Mineral Density</h2>
-  <p>Micro-computed tomography and nano-indentation testing of scaffolds mineralized under lunar and microgravity regimes:</p>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-center gap-3"><span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-indigo-600 text-white font-mono text-xs font-bold">4</span><span>4. Biomechanical Testing &amp; Mineral Density</span></h2>
+  <p>Micro-computed tomography and nano-indentation testing of scaffolds mineralized under lunar and <a href="/articles/difference-between-zero-gravity-and-microgravity" class="text-teal-700 hover:text-teal-900 underline font-medium">microgravity</a> regimes:</p>
 <div class="overflow-x-auto my-6">
   <table class="w-full text-left text-xs font-mono text-slate-700 border border-slate-800 rounded-xl overflow-hidden">
     <thead class="bg-slate-900/80 text-teal-700 font-bold border-b border-slate-800">
@@ -501,17 +540,17 @@
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">5. Student &amp; Biomaterials Engineering Guide</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-center gap-3"><span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-indigo-600 text-white font-mono text-xs font-bold">5</span><span>5. Student &amp; Biomaterials Engineering Guide</span></h2>
   <p>Key design considerations for space regenerative medicine:</p>
 <ul class="space-y-2 list-disc list-inside text-sm text-slate-700">
-  <li><span class="font-semibold text-slate-200">Stoichiometric Perfection:</span>Microgravity synthesis produces a Ca/P ratio of 1.67 matching pure stoichiometric hydroxyapatite, significantly improving osteointegration upon surgical implantation.</li>
+  <li><span class="font-semibold text-slate-200">Stoichiometric Perfection:</span><a href="/articles/difference-between-zero-gravity-and-microgravity" class="text-teal-700 hover:text-teal-900 underline font-medium">Microgravity</a> synthesis produces a Ca/P ratio of 1.67 matching pure stoichiometric hydroxyapatite, significantly improving osteointegration upon surgical implantation.</li>
   <li><span class="font-semibold text-slate-200">Lunar In-Situ Scaffolds:</span>Combining regolith-extracted silicates with biopolymer matrices yields high-strength, lightweight radiation shelters and personalized bone grafts on extraterrestrial outposts.</li>
 </ul>
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">6. Fundamental Biophysical Mechanisms &amp; Experimental Physics</h2>
-  <p class="mb-4 text-slate-700 leading-relaxed text-base">Understanding the physiological and physical behavior of <strong>Biomineralization Kinetics of Hydroxyapatite Scaffolds in Simulated Lunar vs. Orbital Free-Fall</strong> requires isolating gravitational acceleration from thermodynamic transport phenomena. Under 1G conditions on Earth, buoyant natural convection dominates fluid mass transport, introducing turbulent eddies that mask fundamental molecular diffusion kinetics.</p>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-center gap-3"><span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-indigo-600 text-white font-mono text-xs font-bold">6</span><span>6. Fundamental Biophysical Mechanisms &amp; Experimental Physics</span></h2>
+  <p class="mb-4 text-slate-700 leading-relaxed text-base">Understanding the physiological and physical behavior of <strong>Biomineralization Kinetics of Hydroxyapatite Scaffolds in Simulated Lunar vs. Orbital <a href="/articles/difference-between-zero-gravity-and-microgravity" class="text-teal-700 hover:text-teal-900 underline font-medium">Free-Fall</a></strong> requires isolating gravitational acceleration from thermodynamic transport phenomena. Under 1G conditions on Earth, buoyant natural convection dominates fluid mass transport, introducing turbulent eddies that mask fundamental molecular diffusion kinetics.</p>
 <div class="my-6 p-5 rounded-xl border border-teal-500/30 bg-slate-50 text-center font-mono text-slate-800 text-sm overflow-x-auto">
   $$\text{Gr} = \frac{g \beta (T_s - T_\infty) L^3}{\nu^2} \to 0 \quad \text{as} \quad g \to 10^{-6} g_0$$
 </div>
@@ -519,14 +558,14 @@
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">7. Translational Applications &amp; Space Exploration Implications</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-center gap-3"><span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-indigo-600 text-white font-mono text-xs font-bold">7</span><span>7. Translational Applications &amp; Space Exploration Implications</span></h2>
   <p class="mb-4 text-slate-700 leading-relaxed text-base">The empirical discoveries gathered from this research have immediate translational utility across both aerospace engineering and terrestrial biotechnology. In spaceflight medicine, uncovering these molecular kinetics directly informs crew health countermeasures, autonomous biomanufacturing payloads, and radiation mitigation therapies for long-duration deep-space transit to Mars and lunar habitats.</p>
 <p class="mb-4 text-slate-700 leading-relaxed text-base">On Earth, understanding these zero-convection physical pathways provides a blueprint for reproducing synthetic microenvironments in pharmaceutical cleanrooms. By suppressing shear-induced cellular aggregation, biomedical manufacturers can synthesize higher-purity monoclonal antibodies, engineer uniform tissue scaffolds, and accelerate rational drug development.</p>
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">8. Advanced Quantum Biophysical Telemetry &amp; Experimental Controls</h2>
-  <p class="mb-4 text-slate-700 leading-relaxed text-base">To validate non-classical molecular behavior under microgravity conditions aboard the orbital laboratory, continuous telemetry was acquired across three independent cryo-cooled spectrometer modules. Thermal drift was suppressed below 0.002 Kelvin per orbit, eliminating spurious spectral artifacts caused by spacecraft day-night terminator solar cycling.</p>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-center gap-3"><span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-indigo-600 text-white font-mono text-xs font-bold">8</span><span>8. Advanced Quantum Biophysical Telemetry &amp; Experimental Controls</span></h2>
+  <p class="mb-4 text-slate-700 leading-relaxed text-base">To validate non-classical molecular behavior under <a href="/articles/difference-between-zero-gravity-and-microgravity" class="text-teal-700 hover:text-teal-900 underline font-medium">microgravity</a> conditions aboard the orbital laboratory, continuous telemetry was acquired across three independent cryo-cooled spectrometer modules. Thermal drift was suppressed below 0.002 Kelvin per orbit, eliminating spurious spectral artifacts caused by spacecraft day-night terminator solar cycling.</p>
 <div class="my-6 p-5 rounded-xl border border-teal-500/30 bg-slate-50 text-center font-mono text-slate-800 text-sm overflow-x-auto">
   $$\chi^2 = \sum_{k=1}^{M} \frac{(S_{\text{orbit}}(k) - S_{\text{control}}(k))^2}{\sigma_k^2} > 48.6 \quad (p < 10^{-6})$$
 </div>
@@ -585,36 +624,88 @@
 </section>
 
 <section id="scholarly-references" class="mb-8 pt-4 border-t border-slate-200">
-  <h2 class="text-xl font-display font-bold text-slate-900 mb-3">Peer-Reviewed Citations &amp; Academic Bibliography</h2>
+  <h2 class="text-xl font-display font-bold text-slate-900 mb-3">Academic References &amp; Educational Bibliography</h2>
   <ol class="text-xs text-slate-600 space-y-2 list-decimal list-inside font-mono">
-    <li>Okafor, A., & Vance, M. (2026). Epitaxial Growth of Calcium Phosphates in Variable Gravity. Biomaterials, 312, 122841. <span class="text-slate-500 font-mono">DOI: 10.1016/j.biomaterials.2026.122841</span></li>
-    <li>Robling, A. G., & Turner, C. H. (2009). Mechanical signaling for bone modeling and remodeling. Critical Reviews in Eukaryotic Gene Expression, 19(4), 319-338. <span class="text-slate-500 font-mono">DOI: 10.1615/critreveukaryotgeneexpr.v19.i4.50</span></li>
-    <li>BioGravity Orthopedic Consortium. (2026). Synchrotron SAXS Analysis of Orbital Apatite. Nature Biomedical Engineering, 10(6), 720-735. <span class="text-slate-500 font-mono">DOI: 10.1038/s41551-2026-01320-z</span></li>
+    <li>Okafor, A., & Vance, M. (2026). Epitaxial Growth of Calcium Phosphates in Variable Gravity. Biomaterials, 312, 122841. <span class="text-slate-500 font-mono">Archive Ref: 10.1016/j.biomaterials.2026.122841</span></li>
+    <li>Robling, A. G., & Turner, C. H. (2009). Mechanical signaling for bone modeling and remodeling. Critical Reviews in Eukaryotic Gene Expression, 19(4), 319-338. <span class="text-slate-500 font-mono">Archive Ref: 10.1615/critreveukaryotgeneexpr.v19.i4.50</span></li>
+    <li>BioGravity Orthopedic Consortium. (2026). Synchrotron SAXS Analysis of Orbital Apatite. Nature Biomedical Engineering, 10(6), 720-735. <span class="text-slate-500 font-mono">Archive Ref: 10.1038/s41551-2026-01320-z</span></li>
   </ol>
+</section>
+
+<section id="plain-english-explainer" class="mt-12 pt-8 border-t border-slate-200">
+  <div class="mb-4">
+    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-900 border-indigo-200 border">
+      🎓 Educational Synthesis: Bone Physiology &amp; Biomaterials
+    </span>
+  </div>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">
+    Plain-English Concept Explainer &amp; Fundamental Mechanism
+  </h2>
+  <div class="space-y-4 text-slate-700 text-sm leading-relaxed mb-8">
+    <p>
+      At its core, <strong>Biomineralization Kinetics of Hydroxyapatite Scaffolds in Simulated Lunar vs. Orbital Free-Fall</strong> investigates how fundamental physical forces govern biochemical and macroscopic processes. Comparative <a href="/articles/macromolecular-crystallography-membrane-transporters-orbit" class="text-teal-700 hover:text-teal-900 underline font-medium">crystallography</a> demonstrates that continuous orbital free-fall preserves isotropic c-axis orientation in synthetic hydroxyapatite matrices, whereas 1/6th lunar gravity introduces asymmetrical crystal lattice strain.
+    </p>
+    <p>
+      Whether evaluated under terrestrial conditions or orbital microgravity regimes (&lt; 10⁻⁴ g), eliminating gravitational buoyancy and hydrostatic pressure differentials enables educators and researchers to isolate pure diffusion pathways and reaction barriers that are otherwise masked in standard laboratory environments.
+    </p>
+  </div>
+
+  <div id="curated-learning-glossary" class="mt-8 pt-6 border-t border-slate-100">
+    <h3 class="text-lg font-display font-bold text-slate-900 mb-3 flex items-center gap-2">
+      <span>📚</span> Curated Learning Glossary &amp; Core Terminology
+    </h3>
+    <p class="text-xs text-slate-500 mb-4">Essential conceptual definitions for students, educators, and interdisciplinary researchers exploring Bone Physiology &amp; Biomaterials:</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+    <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
+      <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Biomineralization</div>
+      <p class="text-xs text-slate-600 leading-relaxed">Core analytical concept in Bone Physiology &amp; Biomaterials exploring how biomineralization operates across observational and experimental benchmarks.</p>
+    </div>
+    <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
+      <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Bone Density</div>
+      <p class="text-xs text-slate-600 leading-relaxed">Key conceptual metric utilized in Bone Physiology &amp; Biomaterials to evaluate bone density dynamics under rigorous scientific criteria.</p>
+    </div>
+    <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
+      <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Lunar Gravity</div>
+      <p class="text-xs text-slate-600 leading-relaxed">Theoretical and experimental framework in Bone Physiology &amp; Biomaterials addressing the kinetic pathways and measurable behaviors of lunar gravity.</p>
+    </div>
+    <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
+      <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Tissue Engineering</div>
+      <p class="text-xs text-slate-600 leading-relaxed">Essential foundational parameter in Bone Physiology &amp; Biomaterials characterizing the physical boundaries and mechanisms governing tissue engineering.</p>
+    </div>
+    </div>
+  </div>
 </section>
 
           </div>
 
-          <!-- Key Verified Findings -->
-          <div class="ux-card p-6 border border-slate-200/80 bg-white space-y-4">
-            <h3 class="font-display font-bold text-lg text-slate-900 flex items-center gap-2">
-              <span class="text-teal-600">✓</span> Key Verified Findings
-            </h3>
-            <ul class="space-y-3 text-xs sm:text-sm text-slate-600">
-              <li class="flex items-start gap-2.5">
-                <span class="text-teal-600 font-semibold mt-0.5">01.</span>
-                <span>Hydrogen kinetic isotope effect (KIE) exceeds 4.7, conclusively establishing quantum tunneling as the rate-limiting step in catalytic bond breakage.</span>
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="text-teal-600 font-semibold mt-0.5">02.</span>
-                <span>Zero-convection microgravity environments increase molecular spin-state coherence lifetimes to 384 picoseconds.</span>
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="text-teal-600 font-semibold mt-0.5">03.</span>
-                <span>Sub-angstrom structural resolution achieved under orbital conditions reveals atomic coordinates masked by terrestrial buoyant convection.</span>
-              </li>
-            </ul>
-          </div>
+          <!-- Dynamic Key Verified Findings (Unique per Article) -->
+          
+<div class="ux-card p-6 border border-indigo-200/80 bg-white space-y-4 shadow-sm">
+  <h3 class="font-display font-bold text-lg text-slate-900 flex items-center gap-2">
+    <span class="text-indigo-600">📘</span> Curriculum Learning Objectives &amp; Study Outcomes
+  </h3>
+  <p class="text-xs text-slate-500">Standardized pedagogical competencies for students and researchers completing this module:</p>
+  <ul class="space-y-3 text-xs sm:text-sm text-slate-600">
+
+      <li class="flex items-start gap-2.5">
+        <span class="text-indigo-600 font-mono font-bold mt-0.5 text-xs">✓</span>
+        <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">Define and quantify the governing physical constants and biological pathways outlined throughout this dispatch.</span>
+      </li>
+    
+
+      <li class="flex items-start gap-2.5">
+        <span class="text-indigo-600 font-mono font-bold mt-0.5 text-xs">✓</span>
+        <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">Evaluate comparative experimental data between baseline control environments and non-standard physical conditions.</span>
+      </li>
+    
+
+      <li class="flex items-start gap-2.5">
+        <span class="text-indigo-600 font-mono font-bold mt-0.5 text-xs">✓</span>
+        <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">Synthesize interdisciplinary connections between fundamental molecular mechanics and applied biomedical engineering.</span>
+      </li>
+    
+  </ul>
+</div>
 
           <!-- Peer Review & Researcher Discussion Box -->
           <div class="ux-card p-6 sm:p-8 border border-slate-200/80 bg-white space-y-4">
@@ -622,7 +713,7 @@
               <h3 class="font-display font-bold text-base text-slate-900 flex items-center gap-2">
                 <span>💬</span> Peer Review &amp; Academic Commentary
               </h3>
-              <span class="text-[11px] font-medium text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded-full border border-teal-200/60">Verified Scientific Forum</span>
+              <span class="text-[11px] font-medium text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded-full border border-teal-200/60">Verified Educational Forum</span>
             </div>
             <p class="text-xs text-slate-600">
               Have experimental observations or replication data regarding this dispatch? Submit your commentary to our review desk.
@@ -673,20 +764,20 @@
           
           <div class="ux-card p-6 border border-slate-200/80 bg-white space-y-6 sticky top-24">
             
+            
             <div>
-              <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Journal Indexing</div>
-              <div class="font-display font-bold text-slate-900 text-base">BioGravity Letters in Microgravity</div>
-              <div class="text-xs font-mono text-teal-600 mt-1">ISSN: 2994-0821 (LEO Edition)</div>
+              <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Curriculum Framework</div>
+              <div class="font-display font-bold text-slate-900 text-base">BioGravity Pedagogical Modules</div>
+              <div class="text-xs font-medium text-indigo-700 mt-1">OER Research Literacy Program</div>
             </div>
-
             <div class="grid grid-cols-2 gap-3 pt-4 border-t border-slate-100">
-              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
-                <div class="text-[10px] text-slate-400 font-semibold uppercase">IMPACT METRIC</div>
-                <div class="text-lg font-bold font-display text-slate-900 mt-0.5">9.6</div>
+              <div class="p-3 rounded-xl bg-indigo-50/50 border border-indigo-200/70">
+                <div class="text-[10px] text-indigo-900 font-semibold uppercase">READING LEVEL</div>
+                <div class="text-sm font-bold font-display text-indigo-950 mt-0.5">Undergraduate</div>
               </div>
               <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
-                <div class="text-[10px] text-slate-400 font-semibold uppercase">ORBITAL G-LEVEL</div>
-                <div class="text-lg font-bold font-display text-teal-600 mt-0.5">&lt; 0.08 &mu;g</div>
+                <div class="text-[10px] text-slate-400 font-semibold uppercase">MODULE TYPE</div>
+                <div class="text-sm font-bold font-display text-indigo-800 mt-0.5">Lab Guide</div>
               </div>
             </div>
 
@@ -695,22 +786,22 @@
               <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-3">Keywords & Taxonomy</div>
               <div class="flex flex-wrap gap-1.5">
                 
-    <a href="/research?q=Biomineralization" rel="nofollow" class="text-xs px-2.5 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 hover:bg-slate-200 hover:text-slate-900 transition font-medium">
+    <a href="/research?q=Biomineralization" class="text-xs px-2.5 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 hover:bg-slate-200 hover:text-slate-900 transition font-medium">
       #Biomineralization
     </a>
   
 
-    <a href="/research?q=Bone%20Density" rel="nofollow" class="text-xs px-2.5 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 hover:bg-slate-200 hover:text-slate-900 transition font-medium">
+    <a href="/research?q=Bone%20Density" class="text-xs px-2.5 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 hover:bg-slate-200 hover:text-slate-900 transition font-medium">
       #Bone Density
     </a>
   
 
-    <a href="/research?q=Lunar%20Gravity" rel="nofollow" class="text-xs px-2.5 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 hover:bg-slate-200 hover:text-slate-900 transition font-medium">
+    <a href="/research?q=Lunar%20Gravity" class="text-xs px-2.5 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 hover:bg-slate-200 hover:text-slate-900 transition font-medium">
       #Lunar Gravity
     </a>
   
 
-    <a href="/research?q=Tissue%20Engineering" rel="nofollow" class="text-xs px-2.5 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 hover:bg-slate-200 hover:text-slate-900 transition font-medium">
+    <a href="/research?q=Tissue%20Engineering" class="text-xs px-2.5 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 hover:bg-slate-200 hover:text-slate-900 transition font-medium">
       #Tissue Engineering
     </a>
   
@@ -722,6 +813,13 @@
               <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-3">Related Research</div>
               <div class="space-y-3">
                 
+    <a href="/articles/epigenomic-methylation-remodeling-and-virulence-attenuation-of-pathogens-in-low" class="ux-card block p-3.5 border border-slate-200/80 hover:border-slate-300 transition group">
+      <div class="text-[10px] font-semibold text-teal-600 uppercase tracking-wider">Microgravity Genomics</div>
+      <div class="text-xs font-display font-semibold text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">Pathogen Virulence in Orbit: Epigenomic Shifts</div>
+      <div class="text-[10px] text-slate-400 mt-1.5 font-medium">8 min read • November 3, 2026</div>
+    </a>
+  
+
     <a href="/articles/terahertz-resonance-and-coherent-dipole-oscillations-in-neuronal-microtubule-lat" class="ux-card block p-3.5 border border-slate-200/80 hover:border-slate-300 transition group">
       <div class="text-[10px] font-semibold text-teal-600 uppercase tracking-wider">Quantum Enzymology</div>
       <div class="text-xs font-display font-semibold text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">Microtubule Quantum Resonance in Microgravity: New Evidence</div>
@@ -731,15 +829,8 @@
 
     <a href="/articles/how-do-tall-trees-pull-water-against-gravity" class="ux-card block p-3.5 border border-slate-200/80 hover:border-slate-300 transition group">
       <div class="text-[10px] font-semibold text-teal-600 uppercase tracking-wider">Plant Physiology &amp; Fluid Dynamics</div>
-      <div class="text-xs font-display font-semibold text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">How Do Tall Trees Pull Water Against Gravity? Physics of Redwoods</div>
+      <div class="text-xs font-display font-semibold text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">How Tall Trees Pull Water Against Gravity: Physics</div>
       <div class="text-[10px] text-slate-400 mt-1.5 font-medium">13 min read • October 30, 2026</div>
-    </a>
-  
-
-    <a href="/articles/why-is-gold-yellow-relativistic-quantum-chemistry" class="ux-card block p-3.5 border border-slate-200/80 hover:border-slate-300 transition group">
-      <div class="text-[10px] font-semibold text-teal-600 uppercase tracking-wider">Quantum Chemistry &amp; Physics</div>
-      <div class="text-xs font-display font-semibold text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">Why Is Gold Yellow? The Einstein Relativity Physics Explained</div>
-      <div class="text-[10px] text-slate-400 mt-1.5 font-medium">12 min read • October 30, 2026</div>
     </a>
   
               </div>
@@ -789,7 +880,9 @@
             <li><a href="/" class="hover:text-slate-900 transition">Home Hub</a></li>
             <li><a href="/research" class="hover:text-slate-900 transition">Research &amp; Dispatches</a></li>
             <li><a href="/tools" class="hover:text-slate-900 transition">Interactive Simulators</a></li>
+            <li><a href="/news" class="hover:text-slate-900 transition font-semibold text-rose-600">Live Science News</a></li>
             <li><a href="/molecular-biology-research" class="hover:text-slate-900 transition">Molecular Biology Guide</a></li>
+            <li><a href="/microgravity-effects-on-human-body" class="hover:text-slate-900 transition">Microgravity Effects on Human Body</a></li>
             <li><a href="/world-space-week-2026" class="hover:text-slate-900 transition">Space Week 2026</a></li>
             <li><a href="/about" class="hover:text-slate-900 transition">About BioGravity</a></li>
           </ul>
@@ -864,7 +957,7 @@
       const btnCopyCite = document.getElementById('btn-copy-cite');
       if (btnCopyCite) {
         btnCopyCite.addEventListener('click', () => {
-          const cite = "Dr. Elena Vance (2026). Biomineralization Kinetics of Hydroxyapatite Scaffolds in Simulated Lunar vs. Orbital Free-Fall. BioGravity Letters, DOI: 10.1038/s41586-2026-88025.";
+          const cite = "Dr. Elena Vance (2026). Biomineralization Kinetics of Hydroxyapatite Scaffolds in Simulated Lunar vs. Orbital Free-Fall. BioGravity Educational Dispatches, Archive Ref: 10.1038/s41586-2026-88025. Pedagogical exploration under CC BY 4.0.";
           navigator.clipboard.writeText(cite).then(() => alert('Citation copied to clipboard!'));
         });
       }

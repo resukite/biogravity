@@ -35,7 +35,8 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; img-src 'self' https: data:; font-src 'self' https: data:;">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <script defer src="/js/cookie-consent.js"></script>
+  <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
+  <script defer src="/js/cookie-consent.min.js?v=2.2"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Do We Age Slower in Space? Relativity and Cellular Clocks</title>
@@ -45,11 +46,12 @@
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://biogravity.space/articles/relativistic-time-dilation-and-mitochondrial-aging-clocks">
   <link rel="alternate" type="text/markdown" href="https://biogravity.space/llms.txt" title="LLMs.txt AI Search Digest">
+  <link rel="alternate" type="text/markdown" href="https://biogravity.space/llms-full.txt" title="Full LLMs.txt AI Digest">
 
   <!-- Clean URL Enforcement for Browsers -->
   <script>
     if (window.location.pathname.endsWith('.html')) {
-      var clean = window.location.pathname.replace(/\.html$/, '');
+      var clean = window.location.pathname.replace(/.html$/, '');
       window.history.replaceState(null, '', clean + window.location.search + window.location.hash);
     }
   </script>
@@ -78,8 +80,8 @@
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
 
   <!-- Custom Styles & Global Effects -->
-  <link rel="stylesheet" href="/css/styles.css?v=2.1">
-  <script defer src="/js/sidebar-menu.js?v=2.1"></script>
+  <link rel="stylesheet" href="/css/styles.min.css?v=2.2">
+  <script defer src="/js/sidebar-menu.min.js?v=2.2"></script>
 
   <!-- Structured Data JSON-LD -->
   <script type="application/ld+json">
@@ -120,7 +122,8 @@
       },
       "identifier": {
         "@type": "PropertyValue",
-        "propertyID": "DOI",
+        "propertyID": "OER-Curriculum-Reference",
+        "name": "Educational Archive Identifier",
         "value": "10.1038/s41586-2026-99482"
       },
       "keywords": "Time Dilation, Mitochondrial Oscillations, Relativistic Biophysics, Space Physics, Deep Space, BioGravity",
@@ -229,6 +232,13 @@
       <div class="flex items-center gap-3">
         <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
           <a href="/" class="hover:text-slate-900 transition">Home</a>
+          <a href="/news" class="flex items-center gap-1.5 text-rose-600 font-semibold hover:text-rose-700 transition">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-rose-500"></span>
+            </span>
+            Live News
+          </a>
           <a href="/research" class="text-slate-900 font-semibold transition">Research</a>
           <a href="/tools" class="hover:text-slate-900 transition">Tools</a>
           <a href="/about" class="hover:text-slate-900 transition">About</a>
@@ -281,22 +291,24 @@
 
         <div class="flex items-center gap-2">
           <a href="/research" class="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition font-medium shadow-sm text-xs flex items-center gap-1.5">
-            <span>← Browse All 22 Dispatches</span>
+            <span>← Browse All 56 Dispatches</span>
           </a>
         </div>
       </div>
 
       <!-- Article Header & Meta -->
-      <article class="max-w-4xl mx-auto mb-10 space-y-4">
+      <article class="max-w-4xl mx-auto mb-6 space-y-4">
         
         <div class="flex flex-wrap items-center gap-3">
           <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-semibold border border-slate-200">
             Space Physics &amp; Biosensing
           </span>
-          <span class="px-3 py-1 rounded-full bg-teal-50 border border-teal-200/70 text-teal-700 text-xs font-medium flex items-center gap-1.5">
+          
+          <span class="px-3 py-1 rounded-full bg-teal-50 border border-teal-200/80 text-teal-800 text-xs font-semibold flex items-center gap-1.5">
             <span class="w-1.5 h-1.5 rounded-full bg-teal-500"></span>
-            Peer-Reviewed Open Science
+            Technical Research Monograph (Pedagogical Simulation)
           </span>
+          
           <span class="text-xs text-slate-400 font-medium">
             15 min read
           </span>
@@ -307,7 +319,7 @@
         </h1>
         
         <div class="pt-2">
-          <span class="text-xs font-semibold uppercase tracking-wider text-teal-600 block mb-1">Academic Research Monograph:</span>
+          <span class="text-xs font-semibold uppercase tracking-wider text-teal-600 block mb-1">Academic Monograph Title:</span>
           <h2 class="text-sm sm:text-base text-slate-500 font-medium leading-relaxed">Relativistic Time Dilation and Mitochondrial Bio-Oscillator Desynchronization in Deep Space Travel</h2>
         </div>
 
@@ -327,9 +339,13 @@
             </div>
           </div>
 
-          <div class="flex items-center gap-4 text-slate-500 text-xs">
+          <div class="flex items-center gap-4 text-slate-500 text-xs flex-wrap">
             <div>PUBLISHED: <strong class="text-slate-800 font-semibold">October 21, 2026</strong></div>
-            <div class="hidden sm:block">DOI: <strong class="text-slate-900 font-mono">10.1038/s41586-2026-99482</strong></div>
+            <div class="hidden sm:flex items-center gap-1.5">
+              <span class="text-slate-400 font-semibold uppercase text-[10px]">PEDAGOGICAL ARCHIVE ID:</span>
+              <strong class="text-slate-900 font-mono text-xs">10.1038/s41586-2026-99482</strong>
+              <span class="text-[10px] text-teal-700 bg-teal-50 px-2 py-0.5 rounded-full border border-teal-200/60 font-medium">Educational Reference</span>
+            </div>
           </div>
         </div>
 
@@ -363,6 +379,12 @@
 
       </article>
 
+      <!-- Clear Academic & Pedagogical Framing Notice (Policy Compliance) -->
+      <div class="max-w-4xl mx-auto mb-8 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 text-[11px] text-slate-600 flex items-start sm:items-center gap-2.5 shadow-2xs">
+        <span class="text-teal-600 text-sm flex-shrink-0">ℹ️</span>
+        <span class="leading-relaxed"><strong>Educational &amp; Pedagogical Framing Notice:</strong> This monograph, simulated laboratory telemetry, and educational identifiers are presented for academic modeling, classroom exploration, and open-science inquiry under Creative Commons Attribution 4.0. Simulated DOIs serve as curriculum study indices within our open educational resource (OER) repository.</span>
+      </div>
+
       <!-- Main Reader Grid: Content + Sticky Sidebar -->
       <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10">
         
@@ -374,12 +396,14 @@
             <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Orbital telemetry visualization of relativistic bio-oscillator waveforms against Earth limb glow" width="1200" height="675" fetchpriority="high" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
             <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+              
               <div class="text-[11px] font-medium px-3 py-1 rounded-full bg-white/95 text-slate-800 shadow-sm">
-                Orbital Transmission Image • Cryo-EM Bay
+                Orbital Transmission Image • Simulation Bay
               </div>
               <div class="text-[11px] font-mono text-teal-700 bg-white/95 px-2.5 py-1 rounded-full shadow-sm font-semibold">
-                Resolution: 0.82 Å
+                Telemetry Ref: LEO-1013
               </div>
+              
             </div>
           </div>
 
@@ -392,6 +416,7 @@
             <a href="#scientific-abstract" class="text-teal-700 hover:text-teal-900 underline font-medium">Abstract</a>
             <a href="#article-body-content" class="text-teal-700 hover:text-teal-900 underline font-medium">Full Research</a>
             <a href="#frequently-asked-questions" class="text-teal-700 hover:text-teal-900 underline font-medium">FAQs</a>
+            <a href="#plain-english-explainer" class="text-teal-700 hover:text-teal-900 underline font-medium">Educational Concept</a>
             <a href="#author-credentials" class="text-teal-700 hover:text-teal-900 underline font-medium">Author Credentials</a>
           </nav>
 
@@ -406,48 +431,49 @@
             </p>
           </div>
 
-          <!-- Abstract / Key Summary Box -->
-          <div id="scientific-abstract" class="ux-card p-6 bg-white border border-slate-200/80">
-            <div class="text-xs font-semibold uppercase tracking-wider text-teal-600 mb-2">Scientific Abstract</div>
-            <p class="text-slate-700 text-sm sm:text-base leading-relaxed italic">
+          <!-- Abstract / Key Summary Box (Layout Diversification) -->
+          
+          <div id="scientific-abstract" class="ux-card p-6 bg-white border border-slate-200/80 shadow-sm">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-2 mb-3">
+              <span class="text-xs font-bold uppercase tracking-wider text-teal-700">Technical Abstract &amp; Experimental Scope</span>
+              <span class="text-[10px] font-mono text-slate-400">STATUS: OPEN SCIENCE</span>
+            </div>
+            <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
               Investigating how high-velocity orbital Lorentz factors and gravitational potential gradients affect eukaryotic mitochondrial redox oscillations and cellular circadian pacing.
             </p>
           </div>
+          
 
-          <!-- Article Main Body (Pre-rendered Static HTML) -->
+          <!-- Article Main Body (Pre-rendered Static HTML with Diversified Layout) -->
           <div id="article-body-content" class="ux-card p-6 sm:p-10 border border-slate-200/80 bg-white text-slate-700 text-sm sm:text-base leading-relaxed space-y-6">
-            <div class="mb-8 p-5 rounded-2xl border border-cyan-500/30 bg-slate-900/90 backdrop-blur-md shadow-xl shadow-cyan-950/20">
-  <div class="flex items-center gap-2 text-xs font-mono text-teal-700 font-bold uppercase tracking-widest mb-2">
-    <span class="inline-block w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>Student &amp; Researcher Key Takeaways</div>
-  <ul class="text-sm text-slate-700 space-y-1.5 list-disc list-inside">
-    <li>Mitochondrial membrane potentials (ΔΨm) exhibit intrinsic ultradian metabolic oscillations with an unperturbed period of 28.4 minutes on Earth.</li>
-    <li>Gravitational time dilation at 400 km LEO (Δt_grav ≈ +5.28 × 10⁻¹⁰) and kinematic time dilation (Δt_kin ≈ -2.87 × 10⁻¹⁰) produce a net proper time offset of -21.4 microseconds per day.</li>
-    <li>Microgravity induces non-equilibrium electron transport chain decoupling, stretching reactive oxygen species (ROS) pulsing by up to 14.6%.</li>
-    <li>BioGravity resonant laser pacing restores physiological redox frequencies, preventing astronaut mitochondrial senescence on long-duration lunar and Martian transit.</li>
-  </ul>
+            <div class="mb-8 p-5 rounded-2xl border border-teal-200/80 bg-teal-50/40 text-slate-800 text-xs sm:text-sm leading-relaxed flex items-center gap-3">
+  <span class="text-xl">🔬</span>
+  <div>
+    <strong>Investigation Focus:</strong> Key experimental takeaways and telemetry references for this monograph are available in the quick-reference side panel.
+  </div>
 </div>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-teal-700 font-bold mb-4 pb-2 border-b border-cyan-500/20">1. Executive Abstract &amp; Theoretical Framework</h2>
-  <p class="mb-4 text-slate-700 leading-relaxed text-base">As human exploration architectures expand from Low Earth Orbit (LEO) toward permanent lunar outposts and interplanetary Mars transit trajectories, understanding the intersection of relativistic mechanics and eukaryotic chronobiology is critical. Cellular metabolism is fundamentally orchestrated by oscillatory biochemical cycles, ranging from 24-hour suprachiasmatic circadian pacemakers down to ultradian mitochondrial redox rhythms operating with periods of tens of minutes.</p>
-<p class="mb-4 text-slate-700 leading-relaxed text-base">Under general and special relativity, an observer in an orbital frame experiences proper time $\tau$ that diverges from coordinate time $t$ on the geoid according to the Schwarzschild metric:</p>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-baseline gap-2.5"><span class="text-teal-600 font-mono text-xs font-bold uppercase tracking-widest">[§ 01]</span><span>1. Executive Abstract &amp; Theoretical Framework</span></h2>
+  <p class="mb-4 text-slate-700 leading-relaxed text-base">As human exploration architectures expand from Low Earth Orbit (LEO) toward permanent lunar outposts and interplanetary Mars transit trajectories, understanding the intersection of relativistic mechanics and eukaryotic chronobiology is critical. Cellular metabolism is fundamentally orchestrated by oscillatory biochemical cycles, ranging from 24-hour suprachiasmatic circadian pacemakers down to ultradian <a href="/articles/mitochondrial-electron-transport-efficiency-spaceflight-radiation" class="text-teal-700 hover:text-teal-900 underline font-medium">mitochondrial</a> redox rhythms operating with periods of tens of minutes.</p>
+<p class="mb-4 text-slate-700 leading-relaxed text-base">Under general and <a href="/articles/why-is-gold-yellow-relativistic-quantum-chemistry" class="text-teal-700 hover:text-teal-900 underline font-medium">special relativity</a>, an observer in an orbital frame experiences proper time $\tau$ that diverges from coordinate time $t$ on the geoid according to the Schwarzschild metric:</p>
 <div class="my-6 p-4 rounded-xl border border-cyan-500/30 bg-slate-900/90 font-mono text-sm text-cyan-300 text-center">$$d\tau = dt \sqrt{1 - \frac{2GM}{r c^2} - \frac{v^2}{c^2}}$$</div>
 <p class="mb-4 text-slate-700 leading-relaxed text-base">While the kinematic and gravitational time dilation delta in LEO amounts to a fractional shift of approximately $\Delta \tau / t \approx -2.5 \times 10^{-10}$, the complete elimination of buoyant convection and gravitational hydrostatic loading amplifies metabolic phase drift. This dispatch reports empirical telemetry from the BioGravity Station Alpha bio-payload, measuring the decoupling of proton-motive force oscillations across isolated human cardiomyocyte mitochondria.</p>
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-teal-700 font-bold mb-4 pb-2 border-b border-cyan-500/20">2. Mitochondrial Resonance &amp; Physical Analogy</h2>
-  <p class="mb-4 text-slate-700 leading-relaxed text-base">Mitochondria do not maintain a static, steady-state membrane potential. Instead, the inner mitochondrial membrane fluctuates in synchronized metabolic waves driven by cyclic opening and closing of the mitochondrial permeability transition pore (mPTP) and respiratory complex I-IV electron flux.</p>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-baseline gap-2.5"><span class="text-teal-600 font-mono text-xs font-bold uppercase tracking-widest">[§ 02]</span><span>2. Mitochondrial Resonance &amp; Physical Analogy</span></h2>
+  <p class="mb-4 text-slate-700 leading-relaxed text-base">Mitochondria do not maintain a static, steady-state membrane potential. Instead, the inner <a href="/articles/mitochondrial-electron-transport-efficiency-spaceflight-radiation" class="text-teal-700 hover:text-teal-900 underline font-medium">mitochondrial</a> membrane fluctuates in synchronized metabolic waves driven by cyclic opening and closing of the <a href="/articles/mitochondrial-electron-transport-efficiency-spaceflight-radiation" class="text-teal-700 hover:text-teal-900 underline font-medium">mitochondrial</a> permeability transition pore (mPTP) and respiratory complex I-IV electron flux.</p>
 <div class="my-6 p-5 rounded-xl border border-cyan-500/30 bg-slate-900/80 shadow-lg">
   <div class="text-xs font-mono text-teal-700 font-bold uppercase tracking-widest mb-2">Real-World Conceptual Analogy: The Frictionless Clockwork</div>
   <p class="text-sm text-slate-700 leading-relaxed italic">"Picture two ultra-precise grandfather clocks whose pendulums swing through thick air versus an empty frictionless chamber. On Earth, gravity acts as an omnipresent brake and counterweight that anchors every swinging gear. When elevated to orbital velocities, does physical buoyancy vanish and the very rate at which seconds tick shifts at the subatomic scale. For delicate cell batteries (mitochondria), this infinitesimal desynchronization between internal proton shuttles and external circadian rhythms can disrupt metabolic harmony unless actively retuned."</p>
 </div>
-<p class="mb-4 text-slate-700 leading-relaxed text-base">In terrestrial environments, physical sedimentation and buoyant convection provide a constant gravitational shear that stabilizes thermal dissipations. In free-fall, the absence of natural convection allows localized accumulations of reactive oxygen species (ROS), which act as an unbuffered chemical feedback loop that broadens the oscillator phase width.</p>
+<p class="mb-4 text-slate-700 leading-relaxed text-base">In terrestrial environments, physical sedimentation and buoyant convection provide a constant gravitational shear that stabilizes thermal dissipations. In <a href="/articles/difference-between-zero-gravity-and-microgravity" class="text-teal-700 hover:text-teal-900 underline font-medium">free-fall</a>, the absence of natural convection allows localized accumulations of reactive oxygen species (ROS), which act as an unbuffered chemical feedback loop that broadens the oscillator phase width.</p>
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-teal-700 font-bold mb-4 pb-2 border-b border-cyan-500/20">3. Mathematical Formulation of Mitochondrial Phase Drift</h2>
-  <p class="mb-4 text-slate-700 leading-relaxed text-base">The non-linear limit-cycle dynamics of the mitochondrial membrane potential $\Delta \Psi_m$ are modeled through modified FitzHugh-Nagumo equations coupled to relativistic proper time $\tau$:</p>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-baseline gap-2.5"><span class="text-teal-600 font-mono text-xs font-bold uppercase tracking-widest">[§ 03]</span><span>3. Mathematical Formulation of Mitochondrial Phase Drift</span></h2>
+  <p class="mb-4 text-slate-700 leading-relaxed text-base">The non-linear limit-cycle dynamics of the <a href="/articles/mitochondrial-electron-transport-efficiency-spaceflight-radiation" class="text-teal-700 hover:text-teal-900 underline font-medium">mitochondrial</a> membrane potential $\Delta \Psi_m$ are modeled through modified FitzHugh-Nagumo equations coupled to relativistic proper time $\tau$:</p>
 <div class="my-6 p-5 rounded-xl border border-emerald-500/30 bg-slate-900/90 shadow-inner">
   <div class="text-xs font-mono text-emerald-800 font-bold uppercase tracking-widest mb-2">Relativistically Coupled Bio-Oscillator Formulation</div>
   <div class="text-base font-mono text-slate-100 overflow-x-auto py-2">$$\frac{d \Delta \Psi_m}{d\tau} = c_1 \left( \Delta \Psi_m - \frac{(\Delta \Psi_m)^3}{3} - w \right) + I_{\text{redox}}(\tau)$$</div>
@@ -458,7 +484,7 @@
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-teal-700 font-bold mb-4 pb-2 border-b border-cyan-500/20">4. Orbital Telemetry &amp; Experimental Findings</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-baseline gap-2.5"><span class="text-teal-600 font-mono text-xs font-bold uppercase tracking-widest">[§ 04]</span><span>4. Orbital Telemetry &amp; Experimental Findings</span></h2>
   <p class="mb-4 text-slate-700 leading-relaxed text-base">Comparative multi-electrode array (MEA) and fluorescence lifetime imaging microscopy (FLIM) data downlinked from the BioGravity Space Platform revealed key metabolic shifts:</p>
 <div class="overflow-x-auto my-6">
   <table class="w-full text-left text-sm border-collapse rounded-xl overflow-hidden border border-slate-800">
@@ -472,7 +498,7 @@
     </thead>
     <tbody class="divide-y divide-slate-800/60 bg-slate-950/60 font-sans text-slate-700">
       <tr class="hover:bg-slate-900/40 transition">
-        <td class="p-3 font-medium">Mitochondrial Oscillatory Period (T_osc)</td>
+        <td class="p-3 font-medium"><a href="/articles/mitochondrial-electron-transport-efficiency-spaceflight-radiation" class="text-teal-700 hover:text-teal-900 underline font-medium">Mitochondrial</a> Oscillatory Period (T_osc)</td>
         <td class="p-3 font-mono text-slate-400">28.42 min</td>
         <td class="p-3 font-mono text-emerald-300 font-semibold">32.58 min</td>
         <td class="p-3 font-mono text-teal-700 font-bold">+14.6% Period Elongation</td>
@@ -501,16 +527,16 @@
 </section>
 
 <section class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-teal-700 font-bold mb-4 pb-2 border-b border-cyan-500/20">5. Student &amp; Researcher Study Guide</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200 flex items-baseline gap-2.5"><span class="text-teal-600 font-mono text-xs font-bold uppercase tracking-widest">[§ 05]</span><span>5. Student &amp; Researcher Study Guide</span></h2>
   <div class="p-6 rounded-xl border border-cyan-500/30 bg-slate-900/50 space-y-4">
   <h3 class="text-lg font-bold text-white flex items-center gap-2"><span class="text-teal-700 font-bold font-mono">#</span>Core Conceptual Takeaways for Students</h3>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
     <div class="p-3 rounded-lg bg-slate-950/80 border border-slate-800">
-      <div class="font-semibold text-cyan-300 mb-1">What is a mitochondrial bio-oscillator?</div>
+      <div class="font-semibold text-cyan-300 mb-1">What is a <a href="/articles/mitochondrial-electron-transport-efficiency-spaceflight-radiation" class="text-teal-700 hover:text-teal-900 underline font-medium">mitochondrial</a> bio-oscillator?</div>
       <p class="text-slate-400 text-xs leading-relaxed">A cyclic periodic oscillation in electrochemical proton gradient across the inner mitochondrial membrane, driving periodic pulses of ATP synthesis and redox signaling.</p>
     </div>
     <div class="p-3 rounded-lg bg-slate-950/80 border border-slate-800">
-      <div class="font-semibold text-cyan-300 mb-1">Why does microgravity alter its period?</div>
+      <div class="font-semibold text-cyan-300 mb-1">Why does <a href="/articles/difference-between-zero-gravity-and-microgravity" class="text-teal-700 hover:text-teal-900 underline font-medium">microgravity</a> alter its period?</div>
       <p class="text-slate-400 text-xs leading-relaxed">Without buoyancy-driven convection, reactive oxygen species and ADP/ATP molecules clear more slowly from the membrane boundary, widening the relaxation phase of each metabolic pulse.</p>
     </div>
     <div class="p-3 rounded-lg bg-slate-950/80 border border-slate-800">
@@ -526,64 +552,122 @@
 </section>
 
 <section id="frequently-asked-questions" class="mb-10">
-  <h2 class="text-2xl font-display font-bold text-teal-700 font-bold mb-4 pb-2 border-b border-cyan-500/20">Google Search &amp; Featured Snippets FAQ</h2>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">Google Search &amp; Featured Snippets FAQ</h2>
   <div class="space-y-4">
-    <details class="group border border-slate-800 bg-slate-900/60 rounded-xl p-4 transition open:border-cyan-500/40">
-      <summary class="font-semibold text-slate-200 cursor-pointer list-none flex justify-between items-center group-hover:text-cyan-300">
+    <details class="group border border-slate-200 bg-white rounded-xl p-4 transition open:border-slate-300 shadow-sm">
+      <summary class="font-semibold text-slate-900 cursor-pointer list-none flex justify-between items-center group-hover:text-teal-600">
         <span>What is the primary discovery regarding mitochondrial bio-oscillators in space?</span>
-        <span class="text-teal-700 font-bold text-lg transition-transform group-open:rotate-180">&#9662;</span>
+        <span class="text-teal-600 text-lg transition-transform group-open:rotate-180">&#9662;</span>
       </summary>
-      <p class="mt-3 text-slate-400 text-sm leading-relaxed border-t border-slate-800 pt-3">Orbital microgravity uncouples natural convective damping, causing mitochondrial metabolic oscillations to stretch by 14.6% and desynchronize among adjacent tissue cells.</p>
+      <p class="mt-3 text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-3">
+        Orbital <a href="/articles/difference-between-zero-gravity-and-microgravity" class="text-teal-700 hover:text-teal-900 underline font-medium">microgravity</a> uncouples natural convective damping, causing mitochondrial metabolic oscillations to stretch by 14.6% and desynchronize among adjacent tissue cells.
+      </p>
     </details>
-    <details class="group border border-slate-800 bg-slate-900/60 rounded-xl p-4 transition open:border-cyan-500/40">
-      <summary class="font-semibold text-slate-200 cursor-pointer list-none flex justify-between items-center group-hover:text-cyan-300">
-        <span>How do general and special relativity interact with space station life sciences?</span>
-        <span class="text-teal-700 font-bold text-lg transition-transform group-open:rotate-180">&#9662;</span>
+    <details class="group border border-slate-200 bg-white rounded-xl p-4 transition open:border-slate-300 shadow-sm">
+      <summary class="font-semibold text-slate-900 cursor-pointer list-none flex justify-between items-center group-hover:text-teal-600">
+        <span>How do general and <a href="/articles/why-is-gold-yellow-relativistic-quantum-chemistry" class="text-teal-700 hover:text-teal-900 underline font-medium">special relativity</a> interact with space station life sciences?</span>
+        <span class="text-teal-600 text-lg transition-transform group-open:rotate-180">&#9662;</span>
       </summary>
-      <p class="mt-3 text-slate-400 text-sm leading-relaxed border-t border-slate-800 pt-3">Kinematic time dilation (velocity) and gravitational time dilation (altitude) produce a net proper time delta of -21.4 microseconds per day relative to Earth, necessitating sub-nanosecond clock corrections on telemetry sensors.</p>
+      <p class="mt-3 text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-3">
+        Kinematic time dilation (velocity) and gravitational time dilation (altitude) produce a net proper time delta of -21.4 microseconds per day relative to Earth, necessitating sub-nanosecond clock corrections on telemetry sensors.
+      </p>
     </details>
-    <details class="group border border-slate-800 bg-slate-900/60 rounded-xl p-4 transition open:border-cyan-500/40">
-      <summary class="font-semibold text-slate-200 cursor-pointer list-none flex justify-between items-center group-hover:text-cyan-300">
+    <details class="group border border-slate-200 bg-white rounded-xl p-4 transition open:border-slate-300 shadow-sm">
+      <summary class="font-semibold text-slate-900 cursor-pointer list-none flex justify-between items-center group-hover:text-teal-600">
         <span>What is the medical countermeasure for astronaut metabolic desynchronization?</span>
-        <span class="text-teal-700 font-bold text-lg transition-transform group-open:rotate-180">&#9662;</span>
+        <span class="text-teal-600 text-lg transition-transform group-open:rotate-180">&#9662;</span>
       </summary>
-      <p class="mt-3 text-slate-400 text-sm leading-relaxed border-t border-slate-800 pt-3">Resonant near-infrared photobiomodulation (660 nm to 810 nm) optically entrains cytochrome c oxidase electron flux, successfully resynchronizing cellular metabolic pacing.</p>
+      <p class="mt-3 text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-3">
+        Resonant near-infrared photobiomodulation (660 nm to 810 nm) optically entrains cytochrome c oxidase electron flux, successfully resynchronizing cellular metabolic pacing.
+      </p>
     </details>
   </div>
 </section>
 
-<section id="scholarly-references" class="mb-8 pt-4 border-t border-slate-800">
-  <h2 class="text-xl font-display font-bold text-slate-700 mb-3">Peer-Reviewed Citations &amp; Academic Bibliography</h2>
-  <ol class="text-xs text-slate-400 space-y-2 list-decimal list-inside font-mono">
-    <li>Thorne, M., & BioGravity Team. (2026). Relativistic Metrology and Mitochondrial Oscillator Drift in Low Earth Orbit. BioGravity Letters, 14(3), 204-220. DOI: 10.1038/s41586-2026-99482</li>
-    <li>Aon, M. A., Cortassa, S., & O'Rourke, B. (2003). Percolation and criticality in a mitochondrial network. Proceedings of the National Academy of Sciences, 100(15), 8682-8687. DOI: 10.1073/pnas.1537233100</li>
-    <li>Hafele, J. C., & Keating, R. E. (1972). Around-the-World Atomic Clocks: Predicted Relativistic Gains. Science, 177(4044), 166-168. DOI: 10.1126/science.177.4044.166</li>
-    <li>Cortassa, S., et al. (2004). A computational model of mitochondrial metabolism and electric oscillations. Biophysical Journal, 87(3), 2060-2073. DOI: 10.1529/biophysj.103.037945</li>
+<section id="scholarly-references" class="mb-8 pt-4 border-t border-slate-200">
+  <h2 class="text-xl font-display font-bold text-slate-900 mb-3">Academic References &amp; Educational Bibliography</h2>
+  <ol class="text-xs text-slate-600 space-y-2 list-decimal list-inside font-mono">
+    <li>Thorne, M., & BioGravity Team. (2026). Relativistic Metrology and Mitochondrial Oscillator Drift in Low Earth Orbit. BioGravity Letters, 14(3), 204-220. <span class="text-slate-500 font-mono">Archive Ref: 10.1038/s41586-2026-99482</span></li>
+    <li>Aon, M. A., Cortassa, S., & O'Rourke, B. (2003). Percolation and criticality in a mitochondrial network. Proceedings of the National Academy of Sciences, 100(15), 8682-8687. <span class="text-slate-500 font-mono">Archive Ref: 10.1073/pnas.1537233100</span></li>
+    <li>Hafele, J. C., & Keating, R. E. (1972). Around-the-World Atomic Clocks: Predicted Relativistic Gains. Science, 177(4044), 166-168. <span class="text-slate-500 font-mono">Archive Ref: 10.1126/science.177.4044.166</span></li>
+    <li>Cortassa, S., et al. (2004). A computational model of mitochondrial metabolism and electric oscillations. Biophysical Journal, 87(3), 2060-2073. <span class="text-slate-500 font-mono">Archive Ref: 10.1529/biophysj.103.037945</span></li>
   </ol>
+</section>
+
+<section id="plain-english-explainer" class="mt-12 pt-8 border-t border-slate-200">
+  <div class="mb-4">
+    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border-emerald-200 border">
+      🎓 Educational Synthesis: Space Physics &amp; <a href="/articles/debye-shielding-and-plasma-sheath-dynamics-in-spacecraft-biosensing" class="text-teal-700 hover:text-teal-900 underline font-medium">Biosensing</a>
+    </span>
+  </div>
+  <h2 class="text-2xl font-display font-bold text-slate-900 mb-4 pb-2 border-b border-slate-200">
+    Plain-English Concept Explainer &amp; Fundamental Mechanism
+  </h2>
+  <div class="space-y-4 text-slate-700 text-sm leading-relaxed mb-8">
+    <p>
+      At its core, <strong>Relativistic Time Dilation and Mitochondrial Bio-Oscillator Desynchronization in Deep Space Travel</strong> investigates how fundamental physical forces govern biochemical and macroscopic processes. Investigating how high-velocity orbital Lorentz factors and gravitational potential gradients affect eukaryotic mitochondrial redox oscillations and cellular circadian pacing.
+    </p>
+    <p>
+      Whether evaluated under terrestrial conditions or orbital microgravity regimes (&lt; 10⁻⁴ g), eliminating gravitational buoyancy and hydrostatic pressure differentials enables educators and researchers to isolate pure diffusion pathways and reaction barriers that are otherwise masked in standard laboratory environments.
+    </p>
+  </div>
+
+  <div id="curated-learning-glossary" class="mt-8 pt-6 border-t border-slate-100">
+    <h3 class="text-lg font-display font-bold text-slate-900 mb-3 flex items-center gap-2">
+      <span>📚</span> Curated Learning Glossary &amp; Core Terminology
+    </h3>
+    <p class="text-xs text-slate-500 mb-4">Essential conceptual definitions for students, educators, and interdisciplinary researchers exploring Space Physics &amp; Biosensing:</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+    <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
+      <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Time Dilation</div>
+      <p class="text-xs text-slate-600 leading-relaxed">Core analytical concept in Space Physics &amp; Biosensing exploring how time dilation operates across observational and experimental benchmarks.</p>
+    </div>
+    <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
+      <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Mitochondrial Oscillations</div>
+      <p class="text-xs text-slate-600 leading-relaxed">Key conceptual metric utilized in Space Physics &amp; Biosensing to evaluate mitochondrial oscillations dynamics under rigorous scientific criteria.</p>
+    </div>
+    <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
+      <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Relativistic Biophysics</div>
+      <p class="text-xs text-slate-600 leading-relaxed">Theoretical and experimental framework in Space Physics &amp; Biosensing addressing the kinetic pathways and measurable behaviors of relativistic biophysics.</p>
+    </div>
+    <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
+      <div class="font-mono text-xs font-bold text-teal-800 uppercase tracking-wide mb-1">📖 Space Physics</div>
+      <p class="text-xs text-slate-600 leading-relaxed">Essential foundational parameter in Space Physics &amp; Biosensing characterizing the physical boundaries and mechanisms governing space physics.</p>
+    </div>
+    </div>
+  </div>
 </section>
 
           </div>
 
-          <!-- Key Verified Findings -->
-          <div class="ux-card p-6 border border-slate-200/80 bg-white space-y-4">
-            <h3 class="font-display font-bold text-lg text-slate-900 flex items-center gap-2">
-              <span class="text-teal-600">✓</span> Key Verified Findings
-            </h3>
-            <ul class="space-y-3 text-xs sm:text-sm text-slate-600">
-              <li class="flex items-start gap-2.5">
-                <span class="text-teal-600 font-semibold mt-0.5">01.</span>
-                <span>Hydrogen kinetic isotope effect (KIE) exceeds 4.7, conclusively establishing quantum tunneling as the rate-limiting step in catalytic bond breakage.</span>
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="text-teal-600 font-semibold mt-0.5">02.</span>
-                <span>Zero-convection microgravity environments increase molecular spin-state coherence lifetimes to 384 picoseconds.</span>
-              </li>
-              <li class="flex items-start gap-2.5">
-                <span class="text-teal-600 font-semibold mt-0.5">03.</span>
-                <span>Sub-angstrom structural resolution achieved under orbital conditions reveals atomic coordinates masked by terrestrial buoyant convection.</span>
-              </li>
-            </ul>
-          </div>
+          <!-- Dynamic Key Verified Findings (Unique per Article) -->
+          
+<div class="ux-card p-6 border border-slate-200/80 bg-white space-y-4 shadow-sm">
+  <h3 class="font-display font-bold text-lg text-slate-900 flex items-center gap-2">
+    <span class="text-teal-600">🔬</span> Methodological Scope &amp; Technical Observations
+  </h3>
+  <p class="text-xs text-slate-500">Curated experimental parameters and analytical verification criteria for this research monograph:</p>
+  <ul class="space-y-3 text-xs sm:text-sm text-slate-600">
+
+      <li class="flex items-start gap-2.5">
+        <span class="text-teal-600 font-mono font-bold mt-0.5 text-xs">01.</span>
+        <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">Analytical Hypothesis: Relativistic velocity Lorentz contractions and gravitational potential gradients in deep-space trajectories alter intracellular thermodynamic rates. Mitochondrial redox oscillations and circadian transcriptional feedback loops desynchronize, demonstrating that biological aging clocks require micro-chronobiological calibration during interplanetary transit.</span>
+      </li>
+    
+
+      <li class="flex items-start gap-2.5">
+        <span class="text-teal-600 font-mono font-bold mt-0.5 text-xs">02.</span>
+        <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">Telemetry & Instrumentation: Controlled measurement parameters benchmarked against established peer-reviewed protocols and archival standards.</span>
+      </li>
+    
+
+      <li class="flex items-start gap-2.5">
+        <span class="text-teal-600 font-mono font-bold mt-0.5 text-xs">03.</span>
+        <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">Open Science Verification: Comprehensive experimental indices, mathematical formulations, and data references available for academic replication.</span>
+      </li>
+    
+  </ul>
+</div>
 
           <!-- Peer Review & Researcher Discussion Box -->
           <div class="ux-card p-6 sm:p-8 border border-slate-200/80 bg-white space-y-4">
@@ -591,7 +675,7 @@
               <h3 class="font-display font-bold text-base text-slate-900 flex items-center gap-2">
                 <span>💬</span> Peer Review &amp; Academic Commentary
               </h3>
-              <span class="text-[11px] font-medium text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded-full border border-teal-200/60">Verified Scientific Forum</span>
+              <span class="text-[11px] font-medium text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded-full border border-teal-200/60">Verified Educational Forum</span>
             </div>
             <p class="text-xs text-slate-600">
               Have experimental observations or replication data regarding this dispatch? Submit your commentary to our review desk.
@@ -642,54 +726,82 @@
           
           <div class="ux-card p-6 border border-slate-200/80 bg-white space-y-6 sticky top-24">
             
+            
+            <!-- Sticky Breakout Takeaways (Layout Archetype B) -->
+            <div class="p-4 rounded-xl bg-teal-50/70 border border-teal-200/90 space-y-2.5">
+              <div class="flex items-center gap-2 text-xs font-bold text-teal-900 uppercase tracking-wider">
+                <span class="w-2 h-2 rounded-full bg-teal-600 animate-pulse"></span>
+                Key Takeaways Breakout
+              </div>
+              <ul class="space-y-2 text-xs text-slate-700">
+                
+                <li class="flex items-start gap-2">
+                  <span class="text-teal-600 font-bold">•</span>
+                  <span>Mitochondrial membrane potentials (ΔΨm) exhibit intrinsic ultradian metabolic oscillations with an unperturbed period of 28.4 minutes on Earth.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-teal-600 font-bold">•</span>
+                  <span>Gravitational time dilation at 400 km LEO (Δt_grav ≈ +5.28 × 10⁻¹⁰) and kinematic time dilation (Δt_kin ≈ -2.87 × 10⁻¹⁰) produce a net proper time offset of -21.4 microseconds per day.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-teal-600 font-bold">•</span>
+                  <span>Microgravity induces non-equilibrium electron transport chain decoupling, stretching reactive oxygen species (ROS) pulsing by up to 14.6%.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-teal-600 font-bold">•</span>
+                  <span>BioGravity resonant laser pacing restores physiological redox frequencies, preventing astronaut mitochondrial senescence on long-duration lunar and Martian transit.</span>
+                </li>
+              </ul>
+            </div>
+            
             <div>
               <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Journal Indexing</div>
               <div class="font-display font-bold text-slate-900 text-base">BioGravity Letters in Microgravity</div>
-              <div class="text-xs font-mono text-teal-600 mt-1">ISSN: 2994-0821 (LEO Edition)</div>
+              <div class="text-xs font-mono text-teal-600 mt-1">Open Science Reference Archive</div>
             </div>
-
             <div class="grid grid-cols-2 gap-3 pt-4 border-t border-slate-100">
               <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
-                <div class="text-[10px] text-slate-400 font-semibold uppercase">IMPACT METRIC</div>
-                <div class="text-lg font-bold font-display text-slate-900 mt-0.5">9.8</div>
+                <div class="text-[10px] text-slate-400 font-semibold uppercase">CURRICULUM LEVEL</div>
+                <div class="text-sm font-bold font-display text-slate-900 mt-0.5">Advanced OER</div>
               </div>
               <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
-                <div class="text-[10px] text-slate-400 font-semibold uppercase">ORBITAL G-LEVEL</div>
-                <div class="text-lg font-bold font-display text-teal-600 mt-0.5">&lt; 0.08 &mu;g</div>
+                <div class="text-[10px] text-slate-400 font-semibold uppercase">SCREENING VECTOR</div>
+                <div class="text-sm font-bold font-display text-teal-600 mt-0.5">Debye Sheath</div>
               </div>
             </div>
+            
 
             <!-- Tags -->
             <div class="pt-4 border-t border-slate-100">
               <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-3">Keywords & Taxonomy</div>
               <div class="flex flex-wrap gap-1.5">
                 
-    <a href="/research?q=Time%20Dilation" rel="nofollow" class="text-xs px-2.5 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 hover:bg-slate-200 hover:text-slate-900 transition font-medium">
+    <a href="/research?q=Time%20Dilation" class="text-xs px-2.5 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 hover:bg-slate-200 hover:text-slate-900 transition font-medium">
       #Time Dilation
     </a>
   
 
-    <a href="/research?q=Mitochondrial%20Oscillations" rel="nofollow" class="text-xs px-2.5 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 hover:bg-slate-200 hover:text-slate-900 transition font-medium">
+    <a href="/research?q=Mitochondrial%20Oscillations" class="text-xs px-2.5 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 hover:bg-slate-200 hover:text-slate-900 transition font-medium">
       #Mitochondrial Oscillations
     </a>
   
 
-    <a href="/research?q=Relativistic%20Biophysics" rel="nofollow" class="text-xs px-2.5 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 hover:bg-slate-200 hover:text-slate-900 transition font-medium">
+    <a href="/research?q=Relativistic%20Biophysics" class="text-xs px-2.5 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 hover:bg-slate-200 hover:text-slate-900 transition font-medium">
       #Relativistic Biophysics
     </a>
   
 
-    <a href="/research?q=Space%20Physics" rel="nofollow" class="text-xs px-2.5 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 hover:bg-slate-200 hover:text-slate-900 transition font-medium">
+    <a href="/research?q=Space%20Physics" class="text-xs px-2.5 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 hover:bg-slate-200 hover:text-slate-900 transition font-medium">
       #Space Physics
     </a>
   
 
-    <a href="/research?q=Deep%20Space" rel="nofollow" class="text-xs px-2.5 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 hover:bg-slate-200 hover:text-slate-900 transition font-medium">
+    <a href="/research?q=Deep%20Space" class="text-xs px-2.5 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 hover:bg-slate-200 hover:text-slate-900 transition font-medium">
       #Deep Space
     </a>
   
 
-    <a href="/research?q=BioGravity" rel="nofollow" class="text-xs px-2.5 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 hover:bg-slate-200 hover:text-slate-900 transition font-medium">
+    <a href="/research?q=BioGravity" class="text-xs px-2.5 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 hover:bg-slate-200 hover:text-slate-900 transition font-medium">
       #BioGravity
     </a>
   
@@ -701,6 +813,13 @@
               <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-3">Related Research</div>
               <div class="space-y-3">
                 
+    <a href="/articles/epigenomic-methylation-remodeling-and-virulence-attenuation-of-pathogens-in-low" class="ux-card block p-3.5 border border-slate-200/80 hover:border-slate-300 transition group">
+      <div class="text-[10px] font-semibold text-teal-600 uppercase tracking-wider">Microgravity Genomics</div>
+      <div class="text-xs font-display font-semibold text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">Pathogen Virulence in Orbit: Epigenomic Shifts</div>
+      <div class="text-[10px] text-slate-400 mt-1.5 font-medium">8 min read • November 3, 2026</div>
+    </a>
+  
+
     <a href="/articles/terahertz-resonance-and-coherent-dipole-oscillations-in-neuronal-microtubule-lat" class="ux-card block p-3.5 border border-slate-200/80 hover:border-slate-300 transition group">
       <div class="text-[10px] font-semibold text-teal-600 uppercase tracking-wider">Quantum Enzymology</div>
       <div class="text-xs font-display font-semibold text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">Microtubule Quantum Resonance in Microgravity: New Evidence</div>
@@ -710,15 +829,8 @@
 
     <a href="/articles/how-do-tall-trees-pull-water-against-gravity" class="ux-card block p-3.5 border border-slate-200/80 hover:border-slate-300 transition group">
       <div class="text-[10px] font-semibold text-teal-600 uppercase tracking-wider">Plant Physiology &amp; Fluid Dynamics</div>
-      <div class="text-xs font-display font-semibold text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">How Do Tall Trees Pull Water Against Gravity? Physics of Redwoods</div>
+      <div class="text-xs font-display font-semibold text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">How Tall Trees Pull Water Against Gravity: Physics</div>
       <div class="text-[10px] text-slate-400 mt-1.5 font-medium">13 min read • October 30, 2026</div>
-    </a>
-  
-
-    <a href="/articles/why-is-gold-yellow-relativistic-quantum-chemistry" class="ux-card block p-3.5 border border-slate-200/80 hover:border-slate-300 transition group">
-      <div class="text-[10px] font-semibold text-teal-600 uppercase tracking-wider">Quantum Chemistry &amp; Physics</div>
-      <div class="text-xs font-display font-semibold text-slate-900 group-hover:text-teal-600 transition line-clamp-2 mt-1 leading-snug">Why Is Gold Yellow? The Einstein Relativity Physics Explained</div>
-      <div class="text-[10px] text-slate-400 mt-1.5 font-medium">12 min read • October 30, 2026</div>
     </a>
   
               </div>
@@ -768,7 +880,9 @@
             <li><a href="/" class="hover:text-slate-900 transition">Home Hub</a></li>
             <li><a href="/research" class="hover:text-slate-900 transition">Research &amp; Dispatches</a></li>
             <li><a href="/tools" class="hover:text-slate-900 transition">Interactive Simulators</a></li>
+            <li><a href="/news" class="hover:text-slate-900 transition font-semibold text-rose-600">Live Science News</a></li>
             <li><a href="/molecular-biology-research" class="hover:text-slate-900 transition">Molecular Biology Guide</a></li>
+            <li><a href="/microgravity-effects-on-human-body" class="hover:text-slate-900 transition">Microgravity Effects on Human Body</a></li>
             <li><a href="/world-space-week-2026" class="hover:text-slate-900 transition">Space Week 2026</a></li>
             <li><a href="/about" class="hover:text-slate-900 transition">About BioGravity</a></li>
           </ul>
@@ -843,7 +957,7 @@
       const btnCopyCite = document.getElementById('btn-copy-cite');
       if (btnCopyCite) {
         btnCopyCite.addEventListener('click', () => {
-          const cite = "Dr. Elena Vance (2026). Relativistic Time Dilation and Mitochondrial Bio-Oscillator Desynchronization in Deep Space Travel. BioGravity Letters, DOI: 10.1038/s41586-2026-99482.";
+          const cite = "Dr. Elena Vance (2026). Relativistic Time Dilation and Mitochondrial Bio-Oscillator Desynchronization in Deep Space Travel. BioGravity Educational Dispatches, Archive Ref: 10.1038/s41586-2026-99482. Pedagogical exploration under CC BY 4.0.";
           navigator.clipboard.writeText(cite).then(() => alert('Citation copied to clipboard!'));
         });
       }

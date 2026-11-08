@@ -795,9 +795,16 @@ articles.forEach((art, idx) => {
   const archetype = getLayoutArchetype(art, idx);
   // Clean canonical URL without .html
   const cleanArticleUrl = `${SITE_URL}/articles/${art.id}`;
-  let metaDesc = art.metaDescription || art.summary || '';
-  if (metaDesc.length > 158) {
-    metaDesc = metaDesc.slice(0, 155).replace(/\s+[^\s]*$/, '').trim() + '...';
+  let metaDesc = (art.metaDescription || art.summary || '').replace(/\s*\.\.\.\s*$/, '').trim();
+  if (metaDesc.length > 155) {
+    const cut = metaDesc.slice(0, 155);
+    const lastPunct = Math.max(cut.lastIndexOf('. '), cut.lastIndexOf('! '), cut.lastIndexOf('? '));
+    if (lastPunct > 100) {
+      metaDesc = cut.slice(0, lastPunct + 1).trim();
+    } else {
+      metaDesc = cut.replace(/\s+[^\s]*$/, '').trim();
+      if (!/[.!?]$/.test(metaDesc)) metaDesc += '.';
+    }
   }
   const dateFormatted = art.date || 'October 21, 2026';
   const doi = art.doi || `10.1038/s41586-2026-${1000 + idx}`;
@@ -909,7 +916,7 @@ articles.forEach((art, idx) => {
 
   // Tags HTML
   const tagsHtml = tags.map(t => `
-    <a href="/research?q=${encodeURIComponent(t)}" rel="nofollow" class="text-xs px-2.5 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 hover:bg-slate-200 hover:text-slate-900 transition font-medium">
+    <a href="/research?q=${encodeURIComponent(t)}" class="text-xs px-2.5 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 hover:bg-slate-200 hover:text-slate-900 transition font-medium">
       #${escapeHtml(t)}
     </a>
   `).join('\n');
@@ -960,7 +967,8 @@ articles.forEach((art, idx) => {
   <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; img-src 'self' https: data:; font-src 'self' https: data:;">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <script defer src="/js/cookie-consent.js"></script>
+  <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
+  <script defer src="/js/cookie-consent.min.js?v=2.2"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${displayTitle}</title>
@@ -970,6 +978,7 @@ articles.forEach((art, idx) => {
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="${cleanArticleUrl}">
   <link rel="alternate" type="text/markdown" href="${SITE_URL}/llms.txt" title="LLMs.txt AI Search Digest">
+  <link rel="alternate" type="text/markdown" href="${SITE_URL}/llms-full.txt" title="Full LLMs.txt AI Digest">
 
   <!-- Clean URL Enforcement for Browsers -->
   <script>
@@ -1003,8 +1012,8 @@ articles.forEach((art, idx) => {
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
 
   <!-- Custom Styles & Global Effects -->
-  <link rel="stylesheet" href="/css/styles.css?v=2.1">
-  <script defer src="/js/sidebar-menu.js?v=2.1"></script>
+  <link rel="stylesheet" href="/css/styles.min.css?v=2.2">
+  <script defer src="/js/sidebar-menu.min.js?v=2.2"></script>
 
   <!-- Structured Data JSON-LD -->
   <script type="application/ld+json">
@@ -1453,7 +1462,9 @@ ${JSON.stringify(schema, null, 2)}
             <li><a href="/" class="hover:text-slate-900 transition">Home Hub</a></li>
             <li><a href="/research" class="hover:text-slate-900 transition">Research &amp; Dispatches</a></li>
             <li><a href="/tools" class="hover:text-slate-900 transition">Interactive Simulators</a></li>
+            <li><a href="/news" class="hover:text-slate-900 transition font-semibold text-rose-600">Live Science News</a></li>
             <li><a href="/molecular-biology-research" class="hover:text-slate-900 transition">Molecular Biology Guide</a></li>
+            <li><a href="/microgravity-effects-on-human-body" class="hover:text-slate-900 transition">Microgravity Effects on Human Body</a></li>
             <li><a href="/world-space-week-2026" class="hover:text-slate-900 transition">Space Week 2026</a></li>
             <li><a href="/about" class="hover:text-slate-900 transition">About BioGravity</a></li>
           </ul>
@@ -1569,6 +1580,7 @@ ${JSON.stringify(schema, null, 2)}
     fs.mkdirSync(slugDir, { recursive: true });
   }
   safeWriteFileSync(path.join(slugDir, 'index.html'), html);
+  safeWriteFileSync(path.join(articlesDir, `${art.id}.html`), html);
 
   // Also write full HTML to all aliases / legacy slugs so no crawler or visitor ever gets a blank noindex redirect!
   const aliases = [];
@@ -1649,7 +1661,7 @@ if (fs.existsSync(researchPath)) {
   researchHtml = researchHtml.replace(/href="terms\.html"/g, 'href="/terms"');
   researchHtml = researchHtml.replace(/href="article\.html"/g, 'href="/research"');
   researchHtml = researchHtml.replace(/href="sitemap\.xml"/g, 'href="/sitemap.xml"');
-  researchHtml = researchHtml.replace(/href="css\/styles\.css"/g, 'href="/css/styles.css?v=2.1"');
+  researchHtml = researchHtml.replace(/href="css\/styles\.css"/g, 'href="/css/styles.min.css?v=2.2"');
   researchHtml = researchHtml.replace(/href="logo\.png"/g, 'href="/logo.png"');
   researchHtml = researchHtml.replace(/href="articles\/\$\{encodeURIComponent\(article\.id\)\}\.html"/g, 'href="/articles/${encodeURIComponent(article.id)}"');
 
@@ -1728,7 +1740,7 @@ corePages.forEach(p => {
     content = content.replace(/href="terms\.html"/g, 'href="/terms"');
     content = content.replace(/href="article\.html"/g, 'href="/research"');
     content = content.replace(/href="sitemap\.xml"/g, 'href="/sitemap.xml"');
-    content = content.replace(/href="css\/styles\.css"/g, 'href="/css/styles.css?v=2.1"');
+    content = content.replace(/href="css\/styles\.css"/g, 'href="/css/styles.min.css?v=2.2"');
     content = content.replace(/href="logo\.png"/g, 'href="/logo.png"');
     content = content.replace(/href="articles\/\$\{encodeURIComponent\(article\.id\)\}\.html"/g, 'href="/articles/${encodeURIComponent(article.id)}"');
 
@@ -1807,7 +1819,7 @@ if (fs.existsSync(indexPath)) {
   indexHtml = indexHtml.replace(/href="terms\.html"/g, 'href="/terms"');
   indexHtml = indexHtml.replace(/href="article\.html"/g, 'href="/research"');
   indexHtml = indexHtml.replace(/href="sitemap\.xml"/g, 'href="/sitemap.xml"');
-  indexHtml = indexHtml.replace(/href="css\/styles\.css"/g, 'href="/css/styles.css?v=2.1"');
+  indexHtml = indexHtml.replace(/href="css\/styles\.css"/g, 'href="/css/styles.min.css?v=2.2"');
   indexHtml = indexHtml.replace(/href="logo\.png"/g, 'href="/logo.png"');
   indexHtml = indexHtml.replace(/href="index\.html"/g, 'href="/"');
   indexHtml = indexHtml.replace(/href="articles\/([a-zA-Z0-9_-]+)\.html"/g, 'href="/articles/$1"');
@@ -2058,6 +2070,16 @@ let sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
     </image:image>
   </url>
   <url>
+    <loc>${SITE_URL}/microgravity-effects-on-human-body</loc>
+    <lastmod>${TODAY}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1517976487507-5b3b4b45f910?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Microgravity Effects on Human Body: Space Medicine &amp; Physiology Guide</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>${SITE_URL}/about</loc>
     <lastmod>${TODAY}</lastmod>
     <changefreq>monthly</changefreq>
@@ -2242,7 +2264,7 @@ const notFoundHtml = `<!DOCTYPE html>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Orbital Coordinate Not Found (404) | BioGravity</title>
   <meta name="robots" content="noindex, follow">
-  <link rel="stylesheet" href="/css/styles.css?v=2.1">
+  <link rel="stylesheet" href="/css/styles.min.css?v=2.2">
   <script>
     // Smart redirect: if user visited with .html, redirect to clean URL
     (function() {
@@ -2355,6 +2377,10 @@ Allow: /
 
 # Cloudflare / IETF Content Signals Policy
 Content-Signal: search=yes, ai-input=yes, ai-train=no
+
+# LLMs.txt AI Search & Agent Digest
+Allow: /llms.txt
+Allow: /llms-full.txt
 
 # Sitemap & AI Digest Locations
 Sitemap: ${SITE_URL}/sitemap.xml
