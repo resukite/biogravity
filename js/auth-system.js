@@ -930,6 +930,88 @@
   /* -------------------------------------------------------------------------
    * 10. Master Initialization
    * ------------------------------------------------------------------------- */
+
+  /* -------------------------------------------------------------------------
+   * 11. Metered Read & Scroll Gate (Medium / Substack Pattern)
+   * ------------------------------------------------------------------------- */
+  function initReadingMeter() {
+    // If user is already authenticated, never gate
+    if (currentUser) return;
+
+    // Detect organic search referrer (Google, Bing, Yahoo, DuckDuckGo, Ecosia)
+    const ref = document.referrer || '';
+    const isOrganicReferrer = ref.includes('google.') || 
+                              ref.includes('bing.') || 
+                              ref.includes('duckduckgo.') || 
+                              ref.includes('yahoo.') || 
+                              ref.includes('ecosia.');
+
+    if (isOrganicReferrer && !sessionStorage.getItem('biogravity_first_landing')) {
+      sessionStorage.setItem('biogravity_first_landing', 'organic');
+    }
+
+    const isArticle = window.location.pathname.includes('/articles/') || document.querySelector('article') !== null;
+    const currentSlug = window.location.pathname.replace(/^\/articles\//, '').replace(/\.html$/, '');
+
+    // Track unique articles viewed
+    let viewed = [];
+    try {
+      viewed = JSON.parse(localStorage.getItem('biogravity_articles_viewed') || '[]');
+    } catch(e) {}
+
+    if (isArticle && currentSlug && !viewed.includes(currentSlug)) {
+      viewed.push(currentSlug);
+      localStorage.setItem('biogravity_articles_viewed', JSON.stringify(viewed));
+    }
+
+    // Google Organic exemption:
+    // First-time organic search visitors get full, uninterrupted reading on their searched article
+    const isFirstOrganicLanding = (sessionStorage.getItem('biogravity_first_landing') === 'organic') && (viewed.length <= 1);
+    if (isFirstOrganicLanding) {
+      return;
+    }
+
+    // Second post / extended browsing trigger (viewed >= 2)
+    if (viewed.length >= 2) {
+      const gateKey = 'biogravity_gate_shown_' + (currentSlug || 'page');
+      if (!sessionStorage.getItem(gateKey)) {
+        let triggered = false;
+
+        const triggerGate = () => {
+          if (triggered || currentUser) return;
+          triggered = true;
+          sessionStorage.setItem(gateKey, 'true');
+
+          const modalTitle = document.getElementById('auth-modal-title');
+          const modalSubtitle = document.getElementById('auth-modal-subtitle');
+          if (modalTitle) modalTitle.textContent = "Enjoying BioGravity's Research?";
+          if (modalSubtitle) modalSubtitle.textContent = "Join our free open-access platform to continue reading, save papers to your library, and receive weekly science briefings.";
+
+          openAuthModal('auth');
+        };
+
+        // Scroll listener: triggers when scrolling 35% down the article
+        const onScroll = () => {
+          const scrollPercent = (window.scrollY + window.innerHeight) / (document.documentElement.scrollHeight || 1);
+          if (scrollPercent >= 0.35) {
+            triggerGate();
+            window.removeEventListener('scroll', onScroll);
+          }
+        };
+
+        window.addEventListener('scroll', onScroll, { passive: true });
+
+        // Fallback timer: if reading on 2nd article for > 5 seconds
+        setTimeout(() => {
+          if (!triggered && isArticle) {
+            triggerGate();
+            window.removeEventListener('scroll', onScroll);
+          }
+        }, 5000);
+      }
+    }
+  }
+
   function renderUI() {
     renderHeaderAuth();
     updateBookmarkButtons();
@@ -938,6 +1020,7 @@
   function start() {
     mountDOM();
     initFirebase();
+    initReadingMeter();
   }
 
   if (document.readyState === 'loading') {
