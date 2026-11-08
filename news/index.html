@@ -97,12 +97,6 @@
   <script defer src="/js/cookie-consent.min.js?v=2.2"></script>
   <link rel="stylesheet" href="/css/styles.min.css?v=2.2">
   <script defer src="/js/sidebar-menu.min.js?v=2.2"></script>
-  <script>
-    if (window.location.pathname.endsWith('.html')) {
-      var clean = window.location.pathname.replace(/\.html$/, '');
-      window.history.replaceState(null, '', clean + window.location.search + window.location.hash);
-    }
-  </script>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col font-sans">
 
@@ -114,7 +108,7 @@
         <span class="font-bold tracking-wider uppercase text-red-400 text-xs">LIVE SCIENCE WIRE</span>
         <span class="text-slate-400 hidden md:inline">| Continuous 24/7 Autonomous Coverage • Updated November 8, 2026</span>
       </div>
-      <span class="text-teal-400 text-xs font-mono font-medium">52 Live Dispatches</span>
+      <span class="text-teal-400 text-xs font-mono font-medium">50 Live Dispatches</span>
     </div>
   </div>
 
@@ -205,7 +199,7 @@
           <p class="text-xs text-slate-500 mt-1">Autonomous, fact-checked, peer-reviewed global reporting updated continuously.</p>
         </div>
         <span class="text-xs font-mono px-3 py-1 bg-slate-100 rounded-full text-slate-700 font-semibold border border-slate-200">
-          52 Active Dispatches
+          50 Active Dispatches
         </span>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -213,57 +207,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Deep space exoplanet atmospheric spectroscopy captured by orbital space observatory" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="eager">
-          </div>
-          <div class="flex items-center justify-between text-xs mb-2">
-            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Space &amp; Astronomy</span>
-            <span class="text-slate-400 text-[11px]">November 8, 2026</span>
-          </div>
-          <h3 class="font-display font-bold text-base text-slate-900 group-hover:text-teal-600 transition mb-2 leading-snug">
-            <a href="/news/evolution-of-dust-in-protoplanetary-disks-with-new-evidence-in">Evolution of Dust In Protoplanetary Disks With: New Evidence in Space &amp; Astronomy</a>
-          </h3>
-          <p class="text-xs text-slate-600 line-clamp-3 leading-relaxed mb-4">
-            Evolution of Dust In Protoplanetary Disks With: New Evidence in Space &amp; Astronomy: Observations and theory increasingly indicate that protoplanetary disks are weakly turbulent, implying that magnetized disk winds may dominate their angular momentum transport and long-term evolution. Yet dust evolution in wind-dominated disks remains poorly understood, despite its importance for planet formation. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.08484v1).
-          </p>
-        </div>
-        <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
-          <span class="text-slate-400 text-[11px]">Via arXiv Open Science Wire (https://arxiv.org/abs/2611.08484v1)</span>
-          <a href="/news/evolution-of-dust-in-protoplanetary-disks-with-new-evidence-in" class="text-teal-700 font-bold hover:text-teal-900 flex items-center gap-1">
-            Read Full Story &rarr;
-          </a>
-        </div>
-      </article>
-    
-
-      <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
-        <div>
-          <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Deep space exoplanet atmospheric spectroscopy captured by orbital space observatory" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="eager">
-          </div>
-          <div class="flex items-center justify-between text-xs mb-2">
-            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Space &amp; Astronomy</span>
-            <span class="text-slate-400 text-[11px]">November 8, 2026</span>
-          </div>
-          <h3 class="font-display font-bold text-base text-slate-900 group-hover:text-teal-600 transition mb-2 leading-snug">
-            <a href="/news/bear-the-bern-atmospheric-retrieval-code-a-new-evidence-in-space">BeAR: The Bern Atmospheric Retrieval code - A: New Evidence in Space &amp; Astronomy</a>
-          </h3>
-          <p class="text-xs text-slate-600 line-clamp-3 leading-relaxed mb-4">
-            BeAR: The Bern Atmospheric Retrieval code - A: New Evidence in Space &amp; Astronomy: We present BeAR, the Bern Atmospheric Retrieval code and successor of Helios-r, and its new high-resolution cross-correlation framework for emission and transmission spectra. BeAR performs joint retrievals by adding the log-likelihoods of high- and low-resolution data computed from the same model atmosphere. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.08489v1).
-          </p>
-        </div>
-        <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
-          <span class="text-slate-400 text-[11px]">Via arXiv Open Science Wire (https://arxiv.org/abs/2611.08489v1)</span>
-          <a href="/news/bear-the-bern-atmospheric-retrieval-code-a-new-evidence-in-space" class="text-teal-700 font-bold hover:text-teal-900 flex items-center gap-1">
-            Read Full Story &rarr;
-          </a>
-        </div>
-      </article>
-    
-
-      <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
-        <div>
-          <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Deep space exoplanet atmospheric spectroscopy captured by orbital space observatory" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="eager">
+            <img src="https://image.pollinations.ai/prompt/Photorealistic%20scientific%203D%20visualization%20of%20Automatic%20Generation%20of%20Novel%20Highly-Functional%20-%20%20New%20Evidence%20in%20Space%20%26%20Astronomy%2C%20deep%20space%20astrophysics%20observation%2C%20telescope%20spectroscopy%2C%20celestial%20phenomenon%2C%20intricate%20empirical%20details%2C%20volumetric%20lighting%2C%208k%20render%2C%20octane%20render%20style%2C%20no%20text%2C%20no%20watermark%2C%2016%3A9%20aspect%20ratio?width=1280&amp;height=720&amp;seed=1069309796&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Automatic Generation of Novel Highly-Functional: New Evidence in Space &amp; Astronomy in Space &amp; Astronomy" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="eager">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Space &amp; Astronomy</span>
@@ -288,7 +232,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Deep space exoplanet atmospheric spectroscopy captured by orbital space observatory" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="eager">
+            <img src="https://image.pollinations.ai/prompt/Photorealistic%20scientific%203D%20visualization%20of%20Giant%20Planet%20Mass%20Function%20Across%20Stellar%20Mass%20and%20-%20%20New%20Evidence%20in%20Space%20%26%20Astronomy%2C%20deep%20space%20astrophysics%20observation%2C%20telescope%20spectroscopy%2C%20celestial%20phenomenon%2C%20intricate%20empirical%20details%2C%20volumetric%20lighting%2C%208k%20render%2C%20octane%20render%20style%2C%20no%20text%2C%20no%20watermark%2C%2016%3A9%20aspect%20ratio?width=1280&amp;height=720&amp;seed=1422475815&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Giant Planet Mass Function Across Stellar Mass and: New Evidence in Space &amp; Astronomy in Space &amp; Astronomy" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="eager">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Space &amp; Astronomy</span>
@@ -313,7 +257,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Photorealistic%20scientific%203D%20visualization%20of%20Lee-Yang%20theorems%20for%20%24q%24-deformed%20oscillators%20and%20-%20%20New%20Evidence%20in%20Biophysics%20%26%20Genomics%2C%20quantum%20physical%20mechanics%2C%20laboratory%20laser%20instrumentation%2C%20microscopic%20particle%20interaction%2C%20intricate%20empirical%20details%2C%20volumetric%20lighting%2C%208k%20render%2C%20octane%20render%20style%2C%20no%20text%2C%20no%20watermark%2C%2016%3A9%20aspect%20ratio?width=1280&amp;height=720&amp;seed=672566327&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Lee-Yang theorems for $q$-deformed oscillators and: New Evidence in Biophysics &amp; Genomics in Biophysics &amp; Genomics" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="eager">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Biophysics &amp; Genomics</span>
@@ -338,7 +282,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Photorealistic%20scientific%203D%20visualization%20of%20Mutual%20information%20to%20all%20orders%20from%20modular%20flow%20-%20%20a%20-%20%20New%20Evidence%20in%20Biophysics%20%26%20Genomics%2C%20quantum%20physical%20mechanics%2C%20laboratory%20laser%20instrumentation%2C%20microscopic%20particle%20interaction%2C%20intricate%20empirical%20details%2C%20volumetric%20lighting%2C%208k%20render%2C%20octane%20render%20style%2C%20no%20text%2C%20no%20watermark%2C%2016%3A9%20aspect%20ratio?width=1280&amp;height=720&amp;seed=181481358&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Mutual information to all orders from modular flow: a: New Evidence in Biophysics &amp; Genomics in Biophysics &amp; Genomics" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="eager">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Biophysics &amp; Genomics</span>
@@ -363,7 +307,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Photorealistic%20scientific%203D%20visualization%20of%20Quantum%20channel%20tomography%20-%20%20optimal%20bounds%20in%20the%20-%20%20New%20Evidence%20in%20Quantum%20%26%20Physics%2C%20quantum%20physical%20mechanics%2C%20laboratory%20laser%20instrumentation%2C%20microscopic%20particle%20interaction%2C%20intricate%20empirical%20details%2C%20volumetric%20lighting%2C%208k%20render%2C%20octane%20render%20style%2C%20no%20text%2C%20no%20watermark%2C%2016%3A9%20aspect%20ratio?width=1280&amp;height=720&amp;seed=980440320&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Quantum channel tomography: optimal bounds in the: New Evidence in Quantum &amp; Physics in Quantum &amp; Physics" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Quantum &amp; Physics</span>
@@ -388,7 +332,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Deep space exoplanet atmospheric spectroscopy captured by orbital space observatory" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Photorealistic%20scientific%203D%20visualization%20of%20Neptunian%20ridge%20through%20the%20lens%20of%20TESS%20-%20%20New%20Evidence%20in%20Space%20%26%20Astronomy%2C%20deep%20space%20astrophysics%20observation%2C%20telescope%20spectroscopy%2C%20celestial%20phenomenon%2C%20intricate%20empirical%20details%2C%20volumetric%20lighting%2C%208k%20render%2C%20octane%20render%20style%2C%20no%20text%2C%20no%20watermark%2C%2016%3A9%20aspect%20ratio?width=1280&amp;height=720&amp;seed=1761088541&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Neptunian ridge through the lens of TESS: New Evidence in Space &amp; Astronomy in Space &amp; Astronomy" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Space &amp; Astronomy</span>
@@ -413,7 +357,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Photorealistic%20scientific%203D%20visualization%20of%20Compressed%20Oracle%20Duality%20-%20%20A%20simple%20framework%20for%20-%20%20New%20Evidence%20in%20Quantum%20%26%20Physics%2C%20quantum%20physical%20mechanics%2C%20laboratory%20laser%20instrumentation%2C%20microscopic%20particle%20interaction%2C%20intricate%20empirical%20details%2C%20volumetric%20lighting%2C%208k%20render%2C%20octane%20render%20style%2C%20no%20text%2C%20no%20watermark%2C%2016%3A9%20aspect%20ratio?width=1280&amp;height=720&amp;seed=951544758&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Compressed Oracle Duality: A simple framework for: New Evidence in Quantum &amp; Physics in Quantum &amp; Physics" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Quantum &amp; Physics</span>
@@ -438,7 +382,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Photorealistic%20scientific%203D%20visualization%20of%20Discovering%20Models%20for%20Experimental%20Quantum%20Systems%20-%20%20New%20Evidence%20in%20Quantum%20%26%20Physics%2C%20quantum%20physical%20mechanics%2C%20laboratory%20laser%20instrumentation%2C%20microscopic%20particle%20interaction%2C%20intricate%20empirical%20details%2C%20volumetric%20lighting%2C%208k%20render%2C%20octane%20render%20style%2C%20no%20text%2C%20no%20watermark%2C%2016%3A9%20aspect%20ratio?width=1280&amp;height=720&amp;seed=149970497&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Discovering Models for Experimental Quantum Systems: New Evidence in Quantum &amp; Physics in Quantum &amp; Physics" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Quantum &amp; Physics</span>
@@ -463,7 +407,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Photorealistic%20scientific%203D%20visualization%20of%20Persistence%20of%20Unitary%20Almost%20Mathieu%20Operator%20Gaps%20-%20%20New%20Evidence%20in%20Advanced%20Physics%20%26%20Deep%20Science%2C%20quantum%20physical%20mechanics%2C%20laboratory%20laser%20instrumentation%2C%20microscopic%20particle%20interaction%2C%20intricate%20empirical%20details%2C%20volumetric%20lighting%2C%208k%20render%2C%20octane%20render%20style%2C%20no%20text%2C%20no%20watermark%2C%2016%3A9%20aspect%20ratio?width=1280&amp;height=720&amp;seed=117027255&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Persistence of Unitary Almost Mathieu Operator Gaps: New Evidence in Advanced Physics &amp; Deep Science in Advanced Physics &amp; Deep Science" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Advanced Physics &amp; Deep Science</span>
@@ -488,7 +432,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Photorealistic%20scientific%203D%20visualization%20of%20Weighted%20hypergraph%20states%20as%20a%20resource%20for%20quantum%20-%20%20New%20Evidence%20in%20Quantum%20%26%20Physics%2C%20quantum%20physical%20mechanics%2C%20laboratory%20laser%20instrumentation%2C%20microscopic%20particle%20interaction%2C%20intricate%20empirical%20details%2C%20volumetric%20lighting%2C%208k%20render%2C%20octane%20render%20style%2C%20no%20text%2C%20no%20watermark%2C%2016%3A9%20aspect%20ratio?width=1280&amp;height=720&amp;seed=274990149&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Weighted hypergraph states as a resource for quantum: New Evidence in Quantum &amp; Physics in Quantum &amp; Physics" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Quantum &amp; Physics</span>
@@ -513,7 +457,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Photorealistic%20scientific%203D%20visualization%20of%20Time-optimal%20quantum%20dynamics%20under%20fixed-norm%20generators%20-%20%20New%20Evidence%20in%20Quantum%20%26%20Physics%2C%20quantum%20physical%20mechanics%2C%20laboratory%20laser%20instrumentation%2C%20microscopic%20particle%20interaction%2C%20intricate%20empirical%20details%2C%20volumetric%20lighting%2C%208k%20render%2C%20octane%20render%20style%2C%20no%20text%2C%20no%20watermark%2C%2016%3A9%20aspect%20ratio?width=1280&amp;height=720&amp;seed=390670507&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Time-optimal quantum dynamics under fixed-norm generators: New Evidence in Quantum &amp; Physics in Quantum &amp; Physics" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Quantum &amp; Physics</span>
@@ -538,7 +482,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Photorealistic%20scientific%203D%20visualization%20of%20Secret-shared%20teleportation%20of%20a%20two-qudit%20gate%20with%20a%20-%20%20New%20Evidence%20in%20Quantum%20%26%20Physics%2C%20quantum%20physical%20mechanics%2C%20laboratory%20laser%20instrumentation%2C%20microscopic%20particle%20interaction%2C%20intricate%20empirical%20details%2C%20volumetric%20lighting%2C%208k%20render%2C%20octane%20render%20style%2C%20no%20text%2C%20no%20watermark%2C%2016%3A9%20aspect%20ratio?width=1280&amp;height=720&amp;seed=104574105&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Secret-shared teleportation of a two-qudit gate with a: New Evidence in Quantum &amp; Physics in Quantum &amp; Physics" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Quantum &amp; Physics</span>
@@ -563,7 +507,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Photorealistic%20scientific%203D%20visualization%20of%20Large%20Eddy%20Simulation%20Study%20of%20Turbine%20Pitch%20Motion%20-%20%20New%20Evidence%20in%20Biophysics%20%26%20Genomics%2C%20quantum%20physical%20mechanics%2C%20laboratory%20laser%20instrumentation%2C%20microscopic%20particle%20interaction%2C%20intricate%20empirical%20details%2C%20volumetric%20lighting%2C%208k%20render%2C%20octane%20render%20style%2C%20no%20text%2C%20no%20watermark%2C%2016%3A9%20aspect%20ratio?width=1280&amp;height=720&amp;seed=990719589&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Large Eddy Simulation Study of Turbine Pitch Motion: New Evidence in Biophysics &amp; Genomics in Biophysics &amp; Genomics" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Biophysics &amp; Genomics</span>
@@ -588,7 +532,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Photorealistic%20scientific%203D%20visualization%20of%20Longitudinal%20electric%20corner%20modes%20in%20continuum%20-%20%20New%20Evidence%20in%20Quantum%20%26%20Physics%2C%20quantum%20physical%20mechanics%2C%20laboratory%20laser%20instrumentation%2C%20microscopic%20particle%20interaction%2C%20intricate%20empirical%20details%2C%20volumetric%20lighting%2C%208k%20render%2C%20octane%20render%20style%2C%20no%20text%2C%20no%20watermark%2C%2016%3A9%20aspect%20ratio?width=1280&amp;height=720&amp;seed=1265381367&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Longitudinal electric corner modes in continuum: New Evidence in Quantum &amp; Physics in Quantum &amp; Physics" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Quantum &amp; Physics</span>
@@ -613,7 +557,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Cryptochrome%204%20photoreceptor%20protein%20scaffold%20with%20flavin%20adenine%20dinucleotide%20pocket%2C%20entangled%20electron%20radical%20pair%20spin%20vectors%20aligning%20with%20Earth%20geomagnetic%20field%20lines%2C%20quantum%20biophysics%20render%2C%208k?width=1280&amp;height=720&amp;seed=430452936&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Quantum Navigation in Birds: Clocking Radical Pair Coherence in Quantum Biology &amp; Biophysics" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Quantum Biology &amp; Biophysics</span>
@@ -638,7 +582,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Photorealistic%20scientific%203D%20visualization%20of%20Fast%20and%20Accurate%20Neural%20Triage%20Decoding%20%5B2026%20Breakthrough%5D%2C%20quantum%20physical%20mechanics%2C%20laboratory%20laser%20instrumentation%2C%20microscopic%20particle%20interaction%2C%20intricate%20empirical%20details%2C%20volumetric%20lighting%2C%208k%20render%2C%20octane%20render%20style%2C%20no%20text%2C%20no%20watermark%2C%2016%3A9%20aspect%20ratio?width=1280&amp;height=720&amp;seed=439799579&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Fast and Accurate Neural Triage Decoding [2026 Breakthrough] in Quantum &amp; Physics" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Quantum &amp; Physics</span>
@@ -663,7 +607,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Deep space exoplanet atmospheric spectroscopy captured by orbital space observatory" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Photorealistic%20scientific%203D%20visualization%20of%20Mapping%20Stellar%20Obliquity%20Across%20Space%20and%20Time%20%5BAstrophysics%5D%2C%20deep%20space%20astrophysics%20observation%2C%20telescope%20spectroscopy%2C%20celestial%20phenomenon%2C%20intricate%20empirical%20details%2C%20volumetric%20lighting%2C%208k%20render%2C%20octane%20render%20style%2C%20no%20text%2C%20no%20watermark%2C%2016%3A9%20aspect%20ratio?width=1280&amp;height=720&amp;seed=736021138&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Mapping Stellar Obliquity Across Space and Time [Astrophysics] in Space &amp; Astronomy" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Space &amp; Astronomy</span>
@@ -688,7 +632,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Renewable biological solar cells and clean environmental nanotechnology" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Cosmic%20primordial%20black%20hole%20collision%20creating%20ripples%20in%20the%20fabric%20of%20spacetime%2C%20gravitational%20wave%20interferometer%20simulation%2C%20deep%20space%20astrophysical%20event%2C%208k?width=1280&amp;height=720&amp;seed=1621686883&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Sub-Solar Gravitational Waves: Evidence for Primordial Dark Matter in Cosmology &amp; Particle Physics" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Cosmology &amp; Particle Physics</span>
@@ -713,7 +657,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Glacial ice sheet core sampling and polar climate research expedition" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Vibrant%20coral%20reef%20polyps%20under%20ocean%20water%2C%20fluorescent%20epigenetic%20markers%20glowing%20along%20coral%20tissue%20demonstrating%20rapid%20thermal%20adaptation%20to%20warming%20waters%2C%20underwater%20macro%20photography%2C%208k?width=1280&amp;height=720&amp;seed=839971967&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Coral Survival Breakthrough: Rapid Epigenetic Heat Resistance in Marine Ecology &amp; Climate" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Marine Ecology &amp; Climate</span>
@@ -738,7 +682,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Glacial ice sheet core sampling and polar climate research expedition" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Photorealistic%20scientific%203D%20visualization%20of%20Lattice%20moments%20and%20quantum%20designs%20-%20%20New%20Evidence%20in%20Quantum%20%26%20Physics%2C%20quantum%20physical%20mechanics%2C%20laboratory%20laser%20instrumentation%2C%20microscopic%20particle%20interaction%2C%20intricate%20empirical%20details%2C%20volumetric%20lighting%2C%208k%20render%2C%20octane%20render%20style%2C%20no%20text%2C%20no%20watermark%2C%2016%3A9%20aspect%20ratio?width=1280&amp;height=720&amp;seed=866925978&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Lattice moments and quantum designs: New Evidence in Quantum &amp; Physics in Quantum &amp; Physics" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Quantum &amp; Physics</span>
@@ -763,7 +707,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Photorealistic%20scientific%203D%20visualization%20of%20Benchmarking%20Fast%20Quantum%20Anneals%20with%20Domain%20Walls%20%5B2026%5D%2C%20quantum%20physical%20mechanics%2C%20laboratory%20laser%20instrumentation%2C%20microscopic%20particle%20interaction%2C%20intricate%20empirical%20details%2C%20volumetric%20lighting%2C%208k%20render%2C%20octane%20render%20style%2C%20no%20text%2C%20no%20watermark%2C%2016%3A9%20aspect%20ratio?width=1280&amp;height=720&amp;seed=510923902&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Benchmarking Fast Quantum Anneals with Domain Walls [2026] in Quantum &amp; Physics" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Quantum &amp; Physics</span>
@@ -788,7 +732,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Glacial ice sheet core sampling and polar climate research expedition" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Photorealistic%20scientific%203D%20visualization%20of%20Gauge-Invariant%20Orbital%20Angular%20Momentum%20of%20Vector%20Bosons%2C%20quantum%20physical%20mechanics%2C%20laboratory%20laser%20instrumentation%2C%20microscopic%20particle%20interaction%2C%20intricate%20empirical%20details%2C%20volumetric%20lighting%2C%208k%20render%2C%20octane%20render%20style%2C%20no%20text%2C%20no%20watermark%2C%2016%3A9%20aspect%20ratio?width=1280&amp;height=720&amp;seed=396456147&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Gauge-Invariant Orbital Angular Momentum of Vector Bosons in Quantum &amp; Physics" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Quantum &amp; Physics</span>
@@ -813,7 +757,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Photorealistic%20scientific%203D%20visualization%20of%20Quasi-Phases%20of%20Quantum%20Matter%20-%20%20New%20Evidence%20in%20Quantum%20%26%20Physics%2C%20quantum%20physical%20mechanics%2C%20laboratory%20laser%20instrumentation%2C%20microscopic%20particle%20interaction%2C%20intricate%20empirical%20details%2C%20volumetric%20lighting%2C%208k%20render%2C%20octane%20render%20style%2C%20no%20text%2C%20no%20watermark%2C%2016%3A9%20aspect%20ratio?width=1280&amp;height=720&amp;seed=1176807945&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Quasi-Phases of Quantum Matter: New Evidence in Quantum &amp; Physics in Quantum &amp; Physics" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Quantum &amp; Physics</span>
@@ -838,7 +782,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Photorealistic%20scientific%203D%20visualization%20of%20Grow%2C%20Compress%2C%20and%20Perturb%20-%20%20Hybrid%20Quantum%20Tensor%20Networks%2C%20quantum%20physical%20mechanics%2C%20laboratory%20laser%20instrumentation%2C%20microscopic%20particle%20interaction%2C%20intricate%20empirical%20details%2C%20volumetric%20lighting%2C%208k%20render%2C%20octane%20render%20style%2C%20no%20text%2C%20no%20watermark%2C%2016%3A9%20aspect%20ratio?width=1280&amp;height=720&amp;seed=424052765&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Grow, Compress, and Perturb: Hybrid Quantum Tensor Networks in Quantum &amp; Physics" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Quantum &amp; Physics</span>
@@ -863,7 +807,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Photorealistic%20scientific%203D%20visualization%20of%20Strong-to-Weak%20Symmetry%20Breaking%20in%20Quantum%20Many-Body%20Systems%2C%20quantum%20physical%20mechanics%2C%20laboratory%20laser%20instrumentation%2C%20microscopic%20particle%20interaction%2C%20intricate%20empirical%20details%2C%20volumetric%20lighting%2C%208k%20render%2C%20octane%20render%20style%2C%20no%20text%2C%20no%20watermark%2C%2016%3A9%20aspect%20ratio?width=1280&amp;height=720&amp;seed=953121471&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Strong-to-Weak Symmetry Breaking in Quantum Many-Body Systems in Quantum &amp; Physics" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Quantum &amp; Physics</span>
@@ -888,7 +832,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Photorealistic%20scientific%203D%20visualization%20of%20Quantum%20Chromatic%20Gap%20II%20-%20%20New%20Evidence%20in%20Quantum%20%26%20Physics%2C%20quantum%20physical%20mechanics%2C%20laboratory%20laser%20instrumentation%2C%20microscopic%20particle%20interaction%2C%20intricate%20empirical%20details%2C%20volumetric%20lighting%2C%208k%20render%2C%20octane%20render%20style%2C%20no%20text%2C%20no%20watermark%2C%2016%3A9%20aspect%20ratio?width=1280&amp;height=720&amp;seed=1455339132&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of The Quantum Chromatic Gap II: New Evidence in Quantum &amp; Physics in Quantum &amp; Physics" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Quantum &amp; Physics</span>
@@ -913,7 +857,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Photorealistic%20scientific%203D%20visualization%20of%20Computing%20with%20Indefinite%20Causal%20Structure%20in%20Quantum%20Physics%2C%20quantum%20physical%20mechanics%2C%20laboratory%20laser%20instrumentation%2C%20microscopic%20particle%20interaction%2C%20intricate%20empirical%20details%2C%20volumetric%20lighting%2C%208k%20render%2C%20octane%20render%20style%2C%20no%20text%2C%20no%20watermark%2C%2016%3A9%20aspect%20ratio?width=1280&amp;height=720&amp;seed=1049852076&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Computing with Indefinite Causal Structure in Quantum Physics in Quantum &amp; Physics" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Quantum &amp; Physics</span>
@@ -938,7 +882,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Photorealistic%20scientific%203D%20visualization%20of%20Classical%20Communication%20Limits%20Over%20Quantum%20Channels%20%5BStudy%5D%2C%20quantum%20physical%20mechanics%2C%20laboratory%20laser%20instrumentation%2C%20microscopic%20particle%20interaction%2C%20intricate%20empirical%20details%2C%20volumetric%20lighting%2C%208k%20render%2C%20octane%20render%20style%2C%20no%20text%2C%20no%20watermark%2C%2016%3A9%20aspect%20ratio?width=1280&amp;height=720&amp;seed=99174489&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Classical Communication Limits Over Quantum Channels [Study] in Quantum &amp; Physics" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Quantum &amp; Physics</span>
@@ -963,7 +907,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Microbial%20biofilm%20architecture%20growing%20on%20spacecraft%20titanium%20water%20recycling%20filter%2C%20scanning%20electron%20microscope%20SEM%20visualization%2C%20space%20microbiology%20research%2C%208k?width=1280&amp;height=720&amp;seed=1809995356&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Probing Fluctuations in Single-Photon Emission Statistics in Quantum &amp; Physics" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Quantum &amp; Physics</span>
@@ -988,7 +932,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Quantum%20computing%20processor%20showing%20topological%20qubit%20Majorana%20zero%20modes%20braided%20along%20semiconductor%20nanowire%20lattice%2C%20golden%20dilution%20refrigerator%20stage%2C%20glowing%20quantum%20coherence%2C%208k?width=1280&amp;height=720&amp;seed=429518723&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Algebraic Theory of Abelian Fractons in Topological Matter in Quantum &amp; Physics" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Quantum &amp; Physics</span>
@@ -1013,7 +957,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Photorealistic%20scientific%203D%20visualization%20of%20Exceptional%20Points%20as%20Witnesses%20of%20Non-Gaussian%20Noise%20%5B2026%5D%2C%20quantum%20physical%20mechanics%2C%20laboratory%20laser%20instrumentation%2C%20microscopic%20particle%20interaction%2C%20intricate%20empirical%20details%2C%20volumetric%20lighting%2C%208k%20render%2C%20octane%20render%20style%2C%20no%20text%2C%20no%20watermark%2C%2016%3A9%20aspect%20ratio?width=1280&amp;height=720&amp;seed=1826272900&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Exceptional Points as Witnesses of Non-Gaussian Noise [2026] in Quantum &amp; Physics" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Quantum &amp; Physics</span>
@@ -1038,7 +982,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Photorealistic%20scientific%203D%20visualization%20of%20Optimal%20Diamond%20Distance%20Estimation%20for%20Unitary%20Channels%2C%20quantum%20physical%20mechanics%2C%20laboratory%20laser%20instrumentation%2C%20microscopic%20particle%20interaction%2C%20intricate%20empirical%20details%2C%20volumetric%20lighting%2C%208k%20render%2C%20octane%20render%20style%2C%20no%20text%2C%20no%20watermark%2C%2016%3A9%20aspect%20ratio?width=1280&amp;height=720&amp;seed=2084923496&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Optimal Diamond Distance Estimation for Unitary Channels in Quantum &amp; Physics" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Quantum &amp; Physics</span>
@@ -1063,7 +1007,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Microbial%20biofilm%20architecture%20growing%20on%20spacecraft%20titanium%20water%20recycling%20filter%2C%20scanning%20electron%20microscope%20SEM%20visualization%2C%20space%20microbiology%20research%2C%208k?width=1280&amp;height=720&amp;seed=443040621&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Left-Handed Transmission Lines for Dynamical Casimir Physics in Quantum &amp; Physics" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Quantum &amp; Physics</span>
@@ -1088,7 +1032,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Deep space exoplanet atmospheric spectroscopy captured by orbital space observatory" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Microbial%20biofilm%20architecture%20growing%20on%20spacecraft%20titanium%20water%20recycling%20filter%2C%20scanning%20electron%20microscope%20SEM%20visualization%2C%20space%20microbiology%20research%2C%208k?width=1280&amp;height=720&amp;seed=1314732051&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Locality in Dissipative Ground-State Preparation [Quantum] in Space &amp; Astronomy" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Space &amp; Astronomy</span>
@@ -1113,7 +1057,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Deep space exoplanet atmospheric spectroscopy captured by orbital space observatory" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Microbial%20biofilm%20architecture%20growing%20on%20spacecraft%20titanium%20water%20recycling%20filter%2C%20scanning%20electron%20microscope%20SEM%20visualization%2C%20space%20microbiology%20research%2C%208k?width=1280&amp;height=720&amp;seed=715772468&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Hyaluronic Acid Overexpression in Tissue Regeneration [LEO] in Space &amp; Astronomy" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Space &amp; Astronomy</span>
@@ -1138,7 +1082,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Photorealistic%20scientific%203D%20visualization%20of%20Entangling%20Strategies%20for%20Unitary%20Quantum%20Circuit%20Synthesis%2C%20quantum%20physical%20mechanics%2C%20laboratory%20laser%20instrumentation%2C%20microscopic%20particle%20interaction%2C%20intricate%20empirical%20details%2C%20volumetric%20lighting%2C%208k%20render%2C%20octane%20render%20style%2C%20no%20text%2C%20no%20watermark%2C%2016%3A9%20aspect%20ratio?width=1280&amp;height=720&amp;seed=213971338&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Entangling Strategies for Unitary Quantum Circuit Synthesis in Quantum &amp; Physics" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Quantum &amp; Physics</span>
@@ -1163,7 +1107,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Deep space exoplanet atmospheric spectroscopy captured by orbital space observatory" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Photorealistic%20scientific%203D%20visualization%20of%20Renormalization%20for%20Robust%20Quantum%20Memory%20Synchronization%2C%20deep%20space%20astrophysics%20observation%2C%20telescope%20spectroscopy%2C%20celestial%20phenomenon%2C%20intricate%20empirical%20details%2C%20volumetric%20lighting%2C%208k%20render%2C%20octane%20render%20style%2C%20no%20text%2C%20no%20watermark%2C%2016%3A9%20aspect%20ratio?width=1280&amp;height=720&amp;seed=213433712&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Renormalization for Robust Quantum Memory Synchronization in Space &amp; Astronomy" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Space &amp; Astronomy</span>
@@ -1188,7 +1132,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Photorealistic%20scientific%203D%20visualization%20of%20Reconstructing%20Hidden%20Quantum%20Observables%20via%20State%20Snapshots%2C%20quantum%20physical%20mechanics%2C%20laboratory%20laser%20instrumentation%2C%20microscopic%20particle%20interaction%2C%20intricate%20empirical%20details%2C%20volumetric%20lighting%2C%208k%20render%2C%20octane%20render%20style%2C%20no%20text%2C%20no%20watermark%2C%2016%3A9%20aspect%20ratio?width=1280&amp;height=720&amp;seed=2018448301&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Reconstructing Hidden Quantum Observables via State Snapshots in Quantum &amp; Physics" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Quantum &amp; Physics</span>
@@ -1213,7 +1157,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Renewable biological solar cells and clean environmental nanotechnology" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Advanced%20solid-state%20sodium%20ion%20battery%20cell%20cross-section%20showing%20non-dendritic%20ceramic%20electrolyte%20and%20sodium%20atoms%20smoothly%20intercalating%20between%20cathode%20layers%2C%20clean%20energy%20tech%20render%2C%208k?width=1280&amp;height=720&amp;seed=91009497&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Beyond Lithium: Non-Flammable Sodium Battery Achieves 2,000 Cycles in Clean Energy &amp; Materials" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Clean Energy &amp; Materials</span>
@@ -1238,7 +1182,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Cutting-edge laboratory biophysics and scientific research instrumentation" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Synthetic%20biology%20laboratory%20rendering%20of%20custom%20engineered%20minimal%20bacterial%20cell%20with%20artificial%20genetic%20codon%20triplets%2C%20virus%20particles%20bouncing%20harmlessly%20off%20impenetrable%20cell%20membrane%2C%208k?width=1280&amp;height=720&amp;seed=1514414645&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Virus-Proof Biology: Synthetic Bacterial Genome Immune to Infection in Synthetic Biology &amp; Genomics" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Synthetic Biology &amp; Genomics</span>
@@ -1263,7 +1207,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Glacial ice sheet core sampling and polar climate research expedition" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Geophysical%20radar%20cross-section%20cutaway%20revealing%20vast%20prehistoric%20river%20canyon%20system%20buried%20beneath%20two%20miles%20of%20crystalline%20Antarctic%20ice%20sheet%2C%20geological%20earth%20science%20visualization%2C%208k?width=1280&amp;height=720&amp;seed=566649681&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Beneath Two Miles of Antarctic Ice: Immense River Canyon Found in Geophysics &amp; Earth Science" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Geophysics &amp; Earth Science</span>
@@ -1288,7 +1232,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Deep space exoplanet atmospheric spectroscopy captured by orbital space observatory" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Supermassive%20black%20hole%20event%20horizon%20with%20brilliant%20glowing%20accretion%20disk%2C%20gravitational%20lensing%20twisting%20background%20starlight%2C%20stream%20of%20celestial%20matter%20elongating%20in%20extreme%20tidal%20curvature%2C%20astrophysics%20simulation%2C%208k?width=1280&amp;height=720&amp;seed=935491932&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Runaway Supermassive Black Hole Leaves 200,000-Light-Year Star Trail in Astrophysics &amp; Space" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Astrophysics &amp; Space</span>
@@ -1313,7 +1257,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Cutting-edge laboratory biophysics and scientific research instrumentation" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Bioluminescent%20mutant%20soil%20white-rot%20fungus%20mycelium%20cleaving%20carbon-fluorine%20bonds%20in%20water%20droplet%2C%20microscopic%20environmental%20biotechnology%203D%20visualization%2C%208k?width=1280&amp;height=720&amp;seed=82744793&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Mutant Soil Fungi Wipe Out Toxic &#39;Forever Chemicals&#39; in 96 Hours in Environmental Science &amp; EVS" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Environmental Science &amp; EVS</span>
@@ -1338,7 +1282,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1533158307587-828f0a76ef46?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Ancient anthropological excavation and prehistoric fossil examination" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Archaeogenetic%20analysis%20of%20fossilized%20Neanderthal%20jaw%20and%20dental%20tartar%2C%20laboratory%20tweezers%20extracting%20microscopic%20paleolithic%20medicinal%20plant%20remnants%20and%20salicylic%20crystals%2C%20macro%20photography%2C%208k?width=1280&amp;height=720&amp;seed=511986930&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Dental Tartar Proves Neanderthals Used Natural Aspirin &amp; Penicillin in Deep Science History" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Deep Science History</span>
@@ -1363,7 +1307,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Quantum computing dilution refrigerator and topological qubit lattice" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Photorealistic%20scientific%203D%20visualization%20of%20Fault-Tolerant%20Quantum%20Leap%20-%20%20Physicists%20Shield%20Qubits%20from%20Noise%2C%20quantum%20physical%20mechanics%2C%20laboratory%20laser%20instrumentation%2C%20microscopic%20particle%20interaction%2C%20intricate%20empirical%20details%2C%20volumetric%20lighting%2C%208k%20render%2C%20octane%20render%20style%2C%20no%20text%2C%20no%20watermark%2C%2016%3A9%20aspect%20ratio?width=1280&amp;height=720&amp;seed=1402254125&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Fault-Tolerant Quantum Leap: Physicists Shield Qubits from Noise in Quantum &amp; Physics" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Quantum &amp; Physics</span>
@@ -1388,7 +1332,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Deep space exoplanet atmospheric spectroscopy captured by orbital space observatory" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Autonomous%20robotic%20rover%20harvesting%20icy%20regolith%20in%20permanently%20shadowed%20lunar%20crater%2C%20Earth%20and%20starfield%20gleaming%20over%20sharp%20crater%20ridge%2C%20space%20mining%20engineering%20visualization%2C%208k?width=1280&amp;height=720&amp;seed=1136451888&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of The Trillion-Dollar Moon Economy: Why Mining Lunar Ice Is Feasible in Science Economics &amp; Space Industry" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Science Economics &amp; Space Industry</span>
@@ -1413,7 +1357,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Deep ocean geothermal vent minerals and marine geology" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Photorealistic%20scientific%203D%20visualization%20of%20Deep-Sea%20Expedition%20Finds%20Unseen%20Ecosystem%2014%2C000%20Feet%20Below%20Ocean%2C%20planetary%20geology%2C%20earth%20science%20expedition%2C%20natural%20mineral%20and%20atmospheric%20phenomenon%2C%20intricate%20empirical%20details%2C%20volumetric%20lighting%2C%208k%20render%2C%20octane%20render%20style%2C%20no%20text%2C%20no%20watermark%2C%2016%3A9%20aspect%20ratio?width=1280&amp;height=720&amp;seed=960104420&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Deep-Sea Expedition Finds Unseen Ecosystem 14,000 Feet Below Ocean in Earth &amp; Geology" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Earth &amp; Geology</span>
@@ -1438,7 +1382,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Deep space exoplanet atmospheric spectroscopy captured by orbital space observatory" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Photorealistic%20scientific%203D%20visualization%20of%20Webb%20Telescope%20Reveals%20Metal%20Rain%20%26%20Vaporized%20Iron%20on%20Exoplanet%2C%20deep%20space%20astrophysics%20observation%2C%20telescope%20spectroscopy%2C%20celestial%20phenomenon%2C%20intricate%20empirical%20details%2C%20volumetric%20lighting%2C%208k%20render%2C%20octane%20render%20style%2C%20no%20text%2C%20no%20watermark%2C%2016%3A9%20aspect%20ratio?width=1280&amp;height=720&amp;seed=22823345&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Webb Telescope Reveals Metal Rain &amp; Vaporized Iron on Exoplanet in Space &amp; Astronomy" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Space &amp; Astronomy</span>
@@ -1463,7 +1407,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://biogravity.space/assets/living-solar-panels-chloroplasts.jpg" alt="Living solar panels: plant chloroplasts and thylakoid membranes integrated with conductive nanoscale bio-circuits to generate renewable electricity" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Living%20biological%20solar%20panel%20array%20with%20genetically%20stabilized%20green%20thylakoid%20membranes%20layered%20on%20carbon%20nanotube%20mesh%20generating%20bio-electric%20current%2C%20modern%20clean%20tech%20lab%2C%208k?width=1280&amp;height=720&amp;seed=791508232&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Living Solar Panels: Chloroplasts Converted to Clean Electricity in Environmental Science &amp; Energy" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Environmental Science &amp; Energy</span>
@@ -1488,7 +1432,7 @@
       <article class="ux-card bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-teal-500 hover:shadow-lg transition group flex flex-col justify-between">
         <div>
           <div class="aspect-video w-full rounded-xl overflow-hidden mb-4 border border-slate-100">
-            <img src="https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85" alt="Glacial ice sheet core sampling and polar climate research expedition" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+            <img src="https://image.pollinations.ai/prompt/Paleoclimatologist%20in%20arctic%20parka%20inspecting%20pristine%20Antarctic%20ice%20core%20cylinder%20under%20laboratory%20magnifying%20light%2C%20ancient%20trapped%20atmospheric%20gas%20bubbles%20glowing%20faintly%2C%20high-detail%20photography?width=1280&amp;height=720&amp;seed=1391013080&amp;nologo=true&amp;model=flux" alt="Specific AI-generated scientific visualization of Ancient Greenland Ice Reveals 20-Year Abrupt Climate Transition in Science History &amp; Paleoclimatology" width="1600" height="900" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
           </div>
           <div class="flex items-center justify-between text-xs mb-2">
             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 border border-teal-200">Science History &amp; Paleoclimatology</span>

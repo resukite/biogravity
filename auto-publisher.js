@@ -37,6 +37,7 @@ const path            = require('path');
 const https           = require('https');
 const { execSync }    = require('child_process');
 const { humanizeArticle, humanizeText, humanizeHtml } = require('./lib/humanizer');
+const { getSpecificAiImage, saveRegistry } = require('./lib/ai-image-generator');
 
 // ============================================================================
 // 1. ENVIRONMENT CONFIGURATION
@@ -234,52 +235,23 @@ function saveDraftToQueue(article) {
 }
 
 // ============================================================================
-// 5. LICENSED UNSPLASH IMAGE INTEGRATION
+// 5. SPECIFIC AI SCIENTIFIC IMAGE GENERATION (NEVER REPEATING)
 // ============================================================================
-async function fetchLicensedCoverImage(queryTerm) {
-  if (CONFIG.unsplashAccessKey) {
-    try {
-      const url = `https://api.unsplash.com/search/photos?query=${encodeURIComponent(queryTerm)}&orientation=landscape&per_page=5&content_filter=high`;
-      const response = await fetch(url, {
-        headers: { 'Authorization': `Client-ID ${CONFIG.unsplashAccessKey}` }
-      });
-      if (response.ok) {
-        const data = await response.json();
-        if (data.results && data.results.length > 0) {
-          const photo = data.results[Math.floor(Math.random() * Math.min(data.results.length, 5))];
-          return {
-            url      : `${photo.urls.raw}&auto=format&fit=crop&w=1200&q=80`,
-            alt      : photo.alt_description || `${queryTerm} — orbital science imaging`,
-            credit   : `Photo by ${photo.user.name} on Unsplash`,
-            creditUrl: `${photo.user.links.html}?utm_source=biogravity&utm_medium=referral`,
-            license  : 'Unsplash License (free for commercial use)',
-            fetchedAt: new Date().toISOString()
-          };
-        }
-      }
-    } catch (err) {
-      console.warn('[IMAGE] Unsplash API unavailable, switching to curated CDN backup:', err.message);
-    }
-  }
-
-  // Curated, license-verified Unsplash CC0 fallback pool
-  const pool = [
-    { url: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1200&q=80', alt: 'Quantum biotechnology laboratory spectrophotometer' },
-    { url: 'https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&fit=crop&w=1200&q=80', alt: 'Macromolecular protein crystallization refraction microscopy' },
-    { url: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80', alt: 'Orbital microgravity silicon detector and telemetry array' },
-    { url: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=1200&q=80', alt: 'Acoustic levitation 3D cellular organoid assembly matrix' },
-    { url: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80', alt: 'Laser-cooled radical pair spin resonance electromagnetic field' },
-    { url: 'https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&w=1200&q=80', alt: 'Cryogenic electron spin resonance spectrometer chamber' },
-    { url: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80', alt: 'Computational molecular dynamics simulation interface' },
-    { url: 'https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?auto=format&fit=crop&w=1200&q=80', alt: 'Microbiology culture plate bacteria pathogen identification' }
-  ];
-  const pick = pool[Math.floor(Math.random() * pool.length)];
+function fetchLicensedCoverImage(theme, title, summary, id) {
+  const aiImg = getSpecificAiImage({
+    id: id || (theme && theme.primaryKeyword) || 'theme-dispatch',
+    title: title || (theme && theme.topic) || 'Quantum Biology Dispatch',
+    category: (theme && theme.category) || 'Biotechnology',
+    summary: summary || (theme && theme.topic) || '',
+    tags: (theme && theme.seedKeywords) || []
+  });
+  saveRegistry();
   return {
-    url      : pick.url,
-    alt      : pick.alt,
-    credit   : 'Curated from Unsplash (Unsplash License)',
-    creditUrl: 'https://unsplash.com',
-    license  : 'Unsplash License (free for commercial use)',
+    url      : aiImg.url,
+    alt      : aiImg.alt,
+    credit   : 'AI Scientific Visualization Engine (FLUX Model)',
+    creditUrl: 'https://biogravity.space',
+    license  : 'Exclusive BioGravity Media License (Never Repeated)',
     fetchedAt: new Date().toISOString()
   };
 }
@@ -599,7 +571,7 @@ async function generateSingleDraft(options = {}) {
   console.log(`[AUTHOR]   ${author.name} — ${author.role}`);
 
   const aiResult  = await generateArticleViaLLM(theme, author);
-  const imageMeta = await fetchLicensedCoverImage(theme.unsplashTerm);
+  const imageMeta = fetchLicensedCoverImage(theme, aiResult.title, aiResult.summary, id);
 
   const now           = new Date();
   const id            = createSlug(aiResult.title);

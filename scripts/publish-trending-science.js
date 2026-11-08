@@ -28,6 +28,7 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 const { execSync } = require('child_process');
+const { getSpecificAiImage, saveRegistry } = require('../lib/ai-image-generator');
 
 const rootDir = path.join(__dirname, '..');
 const dataDir = path.join(rootDir, 'data');
@@ -1036,6 +1037,19 @@ function publishTrendingArticles(count = 1, forceTopic = null) {
   for (const article of toPublish) {
     console.log(`\n[PUBLISHER] ✍️ Authoring: "${article.seoTitle}"`);
     console.log(`[PUBLISHER] 🔍 Target Keyword: "${article.primaryKeyword}" (High-Volume / Low-KD)`);
+
+    // Ensure guaranteed unique, specific AI-generated image
+    const aiImage = getSpecificAiImage({
+      id: article.id,
+      title: article.seoTitle || article.title,
+      category: article.category,
+      summary: article.summary,
+      keyFindings: article.quickAnswer || article.summary,
+      tags: article.tags
+    });
+    article.cover = aiImage.url;
+    article.coverAlt = aiImage.alt;
+    saveRegistry();
 
     // Prepend to database
     articles.unshift(article);

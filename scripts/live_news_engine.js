@@ -23,6 +23,7 @@ const https = require('https');
 const http = require('http');
 const { execSync } = require('child_process');
 const { humanizeArticle, humanizeText } = require('../lib/humanizer');
+const { getSpecificAiImage, saveRegistry } = require('../lib/ai-image-generator');
 
 const rootDir = path.join(__dirname, '..');
 const dataDir = path.join(rootDir, 'data');
@@ -365,64 +366,15 @@ class TitleManager {
 // AGENT 3: VisualsManager (1200px+ Google Discover Image Curator)
 // ============================================================================
 class VisualsManager {
-  static getDiscoverImage(category, title) {
-    const t = (category + ' ' + title).toLowerCase();
-    
-    // High-resolution (1200px+ width, 16:9 ratio) curated Unsplash science photography
-    if (t.includes('space') || t.includes('astronomy') || t.includes('webb')) {
-      return {
-        url: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1600&h=900&q=85",
-        alt: "Deep space exoplanet atmospheric spectroscopy captured by orbital space observatory"
-      };
-    }
-    if (t.includes('geology') || t.includes('ocean') || t.includes('hydrothermal')) {
-      return {
-        url: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1600&h=900&q=85",
-        alt: "Deep ocean geothermal vent minerals and marine geology"
-      };
-    }
-    if (t.includes('ice') || t.includes('climate') || t.includes('greenland')) {
-      return {
-        url: "https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=1600&h=900&q=85",
-        alt: "Glacial ice sheet core sampling and polar climate research expedition"
-      };
-    }
-    if (t.includes('chloroplast') || t.includes('photosynthetic') || t.includes('living solar') || t.includes('thylakoid')) {
-      return {
-        url: "https://biogravity.space/assets/living-solar-panels-chloroplasts.jpg",
-        alt: "Living solar panels: plant chloroplasts and thylakoid membranes integrated with conductive nanoscale bio-circuits to generate renewable electricity"
-      };
-    }
-    if (t.includes('solar') || t.includes('energy') || t.includes('photosynthesis')) {
-      return {
-        url: "https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=1600&h=900&q=85",
-        alt: "Renewable biological solar cells and clean environmental nanotechnology"
-      };
-    }
-    if (t.includes('moon') || t.includes('lunar') || t.includes('economic')) {
-      return {
-        url: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1600&h=900&q=85",
-        alt: "Lunar surface exploration and space economic resource extraction"
-      };
-    }
-    if (t.includes('quantum') || t.includes('qubit') || t.includes('physics')) {
-      return {
-        url: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=1600&h=900&q=85",
-        alt: "Quantum computing dilution refrigerator and topological qubit lattice"
-      };
-    }
-    if (t.includes('neanderthal') || t.includes('archaeology') || t.includes('history')) {
-      return {
-        url: "https://images.unsplash.com/photo-1533158307587-828f0a76ef46?auto=format&fit=crop&w=1600&h=900&q=85",
-        alt: "Ancient anthropological excavation and prehistoric fossil examination"
-      };
-    }
-    
-    // Default high-authority environmental/science photography
-    return {
-      url: "https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&fit=crop&w=1600&h=900&q=85",
-      alt: "Cutting-edge laboratory biophysics and scientific research instrumentation"
-    };
+  static getDiscoverImage(category, title, summary, keyFindings, tags, id) {
+    return getSpecificAiImage({
+      id: id || makeSlug(title),
+      title,
+      category,
+      summary,
+      keyFindings,
+      tags
+    });
   }
 }
 
@@ -1220,7 +1172,7 @@ async function runLiveNewsCycle(batchSize = 4) {
     console.log(`[TitleManager] ✨ Formulated Discover Title: "${discoverTitle}"`);
 
     // Step 3: Curate 1200px+ Image
-    const image = VisualsManager.getDiscoverImage(story.category, story.rawTitle);
+    const image = VisualsManager.getDiscoverImage(story.category, discoverTitle, story.summary, story.keyFindings, story.tags, makeSlug(discoverTitle));
 
     // Step 4: Write In-Depth Original Article
     let dispatch = ContentWriter.writeOriginalDispatch(story, discoverTitle, image);
@@ -1251,6 +1203,7 @@ async function runLiveNewsCycle(batchSize = 4) {
   newsDatabase = Array.from(uniqueNewsMap.values());
 
   fs.writeFileSync(newsJsonPath, JSON.stringify(newsDatabase, null, 2), 'utf8');
+  saveRegistry();
   console.log(`[Orchestrator] 💾 Saved ${newsDatabase.length} unique news stories to data/news.json.`);
 
   // Step 7: Render Individual HTML Pages (with directory index & .html)
