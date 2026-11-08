@@ -3,6 +3,7 @@
 
   function initSidebar() {
     let drawer = document.getElementById('nav-sidebar-drawer');
+      if (window.BioGravityAuth && typeof window.BioGravityAuth.syncSidebar === 'function') window.BioGravityAuth.syncSidebar();
     let overlay = document.getElementById('nav-sidebar-overlay');
 
     if (!drawer) {
@@ -196,6 +197,7 @@
     let isTransitioning = false;
 
     function openDrawer() {
+      if (window.BioGravityAuth && typeof window.BioGravityAuth.syncSidebar === 'function') window.BioGravityAuth.syncSidebar();
       if (!drawer || !overlay || isTransitioning) return;
       isTransitioning = true;
 

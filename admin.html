@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BioGravity Sentinel • Mission Control Terminal</title>
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/css/styles.min.css?v=2.2">
+  
+  <script defer src="/js/firebase-config.js"></script>
+  <script defer src="/js/auth-system.js"></script>
+
+  <style>
+    body {
+      background-color: #0b1120;
+      color: #f8fafc;
+      font-family: 'Inter', -apple-system, sans-serif;
+    }
+    .mono { font-family: 'JetBrains Mono', monospace; }
+    .glass-card {
+      background: rgba(15, 23, 42, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased selection:bg-teal-500 selection:text-slate-950">
+
+  <!-- ============================================================== -->
+  <!-- 1. RESTRICTED ACCESS GATE (Shown when unauthorized)            -->
+  <!-- ============================================================== -->
+  <div id="admin-auth-gate" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/90 backdrop-blur-xl transition-all duration-300">
+    <div class="w-full max-w-md p-8 rounded-3xl glass-card border border-teal-500/30 text-center space-y-6 shadow-2xl">
+      <div class="w-14 h-14 rounded-2xl bg-teal-500/10 border border-teal-400/30 flex items-center justify-center text-2xl mx-auto">
+        🛡️
+      </div>
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-500/10 border border-rose-500/30 text-rose-300 text-[10px] font-mono font-semibold uppercase tracking-widest mb-3">
+          Restricted Area • Clearance Required
+        </div>
+        <h2 class="font-display font-extrabold text-2xl text-white tracking-tight">Mission Control Terminal</h2>
+        <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+          This secret terminal provides real-time traffic telemetry, subscriber database controls, and premium tier configuration. Authorized administrators only.
+        </p>
+      </div>
+
+      <div class="space-y-3 pt-2">
+        <button id="gate-login-btn" class="w-full py-3 px-4 rounded-xl bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold text-xs transition shadow-lg shadow-teal-500/20 flex items-center justify-center gap-2 cursor-pointer">
+          <span>Sign In as Admin</span>
+          <span>&rarr;</span>
+        </button>
+        <a href="/" class="block text-xs text-slate-500 hover:text-slate-300 transition">
+          &larr; Return to BioGravity Public Hub
+        </a>
+      </div>
+      
+      <div class="text-[10px] font-mono text-slate-500 border-t border-white/5 pt-4">
+        Authorized ID: <span class="text-teal-400">biogravity.space@gmail.com</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================== -->
+  <!-- 2. MAIN ADMIN MISSION CONTROL DASHBOARD                        -->
+  <!-- ============================================================== -->
+  <div id="admin-dashboard" class="flex-1 flex flex-col hidden">
+    
+    <!-- Top Header -->
+    <header class="h-16 border-b border-white/10 glass-card sticky top-0 z-30 px-4 sm:px-8 flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-teal-500/20 border border-teal-400/30 flex items-center justify-center text-teal-300 text-sm">
+            ⚛️
+          </div>
+          <div>
+            <span class="font-display font-bold text-base text-white tracking-tight">BioGravity<span class="text-teal-400">.</span></span>
+            <span class="text-[10px] text-teal-400 font-mono tracking-wider uppercase ml-2 px-2 py-0.5 rounded-full bg-teal-500/10 border border-teal-400/20">Control Desk</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4 text-xs">
+        <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 font-mono text-[11px]">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>Live Telemetry Active</span>
+        </div>
+        <div class="hidden sm:block text-slate-400 font-mono text-xs" id="admin-user-display">
+          biogravity.space@gmail.com
+        </div>
+        <a href="/" class="px-3 py-1.5 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-slate-300 hover:text-white transition">
+          View Live Site ↗
+        </a>
+      </div>
+    </header>
+
+    <!-- Dashboard Content -->
+    <main class="flex-1 max-w-7xl mx-auto px-4 sm:px-8 py-8 w-full space-y-8">
+      
+      <!-- MILESTONE ALERT: 1,000 CLICKS PROGRESS FOR PREMIUM NEWSLETTER -->
+      <section class="rounded-3xl p-6 sm:p-8 bg-gradient-to-br from-teal-950/60 via-slate-900 to-indigo-950/60 border border-teal-500/30 shadow-2xl space-y-6">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <div class="flex items-center gap-2 text-xs font-mono text-teal-400 uppercase tracking-widest font-bold">
+              <span>🎯</span>
+              <span>Primary Mission Goal • 1,000 Clicks Milestone</span>
+            </div>
+            <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-white mt-1">
+              Premium Newsletter Tier Unlock Meter
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-300 mt-1 max-w-2xl leading-relaxed">
+              When BioGravity hits <strong>1,000 clicks</strong>, the exclusive Paid/Premium Research Dispatch tier automatically unlocks. Early access subscribers receive raw orbital flight telemetry and molecular models.
+            </p>
+          </div>
+          <div class="flex items-center gap-3">
+            <button id="btn-toggle-override" class="px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white text-xs font-mono font-medium transition cursor-pointer">
+              Toggle Manual Override
+            </button>
+            <button id="btn-simulate-click" class="px-4 py-2.5 rounded-xl bg-teal-500 hover:bg-teal-400 text-slate-950 text-xs font-bold transition shadow-lg shadow-teal-500/20 cursor-pointer">
+              + Add Test Click
+            </button>
+          </div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="space-y-2">
+          <div class="flex justify-between text-xs font-mono">
+            <span class="text-teal-300 font-bold" id="milestone-progress-text">842 / 1,000 Verified Clicks (84.2%)</span>
+            <span class="text-slate-400" id="milestone-remaining-text">158 clicks to unlock</span>
+          </div>
+          <div class="w-full h-4 rounded-full bg-slate-950/80 border border-white/10 overflow-hidden p-0.5">
+            <div id="milestone-progress-bar" class="h-full rounded-full bg-gradient-to-r from-teal-500 via-emerald-400 to-indigo-500 transition-all duration-500" style="width: 84.2%;"></div>
+          </div>
+        </div>
+
+        <!-- Status Card Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+          <div class="p-4 rounded-2xl bg-black/30 border border-white/5 space-y-1">
+            <div class="text-[10px] font-mono text-slate-400 uppercase">Current Tier Status</div>
+            <div class="text-lg font-display font-bold text-amber-400 flex items-center gap-2" id="tier-status-badge">
+              <span>⏳</span> Pending 1,000 Clicks
+            </div>
+          </div>
+          <div class="p-4 rounded-2xl bg-black/30 border border-white/5 space-y-1">
+            <div class="text-[10px] font-mono text-slate-400 uppercase">Target Revenue / Mo</div>
+            <div class="text-lg font-display font-bold text-white mono" id="tier-target-rev">
+              $5.00 / month ($50/yr)
+            </div>
+          </div>
+          <div class="p-4 rounded-2xl bg-black/30 border border-white/5 space-y-1">
+            <div class="text-[10px] font-mono text-slate-400 uppercase">Projected Conversion</div>
+            <div class="text-lg font-display font-bold text-teal-400 mono">
+              3.5% of Subscribers
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LIVE TELEMETRY STATS -->
+      <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <!-- Stat 1 -->
+        <div class="p-5 rounded-2xl glass-card space-y-2">
+          <div class="text-xs text-slate-400 font-mono uppercase flex items-center justify-between">
+            <span>Total Readers Today</span>
+            <span>👁️</span>
+          </div>
+          <div class="text-3xl font-display font-extrabold text-white mono" id="stat-readers-today">
+            1,248
+          </div>
+          <div class="text-[11px] text-emerald-400 font-mono">↑ 18.4% from yesterday</div>
+        </div>
+
+        <!-- Stat 2 -->
+        <div class="p-5 rounded-2xl glass-card space-y-2">
+          <div class="text-xs text-slate-400 font-mono uppercase flex items-center justify-between">
+            <span>Total Clicks (All-Time)</span>
+            <span>🖱️</span>
+          </div>
+          <div class="text-3xl font-display font-extrabold text-teal-300 mono" id="stat-total-clicks">
+            842
+          </div>
+          <div class="text-[11px] text-teal-400 font-mono">Google Search + Direct</div>
+        </div>
+
+        <!-- Stat 3 -->
+        <div class="p-5 rounded-2xl glass-card space-y-2">
+          <div class="text-xs text-slate-400 font-mono uppercase flex items-center justify-between">
+            <span>Newsletter Subscribers</span>
+            <span>📬</span>
+          </div>
+          <div class="text-3xl font-display font-extrabold text-white mono" id="stat-subscribers-count">
+            18
+          </div>
+          <div class="text-[11px] text-emerald-400 font-mono">100% Verified Opt-In</div>
+        </div>
+
+        <!-- Stat 4 -->
+        <div class="p-5 rounded-2xl glass-card space-y-2">
+          <div class="text-xs text-slate-400 font-mono uppercase flex items-center justify-between">
+            <span>Articles Published</span>
+            <span>📚</span>
+          </div>
+          <div class="text-3xl font-display font-extrabold text-white mono">
+            56
+          </div>
+          <div class="text-[11px] text-slate-400 font-mono">Indexed across Google</div>
+        </div>
+      </section>
+
+      <!-- TWO-COLUMN SECTION: NEWSLETTER CONTROLS & RECENT SIGN-INS -->
+      <section class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        
+        <!-- Left 2 Cols: Newsletter Subscriber Management -->
+        <div class="lg:col-span-2 p-6 rounded-3xl glass-card space-y-6">
+          <div class="flex items-center justify-between flex-wrap gap-4">
+            <div>
+              <h3 class="font-display font-bold text-lg text-white">Newsletter Subscriber Database</h3>
+              <p class="text-xs text-slate-400">All registered recipients for The BioGravity Weekly Dispatch</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <button id="btn-export-csv" class="px-3 py-2 rounded-xl bg-teal-500/20 hover:bg-teal-500/30 text-teal-300 border border-teal-500/30 text-xs font-mono font-medium transition cursor-pointer flex items-center gap-1.5">
+                <span>📥</span> Export CSV
+              </button>
+            </div>
+          </div>
+
+          <!-- Subscribers Table -->
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs text-slate-300">
+              <thead class="text-[10px] font-mono uppercase text-slate-400 bg-white/5 border-b border-white/10">
+                <tr>
+                  <th class="py-3 px-4">Subscriber Email</th>
+                  <th class="py-3 px-4">Date Joined</th>
+                  <th class="py-3 px-4">Origin Channel</th>
+                  <th class="py-3 px-4">Status</th>
+                </tr>
+              </thead>
+              <tbody id="subscribers-table-body" class="divide-y divide-white/5 font-mono text-xs">
+                <!-- Dynamically populated -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Broadcast Compose Preview -->
+          <div class="p-4 rounded-2xl bg-black/40 border border-white/10 space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-teal-300 font-mono uppercase">Draft Next Thursday Dispatch</span>
+              <span class="text-[10px] text-slate-500 font-mono">Markdown Supported</span>
+            </div>
+            <input type="text" placeholder="Subject: BioGravity Dispatch #04: Mitochondrial Adaptation in Orbital Microgravity" class="w-full px-3.5 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-xs focus:outline-none focus:border-teal-400">
+            <textarea rows="3" placeholder="Compose weekly briefing announcement..." class="w-full px-3.5 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-xs focus:outline-none focus:border-teal-400"></textarea>
+            <div class="flex justify-end">
+              <button class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-medium transition">
+                Send Test Email &rarr;
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right 1 Col: Premium Tier Configuration -->
+        <div class="p-6 rounded-3xl glass-card space-y-6">
+          <div>
+            <h3 class="font-display font-bold text-lg text-white">Premium Tier Settings</h3>
+            <p class="text-xs text-slate-400">Active once 1,000 verified clicks are recorded</p>
+          </div>
+
+          <div class="space-y-4 text-xs">
+            <div class="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-2">
+              <label class="block text-[11px] font-mono text-slate-400 uppercase">Monthly Subscription ($)</label>
+              <input type="number" value="5.00" class="w-full px-3 py-2 rounded-xl bg-black/40 border border-white/10 text-white font-mono text-xs">
+            </div>
+
+            <div class="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-2">
+              <label class="block text-[11px] font-mono text-slate-400 uppercase">Annual Subscription ($)</label>
+              <input type="number" value="50.00" class="w-full px-3 py-2 rounded-xl bg-black/40 border border-white/10 text-white font-mono text-xs">
+            </div>
+
+            <div class="space-y-2">
+              <div class="text-[11px] font-mono text-slate-400 uppercase">Subscriber Deliverables:</div>
+              <label class="flex items-center gap-2 text-slate-300">
+                <input type="checkbox" checked class="rounded border-white/20 text-teal-500">
+                <span>Exclusive Raw Telemetry Datasets</span>
+              </label>
+              <label class="flex items-center gap-2 text-slate-300">
+                <input type="checkbox" checked class="rounded border-white/20 text-teal-500">
+                <span>Early Access to Monograph Preprints</span>
+              </label>
+              <label class="flex items-center gap-2 text-slate-300">
+                <input type="checkbox" checked class="rounded border-white/20 text-teal-500">
+                <span>Direct Author Commentary &amp; Discord Desk</span>
+              </label>
+            </div>
+
+            <button class="w-full py-2.5 px-4 rounded-xl bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold text-xs transition cursor-pointer">
+              Save Premium Configuration
+            </button>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <!-- SCRIPT FOR ACCESS CONTROL & REAL-TIME METRICS -->
+  <script>
+    (function() {
+      'use strict';
+
+      // Admin verification
+      function checkAccess() {
+        const userJson = localStorage.getItem('biogravity_user');
+        let user = null;
+        try { if (userJson) user = JSON.parse(userJson); } catch(e) {}
+
+        const adminEmails = (window.BIOGRAVITY_ADMIN_EMAILS || ['biogravity.space@gmail.com', 'admin@biogravity.space']);
+        const isAuthorized = user && (user.isAdmin || adminEmails.includes(user.email));
+
+        const gate = document.getElementById('admin-auth-gate');
+        const dash = document.getElementById('admin-dashboard');
+
+        if (isAuthorized) {
+          if (gate) gate.classList.add('hidden');
+          if (dash) dash.classList.remove('hidden');
+          document.getElementById('admin-user-display').textContent = user.email;
+          initDashboard();
+        } else {
+          if (gate) gate.classList.remove('hidden');
+          if (dash) dash.classList.add('hidden');
+        }
+      }
+
+      document.getElementById('gate-login-btn')?.addEventListener('click', () => {
+        if (window.BioGravityAuth && window.BioGravityAuth.openAuth) {
+          window.BioGravityAuth.openAuth();
+        }
+      });
+
+      // Dashboard logic
+      function initDashboard() {
+        // Clicks storage
+        let clicks = parseInt(localStorage.getItem('biogravity_total_clicks') || '842', 10);
+        
+        function updateProgress() {
+          const goal = 1000;
+          const pct = Math.min(100, ((clicks / goal) * 100)).toFixed(1);
+          const remaining = Math.max(0, goal - clicks);
+
+          document.getElementById('stat-total-clicks').textContent = clicks.toLocaleString();
+          document.getElementById('milestone-progress-text').textContent = `${clicks.toLocaleString()} / 1,000 Verified Clicks (${pct}%)`;
+          document.getElementById('milestone-remaining-text').textContent = `${remaining} clicks to unlock`;
+          document.getElementById('milestone-progress-bar').style.width = `${pct}%`;
+
+          const statusBadge = document.getElementById('tier-status-badge');
+          if (clicks >= 1000) {
+            statusBadge.innerHTML = '<span>🚀</span> <span class="text-emerald-400">UNLOCKED & ACTIVE</span>';
+          } else {
+            statusBadge.innerHTML = '<span>⏳</span> <span class="text-amber-400">Pending 1,000 Clicks</span>';
+          }
+        }
+
+        updateProgress();
+
+        document.getElementById('btn-simulate-click')?.addEventListener('click', () => {
+          clicks += 15;
+          localStorage.setItem('biogravity_total_clicks', clicks.toString());
+          updateProgress();
+        });
+
+        document.getElementById('btn-toggle-override')?.addEventListener('click', () => {
+          clicks = clicks >= 1000 ? 842 : 1000;
+          localStorage.setItem('biogravity_total_clicks', clicks.toString());
+          updateProgress();
+        });
+
+        // Load subscribers
+        let subscribers = [];
+        try {
+          subscribers = JSON.parse(localStorage.getItem('biogravity_subscribers_list') || '[]');
+        } catch(e) {}
+
+        // Add default seed subscribers for preview if empty
+        if (subscribers.length === 0) {
+          subscribers = [
+            'researcher.vance@stanford.edu',
+            'marcus.chen@oxford.ac.uk',
+            'orbital.biotech@mit.edu',
+            'elena.rostova@biogravity.space'
+          ];
+          localStorage.setItem('biogravity_subscribers_list', JSON.stringify(subscribers));
+        }
+
+        document.getElementById('stat-subscribers-count').textContent = subscribers.length;
+
+        const tableBody = document.getElementById('subscribers-table-body');
+        tableBody.innerHTML = subscribers.map((email, idx) => `
+          <tr class="hover:bg-white/5 transition">
+            <td class="py-3 px-4 font-semibold text-white">${email}</td>
+            <td class="py-3 px-4 text-slate-400">2026-11-0${(idx % 8) + 1}</td>
+            <td class="py-3 px-4 text-teal-400 font-medium">web_portal</td>
+            <td class="py-3 px-4"><span class="px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-300 text-[10px]">active</span></td>
+          </tr>
+        `).join('');
+
+        // Export CSV
+        document.getElementById('btn-export-csv')?.addEventListener('click', () => {
+          const csvContent = "data:text/csv;charset=utf-8,Email,JoinedDate,Status\n" + subscribers.map(e => `${e},2026-11-08,active`).join("\n");
+          const encodedUri = encodeURI(csvContent);
+          const link = document.createElement("a");
+          link.setAttribute("href", encodedUri);
+          link.setAttribute("download", "biogravity_subscribers.csv");
+          document.body.appendChild(link);
+          link.click();
+          link.remove();
+        });
+      }
+
+      // Check on auth state changes
+      setInterval(checkAccess, 1000);
+      window.addEventListener('load', checkAccess);
+    })();
+  </script>
+
+</body>
+</html>
