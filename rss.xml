@@ -5,7 +5,7 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2026 06:15:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 06:21:29 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>VLT and Keck recovery and characterisation of 2025: New Evidence in Space &amp; Astronomy</title>
@@ -485,6 +485,15 @@
       <category>Science History &amp; Paleoclimatology</category>
     </item>
     <item>
+      <title>Why Astronauts Lose Vision in Space: The Brain Fluid Shift Mystery</title>
+      <link>https://biogravity.space/articles/vlt-and-keck-recovery-and-characterisation-of-2025-sc-79-linking</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/vlt-and-keck-recovery-and-characterisation-of-2025-sc-79-linking</guid>
+      <pubDate>Mon, 09 Nov 2026 06:21:08 GMT</pubDate>
+      <dc:creator>Bryce T. Bolin</dc:creator>
+      <description>Asteroids near the boundary between the Atira and &apos;Ayló&apos;chaxnim classes can trace dynamical links between the two populations, but their small solar elongations make recovery and physical characterisation difficult. We recover 2025 SC$_{79}$, measure its optical colours, and inve.</description>
+      <category>Quantum Enzymology</category>
+    </item>
+    <item>
       <title>Pathogen Virulence in Orbit: Epigenomic Shifts</title>
       <link>https://biogravity.space/articles/epigenomic-methylation-remodeling-and-virulence-attenuation-of-pathogens-in-low</link>
       <guid isPermaLink="true">https://biogravity.space/articles/epigenomic-methylation-remodeling-and-virulence-attenuation-of-pathogens-in-low</guid>
@@ -544,7 +553,7 @@
       <guid isPermaLink="true">https://biogravity.space/articles/space-adaptation-syndrome-space-motion-sickness</guid>
       <pubDate>Fri, 30 Oct 2026 05:49:03 GMT</pubDate>
       <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>Space Adaptation Syndrome (SAS)—commonly known as space motion sickness—afflicts roughly 60% to 70% of all astronauts during their first 48 to 72 hours in microgravity. It is triggered by neuro-vestibular sensory conflict: while the inner ear&apos;s semicircular canals correctly detect head rotations, the otolith organs (which rely on gravity-weighted calcium carbonate crystals) fail to register downward pull. The brain receives violent contradictory signals between visual input and inner ear telemetry, resulting in nausea, headache, cold sweats, and sudden emesis.</description>
+      <description>Space Adaptation Syndrome (SAS) - commonly known as space motion sickness - afflicts roughly 60% to 70% of all astronauts during their first 48 to 72 hours in microgravity. It is triggered by neuro-vestibular sensory conflict: while the inner ear&apos;s semicircular canals correctly detect head rotations, the otolith organs (which rely on gravity-weighted calcium carbonate crystals) fail to register downward pull. The brain receives violent contradictory signals between visual input and inner ear telemetry, resulting in nausea, headache, cold sweats, and sudden emesis.</description>
       <category>Space Medicine &amp; Human Physiology</category>
     </item>
     <item>
@@ -553,7 +562,7 @@
       <guid isPermaLink="true">https://biogravity.space/articles/can-plants-grow-in-space-without-gravity</guid>
       <pubDate>Fri, 30 Oct 2026 05:49:03 GMT</pubDate>
       <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>Yes, plants can grow in space without gravity: multiple generations of crops—including red romaine lettuce, dwarf tomatoes, radishes, and wheat—have successfully germinated, flowered, and produced viable seeds aboard the International Space Station. While plants on Earth use gravity (gravitropism) to guide roots down and stems up, plants in microgravity adapt by relying heavily on light cues (phototropism) and moisture gradients (hydrotropism). The greatest technical challenge is not plant genetics, but managing water and oxygen in soil without gravity-driven drainage.</description>
+      <description>Yes, plants can grow in space without gravity: multiple generations of crops - including red romaine lettuce, dwarf tomatoes, radishes, and wheat - have successfully germinated, flowered, and produced viable seeds aboard the International Space Station. While plants on Earth use gravity (gravitropism) to guide roots down and stems up, plants in microgravity adapt by relying heavily on light cues (phototropism) and moisture gradients (hydrotropism). The greatest technical challenge is not plant genetics, but managing water and oxygen in soil without gravity-driven drainage.</description>
       <category>Space Agriculture &amp; Botany</category>
     </item>
     <item>
@@ -562,7 +571,7 @@
       <guid isPermaLink="true">https://biogravity.space/articles/how-do-astronauts-sleep-in-space</guid>
       <pubDate>Fri, 30 Oct 2026 05:49:03 GMT</pubDate>
       <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>In space, astronauts sleep inside personal phone-booth-sized cabins (Crew Quarters) inside specialized padded sleeping bags firmly strapped to the walls or ceiling. Because there is no gravity, there is no physical &apos;up&apos; or &apos;down&apos;, and astronauts require no mattress or pillow. Crucially, sleep stations must be continuously ventilated by forced air fans: without gravity-driven convection, exhaled carbon dioxide pools around an astronaut&apos;s face, creating a localized CO2 bubble that can cause severe headaches, carbon dioxide poisoning, and suffocation.</description>
+      <description>In space, astronauts sleep inside personal phone-booth-sized cabins (Crew Quarters) inside specialized padded sleeping bags firmly strapped to the walls or ceiling. Because there is no gravity, there is no physical &apos;up&apos; or &apos;down&apos;, and astronauts require no mattress or pillow. Sleep stations must be continuously ventilated by forced air fans: without gravity-driven convection, exhaled carbon dioxide pools around an astronaut&apos;s face, creating a localized CO2 bubble that can cause severe headaches, carbon dioxide poisoning, and suffocation.</description>
       <category>Space Medicine &amp; Human Physiology</category>
     </item>
     <item>
@@ -571,7 +580,7 @@
       <guid isPermaLink="true">https://biogravity.space/articles/why-do-astronauts-lose-bone-density-in-space</guid>
       <pubDate>Fri, 30 Oct 2026 05:49:03 GMT</pubDate>
       <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>Astronauts lose bone density in space because their skeleton is completely unloaded in microgravity: without the continuous downward mechanical stress of body weight, bone-building cells (osteoblasts) shut down, while bone-resorbing cells (osteoclasts) continue actively breaking down bone matrix. Astronauts lose between 1.0% to 1.5% of bone mineral density in weight-bearing bones (lumbar spine, hips, and femurs) for every month in orbit—a rate 10 to 12 times faster than severe postmenopausal osteoporosis on Earth.</description>
+      <description>Astronauts lose bone density in space because their skeleton is completely unloaded in microgravity: without the continuous downward mechanical stress of body weight, bone-building cells (osteoblasts) shut down, while bone-resorbing cells (osteoclasts) continue actively breaking down bone matrix. Astronauts lose between 1.0% to 1.5% of bone mineral density in weight-bearing bones (lumbar spine, hips, and femurs) for every month in orbit - a rate 10 to 12 times faster than severe postmenopausal osteoporosis on Earth.</description>
       <category>Space Medicine &amp; Human Physiology</category>
     </item>
     <item>
@@ -580,7 +589,7 @@
       <guid isPermaLink="true">https://biogravity.space/articles/difference-between-zero-gravity-and-microgravity</guid>
       <pubDate>Fri, 30 Oct 2026 05:49:03 GMT</pubDate>
       <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>The fundamental difference is that &apos;zero gravity&apos; does not exist in Low Earth Orbit: at the altitude of the International Space Station (~400 km), Earth&apos;s gravitational pull is still roughly 90% as strong as it is on the surface. Astronauts float not because gravity is absent, but because the station travels sideways at 17,500 mph (28,000 km/h)—falling toward Earth at the exact same rate that the planet&apos;s surface curves away beneath it. This continuous free-fall state is scientifically termed &apos;microgravity&apos; (typically 10⁻³ to 10⁻⁶ g).</description>
+      <description>The fundamental difference is that &apos;zero gravity&apos; does not exist in Low Earth Orbit: at the altitude of the International Space Station (~400 km), Earth&apos;s gravitational pull is still roughly 90% as strong as it is on the surface. Astronauts float not because gravity is absent, but because the station travels sideways at 17,500 mph (28,000 km/h) - falling toward Earth at the exact same rate that the planet&apos;s surface curves away beneath it. This continuous free-fall state is scientifically termed &apos;microgravity&apos; (typically 10⁻³ to 10⁻⁶ g).</description>
       <category>Space Biophysics &amp; Orbital Mechanics</category>
     </item>
     <item>
@@ -778,7 +787,7 @@
       <guid isPermaLink="true">https://biogravity.space/articles/why-is-gold-yellow-relativistic-quantum-chemistry</guid>
       <pubDate>Fri, 30 Oct 2026 06:19:59 GMT</pubDate>
       <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>Almost every elemental metal on the periodic table—from aluminum and silver to iron and platinum—is silvery-gray because they reflect all visible wavelengths equally. Gold is a radiant yellow because of Einstein&apos;s Special Relativity: gold&apos;s massive nucleus pulls inner electrons to 58% the speed of light, shifting orbital energy levels so the atom absorbs blue light and reflects rich golden hues.</description>
+      <description>Almost every elemental metal on the periodic table - from aluminum and silver to iron and platinum - is silvery-gray because they reflect all visible wavelengths equally. Gold is a radiant yellow because of Einstein&apos;s Special Relativity: gold&apos;s massive nucleus pulls inner electrons to 58% the speed of light, shifting orbital energy levels so the atom absorbs blue light and reflects rich golden hues.</description>
       <category>Quantum Chemistry &amp; Physics</category>
     </item>
     <item>
@@ -823,7 +832,7 @@
       <guid isPermaLink="true">https://biogravity.space/articles/why-do-flamingos-stand-on-one-leg</guid>
       <pubDate>Fri, 30 Oct 2026 06:16:43 GMT</pubDate>
       <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>For decades, biologists assumed flamingos stood on one leg strictly for thermoregulation. Groundbreaking robotic and anatomical investigations revealed that flamingos possess a passive gravitational stay apparatus: when balancing on a single limb, body weight drives a mechanical lock in the knee and ankle joints, allowing them to remain asleep with virtually zero active muscle contraction.</description>
+      <description>For decades, biologists assumed flamingos stood on one leg strictly for thermoregulation. Notable robotic and anatomical investigations revealed that flamingos possess a passive gravitational stay apparatus: when balancing on a single limb, body weight drives a mechanical lock in the knee and ankle joints, allowing them to remain asleep with virtually zero active muscle contraction.</description>
       <category>Zoology &amp; Biomechanics</category>
     </item>
     <item>
@@ -832,7 +841,7 @@
       <guid isPermaLink="true">https://biogravity.space/articles/schrodingers-cat-quantum-physics-paradox-explained</guid>
       <pubDate>Fri, 30 Oct 2026 05:59:05 GMT</pubDate>
       <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>Schrödinger&apos;s Cat is a famous thought experiment proposed by Austrian physicist Erwin Schrödinger in 1935 to demonstrate what he believed was the complete absurdity of the Copenhagen interpretation of quantum mechanics. In the scenario, a hypothetical cat is sealed inside a steel box with a single radioactive atom, a Geiger counter, a hammer, and a flask of deadly poison. If the atom decays, the hammer breaks the flask, killing the cat; if it doesn&apos;t decay, the cat lives. According to quantum theory, until an observer opens the box and looks inside, the atom exists in a &apos;superposition&apos; of both decayed and undecayed states simultaneously—which would mean the cat is simultaneously both alive and dead at the same time.</description>
+      <description>Schrödinger&apos;s Cat is a famous thought experiment proposed by Austrian physicist Erwin Schrödinger in 1935 to demonstrate what he believed was the complete absurdity of the Copenhagen interpretation of quantum mechanics. In the scenario, a hypothetical cat is sealed inside a steel box with a single radioactive atom, a Geiger counter, a hammer, and a flask of deadly poison. If the atom decays, the hammer breaks the flask, killing the cat; if it doesn&apos;t decay, the cat lives. According to quantum theory, until an observer opens the box and looks inside, the atom exists in a &apos;superposition&apos; of both decayed and undecayed states simultaneously - which would mean the cat is simultaneously both alive and dead at the same time.</description>
       <category>Mind-Bending Science Experiments</category>
     </item>
     <item>
@@ -850,7 +859,7 @@
       <guid isPermaLink="true">https://biogravity.space/articles/mariana-trench-challenger-deep-creatures-pressure</guid>
       <pubDate>Fri, 30 Oct 2026 05:59:05 GMT</pubDate>
       <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>At the bottom of the Mariana Trench (Challenger Deep at 36,000 feet or 10,994 meters), the water pressure exceeds 1,071 atmospheres (over 15,750 psi)—equivalent to having an adult elephant standing on your thumb. Sunlight disappears within the first 650 feet, temperatures hover near freezing (1°C to 4°C), and food is scarce. Yet, life thrives: the hadal trench is populated by translucent Mariana snailfish, giant 12-inch amphipods, white xenophyophores (single-celled organisms the size of dinner plates), and unique piezophilic bacteria that thrive by utilizing specialized cellular osmolyte chemicals like TMAO to prevent their cellular proteins from being crushed into jelly.</description>
+      <description>At the bottom of the Mariana Trench (Challenger Deep at 36,000 feet or 10,994 meters), the water pressure exceeds 1,071 atmospheres (over 15,750 psi) - equivalent to having an adult elephant standing on your thumb. Sunlight disappears within the first 650 feet, temperatures hover near freezing (1°C to 4°C), and food is scarce. Yet, life thrives: the hadal trench is populated by translucent Mariana snailfish, giant 12-inch amphipods, white xenophyophores (single-celled organisms the size of dinner plates), and unique piezophilic bacteria that thrive by utilizing specialized cellular osmolyte chemicals like TMAO to prevent their cellular proteins from being crushed into jelly.</description>
       <category>Deep Ocean &amp; Extreme Ecosystems</category>
     </item>
     <item>
@@ -868,7 +877,7 @@
       <guid isPermaLink="true">https://biogravity.space/articles/what-would-happen-if-earth-stopped-spinning</guid>
       <pubDate>Fri, 30 Oct 2026 05:59:05 GMT</pubDate>
       <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>If the solid Earth suddenly stopped spinning for just 5 seconds, it would trigger instantaneous global devastation due to Newton&apos;s First Law of Motion (inertia). At the equator, the surface of the Earth moves eastward at roughly 1,040 mph (1,670 km/h). If the ground stopped, everything not bolted directly to bedrock—the atmosphere, oceans, buildings, vehicles, soil, and billions of living creatures—would continue hurtling eastward at supersonic speeds, creating 1,000-mph winds that would obliterate all human infrastructure before massive multi-kilometer-high ocean megatsunamis washed across the continents.</description>
+      <description>If the solid Earth suddenly stopped spinning for just 5 seconds, it would trigger instantaneous global devastation due to Newton&apos;s First Law of Motion (inertia). At the equator, the surface of the Earth moves eastward at roughly 1,040 mph (1,670 km/h). If the ground stopped, everything not bolted directly to bedrock - the atmosphere, oceans, buildings, vehicles, soil, and billions of living creatures - would continue hurtling eastward at supersonic speeds, creating 1,000-mph winds that would obliterate all human infrastructure before massive multi-kilometer-high ocean megatsunamis washed across the continents.</description>
       <category>Earth Science &amp; Planetary Physics</category>
     </item>
     <item>
@@ -877,7 +886,7 @@
       <guid isPermaLink="true">https://biogravity.space/articles/chernobyl-elephants-foot-deadliest-radioactive-mass</guid>
       <pubDate>Fri, 30 Oct 2026 05:59:05 GMT</pubDate>
       <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>The Elephant&apos;s Foot is a massive, two-meter-wide mound of solidified &apos;corium&apos;—a toxic nuclear lava formed during the April 26, 1986 Chernobyl disaster when melting uranium dioxide fuel rods liquefied with zirconium cladding, graphite control rods, and melted serpentine sand and concrete. Resting in a dark steam corridor beneath destroyed Reactor No. 4, it was once the most lethal object on the planet: shortly after the disaster, standing near it for just 300 seconds (5 minutes) delivered a lethal radiation dose of 10,000 Roentgens (100 Grays), guaranteeing fatal acute radiation syndrome within days.</description>
+      <description>The Elephant&apos;s Foot is a massive, two-meter-wide mound of solidified &apos;corium&apos; - a toxic nuclear lava formed during the April 26, 1986 Chernobyl disaster when melting uranium dioxide fuel rods liquefied with zirconium cladding, graphite control rods, and melted serpentine sand and concrete. Resting in a dark steam corridor beneath destroyed Reactor No. 4, it was once the most lethal object on the planet: shortly after the disaster, standing near it for just 300 seconds (5 minutes) delivered a lethal radiation dose of 10,000 Roentgens (100 Grays), guaranteeing fatal acute radiation syndrome within days.</description>
       <category>Science History &amp; Nuclear Physics</category>
     </item>
     <item>
@@ -886,7 +895,7 @@
       <guid isPermaLink="true">https://biogravity.space/articles/double-slit-experiment-quantum-mechanics-explained</guid>
       <pubDate>Fri, 30 Oct 2026 05:59:05 GMT</pubDate>
       <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>The double-slit experiment is the foundational mystery of quantum physics. When tiny particles like electrons or photons are fired at a barrier with two slits, they don&apos;t form two simple straight lines on the back wall like tiny bullets. Instead, they produce an &apos;interference pattern&apos; of multiple striped bands—proving that every single particle travels through both slits simultaneously as a wave of probability. Most shockingly, when physicists place a detector at the slits to observe which slit the particle actually passes through, the wave instantly collapses: the particles immediately act like solid marbles and form two plain lines. Simply measuring the particle changes how reality behaves.</description>
+      <description>The double-slit experiment is the foundational mystery of quantum physics. When tiny particles like electrons or photons are fired at a barrier with two slits, they don&apos;t form two simple straight lines on the back wall like tiny bullets. Instead, they produce an &apos;interference pattern&apos; of multiple striped bands - proving that every single particle travels through both slits simultaneously as a wave of probability. Most shockingly, when physicists place a detector at the slits to observe which slit the particle actually passes through, the wave instantly collapses: the particles immediately act like solid marbles and form two plain lines. Simply measuring the particle changes how reality behaves.</description>
       <category>Mind-Bending Science Experiments</category>
     </item>
     <item>
@@ -895,7 +904,7 @@
       <guid isPermaLink="true">https://biogravity.space/articles/what-happens-if-you-fall-into-a-black-hole</guid>
       <pubDate>Fri, 30 Oct 2026 05:59:05 GMT</pubDate>
       <dc:creator>Dr. Elena Vance</dc:creator>
-      <description>If you fell into a stellar-mass black hole, extreme gravitational tidal forces would stretch you into a noodle-thin strand of atoms before you even reached the event horizon—a violent physical process called &apos;spaghettification.&apos; However, if you fell into a supermassive black hole (millions of times the mass of the Sun), the tidal forces at the horizon are gentle enough that you would cross the event horizon completely unharmed. To an outside observer watching you from far away, time dilation would make you appear to slow down and freeze permanently at the boundary, turning red and dimming into blackness, while from your own perspective, you would fall straight toward the central gravitational singularity where physics breaks down.</description>
+      <description>If you fell into a stellar-mass black hole, extreme gravitational tidal forces would stretch you into a noodle-thin strand of atoms before you even reached the event horizon - a violent physical process called &apos;spaghettification.&apos; However, if you fell into a supermassive black hole (millions of times the mass of the Sun), the tidal forces at the horizon are gentle enough that you would cross the event horizon completely unharmed. To an outside observer watching you from far away, time dilation would make you appear to slow down and freeze permanently at the boundary, turning red and dimming into blackness, while from your own perspective, you would fall straight toward the central gravitational singularity where physics breaks down.</description>
       <category>Cosmic Mysteries &amp; Astrophysics</category>
     </item>
     <item>
