@@ -420,8 +420,7 @@ async function runTop5Booster() {
   console.log(`\n[BOOSTER] 💾 Saved enhanced metadata for ${modifiedCount} priority striking articles.`);
 
   // Step 3: Homepage PageRank Pumping (Disabled: Anchor deck removed to preserve mobile UX)
-  console.log('
-[PAGERANK] ℹ️ Skipping Anchor Deck injection (disabled for mobile UX).');
+  console.log('\n[PAGERANK] ℹ️ Skipping Anchor Deck injection (disabled for mobile UX).');
 
   // Step 4: Rebuild Clean Static HTML & Sitemaps via build-seo.js
   console.log('\n[BUILD] 🏗️ Rebuilding static site files via build-seo.js...');

@@ -2,6 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://biogravity.space/news/vlt-and-keck-recovery-and-characterisation-of-2025-new-evidence</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-09T06:12:44.179Z</news:publication_date>
+      <news:title>VLT and Keck recovery and characterisation of 2025: New Evidence in Space &amp; Astronomy</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/evolution-of-dust-in-protoplanetary-disks-with-new-evidence-in</loc>
     <news:news>
       <news:publication>

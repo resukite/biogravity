@@ -98,6 +98,16 @@
 
   <!-- Live Science Dispatches (Google Discover & News Priority) -->
   <url>
+    <loc>https://biogravity.space/news/vlt-and-keck-recovery-and-characterisation-of-2025-new-evidence</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=10811557085</image:loc>
+      <image:title>VLT and Keck recovery and characterisation of 2025: New Evidence in Space &amp; Astronomy</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/evolution-of-dust-in-protoplanetary-disks-with-new-evidence-in</loc>
     <lastmod>2026-11-08</lastmod>
     <changefreq>daily</changefreq>

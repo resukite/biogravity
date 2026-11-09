@@ -21,28 +21,47 @@ const payload = JSON.stringify({
   urlList: urlList
 });
 
-const req = https.request({
-  hostname: 'api.indexnow.org',
-  port: 443,
-  path: '/indexnow',
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json; charset=utf-8',
-    'Content-Length': Buffer.byteLength(payload)
-  }
-}, (res) => {
-  let body = '';
-  res.on('data', chunk => body += chunk);
-  res.on('end', () => {
-    console.log(`[INDEXNOW] ✅ Successfully submitted ${urlList.length} URLs! (HTTP ${res.statusCode})`);
-    process.exit(0);
+function submitToEndpoint(hostname) {
+  return new Promise((resolve, reject) => {
+    const req = https.request({
+      hostname: hostname,
+      port: 443,
+      path: '/indexnow',
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json; charset=utf-8',
+        'Content-Length': Buffer.byteLength(payload)
+      }
+    }, (res) => {
+      let body = '';
+      res.on('data', chunk => body += chunk);
+      res.on('end', () => {
+        resolve(res.statusCode);
+      });
+    });
+
+    req.on('error', (err) => {
+      reject(err);
+    });
+
+    req.write(payload);
+    req.end();
   });
-});
+}
 
-req.on('error', (err) => {
-  console.error('[INDEXNOW] ❌ Request error:', err.message);
+async function run() {
+  const endpoints = ['www.bing.com', 'api.indexnow.org'];
+  for (const endpoint of endpoints) {
+    try {
+      const code = await submitToEndpoint(endpoint);
+      console.log(`[INDEXNOW] ✅ Successfully submitted ${urlList.length} URLs via ${endpoint}! (HTTP ${code})`);
+      process.exit(0);
+    } catch (err) {
+      console.warn(`[INDEXNOW] ⚠️ Notice from ${endpoint}: ${err.message}. Trying next endpoint...`);
+    }
+  }
+  console.error('[INDEXNOW] ❌ All IndexNow endpoints failed.');
   process.exit(1);
-});
+}
 
-req.write(payload);
-req.end();
+run();
