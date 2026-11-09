@@ -2,6 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://biogravity.space/news/super-resolved-digital-terrain-models-for-gedi-new-evidence-in</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-09T21:39:38.334Z</news:publication_date>
+      <news:title>Super-resolved digital terrain models for GEDI: New Evidence in Space &amp; Astronomy</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/raman-anyon-hubbard-model-in-a-1d-bose-lattice-gas-new-evidence</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-09T21:39:38.315Z</news:publication_date>
+      <news:title>Raman anyon-Hubbard model in a 1D Bose lattice gas: New Evidence in Earth &amp; Geology</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/quantum-mechanical-description-of-active-matter-new-evidence-in</loc>
     <news:news>
       <news:publication>
