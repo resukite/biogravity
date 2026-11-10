@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-09T10:29:19.768Z",
-  "totalUrls": 125,
+  "updatedAt": "2026-11-10T10:32:47.993Z",
+  "totalUrls": 129,
   "indexedCount": 112,
-  "notIndexedCount": 13,
-  "indexedPercentage": "89.6%",
-  "pushedToIndexingCount": 13,
+  "notIndexedCount": 17,
+  "indexedPercentage": "86.8%",
+  "pushedToIndexingCount": 17,
   "allFullyIndexed": false,
   "results": [
     {
@@ -94,6 +94,30 @@
       "verdict": "PASS",
       "coverage": "Submitted and indexed",
       "lastChecked": "2026-11-01T14:45:04.867Z"
+    },
+    {
+      "url": "https://biogravity.space/news/one-bit-many-records-information-replication-in-new-evidence-in",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-10T10:32:47.468Z"
+    },
+    {
+      "url": "https://biogravity.space/news/quantum-state-reconstruction-from-sklar-type-new-evidence-in",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-10T10:32:47.468Z"
+    },
+    {
+      "url": "https://biogravity.space/news/super-resolved-digital-terrain-models-for-gedi-new-evidence-in",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-10T10:32:47.468Z"
+    },
+    {
+      "url": "https://biogravity.space/news/raman-anyon-hubbard-model-in-a-1d-bose-lattice-gas-new-evidence",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-10T10:32:47.468Z"
     },
     {
       "url": "https://biogravity.space/news/quantum-mechanical-description-of-active-matter-new-evidence-in",

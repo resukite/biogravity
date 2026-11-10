@@ -1,13 +1,13 @@
 # 🛰️ BioGravity Cloud Indexing Health Report
 
-> **Automated Cloud Run**: Mon, 09 Nov 2026 10:29:19 GMT  
-> **Total Canonical Pages**: 125  
-> **Google Indexation Progress**: **89.6%** (112 indexed / 13 in queue)  
+> **Automated Cloud Run**: Tue, 10 Nov 2026 10:32:47 GMT  
+> **Total Canonical Pages**: 129  
+> **Google Indexation Progress**: **86.8%** (112 indexed / 17 in queue)  
 > **Status**: ⚡ **Active Cloud Indexing Push Active**
 
 ## 🚀 Today's Indexing Actions
 
-- **Pushed to IndexNow (Bing/Yandex/Partners)**: 13 URLs
+- **Pushed to IndexNow (Bing/Yandex/Partners)**: 17 URLs
 - **Google Search Console Sitemap Ping**: Synchronized `sitemap.xml`
 - **Next Scheduled Run**: Automatically executes tomorrow at 03:00 UTC in GitHub Actions Cloud.
 
@@ -28,6 +28,10 @@
 | [`/molecular-biology-research`](https://biogravity.space/molecular-biology-research) | ✅ INDEXED | Discovered / Pending crawl | Today |
 | [`/microgravity-effects-on-human-body`](https://biogravity.space/microgravity-effects-on-human-body) | ✅ INDEXED | Submitted and indexed | 2026-11-08 |
 | [`/sitemap`](https://biogravity.space/sitemap) | ✅ INDEXED | Submitted and indexed | 2026-11-01 |
+| [`/news/one-bit-many-records-information-replication-in-new-evidence-in`](https://biogravity.space/news/one-bit-many-records-information-replication-in-new-evidence-in) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-10 |
+| [`/news/quantum-state-reconstruction-from-sklar-type-new-evidence-in`](https://biogravity.space/news/quantum-state-reconstruction-from-sklar-type-new-evidence-in) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-10 |
+| [`/news/super-resolved-digital-terrain-models-for-gedi-new-evidence-in`](https://biogravity.space/news/super-resolved-digital-terrain-models-for-gedi-new-evidence-in) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-10 |
+| [`/news/raman-anyon-hubbard-model-in-a-1d-bose-lattice-gas-new-evidence`](https://biogravity.space/news/raman-anyon-hubbard-model-in-a-1d-bose-lattice-gas-new-evidence) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-10 |
 | [`/news/quantum-mechanical-description-of-active-matter-new-evidence-in`](https://biogravity.space/news/quantum-mechanical-description-of-active-matter-new-evidence-in) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-09 |
 | [`/news/novikov-magnus-master-equation-for-driven-quantum-new-evidence`](https://biogravity.space/news/novikov-magnus-master-equation-for-driven-quantum-new-evidence) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-09 |
 | [`/news/vlt-and-keck-recovery-and-characterisation-of-2025-new-evidence`](https://biogravity.space/news/vlt-and-keck-recovery-and-characterisation-of-2025-new-evidence) | ⏳ QUEUED | URL is unknown to Google | 2026-11-09 |
