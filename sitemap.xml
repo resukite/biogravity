@@ -98,6 +98,26 @@
 
   <!-- Live Science Dispatches (Google Discover & News Priority) -->
   <url>
+    <loc>https://biogravity.space/news/chiral-waveguide-model-for-error-correctable-quantum-new</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=6956457990</image:loc>
+      <image:title>Chiral waveguide model for error-correctable quantum: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/dephasing-induced-melting-of-crystalline-spectral-form-new</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=2249129097</image:loc>
+      <image:title>Dephasing-Induced Melting of Crystalline Spectral Form: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/one-bit-many-records-information-replication-in-new-evidence-in</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>daily</changefreq>
