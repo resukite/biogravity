@@ -5,8 +5,26 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Nov 2026 03:14:44 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 13:00:11 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Mutual Linearity in Nonlinear Population Dynamics: New Evidence in Biophysics &amp; Genomics</title>
+      <link>https://biogravity.space/news/mutual-linearity-in-nonlinear-population-dynamics-new-evidence</link>
+      <guid isPermaLink="true">https://biogravity.space/news/mutual-linearity-in-nonlinear-population-dynamics-new-evidence</guid>
+      <pubDate>Wed, 11 Nov 2026 13:00:06 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Mutual Linearity in Nonlinear Population Dynamics: New Evidence in Biophysics &amp; Genomics: Mutual Linearity in Nonlinear Population DynamicsMutual linearity, the persistence of affine relations among stationary observables under arbitrarily strong changes of one transition rate, is known for Markov jump processes and chemical reaction networks. We show that generalized Lotka--Volterra dynamics form a new class of mutually linear systems, even though species can go extinct and attractors can be chaotic. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.14501v1).</description>
+      <category>Biophysics &amp; Genomics</category>
+    </item>
+    <item>
+      <title>Emergent Biological Capabilities in a Foundation Model: New Evidence in Space &amp; Astronomy</title>
+      <link>https://biogravity.space/news/emergent-biological-capabilities-in-a-foundation-model-new</link>
+      <guid isPermaLink="true">https://biogravity.space/news/emergent-biological-capabilities-in-a-foundation-model-new</guid>
+      <pubDate>Wed, 11 Nov 2026 13:00:06 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Emergent Biological Capabilities in a Foundation Model: New Evidence in Space &amp; Astronomy: Foundation models trained on large unlabeled corpora develop emergent capabilities, tasks that go beyond the training objective. We extend this paradigm to multimodal biology with Bonbon, a foundation model for molecular interactions trained on approximately 3.2 trillion tokens of paired protein-ligand sequences. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.14504v1).</description>
+      <category>Space &amp; Astronomy</category>
+    </item>
     <item>
       <title>PINNverse meets Jordan--Wigner: learning the: New Evidence in Quantum &amp; Physics</title>
       <link>https://biogravity.space/news/pinnverse-meets-jordan-wigner-learning-the-new-evidence-in</link>
