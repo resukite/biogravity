@@ -98,6 +98,26 @@
 
   <!-- Live Science Dispatches (Google Discover & News Priority) -->
   <url>
+    <loc>https://biogravity.space/news/cotangent-lift-inference-of-stochastic-microbial-dynamics-new</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=9626909198</image:loc>
+      <image:title>Cotangent-lift inference of stochastic microbial dynamics: New Evidence in Space &amp; Astronomy</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/nucleation-of-water-ice-under-weak-ionization-via-new-evidence</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=363879659</image:loc>
+      <image:title>Nucleation of water ice under weak ionization via: New Evidence in Space &amp; Astronomy</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/quantum-thermal-transistor-via-nonlinear-environmental-new</loc>
     <lastmod>2026-11-12</lastmod>
     <changefreq>daily</changefreq>
