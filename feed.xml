@@ -5,8 +5,26 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 17:10:25 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 21:37:39 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Multidimensional Quantum Block Turbo Codes: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/multidimensional-quantum-block-turbo-codes-new-evidence-in</link>
+      <guid isPermaLink="true">https://biogravity.space/news/multidimensional-quantum-block-turbo-codes-new-evidence-in</guid>
+      <pubDate>Thu, 12 Nov 2026 21:37:35 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Multidimensional Quantum Block Turbo Codes: New Evidence in Quantum &amp; Physics: The theory of turbo iterative decoding was brought into the quantum coding framework through the development of quantum serial turbo codes and quantum block turbo codes. In this paper, we present a theory for multidimensional quantum block turbo codes, a turbo decoding technique for multi layer product codes. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.14406v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
+    <item>
+      <title>Energetic cost of loading classical data in quantum: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/energetic-cost-of-loading-classical-data-in-quantum-new-evidence</link>
+      <guid isPermaLink="true">https://biogravity.space/news/energetic-cost-of-loading-classical-data-in-quantum-new-evidence</guid>
+      <pubDate>Thu, 12 Nov 2026 21:37:35 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Energetic cost of loading classical data in quantum: New Evidence in Quantum &amp; Physics: Quantum algorithms for machine learning, chemistry, and cryptanalysis often assume coherent access to classical data at negligible physical cost. We instead treat data loading as a hardware process and quantify the dynamic energetic cost of a quantum random access memory (QRAM) query on a superconducting processor. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.14422v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
     <item>
       <title>Cotangent-lift inference of stochastic microbial dynamics: New Evidence in Space &amp; Astronomy</title>
       <link>https://biogravity.space/news/cotangent-lift-inference-of-stochastic-microbial-dynamics-new</link>
