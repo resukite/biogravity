@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-12T10:24:24.976Z",
-  "totalUrls": 139,
+  "updatedAt": "2026-11-13T10:10:42.089Z",
+  "totalUrls": 145,
   "indexedCount": 112,
-  "notIndexedCount": 27,
-  "indexedPercentage": "80.6%",
-  "pushedToIndexingCount": 27,
+  "notIndexedCount": 33,
+  "indexedPercentage": "77.2%",
+  "pushedToIndexingCount": 33,
   "allFullyIndexed": false,
   "results": [
     {
@@ -94,6 +94,42 @@
       "verdict": "PASS",
       "coverage": "Submitted and indexed",
       "lastChecked": "2026-11-01T14:45:04.867Z"
+    },
+    {
+      "url": "https://biogravity.space/news/joint-study-of-epoch-astrometry-and-radial-velocities-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-13T10:10:41.241Z"
+    },
+    {
+      "url": "https://biogravity.space/news/quantum-logic-detection-of-rotationally-inelastic-new-evidence",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-13T10:10:41.241Z"
+    },
+    {
+      "url": "https://biogravity.space/news/multidimensional-quantum-block-turbo-codes-new-evidence-in",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-13T10:10:41.241Z"
+    },
+    {
+      "url": "https://biogravity.space/news/energetic-cost-of-loading-classical-data-in-quantum-new-evidence",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-13T10:10:41.241Z"
+    },
+    {
+      "url": "https://biogravity.space/news/cotangent-lift-inference-of-stochastic-microbial-dynamics-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-13T10:10:41.241Z"
+    },
+    {
+      "url": "https://biogravity.space/news/nucleation-of-water-ice-under-weak-ionization-via-new-evidence",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-13T10:10:41.241Z"
     },
     {
       "url": "https://biogravity.space/news/quantum-thermal-transistor-via-nonlinear-environmental-new",
