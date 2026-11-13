@@ -98,6 +98,26 @@
 
   <!-- Live Science Dispatches (Google Discover & News Priority) -->
   <url>
+    <loc>https://biogravity.space/news/discrete-time-crystals-from-anti-unitary-floquet-new-evidence-in</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=3498920296</image:loc>
+      <image:title>Discrete Time Crystals from Anti-Unitary Floquet: New Evidence in Biophysics &amp; Genomics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/long-lived-light-driven-bimagnons-at-finite-momentum-new</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=5074394154</image:loc>
+      <image:title>Long-lived light-driven bimagnons at finite momentum: New Evidence in Clean Energy &amp; Materials</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/joint-study-of-epoch-astrometry-and-radial-velocities-new</loc>
     <lastmod>2026-11-13</lastmod>
     <changefreq>daily</changefreq>

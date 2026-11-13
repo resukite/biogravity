@@ -2,6 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://biogravity.space/news/discrete-time-crystals-from-anti-unitary-floquet-new-evidence-in</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T13:28:19.981Z</news:publication_date>
+      <news:title>Discrete Time Crystals from Anti-Unitary Floquet: New Evidence in Biophysics &amp; Genomics</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/long-lived-light-driven-bimagnons-at-finite-momentum-new</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T13:28:19.961Z</news:publication_date>
+      <news:title>Long-lived light-driven bimagnons at finite momentum: New Evidence in Clean Energy &amp; Materials</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/joint-study-of-epoch-astrometry-and-radial-velocities-new</loc>
     <news:news>
       <news:publication>
