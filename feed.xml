@@ -5,8 +5,26 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 21:37:39 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 03:41:29 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Joint Study of Epoch Astrometry and Radial Velocities: New Evidence in Space &amp; Astronomy</title>
+      <link>https://biogravity.space/news/joint-study-of-epoch-astrometry-and-radial-velocities-new</link>
+      <guid isPermaLink="true">https://biogravity.space/news/joint-study-of-epoch-astrometry-and-radial-velocities-new</guid>
+      <pubDate>Fri, 13 Nov 2026 03:41:26 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Joint Study of Epoch Astrometry and Radial Velocities: New Evidence in Space &amp; Astronomy: Gaia-4b is the first confirmed exoplanet discovered with Gaia astrometry, based on its identification as a possible exoplanet in the solution in Gaia Data Release 3 and subsequent confirmation with radial velocity. In this work we present a \texttt{python} framework called \texttt{pyGaiafits} that can jointly analyze astrometric time series and radial velocities. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.15537v1).</description>
+      <category>Space &amp; Astronomy</category>
+    </item>
+    <item>
+      <title>Quantum-logic detection of rotationally inelastic: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/quantum-logic-detection-of-rotationally-inelastic-new-evidence</link>
+      <guid isPermaLink="true">https://biogravity.space/news/quantum-logic-detection-of-rotationally-inelastic-new-evidence</guid>
+      <pubDate>Fri, 13 Nov 2026 03:41:26 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Quantum-logic detection of rotationally inelastic: New Evidence in Quantum &amp; Physics: Collisions between molecules govern chemical reactions and energy transfer across a range of different environments from interstellar space to the Earth&apos;s atmosphere. Despite their fundamental importance, molecular collisions have traditionally been studied through ensemble-averaged experiments which obscure the dynamics of individual scattering events on the quantum level. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.15573v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
     <item>
       <title>Multidimensional Quantum Block Turbo Codes: New Evidence in Quantum &amp; Physics</title>
       <link>https://biogravity.space/news/multidimensional-quantum-block-turbo-codes-new-evidence-in</link>

@@ -7,31 +7,31 @@
   <!-- Core Hub Pages (Clean URLs) -->
   <url>
     <loc>https://biogravity.space/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://biogravity.space/news</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://biogravity.space/research</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://biogravity.space/tools</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://biogravity.space/world-space-week-2026</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -41,7 +41,7 @@
   </url>
   <url>
     <loc>https://biogravity.space/molecular-biology-research</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -51,7 +51,7 @@
   </url>
   <url>
     <loc>https://biogravity.space/microgravity-effects-on-human-body</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
@@ -61,42 +61,62 @@
   </url>
   <url>
     <loc>https://biogravity.space/about</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://biogravity.space/contact</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://biogravity.space/disclaimer</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://biogravity.space/sitemap</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://biogravity.space/privacy-policy</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://biogravity.space/terms</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <!-- Live Science Dispatches (Google Discover & News Priority) -->
+  <url>
+    <loc>https://biogravity.space/news/joint-study-of-epoch-astrometry-and-radial-velocities-new</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=9470259600</image:loc>
+      <image:title>Joint Study of Epoch Astrometry and Radial Velocities: New Evidence in Space &amp; Astronomy</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/quantum-logic-detection-of-rotationally-inelastic-new-evidence</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=879724939</image:loc>
+      <image:title>Quantum-logic detection of rotationally inelastic: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
   <url>
     <loc>https://biogravity.space/news/multidimensional-quantum-block-turbo-codes-new-evidence-in</loc>
     <lastmod>2026-11-12</lastmod>
