@@ -1,13 +1,13 @@
 # 🛰️ BioGravity Cloud Indexing Health Report
 
-> **Automated Cloud Run**: Fri, 13 Nov 2026 10:10:42 GMT  
-> **Total Canonical Pages**: 145  
-> **Google Indexation Progress**: **77.2%** (112 indexed / 33 in queue)  
+> **Automated Cloud Run**: Sat, 14 Nov 2026 09:34:28 GMT  
+> **Total Canonical Pages**: 151  
+> **Google Indexation Progress**: **74.2%** (112 indexed / 39 in queue)  
 > **Status**: ⚡ **Active Cloud Indexing Push Active**
 
 ## 🚀 Today's Indexing Actions
 
-- **Pushed to IndexNow (Bing/Yandex/Partners)**: 33 URLs
+- **Pushed to IndexNow (Bing/Yandex/Partners)**: 39 URLs
 - **Google Search Console Sitemap Ping**: Synchronized `sitemap.xml`
 - **Next Scheduled Run**: Automatically executes tomorrow at 03:00 UTC in GitHub Actions Cloud.
 
@@ -28,6 +28,12 @@
 | [`/molecular-biology-research`](https://biogravity.space/molecular-biology-research) | ✅ INDEXED | Discovered / Pending crawl | Today |
 | [`/microgravity-effects-on-human-body`](https://biogravity.space/microgravity-effects-on-human-body) | ✅ INDEXED | Submitted and indexed | 2026-11-08 |
 | [`/sitemap`](https://biogravity.space/sitemap) | ✅ INDEXED | Submitted and indexed | 2026-11-01 |
+| [`/news/jwst-rocky-worlds-ddt-observations-of-ltt-1445-a-b-and-new`](https://biogravity.space/news/jwst-rocky-worlds-ddt-observations-of-ltt-1445-a-b-and-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-14 |
+| [`/news/statistics-of-fock-space-correlation-lengths-in-the-new-evidence`](https://biogravity.space/news/statistics-of-fock-space-correlation-lengths-in-the-new-evidence) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-14 |
+| [`/news/quantum-metrology-and-quantum-battery-in-a-new-evidence-in`](https://biogravity.space/news/quantum-metrology-and-quantum-battery-in-a-new-evidence-in) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-14 |
+| [`/news/ensemble-phase-transitions-in-measurement-unitary-new-evidence`](https://biogravity.space/news/ensemble-phase-transitions-in-measurement-unitary-new-evidence) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-14 |
+| [`/news/discrete-time-crystals-from-anti-unitary-floquet-new-evidence-in`](https://biogravity.space/news/discrete-time-crystals-from-anti-unitary-floquet-new-evidence-in) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-14 |
+| [`/news/long-lived-light-driven-bimagnons-at-finite-momentum-new`](https://biogravity.space/news/long-lived-light-driven-bimagnons-at-finite-momentum-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-14 |
 | [`/news/joint-study-of-epoch-astrometry-and-radial-velocities-new`](https://biogravity.space/news/joint-study-of-epoch-astrometry-and-radial-velocities-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-13 |
 | [`/news/quantum-logic-detection-of-rotationally-inelastic-new-evidence`](https://biogravity.space/news/quantum-logic-detection-of-rotationally-inelastic-new-evidence) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-13 |
 | [`/news/multidimensional-quantum-block-turbo-codes-new-evidence-in`](https://biogravity.space/news/multidimensional-quantum-block-turbo-codes-new-evidence-in) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-13 |

@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-13T10:10:42.089Z",
-  "totalUrls": 145,
+  "updatedAt": "2026-11-14T09:34:28.247Z",
+  "totalUrls": 151,
   "indexedCount": 112,
-  "notIndexedCount": 33,
-  "indexedPercentage": "77.2%",
-  "pushedToIndexingCount": 33,
+  "notIndexedCount": 39,
+  "indexedPercentage": "74.2%",
+  "pushedToIndexingCount": 39,
   "allFullyIndexed": false,
   "results": [
     {
@@ -94,6 +94,42 @@
       "verdict": "PASS",
       "coverage": "Submitted and indexed",
       "lastChecked": "2026-11-01T14:45:04.867Z"
+    },
+    {
+      "url": "https://biogravity.space/news/jwst-rocky-worlds-ddt-observations-of-ltt-1445-a-b-and-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-14T09:34:27.012Z"
+    },
+    {
+      "url": "https://biogravity.space/news/statistics-of-fock-space-correlation-lengths-in-the-new-evidence",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-14T09:34:27.012Z"
+    },
+    {
+      "url": "https://biogravity.space/news/quantum-metrology-and-quantum-battery-in-a-new-evidence-in",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-14T09:34:27.012Z"
+    },
+    {
+      "url": "https://biogravity.space/news/ensemble-phase-transitions-in-measurement-unitary-new-evidence",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-14T09:34:27.012Z"
+    },
+    {
+      "url": "https://biogravity.space/news/discrete-time-crystals-from-anti-unitary-floquet-new-evidence-in",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-14T09:34:27.012Z"
+    },
+    {
+      "url": "https://biogravity.space/news/long-lived-light-driven-bimagnons-at-finite-momentum-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-14T09:34:27.012Z"
     },
     {
       "url": "https://biogravity.space/news/joint-study-of-epoch-astrometry-and-radial-velocities-new",
