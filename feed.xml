@@ -5,8 +5,26 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Nov 2026 15:23:47 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 19:31:39 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Stiffness in Confined Quantum Walks: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/stiffness-in-confined-quantum-walks-new-evidence-in-quantum</link>
+      <guid isPermaLink="true">https://biogravity.space/news/stiffness-in-confined-quantum-walks-new-evidence-in-quantum</guid>
+      <pubDate>Sat, 14 Nov 2026 19:31:35 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Stiffness in Confined Quantum Walks: New Evidence in Quantum &amp; Physics: We investigate boundary-induced stiffness in discrete-time quantum walks confined to a finite lattice by unitary reflecting boundaries implemented through coin-flip operations. We define a dimensionless spreading stiffness from the instantaneous variation of the spatial width relative to the asymptotic spreading rate of the corresponding unconfined Hadamard walk and compare localized, Gaussian, and truncated-uniform initial states. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.17272v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
+    <item>
+      <title>Near-Optimal Multiparameter Pure-State Metrology with: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/near-optimal-multiparameter-pure-state-metrology-with-new</link>
+      <guid isPermaLink="true">https://biogravity.space/news/near-optimal-multiparameter-pure-state-metrology-with-new</guid>
+      <pubDate>Sat, 14 Nov 2026 19:31:35 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Near-Optimal Multiparameter Pure-State Metrology with: New Evidence in Quantum &amp; Physics: Multiparameter pure-state metrology is limited by the incompatibility of measurements optimized for different parameters. We characterize uniform sensitivity by the Fisher floor, the smallest fraction of the quantum Fisher information (QFI) retained over all pure states and parameter directions. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.17281v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
     <item>
       <title>Sharp Uniform Fisher Information Bounds from: New Evidence in Quantum &amp; Physics</title>
       <link>https://biogravity.space/news/sharp-uniform-fisher-information-bounds-from-new-evidence-in</link>
