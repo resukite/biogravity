@@ -98,6 +98,366 @@
 
   <!-- Live Science Dispatches (Google Discover & News Priority) -->
   <url>
+    <loc>https://biogravity.space/news/non-interferometric-tests-of-gravitational-decoherence-new</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=3858757737</image:loc>
+      <image:title>Non-interferometric tests of gravitational decoherence: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/scalable-pauli-propagation-through-new-evidence-in-quantum</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=2286285007</image:loc>
+      <image:title>Scalable Pauli propagation through: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/deployed-four-city-entanglement-based-qkd-network-with-new</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=4620347590</image:loc>
+      <image:title>Deployed four-city entanglement-based QKD network with: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/observation-of-genuine-multi-time-quantum-memory-new-evidence-in</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=6137977319</image:loc>
+      <image:title>Observation of Genuine Multi-Time Quantum Memory: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/stiffness-in-confined-quantum-walks-new-evidence-in-quantum</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=7904138748</image:loc>
+      <image:title>Stiffness in Confined Quantum Walks: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/near-optimal-multiparameter-pure-state-metrology-with-new</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=2530877724</image:loc>
+      <image:title>Near-Optimal Multiparameter Pure-State Metrology with: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/sharp-uniform-fisher-information-bounds-from-new-evidence-in</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=6858160182</image:loc>
+      <image:title>Sharp Uniform Fisher Information Bounds from: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/traces-of-vacuum-squeezing-a-superconducting-new-evidence-in</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=1266326721</image:loc>
+      <image:title>Traces of Vacuum Squeezing: A Superconducting: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/jwst-rocky-worlds-ddt-observations-of-ltt-1445-a-b-and-new</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=297181048</image:loc>
+      <image:title>JWST Rocky Worlds DDT Observations of LTT 1445 A b and: New Evidence in Space &amp; Astronomy</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/statistics-of-fock-space-correlation-lengths-in-the-new-evidence</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=643410682</image:loc>
+      <image:title>Statistics of Fock-space correlation lengths in the: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/quantum-metrology-and-quantum-battery-in-a-new-evidence-in</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=5273358445</image:loc>
+      <image:title>Quantum Metrology and Quantum Battery in a: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/ensemble-phase-transitions-in-measurement-unitary-new-evidence</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=585697057</image:loc>
+      <image:title>Ensemble phase transitions in measurement-unitary: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/discrete-time-crystals-from-anti-unitary-floquet-new-evidence-in</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=3498920296</image:loc>
+      <image:title>Discrete Time Crystals from Anti-Unitary Floquet: New Evidence in Biophysics &amp; Genomics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/long-lived-light-driven-bimagnons-at-finite-momentum-new</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=5074394154</image:loc>
+      <image:title>Long-lived light-driven bimagnons at finite momentum: New Evidence in Clean Energy &amp; Materials</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/joint-study-of-epoch-astrometry-and-radial-velocities-new</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=9470259600</image:loc>
+      <image:title>Joint Study of Epoch Astrometry and Radial Velocities: New Evidence in Space &amp; Astronomy</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/quantum-logic-detection-of-rotationally-inelastic-new-evidence</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=879724939</image:loc>
+      <image:title>Quantum-logic detection of rotationally inelastic: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/multidimensional-quantum-block-turbo-codes-new-evidence-in</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=18164390865</image:loc>
+      <image:title>Multidimensional Quantum Block Turbo Codes: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/energetic-cost-of-loading-classical-data-in-quantum-new-evidence</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=6170433381</image:loc>
+      <image:title>Energetic cost of loading classical data in quantum: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/cotangent-lift-inference-of-stochastic-microbial-dynamics-new</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=9626909198</image:loc>
+      <image:title>Cotangent-lift inference of stochastic microbial dynamics: New Evidence in Space &amp; Astronomy</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/nucleation-of-water-ice-under-weak-ionization-via-new-evidence</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=363879659</image:loc>
+      <image:title>Nucleation of water ice under weak ionization via: New Evidence in Space &amp; Astronomy</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/quantum-thermal-transistor-via-nonlinear-environmental-new</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=4278733591</image:loc>
+      <image:title>Quantum Thermal Transistor via Nonlinear Environmental: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/structure-of-correlations-for-the-single-j-model-new-evidence-in</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=3014911870</image:loc>
+      <image:title>Structure of correlations for the single-$j$ model: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/finite-key-readiness-and-authentication-key-new-evidence-in</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=2130438640</image:loc>
+      <image:title>Finite-Key Readiness and Authentication-Key: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/nonperturbative-string-dynamics-in-a-2-1-d-lattice-new-evidence</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=15888588489</image:loc>
+      <image:title>Nonperturbative string dynamics in a (2+1)D lattice: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/mutual-linearity-in-nonlinear-population-dynamics-new-evidence</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=7782655043</image:loc>
+      <image:title>Mutual Linearity in Nonlinear Population Dynamics: New Evidence in Biophysics &amp; Genomics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/emergent-biological-capabilities-in-a-foundation-model-new</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=12742215401</image:loc>
+      <image:title>Emergent Biological Capabilities in a Foundation Model: New Evidence in Space &amp; Astronomy</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/pinnverse-meets-jordan-wigner-learning-the-new-evidence-in</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=110703859</image:loc>
+      <image:title>PINNverse meets Jordan--Wigner: learning the: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/cv-tf-qkd-new-evidence-in-quantum-physics</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=6631256562</image:loc>
+      <image:title>CV-TF-QKD: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/chiral-waveguide-model-for-error-correctable-quantum-new</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=6956457990</image:loc>
+      <image:title>Chiral waveguide model for error-correctable quantum: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/dephasing-induced-melting-of-crystalline-spectral-form-new</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=2249129097</image:loc>
+      <image:title>Dephasing-Induced Melting of Crystalline Spectral Form: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/one-bit-many-records-information-replication-in-new-evidence-in</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=663458214</image:loc>
+      <image:title>One Bit, Many Records: Information Replication in: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/quantum-state-reconstruction-from-sklar-type-new-evidence-in</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=3764658037</image:loc>
+      <image:title>Quantum State Reconstruction from Sklar-Type: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/super-resolved-digital-terrain-models-for-gedi-new-evidence-in</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=13107799749</image:loc>
+      <image:title>Super-resolved digital terrain models for GEDI: New Evidence in Space &amp; Astronomy</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/raman-anyon-hubbard-model-in-a-1d-bose-lattice-gas-new-evidence</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=11926244984</image:loc>
+      <image:title>Raman anyon-Hubbard model in a 1D Bose lattice gas: New Evidence in Earth &amp; Geology</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/quantum-mechanical-description-of-active-matter-new-evidence-in</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=4601447216</image:loc>
+      <image:title>Quantum Mechanical Description of Active Matter: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/novikov-magnus-master-equation-for-driven-quantum-new-evidence</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=18751919168</image:loc>
+      <image:title>Novikov-Magnus Master Equation for Driven Quantum: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/vlt-and-keck-recovery-and-characterisation-of-2025-new-evidence</loc>
     <lastmod>2026-11-09</lastmod>
     <changefreq>daily</changefreq>
