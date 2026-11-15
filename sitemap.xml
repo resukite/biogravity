@@ -98,6 +98,26 @@
 
   <!-- Live Science Dispatches (Google Discover & News Priority) -->
   <url>
+    <loc>https://biogravity.space/news/non-interferometric-tests-of-gravitational-decoherence-new</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=3858757737</image:loc>
+      <image:title>Non-interferometric tests of gravitational decoherence: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/scalable-pauli-propagation-through-new-evidence-in-quantum</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=2286285007</image:loc>
+      <image:title>Scalable Pauli propagation through: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/deployed-four-city-entanglement-based-qkd-network-with-new</loc>
     <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
