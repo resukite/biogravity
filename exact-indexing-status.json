@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-14T09:34:28.247Z",
-  "totalUrls": 151,
+  "updatedAt": "2026-11-15T10:01:08.376Z",
+  "totalUrls": 159,
   "indexedCount": 112,
-  "notIndexedCount": 39,
-  "indexedPercentage": "74.2%",
-  "pushedToIndexingCount": 39,
+  "notIndexedCount": 47,
+  "indexedPercentage": "70.4%",
+  "pushedToIndexingCount": 47,
   "allFullyIndexed": false,
   "results": [
     {
@@ -94,6 +94,54 @@
       "verdict": "PASS",
       "coverage": "Submitted and indexed",
       "lastChecked": "2026-11-01T14:45:04.867Z"
+    },
+    {
+      "url": "https://biogravity.space/news/non-interferometric-tests-of-gravitational-decoherence-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-15T10:01:07.081Z"
+    },
+    {
+      "url": "https://biogravity.space/news/scalable-pauli-propagation-through-new-evidence-in-quantum",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-15T10:01:07.081Z"
+    },
+    {
+      "url": "https://biogravity.space/news/deployed-four-city-entanglement-based-qkd-network-with-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-15T10:01:07.081Z"
+    },
+    {
+      "url": "https://biogravity.space/news/observation-of-genuine-multi-time-quantum-memory-new-evidence-in",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-15T10:01:07.081Z"
+    },
+    {
+      "url": "https://biogravity.space/news/stiffness-in-confined-quantum-walks-new-evidence-in-quantum",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-15T10:01:07.081Z"
+    },
+    {
+      "url": "https://biogravity.space/news/near-optimal-multiparameter-pure-state-metrology-with-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-15T10:01:07.081Z"
+    },
+    {
+      "url": "https://biogravity.space/news/sharp-uniform-fisher-information-bounds-from-new-evidence-in",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-15T10:01:07.081Z"
+    },
+    {
+      "url": "https://biogravity.space/news/traces-of-vacuum-squeezing-a-superconducting-new-evidence-in",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-15T10:01:07.081Z"
     },
     {
       "url": "https://biogravity.space/news/jwst-rocky-worlds-ddt-observations-of-ltt-1445-a-b-and-new",

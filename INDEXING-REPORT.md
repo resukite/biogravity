@@ -1,13 +1,13 @@
 # 🛰️ BioGravity Cloud Indexing Health Report
 
-> **Automated Cloud Run**: Sat, 14 Nov 2026 09:34:28 GMT  
-> **Total Canonical Pages**: 151  
-> **Google Indexation Progress**: **74.2%** (112 indexed / 39 in queue)  
+> **Automated Cloud Run**: Sun, 15 Nov 2026 10:01:08 GMT  
+> **Total Canonical Pages**: 159  
+> **Google Indexation Progress**: **70.4%** (112 indexed / 47 in queue)  
 > **Status**: ⚡ **Active Cloud Indexing Push Active**
 
 ## 🚀 Today's Indexing Actions
 
-- **Pushed to IndexNow (Bing/Yandex/Partners)**: 39 URLs
+- **Pushed to IndexNow (Bing/Yandex/Partners)**: 47 URLs
 - **Google Search Console Sitemap Ping**: Synchronized `sitemap.xml`
 - **Next Scheduled Run**: Automatically executes tomorrow at 03:00 UTC in GitHub Actions Cloud.
 
@@ -28,6 +28,14 @@
 | [`/molecular-biology-research`](https://biogravity.space/molecular-biology-research) | ✅ INDEXED | Discovered / Pending crawl | Today |
 | [`/microgravity-effects-on-human-body`](https://biogravity.space/microgravity-effects-on-human-body) | ✅ INDEXED | Submitted and indexed | 2026-11-08 |
 | [`/sitemap`](https://biogravity.space/sitemap) | ✅ INDEXED | Submitted and indexed | 2026-11-01 |
+| [`/news/non-interferometric-tests-of-gravitational-decoherence-new`](https://biogravity.space/news/non-interferometric-tests-of-gravitational-decoherence-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-15 |
+| [`/news/scalable-pauli-propagation-through-new-evidence-in-quantum`](https://biogravity.space/news/scalable-pauli-propagation-through-new-evidence-in-quantum) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-15 |
+| [`/news/deployed-four-city-entanglement-based-qkd-network-with-new`](https://biogravity.space/news/deployed-four-city-entanglement-based-qkd-network-with-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-15 |
+| [`/news/observation-of-genuine-multi-time-quantum-memory-new-evidence-in`](https://biogravity.space/news/observation-of-genuine-multi-time-quantum-memory-new-evidence-in) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-15 |
+| [`/news/stiffness-in-confined-quantum-walks-new-evidence-in-quantum`](https://biogravity.space/news/stiffness-in-confined-quantum-walks-new-evidence-in-quantum) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-15 |
+| [`/news/near-optimal-multiparameter-pure-state-metrology-with-new`](https://biogravity.space/news/near-optimal-multiparameter-pure-state-metrology-with-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-15 |
+| [`/news/sharp-uniform-fisher-information-bounds-from-new-evidence-in`](https://biogravity.space/news/sharp-uniform-fisher-information-bounds-from-new-evidence-in) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-15 |
+| [`/news/traces-of-vacuum-squeezing-a-superconducting-new-evidence-in`](https://biogravity.space/news/traces-of-vacuum-squeezing-a-superconducting-new-evidence-in) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-15 |
 | [`/news/jwst-rocky-worlds-ddt-observations-of-ltt-1445-a-b-and-new`](https://biogravity.space/news/jwst-rocky-worlds-ddt-observations-of-ltt-1445-a-b-and-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-14 |
 | [`/news/statistics-of-fock-space-correlation-lengths-in-the-new-evidence`](https://biogravity.space/news/statistics-of-fock-space-correlation-lengths-in-the-new-evidence) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-14 |
 | [`/news/quantum-metrology-and-quantum-battery-in-a-new-evidence-in`](https://biogravity.space/news/quantum-metrology-and-quantum-battery-in-a-new-evidence-in) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-14 |
