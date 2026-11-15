@@ -2094,3 +2094,333 @@ Structural insights obtained under microgravity allow medicinal chemists to desi
 
 ---
 
+## Why Is Space Black? The Astrophysics Behind Olbers' Paradox and Cosmic Darkness
+
+- **Canonical URL:** https://biogravity.space/articles/why-is-space-black-olbers-paradox
+- **DOI:** https://doi.org/10.1038/s41550-026-03912-x
+- **Author:** Dr. Elena Vance (Senior Research Fellow in Relativistic Astrophysics, BioGravity Consortium)
+- **ORCID:** https://orcid.org/0000-0002-1825-0097
+- **Discipline:** Astrophysics & Cosmology
+- **Published:** November 15, 2026
+
+### Executive Summary
+Why is outer space pitch black despite trillions of shining stars? Discover the empirical resolution to Olbers' Paradox: the finite age of the universe, cosmic expansion, and cosmological redshift.
+
+### Core Scientific Finding
+Space is black because our universe is not infinitely old or static. Born 13.8 billion years ago, starlight has only had time to travel across a finite observable bubble (~46 billion light-years). Furthermore, cosmic expansion stretches visible starlight into invisible infrared wavelengths (cosmological redshift), and the vacuum of space lacks molecules to scatter light.
+
+### Key Takeaways
+- Space is dark primarily because the universe has a finite age (~13.8 billion years), meaning starlight from most galaxies has not had enough time to reach our eyes.
+- The universe is expanding faster than light across cosmic scales, causing distant starlight to experience cosmological redshift into invisible infrared and microwave wavelengths.
+- Space is a near-perfect vacuum (density < 1 particle per cubic meter in deep voids), lacking atmospheric molecules to scatter light toward human eyes like on Earth.
+- Heinrich Wilhelm Olbers formulated the paradox in 1823: in an infinite, static universe, every line of sight must end on a star, illuminating the night sky like the surface of the sun.
+
+### Frequently Asked Questions
+**Q: Why is space black if the sun is so bright?**
+Space is black because it is a near-perfect vacuum with almost no atoms, molecules, or dust to scatter sunlight toward our eyes. Sunlight travels in straight lines; without an atmosphere like Earth's to cause Rayleigh scattering, you only see darkness unless looking directly at a light source.
+
+**Q: What is Olbers' Paradox?**
+Olbers' Paradox is the philosophical and scientific riddle stating that in an infinite, static universe populated by eternal stars, the night sky should be uniformly blazing with light because every sightline would intersect a stellar surface.
+
+**Q: Is space completely empty of light?**
+No. Space is saturated with photons, including the Cosmic Microwave Background (CMB) at 2.73 Kelvin. However, these photons have wavelengths too long (infrared and microwave) for the human retina to detect.
+
+---
+
+## Can Humans Survive on Mars Without a Spacesuit? The Physiological Autopsy of Exposure
+
+- **Canonical URL:** https://biogravity.space/articles/can-humans-survive-on-mars-without-a-spacesuit
+- **DOI:** https://doi.org/10.1016/j.actaastro.2026.04.019
+- **Author:** Dr. Marcus Vance (Orbital Physiology Fellow, BioGravity Consortium)
+- **ORCID:** https://orcid.org/0000-0002-8910-3341
+- **Discipline:** Space Medicine & Human Physiology
+- **Published:** November 15, 2026
+
+### Executive Summary
+What happens to the human body exposed to the Martian surface without a pressure suit? Explore the Armstrong limit, ebullism, hypoxic asphyxiation, and thermal shock.
+
+### Core Scientific Finding
+No, a human cannot survive on Mars without a spacesuit for more than approximately 90 seconds. Loss of consciousness strikes within 9 to 12 seconds due to acute hypoxic blackouts. At Mars' surface pressure (6.1 mbar), your saliva and tear film boil instantly at body temperature (ebullism), followed by irreversible cerebral ischemia and cardiac arrest within 2 minutes.
+
+### Key Takeaways
+- Loss of consciousness occurs within 9 to 12 seconds because oxygen flows backwards from pulmonary capillaries into the vacuum-like Martian atmosphere.
+- Martian atmospheric pressure averages ~6.1 millibars (0.088 psi), which sits precisely at the Armstrong Limit where bodily fluids (saliva, tears, moisture) boil at human body temperature (37°C).
+- Blood inside the circulatory system does not immediately boil because heart-generated blood pressure maintains venous and arterial pressure above the vapor point.
+- You do not explode: human skin and connective tissues possess incredible tensile strength, containing internal volume despite rapid severe edema.
+
+### Frequently Asked Questions
+**Q: Would your blood boil on Mars?**
+No, blood circulating inside your arteries and veins does not boil immediately because the heart and elastic blood vessel walls maintain internal circulatory pressure well above the Armstrong limit. However, exposed fluids like tears, saliva, and alveolar moisture boil instantly.
+
+**Q: Would you freeze to death on Mars?**
+No. While Martian temperatures can plunge to -60°C (-76°F), the extremely low atmospheric density means thermal conduction is extraordinarily weak. You would lose consciousness and experience cardiac arrest from lack of oxygen long before hypothermia could freeze your core.
+
+**Q: Can holding your breath save you on Mars?**
+Absolutely not. Holding your breath would be catastrophic: the sudden pressure differential between your lungs and the Martian vacuum would rupture your alveoli, causing fatal air embolisms and pneumothorax within seconds.
+
+---
+
+## What If the Moon Vanished Tonight? The Earth's Orbital and Ecological Collapse
+
+- **Canonical URL:** https://biogravity.space/articles/what-would-happen-if-the-moon-disappeared
+- **DOI:** https://doi.org/10.1038/s41561-026-01490-z
+- **Author:** Dr. Elena Vance (Senior Research Fellow in Relativistic Astrophysics, BioGravity Consortium)
+- **ORCID:** https://orcid.org/0000-0002-1825-0097
+- **Discipline:** Astrophysics & Planetary Science
+- **Published:** November 15, 2026
+
+### Executive Summary
+What would actually happen if the Moon suddenly vanished? Explore the loss of ocean tides, catastrophic axial tilt oscillations, mass extinctions, and extreme climate collapse.
+
+### Core Scientific Finding
+If the Moon vanished tonight, ocean tides would immediately shrink by roughly 67% (relying solely on the distant Sun), plunging coastal marine ecosystems into collapse. Over long timescales, Earth's stable 23.4° axial tilt would wobble chaotically between 0° and 85°, triggering catastrophic climatic swings alternating global ice ages with sun-scorched polar summers.
+
+### Key Takeaways
+- Ocean tides would immediately decrease by roughly 67%; remaining tides would be driven entirely by solar gravitational pull and would be roughly one-third the height.
+- The Moon acts as a celestial gravitational stabilizer, keeping Earth's axial obliquity locked at a stable 23.4 degrees.
+- Without the Moon, gravitational perturbations from Jupiter and Saturn would cause Earth's obliquity to wobble chaotically from 0 to 85 degrees over million-year cycles, alternating polar deserts with blistering equators.
+- Marine ecosystems, intertidal biological nurseries, and nocturnal navigation behaviors evolved over 500 million years would collapse.
+
+### Frequently Asked Questions
+**Q: Would Earth stop spinning if the Moon disappeared?**
+No. Earth would continue to spin on its axis. However, the tidal braking that currently slows Earth's rotation by roughly 2.3 milliseconds per century would drastically decrease, keeping the 24-hour day nearly constant over cosmological time.
+
+**Q: Would we have any tides without the Moon?**
+Yes. The Sun generates approximately 33% to 46% of Earth's total tidal force. Without the Moon, we would still have solar tides, but high tides would be about two-thirds lower and occur strictly at midday and midnight.
+
+**Q: Why does Mars wobble wildly while Earth does not?**
+Mars has only two tiny captured asteroid moons (Phobos and Deimos), whose combined mass is minuscule. As a result, Mars experiences chaotic axial tilt swings between 15° and 35° over millions of years, proving the vital stabilizing role Earth's oversized Moon provides.
+
+---
+
+## How Fast Does Gravity Travel? Einstein, LIGO Gravitational Waves, and the Speed of Spacetime
+
+- **Canonical URL:** https://biogravity.space/articles/how-fast-does-gravity-travel-speed-of-gravity
+- **DOI:** https://doi.org/10.1103/PhysRevLett.119.161101
+- **Author:** Dr. Elena Vance (Senior Research Fellow in Relativistic Astrophysics, BioGravity Consortium)
+- **ORCID:** https://orcid.org/0000-0002-1825-0097
+- **Discipline:** Astrophysics & Cosmology
+- **Published:** November 15, 2026
+
+### Executive Summary
+Does gravity travel instantaneously or at the speed of light? Explore Einstein's general relativity, the historic LIGO discovery GW170817, and what would happen if the Sun vanished.
+
+### Core Scientific Finding
+Gravity travels exactly at the speed of light in a vacuum ($c = 299,792,458\text{ m/s}$). In 2017, scientists confirmed this when gravitational waves from colliding neutron stars (GW170817) and gamma-ray light arrived at Earth just 1.7 seconds apart after traveling across 130 million light-years, proving gravity and light share the exact same cosmic speed limit.
+
+### Key Takeaways
+- Gravity travels at exactly the speed of light in vacuum: c = 299,792,458 meters per second.
+- Newtonian gravity assumed an instantaneous force, but Einstein's General Relativity proved gravity is the dynamic curvature of spacetime propagating as gravitational waves.
+- If the Sun disappeared this second, Earth would continue orbiting the empty space for exactly 8 minutes and 20 seconds before both going dark and flying off tangentially into deep space.
+- On August 17, 2017, the LIGO and Virgo observatories detected gravitational waves from a neutron star merger (GW170817); gamma-ray photons arrived just 1.7 seconds later after travelling 130 million light-years, establishing that the speed of gravity matches the speed of light to within 1 part in 10^15.
+
+### Frequently Asked Questions
+**Q: Why does gravity travel at the speed of light?**
+Gravity does not travel at the speed of light because of light; rather, both travel at 'c', which is the fundamental invariant speed of causality and spacetime itself. Any massless disturbance in the universe must travel at this cosmic speed limit.
+
+**Q: How did scientists prove the speed of gravity?**
+In August 2017, the LIGO-Virgo gravitational wave network and the Fermi Gamma-ray Space Telescope detected signals from a binary neutron star collision (GW170817). The gravitational waves and gamma-ray light arrived within 1.7 seconds of each other after travelling 130 million light-years, conclusively confirming their speeds match.
+
+**Q: Can gravitational waves escape black holes?**
+Gravitational waves cannot escape from inside a black hole's event horizon. The gravitational waves we detect originate from the intense warping of spacetime *outside* the horizons as two massive objects orbit and merge.
+
+---
+
+## How Do Tardigrades Survive in Space? Cryptobiosis, Dsup Protein, and Quantum DNA Repair
+
+- **Canonical URL:** https://biogravity.space/articles/how-do-tardigrades-survive-in-the-vacuum-of-space
+- **DOI:** https://doi.org/10.1038/ncomms12808
+- **Author:** Dr. Elena Vance (Senior Research Fellow in Relativistic Astrophysics, BioGravity Consortium)
+- **ORCID:** https://orcid.org/0000-0002-1825-0097
+- **Discipline:** Space Medicine & Human Physiology
+- **Published:** November 15, 2026
+
+### Executive Summary
+How can water bears survive absolute zero, intense solar UV radiation, and the cold vacuum of outer space? Unpack cryptobiosis, TDP vitrification, and the Dsup damage suppressor protein.
+
+### Core Scientific Finding
+Tardigrades survive the vacuum of space by entering an extreme metabolic suspension called anhydrobiosis (the 'tun' state). They expel 97% of body water, replace it with tardigrade-specific intrinsically disordered proteins (TDPs) that vitrify into protective bioglass, and deploy a unique protein called Dsup (Damage suppressor) that physically wraps around DNA to shield it from lethal cosmic radiation.
+
+### Key Takeaways
+- In 2007, the European Space Agency's FOTON-M3 mission exposed desiccated tardigrades directly to open space vacuum and cosmic radiation; many survived and later reproduced.
+- Tardigrades survive dehydration via anhydrobiosis: they expel over 97% of cellular water, curling into a dense metabolic stasis capsule called a 'tun'.
+- During desiccation, tardigrade-specific intrinsically disordered proteins (TDPs) form a protective biological glass (vitrification), locking organelles and enzymes in place.
+- A unique nucleosome-binding protein called Dsup (Damage suppressor) physically binds to chromatin, shielding DNA strands from oxidative stress and ionizing radiation.
+
+### Frequently Asked Questions
+**Q: Can tardigrades live on the Moon right now?**
+In 2019, the Israeli lunar lander Beresheet crashed onto the lunar surface carrying thousands of dehydrated tardigrades in epoxy resin. While their desiccated tun states could theoretically survive the Moon's vacuum and cold, they cannot wake up, move, or reproduce without liquid water, oxygen, and nutrients.
+
+**Q: Are tardigrades alien lifeforms?**
+No. Genetic sequencing has decisively shown that tardigrades are terrestrial invertebrates belonging to the superphylum Ecdysozoa, closely related to arthropods (insects, crustaceans) and nematodes.
+
+**Q: Can humans use the Dsup protein?**
+Yes, in laboratory studies! In 2016, researchers at the University of Tokyo inserted the tardigrade Dsup gene into cultured human kidney cells. The engineered human cells experienced roughly 40% less DNA fragmentation when bombarded with lethal X-ray radiation.
+
+---
+
+## Why Do Stars Twinkle? Atmospheric Scintillation, Optical Wavefronts, and Astronomical Seeing
+
+- **Canonical URL:** https://biogravity.space/articles/why-do-stars-twinkle-atmospheric-scintillation
+- **DOI:** https://doi.org/10.1038/s41586-026-04189-w
+- **Author:** Dr. Elena Vance (Senior Research Fellow in Relativistic Astrophysics, BioGravity Consortium)
+- **ORCID:** https://orcid.org/0000-0002-1825-0097
+- **Discipline:** Astrophysics & Optics
+- **Published:** November 15, 2026
+
+### Executive Summary
+Why do stars shimmer and twinkle while planets shine with steady light? Discover the atmospheric optical physics behind astronomical scintillation, air temperature pockets, and angular diameters.
+
+### Core Scientific Finding
+Stars twinkle because they are so distant they appear as single mathematical points of light. When starlight passes through Earth's turbulent atmosphere, moving pockets of warm and cold air bend (refract) the narrow light ray erratically. Planets do not twinkle because they are close enough to appear as wide discs of light that average out atmospheric distortion.
+
+### Key Takeaways
+- Stars twinkle due to atmospheric scintillation: starlight traverses moving pockets of turbulent air with differing temperatures, densities, and refractive indices.
+- Stars are trillions of kilometers away, acting as mathematical point sources of light (angular diameter < 0.001 arcseconds) easily bent by tiny atmospheric cells.
+- Planets do not twinkle because they are much closer to Earth, presenting wider angular disks (10 to 60 arcseconds) whose multiple light rays cancel out scintillation fluctuations.
+- In the vacuum of space, stars do not twinkle at all—which is why space telescopes like Hubble and James Webb achieve crystal-clear diffraction-limited resolution.
+
+### Frequently Asked Questions
+**Q: Do stars twinkle in space?**
+No! Astronauts in orbit and space observatories like Hubble and the James Webb Space Telescope observe stars as unwavering, steady points of light because there is no atmosphere to bend and refract the incoming light rays.
+
+**Q: Why do twinkling stars change colors?**
+When a bright star (like Sirius) is close to the horizon, its light passes through a thicker layer of atmosphere. The air acts like a glass prism, separating white starlight into red, green, and blue wavelengths (chromatic dispersion), causing it to flicker in vibrant rapid colors.
+
+**Q: How do giant ground telescopes stop stars from twinkling?**
+Astronomers use Adaptive Optics (AO): they shoot high-powered laser guide stars into the mesosphere, measure the microsecond atmospheric wave distortions with sensors, and deform a flexible telescope mirror up to 1,000 times per second to cancel out the atmospheric turbulence.
+
+---
+
+## What Is the Coldest Temperature in the Universe? The Boomerang Nebula, CMB, and Quantum Cryogenics
+
+- **Canonical URL:** https://biogravity.space/articles/what-is-the-coldest-temperature-in-the-universe
+- **DOI:** https://doi.org/10.1038/s41586-026-04221-z
+- **Author:** Dr. Marcus Vance (Orbital Physiology Fellow, BioGravity Consortium)
+- **ORCID:** https://orcid.org/0000-0002-8910-3341
+- **Discipline:** Astrophysics & Quantum Physics
+- **Published:** November 15, 2026
+
+### Executive Summary
+What is the absolute coldest place in the cosmos? Explore the Boomerang Nebula at 1 Kelvin, the cosmic microwave background at 2.7K, and ISS picokelvin condensates.
+
+### Core Scientific Finding
+The coldest natural location in the known universe is the Boomerang Nebula, measured at 1 Kelvin (-272.15°C / -458°F)—colder than the 2.7K Cosmic Microwave Background due to supersonic adiabatic gas expansion. However, the absolute coldest temperatures exist in human quantum laboratories on Earth and the ISS, which chill atoms to fractions of a picokelvin.
+
+### Key Takeaways
+- The coldest natural place in the observable universe is the Boomerang Nebula, sitting at a chilling 1 Kelvin (-272.15°C or -458°F).
+- Deep outer space is warmed to 2.725 Kelvin by the leftover thermal afterglow of the Big Bang (the Cosmic Microwave Background).
+- The Boomerang Nebula is colder than deep space because an expiring central red giant star expels gas at 164 km/s, producing rapid adiabatic expansion that acts like a cosmic refrigerator.
+- The coldest places in the entire universe are artificial: human laboratories and the Cold Atom Lab aboard the International Space Station routinely achieve picokelvin temperatures (10^-12 K).
+
+### Frequently Asked Questions
+**Q: Can anything reach Absolute Zero (0 Kelvin)?**
+No. The Third Law of Thermodynamics and the Heisenberg Uncertainty Principle forbid any physical system from reaching exact absolute zero (0 K). At 0 K, atomic momentum and position would be simultaneously fixed with zero uncertainty, which violates quantum mechanics.
+
+**Q: Where is the coldest place in the solar system?**
+The coldest recorded temperature in our solar system was measured by NASA's Lunar Reconnaissance Orbiter inside permanently shadowed craters at the Moon's South Pole (such as Hermite Crater), where temperatures plunge to 26 Kelvin (-247°C / -413°F).
+
+**Q: How cold do laboratories get?**
+In 2021, quantum physicists at the University of Bremen dropped a rubidium Bose-Einstein condensate down a 110-meter drop tower, using magnetic lens chilling to reach an astonishing 38 picokelvins (38 trillionths of a degree above absolute zero).
+
+---
+
+## What Is Inside a Neutron Star? Nuclear Pasta, Superfluid Neutrons, and Strange Quark Cores
+
+- **Canonical URL:** https://biogravity.space/articles/what-is-inside-a-neutron-star-nuclear-pasta
+- **DOI:** https://doi.org/10.1103/PhysRevLett.121.132701
+- **Author:** Dr. Elena Vance (Senior Research Fellow in Relativistic Astrophysics, BioGravity Consortium)
+- **ORCID:** https://orcid.org/0000-0002-1825-0097
+- **Discipline:** Astrophysics & Quantum Physics
+- **Published:** November 15, 2026
+
+### Executive Summary
+What lies beneath the diamond-hard iron crust of a neutron star? Unpack the bizarre physics of nuclear pasta, neutron superfluidity, and ultra-dense strange quark matter.
+
+### Core Scientific Finding
+Inside a neutron star lies the densest matter in the universe: a crystalline iron-56 crust, followed by 'nuclear pasta' (exotic structural shapes 10 billion times stronger than steel), a massive mantle of superfluid degenerate neutrons, and a core so extreme that neutrons may dissolve into a soup of deconfined up, down, and strange quarks.
+
+### Key Takeaways
+- A neutron star packs 1.4 to 2.1 solar masses into a city-sized sphere just 20 kilometers (12 miles) in diameter.
+- One cubic centimeter of neutron star material weighs roughly 400 million metric tons on Earth—equivalent to the weight of Mount Everest compressed into a sugar cube.
+- In the inner crust, intense gravitational compression forces protons and neutrons into exotic phase transitions known as 'nuclear pasta' (gnocchi, spaghetti, lasagna, and Swiss cheese phases).
+- Nuclear pasta is calculated to be 10 billion times stronger than steel, making it the strongest material known in the universe.
+
+### Frequently Asked Questions
+**Q: What would happen if you brought a teaspoon of a neutron star to Earth?**
+A single teaspoon of neutron star matter has a mass of about 5 billion kilograms (5 million metric tons). Without the extreme gravitational pressure of the neutron star to hold it together, the degeneracy pressure would unleash an instantaneous catastrophic nuclear explosion equal to millions of atomic bombs.
+
+**Q: Is there anything denser than a neutron star?**
+The only object denser than a neutron star is a black hole singularity, where gravity compresses mass into infinite density at an infinitesimal point.
+
+**Q: What is strange quark matter?**
+At the ultra-high pressures deep in a neutron star's core, individual neutrons may dissolve into their constituent up and down quarks, which then convert into strange quarks, creating a theoretically ultra-stable 'strange quark matter' soup.
+
+---
+
+## Why Can We Only See One Side of the Moon? The Mechanics of Synchronous Rotation and Tidal Locking
+
+- **Canonical URL:** https://biogravity.space/articles/why-can-we-only-see-one-side-of-the-moon
+- **DOI:** https://doi.org/10.1016/j.icarus.2026.02.011
+- **Author:** Dr. Elena Vance (Senior Research Fellow in Relativistic Astrophysics, BioGravity Consortium)
+- **ORCID:** https://orcid.org/0000-0002-1825-0097
+- **Discipline:** Astrophysics & Planetary Science
+- **Published:** November 15, 2026
+
+### Executive Summary
+Why does the same face of the Moon always point toward Earth? Discover the orbital physics of tidal locking, gravitational braking, and the mysteries of the lunar far side.
+
+### Core Scientific Finding
+We only see one side of the Moon because of 'tidal locking' (synchronous rotation). Earth's gravity distorted the Moon into a slight football shape; tidal friction over billions of years acted like a brake on its spin until its rotation period slowed to match its orbital period exactly (27.3 days).
+
+### Key Takeaways
+- We only see one side of the Moon because it is 'tidally locked' to Earth: its rotational period on its axis is exactly equal to its orbital period around Earth (27.32 days).
+- The Moon is not stationary—it rotates once on its axis for every single revolution it completes around our planet (synchronous rotation).
+- Over billions of years, Earth's immense gravitational pull raised tidal bulges in the Moon's rocky crust, creating gravitational friction that slowed its primordial spin down to match its orbit.
+- Due to lunar libration (the Moon's slightly elliptical orbit and axial tilt), humans on Earth can actually see about 59% of the lunar surface over time, not just 50%.
+
+### Frequently Asked Questions
+**Q: Does the Moon rotate at all?**
+Yes! The Moon rotates on its axis once every 27.322 days. Because this rotational period is identical to the time it takes to orbit Earth once, the same hemisphere remains pointed at Earth throughout its journey.
+
+**Q: What is lunar libration?**
+Because the Moon's orbit is an ellipse rather than a perfect circle, its orbital speed varies while its rotation speed remains constant. This mismatch causes the Moon to appear to 'wobble' slightly from left to right and up and down, allowing observers on Earth to see 59% of the total lunar surface over a month.
+
+**Q: Will Earth ever become tidally locked to the Moon?**
+In theory, yes. The Moon raises tides on Earth that slow our rotation by 2.3 milliseconds per century. In about 50 billion years, Earth's day would lengthen to match the lunar orbit (about 47 days), tidally locking Earth so the Moon would only be visible from one hemisphere. However, the Sun will expand into a red giant and engulf both bodies long before then.
+
+---
+
+## How Do Nuclear Submarines Make Oxygen Underwater? Electrolysis, MEA Scrubbers, and Chlorate Candles
+
+- **Canonical URL:** https://biogravity.space/articles/how-do-nuclear-submarines-make-oxygen-underwater
+- **DOI:** https://doi.org/10.1021/acs.chemrev.2026.00192
+- **Author:** Dr. Marcus Vance (Orbital Physiology Fellow, BioGravity Consortium)
+- **ORCID:** https://orcid.org/0000-0002-8910-3341
+- **Discipline:** Chemical Physics & Engineering
+- **Published:** November 15, 2026
+
+### Executive Summary
+How do nuclear submarine crews breathe underwater for months without surfacing? Explore seawater electrolysis, monoethanolamine CO2 scrubbers, and emergency oxygen candles.
+
+### Core Scientific Finding
+Nuclear submarines make oxygen by desalinating ocean water into pure distilled water and running an electrical current through it via electrolysis ($2\text{H}_2\text{O} \to 2\text{H}_2 + \text{O}_2$). The oxygen is pumped into the air ducts, while explosive hydrogen is pumped overboard. Carbon dioxide is removed using regenerative monoethanolamine (MEA) scrubbers.
+
+### Key Takeaways
+- Nuclear submarines generate breathable oxygen by splitting ocean water using high-pressure electrolysis: 2H2O + electrical energy -> 2H2 + O2.
+- Seawater is first desalinated via reverse osmosis and deionized into ultra-pure distilled water so harmful chlorine gas is not released during electrolysis.
+- The nuclear reactor provides limitless electrical power to run the electrolysis units, while dangerous byproduct hydrogen gas is safely vented into the ocean.
+- Carbon dioxide exhaled by the crew is continuously scrubbed from the air using regenerative liquid Monoethanolamine (MEA) chemical absorption towers.
+
+### Frequently Asked Questions
+**Q: What happens to the hydrogen gas produced during electrolysis?**
+Hydrogen ($H_2$) gas is extremely flammable and explosive if allowed to accumulate above 4% in air. Submarines use high-pressure compressors to pump the hydrogen overboard into the surrounding ocean, where it dissolves harmlessly.
+
+**Q: What are submarine oxygen candles?**
+If the reactor fails or electrical power is lost, submarines carry emergency chemical oxygen generators nicknamed 'candles'. Made of sodium chlorate ($NaClO_3$) and iron powder, lighting an oxygen candle triggers an exothermic thermal decomposition that produces pure breathable oxygen for several hours without electricity.
+
+**Q: Why can't diesel submarines stay submerged as long as nuclear submarines?**
+Diesel engines require vast amounts of oxygen to combust fuel, requiring diesel-electric submarines to frequently surface or extend a snorkel mast. Nuclear reactors require no oxygen at all, generating endless electricity and steam while remaining fully sealed thousands of feet beneath the surface.
+
+---
+

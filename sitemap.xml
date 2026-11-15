@@ -7,31 +7,31 @@
   <!-- Core Hub Pages (Clean URLs) -->
   <url>
     <loc>https://biogravity.space/</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://biogravity.space/news</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://biogravity.space/research</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://biogravity.space/tools</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://biogravity.space/world-space-week-2026</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -41,7 +41,7 @@
   </url>
   <url>
     <loc>https://biogravity.space/molecular-biology-research</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -51,7 +51,7 @@
   </url>
   <url>
     <loc>https://biogravity.space/microgravity-effects-on-human-body</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
@@ -61,37 +61,37 @@
   </url>
   <url>
     <loc>https://biogravity.space/about</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://biogravity.space/contact</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://biogravity.space/disclaimer</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://biogravity.space/sitemap</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://biogravity.space/privacy-policy</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://biogravity.space/terms</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1197,6 +1197,106 @@
     <image:image>
       <image:loc>https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85</image:loc>
       <image:title>Characterizing supersolid phase transitions in trapped quantum gases with tilted dipoles at finite temperature</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/why-is-space-black-olbers-paradox</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Why Is Space Black? The Astrophysics Behind Olbers&apos; Paradox and Cosmic Darkness</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/can-humans-survive-on-mars-without-a-spacesuit</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Can Humans Survive on Mars Without a Spacesuit? The Physiological Autopsy of Exposure</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/what-would-happen-if-the-moon-disappeared</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1532693322450-2cb5c511067d?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>What If the Moon Vanished Tonight? The Earth&apos;s Orbital and Ecological Collapse</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/how-fast-does-gravity-travel-speed-of-gravity</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>How Fast Does Gravity Travel? Einstein, LIGO Gravitational Waves, and the Speed of Spacetime</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/how-do-tardigrades-survive-in-the-vacuum-of-space</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>How Do Tardigrades Survive in Space? Cryptobiosis, Dsup Protein, and Quantum DNA Repair</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/why-do-stars-twinkle-atmospheric-scintillation</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Why Do Stars Twinkle? Atmospheric Scintillation, Optical Wavefronts, and Astronomical Seeing</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/what-is-the-coldest-temperature-in-the-universe</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>What Is the Coldest Temperature in the Universe? The Boomerang Nebula, CMB, and Quantum Cryogenics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/what-is-inside-a-neutron-star-nuclear-pasta</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>What Is Inside a Neutron Star? Nuclear Pasta, Superfluid Neutrons, and Strange Quark Cores</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/why-can-we-only-see-one-side-of-the-moon</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1522030299830-16b8d3d049fe?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Why Can We Only See One Side of the Moon? The Mechanics of Synchronous Rotation and Tidal Locking</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/articles/how-do-nuclear-submarines-make-oxygen-underwater</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>How Do Nuclear Submarines Make Oxygen Underwater? Electrolysis, MEA Scrubbers, and Chlorate Candles</image:title>
     </image:image>
   </url>
 </urlset>

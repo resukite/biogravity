@@ -1,13 +1,13 @@
-name: BioGravity Daily SEO Ranking & Performance Optimizer
+name: BioGravity Strict SEO Growth & Traffic Accelerator
 
 on:
   schedule:
-    # Runs 100% automatically in the cloud every day at 09:00 UTC (peak search indexing window)
-    - cron: '0 9 * * *'
+    # Runs 100% automatically in the cloud twice daily (03:00 UTC and 15:00 UTC)
+    - cron: '0 3,15 * * *'
   workflow_dispatch:
     inputs:
       force_optimize:
-        description: 'Force immediate site-wide ranking optimization & rebuild'
+        description: 'Force immediate site-wide growth engine cycle & rebuild'
         required: false
         type: boolean
         default: true
@@ -16,8 +16,8 @@ permissions:
   contents: write
 
 jobs:
-  seo-ranking-optimizer:
-    name: Autonomous SEO Performance & Ranking Engine
+  strict-growth-engine:
+    name: Autonomous Strict Growth & Ranking Engine
     runs-on: ubuntu-latest
 
     steps:
@@ -36,15 +36,13 @@ jobs:
         run: |
           npm ci || npm install
 
-      - name: ⚡ Execute Autonomous SEO Ranking Optimizer, Top 5 Booster & GEO
+      - name: ⚡ Execute Strict Autonomous Growth Engine (Target: 1k imp / 50 clicks)
         env:
           GSC_KEY_JSON: ${{ secrets.GSC_KEY_JSON }}
           SITE_URL: 'https://biogravity.space'
         run: |
-          echo "Executing daily cloud SEO ranking optimization, Top 5 booster and GEO cycle..."
-          node scripts/top5_ranking_booster.js
-          node scripts/ai_search_optimizer.js
-          node scripts/daily_seo_optimizer.js
+          echo "Executing strict cloud growth engine and indexing cycle..."
+          node scripts/strict_growth_engine.js
 
       - name: 🚀 Commit and Push Ranking Enhancements, Rebuilt Pages & Reports
         run: |
@@ -52,13 +50,13 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           # Stage modified databases, HTML pages, sitemaps, RSS, and reports
-          git add data/ articles/ sitemap.xml index.html research/ research.html feed.xml rss.xml robots.txt llms.txt llms-full.txt SEO-RANKING-REPORT.md TOP-5-BREAKTHROUGH-REPORT.md GEO-ANALYSIS.md package.json scripts/
+          git add data/ articles/ sitemap.xml sitemap-news.xml index.html research/ research.html feed.xml rss.xml robots.txt llms.txt llms-full.txt SEO-RANKING-REPORT.md TOP-5-BREAKTHROUGH-REPORT.md GEO-ANALYSIS.md GROWTH-TARGET-REPORT.md package.json scripts/ outreach/
 
           if git diff --staged --quiet; then
             echo "✅ No new ranking changes detected. Repository is already fully optimized."
           else
-            git commit -m "feat(seo-optimizer): autonomous daily SEO ranking enhancement & PageRank sync [skip ci]"
+            git commit -m "feat(growth-engine): strict growth acceleration, viral clusters & 1k target sync [skip ci]"
             git pull --rebase origin main || true
             git push origin main
-            echo "🎉 Successfully pushed SEO ranking optimizations to biogravity.space!"
+            echo "🎉 Successfully pushed strict growth optimizations to biogravity.space!"
           fi

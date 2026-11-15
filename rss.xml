@@ -5,7 +5,7 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2026 06:21:29 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 17:22:04 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>VLT and Keck recovery and characterisation of 2025: New Evidence in Space &amp; Astronomy</title>
@@ -996,6 +996,96 @@
       <dc:creator>Dr. Elena Vance</dc:creator>
       <description>Motivated by a recent experimental work arXiv:2608.20327, we theoretically investigate the nature of phase transitions in a trapped dipolar quantum gas upon tuning the contact interaction strength and dipole orientation. Using extended Gross-Pitaevskii simulations including therm.</description>
       <category>Microgravity Fluid Dynamics</category>
+    </item>
+    <item>
+      <title>Why Is Space Black If the Sun Is Shining? Olbers&apos; Paradox Explained</title>
+      <link>https://biogravity.space/articles/why-is-space-black-olbers-paradox</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/why-is-space-black-olbers-paradox</guid>
+      <pubDate>Sun, 15 Nov 2026 08:00:00 GMT</pubDate>
+      <dc:creator>Dr. Elena Vance</dc:creator>
+      <description>Why is outer space pitch black despite trillions of shining stars? Discover the empirical resolution to Olbers&apos; Paradox: the finite age of the universe, cosmic expansion, and cosmological redshift.</description>
+      <category>Astrophysics &amp; Cosmology</category>
+    </item>
+    <item>
+      <title>Can Humans Survive on Mars Without a Spacesuit? The First 60 Seconds</title>
+      <link>https://biogravity.space/articles/can-humans-survive-on-mars-without-a-spacesuit</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/can-humans-survive-on-mars-without-a-spacesuit</guid>
+      <pubDate>Sun, 15 Nov 2026 08:00:00 GMT</pubDate>
+      <dc:creator>Dr. Marcus Vance</dc:creator>
+      <description>What happens to the human body exposed to the Martian surface without a pressure suit? Explore the Armstrong limit, ebullism, hypoxic asphyxiation, and thermal shock.</description>
+      <category>Space Medicine &amp; Human Physiology</category>
+    </item>
+    <item>
+      <title>What Would Happen If the Moon Disappeared? The Gravitational Cataclysm</title>
+      <link>https://biogravity.space/articles/what-would-happen-if-the-moon-disappeared</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/what-would-happen-if-the-moon-disappeared</guid>
+      <pubDate>Sun, 15 Nov 2026 08:00:00 GMT</pubDate>
+      <dc:creator>Dr. Elena Vance</dc:creator>
+      <description>What would actually happen if the Moon suddenly vanished? Explore the loss of ocean tides, catastrophic axial tilt oscillations, mass extinctions, and extreme climate collapse.</description>
+      <category>Astrophysics &amp; Planetary Science</category>
+    </item>
+    <item>
+      <title>How Fast Does Gravity Travel? The Speed of Gravity vs Light Explained</title>
+      <link>https://biogravity.space/articles/how-fast-does-gravity-travel-speed-of-gravity</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/how-fast-does-gravity-travel-speed-of-gravity</guid>
+      <pubDate>Sun, 15 Nov 2026 08:00:00 GMT</pubDate>
+      <dc:creator>Dr. Elena Vance</dc:creator>
+      <description>Does gravity travel instantaneously or at the speed of light? Explore Einstein&apos;s general relativity, the historic LIGO discovery GW170817, and what would happen if the Sun vanished.</description>
+      <category>Astrophysics &amp; Cosmology</category>
+    </item>
+    <item>
+      <title>How Do Tardigrades Survive in Space? The Cryptobiosis Chemistry Explained</title>
+      <link>https://biogravity.space/articles/how-do-tardigrades-survive-in-the-vacuum-of-space</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/how-do-tardigrades-survive-in-the-vacuum-of-space</guid>
+      <pubDate>Sun, 15 Nov 2026 08:00:00 GMT</pubDate>
+      <dc:creator>Dr. Elena Vance</dc:creator>
+      <description>How can water bears survive absolute zero, intense solar UV radiation, and the cold vacuum of outer space? Unpack cryptobiosis, TDP vitrification, and the Dsup damage suppressor protein.</description>
+      <category>Space Medicine &amp; Human Physiology</category>
+    </item>
+    <item>
+      <title>Why Do Stars Twinkle but Planets Don&apos;t? The Optical Physics Explained</title>
+      <link>https://biogravity.space/articles/why-do-stars-twinkle-atmospheric-scintillation</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/why-do-stars-twinkle-atmospheric-scintillation</guid>
+      <pubDate>Sun, 15 Nov 2026 08:00:00 GMT</pubDate>
+      <dc:creator>Dr. Elena Vance</dc:creator>
+      <description>Why do stars shimmer and twinkle while planets shine with steady light? Discover the atmospheric optical physics behind astronomical scintillation, air temperature pockets, and angular diameters.</description>
+      <category>Astrophysics &amp; Optics</category>
+    </item>
+    <item>
+      <title>What Is the Coldest Temperature in the Universe? 1 Kelvin &amp; Absolute Zero</title>
+      <link>https://biogravity.space/articles/what-is-the-coldest-temperature-in-the-universe</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/what-is-the-coldest-temperature-in-the-universe</guid>
+      <pubDate>Sun, 15 Nov 2026 08:00:00 GMT</pubDate>
+      <dc:creator>Dr. Marcus Vance</dc:creator>
+      <description>What is the absolute coldest place in the cosmos? Explore the Boomerang Nebula at 1 Kelvin, the cosmic microwave background at 2.7K, and ISS picokelvin condensates.</description>
+      <category>Astrophysics &amp; Quantum Physics</category>
+    </item>
+    <item>
+      <title>What Is Inside a Neutron Star? Nuclear Pasta &amp; Quark Matter Explained</title>
+      <link>https://biogravity.space/articles/what-is-inside-a-neutron-star-nuclear-pasta</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/what-is-inside-a-neutron-star-nuclear-pasta</guid>
+      <pubDate>Sun, 15 Nov 2026 08:00:00 GMT</pubDate>
+      <dc:creator>Dr. Elena Vance</dc:creator>
+      <description>What lies beneath the diamond-hard iron crust of a neutron star? Unpack the bizarre physics of nuclear pasta, neutron superfluidity, and ultra-dense strange quark matter.</description>
+      <category>Astrophysics &amp; Quantum Physics</category>
+    </item>
+    <item>
+      <title>Why Can We Only See One Side of the Moon? Tidal Locking Explained</title>
+      <link>https://biogravity.space/articles/why-can-we-only-see-one-side-of-the-moon</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/why-can-we-only-see-one-side-of-the-moon</guid>
+      <pubDate>Sun, 15 Nov 2026 08:00:00 GMT</pubDate>
+      <dc:creator>Dr. Elena Vance</dc:creator>
+      <description>Why does the same face of the Moon always point toward Earth? Discover the orbital physics of tidal locking, gravitational braking, and the mysteries of the lunar far side.</description>
+      <category>Astrophysics &amp; Planetary Science</category>
+    </item>
+    <item>
+      <title>How Do Submarines Make Oxygen Underwater? Electrolysis Physics Explained</title>
+      <link>https://biogravity.space/articles/how-do-nuclear-submarines-make-oxygen-underwater</link>
+      <guid isPermaLink="true">https://biogravity.space/articles/how-do-nuclear-submarines-make-oxygen-underwater</guid>
+      <pubDate>Sun, 15 Nov 2026 08:00:00 GMT</pubDate>
+      <dc:creator>Dr. Marcus Vance</dc:creator>
+      <description>How do nuclear submarine crews breathe underwater for months without surfacing? Explore seawater electrolysis, monoethanolamine CO2 scrubbers, and emergency oxygen candles.</description>
+      <category>Chemical Physics &amp; Engineering</category>
     </item>
   </channel>
 </rss>
