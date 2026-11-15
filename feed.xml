@@ -5,8 +5,26 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Nov 2026 17:25:25 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 18:02:04 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Implementation of a 1D Gaussian-modulated CV-QKD under: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/implementation-of-a-1d-gaussian-modulated-cv-qkd-under-new</link>
+      <guid isPermaLink="true">https://biogravity.space/news/implementation-of-a-1d-gaussian-modulated-cv-qkd-under-new</guid>
+      <pubDate>Sun, 15 Nov 2026 18:01:59 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Implementation of a 1D Gaussian-modulated CV-QKD under: New Evidence in Quantum &amp; Physics: Continuous-variable quantum key distribution (CV-QKD) is a promising technology for quantum-secure communications, offering high secret-key rates and straightforward integration with coherent optical communication systems. Conventional Gaussian-modulated CV-QKD encodes information in both optical-field quadratures, increasing requirements for state preparation, modulation, and calibration, while potentially introducing additional preparation imperfections. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.17250v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
+    <item>
+      <title>Interactions from memory footprints: Cage-hopping,: New Evidence in Biophysics &amp; Genomics</title>
+      <link>https://biogravity.space/news/interactions-from-memory-footprints-cage-hopping-new-evidence-in</link>
+      <guid isPermaLink="true">https://biogravity.space/news/interactions-from-memory-footprints-cage-hopping-new-evidence-in</guid>
+      <pubDate>Sun, 15 Nov 2026 18:01:59 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Interactions from memory footprints: Cage-hopping,: New Evidence in Biophysics &amp; Genomics: Cellular motility is integral to biological processes ranging from foraging to immune responses and cancer metastasis. While cells often navigate by sensing pre-existing environmental cues, many actively steer their future trajectories by remodeling their surroundings via shared, long-lived physicochemical trails called memory footprints. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.17257v1).</description>
+      <category>Biophysics &amp; Genomics</category>
+    </item>
     <item>
       <title>Non-interferometric tests of gravitational decoherence: New Evidence in Quantum &amp; Physics</title>
       <link>https://biogravity.space/news/non-interferometric-tests-of-gravitational-decoherence-new</link>
