@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-15T10:01:08.376Z",
-  "totalUrls": 159,
+  "updatedAt": "2026-11-16T10:15:18.120Z",
+  "totalUrls": 175,
   "indexedCount": 112,
-  "notIndexedCount": 47,
-  "indexedPercentage": "70.4%",
-  "pushedToIndexingCount": 47,
+  "notIndexedCount": 63,
+  "indexedPercentage": "64.0%",
+  "pushedToIndexingCount": 63,
   "allFullyIndexed": false,
   "results": [
     {
@@ -94,6 +94,42 @@
       "verdict": "PASS",
       "coverage": "Submitted and indexed",
       "lastChecked": "2026-11-01T14:45:04.867Z"
+    },
+    {
+      "url": "https://biogravity.space/news/complex-fluid-flow-dynamics-by-bright-scattershot-new-evidence",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-16T10:15:17.400Z"
+    },
+    {
+      "url": "https://biogravity.space/news/real-time-simulation-of-scattering-in-4-theory-new-evidence-in",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-16T10:15:17.400Z"
+    },
+    {
+      "url": "https://biogravity.space/news/quantum-boltzmann-equation-for-static-correlation-with-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-16T10:15:17.400Z"
+    },
+    {
+      "url": "https://biogravity.space/news/programming-quantum-circuit-parameters-with-large-new-evidence",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-16T10:15:17.400Z"
+    },
+    {
+      "url": "https://biogravity.space/news/implementation-of-a-1d-gaussian-modulated-cv-qkd-under-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-16T10:15:17.400Z"
+    },
+    {
+      "url": "https://biogravity.space/news/interactions-from-memory-footprints-cage-hopping-new-evidence-in",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-16T10:15:17.400Z"
     },
     {
       "url": "https://biogravity.space/news/non-interferometric-tests-of-gravitational-decoherence-new",
@@ -1063,6 +1099,66 @@
       "status": "NOT_INDEXED",
       "coverage": "Discovered - newly submitted",
       "lastChecked": "2026-11-08T05:53:26.890Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/why-is-space-black-olbers-paradox",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-16T10:15:17.400Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/can-humans-survive-on-mars-without-a-spacesuit",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-16T10:15:17.400Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/what-would-happen-if-the-moon-disappeared",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-16T10:15:17.400Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/how-fast-does-gravity-travel-speed-of-gravity",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-16T10:15:17.400Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/how-do-tardigrades-survive-in-the-vacuum-of-space",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-16T10:15:17.400Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/why-do-stars-twinkle-atmospheric-scintillation",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-16T10:15:17.400Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/what-is-the-coldest-temperature-in-the-universe",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-16T10:15:17.400Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/what-is-inside-a-neutron-star-nuclear-pasta",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-16T10:15:17.400Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/why-can-we-only-see-one-side-of-the-moon",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-16T10:15:17.400Z"
+    },
+    {
+      "url": "https://biogravity.space/articles/how-do-nuclear-submarines-make-oxygen-underwater",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-16T10:15:17.400Z"
     }
   ]
 }
