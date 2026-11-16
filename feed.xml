@@ -5,8 +5,26 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Nov 2026 18:02:04 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 00:26:40 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Quantum Boltzmann Equation for Static Correlation with: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/quantum-boltzmann-equation-for-static-correlation-with-new</link>
+      <guid isPermaLink="true">https://biogravity.space/news/quantum-boltzmann-equation-for-static-correlation-with-new</guid>
+      <pubDate>Mon, 16 Nov 2026 00:26:37 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Quantum Boltzmann Equation for Static Correlation with: New Evidence in Quantum &amp; Physics: We present a Quantum Boltzmann Equation for static correlation by mapping the Bogoliubov-Born-Green-Kirkwood-Yvon hierarchy to discrete atomic-orbital matrix mechanics via the Wigner-Weyl isomorphism to evaluate scattering of the correlated two-body cumulant. This Quantum Boltzmann Equation converges to the active-space static correlation limit and preserves pure $N$-representability constraints during the kinetic relaxation. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.17245v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
+    <item>
+      <title>Programming Quantum Circuit Parameters with Large: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/programming-quantum-circuit-parameters-with-large-new-evidence</link>
+      <guid isPermaLink="true">https://biogravity.space/news/programming-quantum-circuit-parameters-with-large-new-evidence</guid>
+      <pubDate>Mon, 16 Nov 2026 00:26:37 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Programming Quantum Circuit Parameters with Large: New Evidence in Quantum &amp; Physics: Large language models (LLMs) have recently demonstrated the ability to generate parameters for variational quantum circuits without conventional optimization. However, the conditions under which this approach is effective remain unclear. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.17246v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
     <item>
       <title>Implementation of a 1D Gaussian-modulated CV-QKD under: New Evidence in Quantum &amp; Physics</title>
       <link>https://biogravity.space/news/implementation-of-a-1d-gaussian-modulated-cv-qkd-under-new</link>
