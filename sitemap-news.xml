@@ -2,6 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://biogravity.space/news/complex-fluid-flow-dynamics-by-bright-scattershot-new-evidence</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T10:13:20.620Z</news:publication_date>
+      <news:title>Complex fluid flow dynamics by bright scattershot: New Evidence in Quantum &amp; Physics</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/real-time-simulation-of-scattering-in-4-theory-new-evidence-in</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T10:13:20.604Z</news:publication_date>
+      <news:title>Real-time simulation of scattering in $φ^4$ theory:: New Evidence in Quantum &amp; Physics</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/quantum-boltzmann-equation-for-static-correlation-with-new</loc>
     <news:news>
       <news:publication>

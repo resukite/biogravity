@@ -98,6 +98,26 @@
 
   <!-- Live Science Dispatches (Google Discover & News Priority) -->
   <url>
+    <loc>https://biogravity.space/news/complex-fluid-flow-dynamics-by-bright-scattershot-new-evidence</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=10562238352</image:loc>
+      <image:title>Complex fluid flow dynamics by bright scattershot: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/real-time-simulation-of-scattering-in-4-theory-new-evidence-in</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=6824702401</image:loc>
+      <image:title>Real-time simulation of scattering in $φ^4$ theory:: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/quantum-boltzmann-equation-for-static-correlation-with-new</loc>
     <lastmod>2026-11-16</lastmod>
     <changefreq>daily</changefreq>
