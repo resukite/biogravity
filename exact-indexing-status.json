@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-16T10:15:18.120Z",
-  "totalUrls": 175,
+  "updatedAt": "2026-11-17T11:16:21.461Z",
+  "totalUrls": 177,
   "indexedCount": 112,
-  "notIndexedCount": 63,
-  "indexedPercentage": "64.0%",
-  "pushedToIndexingCount": 63,
+  "notIndexedCount": 65,
+  "indexedPercentage": "63.3%",
+  "pushedToIndexingCount": 65,
   "allFullyIndexed": false,
   "results": [
     {
@@ -94,6 +94,18 @@
       "verdict": "PASS",
       "coverage": "Submitted and indexed",
       "lastChecked": "2026-11-01T14:45:04.867Z"
+    },
+    {
+      "url": "https://biogravity.space/news/near-synchronous-multiphoton-quantum-interference-new-evidence",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-17T11:16:20.958Z"
+    },
+    {
+      "url": "https://biogravity.space/news/genuine-multipartite-entanglement-in-ring-shaped-new-evidence-in",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-17T11:16:20.958Z"
     },
     {
       "url": "https://biogravity.space/news/complex-fluid-flow-dynamics-by-bright-scattershot-new-evidence",
