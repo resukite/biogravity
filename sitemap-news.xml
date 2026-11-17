@@ -2,6 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://biogravity.space/news/near-synchronous-multiphoton-quantum-interference-new-evidence</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-17T05:19:02.824Z</news:publication_date>
+      <news:title>Near-synchronous multiphoton quantum interference: New Evidence in Quantum &amp; Physics</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/genuine-multipartite-entanglement-in-ring-shaped-new-evidence-in</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-17T05:19:02.809Z</news:publication_date>
+      <news:title>Genuine multipartite entanglement in ring-shaped: New Evidence in Quantum &amp; Physics</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/complex-fluid-flow-dynamics-by-bright-scattershot-new-evidence</loc>
     <news:news>
       <news:publication>
