@@ -2,6 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://biogravity.space/news/from-nonlocal-correlations-to-local-symmetry-breaking-new</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-18T04:46:45.425Z</news:publication_date>
+      <news:title>From nonlocal correlations to local symmetry breaking:: New Evidence in Quantum &amp; Physics</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/expressivity-of-two-dimensional-gaussian-fermion-new-evidence-in</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-18T04:46:45.409Z</news:publication_date>
+      <news:title>Expressivity of two-dimensional Gaussian fermion: New Evidence in Quantum &amp; Physics</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/scaling-of-impact-ripples-across-planetary-conditions-new</loc>
     <news:news>
       <news:publication>
