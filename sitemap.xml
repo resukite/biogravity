@@ -98,6 +98,26 @@
 
   <!-- Live Science Dispatches (Google Discover & News Priority) -->
   <url>
+    <loc>https://biogravity.space/news/modeling-quantum-information-scrambling-in-realistic-new</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=527848307</image:loc>
+      <image:title>Modeling quantum information scrambling in realistic: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/near-resonance-less-ordered-radius-and-mass-ordering-new</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=2846099487</image:loc>
+      <image:title>Near Resonance, Less Ordered: Radius and Mass Ordering: New Evidence in Space &amp; Astronomy</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/from-nonlocal-correlations-to-local-symmetry-breaking-new</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>daily</changefreq>

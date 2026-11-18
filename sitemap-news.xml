@@ -2,6 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://biogravity.space/news/modeling-quantum-information-scrambling-in-realistic-new</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-18T22:24:18.539Z</news:publication_date>
+      <news:title>Modeling quantum information scrambling in realistic: New Evidence in Quantum &amp; Physics</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/near-resonance-less-ordered-radius-and-mass-ordering-new</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-18T22:24:18.523Z</news:publication_date>
+      <news:title>Near Resonance, Less Ordered: Radius and Mass Ordering: New Evidence in Space &amp; Astronomy</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/from-nonlocal-correlations-to-local-symmetry-breaking-new</loc>
     <news:news>
       <news:publication>
