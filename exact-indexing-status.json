@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-17T11:16:21.461Z",
-  "totalUrls": 177,
+  "updatedAt": "2026-11-18T10:49:24.018Z",
+  "totalUrls": 183,
   "indexedCount": 112,
-  "notIndexedCount": 65,
-  "indexedPercentage": "63.3%",
-  "pushedToIndexingCount": 65,
+  "notIndexedCount": 71,
+  "indexedPercentage": "61.2%",
+  "pushedToIndexingCount": 71,
   "allFullyIndexed": false,
   "results": [
     {
@@ -94,6 +94,42 @@
       "verdict": "PASS",
       "coverage": "Submitted and indexed",
       "lastChecked": "2026-11-01T14:45:04.867Z"
+    },
+    {
+      "url": "https://biogravity.space/news/from-nonlocal-correlations-to-local-symmetry-breaking-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-18T10:49:23.685Z"
+    },
+    {
+      "url": "https://biogravity.space/news/expressivity-of-two-dimensional-gaussian-fermion-new-evidence-in",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-18T10:49:23.685Z"
+    },
+    {
+      "url": "https://biogravity.space/news/scaling-of-impact-ripples-across-planetary-conditions-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-18T10:49:23.685Z"
+    },
+    {
+      "url": "https://biogravity.space/news/resolving-and-suppressing-temporally-correlated-noise-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-18T10:49:23.685Z"
+    },
+    {
+      "url": "https://biogravity.space/news/compositions-of-exoplanetary-debris-shaped-by-milky-new-evidence",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-18T10:49:23.685Z"
+    },
+    {
+      "url": "https://biogravity.space/news/double-quantum-dots-as-dynamical-impurities-in-new-evidence-in",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-18T10:49:23.685Z"
     },
     {
       "url": "https://biogravity.space/news/near-synchronous-multiphoton-quantum-interference-new-evidence",

@@ -1,13 +1,13 @@
 # 🛰️ BioGravity Cloud Indexing Health Report
 
-> **Automated Cloud Run**: Tue, 17 Nov 2026 11:16:21 GMT  
-> **Total Canonical Pages**: 177  
-> **Google Indexation Progress**: **63.3%** (112 indexed / 65 in queue)  
+> **Automated Cloud Run**: Wed, 18 Nov 2026 10:49:24 GMT  
+> **Total Canonical Pages**: 183  
+> **Google Indexation Progress**: **61.2%** (112 indexed / 71 in queue)  
 > **Status**: ⚡ **Active Cloud Indexing Push Active**
 
 ## 🚀 Today's Indexing Actions
 
-- **Pushed to IndexNow (Bing/Yandex/Partners)**: 65 URLs
+- **Pushed to IndexNow (Bing/Yandex/Partners)**: 71 URLs
 - **Google Search Console Sitemap Ping**: Synchronized `sitemap.xml`
 - **Next Scheduled Run**: Automatically executes tomorrow at 03:00 UTC in GitHub Actions Cloud.
 
@@ -28,6 +28,12 @@
 | [`/molecular-biology-research`](https://biogravity.space/molecular-biology-research) | ✅ INDEXED | Discovered / Pending crawl | Today |
 | [`/microgravity-effects-on-human-body`](https://biogravity.space/microgravity-effects-on-human-body) | ✅ INDEXED | Submitted and indexed | 2026-11-08 |
 | [`/sitemap`](https://biogravity.space/sitemap) | ✅ INDEXED | Submitted and indexed | 2026-11-01 |
+| [`/news/from-nonlocal-correlations-to-local-symmetry-breaking-new`](https://biogravity.space/news/from-nonlocal-correlations-to-local-symmetry-breaking-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-18 |
+| [`/news/expressivity-of-two-dimensional-gaussian-fermion-new-evidence-in`](https://biogravity.space/news/expressivity-of-two-dimensional-gaussian-fermion-new-evidence-in) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-18 |
+| [`/news/scaling-of-impact-ripples-across-planetary-conditions-new`](https://biogravity.space/news/scaling-of-impact-ripples-across-planetary-conditions-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-18 |
+| [`/news/resolving-and-suppressing-temporally-correlated-noise-new`](https://biogravity.space/news/resolving-and-suppressing-temporally-correlated-noise-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-18 |
+| [`/news/compositions-of-exoplanetary-debris-shaped-by-milky-new-evidence`](https://biogravity.space/news/compositions-of-exoplanetary-debris-shaped-by-milky-new-evidence) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-18 |
+| [`/news/double-quantum-dots-as-dynamical-impurities-in-new-evidence-in`](https://biogravity.space/news/double-quantum-dots-as-dynamical-impurities-in-new-evidence-in) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-18 |
 | [`/news/near-synchronous-multiphoton-quantum-interference-new-evidence`](https://biogravity.space/news/near-synchronous-multiphoton-quantum-interference-new-evidence) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-17 |
 | [`/news/genuine-multipartite-entanglement-in-ring-shaped-new-evidence-in`](https://biogravity.space/news/genuine-multipartite-entanglement-in-ring-shaped-new-evidence-in) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-17 |
 | [`/news/complex-fluid-flow-dynamics-by-bright-scattershot-new-evidence`](https://biogravity.space/news/complex-fluid-flow-dynamics-by-bright-scattershot-new-evidence) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-16 |
