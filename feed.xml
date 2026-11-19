@@ -5,8 +5,26 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Nov 2026 14:45:18 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 22:29:29 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Quantum Simulation of First-Quantised Chemistry with a: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/quantum-simulation-of-first-quantised-chemistry-with-a-new</link>
+      <guid isPermaLink="true">https://biogravity.space/news/quantum-simulation-of-first-quantised-chemistry-with-a-new</guid>
+      <pubDate>Thu, 19 Nov 2026 22:29:26 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Quantum Simulation of First-Quantised Chemistry with a: New Evidence in Quantum &amp; Physics: Calculating molecular energies is expected to be an important application of quantum computers, but the most efficient algorithms to achieve this typically have significant space requirements. Scaling quantum processors to thousands of logical qubits is a daunting engineering challenge, so developing algorithms that run with reduced qubit requirements is of particular importance. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.24885v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
+    <item>
+      <title>CREST: A Hardware-Aware GNN-Based Framework for: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/crest-a-hardware-aware-gnn-based-framework-for-new-evidence-in</link>
+      <guid isPermaLink="true">https://biogravity.space/news/crest-a-hardware-aware-gnn-based-framework-for-new-evidence-in</guid>
+      <pubDate>Thu, 19 Nov 2026 22:29:26 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>CREST: A Hardware-Aware GNN-Based Framework for: New Evidence in Quantum &amp; Physics: Quantum compilation on superconducting processors requires selecting a connected execution region whose topology and calibrated properties suit the input circuit. This choice constrains subsequent routing and influences the noise encountered during execution, yet aggregate hardware-quality metrics alone may not reliably predict the execution fidelity of a given circuit. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.24886v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
     <item>
       <title>Residual-Algebraic Design of Symmetry-Preserving: New Evidence in Quantum &amp; Physics</title>
       <link>https://biogravity.space/news/residual-algebraic-design-of-symmetry-preserving-new-evidence-in</link>
