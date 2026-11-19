@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-18T10:49:24.018Z",
-  "totalUrls": 183,
+  "updatedAt": "2026-11-19T10:49:24.007Z",
+  "totalUrls": 187,
   "indexedCount": 112,
-  "notIndexedCount": 71,
-  "indexedPercentage": "61.2%",
-  "pushedToIndexingCount": 71,
+  "notIndexedCount": 75,
+  "indexedPercentage": "59.9%",
+  "pushedToIndexingCount": 75,
   "allFullyIndexed": false,
   "results": [
     {
@@ -94,6 +94,30 @@
       "verdict": "PASS",
       "coverage": "Submitted and indexed",
       "lastChecked": "2026-11-01T14:45:04.867Z"
+    },
+    {
+      "url": "https://biogravity.space/news/nonsecular-quantum-master-equation-with-detailed-new-evidence-in",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-19T10:49:23.227Z"
+    },
+    {
+      "url": "https://biogravity.space/news/residual-allan-stability-under-periodic-auxiliary-new-evidence",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-19T10:49:23.227Z"
+    },
+    {
+      "url": "https://biogravity.space/news/modeling-quantum-information-scrambling-in-realistic-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-19T10:49:23.227Z"
+    },
+    {
+      "url": "https://biogravity.space/news/near-resonance-less-ordered-radius-and-mass-ordering-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-19T10:49:23.227Z"
     },
     {
       "url": "https://biogravity.space/news/from-nonlocal-correlations-to-local-symmetry-breaking-new",
