@@ -5,8 +5,26 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Nov 2026 14:26:18 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 21:59:54 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>High-Accuracy Neural-Network Quantum States via: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/high-accuracy-neural-network-quantum-states-via-new-evidence-in</link>
+      <guid isPermaLink="true">https://biogravity.space/news/high-accuracy-neural-network-quantum-states-via-new-evidence-in</guid>
+      <pubDate>Fri, 20 Nov 2026 21:59:50 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>High-Accuracy Neural-Network Quantum States via: New Evidence in Quantum &amp; Physics: Neural-network quantum states (NQSs) exhibit a disparity in converging to the ground state during energy minimization: while the energy converges quadratically with the error in the variational wave function, other observables converge only linearly, which limits the accuracy of physical predictions. Here we show how to close this gap by introducing a new algorithm that improves the accuracy of NQSs. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.26587v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
+    <item>
+      <title>Scalable Simulation of Strongly Correlated Fermions: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/scalable-simulation-of-strongly-correlated-fermions-new-evidence</link>
+      <guid isPermaLink="true">https://biogravity.space/news/scalable-simulation-of-strongly-correlated-fermions-new-evidence</guid>
+      <pubDate>Fri, 20 Nov 2026 21:59:50 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Scalable Simulation of Strongly Correlated Fermions: New Evidence in Quantum &amp; Physics: Accurate simulations of strongly correlated electrons remain a central challenge in computational physics. We introduce neural-network Gaussian projected entangled-pair states (NN-GPEPS), which exploit the locally-entangled subspace of Gaussian states to give an architecture more compatible with modern neural networks and an exact contraction cost of $O(N^{3/2})$ on two-dimensional lattices. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.26604v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
     <item>
       <title>Fast, in-place, and ancilla-free quantum algorithms: New Evidence in Quantum &amp; Physics</title>
       <link>https://biogravity.space/news/fast-in-place-and-ancilla-free-quantum-algorithms-new-evidence</link>

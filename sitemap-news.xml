@@ -2,6 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://biogravity.space/news/high-accuracy-neural-network-quantum-states-via-new-evidence-in</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T21:59:50.170Z</news:publication_date>
+      <news:title>High-Accuracy Neural-Network Quantum States via: New Evidence in Quantum &amp; Physics</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/scalable-simulation-of-strongly-correlated-fermions-new-evidence</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T21:59:50.082Z</news:publication_date>
+      <news:title>Scalable Simulation of Strongly Correlated Fermions: New Evidence in Quantum &amp; Physics</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/fast-in-place-and-ancilla-free-quantum-algorithms-new-evidence</loc>
     <news:news>
       <news:publication>
