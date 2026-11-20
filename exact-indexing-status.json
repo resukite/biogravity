@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-19T10:49:24.007Z",
-  "totalUrls": 187,
+  "updatedAt": "2026-11-20T10:39:24.717Z",
+  "totalUrls": 193,
   "indexedCount": 112,
-  "notIndexedCount": 75,
-  "indexedPercentage": "59.9%",
-  "pushedToIndexingCount": 75,
+  "notIndexedCount": 81,
+  "indexedPercentage": "58.0%",
+  "pushedToIndexingCount": 81,
   "allFullyIndexed": false,
   "results": [
     {
@@ -94,6 +94,42 @@
       "verdict": "PASS",
       "coverage": "Submitted and indexed",
       "lastChecked": "2026-11-01T14:45:04.867Z"
+    },
+    {
+      "url": "https://biogravity.space/news/local-velocimetry-for-atomic-superfluids-from-riemann-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-20T10:39:24.286Z"
+    },
+    {
+      "url": "https://biogravity.space/news/high-temperature-gibbs-states-are-uniformly-markovian-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-20T10:39:24.286Z"
+    },
+    {
+      "url": "https://biogravity.space/news/quantum-simulation-of-first-quantised-chemistry-with-a-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-20T10:39:24.286Z"
+    },
+    {
+      "url": "https://biogravity.space/news/crest-a-hardware-aware-gnn-based-framework-for-new-evidence-in",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-20T10:39:24.286Z"
+    },
+    {
+      "url": "https://biogravity.space/news/residual-algebraic-design-of-symmetry-preserving-new-evidence-in",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-20T10:39:24.286Z"
+    },
+    {
+      "url": "https://biogravity.space/news/dressed-state-quantum-information-processing-using-a-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-20T10:39:24.286Z"
     },
     {
       "url": "https://biogravity.space/news/nonsecular-quantum-master-equation-with-detailed-new-evidence-in",

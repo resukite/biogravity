@@ -1,13 +1,13 @@
 # 🛰️ BioGravity Cloud Indexing Health Report
 
-> **Automated Cloud Run**: Thu, 19 Nov 2026 10:49:24 GMT  
-> **Total Canonical Pages**: 187  
-> **Google Indexation Progress**: **59.9%** (112 indexed / 75 in queue)  
+> **Automated Cloud Run**: Fri, 20 Nov 2026 10:39:24 GMT  
+> **Total Canonical Pages**: 193  
+> **Google Indexation Progress**: **58.0%** (112 indexed / 81 in queue)  
 > **Status**: ⚡ **Active Cloud Indexing Push Active**
 
 ## 🚀 Today's Indexing Actions
 
-- **Pushed to IndexNow (Bing/Yandex/Partners)**: 75 URLs
+- **Pushed to IndexNow (Bing/Yandex/Partners)**: 81 URLs
 - **Google Search Console Sitemap Ping**: Synchronized `sitemap.xml`
 - **Next Scheduled Run**: Automatically executes tomorrow at 03:00 UTC in GitHub Actions Cloud.
 
@@ -28,6 +28,12 @@
 | [`/molecular-biology-research`](https://biogravity.space/molecular-biology-research) | ✅ INDEXED | Discovered / Pending crawl | Today |
 | [`/microgravity-effects-on-human-body`](https://biogravity.space/microgravity-effects-on-human-body) | ✅ INDEXED | Submitted and indexed | 2026-11-08 |
 | [`/sitemap`](https://biogravity.space/sitemap) | ✅ INDEXED | Submitted and indexed | 2026-11-01 |
+| [`/news/local-velocimetry-for-atomic-superfluids-from-riemann-new`](https://biogravity.space/news/local-velocimetry-for-atomic-superfluids-from-riemann-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-20 |
+| [`/news/high-temperature-gibbs-states-are-uniformly-markovian-new`](https://biogravity.space/news/high-temperature-gibbs-states-are-uniformly-markovian-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-20 |
+| [`/news/quantum-simulation-of-first-quantised-chemistry-with-a-new`](https://biogravity.space/news/quantum-simulation-of-first-quantised-chemistry-with-a-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-20 |
+| [`/news/crest-a-hardware-aware-gnn-based-framework-for-new-evidence-in`](https://biogravity.space/news/crest-a-hardware-aware-gnn-based-framework-for-new-evidence-in) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-20 |
+| [`/news/residual-algebraic-design-of-symmetry-preserving-new-evidence-in`](https://biogravity.space/news/residual-algebraic-design-of-symmetry-preserving-new-evidence-in) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-20 |
+| [`/news/dressed-state-quantum-information-processing-using-a-new`](https://biogravity.space/news/dressed-state-quantum-information-processing-using-a-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-20 |
 | [`/news/nonsecular-quantum-master-equation-with-detailed-new-evidence-in`](https://biogravity.space/news/nonsecular-quantum-master-equation-with-detailed-new-evidence-in) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-19 |
 | [`/news/residual-allan-stability-under-periodic-auxiliary-new-evidence`](https://biogravity.space/news/residual-allan-stability-under-periodic-auxiliary-new-evidence) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-19 |
 | [`/news/modeling-quantum-information-scrambling-in-realistic-new`](https://biogravity.space/news/modeling-quantum-information-scrambling-in-realistic-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-19 |
