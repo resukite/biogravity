@@ -2,6 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://biogravity.space/news/local-velocimetry-for-atomic-superfluids-from-riemann-new</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T04:28:30.933Z</news:publication_date>
+      <news:title>Local velocimetry for atomic superfluids: from Riemann: New Evidence in Earth &amp; Geology</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/high-temperature-gibbs-states-are-uniformly-markovian-new</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-20T04:28:30.914Z</news:publication_date>
+      <news:title>High-temperature Gibbs states are uniformly Markovian: New Evidence in Biophysics &amp; Genomics</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/quantum-simulation-of-first-quantised-chemistry-with-a-new</loc>
     <news:news>
       <news:publication>

@@ -5,8 +5,26 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Nov 2026 22:29:29 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 04:28:36 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Local velocimetry for atomic superfluids: from Riemann: New Evidence in Earth &amp; Geology</title>
+      <link>https://biogravity.space/news/local-velocimetry-for-atomic-superfluids-from-riemann-new</link>
+      <guid isPermaLink="true">https://biogravity.space/news/local-velocimetry-for-atomic-superfluids-from-riemann-new</guid>
+      <pubDate>Fri, 20 Nov 2026 04:28:30 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Local velocimetry for atomic superfluids: from Riemann: New Evidence in Earth &amp; Geology: We demonstrate local velocimetry for atomic superfluids in two dimensions (2D). Using matter-wave interferometry based on Raman--Bragg beam splitters, we map the local gradient of the phase of the superfluid&apos;s wavefunction onto displacement of the interference fringes and reconstruct the 2D velocity field. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.26608v1).</description>
+      <category>Earth &amp; Geology</category>
+    </item>
+    <item>
+      <title>High-temperature Gibbs states are uniformly Markovian: New Evidence in Biophysics &amp; Genomics</title>
+      <link>https://biogravity.space/news/high-temperature-gibbs-states-are-uniformly-markovian-new</link>
+      <guid isPermaLink="true">https://biogravity.space/news/high-temperature-gibbs-states-are-uniformly-markovian-new</guid>
+      <pubDate>Fri, 20 Nov 2026 04:28:30 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>High-temperature Gibbs states are uniformly Markovian: New Evidence in Biophysics &amp; Genomics: We prove that, above a constant temperature threshold, Gibbs states of local noncommuting qudit Hamiltonians exhibit exponential decay of mutual information and conditional mutual information (CMI). Specifically, we prove exponential decay of the CMI for arbitrary spatial tripartitions $A \sqcup B \sqcup C$ which need not comprise the entire system, thereby establishing a \textit{uniform Markov property} for high-temperature Gibbs states. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.26626v1).</description>
+      <category>Biophysics &amp; Genomics</category>
+    </item>
     <item>
       <title>Quantum Simulation of First-Quantised Chemistry with a: New Evidence in Quantum &amp; Physics</title>
       <link>https://biogravity.space/news/quantum-simulation-of-first-quantised-chemistry-with-a-new</link>
