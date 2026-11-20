@@ -5,8 +5,26 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Nov 2026 04:28:36 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 14:26:18 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Fast, in-place, and ancilla-free quantum algorithms: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/fast-in-place-and-ancilla-free-quantum-algorithms-new-evidence</link>
+      <guid isPermaLink="true">https://biogravity.space/news/fast-in-place-and-ancilla-free-quantum-algorithms-new-evidence</guid>
+      <pubDate>Fri, 20 Nov 2026 14:26:13 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Fast, in-place, and ancilla-free quantum algorithms: New Evidence in Quantum &amp; Physics: Arithmetic operations are a fundamental building block in the design of quantum algorithms, with their implementation cost expected to have a significant impact on the viability of a wide variety of quantum applications. In this work, we present novel algorithms for a number of in-place quantum arithmetic operations that are highly efficient in terms of their space and gate count overheads compared to the current state-of-the-art. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.26605v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
+    <item>
+      <title>Query-Optimal Quantum Minimum Finding from Numerical: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/query-optimal-quantum-minimum-finding-from-numerical-new</link>
+      <guid isPermaLink="true">https://biogravity.space/news/query-optimal-quantum-minimum-finding-from-numerical-new</guid>
+      <pubDate>Fri, 20 Nov 2026 14:26:13 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Query-Optimal Quantum Minimum Finding from Numerical: New Evidence in Quantum &amp; Physics: We propose a quantum minimum-finding algorithm for objectives accessed via numerical estimators that avoids the logarithmic query overhead of amplifying the confidence of estimates before the search. A coherent estimator that is $\varepsilon$-accurate with probability at least $2/3$ on each of $N$ labels suffices to find a $2\varepsilon$-optimal label using $O(\sqrt N)$ base-estimator queries at constant confidence. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.26606v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
     <item>
       <title>Local velocimetry for atomic superfluids: from Riemann: New Evidence in Earth &amp; Geology</title>
       <link>https://biogravity.space/news/local-velocimetry-for-atomic-superfluids-from-riemann-new</link>
