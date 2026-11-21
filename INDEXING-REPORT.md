@@ -1,13 +1,13 @@
 # 🛰️ BioGravity Cloud Indexing Health Report
 
-> **Automated Cloud Run**: Fri, 20 Nov 2026 10:39:24 GMT  
-> **Total Canonical Pages**: 193  
-> **Google Indexation Progress**: **58.0%** (112 indexed / 81 in queue)  
+> **Automated Cloud Run**: Sat, 21 Nov 2026 10:21:57 GMT  
+> **Total Canonical Pages**: 199  
+> **Google Indexation Progress**: **56.3%** (112 indexed / 87 in queue)  
 > **Status**: ⚡ **Active Cloud Indexing Push Active**
 
 ## 🚀 Today's Indexing Actions
 
-- **Pushed to IndexNow (Bing/Yandex/Partners)**: 81 URLs
+- **Pushed to IndexNow (Bing/Yandex/Partners)**: 87 URLs
 - **Google Search Console Sitemap Ping**: Synchronized `sitemap.xml`
 - **Next Scheduled Run**: Automatically executes tomorrow at 03:00 UTC in GitHub Actions Cloud.
 
@@ -28,6 +28,12 @@
 | [`/molecular-biology-research`](https://biogravity.space/molecular-biology-research) | ✅ INDEXED | Discovered / Pending crawl | Today |
 | [`/microgravity-effects-on-human-body`](https://biogravity.space/microgravity-effects-on-human-body) | ✅ INDEXED | Submitted and indexed | 2026-11-08 |
 | [`/sitemap`](https://biogravity.space/sitemap) | ✅ INDEXED | Submitted and indexed | 2026-11-01 |
+| [`/news/activity-driven-motion-and-deformation-of-a-circular-new`](https://biogravity.space/news/activity-driven-motion-and-deformation-of-a-circular-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-21 |
+| [`/news/end-to-end-quantum-algorithm-for-differential-new-evidence-in`](https://biogravity.space/news/end-to-end-quantum-algorithm-for-differential-new-evidence-in) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-21 |
+| [`/news/high-accuracy-neural-network-quantum-states-via-new-evidence-in`](https://biogravity.space/news/high-accuracy-neural-network-quantum-states-via-new-evidence-in) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-21 |
+| [`/news/scalable-simulation-of-strongly-correlated-fermions-new-evidence`](https://biogravity.space/news/scalable-simulation-of-strongly-correlated-fermions-new-evidence) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-21 |
+| [`/news/fast-in-place-and-ancilla-free-quantum-algorithms-new-evidence`](https://biogravity.space/news/fast-in-place-and-ancilla-free-quantum-algorithms-new-evidence) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-21 |
+| [`/news/query-optimal-quantum-minimum-finding-from-numerical-new`](https://biogravity.space/news/query-optimal-quantum-minimum-finding-from-numerical-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-21 |
 | [`/news/local-velocimetry-for-atomic-superfluids-from-riemann-new`](https://biogravity.space/news/local-velocimetry-for-atomic-superfluids-from-riemann-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-20 |
 | [`/news/high-temperature-gibbs-states-are-uniformly-markovian-new`](https://biogravity.space/news/high-temperature-gibbs-states-are-uniformly-markovian-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-20 |
 | [`/news/quantum-simulation-of-first-quantised-chemistry-with-a-new`](https://biogravity.space/news/quantum-simulation-of-first-quantised-chemistry-with-a-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-20 |

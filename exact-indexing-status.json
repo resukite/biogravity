@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-20T10:39:24.717Z",
-  "totalUrls": 193,
+  "updatedAt": "2026-11-21T10:21:57.074Z",
+  "totalUrls": 199,
   "indexedCount": 112,
-  "notIndexedCount": 81,
-  "indexedPercentage": "58.0%",
-  "pushedToIndexingCount": 81,
+  "notIndexedCount": 87,
+  "indexedPercentage": "56.3%",
+  "pushedToIndexingCount": 87,
   "allFullyIndexed": false,
   "results": [
     {
@@ -94,6 +94,42 @@
       "verdict": "PASS",
       "coverage": "Submitted and indexed",
       "lastChecked": "2026-11-01T14:45:04.867Z"
+    },
+    {
+      "url": "https://biogravity.space/news/activity-driven-motion-and-deformation-of-a-circular-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-21T10:21:55.824Z"
+    },
+    {
+      "url": "https://biogravity.space/news/end-to-end-quantum-algorithm-for-differential-new-evidence-in",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-21T10:21:55.824Z"
+    },
+    {
+      "url": "https://biogravity.space/news/high-accuracy-neural-network-quantum-states-via-new-evidence-in",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-21T10:21:55.824Z"
+    },
+    {
+      "url": "https://biogravity.space/news/scalable-simulation-of-strongly-correlated-fermions-new-evidence",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-21T10:21:55.824Z"
+    },
+    {
+      "url": "https://biogravity.space/news/fast-in-place-and-ancilla-free-quantum-algorithms-new-evidence",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-21T10:21:55.824Z"
+    },
+    {
+      "url": "https://biogravity.space/news/query-optimal-quantum-minimum-finding-from-numerical-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-21T10:21:55.824Z"
     },
     {
       "url": "https://biogravity.space/news/local-velocimetry-for-atomic-superfluids-from-riemann-new",
