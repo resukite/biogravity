@@ -2,6 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://biogravity.space/news/classical-oracle-separation-of-qma-from-the-qcma-new-evidence-in</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T13:45:38.072Z</news:publication_date>
+      <news:title>Classical Oracle Separation of QMA from the QCMA: New Evidence in Quantum &amp; Physics</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/classically-trained-quantum-generative-models-with-new-evidence</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T13:45:38.053Z</news:publication_date>
+      <news:title>Classically Trained Quantum Generative Models with: New Evidence in Quantum &amp; Physics</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/activity-driven-motion-and-deformation-of-a-circular-new</loc>
     <news:news>
       <news:publication>
