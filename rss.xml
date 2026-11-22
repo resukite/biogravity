@@ -5,8 +5,26 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Nov 2026 00:43:51 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 10:24:21 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When the Noise Gets Noisy: Quantum Error Correction: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/when-the-noise-gets-noisy-quantum-error-correction-new-evidence</link>
+      <guid isPermaLink="true">https://biogravity.space/news/when-the-noise-gets-noisy-quantum-error-correction-new-evidence</guid>
+      <pubDate>Sun, 22 Nov 2026 10:24:18 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>When the Noise Gets Noisy: Quantum Error Correction: New Evidence in Quantum &amp; Physics: Experimental demonstrations of quantum error correction often exhibit noise that varies across space and time, and attempting to characterize this disorder has been shown to substantially improve decoding performance. However, theoretical studies of quantum error correction typically assume fixed, perfectly known, homogeneous noise. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.26506v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
+    <item>
+      <title>Hamiltonian Stabilization of the Two-Photon Dicke Model: New Evidence in Biophysics &amp; Genomics</title>
+      <link>https://biogravity.space/news/hamiltonian-stabilization-of-the-two-photon-dicke-model-new</link>
+      <guid isPermaLink="true">https://biogravity.space/news/hamiltonian-stabilization-of-the-two-photon-dicke-model-new</guid>
+      <pubDate>Sun, 22 Nov 2026 10:24:18 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Hamiltonian Stabilization of the Two-Photon Dicke Model: New Evidence in Biophysics &amp; Genomics: Collective two-photon light--matter interactions enable pair amplification but can destroy spectral confinement, preventing a stable thermodynamic bright phase. We show that a positive Kac-scaled number-Kerr interaction renders the two-photon Dicke Hamiltonian of \(N\) emitters lower-bounded at all couplings while preserving its generalized \(\mathbb Z_4\) symmetry. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.26523v1).</description>
+      <category>Biophysics &amp; Genomics</category>
+    </item>
     <item>
       <title>The design of sequential quantum repeaters with error: New Evidence in Quantum &amp; Physics</title>
       <link>https://biogravity.space/news/the-design-of-sequential-quantum-repeaters-with-error-new</link>

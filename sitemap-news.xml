@@ -2,6 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://biogravity.space/news/when-the-noise-gets-noisy-quantum-error-correction-new-evidence</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T10:24:18.247Z</news:publication_date>
+      <news:title>When the Noise Gets Noisy: Quantum Error Correction: New Evidence in Quantum &amp; Physics</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/hamiltonian-stabilization-of-the-two-photon-dicke-model-new</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T10:24:18.235Z</news:publication_date>
+      <news:title>Hamiltonian Stabilization of the Two-Photon Dicke Model: New Evidence in Biophysics &amp; Genomics</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/the-design-of-sequential-quantum-repeaters-with-error-new</loc>
     <news:news>
       <news:publication>
