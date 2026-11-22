@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-21T10:21:57.074Z",
-  "totalUrls": 199,
+  "updatedAt": "2026-11-22T10:25:49.758Z",
+  "totalUrls": 207,
   "indexedCount": 112,
-  "notIndexedCount": 87,
-  "indexedPercentage": "56.3%",
-  "pushedToIndexingCount": 87,
+  "notIndexedCount": 95,
+  "indexedPercentage": "54.1%",
+  "pushedToIndexingCount": 95,
   "allFullyIndexed": false,
   "results": [
     {
@@ -94,6 +94,54 @@
       "verdict": "PASS",
       "coverage": "Submitted and indexed",
       "lastChecked": "2026-11-01T14:45:04.867Z"
+    },
+    {
+      "url": "https://biogravity.space/news/when-the-noise-gets-noisy-quantum-error-correction-new-evidence",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-22T10:25:49.125Z"
+    },
+    {
+      "url": "https://biogravity.space/news/hamiltonian-stabilization-of-the-two-photon-dicke-model-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-22T10:25:49.125Z"
+    },
+    {
+      "url": "https://biogravity.space/news/the-design-of-sequential-quantum-repeaters-with-error-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-22T10:25:49.125Z"
+    },
+    {
+      "url": "https://biogravity.space/news/authenticating-quantum-key-distribution-through-random-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-22T10:25:49.125Z"
+    },
+    {
+      "url": "https://biogravity.space/news/nonlinearly-causal-general-relativistic-superfluid-new-evidence",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-22T10:25:49.125Z"
+    },
+    {
+      "url": "https://biogravity.space/news/demographic-inference-in-exoplanet-chemistry-is-shaped-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-22T10:25:49.125Z"
+    },
+    {
+      "url": "https://biogravity.space/news/classical-oracle-separation-of-qma-from-the-qcma-new-evidence-in",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-22T10:25:49.125Z"
+    },
+    {
+      "url": "https://biogravity.space/news/classically-trained-quantum-generative-models-with-new-evidence",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-22T10:25:49.125Z"
     },
     {
       "url": "https://biogravity.space/news/activity-driven-motion-and-deformation-of-a-circular-new",

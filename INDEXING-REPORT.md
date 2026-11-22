@@ -1,13 +1,13 @@
 # 🛰️ BioGravity Cloud Indexing Health Report
 
-> **Automated Cloud Run**: Sat, 21 Nov 2026 10:21:57 GMT  
-> **Total Canonical Pages**: 199  
-> **Google Indexation Progress**: **56.3%** (112 indexed / 87 in queue)  
+> **Automated Cloud Run**: Sun, 22 Nov 2026 10:25:49 GMT  
+> **Total Canonical Pages**: 207  
+> **Google Indexation Progress**: **54.1%** (112 indexed / 95 in queue)  
 > **Status**: ⚡ **Active Cloud Indexing Push Active**
 
 ## 🚀 Today's Indexing Actions
 
-- **Pushed to IndexNow (Bing/Yandex/Partners)**: 87 URLs
+- **Pushed to IndexNow (Bing/Yandex/Partners)**: 95 URLs
 - **Google Search Console Sitemap Ping**: Synchronized `sitemap.xml`
 - **Next Scheduled Run**: Automatically executes tomorrow at 03:00 UTC in GitHub Actions Cloud.
 
@@ -28,6 +28,14 @@
 | [`/molecular-biology-research`](https://biogravity.space/molecular-biology-research) | ✅ INDEXED | Discovered / Pending crawl | Today |
 | [`/microgravity-effects-on-human-body`](https://biogravity.space/microgravity-effects-on-human-body) | ✅ INDEXED | Submitted and indexed | 2026-11-08 |
 | [`/sitemap`](https://biogravity.space/sitemap) | ✅ INDEXED | Submitted and indexed | 2026-11-01 |
+| [`/news/when-the-noise-gets-noisy-quantum-error-correction-new-evidence`](https://biogravity.space/news/when-the-noise-gets-noisy-quantum-error-correction-new-evidence) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-22 |
+| [`/news/hamiltonian-stabilization-of-the-two-photon-dicke-model-new`](https://biogravity.space/news/hamiltonian-stabilization-of-the-two-photon-dicke-model-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-22 |
+| [`/news/the-design-of-sequential-quantum-repeaters-with-error-new`](https://biogravity.space/news/the-design-of-sequential-quantum-repeaters-with-error-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-22 |
+| [`/news/authenticating-quantum-key-distribution-through-random-new`](https://biogravity.space/news/authenticating-quantum-key-distribution-through-random-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-22 |
+| [`/news/nonlinearly-causal-general-relativistic-superfluid-new-evidence`](https://biogravity.space/news/nonlinearly-causal-general-relativistic-superfluid-new-evidence) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-22 |
+| [`/news/demographic-inference-in-exoplanet-chemistry-is-shaped-new`](https://biogravity.space/news/demographic-inference-in-exoplanet-chemistry-is-shaped-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-22 |
+| [`/news/classical-oracle-separation-of-qma-from-the-qcma-new-evidence-in`](https://biogravity.space/news/classical-oracle-separation-of-qma-from-the-qcma-new-evidence-in) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-22 |
+| [`/news/classically-trained-quantum-generative-models-with-new-evidence`](https://biogravity.space/news/classically-trained-quantum-generative-models-with-new-evidence) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-22 |
 | [`/news/activity-driven-motion-and-deformation-of-a-circular-new`](https://biogravity.space/news/activity-driven-motion-and-deformation-of-a-circular-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-21 |
 | [`/news/end-to-end-quantum-algorithm-for-differential-new-evidence-in`](https://biogravity.space/news/end-to-end-quantum-algorithm-for-differential-new-evidence-in) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-21 |
 | [`/news/high-accuracy-neural-network-quantum-states-via-new-evidence-in`](https://biogravity.space/news/high-accuracy-neural-network-quantum-states-via-new-evidence-in) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-21 |
