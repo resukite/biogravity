@@ -98,6 +98,26 @@
 
   <!-- Live Science Dispatches (Google Discover & News Priority) -->
   <url>
+    <loc>https://biogravity.space/news/lagrangian-transport-driven-by-travelling-waves-in-a-new</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=673778054</image:loc>
+      <image:title>Lagrangian transport driven by travelling waves in a: New Evidence in Advanced Physics &amp; Deep Science</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/optimal-error-corrected-hamiltonian-estimation-with-new-evidence</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=3734561744</image:loc>
+      <image:title>Optimal Error corrected Hamiltonian estimation with: New Evidence in Quantum &amp; Physics</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/when-the-noise-gets-noisy-quantum-error-correction-new-evidence</loc>
     <lastmod>2026-11-22</lastmod>
     <changefreq>daily</changefreq>
