@@ -5,8 +5,26 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Nov 2026 20:41:36 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 00:43:51 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>The design of sequential quantum repeaters with error: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/the-design-of-sequential-quantum-repeaters-with-error-new</link>
+      <guid isPermaLink="true">https://biogravity.space/news/the-design-of-sequential-quantum-repeaters-with-error-new</guid>
+      <pubDate>Sun, 22 Nov 2026 00:43:46 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>The design of sequential quantum repeaters with error: New Evidence in Quantum &amp; Physics: Long-distance, trust-free quantum communications rely on the development of scalable quantum repeater schemes. Sequential entanglement generation with error detection is a promising approach that combines manageable implementation requirements with a hop-by-hop architecture compatible with existing classical infrastructure. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.26537v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
+    <item>
+      <title>Authenticating quantum key distribution through random: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/authenticating-quantum-key-distribution-through-random-new</link>
+      <guid isPermaLink="true">https://biogravity.space/news/authenticating-quantum-key-distribution-through-random-new</guid>
+      <pubDate>Sun, 22 Nov 2026 00:43:46 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Authenticating quantum key distribution through random: New Evidence in Quantum &amp; Physics: Quantum key distribution (QKD) requires some form of authentication in order for the parties to be sure they are not unknowingly generating a key with an adversary pretending to be one of the honest parties. In this work, we propose a protocol in which the position of one of the parties is used as the authentication credential for key distribution. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.26542v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
     <item>
       <title>Nonlinearly Causal General-Relativistic Superfluid: New Evidence in Space &amp; Astronomy</title>
       <link>https://biogravity.space/news/nonlinearly-causal-general-relativistic-superfluid-new-evidence</link>
