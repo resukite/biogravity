@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-22T10:25:49.758Z",
-  "totalUrls": 207,
+  "updatedAt": "2026-11-23T11:24:53.176Z",
+  "totalUrls": 211,
   "indexedCount": 112,
-  "notIndexedCount": 95,
-  "indexedPercentage": "54.1%",
-  "pushedToIndexingCount": 95,
+  "notIndexedCount": 99,
+  "indexedPercentage": "53.1%",
+  "pushedToIndexingCount": 99,
   "allFullyIndexed": false,
   "results": [
     {
@@ -94,6 +94,30 @@
       "verdict": "PASS",
       "coverage": "Submitted and indexed",
       "lastChecked": "2026-11-01T14:45:04.867Z"
+    },
+    {
+      "url": "https://biogravity.space/news/nonperturbative-bounds-on-the-ground-state-energy-of-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-23T11:24:52.539Z"
+    },
+    {
+      "url": "https://biogravity.space/news/quantum-many-body-scars-from-operator-size-new-evidence-in",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-23T11:24:52.539Z"
+    },
+    {
+      "url": "https://biogravity.space/news/lagrangian-transport-driven-by-travelling-waves-in-a-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-23T11:24:52.539Z"
+    },
+    {
+      "url": "https://biogravity.space/news/optimal-error-corrected-hamiltonian-estimation-with-new-evidence",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-23T11:24:52.539Z"
     },
     {
       "url": "https://biogravity.space/news/when-the-noise-gets-noisy-quantum-error-correction-new-evidence",

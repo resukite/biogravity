@@ -1,13 +1,13 @@
 # 🛰️ BioGravity Cloud Indexing Health Report
 
-> **Automated Cloud Run**: Sun, 22 Nov 2026 10:25:49 GMT  
-> **Total Canonical Pages**: 207  
-> **Google Indexation Progress**: **54.1%** (112 indexed / 95 in queue)  
+> **Automated Cloud Run**: Mon, 23 Nov 2026 11:24:53 GMT  
+> **Total Canonical Pages**: 211  
+> **Google Indexation Progress**: **53.1%** (112 indexed / 99 in queue)  
 > **Status**: ⚡ **Active Cloud Indexing Push Active**
 
 ## 🚀 Today's Indexing Actions
 
-- **Pushed to IndexNow (Bing/Yandex/Partners)**: 95 URLs
+- **Pushed to IndexNow (Bing/Yandex/Partners)**: 99 URLs
 - **Google Search Console Sitemap Ping**: Synchronized `sitemap.xml`
 - **Next Scheduled Run**: Automatically executes tomorrow at 03:00 UTC in GitHub Actions Cloud.
 
@@ -28,6 +28,10 @@
 | [`/molecular-biology-research`](https://biogravity.space/molecular-biology-research) | ✅ INDEXED | Discovered / Pending crawl | Today |
 | [`/microgravity-effects-on-human-body`](https://biogravity.space/microgravity-effects-on-human-body) | ✅ INDEXED | Submitted and indexed | 2026-11-08 |
 | [`/sitemap`](https://biogravity.space/sitemap) | ✅ INDEXED | Submitted and indexed | 2026-11-01 |
+| [`/news/nonperturbative-bounds-on-the-ground-state-energy-of-new`](https://biogravity.space/news/nonperturbative-bounds-on-the-ground-state-energy-of-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-23 |
+| [`/news/quantum-many-body-scars-from-operator-size-new-evidence-in`](https://biogravity.space/news/quantum-many-body-scars-from-operator-size-new-evidence-in) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-23 |
+| [`/news/lagrangian-transport-driven-by-travelling-waves-in-a-new`](https://biogravity.space/news/lagrangian-transport-driven-by-travelling-waves-in-a-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-23 |
+| [`/news/optimal-error-corrected-hamiltonian-estimation-with-new-evidence`](https://biogravity.space/news/optimal-error-corrected-hamiltonian-estimation-with-new-evidence) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-23 |
 | [`/news/when-the-noise-gets-noisy-quantum-error-correction-new-evidence`](https://biogravity.space/news/when-the-noise-gets-noisy-quantum-error-correction-new-evidence) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-22 |
 | [`/news/hamiltonian-stabilization-of-the-two-photon-dicke-model-new`](https://biogravity.space/news/hamiltonian-stabilization-of-the-two-photon-dicke-model-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-22 |
 | [`/news/the-design-of-sequential-quantum-repeaters-with-error-new`](https://biogravity.space/news/the-design-of-sequential-quantum-repeaters-with-error-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-22 |
