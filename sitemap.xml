@@ -98,6 +98,26 @@
 
   <!-- Live Science Dispatches (Google Discover & News Priority) -->
   <url>
+    <loc>https://biogravity.space/news/microwave-photonics-formulation-of-the-rydberg-atom-new-evidence</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=639610537</image:loc>
+      <image:title>Microwave-Photonics Formulation of the Rydberg-Atom: New Evidence in Biophysics &amp; Genomics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/receptor-abundance-alone-underpredicts-red-blood-cell-new</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=85&amp;hsh=5863375498</image:loc>
+      <image:title>Receptor Abundance Alone Underpredicts Red Blood Cell: New Evidence in Biophysics &amp; Genomics</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/nonperturbative-bounds-on-the-ground-state-energy-of-new</loc>
     <lastmod>2026-11-23</lastmod>
     <changefreq>daily</changefreq>
