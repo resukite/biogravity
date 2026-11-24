@@ -5,8 +5,26 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Nov 2026 22:57:12 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 07:10:12 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Simple design of adaptive protocols for quantum: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/simple-design-of-adaptive-protocols-for-quantum-new-evidence-in</link>
+      <guid isPermaLink="true">https://biogravity.space/news/simple-design-of-adaptive-protocols-for-quantum-new-evidence-in</guid>
+      <pubDate>Tue, 24 Nov 2026 07:10:07 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Simple design of adaptive protocols for quantum: New Evidence in Quantum &amp; Physics: Recent sensing experiments have used a Bayesian notion of precision gain to adapt control parameters for fixed measurements. Here, we advocate a simple design principle based on Personick&apos;s minimum mean square loss formalism to extend this procedure in order to include measurement optimisation, determining the optimal measurement for each probe and providing a prior-dependent precision gain to optimise the probe itself. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.31230v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
+    <item>
+      <title>Two messages suffice for quantum interactive proof systems: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/two-messages-suffice-for-quantum-interactive-proof-systems-new</link>
+      <guid isPermaLink="true">https://biogravity.space/news/two-messages-suffice-for-quantum-interactive-proof-systems-new</guid>
+      <pubDate>Tue, 24 Nov 2026 07:10:07 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Two messages suffice for quantum interactive proof systems: New Evidence in Quantum &amp; Physics: Quantum interactive proof systems can be parallelized to three messages, as shown by Kitaev and Watrous (STOC 2000), perhaps their most striking distinction from classical counterparts. In this work, we establish that any quantum interactive proof system can further be parallelized to two messages, with the verifier sending halves of EPR pairs (``quantum public coins&apos;&apos;) and, after the prover&apos;s response, using only stoquastic verification. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.31236v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
     <item>
       <title>Microwave-Photonics Formulation of the Rydberg-Atom: New Evidence in Biophysics &amp; Genomics</title>
       <link>https://biogravity.space/news/microwave-photonics-formulation-of-the-rydberg-atom-new-evidence</link>
