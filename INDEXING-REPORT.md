@@ -1,13 +1,13 @@
 # 🛰️ BioGravity Cloud Indexing Health Report
 
-> **Automated Cloud Run**: Mon, 23 Nov 2026 11:24:53 GMT  
-> **Total Canonical Pages**: 211  
-> **Google Indexation Progress**: **53.1%** (112 indexed / 99 in queue)  
+> **Automated Cloud Run**: Tue, 24 Nov 2026 12:59:44 GMT  
+> **Total Canonical Pages**: 215  
+> **Google Indexation Progress**: **52.1%** (112 indexed / 103 in queue)  
 > **Status**: ⚡ **Active Cloud Indexing Push Active**
 
 ## 🚀 Today's Indexing Actions
 
-- **Pushed to IndexNow (Bing/Yandex/Partners)**: 99 URLs
+- **Pushed to IndexNow (Bing/Yandex/Partners)**: 103 URLs
 - **Google Search Console Sitemap Ping**: Synchronized `sitemap.xml`
 - **Next Scheduled Run**: Automatically executes tomorrow at 03:00 UTC in GitHub Actions Cloud.
 
@@ -28,6 +28,10 @@
 | [`/molecular-biology-research`](https://biogravity.space/molecular-biology-research) | ✅ INDEXED | Discovered / Pending crawl | Today |
 | [`/microgravity-effects-on-human-body`](https://biogravity.space/microgravity-effects-on-human-body) | ✅ INDEXED | Submitted and indexed | 2026-11-08 |
 | [`/sitemap`](https://biogravity.space/sitemap) | ✅ INDEXED | Submitted and indexed | 2026-11-01 |
+| [`/news/simple-design-of-adaptive-protocols-for-quantum-new-evidence-in`](https://biogravity.space/news/simple-design-of-adaptive-protocols-for-quantum-new-evidence-in) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-24 |
+| [`/news/two-messages-suffice-for-quantum-interactive-proof-systems-new`](https://biogravity.space/news/two-messages-suffice-for-quantum-interactive-proof-systems-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-24 |
+| [`/news/microwave-photonics-formulation-of-the-rydberg-atom-new-evidence`](https://biogravity.space/news/microwave-photonics-formulation-of-the-rydberg-atom-new-evidence) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-24 |
+| [`/news/receptor-abundance-alone-underpredicts-red-blood-cell-new`](https://biogravity.space/news/receptor-abundance-alone-underpredicts-red-blood-cell-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-24 |
 | [`/news/nonperturbative-bounds-on-the-ground-state-energy-of-new`](https://biogravity.space/news/nonperturbative-bounds-on-the-ground-state-energy-of-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-23 |
 | [`/news/quantum-many-body-scars-from-operator-size-new-evidence-in`](https://biogravity.space/news/quantum-many-body-scars-from-operator-size-new-evidence-in) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-23 |
 | [`/news/lagrangian-transport-driven-by-travelling-waves-in-a-new`](https://biogravity.space/news/lagrangian-transport-driven-by-travelling-waves-in-a-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-23 |

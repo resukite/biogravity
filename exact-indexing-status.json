@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-23T11:24:53.176Z",
-  "totalUrls": 211,
+  "updatedAt": "2026-11-24T12:59:44.996Z",
+  "totalUrls": 215,
   "indexedCount": 112,
-  "notIndexedCount": 99,
-  "indexedPercentage": "53.1%",
-  "pushedToIndexingCount": 99,
+  "notIndexedCount": 103,
+  "indexedPercentage": "52.1%",
+  "pushedToIndexingCount": 103,
   "allFullyIndexed": false,
   "results": [
     {
@@ -94,6 +94,30 @@
       "verdict": "PASS",
       "coverage": "Submitted and indexed",
       "lastChecked": "2026-11-01T14:45:04.867Z"
+    },
+    {
+      "url": "https://biogravity.space/news/simple-design-of-adaptive-protocols-for-quantum-new-evidence-in",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-24T12:59:44.540Z"
+    },
+    {
+      "url": "https://biogravity.space/news/two-messages-suffice-for-quantum-interactive-proof-systems-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-24T12:59:44.540Z"
+    },
+    {
+      "url": "https://biogravity.space/news/microwave-photonics-formulation-of-the-rydberg-atom-new-evidence",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-24T12:59:44.540Z"
+    },
+    {
+      "url": "https://biogravity.space/news/receptor-abundance-alone-underpredicts-red-blood-cell-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-24T12:59:44.540Z"
     },
     {
       "url": "https://biogravity.space/news/nonperturbative-bounds-on-the-ground-state-energy-of-new",
