@@ -2,6 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://biogravity.space/news/vlt-keck-and-gemini-characterization-of-the-new-evidence-in</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-24T19:44:39.126Z</news:publication_date>
+      <news:title>VLT, Keck, and Gemini characterization of the: New Evidence in Space &amp; Astronomy</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/small-world-networks-yield-tunable-quantum-codes-at-new-evidence</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-24T19:44:39.111Z</news:publication_date>
+      <news:title>Small-world networks yield tunable quantum codes at: New Evidence in Quantum &amp; Physics</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/simple-design-of-adaptive-protocols-for-quantum-new-evidence-in</loc>
     <news:news>
       <news:publication>
