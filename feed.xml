@@ -5,8 +5,26 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Nov 2026 19:44:42 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 03:50:03 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Thermal state preparation with shallow quantum circuits: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/thermal-state-preparation-with-shallow-quantum-circuits-new</link>
+      <guid isPermaLink="true">https://biogravity.space/news/thermal-state-preparation-with-shallow-quantum-circuits-new</guid>
+      <pubDate>Wed, 25 Nov 2026 03:49:58 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Thermal state preparation with shallow quantum circuits: New Evidence in Quantum &amp; Physics: Preparing thermal states on noisy quantum hardware requires circuits that remain shallow at low temperatures. Even when accurate classical state representations are available, compiling them into suitable circuits can be costly. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.32388v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
+    <item>
+      <title>Second-order asymptotics for the quantum and private: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/second-order-asymptotics-for-the-quantum-and-private-new</link>
+      <guid isPermaLink="true">https://biogravity.space/news/second-order-asymptotics-for-the-quantum-and-private-new</guid>
+      <pubDate>Wed, 25 Nov 2026 03:49:58 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Second-order asymptotics for the quantum and private: New Evidence in Quantum &amp; Physics: An erasure channel either delivers a quantum system intact or tells the receiver that it was lost. How much quantum information, or secret classical information, can a finite block transmit without assistance? Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.32395v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
     <item>
       <title>VLT, Keck, and Gemini characterization of the: New Evidence in Space &amp; Astronomy</title>
       <link>https://biogravity.space/news/vlt-keck-and-gemini-characterization-of-the-new-evidence-in</link>
