@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-24T12:59:44.996Z",
-  "totalUrls": 215,
+  "updatedAt": "2026-11-25T11:49:53.660Z",
+  "totalUrls": 219,
   "indexedCount": 112,
-  "notIndexedCount": 103,
-  "indexedPercentage": "52.1%",
-  "pushedToIndexingCount": 103,
+  "notIndexedCount": 107,
+  "indexedPercentage": "51.1%",
+  "pushedToIndexingCount": 107,
   "allFullyIndexed": false,
   "results": [
     {
@@ -94,6 +94,30 @@
       "verdict": "PASS",
       "coverage": "Submitted and indexed",
       "lastChecked": "2026-11-01T14:45:04.867Z"
+    },
+    {
+      "url": "https://biogravity.space/news/thermal-state-preparation-with-shallow-quantum-circuits-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-25T11:49:53.329Z"
+    },
+    {
+      "url": "https://biogravity.space/news/second-order-asymptotics-for-the-quantum-and-private-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-25T11:49:53.329Z"
+    },
+    {
+      "url": "https://biogravity.space/news/vlt-keck-and-gemini-characterization-of-the-new-evidence-in",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-25T11:49:53.329Z"
+    },
+    {
+      "url": "https://biogravity.space/news/small-world-networks-yield-tunable-quantum-codes-at-new-evidence",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-25T11:49:53.329Z"
     },
     {
       "url": "https://biogravity.space/news/simple-design-of-adaptive-protocols-for-quantum-new-evidence-in",
