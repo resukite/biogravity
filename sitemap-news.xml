@@ -2,6 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://biogravity.space/news/anomalies-and-the-berry-phase-from-0-to-to-the-new-evidence-in</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T01:12:12.030Z</news:publication_date>
+      <news:title>Anomalies and the Berry Phase: From $π^0\toγγ$ to the: New Evidence in Quantum &amp; Physics</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/classical-algorithms-for-sparse-random-hamiltonians-new-evidence</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T01:12:12.011Z</news:publication_date>
+      <news:title>Classical algorithms for sparse random Hamiltonians: New Evidence in Quantum &amp; Physics</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/koashi-imoto-criterion-for-holevo-rate-visible-new-evidence-in</loc>
     <news:news>
       <news:publication>
