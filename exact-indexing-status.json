@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-25T11:49:53.660Z",
-  "totalUrls": 219,
+  "updatedAt": "2026-11-26T11:37:05.033Z",
+  "totalUrls": 225,
   "indexedCount": 112,
-  "notIndexedCount": 107,
-  "indexedPercentage": "51.1%",
-  "pushedToIndexingCount": 107,
+  "notIndexedCount": 113,
+  "indexedPercentage": "49.8%",
+  "pushedToIndexingCount": 113,
   "allFullyIndexed": false,
   "results": [
     {
@@ -94,6 +94,42 @@
       "verdict": "PASS",
       "coverage": "Submitted and indexed",
       "lastChecked": "2026-11-01T14:45:04.867Z"
+    },
+    {
+      "url": "https://biogravity.space/news/bound-entanglement-with-negative-partial-transpose-exists-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-26T11:37:04.467Z"
+    },
+    {
+      "url": "https://biogravity.space/news/vacuum-correlation-measures-as-cft-partition-functions-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-26T11:37:04.467Z"
+    },
+    {
+      "url": "https://biogravity.space/news/anomalies-and-the-berry-phase-from-0-to-to-the-new-evidence-in",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-26T11:37:04.467Z"
+    },
+    {
+      "url": "https://biogravity.space/news/classical-algorithms-for-sparse-random-hamiltonians-new-evidence",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-26T11:37:04.467Z"
+    },
+    {
+      "url": "https://biogravity.space/news/koashi-imoto-criterion-for-holevo-rate-visible-new-evidence-in",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-26T11:37:04.467Z"
+    },
+    {
+      "url": "https://biogravity.space/news/prospects-and-limitations-of-adaptive-variational-new-evidence",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-26T11:37:04.467Z"
     },
     {
       "url": "https://biogravity.space/news/thermal-state-preparation-with-shallow-quantum-circuits-new",
