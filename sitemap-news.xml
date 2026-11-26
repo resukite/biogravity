@@ -2,6 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://biogravity.space/news/thermodynamic-budget-of-objectivity-new-evidence-in-quantum</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T20:35:24.714Z</news:publication_date>
+      <news:title>Thermodynamic budget of objectivity: New Evidence in Quantum &amp; Physics</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/complementary-mechanisms-of-critical-quantum-metrology-new</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T20:35:24.698Z</news:publication_date>
+      <news:title>Complementary mechanisms of critical quantum metrology: New Evidence in Quantum &amp; Physics</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/bound-entanglement-with-negative-partial-transpose-exists-new</loc>
     <news:news>
       <news:publication>
