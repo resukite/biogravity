@@ -5,8 +5,26 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Nov 2026 01:12:17 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 11:35:11 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Bound Entanglement with Negative Partial Transpose Exists: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/bound-entanglement-with-negative-partial-transpose-exists-new</link>
+      <guid isPermaLink="true">https://biogravity.space/news/bound-entanglement-with-negative-partial-transpose-exists-new</guid>
+      <pubDate>Thu, 26 Nov 2026 11:35:07 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Bound Entanglement with Negative Partial Transpose Exists: New Evidence in Quantum &amp; Physics: We show that the Werner state $ρ= (23 I - 3\,\mathrm{SWAP})/1448$ on $\mathbb{C}^8 \otimes \mathbb{C}^8$ has a negative partial transpose and is bound entangled: no LOCC protocol can distill entanglement from any number of copies of $ρ$, and even with separable operations the fidelity of a two-qubit output with a Bell state never exceeds $(1+\sqrt{2})/4 \approx 0.604$. It follows that distillable entanglement is neither additive nor convex. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.34921v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
+    <item>
+      <title>Vacuum correlation measures as CFT partition functions: New Evidence in Advanced Physics &amp; Deep Science</title>
+      <link>https://biogravity.space/news/vacuum-correlation-measures-as-cft-partition-functions-new</link>
+      <guid isPermaLink="true">https://biogravity.space/news/vacuum-correlation-measures-as-cft-partition-functions-new</guid>
+      <pubDate>Thu, 26 Nov 2026 11:35:07 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Vacuum correlation measures as CFT partition functions: New Evidence in Advanced Physics &amp; Deep Science: We show that in any $d$-dimensional CFT, the vacuum sandwiched Rényi mutual information (SRMI) of integer order $n$ between two disjoint balls maps to a CFT partition function on a manifold of topology $\#^{n-1}(S^1 \times S^{d-1})$, with moduli fixed by the ball configuration and single-ball modular flow. At $n=2$, it is given by the thermal partition function on $S^{d-1}$, upper-bounding the von Neumann mutual information. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.34922v1).</description>
+      <category>Advanced Physics &amp; Deep Science</category>
+    </item>
     <item>
       <title>Anomalies and the Berry Phase: From $π^0\toγγ$ to the: New Evidence in Quantum &amp; Physics</title>
       <link>https://biogravity.space/news/anomalies-and-the-berry-phase-from-0-to-to-the-new-evidence-in</link>
