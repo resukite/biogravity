@@ -1,13 +1,13 @@
 # 🛰️ BioGravity Cloud Indexing Health Report
 
-> **Automated Cloud Run**: Thu, 26 Nov 2026 11:37:05 GMT  
-> **Total Canonical Pages**: 225  
-> **Google Indexation Progress**: **49.8%** (112 indexed / 113 in queue)  
+> **Automated Cloud Run**: Fri, 27 Nov 2026 11:30:17 GMT  
+> **Total Canonical Pages**: 229  
+> **Google Indexation Progress**: **48.9%** (112 indexed / 117 in queue)  
 > **Status**: ⚡ **Active Cloud Indexing Push Active**
 
 ## 🚀 Today's Indexing Actions
 
-- **Pushed to IndexNow (Bing/Yandex/Partners)**: 113 URLs
+- **Pushed to IndexNow (Bing/Yandex/Partners)**: 117 URLs
 - **Google Search Console Sitemap Ping**: Synchronized `sitemap.xml`
 - **Next Scheduled Run**: Automatically executes tomorrow at 03:00 UTC in GitHub Actions Cloud.
 
@@ -28,6 +28,10 @@
 | [`/molecular-biology-research`](https://biogravity.space/molecular-biology-research) | ✅ INDEXED | Discovered / Pending crawl | Today |
 | [`/microgravity-effects-on-human-body`](https://biogravity.space/microgravity-effects-on-human-body) | ✅ INDEXED | Submitted and indexed | 2026-11-08 |
 | [`/sitemap`](https://biogravity.space/sitemap) | ✅ INDEXED | Submitted and indexed | 2026-11-01 |
+| [`/news/schr-dinger-s-legacy-the-wave-function-and-quantum-new-evidence`](https://biogravity.space/news/schr-dinger-s-legacy-the-wave-function-and-quantum-new-evidence) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-27 |
+| [`/news/floquet-decomposition-floquet-multipliers-and-new-evidence-in`](https://biogravity.space/news/floquet-decomposition-floquet-multipliers-and-new-evidence-in) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-27 |
+| [`/news/thermodynamic-budget-of-objectivity-new-evidence-in-quantum`](https://biogravity.space/news/thermodynamic-budget-of-objectivity-new-evidence-in-quantum) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-27 |
+| [`/news/complementary-mechanisms-of-critical-quantum-metrology-new`](https://biogravity.space/news/complementary-mechanisms-of-critical-quantum-metrology-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-27 |
 | [`/news/bound-entanglement-with-negative-partial-transpose-exists-new`](https://biogravity.space/news/bound-entanglement-with-negative-partial-transpose-exists-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-26 |
 | [`/news/vacuum-correlation-measures-as-cft-partition-functions-new`](https://biogravity.space/news/vacuum-correlation-measures-as-cft-partition-functions-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-26 |
 | [`/news/anomalies-and-the-berry-phase-from-0-to-to-the-new-evidence-in`](https://biogravity.space/news/anomalies-and-the-berry-phase-from-0-to-to-the-new-evidence-in) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-26 |

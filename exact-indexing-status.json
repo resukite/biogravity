@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-26T11:37:05.033Z",
-  "totalUrls": 225,
+  "updatedAt": "2026-11-27T11:30:17.446Z",
+  "totalUrls": 229,
   "indexedCount": 112,
-  "notIndexedCount": 113,
-  "indexedPercentage": "49.8%",
-  "pushedToIndexingCount": 113,
+  "notIndexedCount": 117,
+  "indexedPercentage": "48.9%",
+  "pushedToIndexingCount": 117,
   "allFullyIndexed": false,
   "results": [
     {
@@ -94,6 +94,30 @@
       "verdict": "PASS",
       "coverage": "Submitted and indexed",
       "lastChecked": "2026-11-01T14:45:04.867Z"
+    },
+    {
+      "url": "https://biogravity.space/news/schr-dinger-s-legacy-the-wave-function-and-quantum-new-evidence",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-27T11:30:16.902Z"
+    },
+    {
+      "url": "https://biogravity.space/news/floquet-decomposition-floquet-multipliers-and-new-evidence-in",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-27T11:30:16.902Z"
+    },
+    {
+      "url": "https://biogravity.space/news/thermodynamic-budget-of-objectivity-new-evidence-in-quantum",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-27T11:30:16.902Z"
+    },
+    {
+      "url": "https://biogravity.space/news/complementary-mechanisms-of-critical-quantum-metrology-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-27T11:30:16.902Z"
     },
     {
       "url": "https://biogravity.space/news/bound-entanglement-with-negative-partial-transpose-exists-new",
