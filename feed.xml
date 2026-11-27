@@ -5,8 +5,26 @@
     <link>https://biogravity.space/</link>
     <description>Live open-access science dispatches and peer-reviewed research monographs across Quantum Biology, Space Medicine, and Deep Physical Sciences.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Nov 2026 03:19:34 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 15:40:15 GMT</lastBuildDate>
     <atom:link href="https://biogravity.space/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Transition Path Sampling for Rare Events in: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/transition-path-sampling-for-rare-events-in-new-evidence-in</link>
+      <guid isPermaLink="true">https://biogravity.space/news/transition-path-sampling-for-rare-events-in-new-evidence-in</guid>
+      <pubDate>Fri, 27 Nov 2026 15:40:12 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Transition Path Sampling for Rare Events in: New Evidence in Quantum &amp; Physics: Rare transitions govern the dynamics of many open quantum systems, but their probabilities and rates are difficult to calculate. Transition path sampling (TPS) of quantum systems has so far been limited to Markovian, perturbative descriptions. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.34883v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
+    <item>
+      <title>Price of Quantum Advantage in Computational Chemistry: New Evidence in Quantum &amp; Physics</title>
+      <link>https://biogravity.space/news/price-of-quantum-advantage-in-computational-chemistry-new</link>
+      <guid isPermaLink="true">https://biogravity.space/news/price-of-quantum-advantage-in-computational-chemistry-new</guid>
+      <pubDate>Fri, 27 Nov 2026 15:40:12 GMT</pubDate>
+      <dc:creator>BioGravity Science Bureau</dc:creator>
+      <description>Price of Quantum Advantage in Computational Chemistry: New Evidence in Quantum &amp; Physics: As the fault-tolerant era approaches, the question shifts from ``is it possible&apos;&apos; to ``is it worthwhile.&apos;&apos; To assess practical quantum advantage against reliable classical baselines, we examine 26 benchmark instances including FeMoco, iron-sulfur clusters, cytochrome P450, and ruthenium catalysts using two selected configuration interaction solvers, SHCI and TrimCI. Comparing classical workloads with fault-tolerant resource estimates, we calculate the break-even whole-QPU hourly price. Published via arXiv Open Science Wire (https://arxiv.org/abs/2611.34889v1).</description>
+      <category>Quantum &amp; Physics</category>
+    </item>
     <item>
       <title>Schrödinger&apos;s Legacy: The Wave Function and Quantum: New Evidence in Quantum &amp; Physics</title>
       <link>https://biogravity.space/news/schr-dinger-s-legacy-the-wave-function-and-quantum-new-evidence</link>
