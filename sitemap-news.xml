@@ -2,6 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://biogravity.space/news/schr-dinger-s-legacy-the-wave-function-and-quantum-new-evidence</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T03:19:30.504Z</news:publication_date>
+      <news:title>Schrödinger&apos;s Legacy: The Wave Function and Quantum: New Evidence in Quantum &amp; Physics</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://biogravity.space/news/floquet-decomposition-floquet-multipliers-and-new-evidence-in</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioGravity Live Science Wire</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T03:19:30.488Z</news:publication_date>
+      <news:title>Floquet Decomposition: Floquet Multipliers and: New Evidence in Earth &amp; Geology</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://biogravity.space/news/thermodynamic-budget-of-objectivity-new-evidence-in-quantum</loc>
     <news:news>
       <news:publication>
