@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-27T11:30:17.446Z",
-  "totalUrls": 229,
+  "updatedAt": "2026-11-28T10:59:12.710Z",
+  "totalUrls": 235,
   "indexedCount": 112,
-  "notIndexedCount": 117,
-  "indexedPercentage": "48.9%",
-  "pushedToIndexingCount": 117,
+  "notIndexedCount": 123,
+  "indexedPercentage": "47.7%",
+  "pushedToIndexingCount": 123,
   "allFullyIndexed": false,
   "results": [
     {
@@ -94,6 +94,42 @@
       "verdict": "PASS",
       "coverage": "Submitted and indexed",
       "lastChecked": "2026-11-01T14:45:04.867Z"
+    },
+    {
+      "url": "https://biogravity.space/news/state-convertibility-in-quantum-state-texture-from-a-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-28T10:59:12.309Z"
+    },
+    {
+      "url": "https://biogravity.space/news/oxygen-cold-trap-in-protoplanetary-discs-new-evidence-in-space",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-28T10:59:12.309Z"
+    },
+    {
+      "url": "https://biogravity.space/news/simultaneous-computation-of-multiple-excited-states-new-evidence",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-28T10:59:12.309Z"
+    },
+    {
+      "url": "https://biogravity.space/news/exact-monogamy-of-steering-and-remote-wigner-new-evidence-in",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-28T10:59:12.309Z"
+    },
+    {
+      "url": "https://biogravity.space/news/transition-path-sampling-for-rare-events-in-new-evidence-in",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-28T10:59:12.309Z"
+    },
+    {
+      "url": "https://biogravity.space/news/price-of-quantum-advantage-in-computational-chemistry-new",
+      "status": "NOT_INDEXED",
+      "coverage": "Discovered - newly submitted",
+      "lastChecked": "2026-11-28T10:59:12.309Z"
     },
     {
       "url": "https://biogravity.space/news/schr-dinger-s-legacy-the-wave-function-and-quantum-new-evidence",

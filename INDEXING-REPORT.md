@@ -1,13 +1,13 @@
 # 🛰️ BioGravity Cloud Indexing Health Report
 
-> **Automated Cloud Run**: Fri, 27 Nov 2026 11:30:17 GMT  
-> **Total Canonical Pages**: 229  
-> **Google Indexation Progress**: **48.9%** (112 indexed / 117 in queue)  
+> **Automated Cloud Run**: Sat, 28 Nov 2026 10:59:12 GMT  
+> **Total Canonical Pages**: 235  
+> **Google Indexation Progress**: **47.7%** (112 indexed / 123 in queue)  
 > **Status**: ⚡ **Active Cloud Indexing Push Active**
 
 ## 🚀 Today's Indexing Actions
 
-- **Pushed to IndexNow (Bing/Yandex/Partners)**: 117 URLs
+- **Pushed to IndexNow (Bing/Yandex/Partners)**: 123 URLs
 - **Google Search Console Sitemap Ping**: Synchronized `sitemap.xml`
 - **Next Scheduled Run**: Automatically executes tomorrow at 03:00 UTC in GitHub Actions Cloud.
 
@@ -28,6 +28,12 @@
 | [`/molecular-biology-research`](https://biogravity.space/molecular-biology-research) | ✅ INDEXED | Discovered / Pending crawl | Today |
 | [`/microgravity-effects-on-human-body`](https://biogravity.space/microgravity-effects-on-human-body) | ✅ INDEXED | Submitted and indexed | 2026-11-08 |
 | [`/sitemap`](https://biogravity.space/sitemap) | ✅ INDEXED | Submitted and indexed | 2026-11-01 |
+| [`/news/state-convertibility-in-quantum-state-texture-from-a-new`](https://biogravity.space/news/state-convertibility-in-quantum-state-texture-from-a-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-28 |
+| [`/news/oxygen-cold-trap-in-protoplanetary-discs-new-evidence-in-space`](https://biogravity.space/news/oxygen-cold-trap-in-protoplanetary-discs-new-evidence-in-space) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-28 |
+| [`/news/simultaneous-computation-of-multiple-excited-states-new-evidence`](https://biogravity.space/news/simultaneous-computation-of-multiple-excited-states-new-evidence) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-28 |
+| [`/news/exact-monogamy-of-steering-and-remote-wigner-new-evidence-in`](https://biogravity.space/news/exact-monogamy-of-steering-and-remote-wigner-new-evidence-in) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-28 |
+| [`/news/transition-path-sampling-for-rare-events-in-new-evidence-in`](https://biogravity.space/news/transition-path-sampling-for-rare-events-in-new-evidence-in) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-28 |
+| [`/news/price-of-quantum-advantage-in-computational-chemistry-new`](https://biogravity.space/news/price-of-quantum-advantage-in-computational-chemistry-new) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-28 |
 | [`/news/schr-dinger-s-legacy-the-wave-function-and-quantum-new-evidence`](https://biogravity.space/news/schr-dinger-s-legacy-the-wave-function-and-quantum-new-evidence) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-27 |
 | [`/news/floquet-decomposition-floquet-multipliers-and-new-evidence-in`](https://biogravity.space/news/floquet-decomposition-floquet-multipliers-and-new-evidence-in) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-27 |
 | [`/news/thermodynamic-budget-of-objectivity-new-evidence-in-quantum`](https://biogravity.space/news/thermodynamic-budget-of-objectivity-new-evidence-in-quantum) | ⏳ QUEUED | Discovered - newly submitted | 2026-11-27 |
